@@ -12,7 +12,7 @@ finite calculations and the exploratory figure data.
 | Digital graph admissibility used in the source arguments | `r003_digits_verify.py`, `r003_digits_affine_parameter_returns.py`; `quick` |
 | Theorem 2.11: quantitative circle lower bound | `branching_r010_adaptive_B_57_50_theta2.json`, `r010_parent_weighted_return_verify.py`; `returns --only weighted-circle` |
 | Theorem 3.1: positive dimension for all real n>1 | [All-real guide](real-exponents.md), `thirdreal20261021_*`; `real-quick`, `real-sources`, `real-phase-covers`, `real-returns`, `real-assembly`, together with the retained integer stages |
-| Theorem 4.5: uniform strict last-transition bound for every real n>1 | [Uniform-bound guide](universal-last-bound.md); `supplements/universal-last-bound/certificates.zip`; extract and run `python verify_universal_bound.py --replay` |
+| Theorem 4.2: uniform strict last-transition bound for every real n>1 | [Uniform-bound guide](universal-last-bound.md); `supplements/universal-last-bound/certificates.zip`; extract and run `python verify_universal_bound.py --replay` |
 | Integer subcase of Theorem 3.1 | `r003_*`, `alln20261020_*`; `returns`, `integer-sources`, `phase-covers`, `assembly` |
 | Unit-circle polynomial gap exclusions | `r008_evidence_gap_family.py`; `quick --only polynomial-gaps` |
 | Supporting cubic and quartic finite exclusions | `continuity20261020_low_n3_certificate.py`, `separation20261020_parent_check.py`; `quick` |

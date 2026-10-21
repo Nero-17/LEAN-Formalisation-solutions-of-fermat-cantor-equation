@@ -1,6 +1,6 @@
 # Uniform last-transition bound for every real exponent
 
-Theorem 4.5 in the revised manuscript proves
+Theorem 4.2 in the revised manuscript proves
 `lambda_max(n) < (sqrt(3)-1)/2` for every real `n>1`.
 The analytic proof and exact predicates are in Section 4 and Appendix A.
 This supplements the earlier v1.1.0 materials; it is not included in that tag.
@@ -19,7 +19,7 @@ The command replays the near-one exact comparisons, both exceptional actual
 curves, the five continuous real-exponent covers, and the all-scale tail and
 four remaining finite scale shells. A full replay can take substantial time.
 The existing top-level `reproduce.py all` predates this supplement; run the
-command above separately for Theorem 4.5.
+command above separately for Theorem 4.2.
 
 Without `--replay`, the driver validates saved reports, data hashes, integral
 scales and cylinder words. This is not a full arithmetic replay. All constituent
