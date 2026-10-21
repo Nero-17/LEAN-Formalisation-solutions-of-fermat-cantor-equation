@@ -1,0 +1,68 @@
+12 verified 0 of 4007 0.59
+12 verified 100 of 4007 2.44
+12 verified 200 of 4007 4.69
+12 verified 300 of 4007 8.34
+12 verified 400 of 4007 11.09
+12 verified 500 of 4007 13.76
+12 verified 600 of 4007 16.67
+12 verified 700 of 4007 20.3
+12 verified 800 of 4007 24.0
+12 verified 900 of 4007 27.73
+12 verified 1000 of 4007 31.88
+12 verified 1100 of 4007 36.5
+12 verified 1200 of 4007 42.31
+12 verified 1300 of 4007 46.76
+12 verified 1400 of 4007 50.31
+12 verified 1500 of 4007 52.97
+12 verified 1600 of 4007 55.23
+12 verified 1700 of 4007 57.62
+12 verified 1800 of 4007 60.97
+12 verified 1900 of 4007 64.08
+12 verified 2000 of 4007 66.64
+12 verified 2100 of 4007 69.47
+12 verified 2200 of 4007 73.31
+12 verified 2300 of 4007 76.72
+12 verified 2400 of 4007 79.11
+12 verified 2500 of 4007 81.81
+12 verified 2600 of 4007 85.38
+12 verified 2700 of 4007 88.26
+12 verified 2800 of 4007 90.95
+12 verified 2900 of 4007 94.94
+12 verified 3000 of 4007 98.56
+12 verified 3100 of 4007 100.19
+12 verified 3200 of 4007 102.28
+12 verified 3300 of 4007 103.5
+12 verified 3400 of 4007 107.3
+12 verified 3500 of 4007 113.17
+12 verified 3600 of 4007 113.89
+12 verified 3700 of 4007 114.95
+12 verified 3800 of 4007 116.01
+12 verified 3900 of 4007 119.59
+12 verified 4000 of 4007 121.22
+{
+  "verification": "PASS",
+  "m": 12,
+  "parameter_domain": [
+    "2",
+    "3"
+  ],
+  "integer_range": [
+    1062882,
+    1594322
+  ],
+  "parameter_cells": 4007,
+  "strict_image_inset": "1/10^12",
+  "finite_log_terms": 12,
+  "ordinary_log_terms": 80,
+  "fixed_point_scale": "2^80",
+  "geometries": [
+    [
+      9,
+      3,
+      4
+    ]
+  ],
+  "input_sha256": "d0d2a4e71d63bc8085b2f94fa811bfdabc22ba404065ae82ef354ca3313fb224",
+  "elapsed_seconds": 121.28099999995902,
+  "scope": "Every real t in the reported parameter domain at this fixed M=3^m; actual nonlinear phase and assigned proved slope bands."
+}

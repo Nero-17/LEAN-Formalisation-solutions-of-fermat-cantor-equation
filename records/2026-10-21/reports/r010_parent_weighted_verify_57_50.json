@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "certificate": "work\\branching_r010_adaptive_B_57_50_theta2.json",
+  "certificate_sha256": "c25b7844a9b9340ae412b7a51a1534865d436580b003ee9664a64fb9442afd83",
+  "beta": "57/50",
+  "dimension_lower": 0.11926706423906348,
+  "depth": 33,
+  "intervals_verified": 232304,
+  "calls": 145865451,
+  "minimum_relative_exact_weight": "78866613500601934646207468751953125000000000/78862654603529887329150858935314154890152057",
+  "minimum_relative_weight_exceeds": "20001/20000",
+  "slack_refined_dimension_lower": 0.11926844886839019,
+  "terminal_integer_weights": [
+    10000,
+    20000,
+    10000
+  ],
+  "source_P": 3663407072939048637165799292,
+  "source_Q": 40941731002436775062259738416,
+  "source_extra_depth": 20,
+  "source_level": 59,
+  "physical_a_level": 60,
+  "physical_b_level": 59,
+  "quadratic_coefficient": "9",
+  "initial_core_components": [
+    1
+  ],
+  "core_margin": "1/100000",
+  "initial_state_in_B": true,
+  "one_step_error_times_grid": "12500000000000000000000000/2747555304704286477874349469",
+  "elapsed_seconds": 217.14100000000326,
+  "scope": "Exact interval return certificate. Nonlinear error bound is audited separately."
+}

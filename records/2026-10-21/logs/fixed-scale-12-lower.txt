@@ -1,0 +1,77 @@
+12 verified 0 of 4914 0.64
+12 verified 100 of 4914 2.92
+12 verified 200 of 4914 4.23
+12 verified 300 of 4914 6.22
+12 verified 400 of 4914 8.73
+12 verified 500 of 4914 10.67
+12 verified 600 of 4914 12.28
+12 verified 700 of 4914 14.06
+12 verified 800 of 4914 15.47
+12 verified 900 of 4914 16.72
+12 verified 1000 of 4914 21.28
+12 verified 1100 of 4914 23.52
+12 verified 1200 of 4914 28.25
+12 verified 1300 of 4914 31.02
+12 verified 1400 of 4914 35.55
+12 verified 1500 of 4914 39.11
+12 verified 1600 of 4914 42.62
+12 verified 1700 of 4914 45.42
+12 verified 1800 of 4914 47.98
+12 verified 1900 of 4914 53.39
+12 verified 2000 of 4914 57.52
+12 verified 2100 of 4914 64.88
+12 verified 2200 of 4914 69.09
+12 verified 2300 of 4914 74.75
+12 verified 2400 of 4914 79.62
+12 verified 2500 of 4914 83.61
+12 verified 2600 of 4914 88.12
+12 verified 2700 of 4914 92.59
+12 verified 2800 of 4914 95.06
+12 verified 2900 of 4914 97.22
+12 verified 3000 of 4914 99.64
+12 verified 3100 of 4914 102.75
+12 verified 3200 of 4914 105.8
+12 verified 3300 of 4914 109.66
+12 verified 3400 of 4914 113.69
+12 verified 3500 of 4914 117.77
+12 verified 3600 of 4914 122.02
+12 verified 3700 of 4914 125.7
+12 verified 3800 of 4914 129.64
+12 verified 3900 of 4914 134.92
+12 verified 4000 of 4914 139.42
+12 verified 4100 of 4914 143.45
+12 verified 4200 of 4914 146.12
+12 verified 4300 of 4914 148.59
+12 verified 4400 of 4914 151.47
+12 verified 4500 of 4914 155.19
+12 verified 4600 of 4914 158.05
+12 verified 4700 of 4914 160.03
+12 verified 4800 of 4914 161.78
+12 verified 4900 of 4914 164.02
+{
+  "verification": "PASS",
+  "m": 12,
+  "parameter_domain": [
+    "1",
+    "2"
+  ],
+  "integer_range": [
+    531441,
+    1062882
+  ],
+  "parameter_cells": 4914,
+  "strict_image_inset": "1/10^12",
+  "finite_log_terms": 12,
+  "ordinary_log_terms": 80,
+  "fixed_point_scale": "2^80",
+  "geometries": [
+    [
+      9,
+      3,
+      4
+    ]
+  ],
+  "input_sha256": "8c08493a66e290428829e41b05c64bae69a7537ae2afd9f0adb80728eac839f0",
+  "elapsed_seconds": 164.40600000001723,
+  "scope": "Every real t in the reported parameter domain at this fixed M=3^m; actual nonlinear phase and assigned proved slope bands."
+}

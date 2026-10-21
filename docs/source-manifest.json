@@ -1,0 +1,467 @@
+[
+  {
+    "path": "cantor-dust/work/alln20261020_all_integer_coverage.json",
+    "source_round_file": "alln20261020_all_integer_coverage.json",
+    "sha256": "0c83163853ffad658fba3a4b830d47dfc61ce29761bf95b18265cd14033d6e6f",
+    "bytes": 4642
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_assemble.py",
+    "source_round_file": "alln20261020_assemble.py",
+    "sha256": "354efa4641a785e7cf4caefb324ce73df0375f9c1cc27e10ed2f87f79c72fa79",
+    "bytes": 4952
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_batch_177147_531440.json",
+    "source_round_file": "alln20261020_batch_177147_531440.json",
+    "sha256": "7bd2a11d2c76516a90d91b6db2853b0bb9c085331fc386f9e1904e0c3360c492",
+    "bytes": 19681363,
+    "packed_path": "cantor-dust/work/alln20261020_batch_177147_531440.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_batch_50001_177146.json",
+    "source_round_file": "alln20261020_batch_50001_177146.json",
+    "sha256": "c365bf5198f90907ad2ea276c36f959f9a73e3faa3bdba2f7642392e2673733f",
+    "bytes": 6933027,
+    "packed_path": "cantor-dust/work/alln20261020_batch_50001_177146.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_finite_phase_transfer.py",
+    "source_round_file": "alln20261020_finite_phase_transfer.py",
+    "sha256": "d34398651a83742d29d63d29b2676098bcbbcbf352278a0346b99692c39df594",
+    "bytes": 9294
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_finite_z_m15_depth11_verified.json",
+    "source_round_file": "alln20261020_finite_z_m15_depth11_verified.json",
+    "sha256": "4a74350312a0f1de7097931cb8aee34ea9538c7e4ca36243ff209c7f1b608e9e",
+    "bytes": 3151
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_finite_z_m15_h3_depth11.json",
+    "source_round_file": "alln20261020_finite_z_m15_h3_depth11.json",
+    "sha256": "252e66caecf362399679167af6ac62e633130442ee632c2a12b5f18eb557747d",
+    "bytes": 50011
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m12_lower_candidate.json",
+    "source_round_file": "alln20261020_fixed_m12_lower_candidate.json",
+    "sha256": "8c08493a66e290428829e41b05c64bae69a7537ae2afd9f0adb80728eac839f0",
+    "bytes": 329291
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m12_lower_verified.json",
+    "source_round_file": "alln20261020_fixed_m12_lower_verified.json",
+    "sha256": "41b5299af48cc610c47d41948817db137b182464a27b93b18942a05c898858de",
+    "bytes": 633
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m12_upper_candidate.json",
+    "source_round_file": "alln20261020_fixed_m12_upper_candidate.json",
+    "sha256": "d0d2a4e71d63bc8085b2f94fa811bfdabc22ba404065ae82ef354ca3313fb224",
+    "bytes": 285051
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m12_upper_verified.json",
+    "source_round_file": "alln20261020_fixed_m12_upper_verified.json",
+    "sha256": "10859037c309684b82322f2f0650753b7d75c28b7ba808825d4c981c1d8bec57",
+    "bytes": 621
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m13_lower_candidate.json",
+    "source_round_file": "alln20261020_fixed_m13_lower_candidate.json",
+    "sha256": "865252d098f15f6eb0f0d2dac81deabf67fbc158f7cba1db34c5652a3297a409",
+    "bytes": 321023
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m13_lower_verified.json",
+    "source_round_file": "alln20261020_fixed_m13_lower_verified.json",
+    "sha256": "a58f6883e00524c05d400b67cc71fcbd1e19849a9395fedd964ee6cbf91887ab",
+    "bytes": 633
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m13_upper_candidate.json",
+    "source_round_file": "alln20261020_fixed_m13_upper_candidate.json",
+    "sha256": "c336378b52f953e6c9487636dc2bc8a0c90d3453231cb9807bbb36ca8baa017d",
+    "bytes": 88486
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m13_upper_verified.json",
+    "source_round_file": "alln20261020_fixed_m13_upper_verified.json",
+    "sha256": "2ccc59f897add598b8bf350295a147e6134ca3f0a2aa6e62dd397d29aa849d33",
+    "bytes": 633
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m14_lower_candidate.json",
+    "source_round_file": "alln20261020_fixed_m14_lower_candidate.json",
+    "sha256": "24a3b804ac21f9f5d9d2e88556c5acd6f767c3b9ab327b6b4874eea0416b4f81",
+    "bytes": 290454
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m14_lower_verified.json",
+    "source_round_file": "alln20261020_fixed_m14_lower_verified.json",
+    "sha256": "dd10a629822a27b6c1597513a51ac4771d80c1f6923cfabe0bab3c6438ced703",
+    "bytes": 634
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m14_upper_candidate.json",
+    "source_round_file": "alln20261020_fixed_m14_upper_candidate.json",
+    "sha256": "0648dc7dd39ded277890d2d5f581725e42bed8e246dc72d7762f38b57ade94e0",
+    "bytes": 184135
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m14_upper_verified.json",
+    "source_round_file": "alln20261020_fixed_m14_upper_verified.json",
+    "sha256": "4f1eb6324bbbce02892db854238e66632c0830a8154ba1018fb97942e6666d87",
+    "bytes": 634
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_logsource_complete_301_10000.json",
+    "source_round_file": "alln20261020_logsource_complete_301_10000.json",
+    "sha256": "ff55817debb5e6bdd805e5ed370f9314c73f659a5a97fdee1f92d7bae0e9a49a",
+    "bytes": 1723031,
+    "packed_path": "cantor-dust/work/alln20261020_logsource_complete_301_10000.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_logsource_verified.json",
+    "source_round_file": "alln20261020_logsource_verified.json",
+    "sha256": "b02749d5e085f317a4b5046c3df4f5164fcdf392926deb2a7936490543b0800b",
+    "bytes": 5632383,
+    "packed_path": "cantor-dust/work/alln20261020_logsource_verified.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_logsource_verify.py",
+    "source_round_file": "alln20261020_logsource_verify.py",
+    "sha256": "b1abde5d05ede0fad9a4489cd77a25a8793d66ab38aa156ff78ad322659ce6e1",
+    "bytes": 5445
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_10001_50000_verified.json",
+    "source_round_file": "alln20261020_parent_10001_50000_verified.json",
+    "sha256": "3b6bcc99105dc135cd3b2e2d893e5172a5ec565edb1165c10092b9fa5c01e3db",
+    "bytes": 729
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_177147_531440_verified.json",
+    "source_round_file": "alln20261020_parent_177147_531440_verified.json",
+    "sha256": "fba3240f1e920ae93a7740599b7ef2ed4eb8b906dcf5eb22e790d5367a64d9bd",
+    "bytes": 770
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_50001_177146_verified.json",
+    "source_round_file": "alln20261020_parent_50001_177146_verified.json",
+    "sha256": "5e4ca2fd6944047eaa2a53a81d2a458220c6e56b5a59463cf62b31550040590f",
+    "bytes": 725
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_complete_301_10000_verified.json",
+    "source_round_file": "alln20261020_parent_complete_301_10000_verified.json",
+    "sha256": "321526862e2eddf80d6ff21d28d5e27194ec1e694466dfc88c0ed74645638589",
+    "bytes": 730
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_exact_logs.json",
+    "source_round_file": "alln20261020_parent_exact_logs.json",
+    "sha256": "f87e13314d530dd5d33e350021e71ad8241ab17a76766ba92a7ee83d060d55b5",
+    "bytes": 743
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_exact_logs.py",
+    "source_round_file": "alln20261020_parent_exact_logs.py",
+    "sha256": "d91f524f675e541a4f0bcc309f696b21f15fc59d59d3f02b251490aeaf01fb6f",
+    "bytes": 4642
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_finite_m15_verified.json",
+    "source_round_file": "alln20261020_parent_finite_m15_verified.json",
+    "sha256": "30b5be3c804b1889a010fe7d0008516981ecb45961c2462aa8c91d165d609f41",
+    "bytes": 379
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_finite_phase.py",
+    "source_round_file": "alln20261020_parent_finite_phase.py",
+    "sha256": "85e664c26db1e003fa44408046aff8184f3989131ccfe7946466ba131c40495a",
+    "bytes": 5080
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_logsource_10001_50000.json",
+    "source_round_file": "alln20261020_parent_logsource_10001_50000.json",
+    "sha256": "44a8bff6e7d4dfba737f878d151de25d756b6044aa92cbf8b399b4ff76dcc4ca",
+    "bytes": 20486809,
+    "packed_path": "cantor-dust/work/alln20261020_parent_logsource_10001_50000.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_logsource_candidates.json",
+    "source_round_file": "alln20261020_parent_logsource_candidates.json",
+    "sha256": "47154ad8be5ccd2d62fa71e7ea2ae0268a96d152e1c7a82965258e339a31be86",
+    "bytes": 4947969,
+    "packed_path": "cantor-dust/work/alln20261020_parent_logsource_candidates.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_phase.py",
+    "source_round_file": "alln20261020_parent_phase.py",
+    "sha256": "09afe2c19af59806708fc826a93c4e2cf185439cb57af20af2d70fc1a7cd0fe6",
+    "bytes": 3904
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_parent_phase_verified.json",
+    "source_round_file": "alln20261020_parent_phase_verified.json",
+    "sha256": "e2929de41014bcb072156bfae6c01ff2c4079d700a835de1edd77d374a82e601",
+    "bytes": 267
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_selected_cover.json",
+    "source_round_file": "alln20261020_selected_cover.json",
+    "sha256": "891d6632f864e524802b6e094b55f47744d59c34271297bd1168badb697ea4b1",
+    "bytes": 16453
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_verify_finite_z.py",
+    "source_round_file": "alln20261020_verify_finite_z.py",
+    "sha256": "c8f47d432fb45ae12c21ca54be34672ee24a1c288c3dc705de2320e734067841",
+    "bytes": 6244
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_verify_fixed_m.py",
+    "source_round_file": "alln20261020_verify_fixed_m.py",
+    "sha256": "c95132853faf5e4ed76bde8a4f4afffcd2c7c071a20a6fd29773f3298ccc7d4e",
+    "bytes": 7342
+  },
+  {
+    "path": "cantor-dust/work/branching_r010_adaptive_B_57_50_theta2.json",
+    "source_round_file": "branching_r010_adaptive_B_57_50_theta2.json",
+    "sha256": "c25b7844a9b9340ae412b7a51a1534865d436580b003ee9664a64fb9442afd83",
+    "bytes": 19051212,
+    "packed_path": "cantor-dust/work/branching_r010_adaptive_B_57_50_theta2.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/continuity20261020_low_n3_certificate.json",
+    "source_round_file": "continuity20261020_low_n3_certificate.json",
+    "sha256": "dd10e06dca04582f9a0ecb329b9b0a759377f4d9bfd92147325db8569f6483a7",
+    "bytes": 2073
+  },
+  {
+    "path": "cantor-dust/work/continuity20261020_low_n3_certificate.py",
+    "source_round_file": "continuity20261020_low_n3_certificate.py",
+    "sha256": "be169c881334aa4964496cea084657e7e91b6ee325cb24c70418264577d152b7",
+    "bytes": 1479
+  },
+  {
+    "path": "cantor-dust/work/r003_construction_axis_101_300.json",
+    "source_round_file": "r003_construction_axis_101_300.json",
+    "sha256": "0426692e5ed1dee1b839ab27c81210fc343df3e31edfb9f883c43567ac822f33",
+    "bytes": 642311
+  },
+  {
+    "path": "cantor-dust/work/r003_construction_axis_2_100.json",
+    "source_round_file": "r003_construction_axis_2_100.json",
+    "sha256": "2e4abe3d3e7a0a453cdba2e43eeee1d83328dd7f98c4625a4a663338732b8a34",
+    "bytes": 76494
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n10.json",
+    "source_round_file": "r003_digits_compact_antichain_n10.json",
+    "sha256": "6665468c453faa82f63d28d873300221e13232fc59d807d40f494d622f6346e9",
+    "bytes": 7737
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n23.json",
+    "source_round_file": "r003_digits_compact_antichain_n23.json",
+    "sha256": "23a6f118aa5b13d57357b19ae8f34ac2e02cc72d2826560ba2819d1fa96f7e3b",
+    "bytes": 11496
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n25.json",
+    "source_round_file": "r003_digits_compact_antichain_n25.json",
+    "sha256": "ebd0ede600525d609556383f21f71ee0bd3d16e77047b241bc17249aeeb511f2",
+    "bytes": 12655
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n28.json",
+    "source_round_file": "r003_digits_compact_antichain_n28.json",
+    "sha256": "a024e00c07afd493278214b82bc6c7c0cb2a35cf91d7a143642792ee8de1db85",
+    "bytes": 20067
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n31.json",
+    "source_round_file": "r003_digits_compact_antichain_n31.json",
+    "sha256": "9f6030a66164da537a53798c8aa81fb196405832fc8954f5a65e864dcf4d86c2",
+    "bytes": 14438
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n32.json",
+    "source_round_file": "r003_digits_compact_antichain_n32.json",
+    "sha256": "aeea91bd0287f181a991bfb75d76648a813d8b6ef8f29cd29f09ea8ed3eb3d24",
+    "bytes": 15309
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n78.json",
+    "source_round_file": "r003_digits_compact_antichain_n78.json",
+    "sha256": "6d0146a3e920789c7f15df0bf5c59dee81b8527bd7545c03a95440d7818f518e",
+    "bytes": 34157
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n82.json",
+    "source_round_file": "r003_digits_compact_antichain_n82.json",
+    "sha256": "1c505d9b8265a4d2ac258fe59a1f6a6e7b9c980ebfa2ec7684f5da976ed194db",
+    "bytes": 90264
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_compact_antichain_n9.json",
+    "source_round_file": "r003_digits_compact_antichain_n9.json",
+    "sha256": "f1e023b2dad1157741f0c1d2f98c8245d9074d957f1b4e56f7651f1a647b405e",
+    "bytes": 7647
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_graph_certificate.json",
+    "source_round_file": "r003_digits_graph_certificate.json",
+    "sha256": "284c468ece2a839cfc346debd4e5667e51de4599d2b80a24085e787b4e5d55f2",
+    "bytes": 16978
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_verify.py",
+    "source_round_file": "r003_digits_verify.py",
+    "sha256": "3fb2c96cd4e21e3a56ad58955a318b9ae9cd882bd0251923559e33058de0b308",
+    "bytes": 2148
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify.py",
+    "source_round_file": "r003_parent_antichain_verify.py",
+    "sha256": "8da5f40d2a2d1e22c942111b17e48441abdec2dfb21aad98d349df97fea0a145",
+    "bytes": 5339
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n10.json",
+    "source_round_file": "r003_parent_antichain_verify_n10.json",
+    "sha256": "ed4623f2e23a45df695a6747a2558538b782c9852aa0de15dda3266c25cb63c5",
+    "bytes": 4483
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n23.json",
+    "source_round_file": "r003_parent_antichain_verify_n23.json",
+    "sha256": "bbcee32a91fdc59dc7bfc3b9635fe8f99da90440e3aa6a6d257885ca13eefc1c",
+    "bytes": 9969
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n25.json",
+    "source_round_file": "r003_parent_antichain_verify_n25.json",
+    "sha256": "17837aeb5525084a998087872ad8d6173bbac4f77369e868250198fce125388a",
+    "bytes": 11048
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n28.json",
+    "source_round_file": "r003_parent_antichain_verify_n28.json",
+    "sha256": "a18a8a839894045bf8b933b4208b44a041e4d7e15876cab92cbc265440b499a8",
+    "bytes": 18374
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n31.json",
+    "source_round_file": "r003_parent_antichain_verify_n31.json",
+    "sha256": "a8dbce6acfa49041b541be1d2d2bbce8ca0ddea24b546ad007baf173bcbb6512",
+    "bytes": 12933
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n32.json",
+    "source_round_file": "r003_parent_antichain_verify_n32.json",
+    "sha256": "f34713517612370fab0770c2741c5ea7b0b839cdfd8217c92c598edfcc05cd16",
+    "bytes": 13466
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n78.json",
+    "source_round_file": "r003_parent_antichain_verify_n78.json",
+    "sha256": "919929f7950792a6c55b32a92bea3fbb2254b3b11db35feb194b201d8228391d",
+    "bytes": 32635
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n82.json",
+    "source_round_file": "r003_parent_antichain_verify_n82.json",
+    "sha256": "92c95a95bcef22c8a69c242557be48117e5e7313795418ad94afe14b69c4a95f",
+    "bytes": 88655
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_antichain_verify_n9.json",
+    "source_round_file": "r003_parent_antichain_verify_n9.json",
+    "sha256": "0a5466eea98d53c5393a1ec36645e99663fed5b81da97dd6c83ed33cb09fb301",
+    "bytes": 4338
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_elementary_sources.json",
+    "source_round_file": "r003_parent_elementary_sources.json",
+    "sha256": "4fd586033ed44c4b4796fddffba936254279fc853f0f1155ebf98601809b4ae4",
+    "bytes": 1319
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_finite_coverage.json",
+    "source_round_file": "r003_parent_finite_coverage.json",
+    "sha256": "b3f7e1c1375bfda4a57a667fd4c89d77da24e3e94e4a1b374a8b877f5ed71385",
+    "bytes": 1333
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_verify_sources.py",
+    "source_round_file": "r003_parent_verify_sources.py",
+    "sha256": "c56160176b03d3ef3007865bb26e793d027d9d7948ee1d2a53263d78130283d9",
+    "bytes": 3696
+  },
+  {
+    "path": "cantor-dust/work/r003_parent_wide_sources.json",
+    "source_round_file": "r003_parent_wide_sources.json",
+    "sha256": "db264d85b1328e9cf2cdca573e4eec5ca229fc9c8f4447c893094a9a6a0d2a28",
+    "bytes": 132491
+  },
+  {
+    "path": "cantor-dust/work/r003_r004_transfer_sources.json",
+    "source_round_file": "r003_r004_transfer_sources.json",
+    "sha256": "6248379273f8f09d10c71a520106a191c22c29cc6930a548d09c8923d213b121",
+    "bytes": 4783
+  },
+  {
+    "path": "cantor-dust/work/r003_r004_transfer_verification.json",
+    "source_round_file": "r003_r004_transfer_verification.json",
+    "sha256": "ba8f4fd8af2fabf8b58f61c35386631d21f2ea6521e72665de8dd065eee2632d",
+    "bytes": 5135
+  },
+  {
+    "path": "cantor-dust/work/r003_r004_transfer_verify.py",
+    "source_round_file": "r003_r004_transfer_verify.py",
+    "sha256": "e85a3ccac4c57a6cec4a52c9d897c44ca3f110a9f3d7dec577ae0123d4ddf85d",
+    "bytes": 2777,
+    "original_sha256": "e13952e7d02a792a659e42b62037d4e72d10b7e246a9a8f47d3e43e9590b4b65",
+    "packaging_change": "Read compact covering intervals; the independent antichain verifier reconstructs every endpoint and checks the complete hash."
+  },
+  {
+    "path": "cantor-dust/work/r008_evidence_gap_family.json",
+    "source_round_file": "r008_evidence_gap_family.json",
+    "sha256": "38f40a72aab21c41d6bd683bf4b6d2961ae481b6dd0d54ef4c5bf53fc6d2b11a",
+    "bytes": 3647
+  },
+  {
+    "path": "cantor-dust/work/r008_evidence_gap_family.py",
+    "source_round_file": "r008_evidence_gap_family.py",
+    "sha256": "2403b1ef56a177eb6f956586147fef5e981bd7a6282b1df6ac395f7632fd58de",
+    "bytes": 3657
+  },
+  {
+    "path": "cantor-dust/work/r010_parent_weighted_return_verify.py",
+    "source_round_file": "r010_parent_weighted_return_verify.py",
+    "sha256": "35ce4a5201d85ef46da45ff4977fa007b0d6aa9d680a3e33ebff7f3e91e1422e",
+    "bytes": 7123
+  },
+  {
+    "path": "cantor-dust/work/r010_parent_weighted_verify_57_50.json",
+    "source_round_file": "r010_parent_weighted_verify_57_50.json",
+    "sha256": "d6268d955412154a46d7b89d6dd84d2e60ffd3c2faf7027e05d5dbca93c7ed9a",
+    "bytes": 1200
+  },
+  {
+    "path": "cantor-dust/work/separation20261020_low_certificate.json",
+    "source_round_file": "separation20261020_low_certificate.json",
+    "sha256": "9f6f27e73e5e6b16d7a8125cb871979d5c722d18b23f0083220df083f4a2d2ba",
+    "bytes": 6072
+  },
+  {
+    "path": "cantor-dust/work/separation20261020_parent_check.py",
+    "source_round_file": "separation20261020_parent_check.py",
+    "sha256": "42f7011f24cfe9f6dfa2c0827f5d796c5cf3978cbe4f69cd60688dd22f252be8",
+    "bytes": 1739
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "method": "independent integer log series and endpoint-event union",
+  "coefficient_cells": 6336,
+  "t_intervals": 85,
+  "input_sha256": "891d6632f864e524802b6e094b55f47744d59c34271297bd1168badb697ea4b1",
+  "seconds": 333.969000000041
+}

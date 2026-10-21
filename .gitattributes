@@ -1,0 +1,9 @@
+* text=auto
+/cantor-dust/work/** -text
+*.gz -text
+*.md text eol=lf
+/docs/*.json -text
+/records/** -text
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+/reproduce.py text eol=lf

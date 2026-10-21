@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "method": "independent fixed-point directed integer interval log Taylor series",
+  "input": "work/alln20261020_batch_50001_177146.json",
+  "input_sha256": "c365bf5198f90907ad2ea276c36f959f9a73e3faa3bdba2f7642392e2673733f",
+  "checked": 127146,
+  "range": [
+    50001,
+    177146
+  ],
+  "missing": [],
+  "lattice_denominator_bits": 256,
+  "series_terms": 256,
+  "uniform_corner_margin_lower": "1862700721994518955988091465113414297153888359006834820482934775649359/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+  "seconds": 152.65600000001723,
+  "scope": "Strict log sources in elementary good bands; use the established near-axis transfer and FLT."
+}

@@ -1,0 +1,58 @@
+{
+  "verified_range": [
+    2,
+    300
+  ],
+  "integer_count": 299,
+  "previous_method_count": 290,
+  "new_return_certificates": [
+    {
+      "n": 9,
+      "return_depth": 21,
+      "hausdorff_lower_bound": "log(2)/(21*log(3))"
+    },
+    {
+      "n": 10,
+      "return_depth": 15,
+      "hausdorff_lower_bound": "log(2)/(15*log(3))"
+    },
+    {
+      "n": 23,
+      "return_depth": 16,
+      "hausdorff_lower_bound": "log(2)/(16*log(3))"
+    },
+    {
+      "n": 25,
+      "return_depth": 17,
+      "hausdorff_lower_bound": "log(2)/(17*log(3))"
+    },
+    {
+      "n": 28,
+      "return_depth": 18,
+      "hausdorff_lower_bound": "log(2)/(18*log(3))"
+    },
+    {
+      "n": 31,
+      "return_depth": 16,
+      "hausdorff_lower_bound": "log(2)/(16*log(3))"
+    },
+    {
+      "n": 32,
+      "return_depth": 20,
+      "hausdorff_lower_bound": "log(2)/(20*log(3))"
+    },
+    {
+      "n": 78,
+      "return_depth": 16,
+      "hausdorff_lower_bound": "log(2)/(16*log(3))"
+    },
+    {
+      "n": 82,
+      "return_depth": 17,
+      "hausdorff_lower_bound": "log(2)/(17*log(3))"
+    }
+  ],
+  "missing": [],
+  "all_integer_goal_complete": false,
+  "remaining_gap": "No usable explicit threshold for eventual all-n theorem; n>300 below that unknown threshold remains untreated."
+}

@@ -1,0 +1,27 @@
+{
+  "verification": "PASS",
+  "m": 12,
+  "parameter_domain": [
+    "2",
+    "3"
+  ],
+  "integer_range": [
+    1062882,
+    1594322
+  ],
+  "parameter_cells": 4007,
+  "strict_image_inset": "1/10^12",
+  "finite_log_terms": 12,
+  "ordinary_log_terms": 80,
+  "fixed_point_scale": "2^80",
+  "geometries": [
+    [
+      9,
+      3,
+      4
+    ]
+  ],
+  "input_sha256": "d0d2a4e71d63bc8085b2f94fa811bfdabc22ba404065ae82ef354ca3313fb224",
+  "elapsed_seconds": 75.75,
+  "scope": "Every real t in the reported parameter domain at this fixed M=3^m; actual nonlinear phase and assigned proved slope bands."
+}

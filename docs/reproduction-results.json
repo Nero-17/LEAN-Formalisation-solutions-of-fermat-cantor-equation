@@ -1,0 +1,519 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-21T01:01:47.955951+00:00",
+  "python": "3.12.1",
+  "platform": "Windows",
+  "execution": "Independent suites run concurrently; assembly performed after all suites passed.",
+  "check_count": 29,
+  "source_manifest_sha256": "f339da551fb5930953fceb107f1601c3b91dd779cf8ad240ef9eacb7bce4e136",
+  "checks": [
+    {
+      "job": "polynomial-gaps",
+      "command": [
+        "python",
+        "work/r008_evidence_gap_family.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.178,
+      "log": "records/2026-10-21/logs/polynomial-gaps.txt",
+      "log_sha256": "6283bfde76aa9c5ab04ca821ed71b06cdad081fbfb8f488bceaa56ba1fcf964e"
+    },
+    {
+      "job": "cubic-exclusion",
+      "command": [
+        "python",
+        "work/continuity20261020_low_n3_certificate.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.176,
+      "log": "records/2026-10-21/logs/cubic-exclusion.txt",
+      "log_sha256": "e3c4cf66d979fcb470540b47d4ac62d0ffa627ecf45dc962905674e8b1c37f80"
+    },
+    {
+      "job": "quartic-exclusion",
+      "command": [
+        "python",
+        "work/separation20261020_parent_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.188,
+      "log": "records/2026-10-21/logs/quartic-exclusion.txt",
+      "log_sha256": "0b90394f51d4496eea9c076a66d85ef412e6f5d9abd9f86676dcfe81cbc8f5f2"
+    },
+    {
+      "job": "digital-graphs",
+      "command": [
+        "python",
+        "work/r003_digits_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.345,
+      "log": "records/2026-10-21/logs/digital-graphs.txt",
+      "log_sha256": "730c95594c46d1cf70a98055bdac9aa0caa9aed463f72120be20116eee4fccca"
+    },
+    {
+      "job": "binary-return-9",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "9",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 83.644,
+      "log": "records/2026-10-21/logs/binary-return-9.txt",
+      "log_sha256": "5769396130eb3ee1b20fe3e4a53d2afe9ee910ebb5b028857c55e9e7a0f91e70"
+    },
+    {
+      "job": "binary-return-10",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "10",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.959,
+      "log": "records/2026-10-21/logs/binary-return-10.txt",
+      "log_sha256": "5c14104821e6f8a73193554428b4572853b4844268a0910d18337b63b5cdcee2"
+    },
+    {
+      "job": "binary-return-23",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "23",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.86,
+      "log": "records/2026-10-21/logs/binary-return-23.txt",
+      "log_sha256": "4ded49de86c9309dbf83a13f3eedde84cbb9ab3380d755e4a847b621ef189bda"
+    },
+    {
+      "job": "binary-return-25",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "25",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.961,
+      "log": "records/2026-10-21/logs/binary-return-25.txt",
+      "log_sha256": "51b45a1071fc4a116d85e67a9f084f4f3922c982476f665b735bd6f433fb55fd"
+    },
+    {
+      "job": "binary-return-28",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "28",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 38.251,
+      "log": "records/2026-10-21/logs/binary-return-28.txt",
+      "log_sha256": "ac766fe1afe2f5ac981ef880f684ea4f78460bc66c0b97d52eb0ccacd75bf811"
+    },
+    {
+      "job": "binary-return-31",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "31",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.793,
+      "log": "records/2026-10-21/logs/binary-return-31.txt",
+      "log_sha256": "afb81d2fe48d7d3b22c07c41237bd2ce3032df8b8740a5b5262683178e7ea585"
+    },
+    {
+      "job": "binary-return-32",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "32",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 80.93,
+      "log": "records/2026-10-21/logs/binary-return-32.txt",
+      "log_sha256": "48c8af754324c7f001164566edb57c400fa4d73bcaf0e98b39732beeb7a8cda8"
+    },
+    {
+      "job": "binary-return-78",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "78",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.958,
+      "log": "records/2026-10-21/logs/binary-return-78.txt",
+      "log_sha256": "e90d3a0bc89c14001c82582595c4743d641cd2595e813ed833addffb4d71a0b0"
+    },
+    {
+      "job": "binary-return-82",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "82",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.672,
+      "log": "records/2026-10-21/logs/binary-return-82.txt",
+      "log_sha256": "b8ae8df2c05bac882e0b98019cb0c09e14441130654af6aadc2931748435e4ce"
+    },
+    {
+      "job": "source-transfer-9-10",
+      "command": [
+        "python",
+        "work/r003_r004_transfer_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.209,
+      "log": "records/2026-10-21/logs/source-transfer-9-10.txt",
+      "log_sha256": "89bb7804ea1995e3b34fd4148d0bccbee44fdc330140c056aee1e5fd4b894d09"
+    },
+    {
+      "job": "small-integers",
+      "command": [
+        "python",
+        "work/r003_parent_verify_sources.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.484,
+      "log": "records/2026-10-21/logs/small-integers.txt",
+      "log_sha256": "e776f3d6b5d3a26a8aa5b9fc4ffaefe90503537a40ada0cfba089244aee38b4d"
+    },
+    {
+      "job": "weighted-circle",
+      "command": [
+        "python",
+        "work/r010_parent_weighted_return_verify.py",
+        "work/branching_r010_adaptive_B_57_50_theta2.json",
+        "--output",
+        "work/r010_parent_weighted_verify_57_50.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 217.813,
+      "log": "records/2026-10-21/logs/weighted-circle.txt",
+      "log_sha256": "ca35d28abe9ad3f703c6b100ddf14f74362430370a467c6706eeaf4b34913d98"
+    },
+    {
+      "job": "integer-sources-301-10000",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_logsource_complete_301_10000.json",
+        "--output",
+        "work/alln20261020_parent_complete_301_10000_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.049,
+      "log": "records/2026-10-21/logs/integer-sources-301-10000.txt",
+      "log_sha256": "82ad670a62901426b205791f8ee46820576786bfd04501d36d182a062673a426"
+    },
+    {
+      "job": "integer-sources-10001-50000",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_parent_logsource_10001_50000.json",
+        "--output",
+        "work/alln20261020_parent_10001_50000_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 20.894,
+      "log": "records/2026-10-21/logs/integer-sources-10001-50000.txt",
+      "log_sha256": "cf6003aaa9b3902c07e89609ce794c7e069ea950b8615d8feef71d29f4315369"
+    },
+    {
+      "job": "integer-sources-50001-177146",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_batch_50001_177146.json",
+        "--output",
+        "work/alln20261020_parent_50001_177146_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.629,
+      "log": "records/2026-10-21/logs/integer-sources-50001-177146.txt",
+      "log_sha256": "867690cb8d1b8fe76f51fd20616c611dba5634be49737f6ec8b72372e2008649"
+    },
+    {
+      "job": "integer-sources-177147-531440",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_batch_177147_531440.json",
+        "--output",
+        "work/alln20261020_parent_177147_531440_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 58.941,
+      "log": "records/2026-10-21/logs/integer-sources-177147-531440.txt",
+      "log_sha256": "4cb5cdfb900149d83e5971ead26762c1a5eb6dd75a67a5f1a096257ec7494a05"
+    },
+    {
+      "job": "fixed-scale-12-lower",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "12",
+        "--input",
+        "work/alln20261020_fixed_m12_lower_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 165.543,
+      "log": "records/2026-10-21/logs/fixed-scale-12-lower.txt",
+      "log_sha256": "4cd0c411c63167ab7511c6d795ac71368e296946601d528c5b6752c793ac0d4e"
+    },
+    {
+      "job": "fixed-scale-12-upper",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "12",
+        "--input",
+        "work/alln20261020_fixed_m12_upper_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 122.159,
+      "log": "records/2026-10-21/logs/fixed-scale-12-upper.txt",
+      "log_sha256": "4e4ffbaebb3aaba5276fd25a1d5ea7093e90cc0313d2432613485cc06c4e2fac"
+    },
+    {
+      "job": "fixed-scale-13-lower",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "13",
+        "--input",
+        "work/alln20261020_fixed_m13_lower_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 147.661,
+      "log": "records/2026-10-21/logs/fixed-scale-13-lower.txt",
+      "log_sha256": "f575ada25516fb6c9b5aa6d0583cace28290d74c334858da66387ef61d832fca"
+    },
+    {
+      "job": "fixed-scale-13-upper",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "13",
+        "--input",
+        "work/alln20261020_fixed_m13_upper_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 36.238,
+      "log": "records/2026-10-21/logs/fixed-scale-13-upper.txt",
+      "log_sha256": "ea8b937c12a83809e483d356287be58c2061b762e8e9e204cfd812575183e8da"
+    },
+    {
+      "job": "fixed-scale-14-lower",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "14",
+        "--input",
+        "work/alln20261020_fixed_m14_lower_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 94.721,
+      "log": "records/2026-10-21/logs/fixed-scale-14-lower.txt",
+      "log_sha256": "ecec320732f14d6dfe8492c2c5efa22160a57431d67d53b39f2fa41ab2bc972e"
+    },
+    {
+      "job": "fixed-scale-14-upper",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "14",
+        "--input",
+        "work/alln20261020_fixed_m14_upper_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 27.083,
+      "log": "records/2026-10-21/logs/fixed-scale-14-upper.txt",
+      "log_sha256": "b8ee7990c77befa38c5dfb6b2061a23b24697201b9fb2ffbfe05406cb55c78d1"
+    },
+    {
+      "job": "infinite-tail",
+      "command": [
+        "python",
+        "work/alln20261020_verify_finite_z.py",
+        "--m",
+        "15",
+        "--endpoint-depth",
+        "11"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 91.198,
+      "log": "records/2026-10-21/logs/infinite-tail.txt",
+      "log_sha256": "84ea14a585c0f1e2ccfce3d3b60118b60326ac7a0c9fa78b1d1518b327669e17"
+    },
+    {
+      "job": "independent-infinite-tail",
+      "command": [
+        "python",
+        "work/alln20261020_parent_finite_phase.py",
+        "--m",
+        "15",
+        "--endpoint-depth",
+        "11"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 202.593,
+      "log": "records/2026-10-21/logs/independent-infinite-tail.txt",
+      "log_sha256": "6cede1fde1cadbc938a282101b8a497426b17e54e5da1ad8c6a4369827e46307"
+    },
+    {
+      "job": "coverage-assembly",
+      "command": [
+        "python",
+        "work/alln20261020_assemble.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.651,
+      "log": "records/2026-10-21/logs/coverage-assembly.txt",
+      "log_sha256": "78973ccd8dc56e9a0c173effa29f10867523d5f0560990160b3fbdc9ade80dd1"
+    }
+  ],
+  "reports": [
+    {
+      "path": "records/2026-10-21/reports/alln20261020_all_integer_coverage.json",
+      "sha256": "0ded475c9b2d390eaad694e167945194490078f907950231df79e2a46ac39949"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_finite_z_m15_depth11_verified.json",
+      "sha256": "726d9fa305050564280c1dae5136f1d3874c1590a5210d36c465e04378b08276"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_fixed_m12_lower_verified.json",
+      "sha256": "87e96eda974cbf86cb1012a232d3a843ede4c0a5b3d687c134bf71403e897458"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_fixed_m12_upper_verified.json",
+      "sha256": "055fbe1355f5b7b484ae9a1414cf115d39a33cc5b3964af6f68863389be112ea"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_fixed_m13_lower_verified.json",
+      "sha256": "36be5a6fed78b6f80fec882285b3862b3a82ea9ff8e615d939bc92235e78666d"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_fixed_m13_upper_verified.json",
+      "sha256": "245e52ef0c6299e3291b3f6a000fc6f98eff94850be8da4baae0627bcd1724f6"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_fixed_m14_lower_verified.json",
+      "sha256": "06899771a531d747a9954b4dfa6712896ecde32ebb1fa7423c3a24a9ef8271d8"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_fixed_m14_upper_verified.json",
+      "sha256": "5abcf88b155b4becdd567271ec9f04feba1e34e27fc95c98db00b09ccba4735e"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_parent_10001_50000_verified.json",
+      "sha256": "6f9748e862bce7a6bcfc3310c40f592e7be2bf65cafafe080e8c5624c4c2c9ed"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_parent_177147_531440_verified.json",
+      "sha256": "6aaa44900f9fe945dbb6ddf2e3684d31c989370f9a3953ec046c0b58d1eca56a"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_parent_50001_177146_verified.json",
+      "sha256": "8513daa4d88fe922a22b0d6505a212d6698fa5ba3f2d0700b13e1cdd03e8b363"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_parent_complete_301_10000_verified.json",
+      "sha256": "eb1f98ecf18d5b3e8f9bd8579dc4b6fda168f1cf2f99b7504e5aa67a8cf9f9e8"
+    },
+    {
+      "path": "records/2026-10-21/reports/alln20261020_parent_finite_m15_verified.json",
+      "sha256": "ef05688ba69d170f2b7fd261be8b347ffcd5629a09b7489855fa4a4a9d2ff65f"
+    },
+    {
+      "path": "records/2026-10-21/reports/continuity20261020_low_n3_certificate.json",
+      "sha256": "dd10e06dca04582f9a0ecb329b9b0a759377f4d9bfd92147325db8569f6483a7"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n10.json",
+      "sha256": "e73cd088d71e201766434242cbc868a6616f3eebe34d6ed4f9e93f68ed7dff5a"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n23.json",
+      "sha256": "9cf64ec7d7753677a0457e69d16050eaee4c869b353348718632c1d2149febea"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n25.json",
+      "sha256": "eb4ee7fea40744d5348e8ff986571bef35a6c388d9762a02f55f087c47033d5f"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n28.json",
+      "sha256": "8027ea993916b796cb9464a763df934401daab647c3afbc429351ac462f6ccff"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n31.json",
+      "sha256": "e237ba81cc99c2fac228912ae238cb639e4536b7f4fb75a5e7e5026530f95505"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n32.json",
+      "sha256": "a188b36d41300a03a727c396c30ade6f876f197b7540216254ab1efe0aa7b58e"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n78.json",
+      "sha256": "ee2163648b4ff09aa31c36fb609674e0161ddd161fa14dd69e07de4c96186a49"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n82.json",
+      "sha256": "ebfef19a31ae1e6078032f1ce1da8fda413a49bd44dd65f4572c98d8ad15373e"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_antichain_verify_n9.json",
+      "sha256": "eda87a7be14c86850bbb42a83f01fb625deeedcc2e4c6a157e3daa59792a108a"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_parent_finite_coverage.json",
+      "sha256": "b3f7e1c1375bfda4a57a667fd4c89d77da24e3e94e4a1b374a8b877f5ed71385"
+    },
+    {
+      "path": "records/2026-10-21/reports/r003_r004_transfer_verification.json",
+      "sha256": "ba8f4fd8af2fabf8b58f61c35386631d21f2ea6521e72665de8dd065eee2632d"
+    },
+    {
+      "path": "records/2026-10-21/reports/r008_evidence_gap_family.json",
+      "sha256": "38f40a72aab21c41d6bd683bf4b6d2961ae481b6dd0d54ef4c5bf53fc6d2b11a"
+    },
+    {
+      "path": "records/2026-10-21/reports/r010_parent_weighted_verify_57_50.json",
+      "sha256": "1b1da0e42867bdd19a1fe157adb60e64c79eace62ee253933b56bbd0289475af"
+    }
+  ],
+  "scope": "Exact Python certificate checks, not Lean formalisation or a kernel verification of the paper."
+}

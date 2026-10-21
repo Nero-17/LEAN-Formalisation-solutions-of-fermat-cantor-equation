@@ -1,0 +1,15 @@
+All exact rational checks passed.
+root_derivative 3.4609733756562595
+earlier_scale_excluded 0.72635056
+X_cylinder_forced 0.79799856
+Y_cylinder_forced 1.19035056
+first_projection_gap 0.071648
+nested_gap_below_other_first_children 0.157562145024
+nested_gap_above_other_second_children 0.196047168
+tail_above_gap 0.033977743767090667
+tail_below_gap 0.025184701301058387
+first_scale_above_nested_gap 0.0006513234211587633
+first_scale_below_nested_gap 0.001622556277058388
+near_axis_same_right_excluded 0.071648
+near_axis_low_exponent_excluded 0.267824
+near_axis_high_exponent_excluded 0.392176

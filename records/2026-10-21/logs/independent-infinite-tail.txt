@@ -1,0 +1,23 @@
+verified 500 of 5862
+verified 1000 of 5862
+verified 1500 of 5862
+verified 2000 of 5862
+verified 2500 of 5862
+verified 3000 of 5862
+verified 3500 of 5862
+verified 4000 of 5862
+verified 4500 of 5862
+verified 5000 of 5862
+verified 5500 of 5862
+{
+  "status": "PASS",
+  "minimum_m": 15,
+  "minimum_n": 14348907,
+  "coefficient_cells": 5862,
+  "parameter_intervals": 293,
+  "endpoint_depth": 11,
+  "minimum_z": 1180980,
+  "method": "independent directed Taylor logs and integer endpoint events",
+  "input_sha256": "252e66caecf362399679167af6ac62e633130442ee632c2a12b5f18eb557747d",
+  "seconds": 202.3279999999795
+}
