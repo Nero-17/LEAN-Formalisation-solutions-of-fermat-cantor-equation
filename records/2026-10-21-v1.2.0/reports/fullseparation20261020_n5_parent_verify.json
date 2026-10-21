@@ -1,0 +1,47 @@
+{
+  "status": "PASS_PARTIAL_REDUCTION",
+  "cases": [
+    {
+      "phase": 1,
+      "scale": [
+        "27/100",
+        "27/100"
+      ],
+      "excluded": 4,
+      "unresolved": 0
+    },
+    {
+      "phase": 1,
+      "scale": [
+        "0",
+        "387420489/1000000000000"
+      ],
+      "excluded": 13,
+      "unresolved": 0
+    },
+    {
+      "phase": 2,
+      "scale": [
+        "0",
+        "10460353203/100000000000000"
+      ],
+      "excluded": 7,
+      "unresolved": 0
+    },
+    {
+      "phase": 2,
+      "scale": [
+        "729/10000",
+        "729/10000"
+      ],
+      "excluded": 4971,
+      "unresolved": 127
+    }
+  ],
+  "uniform_lambda_interval": [
+    "269999/1000000",
+    "270001/1000000"
+  ],
+  "independent_lipschitz_margin": "15665259127189586139398175005601976057381138693/100000000000000000000000000000000000000000000000000",
+  "scope": "Only core k=0,m=2 remains; no existence or dimension of that core is proved."
+}

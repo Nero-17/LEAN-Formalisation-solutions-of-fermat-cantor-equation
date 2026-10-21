@@ -1,0 +1,12 @@
+{
+  "status": "INDEPENDENT EXACT PASS",
+  "exponent_interval": [
+    "100",
+    "250"
+  ],
+  "boxes": 21855,
+  "subboxes": 31840,
+  "vertical_strips": 2017,
+  "sha256": "66c1194d117a3e1968e3c12cd7bc1564670987fa7a72bc9aba4ad0c4e0b3e4b8",
+  "seconds": 272.1091253757477
+}

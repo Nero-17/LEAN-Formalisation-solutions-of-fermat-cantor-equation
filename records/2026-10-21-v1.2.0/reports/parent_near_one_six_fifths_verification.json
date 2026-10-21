@@ -1,0 +1,9 @@
+{
+  "status": "INDEPENDENT EXACT PASS",
+  "scope": "analytic extension to n<=6/5 except separately certified7/6,6/5",
+  "exception_count": 14,
+  "remaining": [
+    "7/6",
+    "6/5"
+  ]
+}

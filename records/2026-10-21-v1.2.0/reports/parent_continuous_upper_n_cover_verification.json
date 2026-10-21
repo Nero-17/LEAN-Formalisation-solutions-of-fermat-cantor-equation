@@ -1,0 +1,14 @@
+{
+  "status": "INDEPENDENT EXACT PASS",
+  "checker": "parent_continuous_tight_audit.py",
+  "checker_sha256": "d7e2a872da1053746d64276d9a25f43426c2e147485e14091edd2cd5d7306158",
+  "exponent_interval": [
+    "250",
+    "500"
+  ],
+  "boxes": 51959,
+  "subboxes": 53067,
+  "vertical_strips": 2553,
+  "sha256": "a34db5ccdbb3850ae60e603893252a72cfaf987b4dd7a7207ff50937fdd14b2f",
+  "seconds": 221.59596610069275
+}

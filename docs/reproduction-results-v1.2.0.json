@@ -1,0 +1,783 @@
+{
+  "version": "v1.2.0",
+  "status": "PASS",
+  "started_utc": "2026-10-21T12:23:20+00:00",
+  "completed_replay_record_utc": "2026-10-21T12:47:30.811879+00:00",
+  "manuscript_base_commit": "9dcfae3",
+  "manuscript_source_sha256": {
+    "main.tex": "b5f254955984d870f6ce7e0fefebaeb8003694ea51cd38de20f5b355865df194",
+    "main_zh.tex": "2b8bc829ac5e72076648614eb00caba5c6520a70072cf13e8f36ea04c092ded1",
+    "sections/universal-last-bound.tex": "f7fe5e02f26b819b47ea12e3310a2712586fbac5c2ccc603492afb631f1d7f49",
+    "sections/universal-last-bound-zh.tex": "c36c217bf9b6f3ba11d9085c80e0941120fd27523e4897543caa1b99f30951d6",
+    "sections/universal-last-certificates.tex": "dcb10b578b7da6fabadd434019ab0eb25804a6a34eb779529be5fc073d3ca617",
+    "sections/universal-last-certificates-zh.tex": "0cd246914ec245767241b10cc4593e2a2299c1568317bbb7b18ef58056a484de"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "manifest_sha256": {
+    "source-manifest.json": "85ea429e0480dccd48f73b37af57308f677bd8dee75c593caeae82e39f2335e6",
+    "supplement-manifest.json": "02bbc899ef8cfae46ef4f61924ae5023f9f1a9d4f569928fa2dccabea546b372",
+    "experiments-manifest.json": "c1048328224dc316413a6ee7a020e364dd34d0d2ee3d7511141e1de2b38b1f29"
+  },
+  "execution_arrangement": "The 52 prior top-level jobs ran in one fresh workspace using the pre-integration all driver; the unchanged uniform-bound verifier ran its full --replay in a separate subdirectory in parallel. The recorded 52 job commands exactly match the first 52 entries of the integrated v1.2.0 all suite. Its final entry invokes the same uniform verifier with --replay. The root-level uniform-bound-audit entrypoint was additionally executed in another workspace.",
+  "all_current_suite_jobs_covered": 53,
+  "prior_suite_jobs": [
+    {
+      "job": "polynomial-gaps",
+      "command": [
+        "python",
+        "work/r008_evidence_gap_family.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.082,
+      "log": "logs/polynomial-gaps.txt"
+    },
+    {
+      "job": "cubic-exclusion",
+      "command": [
+        "python",
+        "work/continuity20261020_low_n3_certificate.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.114,
+      "log": "logs/cubic-exclusion.txt"
+    },
+    {
+      "job": "quartic-exclusion",
+      "command": [
+        "python",
+        "work/separation20261020_parent_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.115,
+      "log": "logs/quartic-exclusion.txt"
+    },
+    {
+      "job": "digital-graphs",
+      "command": [
+        "python",
+        "work/r003_digits_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.147,
+      "log": "logs/digital-graphs.txt"
+    },
+    {
+      "job": "binary-return-9",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "9",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 27.539,
+      "log": "logs/binary-return-9.txt"
+    },
+    {
+      "job": "binary-return-10",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "10",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.989,
+      "log": "logs/binary-return-10.txt"
+    },
+    {
+      "job": "binary-return-23",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "23",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.304,
+      "log": "logs/binary-return-23.txt"
+    },
+    {
+      "job": "binary-return-25",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "25",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.611,
+      "log": "logs/binary-return-25.txt"
+    },
+    {
+      "job": "binary-return-28",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "28",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.285,
+      "log": "logs/binary-return-28.txt"
+    },
+    {
+      "job": "binary-return-31",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "31",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.963,
+      "log": "logs/binary-return-31.txt"
+    },
+    {
+      "job": "binary-return-32",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "32",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 27.178,
+      "log": "logs/binary-return-32.txt"
+    },
+    {
+      "job": "binary-return-78",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "78",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.225,
+      "log": "logs/binary-return-78.txt"
+    },
+    {
+      "job": "binary-return-82",
+      "command": [
+        "python",
+        "work/r003_parent_antichain_verify.py",
+        "--n",
+        "82",
+        "--compact"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.614,
+      "log": "logs/binary-return-82.txt"
+    },
+    {
+      "job": "source-transfer-9-10",
+      "command": [
+        "python",
+        "work/r003_r004_transfer_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.096,
+      "log": "logs/source-transfer-9-10.txt"
+    },
+    {
+      "job": "small-integers",
+      "command": [
+        "python",
+        "work/r003_parent_verify_sources.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.247,
+      "log": "logs/small-integers.txt"
+    },
+    {
+      "job": "weighted-circle",
+      "command": [
+        "python",
+        "work/r010_parent_weighted_return_verify.py",
+        "work/branching_r010_adaptive_B_57_50_theta2.json",
+        "--output",
+        "work/r010_parent_weighted_verify_57_50.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 88.095,
+      "log": "logs/weighted-circle.txt"
+    },
+    {
+      "job": "integer-sources-301-10000",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_logsource_complete_301_10000.json",
+        "--output",
+        "work/alln20261020_parent_complete_301_10000_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.353,
+      "log": "logs/integer-sources-301-10000.txt"
+    },
+    {
+      "job": "integer-sources-10001-50000",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_parent_logsource_10001_50000.json",
+        "--output",
+        "work/alln20261020_parent_10001_50000_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.33,
+      "log": "logs/integer-sources-10001-50000.txt"
+    },
+    {
+      "job": "integer-sources-50001-177146",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_batch_50001_177146.json",
+        "--output",
+        "work/alln20261020_parent_50001_177146_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.12,
+      "log": "logs/integer-sources-50001-177146.txt"
+    },
+    {
+      "job": "integer-sources-177147-531440",
+      "command": [
+        "python",
+        "work/alln20261020_parent_exact_logs.py",
+        "--input",
+        "work/alln20261020_batch_177147_531440.json",
+        "--output",
+        "work/alln20261020_parent_177147_531440_verified.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 13.861,
+      "log": "logs/integer-sources-177147-531440.txt"
+    },
+    {
+      "job": "fixed-scale-12-lower",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "12",
+        "--input",
+        "work/alln20261020_fixed_m12_lower_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 52.792,
+      "log": "logs/fixed-scale-12-lower.txt"
+    },
+    {
+      "job": "fixed-scale-12-upper",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "12",
+        "--input",
+        "work/alln20261020_fixed_m12_upper_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 57.519,
+      "log": "logs/fixed-scale-12-upper.txt"
+    },
+    {
+      "job": "fixed-scale-13-lower",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "13",
+        "--input",
+        "work/alln20261020_fixed_m13_lower_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 65.614,
+      "log": "logs/fixed-scale-13-lower.txt"
+    },
+    {
+      "job": "fixed-scale-13-upper",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "13",
+        "--input",
+        "work/alln20261020_fixed_m13_upper_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 20.784,
+      "log": "logs/fixed-scale-13-upper.txt"
+    },
+    {
+      "job": "fixed-scale-14-lower",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "14",
+        "--input",
+        "work/alln20261020_fixed_m14_lower_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 65.815,
+      "log": "logs/fixed-scale-14-lower.txt"
+    },
+    {
+      "job": "fixed-scale-14-upper",
+      "command": [
+        "python",
+        "work/alln20261020_verify_fixed_m.py",
+        "--m",
+        "14",
+        "--input",
+        "work/alln20261020_fixed_m14_upper_candidate.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 22.241,
+      "log": "logs/fixed-scale-14-upper.txt"
+    },
+    {
+      "job": "infinite-tail",
+      "command": [
+        "python",
+        "work/alln20261020_verify_finite_z.py",
+        "--m",
+        "15",
+        "--endpoint-depth",
+        "11"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 63.255,
+      "log": "logs/infinite-tail.txt"
+    },
+    {
+      "job": "independent-infinite-tail",
+      "command": [
+        "python",
+        "work/alln20261020_parent_finite_phase.py",
+        "--m",
+        "15",
+        "--endpoint-depth",
+        "11"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 102.873,
+      "log": "logs/independent-infinite-tail.txt"
+    },
+    {
+      "job": "coverage-assembly",
+      "command": [
+        "python",
+        "work/alln20261020_assemble.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.085,
+      "log": "logs/coverage-assembly.txt"
+    },
+    {
+      "job": "rational-lattice-width",
+      "command": [
+        "python",
+        "work/thirdreal20261021_rational_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.101,
+      "log": "logs/rational-lattice-width.txt"
+    },
+    {
+      "job": "actual-8-over-3-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_actual83_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.105,
+      "log": "logs/actual-8-over-3-source.txt"
+    },
+    {
+      "job": "independent-8-over-3-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_irrational_83_actual_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.099,
+      "log": "logs/independent-8-over-3-source.txt"
+    },
+    {
+      "job": "finite-rationals",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_scan.py",
+        "2187"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 53.579,
+      "log": "logs/finite-rationals.txt"
+    },
+    {
+      "job": "repaired-rationals",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_repair.py",
+        "2187"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.892,
+      "log": "logs/repaired-rationals.txt"
+    },
+    {
+      "job": "real-phase-7",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_layers.py",
+        "7"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 32.758,
+      "log": "logs/real-phase-7.txt"
+    },
+    {
+      "job": "real-phase-8",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_layers.py",
+        "8"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 27.77,
+      "log": "logs/real-phase-8.txt"
+    },
+    {
+      "job": "real-phase-9",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_layers.py",
+        "9"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 26.844,
+      "log": "logs/real-phase-9.txt"
+    },
+    {
+      "job": "real-phase-10",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_layers.py",
+        "10"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 28.572,
+      "log": "logs/real-phase-10.txt"
+    },
+    {
+      "job": "real-phase-11",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_layers.py",
+        "11"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.929,
+      "log": "logs/real-phase-11.txt"
+    },
+    {
+      "job": "near-one-sources",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_nearone.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.375,
+      "log": "logs/near-one-sources.txt"
+    },
+    {
+      "job": "near-one-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_returns.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.421,
+      "log": "logs/near-one-returns.txt"
+    },
+    {
+      "job": "8-over-7-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_87.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.088,
+      "log": "logs/8-over-7-source.txt"
+    },
+    {
+      "job": "8-over-7-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_returns.py",
+        "3291854706059752449652/2493145389759550335983",
+        "15"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.661,
+      "log": "logs/8-over-7-returns.txt"
+    },
+    {
+      "job": "11-over-4-source-and-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_general_source.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.662,
+      "log": "logs/11-over-4-source-and-returns.txt"
+    },
+    {
+      "job": "53-over-2-source-and-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_532_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.097,
+      "log": "logs/53-over-2-source-and-returns.txt"
+    },
+    {
+      "job": "independent-53-over-2-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_532.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.159,
+      "log": "logs/independent-53-over-2-source.txt"
+    },
+    {
+      "job": "8-over-3-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_rational_actual83_returns_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 104.14,
+      "log": "logs/8-over-3-returns.txt"
+    },
+    {
+      "job": "8-over-3-return-comparison",
+      "command": [
+        "python",
+        "work/thirdreal20261021_rational_actual83_returns_compare.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.098,
+      "log": "logs/8-over-3-return-comparison.txt"
+    },
+    {
+      "job": "retained-large-scale-joins",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_large.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2,
+      "log": "logs/retained-large-scale-joins.txt"
+    },
+    {
+      "job": "real-coverage-ledger",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_final.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.193,
+      "log": "logs/real-coverage-ledger.txt"
+    },
+    {
+      "job": "n5-shell-reduction",
+      "command": [
+        "python",
+        "work/fullseparation20261020_n5_parent_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.631,
+      "log": "logs/n5-shell-reduction.txt"
+    },
+    {
+      "job": "n5-core-exclusion",
+      "command": [
+        "python",
+        "work/fullseparation20261020_n5_joint_parent_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.098,
+      "log": "logs/n5-core-exclusion.txt"
+    }
+  ],
+  "uniform_bound": {
+    "exit_code": 0,
+    "complete_arithmetic_replay": true,
+    "constituent_commands": [
+      "parent_near_one_audit.py",
+      "parent_cubic_cover_verify.py 0 7/6 n7_6_analytic_cover.jsonl",
+      "parent_cubic_cover_verify.py 0 6/5 n6_5_analytic_cover.jsonl",
+      "parent_continuous_cover_audit.py continuous_small_n_cover.jsonl",
+      "parent_continuous_cover_audit.py continuous_medium_n_cover.jsonl",
+      "parent_continuous_cover_audit.py continuous_high_n_cover.jsonl",
+      "parent_continuous_cover_audit.py continuous_bridge_n_cover.jsonl",
+      "parent_continuous_tight_audit.py continuous_upper_n_cover.jsonl",
+      "parent_uniform_phase_audit.py adversarial_phase_small_M1000_D7.jsonl",
+      "parent_finite_shell_audit.py adversarial_finite_shells_N500.jsonl"
+    ],
+    "dependency_report": {
+      "status": "COMPLETE VERIFIED DEPENDENCY CHAIN",
+      "scope": "Every real n>1 and every (sqrt(3)-1)/2<=lambda<=1/2",
+      "statement": "dim_H E_(n,lambda)>0; hence lambda_max(n)<=(sqrt(3)-1)/2",
+      "exact_replay_performed": true,
+      "dependencies": [
+        {
+          "report": "parent_near_one_verification.json",
+          "sha256": "060649597098c6db20b4d779d6dc24b5c261ddacc1c33a55d521300a347ae7a8"
+        },
+        {
+          "report": "parent_near_one_six_fifths_verification.json",
+          "sha256": "36e0464cf92be23bae6cabd9db4d701a3a371de30cee05088f83be6543e3ddad"
+        },
+        {
+          "data": "n7_6_analytic_cover.jsonl",
+          "sha256": "0ce259acb7f327aea75cd39a0510af852e0e9bbfb007480ce38308c8f0aab83c"
+        },
+        {
+          "data": "n6_5_analytic_cover.jsonl",
+          "sha256": "fb41b770f70c3892ac03c8778da7c3e195c0e1fc8f4f9673bf3c12820f91b4f4"
+        },
+        {
+          "data": "continuous_small_n_cover.jsonl",
+          "sha256": "70c7f902b198bc880594515fb5b39c64cda149f4829da3b7da158564889cb2fd",
+          "exponent_interval": [
+            "6/5",
+            "2"
+          ],
+          "boxes": 152
+        },
+        {
+          "data": "continuous_medium_n_cover.jsonl",
+          "sha256": "df97f6b2523633861ec7959637e90a1d485e6dee2de15c15e69ffdd759a23df0",
+          "exponent_interval": [
+            "2",
+            "10"
+          ],
+          "boxes": 1905
+        },
+        {
+          "data": "continuous_high_n_cover.jsonl",
+          "sha256": "6bc5f9e6c499d2055c5fb3448ae670ff94c08e05953687d4bdf9aac277f4dfc7",
+          "exponent_interval": [
+            "10",
+            "100"
+          ],
+          "boxes": 13369
+        },
+        {
+          "data": "continuous_bridge_n_cover.jsonl",
+          "sha256": "66c1194d117a3e1968e3c12cd7bc1564670987fa7a72bc9aba4ad0c4e0b3e4b8",
+          "exponent_interval": [
+            "100",
+            "250"
+          ],
+          "boxes": 21855
+        },
+        {
+          "data": "continuous_upper_n_cover.jsonl",
+          "sha256": "a34db5ccdbb3850ae60e603893252a72cfaf987b4dd7a7207ff50937fdd14b2f",
+          "exponent_interval": [
+            "250",
+            "500"
+          ],
+          "boxes": 51959
+        },
+        {
+          "data": "adversarial_phase_small_M1000_D7.jsonl",
+          "sha256": "4a53a3262a9514258d802d30472b646ebb5dce79fd4bcaa7c2c1a57b7c4ae199"
+        },
+        {
+          "data": "adversarial_finite_shells_N500.jsonl",
+          "sha256": "b955e2e258c9058916b20413c94e1bc601a13389ef38031fa8d740a42f0913a4"
+        }
+      ],
+      "verifier_sha256": {
+        "verify_universal_bound.py": "612e405291c00667a5ca32f3bc0addc87b920451b06956f50d4c79b010867a79",
+        "parent_near_one_audit.py": "9b9fc95303a3d904af0a0c9c71a95cb6b3fd99d3b011f95d538d12870ebb9618",
+        "parent_cubic_cover_verify.py": "93be0588c386bcb9c1aafb446fc1e45ed840801310a90ba023fd65a919f99af3",
+        "parent_phase_audit.py": "edbc4fe12cfee9b99ece62f45311f30dfdfc44230ac305f71be30285361b18c6",
+        "parent_continuous_cover_audit.py": "876097360e24c1d3ba801f7255ff815021bb70637c8b14c95b1e5b0440a9eff1",
+        "parent_continuous_tight_audit.py": "d7e2a872da1053746d64276d9a25f43426c2e147485e14091edd2cd5d7306158",
+        "parent_uniform_phase_audit.py": "c0e4d2e01b6bd7250426fa7a17e9e1b95a6584a556394a346b836f85763488b2",
+        "parent_finite_shell_audit.py": "9336b7b7578a58a1ca0aefa0de9fe558e75b483242b8308b3c8f5293234b0330"
+      },
+      "mathematical_inputs": [
+        "analytic all-interior source theorem",
+        "near-one coefficient-grid and monotonicity reductions",
+        "continuous exponent endpoint reductions and scale transfer",
+        "finite-phase tail reduction and endpoint-cylinder legality"
+      ]
+    },
+    "log": "logs/uniform-last-bound.txt"
+  },
+  "coverage_checks": {
+    "primary_input_files": 191,
+    "supplement_payload_files": 31,
+    "experiment_and_figure_files": 23,
+    "explicit_manuscript_code_data_mentions": 32,
+    "exact_verifier_local_import_modules": 43,
+    "exact_verification_requires_only_standard_library": true
+  },
+  "figure_reproduction": {
+    "status": "PASS",
+    "scope": "Archived trace export and plotting; no parameter scans rerun",
+    "tables": 2,
+    "rows_per_table": 25,
+    "jobs": [
+      {
+        "script": "experiments/phase-transitions/export_transition_estimates.py",
+        "exit_code": 0,
+        "elapsed_seconds": 0.14
+      },
+      {
+        "script": "experiments/phase-transitions/estimate_first_transition.py",
+        "exit_code": 0,
+        "elapsed_seconds": 0.387
+      },
+      {
+        "script": "figures/generate_phase_diagram.py",
+        "exit_code": 0,
+        "elapsed_seconds": 1.409
+      },
+      {
+        "script": "figures/generate_phase_diagram_zh.py",
+        "exit_code": 0,
+        "elapsed_seconds": 1.6
+      }
+    ]
+  },
+  "manuscript_compilation": {
+    "English": "PASS, no undefined references or overfull boxes",
+    "Chinese": "PASS, no undefined references or overfull boxes"
+  },
+  "limitations": "The mathematical reductions remain in the manuscript. Saved-report assembly and hash checks are identified separately from arithmetic replay. Numerical scans were not rerun; both published tables were reconstructed from archived raw traces and compared exactly. This is not Lean kernel verification."
+}

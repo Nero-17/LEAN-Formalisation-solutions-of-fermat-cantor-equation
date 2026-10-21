@@ -1,0 +1,103 @@
+Verifying: parent_near_one_audit.py
+Verifying: parent_cubic_cover_verify.py 0 7/6 n7_6_analytic_cover.jsonl
+Verifying: parent_cubic_cover_verify.py 0 6/5 n6_5_analytic_cover.jsonl
+Verifying: parent_continuous_cover_audit.py continuous_small_n_cover.jsonl
+Verifying: parent_continuous_cover_audit.py continuous_medium_n_cover.jsonl
+Verifying: parent_continuous_cover_audit.py continuous_high_n_cover.jsonl
+Verifying: parent_continuous_cover_audit.py continuous_bridge_n_cover.jsonl
+Verifying: parent_continuous_tight_audit.py continuous_upper_n_cover.jsonl
+Verifying: parent_uniform_phase_audit.py adversarial_phase_small_M1000_D7.jsonl
+Verifying: parent_finite_shell_audit.py adversarial_finite_shells_N500.jsonl
+{
+  "status": "COMPLETE VERIFIED DEPENDENCY CHAIN",
+  "scope": "Every real n>1 and every (sqrt(3)-1)/2<=lambda<=1/2",
+  "statement": "dim_H E_(n,lambda)>0; hence lambda_max(n)<=(sqrt(3)-1)/2",
+  "exact_replay_performed": true,
+  "dependencies": [
+    {
+      "report": "parent_near_one_verification.json",
+      "sha256": "060649597098c6db20b4d779d6dc24b5c261ddacc1c33a55d521300a347ae7a8"
+    },
+    {
+      "report": "parent_near_one_six_fifths_verification.json",
+      "sha256": "36e0464cf92be23bae6cabd9db4d701a3a371de30cee05088f83be6543e3ddad"
+    },
+    {
+      "data": "n7_6_analytic_cover.jsonl",
+      "sha256": "0ce259acb7f327aea75cd39a0510af852e0e9bbfb007480ce38308c8f0aab83c"
+    },
+    {
+      "data": "n6_5_analytic_cover.jsonl",
+      "sha256": "fb41b770f70c3892ac03c8778da7c3e195c0e1fc8f4f9673bf3c12820f91b4f4"
+    },
+    {
+      "data": "continuous_small_n_cover.jsonl",
+      "sha256": "70c7f902b198bc880594515fb5b39c64cda149f4829da3b7da158564889cb2fd",
+      "exponent_interval": [
+        "6/5",
+        "2"
+      ],
+      "boxes": 152
+    },
+    {
+      "data": "continuous_medium_n_cover.jsonl",
+      "sha256": "df97f6b2523633861ec7959637e90a1d485e6dee2de15c15e69ffdd759a23df0",
+      "exponent_interval": [
+        "2",
+        "10"
+      ],
+      "boxes": 1905
+    },
+    {
+      "data": "continuous_high_n_cover.jsonl",
+      "sha256": "6bc5f9e6c499d2055c5fb3448ae670ff94c08e05953687d4bdf9aac277f4dfc7",
+      "exponent_interval": [
+        "10",
+        "100"
+      ],
+      "boxes": 13369
+    },
+    {
+      "data": "continuous_bridge_n_cover.jsonl",
+      "sha256": "66c1194d117a3e1968e3c12cd7bc1564670987fa7a72bc9aba4ad0c4e0b3e4b8",
+      "exponent_interval": [
+        "100",
+        "250"
+      ],
+      "boxes": 21855
+    },
+    {
+      "data": "continuous_upper_n_cover.jsonl",
+      "sha256": "a34db5ccdbb3850ae60e603893252a72cfaf987b4dd7a7207ff50937fdd14b2f",
+      "exponent_interval": [
+        "250",
+        "500"
+      ],
+      "boxes": 51959
+    },
+    {
+      "data": "adversarial_phase_small_M1000_D7.jsonl",
+      "sha256": "4a53a3262a9514258d802d30472b646ebb5dce79fd4bcaa7c2c1a57b7c4ae199"
+    },
+    {
+      "data": "adversarial_finite_shells_N500.jsonl",
+      "sha256": "b955e2e258c9058916b20413c94e1bc601a13389ef38031fa8d740a42f0913a4"
+    }
+  ],
+  "verifier_sha256": {
+    "verify_universal_bound.py": "612e405291c00667a5ca32f3bc0addc87b920451b06956f50d4c79b010867a79",
+    "parent_near_one_audit.py": "9b9fc95303a3d904af0a0c9c71a95cb6b3fd99d3b011f95d538d12870ebb9618",
+    "parent_cubic_cover_verify.py": "93be0588c386bcb9c1aafb446fc1e45ed840801310a90ba023fd65a919f99af3",
+    "parent_phase_audit.py": "edbc4fe12cfee9b99ece62f45311f30dfdfc44230ac305f71be30285361b18c6",
+    "parent_continuous_cover_audit.py": "876097360e24c1d3ba801f7255ff815021bb70637c8b14c95b1e5b0440a9eff1",
+    "parent_continuous_tight_audit.py": "d7e2a872da1053746d64276d9a25f43426c2e147485e14091edd2cd5d7306158",
+    "parent_uniform_phase_audit.py": "c0e4d2e01b6bd7250426fa7a17e9e1b95a6584a556394a346b836f85763488b2",
+    "parent_finite_shell_audit.py": "9336b7b7578a58a1ca0aefa0de9fe558e75b483242b8308b3c8f5293234b0330"
+  },
+  "mathematical_inputs": [
+    "analytic all-interior source theorem",
+    "near-one coefficient-grid and monotonicity reductions",
+    "continuous exponent endpoint reductions and scale transfer",
+    "finite-phase tail reduction and endpoint-cylinder legality"
+  ]
+}

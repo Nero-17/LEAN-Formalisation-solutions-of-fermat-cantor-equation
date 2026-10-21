@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "maximum_exponent": 2187,
+  "total": 8033550,
+  "width_covered": 7738063,
+  "exact_sources": 294016,
+  "unresolved_by_this_scan": 1471,
+  "source_sign_method": "Independent 200-bit 70-term outward Horner logarithms",
+  "source_phase_reconstruction_examples": [
+    {
+      "a": 3,
+      "b": 2,
+      "p_depth": 4,
+      "q_depth": 3,
+      "d": "1/2",
+      "k_residue_mod_b": 1
+    },
+    {
+      "a": 5,
+      "b": 2,
+      "p_depth": 3,
+      "q_depth": 3,
+      "d": "1/2",
+      "k_residue_mod_b": 1
+    },
+    {
+      "a": 7,
+      "b": 2,
+      "p_depth": 6,
+      "q_depth": 5,
+      "d": "2",
+      "k_residue_mod_b": 0
+    }
+  ],
+  "seconds": 53.34400000000096
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "m": 7,
+  "cells": 650,
+  "groups": 1448,
+  "denominator_checks": 70200,
+  "input_sha256": "5174afc9be799446ac951f7fa98f46e159cac9edca1dc4dde72f579bc332903f",
+  "seconds": 32.63730263710022,
+  "scope": "Independent logarithms, reconstructed inner phase intervals, strict derivative bands, exact modular covers and full closed-parameter joins"
+}

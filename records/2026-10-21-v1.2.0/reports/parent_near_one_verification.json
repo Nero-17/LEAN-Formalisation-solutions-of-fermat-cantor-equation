@@ -1,0 +1,11 @@
+{
+  "status": "INDEPENDENT EXACT PASS",
+  "scope": "all real 1<n<=11/10, all c<=lambda<=1/2",
+  "exceptions": [
+    "15/14",
+    "14/13",
+    "13/12",
+    "12/11",
+    "11/10"
+  ]
+}

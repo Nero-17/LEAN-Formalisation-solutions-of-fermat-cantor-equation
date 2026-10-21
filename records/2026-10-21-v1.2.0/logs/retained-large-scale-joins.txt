@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "Retained report hashes, legal geometry, exact parameter-domain joins; earlier full interval calculations not rerun",
+  "fixed_scales": [
+    {
+      "file": "alln20261020_fixed_m12_lower",
+      "cells": 4914,
+      "hash_match": true
+    },
+    {
+      "file": "alln20261020_fixed_m12_upper",
+      "cells": 4007,
+      "hash_match": true
+    },
+    {
+      "file": "alln20261020_fixed_m13_lower",
+      "cells": 4800,
+      "hash_match": true
+    },
+    {
+      "file": "alln20261020_fixed_m13_upper",
+      "cells": 1227,
+      "hash_match": true
+    },
+    {
+      "file": "alln20261020_fixed_m14_lower",
+      "cells": 4094,
+      "hash_match": true
+    },
+    {
+      "file": "alln20261020_fixed_m14_upper",
+      "cells": 1216,
+      "hash_match": true
+    }
+  ],
+  "tail_endpoint_intervals": 293,
+  "minimum_exponent": 531441
+}

@@ -1,0 +1,58 @@
+verified 1000 seconds 0.20300000000133878
+verified 2000 seconds 0.40600000000267755
+verified 3000 seconds 0.6399999999994179
+verified 4000 seconds 0.875
+verified 5000 seconds 1.1090000000003783
+verified 6000 seconds 1.3440000000009604
+verified 7000 seconds 1.6560000000026776
+verified 8000 seconds 1.9690000000009604
+verified 9000 seconds 2.264999999999418
+verified 10000 seconds 2.5780000000013388
+verified 11000 seconds 2.7190000000009604
+verified 12000 seconds 2.875
+verified 13000 seconds 3.014999999999418
+verified 14000 seconds 3.172000000002299
+verified 15000 seconds 3.3280000000013388
+verified 16000 seconds 3.5
+verified 17000 seconds 3.672000000002299
+verified 18000 seconds 3.8590000000003783
+verified 19000 seconds 4.047000000002299
+verified 20000 seconds 4.234000000000378
+verified 21000 seconds 4.422000000002299
+verified 22000 seconds 4.609000000000378
+verified 23000 seconds 4.7810000000026776
+verified 24000 seconds 4.96900000000096
+verified 25000 seconds 5.172000000002299
+verified 26000 seconds 5.389999999999418
+verified 27000 seconds 5.59400000000096
+verified 28000 seconds 5.828000000001339
+verified 29000 seconds 6.062000000001717
+verified 30000 seconds 6.312000000001717
+verified 31000 seconds 6.562000000001717
+verified 32000 seconds 6.828000000001339
+verified 33000 seconds 7.047000000002299
+verified 34000 seconds 7.2810000000026776
+verified 35000 seconds 7.514999999999418
+verified 36000 seconds 7.734000000000378
+verified 37000 seconds 7.984000000000378
+verified 38000 seconds 8.25
+verified 39000 seconds 8.514999999999418
+verified 40000 seconds 8.828000000001339
+{
+  "status": "PASS",
+  "method": "independent fixed-point directed integer interval log Taylor series",
+  "input": "work/alln20261020_parent_logsource_10001_50000.json",
+  "input_sha256": "44a8bff6e7d4dfba737f878d151de25d756b6044aa92cbf8b399b4ff76dcc4ca",
+  "checked": 40000,
+  "range": [
+    10001,
+    50000
+  ],
+  "missing": [],
+  "lattice_denominator_bits": 256,
+  "series_terms": 256,
+  "log_integer_block_terms": 32,
+  "uniform_corner_margin_lower": "292220489492413642673162470693818655053746841530680967986771805087913/3618502788666131106986593281521497120414687020801267626233049500247285301248",
+  "seconds": 8.84400000000096,
+  "scope": "Strict log sources in proved elementary or graph bands; use the established near-axis transfer and FLT."
+}

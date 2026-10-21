@@ -1,0 +1,9 @@
+{
+  "status": "INDEPENDENT EXACT PASS",
+  "slabs": 36,
+  "sources": 33755,
+  "minimum_exponent": 3000,
+  "minimum_scale": 1000,
+  "scope": "all lambda in [c,1/2]",
+  "sha256": "4a53a3262a9514258d802d30472b646ebb5dce79fd4bcaa7c2c1a57b7c4ae199"
+}

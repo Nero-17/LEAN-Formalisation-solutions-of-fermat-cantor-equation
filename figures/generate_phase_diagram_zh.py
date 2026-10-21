@@ -1,7 +1,7 @@
 """Phase diagram with exact values and numerical transition estimates.
 
-Run with Python and matplotlib. All root calculations below only position
-analytic sufficient regions in the figure; they are not numerical proofs.
+Run with Python and matplotlib. The upper shaded region is guaranteed by the
+uniform real-exponent bound; it does not assert an exact transition location.
 Squares read finite-depth estimates from the accompanying CSV files;
 circles retain the previously proved exact values. See the method notes.
 """
@@ -22,29 +22,12 @@ with (OUT/'first-transition-estimates.csv').open(newline='',encoding='utf-8') as
 plt.rcParams.update({'font.family': ['Microsoft YaHei', 'STIXGeneral'], 'font.size': 12,
                      'mathtext.fontset': 'stix', 'pdf.fonttype': 42})
 
-def root(function, lo=.25, hi=.5):
-    assert function(lo) < 0 < function(hi)
-    for _ in range(70):
-        mid = (lo + hi)/2
-        if function(mid) > 0:
-            hi = mid
-        else:
-            lo = mid
-    return (lo + hi)/2
-
-def beta(n):
-    return root(lambda x: x**n*(1-x)**(n-1)-(1-2*x))
-
 blue = ['#155AA4', '#8BB9E5', '#DAEAF9']
 red = ['#B73F50', '#E5A6AE', '#F3DDE1']
 fig, ax = plt.subplots(figsize=(12, 7.4))
-fig.subplots_adjust(left=.075, right=.975, bottom=.22, top=.93)
-fig.suptitle('Hausdorff 相变图', fontsize=18, y=.985)
-ns = [2+6*i/1200 for i in range(1201)]
-bs = [beta(n) for n in ns]
+fig.subplots_adjust(left=.075, right=.975, bottom=.22, top=.97)
 ax.axhspan(0, .25, color='#F1F5F9', zorder=0)
-ax.fill_between(ns, bs, .5, color='#F8DFE3', zorder=1)
-ax.plot(ns, bs, color='#CE929E', lw=1, ls=(0,(3,3)), zorder=2)
+ax.axhspan((math.sqrt(3)-1)/2, .5, color='#F8DFE3', zorder=1)
 ax.set_axisbelow(True)
 ax.grid(axis='y', color='#E7EBF0', lw=.65)
 ax.axhline(.25, color=blue[2], lw=4.5, zorder=3)
@@ -78,20 +61,16 @@ for frac in fractions:
 
 ax.text(5, .12, r'$\dim_{\mathrm{H}}(E_{n,\lambda})=0$  (定理 3.2)',
         ha='center', va='center', fontsize=22, color='#556676')
-ax.annotate(r'$\dim_{\mathrm{H}}(E_{n,\lambda})>0$  (定理 4.2)',
-            xy=(2.40,.478), xytext=(2.80,.449),
-            fontsize=14, color='#A34254', zorder=12,
-            bbox=dict(facecolor='white',edgecolor='none',alpha=.96,pad=3),
-            arrowprops=dict(arrowstyle='->',color='#A34254',lw=.9,
-                            connectionstyle='arc3,rad=-.1'))
+ax.text(5, .45, r'$\dim_{\mathrm{H}}(E_{n,\lambda})>0$',
+        ha='center', va='center', fontsize=22, color='#A34254', zorder=12)
 ax.text(5.2, .378,
-        r'所有实数 $n>1$: $\lambda_{\max}(n)<(\sqrt{3}-1)/2$  (定理 4.5)',
+        r'所有实数 $n>1$: $\lambda_{\max}(n)<(\sqrt{3}-1)/2$  (定理 4.2)',
         ha='center', fontsize=17, color='#AF7E87',
         bbox=dict(facecolor='white', edgecolor='none', alpha=.94, pad=3), zorder=10)
 ax.text(5.8, .226,
         r'无理指数 $n$: $\lambda_{\min}(n)=1/4$  (定理 3.7)',
         ha='center', color='#769DC3', fontsize=17, zorder=10)
-ax.annotate(r'$2-\sqrt{3}$  (定理 4.8)',
+ax.annotate(r'$2-\sqrt{3}$  (定理 4.4)',
             xy=(2,2-math.sqrt(3)), xytext=(2.10,.307),
             color=blue[0], fontsize=12,
             arrowprops=dict(arrowstyle='-',color=blue[0],lw=.8), zorder=10)

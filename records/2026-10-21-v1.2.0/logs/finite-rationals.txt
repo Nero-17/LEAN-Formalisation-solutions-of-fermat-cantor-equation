@@ -1,0 +1,94 @@
+Exact source checks 5000
+Exact source checks 10000
+Exact source checks 15000
+Exact source checks 20000
+Exact source checks 25000
+Exact source checks 30000
+Exact source checks 35000
+Exact source checks 40000
+Exact source checks 45000
+Exact source checks 50000
+Exact source checks 55000
+Exact source checks 60000
+Exact source checks 65000
+Exact source checks 70000
+Exact source checks 75000
+Exact source checks 80000
+Exact source checks 85000
+Exact source checks 90000
+Exact source checks 95000
+Exact source checks 100000
+Exact source checks 105000
+Exact source checks 110000
+Exact source checks 115000
+Exact source checks 120000
+Exact source checks 125000
+Exact source checks 130000
+Exact source checks 135000
+Exact source checks 140000
+Exact source checks 145000
+Exact source checks 150000
+Exact source checks 155000
+Exact source checks 160000
+Exact source checks 165000
+Exact source checks 170000
+Exact source checks 175000
+Exact source checks 180000
+Exact source checks 185000
+Exact source checks 190000
+Exact source checks 195000
+Exact source checks 200000
+Exact source checks 205000
+Exact source checks 210000
+Exact source checks 215000
+Exact source checks 220000
+Exact source checks 225000
+Exact source checks 230000
+Exact source checks 235000
+Exact source checks 240000
+Exact source checks 245000
+Exact source checks 250000
+Exact source checks 255000
+Exact source checks 260000
+Exact source checks 265000
+Exact source checks 270000
+Exact source checks 275000
+Exact source checks 280000
+Exact source checks 285000
+Exact source checks 290000
+{
+  "status": "PASS",
+  "maximum_exponent": 2187,
+  "total": 8033550,
+  "width_covered": 7738063,
+  "exact_sources": 294016,
+  "unresolved_by_this_scan": 1471,
+  "source_sign_method": "Independent 200-bit 70-term outward Horner logarithms",
+  "source_phase_reconstruction_examples": [
+    {
+      "a": 3,
+      "b": 2,
+      "p_depth": 4,
+      "q_depth": 3,
+      "d": "1/2",
+      "k_residue_mod_b": 1
+    },
+    {
+      "a": 5,
+      "b": 2,
+      "p_depth": 3,
+      "q_depth": 3,
+      "d": "1/2",
+      "k_residue_mod_b": 1
+    },
+    {
+      "a": 7,
+      "b": 2,
+      "p_depth": 6,
+      "q_depth": 5,
+      "d": "2",
+      "k_residue_mod_b": 0
+    }
+  ],
+  "seconds": 53.34400000000096
+}

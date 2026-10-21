@@ -76,15 +76,15 @@
   },
   {
     "path": "figures/generate_phase_diagram.py",
-    "sha256": "3e7cac5c3c64eef20a3d0a637ee845effc63d33049bda340c70360f56a529168",
-    "bytes": 6692,
-    "provenance": "Current manuscript figure source / plotted data / rendered output"
+    "sha256": "8ada6d6d4c80c98919606043ea6b579cb23898a52097a8ba16b67e3b43b99d73",
+    "bytes": 5934,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
   },
   {
     "path": "figures/generate_phase_diagram_zh.py",
-    "sha256": "f494395c4b5641ebb0f36c83424d0e4853c53a3fea718c997ff11ebfbd401737",
-    "bytes": 6692,
-    "provenance": "Current manuscript figure source / plotted data / rendered output"
+    "sha256": "e25e5405eda6554bd141a36da947399e2a22a1b82224533e88571d1ddfc10939",
+    "bytes": 5957,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
   },
   {
     "path": "figures/generate_figure.py",
@@ -118,26 +118,26 @@
   },
   {
     "path": "figures/phase-diagram.pdf",
-    "sha256": "ff627b004a1f9cb24f0f45ff9156997e6957c3cc6099982f9e9ab71d6d021ca5",
-    "bytes": 31387,
-    "provenance": "Current manuscript figure source / plotted data / rendered output"
+    "sha256": "c2c01beb037b274cd4dfec2a216863661508529bebcf3fade2cb1641dbdf0cea",
+    "bytes": 15525,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
   },
   {
     "path": "figures/phase-diagram-zh.pdf",
-    "sha256": "4c1425b9dab45beb455fab5b312ab1bf2b3f6a24ea4dfa3adcfbe25191cbeace",
-    "bytes": 50486,
-    "provenance": "Current manuscript figure source / plotted data / rendered output"
+    "sha256": "f87682c9ee69811a9e65eefb282d3b66e2cdfd15445b838b78d88a6e6782e563",
+    "bytes": 32632,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
   },
   {
     "path": "figures/phase-diagram-preview.png",
-    "sha256": "9e614485743ee79037c2f8928c56ba47e67990477a373108258a6b6419efadb5",
-    "bytes": 214916,
-    "provenance": "Current manuscript figure source / plotted data / rendered output"
+    "sha256": "9f61c6d58db761e394ec90a25672a9e590224b3617e7560cbfbfe7db1ac04e38",
+    "bytes": 185167,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
   },
   {
     "path": "figures/phase-diagram-zh-preview.png",
-    "sha256": "31fba15892e826add5c67de47055c517e67f914e2aed6e37014c91e9a04ee1fa",
-    "bytes": 226329,
-    "provenance": "Current manuscript figure source / plotted data / rendered output"
+    "sha256": "a79e096c6b0cffdae4c4efbc7f59f409e097caa9955cf486d4591ab8a5b750c6",
+    "bytes": 204666,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
   }
 ]

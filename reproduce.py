@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import sys
 import time
+import zipfile
 
 ROOT = Path(__file__).resolve().parent
 SPECIAL = (9, 10, 23, 25, 28, 31, 32, 78, 82)
@@ -78,7 +79,36 @@ def jobs(suite):
                                real('real-coverage-ledger', 'adversarial_final')]
     groups['numerical-anchor'] = [(name, ['work/fullseparation20261020_'+script+'.py']) for name,script in
                                   [('n5-shell-reduction','n5_parent_verify'),('n5-core-exclusion','n5_joint_parent_verify')]]
+    groups['uniform-bound'] = [('uniform-last-bound', ['universal-last-bound/verify_universal_bound.py', '--replay'])]
+    if suite == 'uniform-bound-audit':
+        return [('uniform-last-bound-saved-reports', ['universal-last-bound/verify_universal_bound.py'])]
     return sum(groups.values(), []) if suite == 'all' else groups.get(suite, [])
+
+def materialize_uniform(workspace):
+    metadata = json.loads((ROOT/'docs/supplement-manifest.json').read_text(encoding='utf-8'))
+    archive = ROOT/metadata['path']
+    if hashlib.sha256(archive.read_bytes()).hexdigest() != metadata['sha256']:
+        raise RuntimeError('Supplement archive checksum mismatch')
+    destination = workspace/'universal-last-bound'
+    destination.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(archive) as packed:
+        manifest = json.loads(packed.read('MANIFEST.json'))
+        if set(packed.namelist()) != set(manifest)|{'MANIFEST.json'}:
+            raise RuntimeError('Supplement contains missing or unlisted files')
+        for name, checksum in manifest.items():
+            if Path(name).name != name:
+                raise RuntimeError('Unexpected supplement path: '+name)
+            raw = packed.read(name)
+            if hashlib.sha256(raw).hexdigest() != checksum:
+                raise RuntimeError('Supplement input checksum mismatch: '+name)
+            target = destination/name
+            if not target.exists():
+                target.write_bytes(raw)
+            elif not name.endswith('_verification.json') and target.read_bytes() != raw:
+                raise RuntimeError('Workspace supplement input modified: '+str(target))
+        (destination/'MANIFEST.json').write_bytes(packed.read('MANIFEST.json'))
+    return len(manifest)
+
 
 def materialize(workspace):
     manifest = json.loads((ROOT/'docs'/'source-manifest.json').read_text())
@@ -98,16 +128,26 @@ def materialize(workspace):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('suite', choices=['prepare','audit','quick','returns','integer-sources','phase-covers','assembly','real-quick','real-sources','real-phase-covers','real-returns','real-assembly','numerical-anchor','all'])
+    parser.add_argument('suite', choices=['prepare','audit','quick','returns','integer-sources','phase-covers','assembly','real-quick','real-sources','real-phase-covers','real-returns','real-assembly','numerical-anchor','uniform-bound','uniform-bound-audit','all'])
     parser.add_argument('--workspace', type=Path, default=ROOT/'.reproduce')
     parser.add_argument('--only', help='Run a single job name within the selected suite')
+    parser.add_argument('--list', action='store_true', help='List exact commands without running or extracting them')
     args=parser.parse_args()
     if sys.version_info < (3,11):raise SystemExit('Python 3.11 or later is required.')
     if not __debug__:raise SystemExit('Do not use python -O: the exact verifiers require assertions.')
+    if args.list:
+        for name, arguments in jobs(args.suite):
+            print(name+': python '+' '.join(arguments))
+        return
     workspace=args.workspace.resolve()
     manifest=materialize(workspace)
+    supplement_count=materialize_uniform(workspace)
     if args.suite in ('prepare','audit'):
-        print(f'PASS: checked {len(manifest)} archived input hashes; no mathematical checks were rerun.')
+        experiments=json.loads((ROOT/'docs/experiments-manifest.json').read_text(encoding='utf-8'))
+        for item in experiments:
+            if hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest()!=item['sha256']:
+                raise RuntimeError('Experiment/figure input checksum mismatch: '+item['path'])
+        print(f'PASS: checked {len(manifest)} primary, {supplement_count} supplement and {len(experiments)} experiment/figure input hashes; no mathematical checks were rerun.')
         return
     selected=jobs(args.suite)
     if args.only:

@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "conclusion": "Every integer n>=2 has an uncountable, indeed positive-Hausdorff-dimensional Fermat intersection in C^2.",
+  "n_equals_one": "The reflected graph {(x,1-x):x in C}; dimension log(2)/log(3).",
+  "coverage": [
+    {
+      "range": [
+        2,
+        300
+      ],
+      "kind": "previously proved source and return certificates",
+      "report": "r003_parent_finite_coverage.json",
+      "report_sha256": "b3f7e1c1375bfda4a57a667fd4c89d77da24e3e94e4a1b374a8b877f5ed71385"
+    },
+    {
+      "range": [
+        301,
+        10000
+      ],
+      "kind": "strict exact logarithmic sources",
+      "report": "alln20261020_parent_complete_301_10000_verified.json",
+      "candidate": "alln20261020_logsource_complete_301_10000.json",
+      "input_sha256": "ff55817debb5e6bdd805e5ed370f9314c73f659a5a97fdee1f92d7bae0e9a49a"
+    },
+    {
+      "range": [
+        10001,
+        50000
+      ],
+      "kind": "strict exact logarithmic sources",
+      "report": "alln20261020_parent_10001_50000_verified.json",
+      "candidate": "alln20261020_parent_logsource_10001_50000.json",
+      "input_sha256": "44a8bff6e7d4dfba737f878d151de25d756b6044aa92cbf8b399b4ff76dcc4ca"
+    },
+    {
+      "range": [
+        50001,
+        177146
+      ],
+      "kind": "strict exact logarithmic sources",
+      "report": "alln20261020_parent_50001_177146_verified.json",
+      "candidate": "alln20261020_batch_50001_177146.json",
+      "input_sha256": "c365bf5198f90907ad2ea276c36f959f9a73e3faa3bdba2f7642392e2673733f"
+    },
+    {
+      "range": [
+        177147,
+        531440
+      ],
+      "kind": "strict exact logarithmic sources",
+      "report": "alln20261020_parent_177147_531440_verified.json",
+      "candidate": "alln20261020_batch_177147_531440.json",
+      "input_sha256": "7bd2a11d2c76516a90d91b6db2853b0bb9c085331fc386f9e1904e0c3360c492"
+    },
+    {
+      "range": [
+        531441,
+        1062882
+      ],
+      "kind": "whole fixed-scale parameter interval",
+      "report": "alln20261020_fixed_m12_lower_verified.json",
+      "candidate": "alln20261020_fixed_m12_lower_candidate.json",
+      "input_sha256": "8c08493a66e290428829e41b05c64bae69a7537ae2afd9f0adb80728eac839f0"
+    },
+    {
+      "range": [
+        1062882,
+        1594322
+      ],
+      "kind": "whole fixed-scale parameter interval",
+      "report": "alln20261020_fixed_m12_upper_verified.json",
+      "candidate": "alln20261020_fixed_m12_upper_candidate.json",
+      "input_sha256": "d0d2a4e71d63bc8085b2f94fa811bfdabc22ba404065ae82ef354ca3313fb224"
+    },
+    {
+      "range": [
+        1594323,
+        3188646
+      ],
+      "kind": "whole fixed-scale parameter interval",
+      "report": "alln20261020_fixed_m13_lower_verified.json",
+      "candidate": "alln20261020_fixed_m13_lower_candidate.json",
+      "input_sha256": "865252d098f15f6eb0f0d2dac81deabf67fbc158f7cba1db34c5652a3297a409"
+    },
+    {
+      "range": [
+        3188646,
+        4782968
+      ],
+      "kind": "whole fixed-scale parameter interval",
+      "report": "alln20261020_fixed_m13_upper_verified.json",
+      "candidate": "alln20261020_fixed_m13_upper_candidate.json",
+      "input_sha256": "c336378b52f953e6c9487636dc2bc8a0c90d3453231cb9807bbb36ca8baa017d"
+    },
+    {
+      "range": [
+        4782969,
+        9565938
+      ],
+      "kind": "whole fixed-scale parameter interval",
+      "report": "alln20261020_fixed_m14_lower_verified.json",
+      "candidate": "alln20261020_fixed_m14_lower_candidate.json",
+      "input_sha256": "24a3b804ac21f9f5d9d2e88556c5acd6f767c3b9ab327b6b4874eea0416b4f81"
+    },
+    {
+      "range": [
+        9565938,
+        14348906
+      ],
+      "kind": "whole fixed-scale parameter interval",
+      "report": "alln20261020_fixed_m14_upper_verified.json",
+      "candidate": "alln20261020_fixed_m14_upper_candidate.json",
+      "input_sha256": "0648dc7dd39ded277890d2d5f581725e42bed8e246dc72d7762f38b57ade94e0"
+    },
+    {
+      "range": [
+        14348907,
+        "infinity"
+      ],
+      "kind": "uniform finite-scale full-phase theorem",
+      "report": "alln20261020_parent_finite_m15_verified.json",
+      "candidate": "alln20261020_finite_z_m15_h3_depth11.json",
+      "input_sha256": "252e66caecf362399679167af6ac62e633130442ee632c2a12b5f18eb557747d"
+    }
+  ],
+  "integer_gap": null,
+  "complete_utc": "2026-10-21T12:37:06.642471+00:00",
+  "scope": "Coverage assembly and input integrity, relying on the already executed exact source/phase/return verifiers and the written transfer proof."
+}

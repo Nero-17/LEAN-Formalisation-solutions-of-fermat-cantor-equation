@@ -1,0 +1,15 @@
+{
+  "status": "INDEPENDENT EXACT PASS",
+  "minimum_exponent": 500,
+  "slabs": 75,
+  "sources": 22859,
+  "scale_indices": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "tail_dependency_sha256": "4a53a3262a9514258d802d30472b646ebb5dce79fd4bcaa7c2c1a57b7c4ae199",
+  "sha256": "b955e2e258c9058916b20413c94e1bc601a13389ef38031fa8d740a42f0913a4",
+  "seconds": 37.25526428222656
+}

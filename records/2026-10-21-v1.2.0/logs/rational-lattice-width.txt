@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "denominator_cutoff": 110,
+  "rows": 16,
+  "covered_interval": [
+    "1",
+    "3"
+  ],
+  "bounds": "All exact Fraction inequalities; ln3<11/10 and ln(1+u)>u/(1+u)."
+}

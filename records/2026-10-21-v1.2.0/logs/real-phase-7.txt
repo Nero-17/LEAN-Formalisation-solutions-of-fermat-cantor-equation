@@ -1,0 +1,7 @@
+m 7 cells 100 seconds 3.5
+m 7 cells 200 seconds 11.6
+m 7 cells 300 seconds 18.8
+m 7 cells 400 seconds 23.8
+m 7 cells 500 seconds 29.1
+m 7 cells 600 seconds 31.4
+{'status': 'PASS', 'm': 7, 'cells': 650, 'groups': 1448, 'denominator_checks': 70200, 'input_sha256': '5174afc9be799446ac951f7fa98f46e159cac9edca1dc4dde72f579bc332903f', 'seconds': 32.63730263710022, 'scope': 'Independent logarithms, reconstructed inner phase intervals, strict derivative bands, exact modular covers and full closed-parameter joins'}

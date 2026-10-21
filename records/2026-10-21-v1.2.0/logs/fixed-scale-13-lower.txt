@@ -1,0 +1,75 @@
+13 verified 0 of 4800 0.64
+13 verified 100 of 4800 1.74
+13 verified 200 of 4800 2.41
+13 verified 300 of 4800 3.09
+13 verified 400 of 4800 5.0
+13 verified 500 of 4800 6.16
+13 verified 600 of 4800 7.27
+13 verified 700 of 4800 7.74
+13 verified 800 of 4800 8.72
+13 verified 900 of 4800 9.62
+13 verified 1000 of 4800 12.08
+13 verified 1100 of 4800 13.67
+13 verified 1200 of 4800 15.59
+13 verified 1300 of 4800 17.55
+13 verified 1400 of 4800 18.77
+13 verified 1500 of 4800 19.97
+13 verified 1600 of 4800 20.97
+13 verified 1700 of 4800 22.11
+13 verified 1800 of 4800 23.05
+13 verified 1900 of 4800 24.55
+13 verified 2000 of 4800 25.84
+13 verified 2100 of 4800 27.09
+13 verified 2200 of 4800 28.49
+13 verified 2300 of 4800 29.7
+13 verified 2400 of 4800 31.49
+13 verified 2500 of 4800 32.88
+13 verified 2600 of 4800 34.45
+13 verified 2700 of 4800 36.03
+13 verified 2800 of 4800 37.06
+13 verified 2900 of 4800 37.99
+13 verified 3000 of 4800 38.83
+13 verified 3100 of 4800 39.78
+13 verified 3200 of 4800 41.7
+13 verified 3300 of 4800 43.72
+13 verified 3400 of 4800 45.45
+13 verified 3500 of 4800 47.36
+13 verified 3600 of 4800 49.2
+13 verified 3700 of 4800 50.59
+13 verified 3800 of 4800 52.19
+13 verified 3900 of 4800 53.58
+13 verified 4000 of 4800 55.06
+13 verified 4100 of 4800 56.3
+13 verified 4200 of 4800 57.45
+13 verified 4300 of 4800 58.59
+13 verified 4400 of 4800 59.95
+13 verified 4500 of 4800 61.69
+13 verified 4600 of 4800 62.8
+13 verified 4700 of 4800 63.86
+{
+  "verification": "PASS",
+  "m": 13,
+  "parameter_domain": [
+    "1",
+    "2"
+  ],
+  "integer_range": [
+    1594323,
+    3188646
+  ],
+  "parameter_cells": 4800,
+  "strict_image_inset": "1/10^12",
+  "finite_log_terms": 12,
+  "ordinary_log_terms": 80,
+  "fixed_point_scale": "2^80",
+  "geometries": [
+    [
+      9,
+      3,
+      4
+    ]
+  ],
+  "input_sha256": "865252d098f15f6eb0f0d2dac81deabf67fbc158f7cba1db34c5652a3297a409",
+  "elapsed_seconds": 65.03199999999924,
+  "scope": "Every real t in the reported parameter domain at this fixed M=3^m; actual nonlinear phase and assigned proved slope bands."
+}

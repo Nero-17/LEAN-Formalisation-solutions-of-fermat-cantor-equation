@@ -38,3 +38,9 @@ MANIFEST.json gives the SHA-256 of all supplied code, data and reports.
 The preserved original verification report states the non-strict bound;
 the manuscript's strict bound additionally uses local persistence of
 the strict actual source at the boundary contraction.
+
+Unified repository entrypoint (v1.2.0):
+    python reproduce.py uniform-bound
+Run it from the repository root. It validates and extracts the unchanged ZIP
+into .reproduce/universal-last-bound and executes the full replay.
+The same stage is included in python reproduce.py all.

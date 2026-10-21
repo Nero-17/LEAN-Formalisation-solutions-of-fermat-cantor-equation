@@ -1,0 +1,27 @@
+verified 1000 seconds 0.2809999999990396
+verified 2000 seconds 0.6089999999967404
+verified 3000 seconds 0.7659999999996217
+verified 4000 seconds 0.9529999999977008
+verified 5000 seconds 1.1879999999982829
+verified 6000 seconds 1.5469999999986612
+verified 7000 seconds 1.7969999999986612
+verified 8000 seconds 1.9219999999986612
+verified 9000 seconds 2.077999999997701
+{
+  "status": "PASS",
+  "method": "independent fixed-point directed integer interval log Taylor series",
+  "input": "work/alln20261020_logsource_complete_301_10000.json",
+  "input_sha256": "ff55817debb5e6bdd805e5ed370f9314c73f659a5a97fdee1f92d7bae0e9a49a",
+  "checked": 9700,
+  "range": [
+    301,
+    10000
+  ],
+  "missing": [],
+  "lattice_denominator_bits": 256,
+  "series_terms": 256,
+  "log_integer_block_terms": 32,
+  "uniform_corner_margin_lower": "208647418965045954395046662469091644466752076076438554687351328092931659/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+  "seconds": 2.202999999997701,
+  "scope": "Strict log sources in proved elementary or graph bands; use the established near-axis transfer and FLT."
+}

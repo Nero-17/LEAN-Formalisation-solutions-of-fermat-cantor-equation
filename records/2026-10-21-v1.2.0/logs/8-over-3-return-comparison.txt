@@ -1,0 +1,2 @@
+PASS: all17 depth rows match exactly, including all interval counts and covered-component counts.
+{'depth': 17, 'one_intervals': 289323, 'two_intervals': 1787353, 'covered_components': 3}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "exponent": "6/5",
+  "left_exact": "36552540378443864676372317075293618347140262690519/100000000000000000000000000000000000000000000000000",
+  "patches": 74,
+  "subboxes": 137,
+  "max_bisection_depth": 4,
+  "right_exact": "1/2",
+  "right_float": 0.5,
+  "snapshot_sha256": "fb41b770f70c3892ac03c8778da7c3e195c0e1fc8f4f9673bf3c12820f91b4f4",
+  "arithmetic": "outward integer intervals, denominator 10^60",
+  "elapsed_seconds": 0.2855346202850342
+}

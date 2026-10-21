@@ -1,0 +1,40 @@
+13 verified 0 of 1227 0.38
+13 verified 100 of 1227 2.2
+13 verified 200 of 1227 3.17
+13 verified 300 of 1227 3.98
+13 verified 400 of 1227 4.59
+13 verified 500 of 1227 5.69
+13 verified 600 of 1227 6.26
+13 verified 700 of 1227 6.86
+13 verified 800 of 1227 11.28
+13 verified 900 of 1227 14.2
+13 verified 1000 of 1227 17.33
+13 verified 1100 of 1227 18.66
+13 verified 1200 of 1227 20.19
+{
+  "verification": "PASS",
+  "m": 13,
+  "parameter_domain": [
+    "2",
+    "3"
+  ],
+  "integer_range": [
+    3188646,
+    4782968
+  ],
+  "parameter_cells": 1227,
+  "strict_image_inset": "1/10^12",
+  "finite_log_terms": 12,
+  "ordinary_log_terms": 80,
+  "fixed_point_scale": "2^80",
+  "geometries": [
+    [
+      9,
+      3,
+      4
+    ]
+  ],
+  "input_sha256": "c336378b52f953e6c9487636dc2bc8a0c90d3453231cb9807bbb36ca8baa017d",
+  "elapsed_seconds": 20.28099999999904,
+  "scope": "Every real t in the reported parameter domain at this fixed M=3^m; actual nonlinear phase and assigned proved slope bands."
+}
