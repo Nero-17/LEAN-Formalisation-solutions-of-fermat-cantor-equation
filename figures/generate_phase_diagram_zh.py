@@ -59,16 +59,16 @@ for frac in fractions:
                 zorder=11, clip_on=False)
 
 
-ax.text(5, .12, r'$\dim_{\mathrm{H}}(E_{n,\lambda})=0$  (定理 3.2)',
+ax.text(5, .12, r'$\dim_{\mathrm{H}}(E_{\alpha,\lambda})=0$  (定理 3.2)',
         ha='center', va='center', fontsize=22, color='#556676')
-ax.text(5, .45, r'$\dim_{\mathrm{H}}(E_{n,\lambda})>0$',
+ax.text(5, .45, r'$\dim_{\mathrm{H}}(E_{\alpha,\lambda})>0$',
         ha='center', va='center', fontsize=22, color='#A34254', zorder=12)
 ax.text(5.2, .378,
-        r'所有实数 $n>1$: $\lambda_{\max}(n)<(\sqrt{3}-1)/2$  (定理 4.2)',
+        r'所有实数 $\alpha>1$: $\lambda_{\max}(\alpha)<(\sqrt{3}-1)/2$  (定理 4.2)',
         ha='center', fontsize=17, color='#AF7E87',
         bbox=dict(facecolor='white', edgecolor='none', alpha=.94, pad=3), zorder=10)
 ax.text(5.8, .226,
-        r'无理指数 $n$: $\lambda_{\min}(n)=1/4$  (定理 3.7)',
+        r'无理指数 $\alpha$: $\lambda_{\min}(\alpha)=1/4$  (定理 3.7)',
         ha='center', color='#769DC3', fontsize=17, zorder=10)
 ax.annotate(r'$2-\sqrt{3}$  (定理 4.4)',
             xy=(2,2-math.sqrt(3)), xytext=(2.10,.307),
@@ -79,7 +79,7 @@ ax.annotate(r'$\lambda_{\min}(4)=1/4$  (命题 3.10)',
             color=blue[0], fontsize=11.5,
             arrowprops=dict(arrowstyle='-',color=blue[0],lw=.8,
                             connectionstyle='arc3,rad=-.12'), zorder=10)
-ax.text(5.2, .326, r'所有实数 $n>1$: $\dim_{\mathrm{H}}(E_{n,1/3})>0$  (定理 3.1)',
+ax.text(5.2, .326, r'所有实数 $\alpha>1$: $\dim_{\mathrm{H}}(E_{\alpha,1/3})>0$  (定理 3.1)',
         ha='center', va='top', fontsize=15.5, color='#FF0000',
         bbox=dict(facecolor='white',edgecolor='none',alpha=.94,pad=2), zorder=12)
 ax.plot(2, 1/3, marker='*', linestyle='none', markersize=17,
@@ -88,7 +88,7 @@ ax.plot(2, 1/3, marker='*', linestyle='none', markersize=17,
 ax.set_xlim(2,8)
 ax.set_ylim(0,.5)
 ax.set_xticks(range(2,9))
-ax.set_xlabel(r'$n$', fontsize=17, labelpad=6)
+ax.set_xlabel(r'$\alpha$', fontsize=17, labelpad=6)
 ax.set_ylabel(r'$\lambda$', fontsize=19, rotation=0, labelpad=20)
 ax.set_yticks([0,.1,.2,.25,1/3,.4,.5])
 ax.set_yticklabels(['0','0.1','0.2',r'$\frac{1}{4}$',r'$\frac{1}{3}$','0.4',r'$\frac{1}{2}$'])
