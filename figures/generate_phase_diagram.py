@@ -85,13 +85,13 @@ ax.annotate(r'$\dim_{\mathrm{H}}(E_{n,\lambda})>0$  (Theorem 4.2)',
             arrowprops=dict(arrowstyle='->',color='#A34254',lw=.9,
                             connectionstyle='arc3,rad=-.1'))
 ax.text(5.2, .378,
-        r'Irrational $n$: $\lambda_{\max}(n)\leq(\sqrt{3}-1)/2$  (Theorem 4.4)',
+        r'All real $n>1$: $\lambda_{\max}(n)<(\sqrt{3}-1)/2$  (Theorem 4.5)',
         ha='center', fontsize=17, color='#AF7E87',
         bbox=dict(facecolor='white', edgecolor='none', alpha=.94, pad=3), zorder=10)
 ax.text(5.8, .226,
         r'Irrational $n$: $\lambda_{\min}(n)=1/4$  (Theorem 3.7)',
         ha='center', color='#769DC3', fontsize=17, zorder=10)
-ax.annotate(r'$2-\sqrt{3}$  (Theorem 4.7)',
+ax.annotate(r'$2-\sqrt{3}$  (Theorem 4.8)',
             xy=(2,2-math.sqrt(3)), xytext=(2.10,.307),
             color=blue[0], fontsize=12,
             arrowprops=dict(arrowstyle='-',color=blue[0],lw=.8), zorder=10)
@@ -124,7 +124,7 @@ handles += [Line2D([],[],color=blue[2],lw=3,label='First: irrational')]
 handles += [Line2D([],[],color=red[i],marker='s',linestyle='none',ms=6,
                    label='Last: '+name)
             for i,name in enumerate(['integer','noninteger rational'])]
-handles += [Line2D([],[],color=red[2],lw=3,ls='--',label='Last bound: irrational')]
+handles += [Line2D([],[],color=red[2],lw=3,ls='--',label='Last bound: all real')]
 # Matplotlib lays out legends by columns: pair first/last for each class.
 handles = [handles[j] for j in [0,3,1,4,2,5]]
 fig.legend(handles=handles,ncol=3,loc='lower center',bbox_to_anchor=(.52,.055),

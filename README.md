@@ -1,7 +1,8 @@
 # Computational companion: solutions of the Fermat–Cantor equation
 
 Experiments, algorithms, exact certificates and reproduction instructions for
-**Solutions of xⁿ + yⁿ = 1 in λ-Cantor sets**. The manuscript uses **v1.1.0**.
+**Solutions of xⁿ + yⁿ = 1 in λ-Cantor sets**. The earlier results use **v1.1.0**; the new uniform last-transition theorem uses
+the [additional certificate package](docs/universal-last-bound.md) on the current branch.
 The [paper-to-files index](docs/paper-index.md) identifies the material for each result.
 
 The current release uses exact Python arithmetic. **It contains no Lean proofs
