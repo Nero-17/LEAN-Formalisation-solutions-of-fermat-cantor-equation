@@ -76,15 +76,17 @@
   },
   {
     "path": "figures/generate_phase_diagram.py",
-    "sha256": "8ada6d6d4c80c98919606043ea6b579cb23898a52097a8ba16b67e3b43b99d73",
-    "bytes": 5934,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
+    "sha256": "09ada4e9dc91c17212db3e3564c500f7514736bc6e42717db33f1a2e23d5fd3a",
+    "bytes": 5979,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
+    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
   },
   {
     "path": "figures/generate_phase_diagram_zh.py",
-    "sha256": "e25e5405eda6554bd141a36da947399e2a22a1b82224533e88571d1ddfc10939",
-    "bytes": 5957,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
+    "sha256": "f44ad4089c0b2e7e02745f620584485300ca018f2b9af4ce5d89c07fc8745441",
+    "bytes": 6002,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
+    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
   },
   {
     "path": "figures/generate_figure.py",
@@ -118,26 +120,30 @@
   },
   {
     "path": "figures/phase-diagram.pdf",
-    "sha256": "c2c01beb037b274cd4dfec2a216863661508529bebcf3fade2cb1641dbdf0cea",
-    "bytes": 15525,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
+    "sha256": "826bcb5173d206e4e5ee295c09e0c4418fb94a741c234f647004f184a4e10bfc",
+    "bytes": 15535,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
+    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
   },
   {
     "path": "figures/phase-diagram-zh.pdf",
-    "sha256": "f87682c9ee69811a9e65eefb282d3b66e2cdfd15445b838b78d88a6e6782e563",
-    "bytes": 32632,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
+    "sha256": "8b1f1fdb3c931d84195bbaf111c568bac116fe6849776f2736258f0a559d23b0",
+    "bytes": 32641,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
+    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
   },
   {
     "path": "figures/phase-diagram-preview.png",
-    "sha256": "9f61c6d58db761e394ec90a25672a9e590224b3617e7560cbfbfe7db1ac04e38",
-    "bytes": 185167,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
+    "sha256": "45849283d7e8a7ded842cfa35e7f7335f551c20828180b5ea02c6a21dad5c403",
+    "bytes": 185800,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
+    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
   },
   {
     "path": "figures/phase-diagram-zh-preview.png",
-    "sha256": "a79e096c6b0cffdae4c4efbc7f59f409e097caa9955cf486d4591ab8a5b750c6",
-    "bytes": 204666,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0"
+    "sha256": "0c30defed27b870927785652274039e70151bd75ea36b34d38117e1a6629dd40",
+    "bytes": 205467,
+    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
+    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
   }
 ]
