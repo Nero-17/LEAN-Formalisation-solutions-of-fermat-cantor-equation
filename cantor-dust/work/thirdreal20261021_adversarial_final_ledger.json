@@ -1,0 +1,67 @@
+{
+  "status": "ACCEPT: computer-assisted theorem for every real n>1",
+  "timestamp_utc": "2026-10-21T10:48:45.136760+00:00",
+  "proof_review": "Analytic mechanisms and all coverage joins independently reviewed; expensive continuous layers adopted from separately implemented parent replay after source inspection and hash matching.",
+  "partition": [
+    "All irrational n>1: tuned affine source and irrational phase density.",
+    "All integer n>1: retained all-integer theorem, including independent circle case.",
+    "All reduced rational denominators b>=110: uniform strict lattice-width certificate.",
+    "Reduced denominators 2..109 and 1<n<2187: independently re-enumerated exhaustive finite certificates plus seven independently proved sources.",
+    "Reduced denominators 2..109 and 2187<=n<=531441: five continuous phase covers, independently replayed.",
+    "All rational n>=531441: retained continuous fixed layers and tail, with rational phase congruence and real-power Taylor transfer."
+  ],
+  "finite_partition": {
+    "total": 8033550,
+    "width": 7738063,
+    "individual": 295480,
+    "specials": 7
+  },
+  "continuous_layers": [
+    {
+      "m": 7,
+      "cells": 650,
+      "sha256": "5174afc9be799446ac951f7fa98f46e159cac9edca1dc4dde72f579bc332903f"
+    },
+    {
+      "m": 8,
+      "cells": 508,
+      "sha256": "5ee7c7e66a1adefcbde4bf7048775c8d1d02dfa199fd3d518fede903bde4e580"
+    },
+    {
+      "m": 9,
+      "cells": 470,
+      "sha256": "e2cf727a210f40de8a7925d3120cfafbf23ccfe494a4d63e271826a6ed648841"
+    },
+    {
+      "m": 10,
+      "cells": 552,
+      "sha256": "c247c26e3412c0b1cafeb42417c6b5e04c7e78a9938009c0694f29b336558c78"
+    },
+    {
+      "m": 11,
+      "cells": 547,
+      "sha256": "9d8c3b54467898fe1a96378a2b94f923d353caaa43ae3726d98938722290e056"
+    }
+  ],
+  "final_exception": {
+    "exponent": "8/3",
+    "return_depth": 17,
+    "margin": "1/10000000",
+    "dimension_lower_bound": "log(2)/(17*log(3))"
+  },
+  "receipt_hashes": {
+    "adversarial_scan_2187_verified.json": "bd880717604020e2f74f0e59df243b9841713ee9afb8ea9302a34fd641312b47",
+    "adversarial_repair_2187_verified.json": "813fb782278f7ef7ce4139d6460832adf26192247664ae1413a0886662654c54",
+    "adversarial_large_verified.json": "5f88c547fc389c2e8aa386610cf43ea80ffc4e3d0be06aec3581c1d90400fe84",
+    "adversarial_87_verified.json": "57dd945f131380229d6a73e256bd9a7ab37af73cdae10ad5f2afb1072d9d33c3",
+    "adversarial_nearone_verified.json": "f7fd7b00b1635365d18e7f148679d96e5a4053c152fc8b20acc7edf25d68dde6",
+    "adversarial_114_verified.json": "b6012d9cb8f9fad792c9b63864fbc93cafaf5e92397eadd3d0915f6651df0594",
+    "adversarial_532_verified.json": "aed04f91c56f8389d96e1af590c11792e2cbe81148d12afd586b7be66b9f5a9c",
+    "parent_532_verified.json": "0107b67a22f4ffb41cdfb31e5560ffcbb8040b2a4b29ade8e44ca153ae214aaa",
+    "parent_actual83_verified.json": "df1eaf0b2347cd64ee4bff485699e46954c7a8fa5e1a386a614b2743470711c5",
+    "irrational_83_actual_verified.json": "969d4a6059365f0445a600fe7500fe7d58022083cc5048ee4e49e0ca50c4ec1f",
+    "rational_actual83_returns_verified.json": "2d3948fdb9c4a3fd03fd544272ac7a4a4c551ff1dfb74868db74dd73cce25e77"
+  },
+  "remaining_mathematical_gap": null,
+  "limitation": "The result is computer assisted. No formula for the exact dimension or bound uniform in n is asserted."
+}

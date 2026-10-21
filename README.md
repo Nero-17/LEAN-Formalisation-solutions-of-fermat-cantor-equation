@@ -1,105 +1,98 @@
-# LEAN-Formalisation-solutions-of-fermat-cantor-equation
+# Computational companion: solutions of the Fermat–Cantor equation
 
-Computational companion to **Solutions of xⁿ + yⁿ = 1 in λ-Cantor sets**.
+Experiments, algorithms, exact certificates and reproduction instructions for
+**Solutions of xⁿ + yⁿ = 1 in λ-Cantor sets**. The manuscript uses **v1.1.0**.
+The [paper-to-files index](docs/paper-index.md) identifies the material for each result.
 
-This release contains exact-arithmetic certificates, independent Python verifiers,
-and reproducible calculation records for the computer-assisted parts of the paper.
-**It does not contain Lean proofs. No claim of Lean kernel verification is made.**
-The repository name is reserved for the wider formalisation project; its current
-verification status is the Python certificate release described here.
+The current release uses exact Python arithmetic. **It contains no Lean proofs
+and makes no claim of Lean kernel verification.** The repository name also
+serves the broader formalisation project.
 
-The mathematical objects are
+## Contents
 
-\[
-C_\lambda=\{(1-\lambda)\sum_{j\ge1}\varepsilon_j\lambda^{j-1}:\varepsilon_j\in\{0,1\}\},
-\qquad E_{n,\lambda}=\{(x,y)\in C_\lambda^2:x^n+y^n=1\}.
-\]
+| Location | Contents |
+| --- | --- |
+| `cantor-dust/work/` | Exact certificates, generation/search algorithms, independent verifiers and historical receipts |
+| `experiments/phase-transitions/` | First/last transition scans, raw traces, high-precision checks and CSV export |
+| `figures/` | Published CSV tables, English/Chinese diagrams, plotting programs and Figure 1 TikZ sources |
+| `docs/` | Paper index, verification predicates, exact file hashes and experiment methodology |
+| `records/` | Commands, logs and results actually replayed during publication |
 
-## Reproduce
+The full mathematical arguments remain in the paper. Finite-depth numerical
+growth estimates are exploratory and are not used as proofs of positive dimension.
+Failed or incomplete discovery candidates are retained where needed to reproduce
+the search; only the specifically selected, independently checked records are certificates.
 
-Requirements: **Python 3.11 or later**, with its standard library only. No pip
-packages, Lean installation, network connection, or original author's filesystem
-are required after cloning. Do **not** use `python -O`, which disables assertions.
+## Exact reproduction
+
+Python **3.11 or later**, standard library only. Do not use `python -O`.
 
 ```sh
 git clone https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation.git
 cd LEAN-Formalisation-solutions-of-fermat-cantor-equation
+git checkout v1.1.0
+python reproduce.py audit
 python reproduce.py quick
+python reproduce.py real-quick
 python reproduce.py all
 ```
 
-`quick` reruns the polynomial exclusions for the unit circle, the cubic and
-quartic exclusions, and all five certified digital graphs. It is not a substitute
-for the full run. `all` additionally reconstructs the nine binary-return
-certificates, checks the nonlinear source transfer and the weighted circle
-certificate, verifies all 531,140 logarithmic sources for 301 ≤ n ≤ 531440,
-checks six complete fixed-scale parameter covers and two verifications of the
-infinite tail, and finally assembles the integer ranges.
+`audit` verifies input hashes only; `quick` checks polynomial exclusions and
+digital graphs; `real-quick` checks the denominator cover and two independent
+sources at n=8/3. `all` additionally runs all integer-source, return, phase-cover
+and all-real stages, then the n=5 numerical anchor. A full run can take tens of
+minutes or longer and several GB of memory. Use a fresh `--workspace PATH` to
+start an independent replay. Compressed JSON is expanded there and all outputs
+stay separate from the distributed inputs.
 
-The first run expands compressed data into `.reproduce/work/`. Large JSON inputs
-are distributed as deterministic gzip files; their uncompressed SHA-256 hashes
-are checked before use. Allow about 1 GB of working space and substantial extra
-RAM for the largest interval reconstructions. The complete run can take tens of
-minutes or longer, depending on hardware. The commands below allow separate stages:
+Individual stages, in order:
 
 ```sh
-python reproduce.py audit
 python reproduce.py returns
 python reproduce.py integer-sources
 python reproduce.py phase-covers
 python reproduce.py assembly
+python reproduce.py real-quick
+python reproduce.py real-sources
+python reproduce.py real-phase-covers
+python reproduce.py real-returns
+python reproduce.py real-assembly
+python reproduce.py numerical-anchor
 ```
 
-`audit` checks archived input hashes only. `assembly` checks range coverage and
-report/input consistency; it **does not rerun the substantive verifiers**.
-For a fresh independent reproduction use `all`, or run every preceding stage
-before `assembly`. Use a new `--workspace PATH` to start a fresh reproduction.
-The runner leaves all distributed certificates unchanged, writes regenerated
-reports to the chosen workspace, and saves each command's log and exit status.
+`assembly` and `real-assembly` check coverage joins and receipts; on their own,
+they do not rerun the substantive arithmetic. `all` runs those checks first.
+For one job, use e.g. `python reproduce.py real-returns --only 8-over-3-returns`.
+See [verification](docs/verification.md) and [all-real certificates](docs/real-exponents.md).
 
-For one specific check:
+## Numerical experiments and figures
 
 ```sh
-python reproduce.py returns --only weighted-circle
-python reproduce.py phase-covers --only independent-infinite-tail
+python -m pip install -r requirements-figures.txt
+python reproduce_figures.py
 ```
 
-## What is checked
+This checks the archived experiment hashes, rebuilds both 25-row CSV tables,
+compares them with the publication, and generates both phase diagrams in
+`.reproduce-figures/figures/`. It uses the archived scan traces; it does not rerun
+the expensive scans. The Chinese plot needs Microsoft YaHei or an appropriate
+CJK font configured in its plotting script. `--tables-only` skips plotting.
+The [experiment README](experiments/phase-transitions/README.md) gives the full
+fresh-scan sequence. The [methodology](docs/numerical-transition-method.md)
+explains finite-depth cutoffs, rejected diagnostics and limitations.
 
-| Paper result / proof input | Certificate family | Reproduction stage |
-| --- | --- | --- |
-| Unit-circle zero-dimensional intervals above the first threshold | Exact rational Bernstein inequalities | `quick` |
-| Strict separation for n = 3 and n = 4 | Prefix partitions and rational residual signs | `quick` |
-| Five additional admissible slope intervals | All 1024 words; exact feasibility and graph ranks | `quick` |
-| Nine exceptional small integer exponents | Complete closed-interval binary-return recursions | `returns` |
-| Quantitative dimension lower bound for E₂,₁/₃ | 232304 intervals; exact weighted antichain recurrence | `returns` |
-| Strict logarithmic sources for 301 ≤ n ≤ 531440 | Directed integer logarithm enclosures | `integer-sources` |
-| Fixed scales m = 12, 13, 14 | Six complete closed parameter covers | `phase-covers` |
-| Every integer exponent n ≥ 3¹⁵ | Finite certificate for a uniform analytic tail bound | `phase-covers` |
-| No missing integer in the assembled positive-dimension theorem | Range union and report/input hashes | `assembly` |
+## Records and versioning
 
-The proof transferring these checks to the original infinite Cantor intersection
-is mathematical, and remains in the paper. In particular, the infinite exponent
-tail is covered by a uniform analytic enclosure, not by sampling large integers.
-The all-integer result here concerns **positive dimension at λ = 1/3**. It does
-not prove strict separation for every integer exponent. The conjectured exact
-dimension of E₂,₁/₃ also remains outside this release.
+`docs/source-manifest.json` records the uncompressed SHA-256 of exact inputs;
+`docs/experiments-manifest.json` covers numerical and figure inputs. Deterministic
+gzip is only a storage format. Hash equality establishes identity, not truth.
 
-## Files and records
+The 29-job full integer/circle replay in `docs/reproduction-results.json` and
+`records/2026-10-21/` belongs to v1.0.0. The new publication replay is recorded
+separately in `docs/reproduction-results-v1.1.0.json`; it explicitly states which
+new checks were rerun. Earlier all-real verification receipts accompany their
+inputs. Neither archived success flags nor a packaging audit replace full replay.
 
-- `cantor-dust/work/`: selected original scripts, certificates and calculation
-  outputs. Historical filenames are retained to keep dependencies traceable.
-- `docs/source-manifest.json`: exact uncompressed hashes and storage locations.
-- `docs/verification.md`: verification predicates and the distinction between
-  arithmetic checks and mathematical implications.
-- `docs/reproduction-results.json`: checks actually rerun for this release.
-- `reproduce.py`: portable driver; all generated files stay in a separate workspace.
-
-Historical baseline reports sometimes say that exponents above 300 were still
-unresolved. Those statements describe the scope of the earlier calculation;
-the later `alln20261020_all_integer_coverage.json` combines the completed ranges.
-Success flags in archived reports are not a replacement for rerunning the checks.
-
-No manuscript source, private correspondence, access credentials, or raw agent
-conversation logs are included. A numbered release fixes the material used for
-the paper; later research should not silently change that release.
+The release includes the computer-assisted positive-dimension theorem for every
+real n>1 at λ=1/3. It does not assert an exact dimension formula, a uniform
+positive bound in n, or separation of the two transitions for every exponent.

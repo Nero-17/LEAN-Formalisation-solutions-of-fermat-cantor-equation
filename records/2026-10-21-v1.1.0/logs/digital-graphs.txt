@@ -1,0 +1,6 @@
+VERIFIED ['89/73', '171/137'] words 96 cycles 7
+VERIFIED ['101/79', '183/143'] words 80 cycles 6
+VERIFIED ['89/57', '171/89'] words 160 cycles 8
+VERIFIED ['143/61', '237/101'] words 92 cycles 6
+VERIFIED ['137/57', '219/89'] words 112 cycles 7
+All five open bands verified with exact rational arithmetic.

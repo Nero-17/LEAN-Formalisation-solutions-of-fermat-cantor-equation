@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "maximum_exponent": 1000,
+  "repaired": 873,
+  "remaining": [
+    [
+      24,
+      23
+    ],
+    [
+      19,
+      18
+    ],
+    [
+      13,
+      12
+    ],
+    [
+      8,
+      7
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      53,
+      2
+    ]
+  ],
+  "smallest_remaining": "24/23",
+  "new_positive_interval": [
+    "1",
+    "24/23"
+  ]
+}

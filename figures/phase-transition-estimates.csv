@@ -1,0 +1,26 @@
+n,estimate,coarse_last_low,refined_last_low,depth34_last_low,deep_last_low,known_zero_anchor,resolution,source
+2,0.27625000,0.286,0.2935,0.276,0.276,,0.0005,finite-depth grid estimate
+7/3,0.26175000,0.27,0.28,0.2655,0.2615,,0.0005,finite-depth grid estimate
+5/2,0.25675000,0.278,0.2775,0.2645,0.2565,,0.0005,finite-depth grid estimate
+8/3,0.26275000,0.282,0.2855,0.2625,0.2625,,0.0005,finite-depth grid estimate
+3,0.30725000,0.304,0.307,0.307,0.307,,0.0005,finite-depth grid estimate
+10/3,0.28375000,0.282,0.2835,0.2835,0.2835,,0.0005,finite-depth grid estimate
+7/2,0.27975000,0.284,0.2795,0.2795,0.2795,,0.0005,finite-depth grid estimate
+11/3,0.27425000,0.274,0.281,0.274,0.274,,0.0005,finite-depth grid estimate
+4,0.26675000,0.284,0.2805,0.2665,0.2665,,0.0005,finite-depth grid estimate
+13/3,0.26275000,0.258,0.273,0.2645,0.2625,,0.0005,finite-depth grid estimate
+9/2,0.26775000,0.284,0.284,0.2675,0.2675,,0.0005,finite-depth grid estimate
+14/3,0.26175000,0.278,0.2735,0.269,0.2615,,0.0005,finite-depth grid estimate
+5,0.27024926,0.27,0.2745,0.2695,0.2635,0.2699992564030913,0.0005,grid and R017 isolated-zero witness
+16/3,0.25725000,0.264,0.2675,0.263,0.257,,0.0005,finite-depth grid estimate
+11/2,0.25975000,0.276,0.2745,0.2595,0.2595,,0.0005,finite-depth grid estimate
+17/3,0.26025000,0.272,0.2725,0.265,0.26,,0.0005,finite-depth grid estimate
+6,0.28275000,0.282,0.294,0.2825,0.2825,,0.0005,finite-depth grid estimate
+19/3,0.25725000,0.272,0.276,0.259,0.257,,0.0005,finite-depth grid estimate
+13/2,0.26125000,0.278,0.278,0.2635,0.261,,0.0005,finite-depth grid estimate
+20/3,0.26275000,0.268,0.2725,0.2655,0.2625,,0.0005,finite-depth grid estimate
+7,0.26375000,0.278,0.278,0.2635,0.2635,,0.0005,finite-depth grid estimate
+22/3,0.25925000,0.268,0.276,0.259,0.259,,0.0005,finite-depth grid estimate
+15/2,0.25675000,0.27,0.271,0.261,0.2565,,0.0005,finite-depth grid estimate
+23/3,0.25475000,0.27,0.273,0.263,0.2545,,0.0005,finite-depth grid estimate
+8,0.26375000,0.27,0.273,0.264,0.2635,,0.0005,finite-depth grid estimate

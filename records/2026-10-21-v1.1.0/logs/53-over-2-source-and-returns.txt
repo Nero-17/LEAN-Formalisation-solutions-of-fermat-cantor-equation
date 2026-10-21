@@ -1,0 +1,1 @@
+{'status': 'PASS', 'a': 53, 'b': 2, 'P': 105672039117920552328, 'p': 42, 'Q': 8521470282198373850, 'q': 40, 'slope': '20562225398716419716957/9622098440443747992932', 'k': 101, 'm': 2680, 'switch_components': [0], 'return_depth': 16, 'permitted_lipschitz': '1/8609344200000', 'dimension_lower_bound': 'log(2)/(16*log(3))'}

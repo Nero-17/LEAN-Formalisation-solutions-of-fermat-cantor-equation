@@ -1,0 +1,241 @@
+{
+  "version": "v1.1.0",
+  "timestamp_utc": "2026-10-21T11:55:17.086304+00:00",
+  "scope": "Publication replay: selected exact arithmetic checks, retained receipt joins, input hashes, numerical table export and plotting. The finite 8,033,550-rational scan, continuous m=7..11 layers and previous full integer/circle replay were not repeated in this publication run; their archived verification receipts are supplied.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "exact_input_files": 191,
+  "manifest_sha256": "85ea429e0480dccd48f73b37af57308f677bd8dee75c593caeae82e39f2335e6",
+  "local_import_dependency_audit": "PASS: all imports are standard-library, supplied local modules, or the declared optional NumPy dependency for search/generation programs",
+  "jobs": [
+    {
+      "job": "polynomial-gaps",
+      "command": [
+        "python",
+        "work/r008_evidence_gap_family.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.086,
+      "log": "logs/polynomial-gaps.txt"
+    },
+    {
+      "job": "cubic-exclusion",
+      "command": [
+        "python",
+        "work/continuity20261020_low_n3_certificate.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.088,
+      "log": "logs/cubic-exclusion.txt"
+    },
+    {
+      "job": "quartic-exclusion",
+      "command": [
+        "python",
+        "work/separation20261020_parent_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.096,
+      "log": "logs/quartic-exclusion.txt"
+    },
+    {
+      "job": "digital-graphs",
+      "command": [
+        "python",
+        "work/r003_digits_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.159,
+      "log": "logs/digital-graphs.txt"
+    },
+    {
+      "job": "rational-lattice-width",
+      "command": [
+        "python",
+        "work/thirdreal20261021_rational_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.087,
+      "log": "logs/rational-lattice-width.txt"
+    },
+    {
+      "job": "actual-8-over-3-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_actual83_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.11,
+      "log": "logs/actual-8-over-3-source.txt"
+    },
+    {
+      "job": "independent-8-over-3-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_irrational_83_actual_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.094,
+      "log": "logs/independent-8-over-3-source.txt"
+    },
+    {
+      "job": "n5-shell-reduction",
+      "command": [
+        "python",
+        "work/fullseparation20261020_n5_parent_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.678,
+      "log": "logs/n5-shell-reduction.txt"
+    },
+    {
+      "job": "n5-core-exclusion",
+      "command": [
+        "python",
+        "work/fullseparation20261020_n5_joint_parent_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.088,
+      "log": "logs/n5-core-exclusion.txt"
+    },
+    {
+      "job": "near-one-sources",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_nearone.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.477,
+      "log": "logs/near-one-sources.txt"
+    },
+    {
+      "job": "near-one-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_returns.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.445,
+      "log": "logs/near-one-returns.txt"
+    },
+    {
+      "job": "8-over-7-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_87.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.077,
+      "log": "logs/8-over-7-source.txt"
+    },
+    {
+      "job": "8-over-7-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_returns.py",
+        "3291854706059752449652/2493145389759550335983",
+        "15"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.661,
+      "log": "logs/8-over-7-returns.txt"
+    },
+    {
+      "job": "11-over-4-source-and-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_general_source.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.767,
+      "log": "logs/11-over-4-source-and-returns.txt"
+    },
+    {
+      "job": "53-over-2-source-and-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_532_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.256,
+      "log": "logs/53-over-2-source-and-returns.txt"
+    },
+    {
+      "job": "independent-53-over-2-source",
+      "command": [
+        "python",
+        "work/thirdreal20261021_parent_532.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.498,
+      "log": "logs/independent-53-over-2-source.txt"
+    },
+    {
+      "job": "8-over-3-returns",
+      "command": [
+        "python",
+        "work/thirdreal20261021_rational_actual83_returns_verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 109.174,
+      "log": "logs/8-over-3-returns.txt"
+    },
+    {
+      "job": "8-over-3-return-comparison",
+      "command": [
+        "python",
+        "work/thirdreal20261021_rational_actual83_returns_compare.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.084,
+      "log": "logs/8-over-3-return-comparison.txt"
+    },
+    {
+      "job": "retained-large-scale-joins",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_large.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.201,
+      "log": "logs/retained-large-scale-joins.txt"
+    },
+    {
+      "job": "real-coverage-ledger",
+      "command": [
+        "python",
+        "work/thirdreal20261021_adversarial_final.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.156,
+      "log": "logs/real-coverage-ledger.txt"
+    }
+  ],
+  "figure_reproduction": {
+    "status": "PASS",
+    "scope": "Archived trace export and plotting; no parameter scans rerun",
+    "tables": 2,
+    "rows_per_table": 25,
+    "jobs": [
+      {
+        "script": "experiments/phase-transitions/export_transition_estimates.py",
+        "exit_code": 0,
+        "elapsed_seconds": 0.15
+      },
+      {
+        "script": "experiments/phase-transitions/estimate_first_transition.py",
+        "exit_code": 0,
+        "elapsed_seconds": 0.531
+      },
+      {
+        "script": "figures/generate_phase_diagram.py",
+        "exit_code": 0,
+        "elapsed_seconds": 1.794
+      },
+      {
+        "script": "figures/generate_phase_diagram_zh.py",
+        "exit_code": 0,
+        "elapsed_seconds": 1.773
+      }
+    ]
+  }
+}

@@ -26,6 +26,13 @@
     "packed_path": "cantor-dust/work/alln20261020_batch_50001_177146.json.gz"
   },
   {
+    "path": "cantor-dust/work/alln20261020_batch_sources.py",
+    "source_round_file": "alln20261020_batch_sources.py",
+    "sha256": "fc40f0fe5e44e69c81beacafe6e4bc9b398e6242fd527d302f574fb4a91aece4",
+    "bytes": 4492,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
     "path": "cantor-dust/work/alln20261020_finite_phase_transfer.py",
     "source_round_file": "alln20261020_finite_phase_transfer.py",
     "sha256": "d34398651a83742d29d63d29b2676098bcbbcbf352278a0346b99692c39df594",
@@ -42,6 +49,20 @@
     "source_round_file": "alln20261020_finite_z_m15_h3_depth11.json",
     "sha256": "252e66caecf362399679167af6ac62e633130442ee632c2a12b5f18eb557747d",
     "bytes": 50011
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_finite_z_probe.py",
+    "source_round_file": "alln20261020_finite_z_probe.py",
+    "sha256": "b5945b6220a0487fb52bd748a0df2a8af89cad814dae0330deca8e2e113f1ef6",
+    "bytes": 4131,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m12_candidate.json",
+    "source_round_file": "alln20261020_fixed_m12_candidate.json",
+    "sha256": "186a7c6c317e2d7421faeee9681c74f49aa1cfa39243d41be9b1ef853eb1eb5f",
+    "bytes": 454330,
+    "provenance": "R022 all-real-exponent certificate supplement"
   },
   {
     "path": "cantor-dust/work/alln20261020_fixed_m12_lower_candidate.json",
@@ -68,6 +89,20 @@
     "bytes": 621
   },
   {
+    "path": "cantor-dust/work/alln20261020_fixed_m13_candidate.json",
+    "source_round_file": "alln20261020_fixed_m13_candidate.json",
+    "sha256": "193b0af5d7671c1314f8be183b464cf6619895f5dfb5df24b6a72c31b86152fc",
+    "bytes": 454151,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m13_digits_lower_candidate.json",
+    "source_round_file": "alln20261020_fixed_m13_digits_lower_candidate.json",
+    "sha256": "6c66a602c7b40c61572805d6e2874ca62581ccfc60536c81c974793592654301",
+    "bytes": 321022,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
     "path": "cantor-dust/work/alln20261020_fixed_m13_lower_candidate.json",
     "source_round_file": "alln20261020_fixed_m13_lower_candidate.json",
     "sha256": "865252d098f15f6eb0f0d2dac81deabf67fbc158f7cba1db34c5652a3297a409",
@@ -92,6 +127,13 @@
     "bytes": 633
   },
   {
+    "path": "cantor-dust/work/alln20261020_fixed_m14_lower.py",
+    "source_round_file": "alln20261020_fixed_m14_lower.py",
+    "sha256": "e525018043f14769e51a621cee55650104cdfcab029f483a351b6c7339a3caf8",
+    "bytes": 4168,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
     "path": "cantor-dust/work/alln20261020_fixed_m14_lower_candidate.json",
     "source_round_file": "alln20261020_fixed_m14_lower_candidate.json",
     "sha256": "24a3b804ac21f9f5d9d2e88556c5acd6f767c3b9ab327b6b4874eea0416b4f81",
@@ -104,6 +146,13 @@
     "bytes": 634
   },
   {
+    "path": "cantor-dust/work/alln20261020_fixed_m14_upper.py",
+    "source_round_file": "alln20261020_fixed_m14_upper.py",
+    "sha256": "343afcc544524373275391f75f80d29d721e1a8a3cddb44d03e489414b715ae3",
+    "bytes": 2002,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
     "path": "cantor-dust/work/alln20261020_fixed_m14_upper_candidate.json",
     "source_round_file": "alln20261020_fixed_m14_upper_candidate.json",
     "sha256": "0648dc7dd39ded277890d2d5f581725e42bed8e246dc72d7762f38b57ade94e0",
@@ -114,6 +163,27 @@
     "source_round_file": "alln20261020_fixed_m14_upper_verified.json",
     "sha256": "4f1eb6324bbbce02892db854238e66632c0830a8154ba1018fb97942e6666d87",
     "bytes": 634
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_fixed_m_phase.py",
+    "source_round_file": "alln20261020_fixed_m_phase.py",
+    "sha256": "fc85846d0e7b11c7d5afa775f9734424fc35b0fd4d0c7a65547f36028b827942",
+    "bytes": 4359,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_inner_phase_probe.py",
+    "source_round_file": "alln20261020_inner_phase_probe.py",
+    "sha256": "4c588140695c21c80174b1c0761687e247b9c8d6879fc8832cf9b5e7a81d9583",
+    "bytes": 4026,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/alln20261020_logphase_probe.py",
+    "source_round_file": "alln20261020_logphase_probe.py",
+    "sha256": "e1dab6d9ee01408e3ae32d5415bdd5116aa741a4e1b2f14f6fe7673633eb500e",
+    "bytes": 1883,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
   },
   {
     "path": "cantor-dust/work/alln20261020_logsource_complete_301_10000.json",
@@ -184,6 +254,13 @@
     "bytes": 5080
   },
   {
+    "path": "cantor-dust/work/alln20261020_parent_logsource.py",
+    "source_round_file": "alln20261020_parent_logsource.py",
+    "sha256": "fb36467bcdbd83a58a8dc3104d6efab03dc82340a97cff0768bb9a14ead32d94",
+    "bytes": 4263,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
     "path": "cantor-dust/work/alln20261020_parent_logsource_10001_50000.json",
     "source_round_file": "alln20261020_parent_logsource_10001_50000.json",
     "sha256": "44a8bff6e7d4dfba737f878d151de25d756b6044aa92cbf8b399b4ff76dcc4ca",
@@ -235,6 +312,13 @@
     "packed_path": "cantor-dust/work/branching_r010_adaptive_B_57_50_theta2.json.gz"
   },
   {
+    "path": "cantor-dust/work/branching_r010_adaptive_return.py",
+    "source_round_file": "branching_r010_adaptive_return.py",
+    "sha256": "d922f907561d106cd8dd0113332ec3a6178d25a8a964088a313f94fd29d4163d",
+    "bytes": 9326,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
     "path": "cantor-dust/work/continuity20261020_low_n3_certificate.json",
     "source_round_file": "continuity20261020_low_n3_certificate.json",
     "sha256": "dd10e06dca04582f9a0ecb329b9b0a759377f4d9bfd92147325db8569f6483a7",
@@ -247,6 +331,56 @@
     "bytes": 1479
   },
   {
+    "path": "cantor-dust/work/fullseparation20261020_n5_core_reduction.json",
+    "source_round_file": "fullseparation20261020_n5_core_reduction.json",
+    "sha256": "ab6764d8ab461f13078364b3a28fa0294adf9319cc1027ccd2beb480d3669461",
+    "bytes": 6340206,
+    "provenance": "R017 exact n=5 algebraic anchor used in the numerical diagram",
+    "packed_path": "cantor-dust/work/fullseparation20261020_n5_core_reduction.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/fullseparation20261020_n5_joint_parent_verify.json",
+    "source_round_file": "fullseparation20261020_n5_joint_parent_verify.json",
+    "sha256": "e5d4cf587107755f9f705f874afb56cbfac25824c6130dab5c550fff62efa39f",
+    "bytes": 1925,
+    "provenance": "R017 exact n=5 algebraic anchor used in the numerical diagram"
+  },
+  {
+    "path": "cantor-dust/work/fullseparation20261020_n5_joint_parent_verify.py",
+    "source_round_file": "fullseparation20261020_n5_joint_parent_verify.py",
+    "sha256": "b739c6b8dff42d7ae180d0bcd32e74087de1909d23120ac5870751ce74303a0f",
+    "bytes": 4651,
+    "provenance": "R017 exact n=5 algebraic anchor used in the numerical diagram"
+  },
+  {
+    "path": "cantor-dust/work/fullseparation20261020_n5_joint_periodic_certificate.json",
+    "source_round_file": "fullseparation20261020_n5_joint_periodic_certificate.json",
+    "sha256": "fcba7209c36fe5b217caadedbd6d76adef9bb15fab9761c3eac5a9750fd0057a",
+    "bytes": 219007,
+    "provenance": "R017 exact n=5 algebraic anchor used in the numerical diagram"
+  },
+  {
+    "path": "cantor-dust/work/fullseparation20261020_n5_joint_periodic_certificate.py",
+    "source_round_file": "fullseparation20261020_n5_joint_periodic_certificate.py",
+    "sha256": "c93aac5b791e258ef690f479d52b4bdce0cd502948d57a41d240a4a3afe3a1b0",
+    "bytes": 2798,
+    "provenance": "R017 exact n=5 algebraic anchor used in the numerical diagram"
+  },
+  {
+    "path": "cantor-dust/work/fullseparation20261020_n5_parent_verify.json",
+    "source_round_file": "fullseparation20261020_n5_parent_verify.json",
+    "sha256": "ee972554f994790c11a81635355f8f9137fb52b97c0348bbcbf27a1ffb34a19f",
+    "bytes": 990,
+    "provenance": "R017 exact n=5 algebraic anchor used in the numerical diagram"
+  },
+  {
+    "path": "cantor-dust/work/fullseparation20261020_n5_parent_verify.py",
+    "source_round_file": "fullseparation20261020_n5_parent_verify.py",
+    "sha256": "f60b77fbed0d4a986910e8c656d2f9fbdd30c637ab5f4778c56b8f180e7cc217",
+    "bytes": 3008,
+    "provenance": "R017 exact n=5 algebraic anchor used in the numerical diagram"
+  },
+  {
     "path": "cantor-dust/work/r003_construction_axis_101_300.json",
     "source_round_file": "r003_construction_axis_101_300.json",
     "sha256": "0426692e5ed1dee1b839ab27c81210fc343df3e31edfb9f883c43567ac822f33",
@@ -257,6 +391,20 @@
     "source_round_file": "r003_construction_axis_2_100.json",
     "sha256": "2e4abe3d3e7a0a453cdba2e43eeee1d83328dd7f98c4625a4a663338732b8a34",
     "bytes": 76494
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_actual_antichain.py",
+    "source_round_file": "r003_digits_actual_antichain.py",
+    "sha256": "0a8a23b3428f6dfd23ad3b38bdda6aaca7bb5234c0feec47802c8ae014b5fa88",
+    "bytes": 1634,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_affine_parameter_returns.py",
+    "source_round_file": "r003_digits_affine_parameter_returns.py",
+    "sha256": "196535743d5c5327c3c604ebf0848d2321b8163b68c7efd03151c9187e2f5254",
+    "bytes": 8356,
+    "provenance": "R022 all-real-exponent certificate supplement"
   },
   {
     "path": "cantor-dust/work/r003_digits_compact_antichain_n10.json",
@@ -311,6 +459,13 @@
     "source_round_file": "r003_digits_compact_antichain_n9.json",
     "sha256": "f1e023b2dad1157741f0c1d2f98c8245d9074d957f1b4e56f7651f1a647b405e",
     "bytes": 7647
+  },
+  {
+    "path": "cantor-dust/work/r003_digits_exact_antichain.py",
+    "source_round_file": "r003_digits_exact_antichain.py",
+    "sha256": "aab9add766c150da9c8029d777e6e7507009cbb20fbaefdd2b44436ec6e4b24f",
+    "bytes": 4166,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
   },
   {
     "path": "cantor-dust/work/r003_digits_graph_certificate.json",
@@ -397,6 +552,13 @@
     "bytes": 1333
   },
   {
+    "path": "cantor-dust/work/r003_parent_sources.py",
+    "source_round_file": "r003_parent_sources.py",
+    "sha256": "025ef30bec59ca793ec1912efaddb752e03c2e535ee9d107d11483a6ffc4f0a2",
+    "bytes": 2497,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
+  },
+  {
     "path": "cantor-dust/work/r003_parent_verify_sources.py",
     "source_round_file": "r003_parent_verify_sources.py",
     "sha256": "c56160176b03d3ef3007865bb26e793d027d9d7948ee1d2a53263d78130283d9",
@@ -413,6 +575,13 @@
     "source_round_file": "r003_r004_transfer_sources.json",
     "sha256": "6248379273f8f09d10c71a520106a191c22c29cc6930a548d09c8923d213b121",
     "bytes": 4783
+  },
+  {
+    "path": "cantor-dust/work/r003_r004_transfer_sources.py",
+    "source_round_file": "r003_r004_transfer_sources.py",
+    "sha256": "5b8c22780b91e4aae3b71801366e23777763e13d092269c2af537bd9f5851d5b",
+    "bytes": 2104,
+    "provenance": "Earlier circle/integer certificate-generation algorithm; discovery output requires independent verification"
   },
   {
     "path": "cantor-dust/work/r003_r004_transfer_verification.json",
@@ -463,5 +632,644 @@
     "source_round_file": "separation20261020_parent_check.py",
     "sha256": "42f7011f24cfe9f6dfa2c0827f5d796c5cf3978cbe4f69cd60688dd22f252be8",
     "bytes": 1739
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_114_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_114_verified.json",
+    "sha256": "b6012d9cb8f9fad792c9b63864fbc93cafaf5e92397eadd3d0915f6651df0594",
+    "bytes": 815,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_532_candidates.json",
+    "source_round_file": "thirdreal20261021_adversarial_532_candidates.json",
+    "sha256": "04c7cba560bad788b6fc322cb1dbb57b2b1b805d247f082a3305cf386699e157",
+    "bytes": 332862,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_532_returns.json",
+    "source_round_file": "thirdreal20261021_adversarial_532_returns.json",
+    "sha256": "05c47da0a40d0f11afe95c43b37b86d4ab2a3107068f1acd10d59c267f431d21",
+    "bytes": 3937,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_532_returns.py",
+    "source_round_file": "thirdreal20261021_adversarial_532_returns.py",
+    "sha256": "636ae97fa4464a527aa07b5412c6c447305a67ed0b8a9ca53bcdce836ef65a6b",
+    "bytes": 1000,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_532_search.py",
+    "source_round_file": "thirdreal20261021_adversarial_532_search.py",
+    "sha256": "36c4bbfc06464e1eb4f97829ad1fe29ae0a21ab8e969d16e3d82ce5017a61218",
+    "bytes": 1845,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_532_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_532_verified.json",
+    "sha256": "aed04f91c56f8389d96e1af590c11792e2cbe81148d12afd586b7be66b9f5a9c",
+    "bytes": 3153,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_532_verify.py",
+    "source_round_file": "thirdreal20261021_adversarial_532_verify.py",
+    "sha256": "6a9becb7c8d268725606c41d28c3368c95061ca5a2dde197ab883403f13e0a33",
+    "bytes": 568,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_87.py",
+    "source_round_file": "thirdreal20261021_adversarial_87.py",
+    "sha256": "1b7c806cc8137c2a5216fcf5032985114c520cd6f81185234053dc90ffb47031",
+    "bytes": 2475,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_87_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_87_verified.json",
+    "sha256": "57dd945f131380229d6a73e256bd9a7ab37af73cdae10ad5f2afb1072d9d33c3",
+    "bytes": 1394,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_actual83_cross_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_actual83_cross_verified.json",
+    "sha256": "f8cad3df601add01106ccdbd21f41339d59561d2c34d20bc2411b72e168eb5b3",
+    "bytes": 180,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_final.py",
+    "source_round_file": "thirdreal20261021_adversarial_final.py",
+    "sha256": "057733ffe999b4790c31f48dc04a137176198eb866870a3b54e0093d3c8594c3",
+    "bytes": 4348,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_final_ledger.json",
+    "source_round_file": "thirdreal20261021_adversarial_final_ledger.json",
+    "sha256": "2363a18cef13395da080ffc6265120e4145b6b917150f6df3e9c1354a3889bcb",
+    "bytes": 3395,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_general_source.py",
+    "source_round_file": "thirdreal20261021_adversarial_general_source.py",
+    "sha256": "314ec5c91499ac836c1aaed5e1341ce0d3d519915d6f189e7b7e820cfdf770f9",
+    "bytes": 2486,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_large.py",
+    "source_round_file": "thirdreal20261021_adversarial_large.py",
+    "sha256": "b9d283f3220bf345e33cbcd4ee00ea431a41efd6378d587f58d1151ec5aa7063",
+    "bytes": 2870,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_large_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_large_verified.json",
+    "sha256": "5f88c547fc389c2e8aa386610cf43ea80ffc4e3d0be06aec3581c1d90400fe84",
+    "bytes": 906,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_nearone.py",
+    "source_round_file": "thirdreal20261021_adversarial_nearone.py",
+    "sha256": "d86bd19af70c25662aaa6591c8b19ac09f84b27dc06d85a8db1ea2bb8880fa3c",
+    "bytes": 2407,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_nearone_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_nearone_verified.json",
+    "sha256": "f7fd7b00b1635365d18e7f148679d96e5a4053c152fc8b20acc7edf25d68dde6",
+    "bytes": 2225,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_repair.py",
+    "source_round_file": "thirdreal20261021_adversarial_repair.py",
+    "sha256": "dc9c0bacbae28f37121e0002fb83b5e31a8a16063c4ecf45ad0b5c87ffe5fc37",
+    "bytes": 1938,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_repair_1000_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_repair_1000_verified.json",
+    "sha256": "726849dc99b760f9e9e861133b0bf4c6f7372a7cac6f2e3e0afdaf147c689c62",
+    "bytes": 435,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_repair_2187_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_repair_2187_verified.json",
+    "sha256": "813fb782278f7ef7ce4139d6460832adf26192247664ae1413a0886662654c54",
+    "bytes": 436,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_repair_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_repair_verified.json",
+    "sha256": "49fbde9a676c13fd3c3abdebaec3c75771eeb7fc2c86c0bee15b0d9679dc8df9",
+    "bytes": 405,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_returns.py",
+    "source_round_file": "thirdreal20261021_adversarial_returns.py",
+    "sha256": "79cd737e8fe2a5dff7c47b8890ca2a149ce529012b1b52d66ec8fc6382a6997c",
+    "bytes": 2453,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_returns_87_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_returns_87_verified.json",
+    "sha256": "cc41a04e0f73ed9c3641bf464cbb9f8ae64769d10b69bc65bef11a04712b51f6",
+    "bytes": 1240,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_returns_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_returns_verified.json",
+    "sha256": "56368076f5100eb566fea461bcb25f313794f1ee33304d14f9d78d24485ec862",
+    "bytes": 2095,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_scan.py",
+    "source_round_file": "thirdreal20261021_adversarial_scan.py",
+    "sha256": "100e404e566c5e224bf670a5e106a6e7dafb1de647927f32b7698f9e41a97af4",
+    "bytes": 5280,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_scan_1000_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_scan_1000_verified.json",
+    "sha256": "379ca65b3703decb4c6b31ad1fa2d31e90511abd3c156ca0bb88ab5b7d99c16d",
+    "bytes": 731,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_scan_2187_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_scan_2187_verified.json",
+    "sha256": "bd880717604020e2f74f0e59df243b9841713ee9afb8ea9302a34fd641312b47",
+    "bytes": 721,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_adversarial_scan_verified.json",
+    "source_round_file": "thirdreal20261021_adversarial_scan_verified.json",
+    "sha256": "a7c7b6bfce25751f12bc33291afc15e87add640bf238d3c50832b21cf9dfe13d",
+    "bytes": 616,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_114_verified.json",
+    "source_round_file": "thirdreal20261021_irrational_114_verified.json",
+    "sha256": "8ea07c0fead32332e921d67dfee566571b45e55126a4b3d2c7e2f64c620c5d31",
+    "bytes": 926,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_83_actual_verified.json",
+    "source_round_file": "thirdreal20261021_irrational_83_actual_verified.json",
+    "sha256": "969d4a6059365f0445a600fe7500fe7d58022083cc5048ee4e49e0ca50c4ec1f",
+    "bytes": 1086,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_83_actual_verify.py",
+    "source_round_file": "thirdreal20261021_irrational_83_actual_verify.py",
+    "sha256": "42ea6397221b858e264305d250e1632b3bff987e3b8f7d57a185ec0fb15f990a",
+    "bytes": 2211,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_87_return_scan.json",
+    "source_round_file": "thirdreal20261021_irrational_87_return_scan.json",
+    "sha256": "52ee8de37143afe72bfbf66eeb5d11ffccda52bb000b727ba753e737d622b7d8",
+    "bytes": 15125,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_87_return_scan.py",
+    "source_round_file": "thirdreal20261021_irrational_87_return_scan.py",
+    "sha256": "68edfb56ed549faf8e6091bfbcba249cd650365582b89e1961d6d63a21955572",
+    "bytes": 880,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_87_source.py",
+    "source_round_file": "thirdreal20261021_irrational_87_source.py",
+    "sha256": "62642f1ef0b0ad026957c0ca6ff4fd56773909cc5bed86b7825830b2261d949e",
+    "bytes": 1718,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_87_sources.json",
+    "source_round_file": "thirdreal20261021_irrational_87_sources.json",
+    "sha256": "0e05062045936b4a0ebe02f2adb9d4ff4ee8dcd720118b0917b9618b7abb5dea",
+    "bytes": 13683,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_87_verified.json",
+    "source_round_file": "thirdreal20261021_irrational_87_verified.json",
+    "sha256": "9514c7520d03e6753f17f06fc32b8e5ad2cc94387d613f83df723bd5a94425ac",
+    "bytes": 944,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_nearone_returns.json",
+    "source_round_file": "thirdreal20261021_irrational_nearone_returns.json",
+    "sha256": "5c78acbcd2f38ddc5f6898dc5b23c567f351f542e5cedc695c855e99e86fd758",
+    "bytes": 13188,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_nearone_returns.py",
+    "source_round_file": "thirdreal20261021_irrational_nearone_returns.py",
+    "sha256": "66af811dcb0efb742775240d5fddd9cb1892a72eaaa0b7d389bd33483c0bf8f0",
+    "bytes": 900,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_nearone_sources.py",
+    "source_round_file": "thirdreal20261021_irrational_nearone_sources.py",
+    "sha256": "b154468dd655b9583553c1e24177039c52e625f280cb0831f3610dee14d8b6c9",
+    "bytes": 1596,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_nearone_verified.json",
+    "source_round_file": "thirdreal20261021_irrational_nearone_verified.json",
+    "sha256": "a66a5ff5cb7c09d76211e71ded02dd34fa04a20cb362c30a87c9afbe1c956d88",
+    "bytes": 2757,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_irrational_scalar_bounded.py",
+    "source_round_file": "thirdreal20261021_irrational_scalar_bounded.py",
+    "sha256": "3fa8ebe7e634f654008587882b1395d949e7bd7423ac766e05759fe505fd032a",
+    "bytes": 3035,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_532.py",
+    "source_round_file": "thirdreal20261021_parent_532.py",
+    "sha256": "3f93f8a52d26119bfd6f6994d8929d6fe45a592ec088bbc034c37458e934c403",
+    "bytes": 1560,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_532_verified.json",
+    "source_round_file": "thirdreal20261021_parent_532_verified.json",
+    "sha256": "0107b67a22f4ffb41cdfb31e5560ffcbb8040b2a4b29ade8e44ca153ae214aaa",
+    "bytes": 653,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_actual83.py",
+    "source_round_file": "thirdreal20261021_parent_actual83.py",
+    "sha256": "0e0d823029cba58e2c06f1dd168e12a63ba4ac7ec4b0ff33c3ba6e4cd412e834",
+    "bytes": 1935,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_actual83_retry.json",
+    "source_round_file": "thirdreal20261021_parent_actual83_retry.json",
+    "sha256": "4624e3dfce20af701f6e11907d00a086dd4db70af550de4283b8249c205ad8ac",
+    "bytes": 2297,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_actual83_retry.py",
+    "source_round_file": "thirdreal20261021_parent_actual83_retry.py",
+    "sha256": "d7bc763b3f6e9487f666a086e193c0167b273518215bb4e474fa39393569303f",
+    "bytes": 800,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_actual83_returns.json",
+    "source_round_file": "thirdreal20261021_parent_actual83_returns.json",
+    "sha256": "9ec8043df3fbe367d842db4e0daedb85a8368984c7dd4006f3a27352c43a89db",
+    "bytes": 6281,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_actual83_sources.json",
+    "source_round_file": "thirdreal20261021_parent_actual83_sources.json",
+    "sha256": "25c778c900e63d5e61a47ff5fcf6d30ed159b478ffbca68185aa83ddb9f847b5",
+    "bytes": 23199,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_actual83_verified.json",
+    "source_round_file": "thirdreal20261021_parent_actual83_verified.json",
+    "sha256": "df1eaf0b2347cd64ee4bff485699e46954c7a8fa5e1a386a614b2743470711c5",
+    "bytes": 1137,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_actual83_verify.py",
+    "source_round_file": "thirdreal20261021_parent_actual83_verify.py",
+    "sha256": "203c583d45959db6747ce9bd5cc74005398552ef5c10e7d9a7e88843daa4b234",
+    "bytes": 1894,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_layer_m10_verified.json",
+    "source_round_file": "thirdreal20261021_parent_layer_m10_verified.json",
+    "sha256": "50b2aeb6c15c295f641d350282873703b09a2531a6457f49d35c9f7e8ce3dc33",
+    "bytes": 378,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_layer_m11_verified.json",
+    "source_round_file": "thirdreal20261021_parent_layer_m11_verified.json",
+    "sha256": "fe685c35eececcbcfc034725250c92702e611897cbeae2226b92dd8db13fe7f8",
+    "bytes": 377,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_layer_m7_verified.json",
+    "source_round_file": "thirdreal20261021_parent_layer_m7_verified.json",
+    "sha256": "672fa0faafb6477e6cae88836daa64cb2246adfbd3e6a0cec1b4d28949bf11cb",
+    "bytes": 378,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_layer_m8_verified.json",
+    "source_round_file": "thirdreal20261021_parent_layer_m8_verified.json",
+    "sha256": "522723e9ae444808c36653a4ca9e778195a18fcb75e38c546cca98e4ef76d435",
+    "bytes": 376,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_layer_m9_verified.json",
+    "source_round_file": "thirdreal20261021_parent_layer_m9_verified.json",
+    "sha256": "dbf66d5bd48da528517821e6cfb8743692e7874be2891e7ab2ecc0aef3dcb2aa",
+    "bytes": 377,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_layers.py",
+    "source_round_file": "thirdreal20261021_parent_layers.py",
+    "sha256": "6653c3845d1f806459573565820be8f652618b7d7a21d365f1e2c56064f137ba",
+    "bytes": 4448,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_model.json",
+    "source_round_file": "thirdreal20261021_parent_model.json",
+    "sha256": "0211cb9b308c288a2b7f6ce5fbb953e033f198cf0875edc4f10015417666f80c",
+    "bytes": 21909,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_model.py",
+    "source_round_file": "thirdreal20261021_parent_model.py",
+    "sha256": "29dd8ffa47931a0101aecbc8814b75400f2f63e3c88eb2f6cfe07b6e8ee3559e",
+    "bytes": 1589,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_parent_verified.json",
+    "source_round_file": "thirdreal20261021_parent_verified.json",
+    "sha256": "68401f221c3c237d0d07d35e70a88322b481018f768a46030bb4356aa53f4f31",
+    "bytes": 433,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_actual83_returns_compare.py",
+    "source_round_file": "thirdreal20261021_rational_actual83_returns_compare.py",
+    "sha256": "51fceca85a3ba5bff8ab291d66bf191e89c43ca0eea67db8577c0dc1c3d0dc3d",
+    "bytes": 1023,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_actual83_returns_verified.json",
+    "source_round_file": "thirdreal20261021_rational_actual83_returns_verified.json",
+    "sha256": "2d3948fdb9c4a3fd03fd544272ac7a4a4c551ff1dfb74868db74dd73cce25e77",
+    "bytes": 3928,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_actual83_returns_verify.py",
+    "source_round_file": "thirdreal20261021_rational_actual83_returns_verify.py",
+    "sha256": "6ad3ac70d71d2f716841e62fa953199204c02f6dc149d53ea1251fa6add25f94",
+    "bytes": 952,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_adapt_repair.py",
+    "source_round_file": "thirdreal20261021_rational_adapt_repair.py",
+    "sha256": "d18ad8ab68baffb70ea492ccbd6fbaef77bea03c1f32104414ef5bc7b42e13b7",
+    "bytes": 661,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_finite_probe.json",
+    "source_round_file": "thirdreal20261021_rational_finite_probe.json",
+    "sha256": "e673082d5ce116839b34c5d0aa58945c2153626ab365a48e8eaf914fdff1c56e",
+    "bytes": 10462,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_finite_probe.py",
+    "source_round_file": "thirdreal20261021_rational_finite_probe.py",
+    "sha256": "89e933802928892a386a51137e529eb9fa0ff48cc777b2a6db529e458dd3db93",
+    "bytes": 1125,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_grouped_fixed_m10.json",
+    "source_round_file": "thirdreal20261021_rational_grouped_fixed_m10.json",
+    "sha256": "c247c26e3412c0b1cafeb42417c6b5e04c7e78a9938009c0694f29b336558c78",
+    "bytes": 201911,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_grouped_fixed_m11.json",
+    "source_round_file": "thirdreal20261021_rational_grouped_fixed_m11.json",
+    "sha256": "9d8c3b54467898fe1a96378a2b94f923d353caaa43ae3726d98938722290e056",
+    "bytes": 199835,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_grouped_fixed_m7.json",
+    "source_round_file": "thirdreal20261021_rational_grouped_fixed_m7.json",
+    "sha256": "5174afc9be799446ac951f7fa98f46e159cac9edca1dc4dde72f579bc332903f",
+    "bytes": 238824,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_grouped_fixed_m8.json",
+    "source_round_file": "thirdreal20261021_rational_grouped_fixed_m8.json",
+    "sha256": "5ee7c7e66a1adefcbde4bf7048775c8d1d02dfa199fd3d518fede903bde4e580",
+    "bytes": 186904,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_grouped_fixed_m9.json",
+    "source_round_file": "thirdreal20261021_rational_grouped_fixed_m9.json",
+    "sha256": "e2cf727a210f40de8a7925d3120cfafbf23ccfe494a4d63e271826a6ed648841",
+    "bytes": 174223,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_lattice_verified.json",
+    "source_round_file": "thirdreal20261021_rational_lattice_verified.json",
+    "sha256": "2e0eacf8bed497aec5d634cd46c6851b0268ff7de2e9b27caccbd0230be57e96",
+    "bytes": 199,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_latticecover.json",
+    "source_round_file": "thirdreal20261021_rational_latticecover.json",
+    "sha256": "c5cf05b85d7c962147a0fcc0cf36cce91ce0b852c0a1e88331e306a37c97e563",
+    "bytes": 1730,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_latticecover.py",
+    "source_round_file": "thirdreal20261021_rational_latticecover.py",
+    "sha256": "a78000bf22523e25f7743f404136af6ce0e554078528015ee6f3bb708108a149",
+    "bytes": 1013,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_latticecover_optimized.json",
+    "source_round_file": "thirdreal20261021_rational_latticecover_optimized.json",
+    "sha256": "789b01355ca023f3c67794626265eec3593fc3a39d22c49ab055dfb52667e611",
+    "bytes": 2595,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_logbounds.py",
+    "source_round_file": "thirdreal20261021_rational_logbounds.py",
+    "sha256": "5bee6f89afe444917d5f1f934a6851d94610607fd13481703ed14523476de2e3",
+    "bytes": 1437,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_optimize.py",
+    "source_round_file": "thirdreal20261021_rational_optimize.py",
+    "sha256": "fb5cbf73e0490fe36cdbf0f9835edf4199712fbd3bda6205a53e27e0f0d4c45a",
+    "bytes": 938,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_phase_betterorder.py",
+    "source_round_file": "thirdreal20261021_rational_phase_betterorder.py",
+    "sha256": "f25c9fad02f7f443945a7a8bde294d3421f99c5e86629745debc8b7c65ad56d5",
+    "bytes": 268,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_phase_certificate.py",
+    "source_round_file": "thirdreal20261021_rational_phase_certificate.py",
+    "sha256": "92b61096e980929efbb6e1fc07fd8f5589bfbb9a9b677266b4830a9b182179ae",
+    "bytes": 5004,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_phase_coarseD.py",
+    "source_round_file": "thirdreal20261021_rational_phase_coarseD.py",
+    "sha256": "acbfa44f7cbd9719d139ace808ba7d7d664e756df49adaba2d1a4128e80f0c4f",
+    "bytes": 266,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_phase_grouped.py",
+    "source_round_file": "thirdreal20261021_rational_phase_grouped.py",
+    "sha256": "4a5ff777ee67687ecafe571d253ee3f77250bcae2527e20507cfb8575fa81469",
+    "bytes": 2282,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_phase_run.py",
+    "source_round_file": "thirdreal20261021_rational_phase_run.py",
+    "sha256": "7eb8a0a6b116cc60bffc2bc48ee0abf7ed13decf89dc62ca239f9a4df92d1c5c",
+    "bytes": 143,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_repair.py",
+    "source_round_file": "thirdreal20261021_rational_repair.py",
+    "sha256": "1648eb0e9544d64c4ab2b8724399b01f2f2de39272590bb0064aa295b3221290",
+    "bytes": 1562,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_repaired_100.json",
+    "source_round_file": "thirdreal20261021_rational_repaired_100.json",
+    "sha256": "b1b914becbd8dbc5b0aacc0f98f23c41ea9ec8de43ff1f88bedfa11247888d83",
+    "bytes": 2468,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_repaired_2187.json",
+    "source_round_file": "thirdreal20261021_rational_repaired_2187.json",
+    "sha256": "f9812996ceb95d7ed679d7e682e70317c369734703cc98e2b85134e0dfe6aee4",
+    "bytes": 40078,
+    "provenance": "R022 all-real-exponent certificate supplement"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_scan.py",
+    "source_round_file": "thirdreal20261021_rational_scan.py",
+    "sha256": "46e034ffdc3ce41a0375871b5d384538a186073855fe07f8efe73ff37d960fb7",
+    "bytes": 3038,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_scan_100.json",
+    "source_round_file": "thirdreal20261021_rational_scan_100.json",
+    "sha256": "79ddf2c80c5ff85d04f2e9165a3a8688f39f6deecc90ae74d79dddf9f22cd5a9",
+    "bytes": 535300,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification",
+    "packed_path": "cantor-dust/work/thirdreal20261021_rational_scan_100.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_scan_2187.json",
+    "source_round_file": "thirdreal20261021_rational_scan_2187.json",
+    "sha256": "2a7a88b34145a52668f55db43a27eb118f01dab979f30acede863e94f8188302",
+    "bytes": 8814575,
+    "provenance": "R022 all-real-exponent certificate supplement",
+    "packed_path": "cantor-dust/work/thirdreal20261021_rational_scan_2187.json.gz"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_scan_2187.py",
+    "source_round_file": "thirdreal20261021_rational_scan_2187.py",
+    "sha256": "0b74cb35607334eb42b9f595ca2c243afcab607014e1ba9e51c849a468e6b37f",
+    "bytes": 145,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_uniform_probe.json",
+    "source_round_file": "thirdreal20261021_rational_uniform_probe.json",
+    "sha256": "bf4e70851ff46e1b174b2505d179c1f29200bc4110e2c0932a434a476aae5153",
+    "bytes": 6684,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_uniform_probe.py",
+    "source_round_file": "thirdreal20261021_rational_uniform_probe.py",
+    "sha256": "0d2d40fb5aa5557013e897c488fea9175154d5790b2455df586315bbec7907fe",
+    "bytes": 1652,
+    "provenance": "R022 certificate-generation algorithm or local dependency; discovery output requires independent verification"
+  },
+  {
+    "path": "cantor-dust/work/thirdreal20261021_rational_verify.py",
+    "source_round_file": "thirdreal20261021_rational_verify.py",
+    "sha256": "408637332d14086e604a78bec0d5277c310b7e2d82386df87c5b1dd809121a0f",
+    "bytes": 1196,
+    "provenance": "R022 all-real-exponent certificate supplement"
   }
 ]

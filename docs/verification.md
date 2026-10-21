@@ -86,3 +86,17 @@ the Python implementation of integer/rational arithmetic, the verifier source,
 and the mathematical argument connecting their outputs to the theorem. They are
 not Lean kernel proofs, and no Lean files or verified Lean dependency graph are
 present in this release. Input hashes establish identity, not mathematical truth.
+
+## Extension to every real exponent
+
+The independent denominator-width, finite rational, continuous phase and
+exceptional-source predicates are documented in [real-exponents.md](real-exponents.md).
+The `real-*` stages replay these. They retain the mathematical transfer and
+irrational phase-density arguments in the paper. The final ledger checks
+coverage and prior receipts, not the predicates themselves.
+
+## Numerical figures
+
+The figure programs are a separate optional-dependency workflow. Table
+reproduction establishes agreement with the archived traces, not correctness
+of a conjectured transition value. See [the methodology](numerical-transition-method.md).

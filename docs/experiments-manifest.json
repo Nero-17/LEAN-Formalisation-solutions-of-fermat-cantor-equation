@@ -1,0 +1,143 @@
+[
+  {
+    "path": "experiments/phase-transitions/scan_last_transition.py",
+    "sha256": "da7e5650c5fd49d2b3ea0022c854193e84aebf422c4ef0930154aa11598ee5a1",
+    "bytes": 7230,
+    "provenance": "Manuscript Figure 2 experiment"
+  },
+  {
+    "path": "experiments/phase-transitions/check_transition_precision.py",
+    "sha256": "16bd56fca4393a3bb6323015c367cabf2fd322c6f393ecf02ca393b32bf9270c",
+    "bytes": 3520,
+    "provenance": "Manuscript Figure 2 experiment",
+    "packaging_change": "Removed optional local numeric-deps search path; imports use the documented Python environment."
+  },
+  {
+    "path": "experiments/phase-transitions/estimate_first_transition.py",
+    "sha256": "6f3898dc6d2e58f9e89cf6eb19db4e7ad612115a27adb57ff9db77ccbf4654e8",
+    "bytes": 3145,
+    "provenance": "Manuscript Figure 2 experiment",
+    "packaging_change": "CSV destination follows the repository layout; numerical predicates unchanged."
+  },
+  {
+    "path": "experiments/phase-transitions/export_transition_estimates.py",
+    "sha256": "5755bbedf66528edbf32bec877a5686879ccb6f90bf8c4c9ed7fb9c3011b4ee4",
+    "bytes": 1565,
+    "provenance": "R019 final numerical export",
+    "packaging_change": "CSV destination follows the repository layout; numerical values and selection unchanged."
+  },
+  {
+    "path": "experiments/phase-transitions/last-transition-grid.jsonl",
+    "sha256": "293aef5ac00bbb6793242f80ff169ad36f7ff452d6ba1901c3ab30914e1ee947",
+    "bytes": 363829,
+    "provenance": "R019 raw numerical trace"
+  },
+  {
+    "path": "experiments/phase-transitions/last-transition-refined.jsonl",
+    "sha256": "e970cdce4ff53c69c5cbacd9219090e03f041a48b5c6bf4676e0afe292976de0",
+    "bytes": 654142,
+    "provenance": "R019 raw numerical trace"
+  },
+  {
+    "path": "experiments/phase-transitions/last-transition-precision.jsonl",
+    "sha256": "44931ff0d5cc51426f9e1f07fb4f104df9919b72ec97f3626540e260763a9027",
+    "bytes": 270303,
+    "provenance": "R019 raw numerical trace"
+  },
+  {
+    "path": "experiments/phase-transitions/last-transition-deep.jsonl",
+    "sha256": "b10ecac57bc92fc6c6e264f00e1d29a15aa93a486471aa00b40ce02b392ddbed",
+    "bytes": 227045,
+    "provenance": "R019 raw numerical trace"
+  },
+  {
+    "path": "experiments/phase-transitions/last-transition-precision-initial.jsonl",
+    "sha256": "c6e7dc297cb16b73cf5bb41e60ad1a9ca07b34a6c2452a4a95c36e187728f992",
+    "bytes": 158614,
+    "provenance": "R019 raw numerical trace (withdrawn diagnostic only)"
+  },
+  {
+    "path": "experiments/phase-transitions/first-transition-scan.jsonl",
+    "sha256": "9d17a1f0918961354e0d47f3bd3c25f3acef35e40bc698d85f53bb56f0f91e6b",
+    "bytes": 41317,
+    "provenance": "Finite-depth first-transition trace"
+  },
+  {
+    "path": "experiments/phase-transitions/last-transition-probe.txt",
+    "sha256": "460ca17dadd2f47bc0f02489c0a48b697d0413272a31372aa0f7d97d293580ed",
+    "bytes": 6035,
+    "provenance": "R019 exploratory diagnostic, not a proof"
+  },
+  {
+    "path": "experiments/phase-transitions/last-transition-local-probe.txt",
+    "sha256": "4f437fa2f702cdc7b977ba5b86963a8b3c8727c2df4a5734368812d16203d516",
+    "bytes": 11593,
+    "provenance": "R019 exploratory diagnostic, not a proof"
+  },
+  {
+    "path": "figures/generate_phase_diagram.py",
+    "sha256": "3e7cac5c3c64eef20a3d0a637ee845effc63d33049bda340c70360f56a529168",
+    "bytes": 6692,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/generate_phase_diagram_zh.py",
+    "sha256": "f494395c4b5641ebb0f36c83424d0e4853c53a3fea718c997ff11ebfbd401737",
+    "bytes": 6692,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/generate_figure.py",
+    "sha256": "3a0c94e3f73e4b1a23f7ebcd441ab1020134e486bd3ed358d533736be776f517",
+    "bytes": 2340,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/cantor-circle.tex",
+    "sha256": "f1da2f2b89f07cc8b974d6f514b374e1c51dc25eb90e73fe0c6ef6ce8870dd57",
+    "bytes": 28729,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/cantor-circle-zh.tex",
+    "sha256": "fa62a4d1002da1409caa4ebd0531c93b8f900f5602dd3b42f6add3535eec8785",
+    "bytes": 28727,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/phase-transition-estimates.csv",
+    "sha256": "4a387af713277b5fa741825f6fe51ade304297578382905dc683038fe3e9e71a",
+    "bytes": 2049,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/first-transition-estimates.csv",
+    "sha256": "f34c8901f580f293205a2118f582d56487936059419ea8755207cf5412a55dc8",
+    "bytes": 1206,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/phase-diagram.pdf",
+    "sha256": "ff627b004a1f9cb24f0f45ff9156997e6957c3cc6099982f9e9ab71d6d021ca5",
+    "bytes": 31387,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/phase-diagram-zh.pdf",
+    "sha256": "4c1425b9dab45beb455fab5b312ab1bf2b3f6a24ea4dfa3adcfbe25191cbeace",
+    "bytes": 50486,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/phase-diagram-preview.png",
+    "sha256": "9e614485743ee79037c2f8928c56ba47e67990477a373108258a6b6419efadb5",
+    "bytes": 214916,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  },
+  {
+    "path": "figures/phase-diagram-zh-preview.png",
+    "sha256": "31fba15892e826add5c67de47055c517e67f914e2aed6e37014c91e9a04ee1fa",
+    "bytes": 226329,
+    "provenance": "Current manuscript figure source / plotted data / rendered output"
+  }
+]

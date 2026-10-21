@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "Exactly four points at the specified algebraic n=5 parameter, conditional only on separately verified all-shell reduction; wide-window nonempty inequalities also checked.",
+  "lambda_bracket": [
+    "2699992564030913338808046107339678001/10000000000000000000000000000000000000",
+    "26999925640309133388080461073396780011/100000000000000000000000000000000000000"
+  ],
+  "leaf_count": 55,
+  "excluded": 54,
+  "max_word_length": 12,
+  "minimum_strict_leaf_margin_decimal": 1.9116349454604445e-08,
+  "slope_bounds_decimal": [
+    0.14621571322621574,
+    0.14621583212748893
+  ],
+  "wide_window_nonempty_derivative_bounds": [
+    0.48676701835629826,
+    0.5527306361869859
+  ]
+}

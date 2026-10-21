@@ -7,3 +7,6 @@
 /.gitattributes text eol=lf
 /.gitignore text eol=lf
 /reproduce.py text eol=lf
+
+/experiments/** -text
+/figures/** -text

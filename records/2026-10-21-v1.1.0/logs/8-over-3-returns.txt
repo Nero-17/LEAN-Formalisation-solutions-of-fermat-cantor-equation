@@ -1,0 +1,18 @@
+{'depth': 1, 'one_intervals': 11, 'two_intervals': 1, 'covered_components': 0}
+{'depth': 2, 'one_intervals': 25, 'two_intervals': 11, 'covered_components': 0}
+{'depth': 3, 'one_intervals': 51, 'two_intervals': 65, 'covered_components': 0}
+{'depth': 4, 'one_intervals': 99, 'two_intervals': 241, 'covered_components': 0}
+{'depth': 5, 'one_intervals': 187, 'two_intervals': 675, 'covered_components': 0}
+{'depth': 6, 'one_intervals': 349, 'two_intervals': 1595, 'covered_components': 0}
+{'depth': 7, 'one_intervals': 647, 'two_intervals': 3367, 'covered_components': 0}
+{'depth': 8, 'one_intervals': 1195, 'two_intervals': 6659, 'covered_components': 0}
+{'depth': 9, 'one_intervals': 2203, 'two_intervals': 12759, 'covered_components': 0}
+{'depth': 10, 'one_intervals': 4057, 'two_intervals': 24063, 'covered_components': 0}
+{'depth': 11, 'one_intervals': 7467, 'two_intervals': 45015, 'covered_components': 0}
+{'depth': 12, 'one_intervals': 13739, 'two_intervals': 83727, 'covered_components': 0}
+{'depth': 13, 'one_intervals': 25275, 'two_intervals': 155033, 'covered_components': 0}
+{'depth': 14, 'one_intervals': 46493, 'two_intervals': 286207, 'covered_components': 0}
+{'depth': 15, 'one_intervals': 85519, 'two_intervals': 527447, 'covered_components': 0}
+{'depth': 16, 'one_intervals': 157299, 'two_intervals': 971187, 'covered_components': 1}
+{'depth': 17, 'one_intervals': 289323, 'two_intervals': 1787353, 'covered_components': 3}
+INDEPENDENT PASS 17 {'depth': 17, 'one_intervals': 289323, 'two_intervals': 1787353, 'covered_components': 3} a979ffa979fe0d1d2d7aad9cdd82f459d3cdcc2d9582822fdedd054df851efd6
