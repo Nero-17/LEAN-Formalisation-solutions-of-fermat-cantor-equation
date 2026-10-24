@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "scope": "same algorithm, 80-digit recomputation of selected 60-digit traces",
+  "checks": [
+    {
+      "index": 0,
+      "lambda": "0.2679",
+      "source_count": 0,
+      "counts_match": true
+    },
+    {
+      "index": 1,
+      "lambda": "0.267925",
+      "source_count": 0,
+      "counts_match": true
+    },
+    {
+      "index": 30,
+      "lambda": "0.26865",
+      "source_count": 11,
+      "counts_match": true
+    },
+    {
+      "index": 35,
+      "lambda": "0.268775",
+      "source_count": 11,
+      "counts_match": true
+    },
+    {
+      "index": 60,
+      "lambda": "0.2694",
+      "source_count": 11,
+      "counts_match": true
+    },
+    {
+      "index": 90,
+      "lambda": "0.27015",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 101,
+      "lambda": "0.270425",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 120,
+      "lambda": "0.2709",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 150,
+      "lambda": "0.27165",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 176,
+      "lambda": "0.2723",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 180,
+      "lambda": "0.2724",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 210,
+      "lambda": "0.27315",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 240,
+      "lambda": "0.2739",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 249,
+      "lambda": "0.274125",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 270,
+      "lambda": "0.27465",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 300,
+      "lambda": "0.2754",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 330,
+      "lambda": "0.27615",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 359,
+      "lambda": "0.276875",
+      "source_count": 12,
+      "counts_match": true
+    },
+    {
+      "index": 360,
+      "lambda": "0.2769",
+      "source_count": 12,
+      "counts_match": true
+    }
+  ],
+  "samples": 19
+}

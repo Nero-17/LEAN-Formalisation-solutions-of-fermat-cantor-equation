@@ -76,17 +76,15 @@
   },
   {
     "path": "figures/generate_phase_diagram.py",
-    "sha256": "09ada4e9dc91c17212db3e3564c500f7514736bc6e42717db33f1a2e23d5fd3a",
-    "bytes": 5979,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
-    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
+    "sha256": "e93f9fc4c798b1dcb9f834fd50a43c4663d0e975a60d2c4a88ec2171d5c631e9",
+    "bytes": 6052,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/generate_phase_diagram_zh.py",
-    "sha256": "f44ad4089c0b2e7e02745f620584485300ca018f2b9af4ce5d89c07fc8745441",
-    "bytes": 6002,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
-    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
+    "sha256": "0f3453ca2c53b3c39161e3c0265c5d9f8b746ebaa7676a90a88c2f6defaa6d1d",
+    "bytes": 6093,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/generate_figure.py",
@@ -120,30 +118,56 @@
   },
   {
     "path": "figures/phase-diagram.pdf",
-    "sha256": "826bcb5173d206e4e5ee295c09e0c4418fb94a741c234f647004f184a4e10bfc",
-    "bytes": 15535,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
-    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
+    "sha256": "695c4f5fd2bb4c3bcbfedf6247d782bca14cf9d8f917b032799fabd028d4b430",
+    "bytes": 25206,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/phase-diagram-zh.pdf",
-    "sha256": "8b1f1fdb3c931d84195bbaf111c568bac116fe6849776f2736258f0a559d23b0",
-    "bytes": 32641,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
-    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
+    "sha256": "7bc3e4608c4acf1d6e7474ef235c0cab4c855f4703cab8b92bf5c0224e24840c",
+    "bytes": 43065,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/phase-diagram-preview.png",
-    "sha256": "45849283d7e8a7ded842cfa35e7f7335f551c20828180b5ea02c6a21dad5c403",
-    "bytes": 185800,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
-    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
+    "sha256": "005b23f46b453fba93fea671de86fff658dd820245e4667fb778be2c936c1d94",
+    "bytes": 318910,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/phase-diagram-zh-preview.png",
-    "sha256": "0c30defed27b870927785652274039e70151bd75ea36b34d38117e1a6629dd40",
-    "bytes": 205467,
-    "provenance": "Current manuscript Figure 2; all-real strict last-transition bound, Theorem 4.2; labels synchronized in v1.2.0",
-    "packaging_change": "Exponent label updated from n to alpha; numerical data and plotting positions unchanged."
+    "sha256": "a32134ba102b27233837d44cf7f549f4918c98a1519851ecfb7bb4a8f4613993",
+    "bytes": 339948,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
+  },
+  {
+    "path": "figures/circle_zoom_inset.py",
+    "sha256": "aef69212b6cb26725f098cb9dc87c4168bce7be6cb590f407ba1aa27eaa0e3c8",
+    "bytes": 2407,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
+  },
+  {
+    "path": "figures/circle-zoom.csv",
+    "sha256": "5485b065baadadcf12ea5f1cda3957315a1b7b87581a2c9bed8a2f6f644ba8f1",
+    "bytes": 30417,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
+  },
+  {
+    "path": "experiments/phase-transitions/scan_circle_zoom.py",
+    "sha256": "06be6612eed5831e76021db6aad7b081cade8b0003b6d0a1221d24f88ee64de2",
+    "bytes": 4551,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
+  },
+  {
+    "path": "experiments/phase-transitions/circle-zoom.json",
+    "sha256": "17ff039be608d351d336d3f7b4bae09147bb67cd5f4e8ca270ef421acd9e2e03",
+    "bytes": 2432994,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
+  },
+  {
+    "path": "experiments/phase-transitions/circle-zoom-validation.json",
+    "sha256": "a0a021672b9ef74d344609db0b8d156b31382632cd49c8eb2b50767584349bfd",
+    "bytes": 2394,
+    "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   }
 ]

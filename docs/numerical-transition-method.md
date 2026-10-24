@@ -1,5 +1,45 @@
 # Numerical squares in the phase diagram
 
+## Magnified alpha=2 numerical slice (24 October 2026)
+
+The magnifier links the first/last markers at alpha=2 to a local numerical
+slice over 0.2679 <= lambda <= 0.2769. The 361 samples have spacing 0.000025.
+`numerics/scan_circle_zoom.py` computes actual-curve local cylinder counts
+at 60 decimal digits, to depth 48, for axis depths k=0,...,12 and each
+compatible m selected by the existing cylinder-hull test. It uses the
+polynomial residual X^2-lambda^(m-2k)Y(2-lambda^m Y), with
+X=1-lambda+lambda*s and Y=1-lambda+lambda*t. All four children are tested
+by opposite-corner signs and restricted to the half arc x<=y.
+
+The inset ordinate is the finite-depth proxy
+
+    d_hat_48(lambda) = max_(tested k,m) log(max(N_48(k,m),1)) / (48 log(1/lambda)),
+
+where N_48 is the surviving local cylinder count. A cylinder that becomes
+empty before level 48 contributes zero. The CSV also retains the depth-36
+proxy and the last-eleven-level regression slopes; the plotted quantity
+is the level-48 log-count proxy, not the regression slope. Blue dots mark
+samples at which every tested cylinder becomes empty. Lines connect samples
+only to aid reading; the interval between samples is not classified.
+
+All 361 samples completed without reaching the 20,000-node cap; 44 had
+all tested cylinders empty. Raw count histories are in
+`numerics/circle-zoom.json`. Nineteen selected parameters were recomputed
+with the same algorithm at 80 digits; every count history agreed, as
+recorded in `numerics/circle-zoom-validation.json`. This is a precision
+check, not independent interval verification. These finite-depth proxies
+can exceed asymptotic dimension bounds because of transient branching;
+they are not measured Hausdorff dimensions. Neither zero nor positive
+finite-depth values certify the corresponding infinite-scale conclusion.
+
+Run `python figures/numerics/scan_circle_zoom.py`, then the two figure
+scripts, to reproduce the Overleaf assets. In the GitHub companion the
+scan and raw traces live in `experiments/phase-transitions/`; run
+`python experiments/phase-transitions/scan_circle_zoom.py` from that
+repository root. The manuscript caption is unchanged.
+
+## Existing transition markers
+
 These are **heuristic, finite-resolution estimates** of transition
 parameters, not Hausdorff-dimension values and not certified bounds.
 Blue squares estimate first transitions; red squares estimate last transitions.
@@ -83,15 +123,16 @@ last transition.
 
 ## Reproduction
 
+The versioned computational repository is https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/tree/v1.2.0.
 All scripts and raw traces are in `experiments/phase-transitions/` in this repository.
 The figure scripts and the final CSV tables are in `figures/`. Install the
 optional numerical dependencies with `python -m pip install -r requirements-figures.txt`.
-See [the experiment README](../experiments/phase-transitions/README.md) for
+See [the experiment README](https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/blob/v1.2.0/experiments/phase-transitions/README.md) for
 the complete command sequence and for fresh versus cached runs.
 
 The n=5 marker uses a rounded algebraic zero-dimensional anchor in addition to
 the grid. Its exact root, finite certificates and infinite-tail argument are
-documented in [n5-numerical-anchor.md](n5-numerical-anchor.md). The decimal in the
+documented in [n5-numerical-anchor.md](https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/blob/v1.2.0/docs/n5-numerical-anchor.md). The decimal in the
 CSV is a plotting convention; neither it nor the plotted midpoint is a proved
 last-transition value. The initial high-precision trace and global probes are
 retained as rejected diagnostics, explicitly excluded from the final export.

@@ -13,6 +13,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
+from circle_zoom_inset import add_circle_zoom
 
 OUT = Path(__file__).resolve().parent
 with (OUT/'phase-transition-estimates.csv').open(newline='',encoding='utf-8') as f:
@@ -59,8 +60,8 @@ for frac in fractions:
                 zorder=11, clip_on=False)
 
 
-ax.text(5, .12, r'$\dim_{\mathrm{H}}(E_{\alpha,\lambda})=0$  (Theorem 3.2)',
-        ha='center', va='center', fontsize=22, color='#556676')
+ax.text(6.6, .12, r'$\dim_{\mathrm{H}}(E_{\alpha,\lambda})=0$'+'\n(Theorem 3.2)',
+        ha='center', va='center', fontsize=20, color='#556676')
 ax.text(5, .45, r'$\dim_{\mathrm{H}}(E_{\alpha,\lambda})>0$',
         ha='center', va='center', fontsize=22, color='#A34254', zorder=12)
 ax.text(5.2, .378,
@@ -110,6 +111,7 @@ fig.legend(handles=handles,ncol=3,loc='lower center',bbox_to_anchor=(.52,.055),
            frameon=False,columnspacing=1.8,handlelength=1.8,fontsize=12)
 fig.text(.52,.017,'Circles: exact values     |     Squares: numerical estimates, not rigorous bounds',
          ha='center',fontsize=11.5,color='#586577')
+add_circle_zoom(ax)
 fig.savefig(OUT/'phase-diagram.pdf', facecolor='white')
 fig.savefig(OUT/'phase-diagram.svg', facecolor='white')
 fig.savefig(OUT/'phase-diagram-preview.png', dpi=220, facecolor='white')
