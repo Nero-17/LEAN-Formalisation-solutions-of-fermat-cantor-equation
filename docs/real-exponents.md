@@ -1,6 +1,9 @@
 # All real exponents at λ=1/3
 
-This is the certificate guide for Theorem 3.1 and Appendix A. For direct commands
+This is the command guide for the rational-exponent part of Theorem 3.1.
+The detailed construction and former Appendix A now appear in the
+[PDF certificate reader\'s guide](certificate-guide.pdf)
+([LaTeX source](certificate-guide/main.tex)). For direct commands
 below, first run `python reproduce.py prepare`, then change directory to
 `.reproduce/`. The repository-level stage commands in the main README perform
 the same checks without this directory change.
@@ -62,7 +65,9 @@ Accepted coverage and replay commands
    python work/thirdreal20261021_adversarial_final.py
    This adoption check does not replace the substantive checks above.
 
-The mathematical proofs of the source transfer, irrational exponent case,
-perfectness and strict-return dimension bound are in the manuscript.
+The irrational-exponent proof and the analytic perfectness and strict-return
+lemmas are in the manuscript. The PDF guide supplies the detailed source transfer
+and computational coverage; the paper presents their construction ideas.
 `docs/source-manifest.json` records the uncompressed SHA-256 of every exact input and program.
+
 

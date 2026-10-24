@@ -1,0 +1,568 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,longtable}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\emergencystretch}{2em}
+\title{A reader's guide to the certificates\\for rational Fermat--Cantor exponents}
+\author{Computational companion to \emph{Solutions of $x^\alpha+y^\alpha=1$ in $\lambda$-Cantor sets}}
+\date{24 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This guide explains the exact certificates used for the rational-exponent
+part of Theorem 3.1. It collects the detailed reduction, parameter covers,
+exceptional sources and verification predicates formerly printed in the
+manuscript, and connects them to the executable checks. The certificate
+data and algorithms are unchanged. The irrational-exponent proof and the
+other current manuscript results are analytic.
+\end{abstract}
+\tableofcontents
+
+\section{What the computation proves}
+Let $C$ be the middle-third Cantor set and write
+$E_{\alpha,1/3}:=\{(x,y)\in C^2:x^\alpha+y^\alpha=1\}$.
+The required assertion is
+\[
+\dim_{\mathrm H}(E_{\alpha,1/3})>0
+\qquad(\alpha\in\mathbb Q,\ \alpha>1).
+\]
+The case $\alpha=2$ has an independent analytic proof in manuscript
+Theorem 2.11. For the remaining rational exponents, the computation either
+supplies a strict logarithmic source in an admissible slope band or
+verifies two strict returns on a specified Cantor rectangle. Both routes
+produce an infinite construction; counting points at a fixed depth is
+not the proof.
+
+Read Section 2 for the reduction and coverage partition, Section 3 for the
+exact inequalities checked by the programs, and Section 4 for replay
+commands. A short first inspection is the sixteen-row denominator cover
+in Section 3. The seven exceptional rational sources then illustrate why
+the direct-return route is also needed.
+
+\paragraph{Version and scope.}
+This guide transcribes the rational proof and Appendix A from Overleaf
+commit \nolinkurl{6e55513bbf5e706c570fdbbc634254b786a3b1d9}.
+All numerical inputs and verification programs are the existing
+\href{https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/tree/v1.2.0}{v1.2.0 certificate release}.
+The new guide does not report a new full replay of these calculations.
+Previously completed checks and their logs are identified in the repository.
+The manuscript's current Lemma 2.9, Theorem 2.11 and Theorem 4.2 use
+analytic proofs; their older computational material remains available as
+historical or supplementary material, not as a dependency of those proofs.
+These are exact Python checks, not Lean formalizations.
+
+\paragraph{Notation and analytic inputs.}
+Program fields named \texttt{n} denote the manuscript exponent $\alpha$.
+The admissible slope bands are the interval $(11/9,2027/1624)$ and
+\[
+(89/73,171/137),\quad(101/79,183/143),\quad(89/57,171/89),
+\]
+\[
+(143/61,237/101),\quad(137/57,219/89),
+\]
+together with their reciprocals. Their eventual-periodicity property is
+proved in manuscript Lemmas 2.5 and 2.9. The interval-cover principle,
+strict-return principle and irrational-tangent upgrade are manuscript
+Lemmas 2.3, 2.8 and 2.10, respectively. References to these numbered results
+below are references to the manuscript.
+For the normalization $(rs+t)/2$, the switch set is
+\[
+B_r:=\left[\frac13,\frac{r+1}{6}\right]\cup
+\left[\frac r3,\frac{r+3}{6}\right]\cup
+\left[\frac{r+1}{3},\frac{3r+1}{6}\right].
+\]
+Each accepted return record specifies the slope, initial level, return
+depth and strict margin. Two words are incomparable when neither is a
+prefix of the other. The strict-return lemma turns such a record and its
+nonlinear error bound into the lower bound $\log2/(M\log3)$.
+
+\section{Detailed reduction and coverage}
+
+\emph{Strict logarithmic sources.}
+Write \(\alpha=a/b>1\) in lowest terms. The case \(\alpha=2\) follows from
+Theorem~2.11. For every other such exponent,
+there are no solutions with both coordinates positive and rational.
+To see this, suppose otherwise. In a normal closure, every conjugate
+of \(x^{a/b}\) is \(x^{a/b}\) times a \(b\)-th root of unity, and
+likewise for \(y^{a/b}\). The conjugate equation and equality in the
+triangle inequality force both conjugates to remain positive real.
+Thus \(x^{a/b},y^{a/b}\) are rational. Prime valuations and
+\(\gcd(a,b)=1\) imply \(x=u^b,y=v^b\) for positive rationals
+\(u,v\). Since \(a\geq3\), the equation \(u^a+v^a=1\) contradicts
+Fermat's Last Theorem~(see the references in the manuscript).
+
+Let \(u=(P+s)/3^p\), \(v=(Q+t)/3^q\), where \(P,Q>0\) have
+padded ternary digits in \(\{0,2\}\). A strict logarithmic source
+consists of \(d\in b^{-1}\mathbb Z\) satisfying
+\begin{align*}
+d\log3+\alpha\log(P/3^p)-\log \alpha-\log((Q+1)/3^q)&<0,\\
+d\log3+\alpha\log((P+1)/3^p)-\log \alpha-\log(Q/3^q)&>0,
+\end{align*}
+with
+\[
+\left[\frac{\alpha Q}{P+1},\frac{\alpha(Q+1)}P\right]
+\]
+strictly inside an admissible slope interval or its reciprocal.
+If \(d=j/b\), choose arbitrarily large integers \(k\) satisfying
+\(ak+j\equiv0\pmod b\). Then \(\alpha k+d\) is an integer and
+\[
+x=3^{-k}u,\qquad y=1-3^{-\alpha k-d}v
+\]
+are Cantor cylinders. The exact logarithmic residual
+\[
+d\log3+\alpha\log u-
+\log\!\left(3^{\alpha k+d}[1-(1-3^{-\alpha k-d}v)^\alpha]\right)
+\]
+converges in \(C^1\) to \(d\log3+\alpha\log u-\log \alpha-\log v\).
+For real powers the required identity is
+\[
+\frac{1-(1-z)^\alpha}{z}=\alpha\int_0^1(1-tz)^{\alpha-1}\,dt.
+\]
+Thus the strict corner and slope inequalities persist. Reflecting
+the \(v\) coordinate makes both partial derivatives positive;
+Lemma~2.3 gives a nonempty compact fibre.
+If it had an isolated point, the vanishing-error digital argument
+of Lemmas~2.5 and~2.9, as in
+Theorem~2.6, would make both coordinates rational.
+The preceding obstruction excludes this. The fibre is perfect,
+and its tangent ratio is strictly monotone along the Fermat arc.
+Lemma~2.10 gives positive dimension.
+
+\emph{Coverage of the rational exponents.}
+The interval of permitted \(d\) has length
+\[
+\frac{\alpha\log(1+1/P)+\log(1+1/Q)}{\log3}.
+\]
+For denominators \(b\geq110\), a uniform construction makes this
+length greater than \(1/110\). Write \(\alpha=3^m t\), \(1\leq t<3\).
+The sixteen rows \((P,Q,\ell,u)\) in
+Section~\ref{app:real-certificates} satisfy the following exact
+open-cover condition:
+\[
+[1,3]\subset\bigcup
+\left(\max\left\{\frac{\ell(P+1)}Q,
+\left(\frac{11}{1100}-\frac1{Q+1}\right)(P+1)\right\},
+\frac{uP}{Q+1}\right).
+\]
+Replace \(P\) by \(3^mP\), appending zero ternary digits.
+The derivative interval stays strictly in \((\ell,u)\), and
+\[
+\alpha\log\left(1+\frac1{3^mP}\right)
++\log\left(1+\frac1Q\right)
+>\frac{t}{P+1}+\frac1{Q+1}>\frac{11}{1100}.
+\]
+Since \(\log3<11/10\), the permitted interval contains a point of
+\(b^{-1}\mathbb Z\) whenever \(b\geq110\).
+
+Integer exponents are covered by the certificates and nine direct
+returns detailed in Section~\ref{app:integer-certificates}.
+For \(2\leq b\leq109\), exact verification gives the following
+exhaustive decomposition:
+\[
+\begin{array}{c|l}
+\text{exponent range}&\text{coverage}\\ \hline
+1<a/b<2187&7{,}738{,}063\text{ width sources},\\
+ &295{,}480\text{ individual sources, seven direct returns}\\
+3^7\leq \alpha\leq3^8&650\text{ closed parameter cells}\\
+3^8\leq \alpha\leq3^9&508\text{ cells}\\
+3^9\leq \alpha\leq3^{10}&470\text{ cells}\\
+3^{10}\leq \alpha\leq3^{11}&552\text{ cells}\\
+3^{11}\leq \alpha\leq3^{12}&547\text{ cells}\\
+\alpha\geq3^{12}&\text{continuous covers and uniform tail}.
+\end{array}
+\]
+There are exactly \(8{,}033{,}550\) reduced fractions in the first
+range. The five closed covers verify every denominator separately
+and have no gaps at their joins. The continuous covers for
+\(\alpha\geq3^{12}\), described in Section~\ref{app:integer-certificates},
+cover every real normalized exponent \(t\), with integer \(d\).
+For rational \(\alpha=a/b\), taking \(k\) divisible by \(b\) makes the
+same transfer valid. Thus their use does not require integrality
+of \(\alpha\).
+
+The seven remaining exponents have direct-return certificates:
+\[
+\begin{array}{c|rrrrrrr}
+\alpha&24/23&19/18&13/12&8/7&8/3&11/4&53/2\\ \hline
+M&19&17&17&15&17&17&16.
+\end{array}
+\]
+Each certificate specifies a genuine Cantor rectangle, a rational
+slope \(r\), an initial level \(T\in B_r\), and a normalization
+\((rs+t)/2-T+H(s,t)\), with \(H(0,0)=0\).
+It verifies two incomparable returns from every point of \(B_r\),
+of length at most \(M\), with margin \(\eta\), and
+\[
+\sup_{[0,1]^2}(|\partial_sH|+|\partial_tH|)
+<\frac{\eta}{2\,3^M}.
+\]
+Here \(\eta=10^{-7}\) for \(8/3\) and \(\eta=10^{-5}\) otherwise.
+The exact recursion and algebraic error bounds are given in
+Section~\ref{app:real-certificates}. Lemma~2.8
+then gives the lower bound \(\log2/(M\log3)>0\) in each case.
+This proves the rational case and completes the proof of
+Theorem~3.1.
+
+
+\section{Exact verification and certificates}\label{app:certificates}
+
+The computations below use exact integer or rational inequalities.
+We retain their verification predicates and mathematical implications
+here. The certificates, verification scripts, calculation
+records and reproduction instructions are available in the
+\href{https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/tree/v1.2.0}
+{versioned computational companion repository}.
+These are Python certificate checks; they are not Lean formalizations.
+
+\subsection{Ordinary binary returns}
+The underlying exact recursion can be described without a grid.
+Let \(K\) be the union of the three closed switch intervals
+shrunk by the specified margin. Starting with \(A_0=K\) and
+\(D_0=\varnothing\), set
+\begin{align*}
+A_{j+1}&=A_j\cup\bigcup_c(A_j+c)/3,\\
+D_{j+1}&=D_j\cup\bigcup_c(D_j+c)/3\\
+&\quad{}\cup\bigcup_{c\ne d}
+       \bigl((A_j+c)/3\cap(A_j+d)/3\bigr),
+\end{align*}
+where \(c,d\in\{0,1,r,r+1\}\).
+The set \(A_j\) records one return of length at most \(j\);
+\(D_j\) records two incomparable returns. Induction proves
+both interpretations, since the last union chooses different
+first digits. Exact unions and intersections of closed rational
+intervals implement the recursion. The assertion
+\(B_r\subset D_{L_\alpha}\), together with the nonlinear error bound
+in the proof, is the required finite certificate.
+
+\subsection{Logarithmic sources and the infinite exponent tail}
+For each logarithmic source we verify the ternary digits, the two
+strict logarithmic corner signs, and the full rational
+derivative-ratio interval.
+We enclose logarithms by exact range reduction and
+\[
+\log z=2\sum_{j=0}^{J-1}
+  \frac{((z-1)/(z+1))^{2j+1}}{2j+1}+R_J,\qquad z\geq1,
+\]
+where
+\[
+0\leq R_J\leq
+\frac{2((z-1)/(z+1))^{2J+1}}
+ {(2J+1)(1-((z-1)/(z+1))^2)} .
+\]
+For \(z<1\), use \(\log z=-\log(1/z)\).
+Range reduction uses exact powers of two and the same enclosed
+value of \(\log2\). All endpoint rounding is outward.
+
+The fixed-scale and tail checks test each closed parameter cell,
+each Cantor rectangle, and its assigned slope band.
+They compute inner corner-image intervals
+with a strict inset \(10^{-12}\), verify that their translates
+cover the circle, and then verify that the closed parameter
+cells cover \([1,3]\).
+For the tail, the integral enclosure printed in the proof
+controls every \(Z\geq1180980\); testing a finite list of
+exponents is not used in its place.
+
+\subsection{Integer sources and the continuous exponent tail}\label{app:integer-certificates}
+The logarithmic source criterion in Theorem~3.1 also applies when the reduced denominator is one. The circle case is supplied by Theorem~2.11.
+
+Here is the finite covering argument that supplies these strict
+sources. For large exponents write \(\alpha=3^m t\), \(1\leq t<3\).
+Choose a Cantor endpoint \(u_0=P/3^D\), an integer \(h\), and
+\[
+u=u_0+3^{-m}a,\qquad a\in3^hC,\qquad m\geq D+h .
+\]
+The depth condition makes every such \(u\) a Cantor point.
+Modulo one, the logarithmic source condition asks whether
+\[
+\frac{\log v-3^mt\log(1+a/(3^mu_0))}{\log3}
+\]
+contains the target phase
+\((\alpha\log u_0-\log \alpha)/\log3\).
+It suffices that strict inner corner images of admissible
+rectangles cover the entire circle. Adding a constant rotation,
+we check instead the phase
+\[
+\frac{\log v+t3^m
+        \log((3^mu_0+3^h/2)/(3^mu_0+a))}{\log3}.
+\]
+At fixed \(m\), its corner values are affine in \(t\), so their
+bounds on a closed parameter interval occur at its endpoints.
+For a uniform tail in \(m\), use the exact identity
+\[
+Z\log\frac{Z+3^h/2}{Z+a}
+       =\int_a^{3^h/2}\frac{Z}{Z+s}\,ds,\qquad Z=3^mu_0.
+\]
+For fixed \(a\), this is monotone in \(Z\), with direction
+determined by the orientation of the integral. Its value for
+every \(Z\geq Z_{\min}\) is enclosed by its value at \(Z_{\min}\)
+and its limit \(3^h/2-a\). Derivative ratios have analogous
+rational endpoint bounds. Thus finitely many closed coefficient
+cells certify the whole infinite tail.
+
+The first two rows below concern integer exponents; the remaining rows cover continuous exponent ranges. The exact certificate decomposition is
+\[
+\begin{array}{c|l}
+\text{exponents}&\text{verification}\\ \hline
+2\leq \alpha\leq300&\text{strict sources and the nine returns below}\\
+301\leq \alpha\leq531440&\text{individual strict logarithmic sources}\\
+3^{12}\leq \alpha<3^{13}&8921\text{ closed parameter cells}\\
+3^{13}\leq \alpha<3^{14}&6027\text{ closed parameter cells}\\
+3^{14}\leq \alpha<3^{15}&5310\text{ closed parameter cells}\\
+\alpha\geq3^{15}&5862\text{ coefficient cells, }293\text{ endpoint choices}.
+\end{array}
+\]
+For the three fixed scales \(D=9,h=3\), and the two parameter
+domains \([1,2]\), \([2,3]\) are covered without gaps.
+For the tail, \(D=11,h=3,u_0\geq20/243\), and
+\(Z_{\min}=1180980\); the symbolic condition \(15\geq11+3\)
+holds. The individual-source range ends at \(3^{12}-1\).
+Thus these certificates leave no uncovered integer.
+Section~\ref{app:certificates} specifies their data, exact
+logarithm bounds, and verification predicates.
+
+Nine small exponents use direct returns instead of admissible
+slopes:
+\[
+\begin{array}{c|rrrrrrrrr}
+\alpha&9&10&23&25&28&31&32&78&82\\ \hline
+L_\alpha&21&15&16&17&18&16&20&16&17 .
+\end{array}
+\]
+For completeness, the common transfer is as follows. In a
+certified cylinder \(x=(P+b)/3^p,\ y=(Q+a)/3^q\), \(q\geq p\),
+multiply the Fermat residual by \(3^{\alpha q}\) and divide by
+\(2\alpha3^{\alpha(q-p)}P^{\alpha-1}\). It becomes
+\[
+\frac{ra+b}{2}-T+H(a,b)=0,\quad
+r=\frac{Q^{\alpha-1}}{3^{\alpha(q-p)}P^{\alpha-1}},\quad
+T=\frac{3^{\alpha q}-Q^\alpha-3^{\alpha(q-p)}P^\alpha}
+         {2\alpha3^{\alpha(q-p)}P^{\alpha-1}}.
+\]
+The remainder vanishes at zero and has sup-norm Lipschitz constant
+at most
+\[
+\frac{(Q+1)^{\alpha-1}-Q^{\alpha-1}}{2\,3^{\alpha(q-p)}P^{\alpha-1}}
++\frac{(P+1)^{\alpha-1}-P^{\alpha-1}}{2P^{\alpha-1}}.
+\]
+If the certificate uses a smaller rational slope \(r_0\), add
+\((r-r_0)/2\) to this bound. The exact checks give \(T\in B_{r_0}\),
+two incomparable returns of length at most \(L_\alpha\) into the
+\(1/100000\)-interior of \(B_{r_0}\), and the strict inequality
+\(3^{L_\alpha}\operatorname{Lip}(H)<1/100000\), including this slope
+adjustment. Descendant normalization preserves the same error
+bound. Lemma~2.8 therefore gives
+\(\dim_{\mathrm H}(E_{\alpha,1/3})\geq\log2/(L_\alpha\log3)>0\).
+Together with the strict sources, this proves the integer case used in Theorem~3.1.
+
+
+\subsection{Rational-exponent sources and coverage}\label{app:real-certificates}
+The data and exact checkers for Theorem~3.1
+are included in release v1.2.0 of the repository cited above.
+The guide \nolinkurl{docs/real-exponents.md} identifies the accepted
+inputs, verification commands and previously completed verification
+records; \nolinkurl{docs/paper-index.md} connects the paper's results
+to their computational files. All acceptance tests use integer or rational
+arithmetic, including outward enclosures of logarithms and algebraic
+roots; finite-depth growth estimates play no role in the proof.
+
+The sixteen-source denominator cover uses the following rows.
+Every \(P,Q\) has ternary digits in \(\{0,2\}\). Substituting each
+row in the open-interval formula in the proof and sorting the resulting
+rational endpoints verifies strict overlaps covering \([1,3]\).
+All listed slope bands are admissible bands or their reciprocals.
+\[
+\begin{array}{rr|cc}
+P&Q&\ell&u\\ \hline
+180&222&89/73&171/137\\
+224&180&137/171&73/89\\
+180&218&89/73&171/137\\
+182&218&89/73&171/137\\
+216&168&137/171&73/89\\
+186&218&89/73&171/137\\
+162&242&89/57&171/89\\
+182&224&89/57&171/89\\
+186&188&89/57&171/89\\
+224&186&89/57&171/89\\
+240&164&89/57&171/89\\
+242&162&89/57&171/89\\
+504&216&89/73&171/137\\
+512&216&89/73&171/137\\
+222&182&137/57&219/89\\
+540&222&89/73&171/137\\
+\end{array}
+\]
+
+
+For the finite range \(1<a/b<2187\), \(2\leq b\leq109\),
+the checker enumerates every coprime pair. It first tests the
+denominator-dependent width cover, then checks an individual source
+where necessary. Each individual record gives \((a,b,P,Q,J)\) and
+the slope band. With \(p,q\) the ternary depths, set
+\(d=(J+ap-bq)/b\). The corner signs are exactly
+\[
+3^Jb^bP^a<a^b(Q+1)^b,\qquad
+3^Jb^b(P+1)^a>a^bQ^b.
+\]
+Negative powers of three are cleared before an integer comparison.
+For the large collection, range-reduced logarithms are enclosed by
+the positive series for \(2\operatorname{arctanh}z\), \(0\leq z\leq1/3\),
+with explicit tail bounds and outward integer rounding. A separate
+implementation uses seventy terms and 200-bit fixed-point arithmetic.
+It re-enumerates the entire domain and verifies the partition
+\[
+8{,}033{,}550=7{,}738{,}063+294{,}016+1{,}464+7.
+\]
+The \(1{,}464\) additional sources are also checked by direct integer
+powers. The seven remaining pairs are precisely those in the
+direct-return table in the proof.
+
+For the five layers \(m=7,\ldots,11\), write \(\alpha=3^mt\),
+\(1\leq t\leq3\), and use the rotated phase displayed in
+Section~\ref{app:integer-certificates}. At each fixed endpoint
+\(u_0=P/3^D\), the admissible rectangles have strict derivative
+bounds throughout a closed \(t\)-cell. Their corner-image intervals
+are shrunk by \(10^{-12}\). For each assigned denominator \(b\),
+multiply these intervals by \(b\) and reduce modulo one. Exact
+interval unions cover the whole circle, which proves coverage of
+every target phase modulo \(1/b\). Different denominators may use
+different endpoints, but every assigned endpoint by itself covers
+its denominator's entire phase circle. Intervals from distinct
+endpoints are never combined without their rotations. The checker
+reconstructs the corner and derivative bounds and verifies all
+closed-cell joins from \(1\) to \(3\).
+
+Six special exponents use the following positive source cylinders
+and actual integer scalings:
+\[
+x=3^{-k}\frac{P+s}{3^p},\qquad
+y=1-3^{-m}\frac{Q+1-t}{3^q},\qquad s,t\in C.
+\]
+\begin{center}
+\small
+\begin{tabular}{c|r|r|c}
+\(\alpha\)&\(P\)&\(Q\)&\((p,q,k,m)\)\\ \hline
+\(24/23\)&9006915410325491654&10818090212415614952&\((40,40,110,115)\)\\
+\(19/18\)&9110013456467818106&10841815821954030882&\((40,40,104,110)\)\\
+\(13/12\)&9120707925586079678&10817949568504999626&\((40,40,105,114)\)\\
+\(8/7\)&9450592763918769000&10918429022892060476&\((40,40,68,78)\)\\
+\(11/4\)&48241792345204752&37518532384253874&\((35,35,103,284)\)\\
+\(53/2\)&105672039117920552328&8521470282198373850&\((42,40,101,2680)\)\\
+\end{tabular}
+\end{center}
+
+In each row \(d=m-\alpha k\in b^{-1}\mathbb Z\).
+For the limiting equation \(u^\alpha-\alpha3^{-d}v=0\), divide by
+\(2\alpha3^{-d-q}\). Its tangent ratio \(r_*\) at the lower corner
+and its level satisfy
+\[
+r_*^b=3^{bd+b(q-p)}(P/3^p)^{a-b},\qquad
+T=\frac{Q+1-(b/a)r_*P}{2}.
+\]
+The certificate encloses these quantities by rational root brackets,
+selects a rational reference slope, and bounds the full variation
+of both derivatives. For \(1<\alpha<2\),
+\((1-z)^{\alpha-2}\leq3/2\) on the actual cylinders; for \(\alpha\geq2\)
+it is at most one. Taylor's theorem therefore bounds the additional
+normalized constant and \(t\)-derivative errors, respectively, by
+\[
+\frac{3(\alpha-1)}8\,3^{q-m},\quad
+\frac{3(\alpha-1)}4\,3^{-m}
+\quad(1<\alpha<2),
+\]
+and by the same expressions with \(3/2\) replaced by \(1\)
+when \(\alpha\geq2\). The checks include the shifted actual level,
+the reference-slope error and the strict derivative margin.
+
+The seventh source, \(\alpha=8/3\), is directly on the actual curve
+and is specified in the accompanying certificate. Rational brackets for the
+cube roots of the fifth powers of its two coordinate endpoints
+enclose both first derivatives; multiplication by the endpoints
+also encloses the residual. The two source checks use independent
+root-enclosure implementations.
+
+For all seven sources, the binary-return recursion given above
+is applied to the \(\eta\)-interior of \(B_r\), using the specified
+rational reference slope. It verifies the full inclusion
+\(B_r\subset D_M\), not a sample of levels. Together with the
+strict nonlinear error bound in the theorem, this proves that
+the two incomparable returns can be repeated at every descendant.
+For \(8/3\), a second interval implementation reproduces all
+seventeen generations of the recursion, ending with \(289{,}323\)
+one-return intervals and \(1{,}787{,}353\) two-return intervals.
+
+
+
+\section{How to replay the verification}
+The \href{https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/blob/v1.2.0/docs/real-exponents.md}{all-real certificate guide}
+lists the individual input files and direct commands. The
+\href{https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/blob/v1.2.0/docs/verification.md}{verification guide}
+describes the retained integer stages. Use Python 3.11 or later, with its
+standard library, without \texttt{-O}. Run from the repository root:
+\begin{verbatim}
+git checkout v1.2.0
+python reproduce.py audit
+python reproduce.py returns
+python reproduce.py integer-sources
+python reproduce.py phase-covers
+python reproduce.py assembly
+python reproduce.py real-quick
+python reproduce.py real-sources
+python reproduce.py real-phase-covers
+python reproduce.py real-returns
+python reproduce.py real-assembly
+\end{verbatim}
+The \texttt{returns} suite also replays an older weighted circle bound;
+that extra check is not needed for the current analytic Theorem 2.11.
+The \texttt{uniform-bound} suite concerns the older proof of Theorem 4.2
+and is not needed for the current manuscript. The broader \texttt{all}
+suite additionally includes these historical checks and numerical-figure
+material. A full replay may take substantial time and memory.
+
+\begin{center}
+\begin{tabular}{p{.27\linewidth}p{.65\linewidth}}
+\toprule
+Stage & Mathematical task \\
+\midrule
+\texttt{audit} & Check input identity against stored hashes; not proof verification. \\
+\texttt{returns} & Small-integer sources, nine direct returns and source transfer. \\
+\texttt{integer-sources} & Individual integer sources from 301 to 531440. \\
+\texttt{phase-covers} & Continuous exponent scales and the infinite tail. \\
+\texttt{real-quick} & Sixteen-row denominator cover and two source checks at $8/3$. \\
+\texttt{real-sources} & Low-denominator source checks and exceptional sources. \\
+\texttt{real-phase-covers} & The five intermediate scales for denominators 2 to 109. \\
+\texttt{real-returns} & The exceptional rational return recursions. \\
+\texttt{assembly}, \texttt{real-assembly} & Coverage joins and receipt consistency after the substantive checks. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The driver expands compressed inputs in a separate workspace. Use
+\texttt{python reproduce.py all --list} to inspect the underlying commands.
+An assembly check or a saved success flag does not replace the arithmetic
+checks. Likewise, the large-exponent adoption check
+\nolinkurl{thirdreal20261021_adversarial_large.py} checks hashes and joins,
+not the original logarithm calculations: the \texttt{phase-covers} stage
+performs those calculations.
+
+\paragraph{What to inspect in a certificate.}
+Check that the endpoints have legal Cantor digits; that strict corner
+signs and derivative intervals hold on the whole assigned domain; that
+all parameter cells join without gaps; and, for direct returns, that the
+whole switch set is included in the two-return set. The nonlinear error
+must be smaller than the return margin after normalization. These are
+the finite predicates used by the analytic transfer. Search programs and
+failed candidate files are discovery history, not accepted certificates.
+
+\paragraph{Recorded evidence.}
+The repository retains \nolinkurl{docs/source-manifest.json},
+\nolinkurl{docs/reproduction-results.json},
+\nolinkurl{docs/reproduction-results-v1.1.0.json},
+\nolinkurl{docs/reproduction-results-v1.2.0.json}, and the corresponding
+\texttt{records/} directories. They identify prior checks and provenance.
+This document relocates and explains that evidence; it does not add a new
+mathematical claim or report computations that were not rerun.
+\end{document}

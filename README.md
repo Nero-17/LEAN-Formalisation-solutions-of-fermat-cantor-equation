@@ -1,8 +1,13 @@
 # Computational companion: solutions of the Fermat–Cantor equation
 
 Experiments, algorithms, exact certificates and reproduction instructions for
-**Solutions of $x^\alpha + y^\alpha = 1$ in $\lambda$-Cantor sets**. The complete current manuscript uses **v1.2.0**, including
-[the uniform last-transition theorem](docs/universal-last-bound.md).
+**Solutions of $x^\alpha + y^\alpha = 1$ in $\lambda$-Cantor sets**. The current manuscript keeps the rational-exponent part of Theorem 3.1 as a
+computer-assisted proof. Start with the [PDF certificate reader\'s guide](docs/certificate-guide.pdf)
+([LaTeX source](docs/certificate-guide/main.tex)); it contains the detailed
+construction, numerical tables and verification predicates moved out of the paper.
+The guide uses the unchanged **v1.2.0** certificate data and programs.
+The current proofs of Lemma 2.9, Theorem 2.11 and Theorem 4.2 are analytic;
+the older [uniform-bound certificates](docs/universal-last-bound.md) remain historical material.
 The [paper-to-files index](docs/paper-index.md) identifies the material for each result.
 
 The manuscript now denotes the real exponent by $\alpha$. In the verification
@@ -24,7 +29,8 @@ serves the broader formalisation project.
 | `docs/` | Paper index, verification predicates, exact file hashes and experiment methodology |
 | `records/` | Commands, logs and results actually replayed during publication |
 
-The full mathematical arguments remain in the paper. Finite-depth numerical
+The paper presents the analytic arguments and the construction ideas for the
+rational case; the PDF guide supplies the detailed computational reduction. Finite-depth numerical
 growth estimates are exploratory and are not used as proofs of positive dimension.
 Failed or incomplete discovery candidates are retained where needed to reproduce
 the search; only the specifically selected, independently checked records are certificates.
@@ -103,11 +109,13 @@ files. `audit` checks all three groups. Hash equality establishes identity, not 
 
 The 29-job full integer/circle replay in `docs/reproduction-results.json` and
 `records/2026-10-21/` belongs to v1.0.0. The selected v1.1.0 publication replay is recorded
-separately in `docs/reproduction-results-v1.1.0.json`. The current full audit
+separately in `docs/reproduction-results-v1.1.0.json`. The v1.2.0 full audit
 is recorded in `docs/reproduction-results-v1.2.0.json` and
 `records/2026-10-21-v1.2.0/`, including the new uniform-bound replay. Earlier all-real verification receipts accompany their
 inputs. Neither archived success flags nor a packaging audit replace full replay.
 
-The release includes the computer-assisted positive-dimension theorem for every
-real n>1 at λ=1/3 and the strict uniform last-transition bound of Theorem 4.2. It does not assert an exact dimension formula, a uniform
+The historical v1.2.0 release includes certificates for positive dimension at
+λ=1/3 and for the former proof of Theorem 4.2. In the current manuscript only
+the rational-exponent part of Theorem 3.1 requires the computational companion. It does not assert an exact dimension formula, a uniform
 positive bound in n, or separation of the two transitions for every exponent.
+
