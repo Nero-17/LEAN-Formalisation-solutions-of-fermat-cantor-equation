@@ -118,32 +118,32 @@
   },
   {
     "path": "figures/phase-diagram.pdf",
-    "sha256": "695c4f5fd2bb4c3bcbfedf6247d782bca14cf9d8f917b032799fabd028d4b430",
-    "bytes": 25206,
+    "sha256": "44055bbbeb89efb7447e474646111331b7bc1de7e84d9854e858a6da84a8d271",
+    "bytes": 22349,
     "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/phase-diagram-zh.pdf",
-    "sha256": "7bc3e4608c4acf1d6e7474ef235c0cab4c855f4703cab8b92bf5c0224e24840c",
-    "bytes": 43065,
+    "sha256": "80a0c1339095a0b6027e59a8daa153bcd0e91b1d6166ae8a099135801e53da29",
+    "bytes": 40286,
     "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/phase-diagram-preview.png",
-    "sha256": "005b23f46b453fba93fea671de86fff658dd820245e4667fb778be2c936c1d94",
-    "bytes": 318910,
+    "sha256": "f670db9f3b046bedbdea64bdf5326ca13eb3c782c5dfeaf09851be8d2ce8e85a",
+    "bytes": 323371,
     "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/phase-diagram-zh-preview.png",
-    "sha256": "a32134ba102b27233837d44cf7f549f4918c98a1519851ecfb7bb4a8f4613993",
-    "bytes": 339948,
+    "sha256": "1b349364a42a90106a06716e64e5bd52e6290845984f90aba55fe53e17e55dd8",
+    "bytes": 340951,
     "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {
     "path": "figures/circle_zoom_inset.py",
-    "sha256": "aef69212b6cb26725f098cb9dc87c4168bce7be6cb590f407ba1aa27eaa0e3c8",
-    "bytes": 2407,
+    "sha256": "0f0959a717b9f8eb13280b7e1c1489df32c448319ae4c1e99af6d43488c9c5d8",
+    "bytes": 2446,
     "provenance": "24 October 2026: alpha=2 finite-depth numerical magnifier; 361 samples, depth 48, 60-digit arithmetic"
   },
   {

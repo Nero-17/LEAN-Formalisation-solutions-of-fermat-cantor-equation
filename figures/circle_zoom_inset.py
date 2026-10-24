@@ -27,8 +27,9 @@ def add_circle_zoom(ax, chinese=False):
     inset.tick_params(labelsize=9, length=3, pad=2, colors='#526170')
     inset.grid(axis='y', lw=.45, color='#E8ECF0', zorder=0)
     inset.set_xlabel(r'$\lambda$', fontsize=12, labelpad=-1)
-    inset.set_ylabel(r'$\widehat d_{48}$', fontsize=12, rotation=0, labelpad=15)
-    inset.text(.025, .92, r'$\alpha=2$  '+('有限层数值估计' if chinese else 'finite-depth estimate'),
+    inset.set_ylabel('维数估计' if chinese else 'Dimension estimate',
+                     fontsize=9, rotation=90, labelpad=6)
+    inset.text(.025, .92, r'$\alpha=2$  '+('维数估计' if chinese else 'Dimension estimate'),
                transform=inset.transAxes, fontsize=10.5, color='#526170', va='top',
                bbox=dict(facecolor='white', edgecolor='none', alpha=.93, pad=1))
     for spine in inset.spines.values():
