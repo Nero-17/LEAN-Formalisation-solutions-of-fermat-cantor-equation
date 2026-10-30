@@ -1,0 +1,37 @@
+UTC=2026-10-27T16:34:04.6792366Z MODULE=LambdaCantor/Last/UniversalLastAudit.lean SHA256=744BB607CE407DBD48153859776E245F22A4AFCB0974270595C156A97637E1D5
+'LambdaCantor.Last.analytic_irrational_last_strict_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+'LambdaCantor.Last.analytic_quadratic_last_strict_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+'LambdaCantor.Last.analytic_cubic_last_strict_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+'LambdaCantor.Last.analytic_three_halves_last_strict_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+'LambdaCantor.Last.coarse_strict_log_link_all_exponents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.coarse_rational_infinite_intersection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Last.rational_lastTransition_lt_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Last.universal_lastTransition_lt_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+ELAPSED_SECONDS=28.8074147 END_UTC=2026-10-27T16:34:33.4885358Z
+EXIT=0

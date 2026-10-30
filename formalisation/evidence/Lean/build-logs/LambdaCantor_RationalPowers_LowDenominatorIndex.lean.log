@@ -1,0 +1,9 @@
+UTC=2026-10-24T17:56:19.5378540Z MODULE=LambdaCantor/RationalPowers/LowDenominatorIndex.lean SHA256=6D012B0D5ABE76CDC4B57958C8FB296B6D661AD47BEE257D266A93A007E6E059
+LambdaCantor/RationalPowers/LowDenominatorIndex.lean:59:96: warning: 'norm_num' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/LowDenominatorIndex.lean:59:96: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=20.472717 END_UTC=2026-10-24T17:56:40.0126909Z
+EXIT=0

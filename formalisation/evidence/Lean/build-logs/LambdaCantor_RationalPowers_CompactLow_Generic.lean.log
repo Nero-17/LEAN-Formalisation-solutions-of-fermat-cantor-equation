@@ -1,0 +1,5 @@
+UTC=2026-10-28T22:09:20.2083028Z MODULE=LambdaCantor/RationalPowers/CompactLow/Generic.lean SHA256=D98A1C7F1E99A12BF95F274496216306C182647C5A1538E6720998CCE2E6F09E
+'LambdaCantor.RationalPowers.CompactLow.Generic.ordinary_eq_lookup_of_all' depends on axioms: [propext, Quot.sound]
+'LambdaCantor.RationalPowers.CompactLow.Generic.ordinary_keys_eq' depends on axioms: [propext, Quot.sound]
+ELAPSED_SECONDS=27.3196131 END_UTC=2026-10-28T22:09:47.5405034Z
+EXIT=0

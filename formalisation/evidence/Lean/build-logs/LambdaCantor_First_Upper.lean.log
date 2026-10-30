@@ -1,0 +1,17 @@
+UTC=2026-10-24T16:32:36.3880066Z MODULE=LambdaCantor/First/Upper.lean SHA256=6E9581C0DBB35A6AD4AF4FCA79462D794F798D10BAB000B236C2E3446E50E22C
+LambdaCantor/First/Upper.lean:66:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/Upper.lean:66:40: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LambdaCantor.First.dimension_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps]
+'LambdaCantor.First.first_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps]
+ELAPSED_SECONDS=25.4842389 END_UTC=2026-10-24T16:33:01.8738566Z
+EXIT=0

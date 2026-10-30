@@ -1,0 +1,553 @@
+{
+  "git_commit": "429d53bb243f49b19ba8169de0e82ed70050ec7f",
+  "source_root": "C:\\Users\\lzysh\\Documents\\Codex\\2026-10-20\\new-chat\\outputs\\OverleafFormalisation\\source\\latest-429d53b",
+  "active_files": [
+    {
+      "path": "main.tex",
+      "sha256": "fb69b3d7df3e2fc5ed3afd2ead28e3c4c2b613cec237cea224342e38a7d8565f"
+    },
+    {
+      "path": "figures/cantor-circle.tex",
+      "sha256": "f1da2f2b89f07cc8b974d6f514b374e1c51dc25eb90e73fe0c6ef6ce8870dd57"
+    },
+    {
+      "path": "sections/universal-last-bound.tex",
+      "sha256": "af61c1228c94920076d6116c2d80bdacb90e39c765dccba67c19b335ba10c575"
+    },
+    {
+      "path": "sections/analytic-last-irrational.tex",
+      "sha256": "9661e6e95389648ac8f1bb0cdf67bcb8da630c11777746c2d3391edd6f072551"
+    },
+    {
+      "path": "sections/analytic-last-exceptions.tex",
+      "sha256": "9f94775f83ba2a9ac530ece6580a354513c7a19903450340d6e053e2a00edd81"
+    },
+    {
+      "path": "sections/analytic-last-coarse.tex",
+      "sha256": "cfa777981260e922816c914c3784f2cce2cfdd6642a73c949bba434aa3168664"
+    },
+    {
+      "path": "sections/analytic-last-isolated.tex",
+      "sha256": "55304a6519705b7a7d934926138e522fa64583fcbe73970c71e64d20d7e4e5c7"
+    },
+    {
+      "path": "sections/analytic-last-returns.tex",
+      "sha256": "98f417d2f50fe9774278b58ba79e6d52e5581330fe3f9000479e223c74e2b9c3"
+    }
+  ],
+  "scope": "English compiled inputs; includes introduction restatements and examples; excludes inactive certificate appendix and Chinese duplicate.",
+  "statements": [
+    {
+      "number": "1.1",
+      "kind": "theorem",
+      "id": "intro:integer-powers",
+      "labels": [
+        "intro:integer-powers"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 196
+      },
+      "statement_tex": "\\label{intro:integer-powers}\nFor every real \\(\\alpha>1\\), \\(\\dim_{\\mathrm H}(E_{\\alpha,1/3})>0\\).",
+      "statement_sha256": "10e4f110db3a20dfed6cdd81932a651ca36afc3a7b1fa89716baaa361aedcd59",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "1.2",
+      "kind": "theorem",
+      "id": "intro:irrational-onset",
+      "labels": [
+        "intro:irrational-onset"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 240
+      },
+      "statement_tex": "\\label{intro:irrational-onset}\nFor every real \\(\\alpha>1\\), \\(\\lambda_{\\min}(\\alpha)\\geq1/4\\),\nwith equality whenever \\(\\alpha\\) is irrational.",
+      "statement_sha256": "1a051e3deee1b2c891f45150225c764ab2da0474719d8e286de1161c79a87eb4",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "1.3",
+      "kind": "theorem",
+      "id": "intro:last-real",
+      "labels": [
+        "intro:last-real"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 259
+      },
+      "statement_tex": "\\label{intro:last-real}\nFor every real \\(\\alpha>1\\),\n\\[\n\\lambda_{\\max}(\\alpha)<\\frac{\\sqrt3-1}{2}.\n\\]",
+      "statement_sha256": "657347c6c851f595f35d69094d0ea324c4e333d91b44735fa566970154464cb4",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "1.4",
+      "kind": "theorem",
+      "id": "intro:ae-dimension",
+      "labels": [
+        "intro:ae-dimension"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 280
+      },
+      "statement_tex": "\\label{intro:ae-dimension}\nFor every fixed irrational \\(\\alpha>1\\), for Lebesgue almost every\n\\(\\lambda\\in(\\sqrt3/4,1/2)\\),\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})\n=\\frac{2\\log2}{\\log(1/\\lambda)}-1.\n\\]",
+      "statement_sha256": "39f08ec9eb472e8772aee008b1796d2c85d422cc06b6830d25726f2c12228215",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.1",
+      "kind": "definition",
+      "id": "def:cantor-circle",
+      "labels": [
+        "def:cantor-circle"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 326
+      },
+      "statement_tex": "\\label{def:cantor-circle}\nFor the following unit-circle construction, write\n\\[\nC:=C_{1/3}\n=\\left\\{\\sum_{j=1}^{\\infty}\\frac{2\\varepsilon_j}{3^j}:\n                \\varepsilon_j\\in\\{0,1\\}\\right\\},\n\\qquad\nE:=E_{2,1/3}.\n\\]",
+      "statement_sha256": "1b3a153752dc0e3de48ac86c081ab46b49d7d32d98330aec7a6669dc81de6b7d",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.2",
+      "kind": "lemma",
+      "id": "lem:rational",
+      "labels": [
+        "lem:rational"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 379
+      },
+      "statement_tex": "\\label{lem:rational}\nThe rational points of \\(E\\) are exactly \\((0,1)\\) and \\((1,0)\\).",
+      "statement_sha256": "745c34ae54c02b6afc3e6a2403766c6f14a54d7cfe34ac4a9ed8b9a21cd4196d",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.3",
+      "kind": "lemma",
+      "id": "lem:interval-cover",
+      "labels": [
+        "lem:interval-cover"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 450
+      },
+      "statement_tex": "\\label{lem:interval-cover}\nSuppose that\n\\[\n0<\\min_{[0,1]^2}G_b\n\\leq\\max_{[0,1]^2}G_b\n<\\min_{[0,1]^2}G_a,\n\\qquad\n\\max_{[0,1]^2}G_a<3\\min_{[0,1]^2}G_b.\n\\]\nThen every square \\(Q\\) described above satisfies\n\\[\nG\\bigl((u+3^{-n}C)\\times(v+3^{-n}C)\\bigr)\n=[G(u,v),G(u+3^{-n},v+3^{-n})].\n\\]",
+      "statement_sha256": "c1fb1e5366bcbc538690b602ba6367c99ef5ed73843ab1ad08e643f84e3c99c2",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.4",
+      "kind": "proposition",
+      "id": "prop:source",
+      "labels": [
+        "prop:source"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 509
+      },
+      "statement_tex": "\\label{prop:source}\nThe set \\(S\\) is nonempty and compact.",
+      "statement_sha256": "c6819a1303243f958709c11298a59ffe2d792f8a2c7ef69f1e0d0e6f169172de",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.5",
+      "kind": "lemma",
+      "id": "lem:periodicity",
+      "labels": [
+        "lem:periodicity"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 566
+      },
+      "statement_tex": "\\label{lem:periodicity}\nFor \\(r\\) satisfying \\eqref{eq:r-band}, the sequence \\((c_n)\\) is\neventually periodic whenever\n\\[\n\\lim_{n\\to\\infty}\\operatorname{dist}(T_n,I_{c_n})=0.\n\\]",
+      "statement_sha256": "157222f6122e2a544f57bb511c775e5e299db063e207d8cd5f2de1dccf6e16aa",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.6",
+      "kind": "theorem",
+      "id": "thm:main",
+      "labels": [
+        "thm:main"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 666
+      },
+      "statement_tex": "\\label{thm:main}\nThe set \\(E\\) has cardinality \\(2^{\\aleph_0}\\).",
+      "statement_sha256": "7843aaa20b26a488f4845fa8e5ffba229966151234a6db3380c7a5bfcae7d5ec",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.7",
+      "kind": "example",
+      "id": "ex:first-subdivision",
+      "labels": [
+        "ex:first-subdivision"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 793
+      },
+      "statement_tex": "\\label{ex:first-subdivision}\nFor a child with first ternary digits \\(d,e\\in\\{0,2\\}\\) in the\n\\(a,b\\) coordinates, write\n\\(a=(d+s)/3\\), \\(b=(e+t)/3\\), with \\(s,t\\in[0,1]\\).\nMultiplying \\(F(a,b)-3^{16}\\) by \\(9\\) gives\n\\[\n(19008+d+s)^2+9(1698+e+t)^2-3^{18}.\n\\]\nIts corner-value intervals are\n\\[\n\\begin{array}{c@{\\qquad}r@{\\ ,\\ }l}\n\\toprule\n(d,e)&\\multicolumn{2}{c}{\\text{corner-value interval}}\\\\\n\\midrule\n(0,0)&[-167589&-98999]\\\\\n(0,2)&[-106425&-37799]\\\\\n(2,0)&[-91553&-22959]\\\\\n(2,2)&[-30389&38241]\\\\\n\\bottomrule\n\\end{array}\n\\]\nOnly the child \\((2,2)\\) meets the level zero.\nLemma~\\ref{lem:interval-cover} makes this a statement about actual\nCantor points, not merely ordinary-square crossings.\nThe theorem proves that the surviving compact intersection is\nperfect despite this first subdivision having a single surviving\nchild.",
+      "statement_sha256": "ddab53a6e5c26e40e2f5a36a151f5d9e98807f2cced806e3b8da6bf25130a6a5",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.8",
+      "kind": "lemma",
+      "id": "lem:strict-returns",
+      "labels": [
+        "lem:strict-returns"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 826
+      },
+      "statement_tex": "\\label{lem:strict-returns}\nLet \\(0<\\lambda<1/2\\), let \\(L(s,t)\\) be a positive linear function,\nand let \\(B\\) be a compact\nset of levels such that every \\(u\\in B\\) has two incomparable\nnonempty Cantor words returning its normalized level into\n\\(\\operatorname{int}B\\).\nThen every sufficiently small Lipschitz perturbation of \\(L\\),\nat every level sufficiently close to \\(B\\), has a positive-dimensional\nzero set in \\(C_\\lambda^2\\).",
+      "statement_sha256": "08ea4f8299ac37b5e1a1e9e5fe168814f2988fa9b7ef5af4365aa45ff8f9d01c",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.9",
+      "kind": "lemma",
+      "id": "lem:good-slopes",
+      "labels": [
+        "lem:good-slopes"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 875
+      },
+      "statement_tex": "\\label{lem:good-slopes}\nThe eventual-periodicity conclusion of Lemma~\\ref{lem:periodicity},\nincluding vanishing errors, holds when the slope belongs to any of\n\\[\n\\left(\\frac{89}{73},\\frac{171}{137}\\right),\\\n\\left(\\frac{101}{79},\\frac{183}{143}\\right),\\\n\\left(\\frac{89}{57},\\frac{171}{89}\\right),\\\n\\left(\\frac{143}{61},\\frac{237}{101}\\right),\\\n\\left(\\frac{137}{57},\\frac{219}{89}\\right).\n\\]",
+      "statement_sha256": "b7b8aca1c26e827543115d7b69412e9fd0d33d62880c33e462a8c1be42a52e8c",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.10",
+      "kind": "lemma",
+      "id": "lem:irrational-tangent",
+      "labels": [
+        "lem:irrational-tangent"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1127
+      },
+      "statement_tex": "\\label{lem:irrational-tangent}\nSuppose a \\(C^1\\) level curve in a Cantor rectangle contains a\nnonempty compact perfect subset of \\(C^2\\).\nIf at one of its points the positive normalized derivative ratio\nis irrational and lies in an admissible slope interval, then\nthe Cantor intersection of the curve has positive Hausdorff dimension.",
+      "statement_sha256": "cc4008c78219cba07b9ce500e7a8ba37fe267b07a6e66e7247e7fe44755b5c2f",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "2.11",
+      "kind": "theorem",
+      "id": "thm:circle-quantitative",
+      "labels": [
+        "thm:circle-quantitative"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1201
+      },
+      "statement_tex": "\\label{thm:circle-quantitative}\nFor the unit circle in the classical Cantor dust,\n\\[\n0<\\dim_{\\mathrm H}(E_{2,1/3})\n                  \\leq\\frac{2\\log2}{\\log3}-1 .\n\\]",
+      "statement_sha256": "1886abf98870239b0ba4200bce022a592086b00a8df528e18578e5b65032ce4f",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.1",
+      "kind": "theorem",
+      "id": "thm:integer-powers",
+      "labels": [
+        "thm:integer-powers",
+        "thm:real-powers"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1270
+      },
+      "statement_tex": "\\label{thm:integer-powers}\\label{thm:real-powers}\nFor every real \\(\\alpha>1\\),\n\\[\n\\dim_{\\mathrm H}\\{(x,y)\\in C\\times C:x^\\alpha+y^\\alpha=1\\}>0.\n\\]",
+      "statement_sha256": "671ca797702edbfa9b9b9c725a94e3504cf7f073945b2435105fc2aa6f9a6139",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.2",
+      "kind": "theorem",
+      "id": "thm:dimension-upper",
+      "labels": [
+        "thm:dimension-upper"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1423
+      },
+      "statement_tex": "\\label{thm:dimension-upper}\nFor every real \\(\\alpha>1\\) and \\(0<\\lambda\\leq1/2\\),\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})\\leq\n\\max\\left\\{\\frac{2\\log2}{\\log(1/\\lambda)}-1,0\\right\\}.\n\\]",
+      "statement_sha256": "aa1e3ea9cd4a2257084cb418157f0f032088504db889b3e881158abf77c56ad6",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.3",
+      "kind": "corollary",
+      "id": "cor:first-lower",
+      "labels": [
+        "cor:first-lower"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1489
+      },
+      "statement_tex": "\\label{cor:first-lower}\nFor every real \\(\\alpha>1\\), \\(\\lambda_{\\min}(\\alpha)\\geq1/4\\).",
+      "statement_sha256": "8e853008e372f4fcfc3436606dafe04594e64a111d2368ac6c8983733f3b62ac",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.4",
+      "kind": "lemma",
+      "id": "lem:linear-regularity",
+      "labels": [
+        "lem:linear-regularity"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1517
+      },
+      "statement_tex": "\\label{lem:linear-regularity}\nOutside a set of Hausdorff dimension at most one in\n\\((1/4,1/2)\\times(0,\\infty)\\), the distribution of\n\\(rX+Y\\), for independent \\(X,Y\\) with distribution \\(\\mu_\\lambda\\),\nhas a density in \\(H^\\sigma\\) for some \\(\\sigma>0\\).",
+      "statement_sha256": "432c3f1b41432d4324c89a4fcc1d2f48cb0ba985e7f4121ebfe435945c816eb9",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.5",
+      "kind": "lemma",
+      "id": "lem:root-fibres",
+      "labels": [
+        "lem:root-fibres"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1551
+      },
+      "statement_tex": "\\label{lem:root-fibres}\nFix \\(\\alpha>1\\), two cylinder coordinates \\(x_\\omega(\\lambda)\\),\n\\(y_\\tau(\\lambda)\\) of lengths \\(h,\\ell\\), and\n\\([a,b]\\subset(1/4,1/2)\\) on which both coordinates stay positive.\nSuppose every paired address has a unique root of\n\\(x_\\omega(\\lambda)^\\alpha+y_\\tau(\\lambda)^\\alpha=1\\) in \\([a,b]\\),\nand the parameter derivative of the residual is bounded away\nfrom zero at all these roots.\nThe distribution of these roots under fair independent addresses\nis absolutely continuous, and for almost every parameter with\nrespect to that distribution,\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})=\\frac{\\log4}{\\log(1/\\lambda)}-1.\n\\]",
+      "statement_sha256": "806c466896745205ae5202aab257858fc4d8cc42408e12bcaf3d091c3875bf82",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.6",
+      "kind": "theorem",
+      "id": "thm:irrational-parameters",
+      "labels": [
+        "thm:irrational-parameters"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1698
+      },
+      "statement_tex": "\\label{thm:irrational-parameters}\nFor every irrational \\(\\alpha>1\\) and every nonempty open interval\n\\(J\\subset(1/4,1/2)\\), the set\n\\(\\{\\lambda\\in J:\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})>0\\}\\)\nhas positive Lebesgue measure.",
+      "statement_sha256": "4b4ec852e327386c4061e87f6deff4487596d128d91acae46324b316507497fd",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.7",
+      "kind": "theorem",
+      "id": "thm:irrational-onset",
+      "labels": [
+        "thm:irrational-onset"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1734
+      },
+      "statement_tex": "\\label{thm:irrational-onset}\nFor every irrational \\(\\alpha>1\\), \\(\\lambda_{\\min}(\\alpha)=1/4\\).",
+      "statement_sha256": "87c1474091c3fcfa54832e522db3b49fb310f4c7c5824a1cbdd6ccc9f94317a6",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.8",
+      "kind": "theorem",
+      "id": "thm:denominator",
+      "labels": [
+        "thm:denominator"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1752
+      },
+      "statement_tex": "\\label{thm:denominator}\nFor every reduced rational \\(\\alpha=a/b\\geq2\\), with positive integers\n\\(a,b\\),\n\\[\n0\\leq\\lambda_{\\min}(\\alpha)-\\frac14\n\\leq\\frac{(3/2)^\\alpha\\log4}{2\\alpha b}.\n\\]",
+      "statement_sha256": "0afa5353e0b5044da4c868bcbdd435583eaec8a56abad9288ccc949102905e26",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.9",
+      "kind": "theorem",
+      "id": "thm:punctured-limit",
+      "labels": [
+        "thm:punctured-limit"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1785
+      },
+      "statement_tex": "\\label{thm:punctured-limit}\nFor every \\(\\alpha_0\\geq2\\),\n\\[\n\\lim_{\\substack{\\alpha\\to \\alpha_0\\\\\\alpha\\geq2,\\ \\alpha\\ne \\alpha_0}}\\lambda_{\\min}(\\alpha)=\\frac14.\n\\]",
+      "statement_sha256": "aa87730a95b60c848fa3319213b82544640fca020e55abf3c6305baf0a839791",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "3.10",
+      "kind": "proposition",
+      "id": "prop:powers-four",
+      "labels": [
+        "prop:powers-four"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1804
+      },
+      "statement_tex": "\\label{prop:powers-four}\nFor every integer \\(r\\geq1\\), \\(\\lambda_{\\min}(4^r)=1/4\\).",
+      "statement_sha256": "1bf5102c9cc8f6856d20f5abf6d0d620a5a72c401472aaccb7919afe893a5408",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.1",
+      "kind": "lemma",
+      "id": "lem:two-bands",
+      "labels": [
+        "lem:two-bands",
+        "eq:two-bands"
+      ],
+      "source": {
+        "path": "sections/universal-last-bound.tex",
+        "line": 4
+      },
+      "statement_tex": "\\label{lem:two-bands}\nLet \\(0<\\lambda<1/2\\), and let \\(f,g\\) be increasing \\(C^1\\)\nfunctions on \\([0,1]\\) with positive derivatives.\nIf all ratios \\(g'(t)/f'(s)\\), \\(s,t\\in[0,1]\\), are greater than\none and belong to a compact subinterval of either\n\\begin{equation}\\label{eq:two-bands}\n\\left(\\frac1\\lambda-1-\\lambda,\\frac1{1-\\lambda}\\right)\n\\quad\\text{or}\\quad\n\\left(\\frac1\\lambda-1,\\frac1{1-\\lambda-\\lambda^2}\\right),\n\\end{equation}\nthen every strict interior level of \\(f+g\\) on \\([0,1]^2\\)\nmeets \\(C_\\lambda^2\\) in a set of positive Hausdorff dimension.",
+      "statement_sha256": "b7dec8bdf1e6a70dee79238776bc55cb7246b4326887a8b8ee97805de7328374",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.2",
+      "kind": "theorem",
+      "id": "thm:last-real",
+      "labels": [
+        "thm:last-real"
+      ],
+      "source": {
+        "path": "sections/universal-last-bound.tex",
+        "line": 130
+      },
+      "statement_tex": "\\label{thm:last-real}\nFor every real \\(\\alpha>1\\),\n\\[\n\\lambda_{\\max}(\\alpha)<\\frac{\\sqrt3-1}{2}.\n\\]",
+      "statement_sha256": "b677e4e53a72b207e62a4aeab0d494e0b2dd92aea6d65c44633bacb1ac24a7ec",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.3",
+      "kind": "theorem",
+      "id": "thm:circle-positive-measure",
+      "labels": [
+        "thm:circle-positive-measure"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1878
+      },
+      "statement_tex": "\\label{thm:circle-positive-measure}\nFor every \\(0<\\varepsilon<1/2-(2-\\sqrt3)\\), the set\n\\[\n\\{\\lambda\\in(2-\\sqrt3,2-\\sqrt3+\\varepsilon):\n                       \\dim_{\\mathrm H}(E_{2,\\lambda})>0\\}\n\\]\nhas positive Lebesgue measure.",
+      "statement_sha256": "a9f8bda2beceeeac174aab8015b030b4b131dbe7052c561fadfbbc90abe79837",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.4",
+      "kind": "theorem",
+      "id": "thm:circle-onset",
+      "labels": [
+        "thm:circle-onset"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1933
+      },
+      "statement_tex": "\\label{thm:circle-onset}\nThe first Hausdorff phase transition for the unit circle is\n\\(\\lambda_{\\min}(2)=2-\\sqrt3\\).",
+      "statement_sha256": "83d859c1c426073dcce3a07cff80a7ed4941a0cd825893de297891611145adce",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.5",
+      "kind": "theorem",
+      "id": "thm:circle-zero-intervals",
+      "labels": [
+        "thm:circle-zero-intervals"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 1959
+      },
+      "statement_tex": "\\label{thm:circle-zero-intervals}\nThere is a sequence of nonempty open intervals\n\\(I_j\\subset(2-\\sqrt3,1/2)\\) with\n\\(\\lim_{j\\to\\infty}\\sup I_j=2-\\sqrt3\\), on each of which\n\\(E_{2,\\lambda}=\\{(0,1),(1,0)\\}\\).",
+      "statement_sha256": "d924be954eb7fdad513a093f14d07b2f10b8d951f5fb363fd4570a2494eca6c6",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.6",
+      "kind": "theorem",
+      "id": "thm:known-separation",
+      "labels": [
+        "thm:known-separation"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 2166
+      },
+      "statement_tex": "\\label{thm:known-separation}\nFor the unit circle,\n\\[\n\\lambda_{\\min}(2)=2-\\sqrt3<\\lambda_{\\max}(2).\n\\]",
+      "statement_sha256": "ed13177054276fcfd64453478b79354649ef441529e6f8791e7f875bd4f08f20",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.7",
+      "kind": "lemma",
+      "id": "lem:average-sobolev",
+      "labels": [
+        "lem:average-sobolev"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 2201
+      },
+      "statement_tex": "\\label{lem:average-sobolev}\nLet \\([a,b]\\subset(3/8,1/2)\\) be sufficiently short that\n\\[\n0<2\\sigma<\\frac{2\\log(8/3)}{\\log(b/a^3)}-1.\n\\]\nOn every compact subinterval of \\((a,b)\\), the squared\n\\(H^\\sigma\\) norm of \\(\\mu_\\lambda*\\mu_\\lambda\\) is integrable\nwith respect to \\(\\lambda\\).",
+      "statement_sha256": "98362212a0a792687dae05646093cb6d407c3398319f4121a6d32149dfbf7e7d",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.8",
+      "kind": "theorem",
+      "id": "thm:ae-dimension",
+      "labels": [
+        "thm:ae-dimension"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 2305
+      },
+      "statement_tex": "\\label{thm:ae-dimension}\nFor every fixed irrational \\(\\alpha>1\\), for Lebesgue almost every\n\\(\\lambda\\in(\\sqrt3/4,1/2)\\),\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})=\\frac{2\\log2}{\\log(1/\\lambda)}-1.\n\\]",
+      "statement_sha256": "fc268a0598f33b663f72a13eff5be6d09555737f2c8cb138f5657c1ae2fc4573",
+      "verification_status": "Inventory only; not a certification claim"
+    },
+    {
+      "number": "4.9",
+      "kind": "example",
+      "id": "ex:ae",
+      "labels": [
+        "ex:ae"
+      ],
+      "source": {
+        "path": "main.tex",
+        "line": 2495
+      },
+      "statement_tex": "\\label{ex:ae}\nFix \\(\\alpha=\\sqrt2\\). The theorem applies to almost every\n\\(\\lambda\\in(7/16,9/20)\\), since \\(49/256>3/16\\).\nFor those parameters,\n\\[\n\\frac{2\\log2}{\\log(16/7)}-1\n<\\dim_{\\mathrm H}(E_{\\sqrt2,\\lambda})<\n\\frac{2\\log2}{\\log(20/9)}-1.\n\\]\nThis assertion does not identify an individual parameter outside\nthe exceptional null set.",
+      "statement_sha256": "611fcd463dd9442aabdbc8b2f9ed0e91cb2ec44c1936c13f19e689db28abac29",
+      "verification_status": "Inventory only; not a certification claim"
+    }
+  ]
+}

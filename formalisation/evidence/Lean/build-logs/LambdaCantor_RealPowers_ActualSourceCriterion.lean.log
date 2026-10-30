@@ -1,0 +1,9 @@
+UTC=2026-10-27T19:42:55.0169219Z MODULE=LambdaCantor/RealPowers/ActualSourceCriterion.lean SHA256=8B10C4886AC26AC161AF37B3CD47720796AF11C6A3ABDC0045F0946890F3A394
+LambdaCantor/RealPowers/ActualSourceCriterion.lean:114:12: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RealPowers/ActualSourceCriterion.lean:114:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=42.6250512 END_UTC=2026-10-27T19:43:37.6671897Z
+EXIT=0

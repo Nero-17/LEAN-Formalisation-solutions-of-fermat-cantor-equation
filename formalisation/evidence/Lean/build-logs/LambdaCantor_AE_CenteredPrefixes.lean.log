@@ -1,0 +1,20 @@
+UTC=2026-10-28T01:52:53.2772214Z MODULE=LambdaCantor/AE/CenteredPrefixes.lean SHA256=D87E4BB589D792163D1759F050EE1A61F46F6E95402437DE34DDA8E17A05FB20
+LambdaCantor/AE/CenteredPrefixes.lean:67:39: warning: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredCylinder, P̵r̵o̵d̵.̵f̵s̵t̵,̵ ̵Prod.snd, pow_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredPrefixes.lean:67:49: warning: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredCylinder, Prod.fst, P̵r̵o̵d̵.̵s̵n̵d̵,̵ ̵pow_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredPrefixes.lean:67:68: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=60.1778827 END_UTC=2026-10-28T01:53:53.4656702Z
+EXIT=0

@@ -1,0 +1,15 @@
+UTC=2026-10-27T16:44:25.9325706Z MODULE=LambdaCantor/Integer/NearAxisNormalizedTangent.lean SHA256=268E87260A84F7402930452E26964BB998638D1A070529F4485286EBD3750E14
+LambdaCantor/Integer/NearAxisNormalizedTangent.lean:31:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/NearAxisNormalizedTangent.lean:36:29: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/NearAxisNormalizedTangent.lean:37:42: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/NearAxisNormalizedTangent.lean:37:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=34.5025007 END_UTC=2026-10-27T16:45:00.4661913Z
+EXIT=0

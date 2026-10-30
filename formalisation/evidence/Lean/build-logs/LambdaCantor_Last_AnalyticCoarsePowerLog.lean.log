@@ -1,0 +1,33 @@
+UTC=2026-10-27T03:39:41.2058091Z MODULE=LambdaCantor/Last/AnalyticCoarsePowerLog.lean SHA256=A64E2E61D9634F6D9F1BB8D76B880684BD3998F4E400EF66FCA0C0C8D03BE217
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:40:13: warning: This simp argument is unused:
+  coarseNormalizedPowerDrop
+
+Hint: Omit it from the simp argument list.
+  simp [̵c̵o̵a̵r̵s̵e̵N̵o̵r̵m̵a̵l̵i̵z̵e̵d̵P̵o̵w̵e̵r̵D̵r̵o̵p̵,̵ ̵c̵o̵a̵r̵s̵e̵P̵o̵w̵e̵r̵F̵a̵c̵t̵o̵r̵]̵[̲c̲o̲a̲r̲s̲e̲P̲o̲w̲e̲r̲F̲a̲c̲t̲o̲r̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:41:74: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:41:74: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:37:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:40:59: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:50:4: warning: 'first
+| rfl
+| simp [coarsePowerLog, div_eq_mul_inv, mul_comm]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:50:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticCoarsePowerLog.lean:60:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=45.8354791 END_UTC=2026-10-27T03:40:27.0458471Z
+EXIT=0

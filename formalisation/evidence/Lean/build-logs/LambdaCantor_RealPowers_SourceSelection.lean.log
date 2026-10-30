@@ -1,0 +1,6 @@
+UTC=2026-10-24T17:24:09.1222641Z MODULE=LambdaCantor/RealPowers/SourceSelection.lean SHA256=4B357960256326458169D5172C5C029B6EAD17FE43A5F71B748703FC39D767D6
+LambdaCantor/RealPowers/SourceSelection.lean:154:12: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=29.7700997 END_UTC=2026-10-24T17:24:38.9099143Z
+EXIT=0

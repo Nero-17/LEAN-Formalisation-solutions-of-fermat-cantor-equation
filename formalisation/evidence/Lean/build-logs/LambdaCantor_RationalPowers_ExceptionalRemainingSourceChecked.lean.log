@@ -1,0 +1,7 @@
+UTC=2026-10-24T19:20:05.0509555Z MODULE=LambdaCantor/RationalPowers/ExceptionalRemainingSourceChecked.lean SHA256=1FE93B8DB314BE0D375ECAAB1DAFD911B27FE0F9B64224B23407FB9B47435627
+'LambdaCantor.RationalPowers.Exceptional.RemainingSources.all_sources_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ sourceCatalogueCheck_verified._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=19.3460777 END_UTC=2026-10-24T19:20:24.4169464Z
+EXIT=0

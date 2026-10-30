@@ -1,0 +1,6 @@
+UTC=2026-10-21T10:50:41.7057911Z MODULE=LambdaCantor/Integer/TernaryPrefixSoundness.lean SHA256=3C9950C9BC380276B96527914CEA64E95CA02F56CD59F476731B7539978FB451
+LambdaCantor/Integer/TernaryPrefixSoundness.lean:31:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=34.3043506 END_UTC=2026-10-21T10:51:16.0123871Z
+EXIT=0

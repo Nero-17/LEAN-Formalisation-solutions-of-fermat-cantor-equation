@@ -1,0 +1,17 @@
+UTC=2026-10-24T17:27:17.0932192Z MODULE=LambdaCantor/First/LinearRegularityMain.lean SHA256=4809DC2C8A6C7117E638CE0299E80E0111A163672B910428B961F00455624050
+'LambdaCantor.First.LinearRegularity.projected_law_positive_sobolev_off_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.LinearRegularity.linear_regularity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=26.7852077 END_UTC=2026-10-24T17:27:43.8805450Z
+EXIT=0

@@ -1,0 +1,18 @@
+UTC=2026-10-24T17:47:30.9643291Z MODULE=LambdaCantor/Last/TwoBandActual.lean SHA256=8E3ECF92F7F59C7100B9DA2901CD71D81D3AE11E54DB4974D005E32636182A0F
+LambdaCantor/Last/TwoBandActual.lean:34:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/TwoBandActual.lean:112:45: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/TwoBandActual.lean:112:45: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/TwoBandActual.lean:106:110: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/TwoBandActual.lean:111:94: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=29.5390018 END_UTC=2026-10-24T17:48:00.5050648Z
+EXIT=0

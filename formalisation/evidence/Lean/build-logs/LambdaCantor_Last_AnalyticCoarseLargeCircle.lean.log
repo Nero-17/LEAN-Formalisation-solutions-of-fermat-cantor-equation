@@ -1,0 +1,12 @@
+UTC=2026-10-27T15:53:28.1259220Z MODULE=LambdaCantor/Last/AnalyticCoarseLargeCircle.lean SHA256=014FF693C81342D60E994BC4CB0B19601DD0A66A78DDF2E2377ABD9CCFF1DA77
+LambdaCantor/Last/AnalyticCoarseLargeCircle.lean:34:78: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLargeCircle.lean:35:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLargeCircle.lean:91:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=30.2543757 END_UTC=2026-10-27T15:53:58.3824541Z
+EXIT=0

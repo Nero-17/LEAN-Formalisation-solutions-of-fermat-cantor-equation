@@ -1,0 +1,12 @@
+UTC=2026-10-27T15:44:49.9056557Z MODULE=LambdaCantor/Last/AnalyticIsolatedActualC1Audit.lean SHA256=B0AF2AA7DB80EE8761E17F68BEA3C1B4A2057C3DF91FED46BB94667EB4A143FF
+'LambdaCantor.Last.open_phase_isolated_strict_address_eventually_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.open_phase_isolated_strict_address_in_parameterField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.open_phase_isolated_c1_point_in_parameterField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED_SECONDS=27.2088908 END_UTC=2026-10-27T15:45:17.1159388Z
+EXIT=0

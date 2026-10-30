@@ -1,0 +1,2534 @@
+\documentclass[11pt,a4paper]{amsart}
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\numberwithin{equation}{section}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+% A compact, two-level contents list, using the AMS contents machinery.
+\makeatletter
+\renewcommand{\contentsnamefont}{\normalfont\bfseries}
+\def\l@section{\@tocline{1}{4pt}{0pt}{0pt}{\bfseries}}
+\def\l@subsection{\@tocline{2}{0pt}{1.5em}{0pt}{\normalfont}}
+\renewcommand{\tocsection}[3]{%
+  \@ifnotempty{#2}{%
+    \@ifempty{#1}{\makebox[2em][l]{#2.}}{#1~#2.\quad}}#3}
+\renewcommand{\tocsubsection}[3]{\makebox[2.8em][l]{#2.}#3}
+\def\@tocline#1#2#3#4#5#6#7{\relax
+  \ifnum #1>\c@tocdepth
+  \else
+    \par\addpenalty\@secpenalty\addvspace{#2}%
+    \begingroup\hyphenpenalty\@M
+    \@ifempty{#4}{%
+      \@tempdima\csname r@tocindent\number#1\endcsname\relax
+    }{\@tempdima#4\relax}%
+    \parindent\z@\leftskip#3\relax
+    \advance\leftskip\@tempdima\relax
+    \rightskip\@pnumwidth plus4em\parfillskip-\@pnumwidth
+    #5\leavevmode\hskip-\@tempdima#6\nobreak
+    \leaders\hbox{\normalfont\kern.3em.\kern.3em}\hfill
+    \nobreak\hbox to\@pnumwidth{\@tocpagenum{#7}}\par
+    \nobreak\endgroup
+  \fi}
+\makeatother
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+
+\title[Solutions in Cantor sets]{Solutions of $x^\alpha+y^\alpha=1$ in $\lambda$-Cantor sets}
+\author{Kan Jiang}
+\address{Department of Mathematics, Ningbo University, Ningbo 315211, China}
+\email{jiangkan@nbu.edu.cn}
+\author{Nero Ziyu Li}
+\address{Department of Mathematics, Imperial College London, London SW7 2AZ,
+United Kingdom; CDT Random Systems, University of Oxford, Oxford, United Kingdom}
+\email{ziyu.li21@imperial.ac.uk}
+\author{Lifeng Xi}
+\address{Department of Mathematics, Ningbo University, Ningbo 315211, China}
+\email{xilifeng@nbu.edu.cn}
+\subjclass[2020]{28A80,11K55}
+\keywords{Cantor sets, Fermat curves, Hausdorff dimension, Hausdorff phase transitions}
+\date{}
+
+\begin{document}
+
+\begin{abstract}
+In this paper, we study the structure of the solutions of \(x^\alpha+y^\alpha=1\) with both
+coordinates in a \(\lambda\)-Cantor set.
+We prove that, for any \(\alpha>1\), the intersection with the middle-third Cantor
+set has positive Hausdorff dimension, strengthening the infinitude question
+posed by Jiang et al. [J. London Math. Soc. 113 (2026), e70408].
+To explore the structure of the solutions, for arbitrary \(\alpha\), we find
+that their Hausdorff dimension undergoes phase transitions as \(\lambda\)
+varies: we establish the occurrence of Hausdorff phase transitions by proving the
+existence of zero-dimensional and positive-dimensional regions.
+\end{abstract}
+\maketitle
+\tableofcontents
+
+
+
+
+
+\section{Introduction}\label{sec:introduction}
+
+Does the equation
+\[
+x^2+y^2=1, \quad x,y \in C ,
+\]
+where $C$ is the middle-third Cantor set,
+have finitely or infinitely many solutions?
+
+
+The question has a direct geometric interpretation.
+Writing \(C\) for the middle-third Cantor set and \(S^1\) for the unit
+circle, the solution set is the intersection of the Cantor dust
+\(C\times C\) with \(S^1\), as illustrated in Figure~\ref{fig:source}.
+The two axis points \((0,1)\) and \((1,0)\) already lie in this
+intersection; the question is how many further intersection points
+there are, and whether their number is infinite.
+
+\begin{figure}[htb]
+\centering
+\input{figures/cantor-circle.tex}
+\caption{The Cantor dust \(C\times C\) and the unit circle \(S^1\)
+(left), with a local cylinder shown on the right.}
+\label{fig:source}
+\end{figure}
+
+A direct antecedent is Yu's study of missing-digit points near
+manifolds~\cite{Yu2023}. He asked whether the unit circle contains
+infinitely many points whose coordinates lie in the Cantor set of
+contraction ratio \(1/5\), and also raised the problem of solving
+\(x^3+y^3=1\) in the middle-third Cantor set. These questions concern
+prescribed nonlinear curves. The intersection methods developed by
+Shmerkin~\cite{Shmerkin2019} and Wu~\cite{Wu2019} provide relevant
+dimension estimates, but, as Yu observed, even a zero-dimensional
+upper bound does not establish finiteness. For the middle-third Cantor
+set, Du, Jiang and Yao~\cite{DuJiangYao2025} subsequently proved, with
+computer assistance, that \(x^2+y^2=1\) has at least \(10,000,000\)
+distinct solutions with an irrational coordinate. This gave a large
+finite lower bound without settling infinitude.
+
+Jiang, Kong, Li and Wang~\cite{Jiang2026} then studied the unit-circle
+intersection across the family of \(\lambda\)-Cantor sets. They proved
+that only the two axis points occur for \(0<\lambda\leq2-\sqrt3\),
+answering Yu's \(1/5\) question negatively, and gave sufficient ranges
+for nontrivial intersections and continuum cardinality. They left
+infinitude at \(\lambda=1/3\) open and asked for the Hausdorff dimension,
+conjecturing \(2\log2/\log3-1\)~\cite[Question~5.1]{Jiang2026}.
+More recently, Li, Shen and Wu~\cite{LiShenWu2026} established continuum
+cardinality for \((\sqrt3-1)/2<\lambda<1/2\) and positive Hausdorff
+dimension for \(\sqrt2-1<\lambda<1/2\). Their paper also includes an
+infinitude theorem covering \(\lambda=1/3\), although their
+positive-dimension range does not include this parameter. Our
+unit-circle result strengthens the known infinitude at \(1/3\) to
+positive Hausdorff dimension; the exact dimension remains open.
+See also~\cite{HuntKanYorke1993,FengHuangRao2014,HuangKong2023}
+for related results on Cantor-set intersections,
+\cite{JiangNonlinear,McDonaldTaylor,MoreiraImages} on nonlinear images
+of products of Cantor sets, and
+\cite{PeresShmerkin2009,NazarovPeresShmerkin} on resonance and the
+dimensions of arithmetic sums and convolutions.
+
+Motivated by this question, we seek both to answer it and to understand
+the phenomenon in a broader setting.
+We replace the exponent \(2\) by a real parameter \(\alpha>1\) and the
+middle-third Cantor set by a \(\lambda\)-Cantor set, and study the
+solutions of \(x^\alpha+y^\alpha=1\) as these two parameters vary.
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Main Results}\label{subsec:main-results}
+
+
+The question posed in~\cite{Jiang2026} asks about both the cardinality
+and the dimension of the unit-circle intersection in the middle-third
+Cantor dust. To understand how the solution set depends on the exponent
+and the Cantor set, we ask two questions:
+\begin{itemize}
+\item (Q1) What happens if we replace the exponent \(2\) by \(\alpha\), even
+allowing \(\alpha\) to be real? This will tell us whether the structure of
+the solution set depends on the arithmetic structure of the integers.
+\item (Q2) If we consider the more general \(\lambda\)-Cantor sets, when
+is the solution set zero-dimensional, and when does it have positive
+dimension? What do the transitions between these regimes look like
+(the Hausdorff phase transitions discussed below)?
+\end{itemize}
+
+
+
+To answer (Q1), for \(0<\lambda\leq1/2\), we write
+\[
+C_\lambda:=
+\left\{(1-\lambda)\sum_{j=1}^{\infty}
+       \varepsilon_j\lambda^{j-1}:\varepsilon_j\in\{0,1\}\right\}.
+\]
+For \(\alpha>1\), define
+\[
+E_{\alpha,\lambda}:=
+\{(x,y)\in C_\lambda\times C_\lambda:x^\alpha+y^\alpha=1\}.
+\]
+
+For \(\lambda=1/3\), we prove in Section~\ref{subsec:classical}
+that the solution set has positive Hausdorff dimension for every
+real exponent \(\alpha>1\).
+
+\begin{theorem}\label{intro:integer-powers}
+For every real \(\alpha>1\), \(\dim_{\mathrm H}(E_{\alpha,1/3})>0\).
+\end{theorem}
+
+Taking \(\alpha=2\) strengthens the known infinitude of the unit-circle
+intersection to positive Hausdorff dimension. Section~\ref{sec:special}
+gives a purely analytic proof of positive dimension in this case.
+For general exponents, we give an analytic proof for irrational
+\(\alpha\) and a computer-assisted proof for rational \(\alpha\).
+The latter combines analytic criteria with exact finite covers and
+strict-return certificates, documented in the
+\href{https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/blob/9ec893bcef7a71504234be897a16949c0a1f8313/docs/certificate-guide.pdf}{certificate reader's guide}.
+
+Section~\ref{subsec:irrational} proves that, for every real exponent
+\(\alpha>1\), the dimension is zero when \(0<\lambda\leq1/4\).
+For every irrational exponent, each nonempty open interval in
+\((1/4,1/2)\) contains a set of positive Lebesgue measure of
+parameters for which the dimension is positive. Thus, for irrational
+exponents, positive dimension occurs arbitrarily close to \(1/4\)
+from above.
+For \(\alpha>1\), we describe the first and last transition parameters by
+\[
+\begin{aligned}
+\lambda_{\min}(\alpha)&:=
+\inf\{\lambda\in(0,1/2]:\dim_{\mathrm H}(E_{\alpha,\lambda})>0\},\\
+\lambda_{\max}(\alpha)&:=
+\sup\{\lambda\in(0,1/2]:\dim_{\mathrm H}(E_{\alpha,\lambda})=0\}.
+\end{aligned}
+\]
+
+
+We refer to this change from zero to positive Hausdorff dimension as
+a \emph{Hausdorff phase transition}.
+We call \(\lambda_{\min}\) and \(\lambda_{\max}\) the first and last
+Hausdorff phase transition parameters, respectively.
+In familiar models of statistical physics, we usually have a single
+phase transition point: one phase throughout the parameter range
+below it and a different phase throughout the range above it.
+In more complicated models, however, there may be several phase
+transition points, or even infinitely many. It is therefore natural
+to ask whether, for \(\alpha=2\), there are multiple phase transition
+points as \(\lambda\) varies.
+
+The first transition satisfies the following bound.
+\begin{theorem}\label{intro:irrational-onset}
+For every real \(\alpha>1\), \(\lambda_{\min}(\alpha)\geq1/4\),
+with equality whenever \(\alpha\) is irrational.
+\end{theorem}
+
+
+
+This theorem gives an initial picture of the solution sets across
+the parameter family. It suggests considering a Hausdorff phase
+transition diagram, with \(\alpha\) on the horizontal axis and \(\lambda\)
+on the vertical axis. The diagram records how the two parameters
+together determine the changes between zero and positive dimension.
+
+Section~\ref{sec:last} develops this diagram and addresses (Q2).
+We obtain an upper bound for the last Hausdorff phase transition
+that holds for every real exponent \(\alpha>1\).
+Above this common bound, the intersection has positive Hausdorff
+dimension throughout the remaining contraction interval.
+
+\begin{theorem}\label{intro:last-real}
+For every real \(\alpha>1\),
+\[
+\lambda_{\max}(\alpha)<\frac{\sqrt3-1}{2}.
+\]
+\end{theorem}
+
+Beyond positivity, we would like to determine the dimension itself.
+The expected value in the positive-dimensional regime is
+$
+\frac{2\log2}{\log(1/\lambda)}-1,
+$
+the dimension of the Cantor dust minus one. At \(\lambda=1/3\),
+this reduces to \(2\log2/\log3-1\), the value conjectured for the
+unit-circle intersection by Jiang, Kong, Li and Wang
+in~\cite[Question~5.1]{Jiang2026}.
+Determining the dimension at every point of the diagram remains
+difficult. Nevertheless, we obtain this formula for almost every
+contraction ratio in an explicit interval, for each fixed irrational
+exponent.
+
+\begin{theorem}\label{intro:ae-dimension}
+For every fixed irrational \(\alpha>1\), for Lebesgue almost every
+\(\lambda\in(\sqrt3/4,1/2)\),
+\[
+\dim_{\mathrm H}(E_{\alpha,\lambda})
+=\frac{2\log2}{\log(1/\lambda)}-1.
+\]
+\end{theorem}
+
+This establishes the expected formula in the stated parameter range;
+the precise dimension of the original unit-circle intersection in
+the middle-third Cantor dust remains open.
+
+
+
+These results provide a framework for studying intersections of the
+curves \(x^\alpha+y^\alpha=1\) with \(\lambda\)-Cantor dust and their Hausdorff
+phase transitions. Figure~\ref{fig:phase-diagram} summarises the
+proved results and numerical estimates in a phase diagram.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/phase-diagram.pdf}
+\caption{Hausdorff phase transition diagram}
+\label{fig:phase-diagram}
+\end{figure}
+
+
+
+
+
+
+\section{\texorpdfstring{\(x^2+y^2=1\)}{x2 + y2 = 1} in the middle-third Cantor set}\label{sec:special}
+
+
+Our goal in this section is to prove that \(\dim_{\mathrm H}(E_{2,1/3})>0\).
+
+We first locate a nonempty intersection in a pair of Cantor cylinders
+and use returns between smaller cylinders to construct a perfect subset.
+Strict returns persist under the nonlinear perturbation of the circle
+and yield a branching construction of positive Hausdorff dimension,
+proving the positivity assertion in
+Theorem~\ref{thm:circle-quantitative}.
+
+
+\begin{definition}\label{def:cantor-circle}
+For the following unit-circle construction, write
+\[
+C:=C_{1/3}
+=\left\{\sum_{j=1}^{\infty}\frac{2\varepsilon_j}{3^j}:
+                \varepsilon_j\in\{0,1\}\right\},
+\qquad
+E:=E_{2,1/3}.
+\]
+\end{definition}
+
+The proof uses a specific Cantor cylinder. Consider points of the form
+\[
+x=\frac{566+b}{3^7},\qquad y=\frac{6336+a}{3^8},
+\qquad a,b\in C.
+\]
+The integers \(566\) and \(6336\), written as ternary words of lengths
+seven and eight, are \(0202222\) and \(22200200\).
+The circle equation in these coordinates is
+\[
+(6336+a)^2+9(566+b)^2=3^{16}.
+\]
+At \((a,b)=(0,0)\) and \((1,1)\), the left side minus \(3^{16}\)
+equals \(-18621\) and \(4249\), respectively.
+These signs alone only show a crossing of the ordinary square.
+Lemma~\ref{lem:interval-cover} proves that every retained Cantor square maps
+onto its entire corner-value interval, which makes the crossing a
+point of the Cantor product.
+
+
+The second ingredient concerns isolated points. Throughout the selected
+cylinder, the normal ratio \(y/(3x)\) lies strictly between \(11/9\)
+and \(2027/1624\). In this interval, a four-digit expansion that is
+asymptotically confined to the regions with only one possible first
+digit must eventually be periodic. We prove this assertion directly
+in Lemma~\ref{lem:periodicity}. An exact quadratic expansion then transfers
+it to any hypothetical isolated circle point.
+Such a point would have rational coordinates, whereas
+Lemma~\ref{lem:rational} proves that the only rational points of \(E\)
+are the two axis points. Thus the selected compact intersection has
+no isolated points.
+
+This argument establishes cardinality. It does not give a positive
+Hausdorff dimension bound, nor does it exclude quadratic irrational
+numbers from \(C\). Both distinctions matter: a perfect compact set
+can have zero Hausdorff dimension, and periodicity here follows from
+isolation in a particular two-coordinate level set.
+
+\paragraph{Rational points on the unit circle.}\label{sec:rational}
+
+We first record the arithmetic obstruction that will rule out isolated
+points at the end of the proof.
+
+\begin{lemma}\label{lem:rational}
+The rational points of \(E\) are exactly \((0,1)\) and \((1,0)\).
+\end{lemma}
+
+\begin{proof}
+Suppose that \(x,y\) are rational, belong to \(C\), and satisfy
+\(x^2+y^2=1\). If either coordinate is zero, the conclusion follows.
+We may therefore assume that \(0<x,y<1\).
+Choose a common denominator and write
+\[
+x=\frac{p}{d},\qquad y=\frac{q}{d},\qquad
+p^2+q^2=d^2,\qquad \gcd(p,q,d)=1.
+\]
+If \(3\mid d\), reduction modulo \(3\) forces \(3\mid p,q\), a
+contradiction. Hence \(d\) is coprime to \(3\).
+
+Both ternary expansions are consequently purely periodic.
+Indeed, choose \(k\geq1\) such that \(3^k\equiv1\pmod d\).
+Multiplication by \(3^k\) preserves the fractional part of each
+coordinate. Neither coordinate is a noninteger triadic rational, so
+there is no endpoint ambiguity in its expansion.
+Since the digits belong to \(\{0,2\}\), dividing the two period
+numerators by \(2\) gives
+\[
+x=\frac{A}{N},\qquad y=\frac{B}{N},
+\qquad N:=\frac{3^k-1}{2},
+\]
+where the ternary digits of \(A,B\) belong to \(\{0,1\}\).
+All \(k\) ternary digits of \(N\) are \(1\), and
+\[
+A^2+B^2=N^2.
+\]
+Modulo \(3\), exactly one of \(A,B\) is \(1\).
+After interchanging the coordinates, assume that
+\(A\equiv1\pmod3\) and \(B\equiv0\pmod3\).
+
+Let \(j\geq1\) be the exact exponent of \(3\) dividing \(B\).
+The identity
+\[
+(N-A)(N+A)=B^2
+\]
+and \(N+A\equiv2\pmod3\) show that the exact exponent of \(3\)
+dividing \(N-A\) is \(2j\).
+Subtracting \(A\) from the all-one ternary expansion of \(N\)
+requires no borrowing. Thus \(N-A\) has only \(0\) and \(1\) as
+ternary digits, and its first nonzero digit is \(1\).
+It follows that
+\[
+\frac{N-A}{3^{2j}}\equiv1\pmod3.
+\]
+Dividing the product identity by \(3^{2j}\) now gives a contradiction
+modulo \(3\): its left side is \(1\cdot2\), while its right side is
+a nonzero square. This excludes \(0<x,y<1\).
+\end{proof}
+
+\paragraph{A nonempty local intersection.}\label{sec:source}
+
+We need a crossing criterion for actual Cantor points, valid in every
+descendant square. The following elementary covering argument provides
+it.
+
+Let \(G\) be continuously differentiable on \([0,1]^2\). For ternary
+words of the same length \(n\), with digits in \(\{0,2\}\), let \(u,v\)
+be the corresponding left endpoints. The associated square and Cantor
+product are
+\[
+Q:=[u,u+3^{-n}]\times[v,v+3^{-n}],
+\qquad
+(u+3^{-n}C)\times(v+3^{-n}C).
+\]
+
+\begin{lemma}\label{lem:interval-cover}
+Suppose that
+\[
+0<\min_{[0,1]^2}G_b
+\leq\max_{[0,1]^2}G_b
+<\min_{[0,1]^2}G_a,
+\qquad
+\max_{[0,1]^2}G_a<3\min_{[0,1]^2}G_b.
+\]
+Then every square \(Q\) described above satisfies
+\[
+G\bigl((u+3^{-n}C)\times(v+3^{-n}C)\bigr)
+=[G(u,v),G(u+3^{-n},v+3^{-n})].
+\]
+\end{lemma}
+
+\begin{proof}
+Write \(h\) for the side length of a retained square with lower-left
+corner \((u,v)\). Its four children have lower-left offsets
+\[
+(0,0),\quad(0,2h/3),\quad(2h/3,0),\quad(2h/3,2h/3).
+\]
+Positivity of both partial derivatives implies that the image of each
+ordinary child square is the interval between its lower-left and
+upper-right corner values. Both sets of endpoints occur in the
+displayed order, since increasing the first coordinate by \(2h/3\)
+and decreasing the second by \(2h/3\) increases \(G\).
+
+The first two intervals overlap because
+\[
+G(u+h/3,v+h/3)-G(u,v+2h/3)
+\geq\frac h3\bigl(\min G_a-\max G_b\bigr)>0.
+\]
+The middle two overlap because
+\[
+G(u+h/3,v+h)-G(u+2h/3,v)
+\geq h\min G_b-\frac h3\max G_a>0.
+\]
+The last two overlap by the same estimate as the first two.
+Their union is therefore the whole parent corner-value interval.
+
+Given any value in this interval, choose a child whose corner-value
+interval contains it and repeat. The resulting nested closed squares
+have diameters tending to zero. Their common point belongs to the
+retained Cantor product, and continuity gives the prescribed value.
+The same argument applies inside every descendant square.
+\end{proof}
+
+For the remainder of this construction, define
+\[
+F(a,b):=(6336+a)^2+9(566+b)^2
+\]
+and
+\[
+S:=\left\{\left(\frac{566+b}{3^7},\frac{6336+a}{3^8}\right):
+                       a,b\in C,\ F(a,b)=3^{16}\right\}.
+\]
+The two allowed ternary prefixes show that \(S\subset E\).
+
+\begin{proposition}\label{prop:source}
+The set \(S\) is nonempty and compact.
+\end{proposition}
+
+\begin{proof}
+On \([0,1]^2\),
+\[
+12672\leq F_a\leq12674,\qquad
+10188\leq F_b\leq10206.
+\]
+In particular, \(12672>10206\) and \(12674<3\cdot10188\), so
+Lemma~\ref{lem:interval-cover} applies. Since
+\[
+F(0,0)-3^{16}=-18621,\qquad
+F(1,1)-3^{16}=4249,
+\]
+there is a point of \(C\times C\) with value \(3^{16}\).
+Compactness follows from continuity and compactness of \(C\times C\).
+\end{proof}
+
+We will use two consequences of this calculation.
+First, a retained square contains a point of
+\(F(a,b)=3^{16}\) in its Cantor product if and only if its corner
+values bracket \(3^{16}\), with equality allowed.
+Second, throughout the entire source rectangle,
+\begin{equation}\label{eq:normal-band}
+\frac{11}{9}<\frac{704}{567}
+\leq\frac{6336+a}{9(566+b)}
+=\frac{y}{3x}
+\leq\frac{6337}{5094}<\frac{2027}{1624}.
+\end{equation}
+The strict endpoint margins are \(11/567\) and
+\(17125/4136328\), respectively.
+
+\paragraph{Eventual periodicity of digit sequences.}\label{sec:digits}
+
+Fix a real number
+\begin{equation}\label{eq:r-band}
+\frac{11}{9}<r<\frac{2027}{1624}.
+\end{equation}
+For a sequence \(c_n\in\{0,1,r,r+1\}\), indexed by \(n\geq0\), define
+\[
+T_n:=\sum_{j=0}^{\infty}\frac{c_{n+j}}{3^{j+1}}.
+\]
+Thus \(T_{n+1}=3T_n-c_n\).
+The intervals relevant to a single admissible first digit are
+\begin{equation}\label{eq:exclusive-domains}
+\begin{aligned}
+I_0&:=[0,1/3],
+&I_1&:=[(r+1)/6,r/3],\\
+I_r&:=[(r+3)/6,(r+1)/3],
+&I_{r+1}&:=[(3r+1)/6,(r+1)/2].
+\end{aligned}
+\end{equation}
+They are closed: the argument below must allow errors from curvature
+and cannot discard their endpoints.
+
+\begin{lemma}\label{lem:periodicity}
+For \(r\) satisfying \eqref{eq:r-band}, the sequence \((c_n)\) is
+eventually periodic whenever
+\[
+\lim_{n\to\infty}\operatorname{dist}(T_n,I_{c_n})=0.
+\]
+\end{lemma}
+
+\begin{proof}
+Put \(\delta_n:=\operatorname{dist}(T_n,I_{c_n})\).
+Every exclusion below has a strictly positive margin depending only
+on the fixed parameter \(r\). Because
+\(\displaystyle\lim_{n\to\infty}\delta_n=0\), these exclusions hold
+simultaneously after a sufficiently large index.
+The reflection
+\[
+T_n\longmapsto\frac{r+1}{2}-T_n,\qquad
+c_n\longmapsto r+1-c_n
+\]
+preserves the hypotheses and exchanges the digits \(0,r+1\) and \(1,r\).
+
+If \(c_n=1\), then \(T_{n+1}\leq r-1+3\delta_n\).
+Every domain for a nonzero next digit has lower endpoint at least
+\((r+1)/6\). Hence \(c_{n+1}\ne0\) would imply
+\[
+\frac{7-5r}{6}\leq3\delta_n+\delta_{n+1}.
+\]
+The left side is positive, so sufficiently late occurrences of \(1\)
+must be followed by \(0\). Reflection shows that sufficiently late
+occurrences of \(r\) must be followed by \(r+1\).
+
+After the pair \(10\), the recurrence gives
+\[
+\frac{3(r-1)}2-9\delta_n
+\leq T_{n+2}=9T_n-3
+\leq3(r-1)+9\delta_n.
+\]
+This excludes the next digit \(0\) or \(r+1\) at sufficiently late
+indices, since the respective separating margins are
+\[
+\frac{3(r-1)}2-\frac13=\frac{9r-11}{6}>0,
+\qquad
+\frac{3r+1}{6}-3(r-1)=\frac{19-15r}{6}>0.
+\]
+The latter inequality uses \(2027/1624<19/15\).
+The reflected conclusion holds after the pair \(r(r+1)\).
+Consequently, once a middle digit \(1\) or \(r\) occurs sufficiently
+late, the entire subsequent sequence consists of the two blocks
+\[
+10,\qquad r(r+1).
+\]
+
+Call these the low block and the high block.
+An infinite sequence of low blocks has value \(3/8\).
+If three successive blocks are low, high, high, then replacing all
+other blocks by low blocks gives the lower bound
+\[
+T_n\geq\frac38+(4r-2)\left(\frac1{81}+\frac1{729}\right)
+       =\frac38+\frac{20(2r-1)}{729}.
+\]
+Its first digit is \(1\), which also requires \(T_n\leq r/3+\delta_n\).
+But
+\[
+\frac38+\frac{20(2r-1)}{729}-\frac r3
+=\frac{2027-1624r}{5832}>0.
+\]
+Thus low, high, high is eventually forbidden, and reflection also
+forbids high, low, low.
+A binary sequence avoiding these two words is eventually constant
+or alternating: after its first change, either forbidden word would
+appear if the next symbol did not change again.
+The original digit sequence is therefore eventually periodic.
+
+It remains to consider a tail containing only \(0\) and \(r+1\).
+At an occurrence of \(0,(r+1),(r+1)\), the terminal digit's domain
+and the recurrence give
+\[
+T_n=\frac{r+1+T_{n+2}}9
+\geq\frac{9r+7}{54}-\frac{\delta_{n+2}}9.
+\]
+The initial digit \(0\) requires \(T_n\leq1/3+\delta_n\).
+These inequalities contradict one another for sufficiently large \(n\),
+because
+\[
+\frac{9r+7}{54}-\frac13=\frac{9r-11}{54}>0.
+\]
+Reflection excludes \((r+1),0,0\) as well.
+The same binary-word argument proves eventual constancy or alternation
+in this case.
+\end{proof}
+
+The hypothesis of Lemma~\ref{lem:periodicity} permits arbitrary
+vanishing errors. In particular, it applies when the domains arise
+as linear approximations to a curved level set. This is the reason
+for retaining the error terms throughout the proof.
+
+\paragraph{The perfect subset and uncountability.}\label{sec:main}
+
+We now combine the local covering property with the digit lemma.
+
+\begin{theorem}\label{thm:main}
+The set \(E\) has cardinality \(2^{\aleph_0}\).
+\end{theorem}
+
+\begin{proof}
+By Proposition~\ref{prop:source}, \(S\) is a nonempty compact subset
+of \(E\). We will show that \(S\) has no isolated points.
+Suppose to the contrary that
+\[
+(x,y)=\left(\frac{566+b}{3^7},\frac{6336+a}{3^8}\right)\in S
+\]
+is isolated. Fix its normal ratio
+\[
+r:=\frac{6336+a}{9(566+b)}=\frac{y}{3x}.
+\]
+By \eqref{eq:normal-band}, this fixed value satisfies
+\eqref{eq:r-band}.
+
+Let \(a_n,b_n\in C\) be the tails of the allowed ternary expansions
+of \(a,b\) after their first \(n\) digits. Write their next digits as
+\(2\xi_n,2\beta_n\), where \(\xi_n,\beta_n\in\{0,1\}\).
+Then
+\[
+a_n=\frac{2\xi_n+a_{n+1}}3,\qquad
+b_n=\frac{2\beta_n+b_{n+1}}3.
+\]
+Define
+\[
+T_n:=\frac{ra_n+b_n}{2},\qquad c_n:=r\xi_n+\beta_n.
+\]
+These are precisely the tails and digits introduced before Lemma~\ref{lem:periodicity};
+in particular, \(T_{n+1}=3T_n-c_n\) holds exactly.
+
+The retained square of depth \(n\) containing \((a,b)\) can be
+parametrised by
+\[
+\bigl(a+3^{-n}(s-a_n),\,b+3^{-n}(t-b_n)\bigr),
+\qquad s,t\in[0,1].
+\]
+The quadratic expansion is exact:
+\begin{align}
+&\frac{F\bigl(a+3^{-n}(s-a_n),\,b+3^{-n}(t-b_n)\bigr)-F(a,b)}
+       {36(566+b)3^{-n}}\notag\\
+&\hspace{12mm}=\frac{rs+t}{2}-T_n
+ +\frac{3^{-n}\bigl((s-a_n)^2+9(t-b_n)^2\bigr)}{36(566+b)}.
+\label{eq:taylor}
+\end{align}
+The final term lies between zero and
+\[
+\eta_n:=\frac{5}{10188}\,3^{-n}.
+\]
+The normal \(r\) is held fixed at the original point throughout this
+calculation; it is not replaced by a normal at a cylinder corner.
+
+For a child with digit label \(c\in\{0,1,r,r+1\}\), the linear function
+\((rs+t)/2\) takes values in
+\[
+J_c:=\left[\frac c3,\frac c3+\frac{r+1}{6}\right].
+\]
+If \(T_n\) is more than \(\eta_n\) from both endpoints inside \(J_c\),
+the left side of \eqref{eq:taylor} has opposite signs at the child's
+lower-left and upper-right corners. Lemma~\ref{lem:interval-cover}
+then supplies an actual point of the Cantor product on the level
+\(F=3^{16}\) in this child.
+
+Because the original point is isolated, every sufficiently deep
+retained square containing it has exactly one child containing a
+point of that level set. The retained intervals at any fixed depth
+are disjoint, including their endpoints, so a point in a different
+child would be a different point of \(S\).
+The original point belongs to its prescribed child, and therefore
+\(T_n\in J_{c_n}\) exactly.
+
+We claim that for all sufficiently large \(n\),
+\begin{equation}\label{eq:approx-exclusive}
+\operatorname{dist}(T_n,I_{c_n})\leq\eta_n.
+\end{equation}
+Here the \(I_c\) are the closed intervals in
+\eqref{eq:exclusive-domains}.
+Choose \(n\) so large that
+\(\eta_n<\min\{1/3,(r-1)/3\}\).
+If \(c_n=0\) and \(T_n>1/3+\eta_n\), then \(T_n\) is more than
+\(\eta_n\) inside \(J_1\); its distance from the other endpoint of
+\(J_1\) is at least \(1/3\).
+This would give a point in a competing child.
+If \(c_n=1\), the alternatives
+\[
+T_n<(r+1)/6-\eta_n
+\quad\hbox{or}\quad
+T_n>r/3+\eta_n
+\]
+place \(T_n\) more than \(\eta_n\) inside \(J_0\) or \(J_r\),
+respectively. The margins at their other endpoints are at least
+\(1/3\) and \((r-1)/3\).
+Both alternatives again give a competing child.
+The cases \(c_n=r\) and \(c_n=r+1\) follow by reflecting the linear
+intervals. This last argument only uses the uniform absolute error
+bound in \eqref{eq:taylor}; it does not assume reflection symmetry
+of the quadratic term.
+This proves \eqref{eq:approx-exclusive}, with no omitted endpoint
+case.
+
+Since \(\displaystyle\lim_{n\to\infty}\eta_n=0\),
+Lemma~\ref{lem:periodicity} makes \((c_n)\) eventually periodic.
+The four values \(0,1,r,r+1\) are distinct, so each digit \(c_n\)
+uniquely determines \((\xi_n,\beta_n)\).
+Thus the ternary expansions of both \(a\) and \(b\) are eventually
+periodic, and \(x,y\) are rational.
+Lemma~\ref{lem:rational} excludes such a point in \(S\), whose two
+coordinates are strictly between zero and one. This contradiction
+shows that \(S\) is perfect.
+
+For completeness, a nonempty perfect compact subset of the plane
+contains continuum many points. Inside a relative neighbourhood
+meeting the set, choose two distinct points and smaller disjoint
+closed neighbourhoods around them. Each can be chosen to have
+nonempty relative interior. Repeat in each neighbourhood, with
+diameters decreasing to zero. Compactness gives a limiting point
+for every infinite binary sequence, and disjointness makes those
+points distinct. Hence \(\#S\geq2^{\aleph_0}\).
+Since \(S\subset E\subset\mathbb R^2\), the reverse cardinality bound
+is automatic, proving the theorem.
+\end{proof}
+
+The construction does not require immediate branching at every scale.
+The first subdivision gives a concrete illustration.
+
+\begin{example}\label{ex:first-subdivision}
+For a child with first ternary digits \(d,e\in\{0,2\}\) in the
+\(a,b\) coordinates, write
+\(a=(d+s)/3\), \(b=(e+t)/3\), with \(s,t\in[0,1]\).
+Multiplying \(F(a,b)-3^{16}\) by \(9\) gives
+\[
+(19008+d+s)^2+9(1698+e+t)^2-3^{18}.
+\]
+Its corner-value intervals are
+\[
+\begin{array}{c@{\qquad}r@{\ ,\ }l}
+\toprule
+(d,e)&\multicolumn{2}{c}{\text{corner-value interval}}\\
+\midrule
+(0,0)&[-167589&-98999]\\
+(0,2)&[-106425&-37799]\\
+(2,0)&[-91553&-22959]\\
+(2,2)&[-30389&38241]\\
+\bottomrule
+\end{array}
+\]
+Only the child \((2,2)\) meets the level zero.
+Lemma~\ref{lem:interval-cover} makes this a statement about actual
+Cantor points, not merely ordinary-square crossings.
+The theorem proves that the surviving compact intersection is
+perfect despite this first subdivision having a single surviving
+child.
+\end{example}
+
+
+
+\paragraph{Strict returns and positive dimension.}
+
+\begin{lemma}\label{lem:strict-returns}
+Let \(0<\lambda<1/2\), let \(L(s,t)\) be a positive linear function,
+and let \(B\) be a compact
+set of levels such that every \(u\in B\) has two incomparable
+nonempty Cantor words returning its normalized level into
+\(\operatorname{int}B\).
+Then every sufficiently small Lipschitz perturbation of \(L\),
+at every level sufficiently close to \(B\), has a positive-dimensional
+zero set in \(C_\lambda^2\).
+\end{lemma}
+\begin{proof}
+For a word \(w\), let \(z_w\) be its lower corner and let
+\(\Phi_w(u)=\lambda^{-|w|}(u-L(z_w))\).
+The two strict inequalities for a chosen pair persist on an
+open interval about \(u\). Compactness gives a finite collection
+of pairs, an open neighborhood \(U\supset B\), a maximum length
+\(M\), and a margin \(\eta>0\) such that every \(u\in U\) has
+two selected returns at distance at least \(\eta\) from
+\(\mathbb R\setminus B\).
+
+Consider \(L+e-u=0\), where \(e(0,0)=0\) and
+\(\operatorname{Lip}(e)<\eta\lambda^M/2\) in the sup norm.
+On restricting to \(w\), the new error is
+\[
+\lambda^{-|w|}
+\bigl(e(z_w+\lambda^{|w|}(s,t))-e(z_w)\bigr).
+\]
+Its Lipschitz constant does not increase. The new level differs
+from \(\Phi_w(u)\) by \(\lambda^{-|w|}e(z_w)\), of absolute
+value less than \(\eta/2\). Both words therefore return to
+\(B\subset U\), and the process repeats.
+
+Every infinite branch converges to a zero: the original residual
+is the cylinder scale times a uniformly bounded normalized
+residual. Assign mass \(2^{-j}\) to each binary generation-\(j\)
+cylinder. Its depth is at most \(jM\), and distinct such cylinders
+are separated by at least
+\((1-2\lambda)\lambda^{jM-1}\).
+A ball of radius comparable to \(\lambda^{jM}\) meets a bounded
+number of them. Choosing \(j\) with
+\(\lambda^{(j+1)M}<r\leq\lambda^{jM}\) gives
+\[
+\nu(B(z,r))\leq C r^{\log2/(M\log(1/\lambda))}.
+\]
+The mass distribution principle~\cite{Mattila1995} completes the proof.
+\end{proof}
+
+
+
+\begin{lemma}\label{lem:good-slopes}
+The eventual-periodicity conclusion of Lemma~\ref{lem:periodicity},
+including vanishing errors, holds when the slope belongs to any of
+\[
+\left(\frac{89}{73},\frac{171}{137}\right),\
+\left(\frac{101}{79},\frac{183}{143}\right),\
+\left(\frac{89}{57},\frac{171}{89}\right),\
+\left(\frac{143}{61},\frac{237}{101}\right),\
+\left(\frac{137}{57},\frac{219}{89}\right).
+\]
+\end{lemma}
+\begin{proof}
+We prove the stronger conclusion that \(c_{n+4}=c_n\) for all sufficiently
+large \(n\). In finite words, use the labels \(0,1,2,3\) for the actual
+digits \(0,1,r,r+1\), respectively. The reflection from
+Lemma~\ref{lem:periodicity} exchanges \(0,3\) and \(1,2\) and preserves
+\(\delta_n:=\operatorname{dist}(T_n,I_{c_n})\).
+The exact recurrence is
+
+\[
+T_{n+j}=3^jT_n-\sum_{i=0}^{j-1}3^{j-1-i}c_{n+i}.
+\]
+
+A bound obtained from the initial closed domain has error at most
+\(3^j\delta_n\); comparison with the domain at position \(n+j\) costs
+at most another \(\delta_{n+j}\). Every comparison below has a strictly
+positive margin for the fixed slope and uses at most four steps.
+Since \(\displaystyle\lim_{n\to\infty}\delta_n=0\), all these finitely
+many implications hold beyond one common index. We work in that tail
+and omit the vanishing errors from the tables. Repeatedly using these
+local implications does not accumulate errors over time.
+
+\emph{The first interval.}
+Suppose \(89/73<r<171/137\). Digit \(1\) gives
+\(T_{n+1}\le r-1+3\delta_n\), whereas every nonzero domain starts
+at or above \((r+1)/6\). The margin \((7-5r)/6>0\) forces \(1\)
+to be followed by \(0\); reflection forces \(2\) to be followed by
+\(3\). After \(10\), the upper bound \(3(r-1)\) for \(T_{n+2}\)
+lies below the lower endpoint \((3r+1)/6\) for digit \(3\), with
+margin \((19-15r)/6>0\). Thus \(103\) and its reflection \(230\)
+are forbidden. The next four comparisons are
+
+\[
+\begin{array}{c@{\quad}c@{\quad}c@{\quad}c}
+\toprule
+\text{Prefix} & \text{Tail bound} & \text{Margin} & \text{Next label}\\
+\midrule
+100 & T_{n+3}\ge9(r-1)/2 & (25r-29)/6 & 3\\
+1003 & T_{n+4}\ge(25r-29)/2 & (73r-89)/6 & 3\\
+033 & T_{n+3}\le5-4r & (25r-29)/6 & 0\\
+0330 & T_{n+4}\le15-12r & (73r-89)/6 & 0\\
+\bottomrule
+\end{array}
+\]
+
+The first two rows compare with \((r+1)/3\), the largest upper
+endpoint among the domains other than \(I_{r+1}\); the last two
+compare with \((r+1)/6\), the smallest lower endpoint among those
+other than \(I_0\). Both margins are positive since
+\(r>89/73>29/25\). Consequently, \(100\) forces \(10033\), and
+\(033\) forces \(03300\). Reflection gives \(23300\) after \(233\)
+and \(30033\) after \(300\). Any of these four triggers therefore
+leads to the periodic tail \((0033)^\infty\).
+
+If this does not happen, none of the four triggers occurs. After a
+middle label \(1\) or \(2\), the tail is then a concatenation of
+\(10\) and \(23\): after \(10\), the next labels \(0,3\) are
+excluded by \(100,103\), and the other case follows by reflection.
+Three consecutive blocks \(10,23,23\) would contain \(10232\), giving
+
+\[
+T_n\ge\frac13+\frac r{27}+\frac{r+1}{81}
+ +\frac{r+3}{486}-\frac{\delta_{n+4}}{81}
+=\frac{25r+171}{486}-\frac{\delta_{n+4}}{81}.
+\]
+
+The initial digit requires \(T_n\le r/3+\delta_n\), contradicting
+the positive margin \((171-137r)/486\). Thus the block triple
+\(10,23,23\) is forbidden, as is \(23,10,10\) by reflection. Once a binary
+block sequence changes symbol, these exclusions force every later
+symbol to change again. It is therefore constant or eventually
+alternating, yielding the periods \(10,23,1023\).
+If there is no middle label in the tail, only \(0,3\) remain.
+Unless \(033\) or \(300\) triggers the period already treated,
+the same binary argument gives a constant or alternating tail.
+All resulting periods have length dividing four.
+
+\emph{The second interval.}
+Suppose \(101/79<r<183/143\). Again \(1\) is followed by \(0\),
+and \(2\) by \(3\), since \(r<7/5\).
+For \(100\), the lower bound \(3(r-1)/2\) for \(T_{n+2}\)
+exceeds \(1/3\) by \((9r-11)/6>0\). For \(033\), the upper
+bound \(2-r\) lies below \((3r+1)/6\) by the same margin.
+Thus \(100,033\) and their reflections \(233,300\) are forbidden.
+The remaining comparisons are
+
+\[
+\begin{array}{c@{\quad}c@{\quad}c@{\quad}c}
+\toprule
+\text{Prefix} & \text{Tail bound} & \text{Margin} & \text{Next labels}\\
+\midrule
+103 & T_{n+3}\le8r-10 & (61-47r)/6 & 0\\
+1030 & T_{n+4}\le24r-30 & (183-143r)/6 & 0,1\\
+1010 & T_{n+4}\ge(27r-33)/2 & (79r-101)/6 & 3\\
+3010 & T_{n+4}\ge(27r-33)/2 & (79r-101)/6 & 3\\
+\bottomrule
+\end{array}
+\]
+
+The comparison endpoints are respectively \((r+1)/6\),
+\((r+3)/6\), and \((r+1)/3\) in the last two rows.
+All margins are positive, since \(183/143<61/47\).
+In the second row, the next label cannot be \(0\), which would
+create \(300\), so it is \(1\). Consequently,
+
+\[
+103\longrightarrow10301\longrightarrow103010
+\longrightarrow1030103.
+\]
+
+The suffix \(103\) is recovered, so this trigger forces period
+\(1030\); reflection makes \(230\) force period \(2303\).
+If neither trigger occurs, any middle label again starts a tail
+of blocks \(10,23\). Two successive \(10\) blocks form \(1010\),
+which forces \(3\) and creates the trigger \(103\); reflection
+excludes two successive \(23\) blocks. The blocks must therefore
+alternate, giving period \(1023\). Without middle labels, the
+exclusions \(033,300\) give a constant or alternating tail.
+Again all periods have length dividing four.
+
+\emph{The third interval.}
+Suppose \(89/57<r<171/89\). The word \(13\) is forbidden:
+the bound \(r-1\) for \(T_{n+1}\) lies below \((3r+1)/6\)
+by \((7-3r)/6>0\). Reflection excludes \(20\).
+We use the following direct recurrence bounds:
+
+\[
+\begin{array}{c@{\quad}c@{\quad}c@{\quad}c}
+\toprule
+\text{Prefix} & \text{Tail bound} & \text{Margin} & \text{Next labels}\\
+\midrule
+03 & T_{n+2}\le2-r & (7r-9)/6 & 0,1\\
+10 & T_{n+2}\ge3(r-1)/2 & (7r-9)/6 & 2,3\\
+031 & T_{n+3}\le5-3r & (19r-29)/6 & 0\\
+102 & T_{n+3}\ge(7r-9)/2 & (19r-29)/6 & 3\\
+0310 & T_{n+4}\le15-9r & (57r-89)/6 & 0,1,2\\
+1023 & T_{n+4}\ge(19r-29)/2 & (57r-89)/6 & 1,2,3\\
+\bottomrule
+\end{array}
+\]
+
+The comparison endpoints, in order, are
+\((r+3)/6,r/3,(r+1)/6,(r+1)/3,(3r+1)/6,1/3\).
+The margins are positive because \(r>89/57>29/19>9/7\).
+After \(031\), the next label is \(0\); the suffix \(10\)
+then excludes \(0,1\), and the fifth row excludes \(3\), so
+\(031\) forces \(03102\). Likewise \(102\) first forces \(3\);
+the reflected rule for \(23\) excludes \(2,3\), and the last
+row excludes \(0\), so \(102\) forces \(10231\). Reflection
+gives \(23102\) after \(231\). Thus any of \(031,102,302,231\)
+forces the periodic tail \((1023)^\infty\).
+
+If none of these triggers occurs, \(03\) can only be followed
+by \(0\), since \(1\) would create \(031\). Reflection makes
+\(30\) be followed by \(3\). Either word therefore forces period
+\(03\). Also \(10\) must be followed by \(3\), since \(2\)
+would create \(102\), so it enters the same period; \(23\) does
+so by reflection.
+
+If these periodic tails are not reached, the tail avoids
+\(10,23,03,30\), as well as \(13,20\). Once it enters
+\(\{1,2\}\), it cannot leave. A label \(0\) or \(3\) can
+only repeat itself or leave for \(\{1,2\}\). Hence the tail is
+constant \(0\), constant \(3\), or eventually uses only \(1,2\).
+In the latter case, the additional comparisons are
+
+\[
+\begin{array}{c@{\quad}c@{\quad}c@{\quad}c}
+\toprule
+\text{Prefix} & \text{Tail bound} & \text{Margin} & \text{Next label}\\
+\midrule
+122 & T_{n+3}\le5r-9 & (57-29r)/6 & 1\\
+1221 & T_{n+4}\le15r-28 & (171-89r)/6 & 1\\
+\bottomrule
+\end{array}
+\]
+
+Both compare with the lower endpoint \((r+3)/6\) for label \(2\),
+and both margins are positive since \(r<171/89<57/29\).
+Thus \(122\) forces \(12211\), and reflection makes \(211\)
+force \(21122\). Either trigger forces period \(1122\).
+Otherwise the binary tail avoids \(122,211\), so once its symbol
+changes it must keep alternating. The remaining tails are therefore
+constant or alternating, and all periods again divide four.
+
+\emph{The last two intervals.}
+A shift of one coordinate gives a duality between slopes \(r\)
+and \(3/r\). Write uniquely \(c_n=r a_n+b_n\), where
+\(a_n,b_n\in\{0,1\}\), and define
+\(d_n:=(3/r)b_n+a_{n+1}\). Direct summation gives
+
+\[
+\sum_{j=0}^{\infty}\frac{d_{n+j}}{3^{j+1}}
+=\frac{T_{n+1}+b_n}{r}.
+\]
+
+If \(b_n=0\), the current domain gives
+\(T_{n+1}\le1+3\delta_n\); if \(b_n=1\), it gives
+\(T_{n+1}\ge(r-1)/2-3\delta_n\).
+The next domain gives \(T_{n+1}\le r/3+\delta_{n+1}\) when
+\(a_{n+1}=0\), and \(T_{n+1}\ge(r+3)/6-\delta_{n+1}\) when
+\(a_{n+1}=1\). Together with \(0\le T_{n+1}\le(r+1)/2\),
+these bounds place \(T_{n+1}+b_n\) in the following intervals,
+each enlarged by at most \(\max\{3\delta_n,\delta_{n+1}\}\):
+
+\[
+\begin{array}{c@{\qquad}c@{\qquad}c}
+\toprule
+(b_n,a_{n+1}) & T_{n+1}+b_n & d_n\\
+\midrule
+(0,0)&[0,r/3]&0\\
+(0,1)&[(r+3)/6,1]&1\\
+(1,0)&[(r+1)/2,(r+3)/3]&3/r\\
+(1,1)&[(r+9)/6,(r+3)/2]&1+3/r\\
+\bottomrule
+\end{array}
+\]
+
+After division by \(r\), these are exactly the four closed
+domains for slope \(3/r\). The new distances are at most
+\(\max\{3\delta_n,\delta_{n+1}\}/r\), whose limit is zero.
+The map \(r\mapsto3/r\) sends the fifth interval onto the first
+and the fourth onto the second, since
+
+\[
+\frac3{219/89}=\frac{89}{73},\qquad
+\frac3{137/57}=\frac{171}{137},\qquad
+\frac3{237/101}=\frac{101}{79},\qquad
+\frac3{143/61}=\frac{183}{143}.
+\]
+
+The first two cases give \(d_{n+4}=d_n\) eventually. Since
+\(1<3/r<3\), the four new digits are distinct, so their binary
+decomposition is unique. Hence \(b_{n+4}=b_n\) and
+\(a_{n+5}=a_{n+1}\) eventually, which gives \(c_{n+4}=c_n\)
+after shifting the starting index. This completes all five cases.
+\end{proof}
+
+Call the interval in \eqref{eq:r-band} and the five intervals of
+Lemma~\ref{lem:good-slopes} the admissible slope intervals.
+Reciprocal slopes are treated by interchanging the coordinates.
+
+\begin{lemma}\label{lem:irrational-tangent}
+Suppose a \(C^1\) level curve in a Cantor rectangle contains a
+nonempty compact perfect subset of \(C^2\).
+If at one of its points the positive normalized derivative ratio
+is irrational and lies in an admissible slope interval, then
+the Cantor intersection of the curve has positive Hausdorff dimension.
+\end{lemma}
+\begin{proof}
+Fix that ratio \(r\), and write \(L_r(s,t)=(rs+t)/2\).
+Its four child image intervals are
+\[
+\left[\frac c3,\frac c3+\frac{r+1}{6}\right],
+\qquad c\in\{0,1,r,r+1\}.
+\]
+For \(1<r<3\) they cover \([0,(r+1)/2]\); iterating this
+coverage proves \(L_r(C^2)=[0,(r+1)/2]\).
+An isolated point of any affine fibre eventually has a unique
+continuing child. Its tails consequently lie in the closed
+exclusive domains. For \(r\) in \eqref{eq:r-band},
+Lemma~\ref{lem:periodicity} makes its coordinates rational;
+for the other admissible bands, Lemma~\ref{lem:good-slopes}
+gives the same conclusion.
+
+A countable nonempty compact metric space has an isolated point:
+otherwise repeated choices of two disjoint neighborhoods give
+a binary nested construction. If an affine fibre were countable
+with two distinct points, two disjoint Cantor cylinders would
+therefore each contain an isolated point of that fibre.
+Indeed, each restricted fibre is compact, and each cylinder is
+relatively open in \(C^2\), so its isolated points are also isolated
+in the whole fibre.
+Their coordinates would be rational, and equality of levels
+would make \(r\) rational. Thus every nonempty affine fibre is
+either a singleton or uncountable. Every level in the compact
+switch set
+\[
+B_r=
+\left[\frac13,\frac{r+1}{6}\right]\cup
+\left[\frac r3,\frac{r+3}{6}\right]\cup
+\left[\frac{r+1}{3},\frac{3r+1}{6}\right]
+\]
+has at least two points, hence uncountably many.
+
+In an uncountable fibre, some descendant has two uncountable
+children. Otherwise the fibre is the union of one limiting point
+and countably many countable offshoots. A node with two
+uncountable children has normalized level in the interior of
+\(B_r\): at a switch endpoint one child is an extreme singleton.
+Apply this argument again within each of the two children.
+It produces two incomparable strict return words from every
+level of \(B_r\). Compactness supplies finitely many word pairs,
+a maximum length, and a common positive return margin.
+Lemma~\ref{lem:strict-returns} makes these returns robust under
+a sufficiently small signed Lipschitz perturbation of \(L_r\).
+
+It remains to find a suitable normalized cylinder on the given
+curve. In the depth-\(j\) square containing the specified perfect
+set point, divide the defining function by
+\(2\,3^{-j}F_t\) evaluated at that point. The normalized equation
+is \(L_r+e_j-u_j=0\), where \(e_j(0,0)=0\) and
+\(\operatorname{Lip}(e_j)\to0\), by continuity of the gradient.
+There are arbitrarily deep branching squares on its address;
+otherwise that point would be isolated in the perfect set.
+At these depths two child image intervals come within
+\(\|e_j\|_\infty\) of \(u_j\). Nonadjacent intervals are separated
+by \((r-1)/6\), so eventually
+\(\operatorname{dist}(u_j,B_r)\leq\|e_j\|_\infty\).
+A sufficiently deep branching square lies in the neighborhood
+where the robust returns apply. Their binary construction has
+positive Hausdorff dimension.
+\end{proof}
+
+\paragraph{Positive dimension for the unit circle.}
+
+\begin{theorem}\label{thm:circle-quantitative}
+For the unit circle in the classical Cantor dust,
+\[
+0<\dim_{\mathrm H}(E_{2,1/3})
+                  \leq\frac{2\log2}{\log3}-1 .
+\]
+\end{theorem}
+\begin{proof}
+The proof of Theorem~\ref{thm:main} gives a nonempty compact perfect
+set \(S\subset E_{2,1/3}\) in the source rectangle of
+Proposition~\ref{prop:source}. Its normalized derivative ratio is
+\[
+\frac{F_a(a,b)}{F_b(a,b)}
+=\frac{6336+a}{9(566+b)}
+=\frac{y}{3x}.
+\]
+By \eqref{eq:normal-band}, every such ratio lies in
+\((11/9,2027/1624)\). Along the positive unit-circle arc,
+the function \(x\mapsto\sqrt{1-x^2}/(3x)\) is strictly decreasing.
+Each rational ratio therefore occurs at at most one point.
+Since \(S\) is uncountable, it contains a point whose normalized
+derivative ratio is irrational.
+
+Apply Lemma~\ref{lem:irrational-tangent} at this point in the source
+coordinates. For slopes in \eqref{eq:r-band}, its periodicity input
+is the direct digit argument of Lemma~\ref{lem:periodicity}.
+The resulting strict returns have a finite maximum length \(M\).
+Lemma~\ref{lem:strict-returns} then constructs a subset of the
+source intersection with Hausdorff dimension at least
+\(\log2/(M\log3)>0\). The affine change from the source coordinates
+to \((x,y)\) is bi-Lipschitz, so
+\(\dim_{\mathrm H}(E_{2,1/3})>0\).
+The upper bound is Theorem~\ref{thm:dimension-upper}.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Varying the exponent \texorpdfstring{\(\alpha\)}{alpha}}\label{sec:first}
+
+We first prove positive dimension at the middle-third parameter for
+all real exponents, and then study how the first transition depends
+on the arithmetic of the exponent. The principal conclusions are
+\[
+\begin{cases}
+\dim_{\mathrm H}(E_{\alpha,1/3})>0,
+  & \alpha\in\mathbb R,\ \alpha>1,\\[4pt]
+\lambda_{\min}(\alpha)=1/4,
+  & \alpha\notin\mathbb Q,\ \alpha>1,\\[4pt]
+0\leq\lambda_{\min}(\alpha)-1/4
+  \leq\dfrac{(3/2)^\alpha\log4}{2\alpha b},
+  & \alpha=a/b\in\mathbb Q\setminus\mathbb Z,\ \alpha\geq2,
+\end{cases}
+\]
+where \(a/b\) is in lowest terms. The first assertion concerns the fixed
+middle-third Cantor set, whereas the other two assertions describe the first
+Hausdorff phase transition as the contraction ratio varies. The rational
+estimate also holds for integers; it does not by itself imply a strict
+gap above \(1/4\).
+
+\subsection{All real exponents at the middle-third parameter}\label{subsec:classical}
+
+\begin{theorem}\label{thm:integer-powers}\label{thm:real-powers}
+For every real \(\alpha>1\),
+\[
+\dim_{\mathrm H}\{(x,y)\in C\times C:x^\alpha+y^\alpha=1\}>0.
+\]
+\end{theorem}
+We prove the theorem in two parts: an analytic proof for irrational
+exponents and a computer-assisted proof for rational exponents, including
+integers. The second part combines a logarithmic source criterion with
+exact finite covers and strict-return certificates.
+The \href{https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/blob/9ec893bcef7a71504234be897a16949c0a1f8313/docs/certificate-guide.pdf}{certificate reader's guide}
+gives the detailed construction and links to the exact verification files.
+
+\begin{proof}[Analytic proof for irrational exponents]
+Assume that \(\alpha>1\) is irrational.
+For \(1/3\leq q\leq3\), the four first-level intervals of
+\(C-qC\) cover \([-q,1]\). Iteration gives \(C-qC=[-q,1]\), and hence
+\[
+\frac{(2+C)/3}{(2+C)/3}=[2/3,3/2].
+\]
+Indeed, \((2+s)/(2+t)=q\) is equivalent to
+\(s-qt=2(q-1)\). Quotients of positive finite ternary left endpoints
+in \((2+C)/3\) are therefore dense in this interval.
+
+Choose an integer \(h\) such that \(\alpha3^h\in[1,3)\).
+The two open intervals
+\[
+\left(\frac{41}{50},\frac{369}{200}\right),\qquad
+\left(\frac{200}{123},\frac{150}{41}\right)
+\]
+cover \([1,3]\). The first permits multiplication by a quotient
+in \((2/3,3/2)\) to reach \(123/100\); the second permits reaching
+\(100/123\) after replacing \(h\) by \(h-1\).
+By density, we may choose finite ternary left endpoints
+\(0<u_0,v_0<1\) for which
+\[
+r:=\alpha\frac{v_0}{u_0}3^h
+\]
+belongs to \((11/9,2027/1624)\) or its reciprocal.
+It is irrational because \(\alpha\) is irrational.
+The affine part of the proof of Lemma~\ref{lem:irrational-tangent},
+with coordinates interchanged if necessary, supplies a compact set
+of levels of \(rs+t\), each having two incomparable strict returns.
+Fix one such level \(\theta\).
+
+Take large integers \(i,j\) with \(i-j=h\), beyond the terminating
+lengths of \(v_0,u_0\), respectively, and set
+\[
+u=u_0+3^{-j}s,\qquad v=v_0+3^{-i}(1-t),\qquad
+A:=\frac{u_0^\alpha}{v_0+3^{-i}(1-\theta)}.
+\]
+These are genuine Cantor cylinders, and \(A>0\) for large \(i\).
+The exact identity
+\[
+\frac{u^\alpha-Av}{A3^{-i}}=rs+t-\theta+e(s),\qquad e(0)=0,
+\]
+has
+\[
+e'(s)=\frac{\alpha3^{i-j}(u_0+3^{-j}s)^{\alpha-1}}A-r.
+\]
+As \(i,j\to\infty\) with \(i-j=h\), this derivative tends uniformly
+to zero. Fix a sufficiently deep pair of cylinders so that
+Lemma~\ref{lem:strict-returns} applies, with room for a further
+small \(C^1\) perturbation.
+
+Irrational rotation provides positive integers \(k,m\to\infty\)
+such that \(m-\alpha k\to\log_3(\alpha/A)\). Taylor's theorem gives
+\[
+3^{\alpha k}\bigl[(3^{-k}u)^\alpha+(1-3^{-m}v)^\alpha-1\bigr]
+\longrightarrow u^\alpha-Av
+\quad\text{in }C^1
+\]
+on the fixed rectangle. After division by \(A3^{-i}\), strict
+returns therefore persist for sufficiently large \(k,m\).
+Both \(3^{-k}u\) and \(1-3^{-m}v\) belong to \(C\), and the
+coordinate map is bi-Lipschitz. This proves the irrational case.
+\end{proof}
+
+\begin{proof}[Computer-assisted proof for rational exponents]
+Write \(\alpha=a/b>1\) in lowest terms. The case \(\alpha=2\) follows
+from Theorem~\ref{thm:circle-quantitative}. We describe the construction
+for the remaining exponents; the exact inequalities, coverage tables
+and verification commands are collected in the
+\href{https://github.com/Nero-17/LEAN-Formalisation-solutions-of-fermat-cantor-equation/blob/9ec893bcef7a71504234be897a16949c0a1f8313/docs/certificate-guide.pdf}{certificate reader's guide}.
+
+The main construction chooses positive Cantor cylinders for \(u,v\)
+and a phase \(d\in b^{-1}\mathbb Z\) such that
+\(d\log3+\alpha\log u-\log\alpha-\log v\) has opposite strict
+corner signs and its normalized derivative ratios lie in an admissible
+slope interval. Choose arbitrarily large integers \(k\) with
+\(\alpha k+d\in\mathbb Z\). The corresponding actual cylinders are
+\[
+x=3^{-k}u,\qquad y=1-3^{-\alpha k-d}v.
+\]
+Their logarithmic equation converges in \(C^1\) to the source equation,
+so the strict inequalities persist. Lemma~\ref{lem:interval-cover}
+gives a nonempty compact fibre. An isolated point would have rational
+coordinates by Lemmas~\ref{lem:periodicity} and~\ref{lem:good-slopes}.
+For rational \(\alpha\ne2\), conjugating the positive powers and using
+equality in the triangle inequality reduces such a point to a positive
+rational solution of a Fermat equation of integer degree at least three,
+contrary to Fermat's Last Theorem~\cite{Wiles1995,TaylorWiles1995}.
+Thus the fibre is perfect, and Lemma~\ref{lem:irrational-tangent}
+gives positive dimension.
+
+The computation supplies these sources by an exhaustive cover of the
+rational exponents. For sufficiently large denominators, finitely many
+source families make the permitted phase interval wider than the phase
+lattice spacing. For the remaining denominators, individual sources
+cover a bounded exponent range, and closed parameter cells cover the
+larger ranges after normalization by powers of three. A monotone integral
+bound makes the final finite cover valid for the entire unbounded tail.
+The checks verify strict inequalities on whole parameter cells and
+verify every join in the cover.
+
+The finitely many exceptional exponents use direct returns on actual
+Cantor rectangles. Each certificate verifies two incomparable returns
+from every level of a compact switch set, with a positive margin and a
+uniform bound on the nonlinear error. The error bound is preserved under
+descendant normalization. Lemma~\ref{lem:strict-returns} therefore
+iterates the two returns indefinitely and gives positive Hausdorff
+dimension.
+
+Together the source covers and exceptional return certificates exhaust
+all rational \(\alpha>1\). Their verification uses exact integer and
+rational arithmetic, with outward enclosures for logarithms and algebraic
+roots. The guide supplies the numerical data and connects each part of
+the cover to its reproducible check. This proves the rational case and
+completes the proof of Theorem~\ref{thm:real-powers}.
+\end{proof}
+
+The theorem asserts positivity for each exponent; it does not
+assert a lower bound uniform in \(\alpha\) or determine the exact dimension.
+
+
+\subsection{Irrational exponents}\label{subsec:irrational}\label{subsec:universal}
+
+For irrational exponents, the first Hausdorff phase transition occurs
+at the universal lower bound \(1/4\). We begin with the dimension
+estimate that gives this lower bound for every real exponent. This requires
+control of exceptional tangents, rather than an almost-everywhere
+slicing statement. We use the following consequence of Shmerkin's
+theorem \cite[Theorem~6.2]{Shmerkin2019}: a homogeneous self-similar
+probability on the line with four equal weights and exponential
+separation has, for every
+\[
+0<t<\min\{\log4/\log(1/\lambda),1\},
+\]
+a bound \(\nu([z-r,z+r])\leq A_t r^t\), uniform in \(z,r\).
+Exponential separation means that distinct level-\(j\) translations
+are at least \(\rho^j\) apart for some \(\rho>0\) and infinitely many
+\(j\). The constant \(A_t\) need not be uniform over the systems.
+
+\begin{theorem}\label{thm:dimension-upper}
+For every real \(\alpha>1\) and \(0<\lambda\leq1/2\),
+\[
+\dim_{\mathrm H}(E_{\alpha,\lambda})\leq
+\max\left\{\frac{2\log2}{\log(1/\lambda)}-1,0\right\}.
+\]
+\end{theorem}
+\begin{proof}
+The case \(\lambda=1/2\) is immediate. Fix \(\lambda<1/2\), and
+give each depth-\(j\) square of \(C_\lambda^2\) mass \(4^{-j}\).
+Projection by \((x,y)\mapsto y-ax\) gives a four-map homogeneous
+measure. Two distinct planar translations at depth \(j\) have a
+nonzero coordinate difference of absolute value at least
+\((1-2\lambda)\lambda^{j-1}\). Thus, for \(0<\rho<\lambda\), each pair
+with different horizontal translations excludes a slope interval
+of length at most
+\[
+\frac{2\lambda}{1-2\lambda}(\rho/\lambda)^j
+\]
+when its projected separation is less than \(\rho^j\).
+Pairs with the same horizontal translation exclude no slopes for
+large \(j\). There are at most \(16^j\) pairs. The limsup of these
+intervals has Hausdorff dimension at most
+\(\log16/\log(\lambda/\rho)\). Failure of exponential separation
+belongs to this limsup for every \(\rho\); letting \(\rho\downarrow0\)
+shows that the exceptional slope set has dimension zero.
+
+Fix a nonexceptional slope \(a\) and an exponent \(t\) as above.
+The projection estimate implies that a strip
+\(\lvert y-ax-b\rvert\leq\lambda^j\) meets at most
+\begin{equation}
+B_{a,t}\,4^j\lambda^{jt}
+\label{eq:strip-count}
+\end{equation}
+depth-\(j\) copies of the dust. Indeed, every such copy projects
+inside an interval of radius \((|a|+3)\lambda^j\), and the copies
+are disjoint and have equal mass.
+
+Let \(f\) be a \(C^1\) graph and suppose \(f'(x_0)=a\).
+Given \(\varepsilon>0\), choose a fixed block length \(j\) with
+\(\log\max(B_{a,t},1)/(j\log(1/\lambda))<\varepsilon\).
+On a sufficiently short interval \(J\) about \(x_0\),
+\(\lvert f'-a\rvert\leq\lambda^j\).
+Inside any parent square of side \(\lambda^k\), the graph over
+\(J\) lies in a strip of width at most \(2\lambda^{k+j}\)
+parallel to this fixed slope. Rescaling the parent and applying
+\eqref{eq:strip-count} bounds its descendants \(j\) levels later.
+Iteration gives upper box dimension at most
+\[
+\frac{\log4}{\log(1/\lambda)}-t+\varepsilon
+\]
+for the intersection over \(J\). A countable subcover of the
+nonexceptional graph points suffices for Hausdorff dimension.
+Let \(\varepsilon\downarrow0\) and then let \(t\) approach its
+allowed supremum.
+
+For \(f(x)=(1-x^\alpha)^{1/\alpha}\), \(0<x<1\),
+\[
+f''(x)=-(\alpha-1)x^{\alpha-2}(1-x^\alpha)^{1/\alpha-2}<0.
+\]
+On each compact subinterval, the derivative map is locally
+bi-Lipschitz. The preimage of the exceptional slope set therefore
+has dimension zero, as does its graph. Adding the two axis points
+does not change the bound.
+\end{proof}
+
+\begin{corollary}\label{cor:first-lower}
+For every real \(\alpha>1\), \(\lambda_{\min}(\alpha)\geq1/4\).
+\end{corollary}
+\begin{proof}
+The preceding bound is zero for \(0<\lambda\leq1/4\).
+\end{proof}
+
+
+
+We construct parameters as roots of the equation, keeping both
+Cantor tails unrestricted. The distinction between the resulting
+root distribution and Lebesgue measure will matter.
+Write
+\[
+\pi_\lambda(\omega)=(1-\lambda)\sum_{i=0}^\infty\omega_i\lambda^i,
+\qquad \omega\in\{0,1\}^{\mathbb N_0},
+\]
+and let \(\mu_\lambda\) be its fair Bernoulli distribution.
+All parameter derivatives of \(\pi_\lambda\) of a fixed finite
+order are uniformly bounded on compact subintervals of \((0,1)\).
+For a measure with density \(h\), we use
+\(\|h\|_{H^\sigma}^2=\int(1+|\xi|^2)^\sigma|\widehat h(\xi)|^2\,d\xi\).
+
+Here is the regularity input for the linear models. The proof uses
+the decomposition into a sparse Fourier-decaying factor and a regular
+convolution factor; see~\cite{Shmerkin2014,ShmerkinSolomyak2016}
+for this method. The specific inputs are cited below.
+
+\begin{lemma}\label{lem:linear-regularity}
+Outside a set of Hausdorff dimension at most one in
+\((1/4,1/2)\times(0,\infty)\), the distribution of
+\(rX+Y\), for independent \(X,Y\) with distribution \(\mu_\lambda\),
+has a density in \(H^\sigma\) for some \(\sigma>0\).
+\end{lemma}
+\begin{proof}
+Work on a compact rectangle \(a\leq\lambda\leq b\),
+\(0<c\leq r\leq d\), with \(a>1/4\). Choose an integer \(M\)
+such that \(4^{M-1}a^M>1\), and split the paired digits into
+positions divisible by \(M\) and the remaining positions.
+The latter distribution has contraction \(\lambda^M\) and
+\(4^{M-1}\) equal weights. It has an \(L^2\) density outside a
+parameter set of dimension at most one by
+\cite[Theorem~9.2]{Shmerkin2019}. Its analytic nondegeneracy
+holds because varying \(r\) in an identically vanishing address
+difference would make both coordinate differences vanish;
+strong separation for \(C_\lambda\) rules this out.
+
+The sparse factor has power Fourier decay outside a
+zero-dimensional set of \(\lambda\), by
+\cite[Proposition~2.3]{Shmerkin2014}, applied to \(\lambda^M\).
+Its second coordinate alone supplies that decay; the first factor
+has Fourier modulus at most one. Multiplying this decay by the
+square-integrable Fourier transform of the other factor gives a
+positive Sobolev order. The product of the exceptional contraction
+set with a bounded slope interval has dimension at most one.
+A countable exhaustion of the parameter domain completes the proof.
+\end{proof}
+
+The next lemma supplies the nonlinear step. A cylinder coordinate
+means \(a(\lambda)+\lambda^h\pi_\lambda(\omega)\), where \(a\)
+is the left endpoint of one fixed binary word of length \(h\).
+
+\begin{lemma}\label{lem:root-fibres}
+Fix \(\alpha>1\), two cylinder coordinates \(x_\omega(\lambda)\),
+\(y_\tau(\lambda)\) of lengths \(h,\ell\), and
+\([a,b]\subset(1/4,1/2)\) on which both coordinates stay positive.
+Suppose every paired address has a unique root of
+\(x_\omega(\lambda)^\alpha+y_\tau(\lambda)^\alpha=1\) in \([a,b]\),
+and the parameter derivative of the residual is bounded away
+from zero at all these roots.
+The distribution of these roots under fair independent addresses
+is absolutely continuous, and for almost every parameter with
+respect to that distribution,
+\[
+\dim_{\mathrm H}(E_{\alpha,\lambda})=\frac{\log4}{\log(1/\lambda)}-1.
+\]
+\end{lemma}
+\begin{proof}
+Denote the root map by \(f\), and the fair product address measure
+by \(\mu\). Compactness and the implicit function estimate give
+uniform local root estimates. Distinct paired depth-\(j\)
+cylinders are separated by a constant times \(a^j\) in the
+incidence coordinates
+\[
+(f(\omega,\tau),x_\omega(f(\omega,\tau)),
+                       y_\tau(f(\omega,\tau))).
+\]
+To check this, compare their coordinates at one common parameter:
+strong separation gives the stated lower bound, whereas moving
+the parameter changes the coordinates by at most a fixed multiple
+of its displacement. Consequently this incidence measure is
+Frostman with exponent \(\log4/\log(1/a)>1\).
+
+The relevant linear direction is
+\[
+r=\lambda^{h-\ell}(x/y)^{\alpha-1}.
+\]
+On the positive compact arc, the state \((\lambda,r)\) recovers
+\(x/y=(r\lambda^{\ell-h})^{1/(\alpha-1)}\) and then \(x,y\) uniquely
+from \(x^\alpha+y^\alpha=1\). This inverse is Lipschitz. The state measure
+therefore gives zero mass to the exceptional set of
+Lemma~\ref{lem:linear-regularity}.
+Choose a compact address set \(K\) of positive measure on which
+the linear densities have one common positive Sobolev order and
+bounded norm. Such sets exhaust the source measure: the Sobolev
+norm is lower semicontinuous in the state by Fatou's lemma.
+
+For every paired prefix \(w\) of length \(j\) meeting \(K\),
+choose a representative in \(K\), with root \(\lambda_w\),
+coordinates \(x_w,y_w\), remaining tails \(u_w,v_w\), and residual
+parameter derivative \(D_w\). Freeze the complete linear kernel
+as the law of
+\begin{equation}
+\lambda_w-\frac{\alpha x_w^{\alpha-1}\lambda_w^{h+j}}{D_w}(X-u_w)
+           -\frac{\alpha y_w^{\alpha-1}\lambda_w^{\ell+j}}{D_w}(Y-v_w),
+\label{eq:root-kernel}
+\end{equation}
+where \(X,Y\) are independent full \(\mu_{\lambda_w}\) tails.
+The fresh tails are not restricted to \(K\). Its density \(h_w\)
+satisfies
+\begin{equation}
+\|h_w\|_2^2\leq C\lambda_w^{-j},
+\label{eq:kernel-l2}
+\end{equation}
+and, after division by its scale \(\lambda_w^j\), a uniform
+\(H^\sigma\) bound. The coefficients and their ratio stay in
+fixed compact sets.
+
+Splitting the fresh tails into their first digits decomposes
+\eqref{eq:root-kernel} exactly into four equally weighted kernels
+still frozen at the parent. Replace each retained child kernel
+by the one at its own representative. The two roots differ by
+\(O(\lambda_w^j)\). Shared depth-\(j\) coordinate tails and their
+parameter derivatives differ by \(O(\lambda_w^j)\) and
+\(O((j+1)\lambda_w^{j-1})\), respectively. Taylor expansion of
+the residual therefore bounds the unscaled coupling error by
+\(O((j+1)\lambda_w^{2j-1})\). Parent and child scales are uniformly
+comparable, since \(j|\lambda_{wi}-\lambda_w|\to0\) uniformly.
+After normalization the coupling error is \(O((j+1)b^j)\).
+
+For two bounded-support probability densities with bounded
+\(H^\sigma\) norm and coupling displacement at most \(t\),
+Fourier splitting gives
+\begin{equation}
+\|h-\widetilde h\|_1\leq C t^{2\sigma/(3+2\sigma)}.
+\label{eq:kernel-interpolation}
+\end{equation}
+Indeed, below frequency \(R\) the squared Fourier difference
+integrates to \(O(t^2R^3)\); above it the Sobolev bounds give
+\(O(R^{-2\sigma})\). Optimize \(R\) and use Cauchy--Schwarz on
+the common bounded support. Hence the parent--child replacement
+errors are bounded by a summable sequence
+\(C(j+1)^\kappa b^{\kappa j}\), with \(\kappa>0\).
+
+Let \(K_j\) be the union of depth-\(j\) cylinders meeting \(K\).
+Sum the complete kernels with weights \(4^{-j}\). Refinement
+consists of exact splitting, deletion of children not meeting
+\(K\), and the preceding replacements. Deleted masses telescope
+because \(K_j\downarrow K\); replacement errors are summable.
+The sums converge in \(L^1\). Direct root linearization identifies
+their weak limit as \(f_*(\mu|K)\), which therefore has a density
+\(g\).
+
+Repeat the construction inside a fixed prefix \(w\) of length \(j\).
+Let \(g_w\) be the density of \(4^j f_*(\mu|K\cap[w])\).
+Deletion has negative sign, so summing only positive replacement
+errors gives
+\begin{equation}
+g_w\leq h_w+e_w,\qquad e_w\geq0,\qquad
+\|e_w\|_1\leq C(j+1)^\kappa b^{\kappa j}.
+\label{eq:root-one-sided}
+\end{equation}
+For any \(T>0\), splitting according to \(h_w>T/2\) yields
+\begin{equation}
+\int_{\{g_w>T\}}g_w
+\leq \frac{2\|h_w\|_2^2}{T}+3\|e_w\|_1.
+\label{eq:root-tail}
+\end{equation}
+On the support of \(g_w\), \(|\lambda-\lambda_w|\leq C\lambda_w^j\),
+so \(\lambda^{-j}/\lambda_w^{-j}\to1\) uniformly.
+Apply \eqref{eq:root-tail} at threshold
+\(\tfrac12\lambda_w^{-j}e^{\delta j}\), multiply by \(4^{-j}\),
+and sum over prefixes. Equations \eqref{eq:kernel-l2}--\eqref{eq:root-tail}
+give a summable bound for the event
+\(g_w(\lambda)>\lambda^{-j}e^{\delta j}\).
+
+Apply the disintegration theorem~\cite{Kallenberg2021} to
+\(\mu|K\), after normalization, over \(f\). For almost every root with
+\(0<g(\lambda)<\infty\), the conditional prefix mass is exactly
+\[
+4^{-j}\frac{g_w(\lambda)}{g(\lambda)}.
+\]
+Borel--Cantelli gives, at conditional-almost every address,
+an eventual bound
+\((4\lambda)^{-j}e^{\delta j}/g(\lambda)\).
+At this fixed parameter, different paired cylinders are separated
+by a fixed multiple of \(\lambda^j\). A ball of a sufficiently
+small fixed multiple of that radius about an address lies in its
+own cylinder. The lower local dimension of the conditional
+measure is therefore at least
+\((\log(4\lambda)-\delta)/\log(1/\lambda)\).
+Let \(\delta\downarrow0\) through a countable sequence.
+Theorem~\ref{thm:dimension-upper} gives the reverse inequality.
+Finally exhaust almost all source addresses by the compact sets
+\(K\) chosen above. Their pushforwards are absolutely continuous
+and give no mass to the failure set, proving both assertions for
+the full root law.
+\end{proof}
+
+\begin{theorem}\label{thm:irrational-parameters}
+For every irrational \(\alpha>1\) and every nonempty open interval
+\(J\subset(1/4,1/2)\), the set
+\(\{\lambda\in J:\dim_{\mathrm H}(E_{\alpha,\lambda})>0\}\)
+has positive Lebesgue measure.
+\end{theorem}
+\begin{proof}
+Choose \(1/4<a<\lambda_0<b<1/2\) with \([a,b]\subset J\), and set
+\[
+d=\frac{\alpha\log(1-\lambda_0)-\log \alpha}{\log\lambda_0}>0.
+\]
+The function \((1-\lambda)^\alpha-\alpha\lambda^d\) decreases strictly and
+vanishes at \(\lambda_0\). Irrational rotation gives positive
+integers \(k_i,m_i\to\infty\) with \(m_i-\alpha k_i\to d\).
+For an integer \(L\geq1\), use the actual cylinder coordinates
+\[
+x=\lambda^{k_i}(1-\lambda+\lambda^L\pi_\lambda(\omega)),
+\qquad
+y=1-\lambda^{m_i}+\lambda^{m_i+L}\pi_\lambda(\tau).
+\]
+Their prefixes are \(0^{k_i}10^{L-1}\) and \(1^{m_i}0^L\).
+Dividing the residual by \(\lambda^{\alpha k_i}\) and letting
+\(i\to\infty\) gives, uniformly in both addresses in \(C^1[a,b]\),
+\[
+(1-\lambda+\lambda^L\pi_\lambda(\omega))^\alpha
+-\alpha\lambda^d(1-\lambda^L\pi_\lambda(\tau)).
+\]
+The remainder is \(O_\alpha(m_i b^{m_i-1})\) in \(C^1\).
+As \(L\to\infty\), this converges to the strictly decreasing
+comparison function. Choose \(L\), then \(i\), sufficiently large.
+Every tail pair now has a unique transverse root in \((a,b)\).
+Lemma~\ref{lem:root-fibres} gives a nonzero absolutely continuous
+root law carried by positive-dimensional parameters, proving the
+positive Lebesgue measure assertion.
+\end{proof}
+
+\begin{theorem}\label{thm:irrational-onset}
+For every irrational \(\alpha>1\), \(\lambda_{\min}(\alpha)=1/4\).
+\end{theorem}
+\begin{proof}
+The preceding theorem gives positive-dimensional parameters
+arbitrarily close to \(1/4\) from above; Corollary~\ref{cor:first-lower}
+gives the opposite inequality.
+\end{proof}
+
+\subsection{Rational exponents}
+\label{subsec:rational-continuity}
+
+For a reduced rational exponent, the available near-axis phases
+form a lattice. Its spacing gives a quantitative bound on the first
+Hausdorff phase transition. Together with the irrational case, this
+bound determines the continuity of the transition parameter as a
+function of the exponent.
+
+\begin{theorem}\label{thm:denominator}
+For every reduced rational \(\alpha=a/b\geq2\), with positive integers
+\(a,b\),
+\[
+0\leq\lambda_{\min}(\alpha)-\frac14
+\leq\frac{(3/2)^\alpha\log4}{2\alpha b}.
+\]
+\end{theorem}
+\begin{proof}
+Set
+\[
+d_0=\frac{\alpha\log(4/3)+\log \alpha}{\log4},
+\qquad d=\frac{\lfloor bd_0\rfloor+1}{b}.
+\]
+Thus \(0<d-d_0\leq1/b\). The decreasing function
+\((1-\lambda)^\alpha-\alpha\lambda^d\) is positive at \(1/4\) and negative
+at \(1/2\): the latter follows from
+\(d\leq d_0+1<\alpha+\log_2 \alpha\), equivalent to \(\alpha3^\alpha>4\).
+Let its unique root be \(\rho\in(1/4,1/2)\).
+The integer equation \(bm-ak=bd\) has solutions with
+\(k,m\to\infty\). Along them \(m-\alpha k=d\) exactly.
+The cylinder construction in the preceding proof therefore puts
+a transverse full-tail root family in every neighborhood of
+\(\rho\), by first choosing \(L\) and then \(k,m\) large.
+Lemma~\ref{lem:root-fibres} gives \(\lambda_{\min}(\alpha)\leq\rho\).
+
+At \(1/4\) the comparison function is at most
+\((3/4)^\alpha\log4/b\), by \(1-e^{-u}\leq u\).
+The absolute value of its derivative on \([1/4,1/2]\) is at least
+\(\alpha2^{1-\alpha}\). The mean value theorem gives the stated upper
+bound; Corollary~\ref{cor:first-lower} gives the lower one.
+\end{proof}
+
+\begin{theorem}\label{thm:punctured-limit}
+For every \(\alpha_0\geq2\),
+\[
+\lim_{\substack{\alpha\to \alpha_0\\\alpha\geq2,\ \alpha\ne \alpha_0}}\lambda_{\min}(\alpha)=\frac14.
+\]
+\end{theorem}
+\begin{proof}
+Irrational exponents have value \(1/4\).
+In a bounded interval there are only finitely many reduced rationals
+of bounded denominator. Thus denominators along distinct rational
+exponents approaching \(\alpha_0\) tend to infinity.
+The coefficient of \(1/b\) in Theorem~\ref{thm:denominator} is
+locally bounded, proving the limit.
+\end{proof}
+
+It follows that the first Hausdorff phase transition parameter on \([2,\infty)\) is continuous
+at precisely those exponents where its value is \(1/4\).
+Rationality alone does not force a discontinuity.
+
+\begin{proposition}\label{prop:powers-four}
+For every integer \(r\geq1\), \(\lambda_{\min}(4^r)=1/4\).
+\end{proposition}
+\begin{proof}
+Fix \(\alpha=4^r\), set \(m=\alpha k+r\), \(L=m+r+2\), and use the cylinders
+\[
+x=\lambda^k(1-\lambda^L+\lambda^L\pi_\lambda(\omega)),
+\qquad
+y=1-\lambda^m+\lambda^{m+L}\pi_\lambda(\tau).
+\]
+For fixed \(\alpha,r\), their residual divided by \(\lambda^{\alpha k}\)
+converges uniformly in \(C^1\), as \(k\to\infty\), to
+\(1-\alpha\lambda^r\) on every compact subinterval of \((0,1/2)\).
+The curvature remainder is \(O_\alpha(\lambda^m)\), with derivative
+\(O_\alpha(m\lambda^{m-1})\); the tails contribute
+\(O_\alpha(\lambda^L)\) and \(O_\alpha(L\lambda^{L-1})\).
+
+At \(\lambda=1/4\), first take both normalized tails at the
+endpoint values giving \(x=\lambda^k,y=1-\lambda^m\).
+The leading terms cancel since \(\alpha4^{-r}=1\). Taylor's integral
+remainder makes the remaining normalized residual at least
+\[
+\frac{\alpha-1}{2}(1-4^{-m})^{\alpha-2}4^{-m}
+>\frac{\alpha-1}{4}4^{-m}.
+\]
+Here \((\alpha-2)4^{-m}\leq4^{-\alpha}\leq1/256\).
+Varying the first tail loses at most
+\(\alpha4^{-L}=4^{-m}/16\); varying the second tail only increases
+the residual. Thus every tail pair has positive residual at \(1/4\).
+For any fixed \(c\in(1/4,1/2)\), uniform \(C^1\) convergence gives
+negative residual at \(c\) and negative derivative throughout
+\([1/4,c]\), for all sufficiently large \(k\).
+Every pair has a unique root in \((1/4,c)\); for fixed \(k\),
+compactness keeps all roots in a compact subinterval.
+Lemma~\ref{lem:root-fibres} gives positive-dimensional parameters
+there. Let \(c\downarrow1/4\) and use Corollary~\ref{cor:first-lower}.
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hausdorff phase transition diagram}\label{sec:last}
+
+We now fix the exponent and develop the Hausdorff phase transition
+diagram as the contraction ratio varies. In
+Section~\ref{subsec:last-upper}, we prove the uniform bound
+\(\lambda_{\max}(\alpha)<(\sqrt3-1)/2\) for every real \(\alpha>1\).
+Thus the solution set has positive Hausdorff dimension throughout
+\([(\sqrt3-1)/2,1/2]\), and this region extends to the left by
+an amount that may depend on \(\alpha\). For \(\alpha=2\), we also separate the
+first and last transitions by exhibiting zero-dimensional intervals
+after positive dimension first appears.
+
+In Section~\ref{sec:ae}, for each fixed irrational \(\alpha>1\), we prove
+\[
+\dim_{\mathrm H}(E_{\alpha,\lambda})
+=\frac{2\log2}{\log(1/\lambda)}-1
+\]
+for Lebesgue almost every \(\lambda\in(\sqrt3/4,1/2)\).
+This establishes the expected dimension formula in an explicit
+parameter range. The exact dimension of the unit-circle intersection
+at \(\lambda=1/3\), asked for in~\cite{Jiang2026}, remains open.
+
+\subsection{Regions of positive Hausdorff dimension}\label{subsec:last-upper}
+
+We establish the uniform bound by constructing strict interior
+levels whose intersections with the Cantor dust have positive dimension.
+
+\input{sections/universal-last-bound}
+
+
+The uniform bound identifies a common interval of persistent
+positive dimension. It remains to understand whether positive dimension
+persists from its first appearance. We now examine this question for
+the unit circle, \(\alpha=2\).
+
+\begin{theorem}\label{thm:circle-positive-measure}
+For every \(0<\varepsilon<1/2-(2-\sqrt3)\), the set
+\[
+\{\lambda\in(2-\sqrt3,2-\sqrt3+\varepsilon):
+                       \dim_{\mathrm H}(E_{2,\lambda})>0\}
+\]
+has positive Lebesgue measure.
+\end{theorem}
+\begin{proof}
+For an integer \(k\geq2\), consider the two genuine Cantor cylinders
+\[
+x=(1-\lambda)\lambda^k+\lambda^{3k+1}\pi_\lambda(\omega),
+\qquad
+y=1-\lambda^{2k+1}+\lambda^{4k+1}\pi_\lambda(\tau).
+\]
+Dividing \(x^2+y^2-1\) by \(\lambda^{2k}\) gives
+\begin{align*}
+&-(4\lambda-1-\lambda^2)
+ +2\lambda^{2k+1}\bigl((1-\lambda)\pi_\lambda(\omega)
+                                      +\pi_\lambda(\tau)\bigr)\\
+&\hspace{12mm}
+ +\lambda^{4k+2}\pi_\lambda(\omega)^2
+ +\lambda^{2k+2}
+             \bigl(1-\lambda^{2k}\pi_\lambda(\tau)\bigr)^2 .
+\end{align*}
+At \(\lambda=2-\sqrt3\) this is strictly positive, uniformly
+over the addresses for each fixed \(k\). At \(b=7/25\) it is
+strictly negative: the positive terms are at most
+\(2b^5(2-b)+b^{10}+b^6\), whereas
+\[
+4b-1-b^2-2b^5(2-b)-b^{10}-b^6>0.035.
+\]
+On this parameter interval, differentiating the coding series
+gives \(|\partial_\lambda\pi_\lambda|\leq3\).
+The absolute derivative of the three positive terms is at most
+\[
+2(10b^4+7b^5)+10b^9+6b^{10}+6b^5
+                         +2b^6(4b^3+3b^4)<0.158 .
+\]
+Here the bounds for \(k=2\) dominate all \(k\geq2\), as follows
+by comparing consecutive powers and their integer factors.
+The derivative of the entire residual therefore lies in
+\((-4,-3)\). Every address has a unique uniformly transverse
+root, and the mean value theorem gives
+\[
+0<\lambda-(2-\sqrt3)<2b^{2k+1}.
+\]
+For each fixed \(k\), compactness places all roots in a closed
+subinterval of \((2-\sqrt3,2-\sqrt3+2b^{2k+1})\).
+Lemma~\ref{lem:root-fibres} applies to these two fixed cylinders.
+Their root law is an absolutely continuous probability measure,
+and almost every root for that law has positive-dimensional
+fibre. Choosing \(k\) sufficiently large proves the assertion.
+\end{proof}
+
+\begin{theorem}\label{thm:circle-onset}
+The first Hausdorff phase transition for the unit circle is
+\(\lambda_{\min}(2)=2-\sqrt3\).
+\end{theorem}
+\begin{proof}
+We prove that the only solutions for \(0<\lambda\leq2-\sqrt3\)
+are the two axis points. Both coordinates cannot lie in the
+left first-level interval, since \(2\lambda^2<1\), or both in
+the right interval, since \(2(1-\lambda)^2>1\).
+After interchanging them, a nonaxis solution must have
+\[
+x=\lambda^k X,\qquad 1-y=\lambda^mY,\qquad
+k,m\geq1,\quad X,Y\in(1-\lambda)+\lambda C_\lambda.
+\]
+The circle equation becomes
+\[
+X^2=\lambda^{m-2k}Y(2-\lambda^mY).
+\]
+If \(m-2k\leq0\), its right-hand side is at least
+\((1-\lambda)(2-\lambda)>1\).
+If \(m-2k\geq1\), it is strictly smaller than \(2\lambda\),
+which is at most \((1-\lambda)^2\leq X^2\).
+Both alternatives are impossible. This proves the lower bound;
+Theorem~\ref{thm:circle-positive-measure} proves the reverse bound.
+\end{proof}
+
+\begin{theorem}\label{thm:circle-zero-intervals}
+There is a sequence of nonempty open intervals
+\(I_j\subset(2-\sqrt3,1/2)\) with
+\(\lim_{j\to\infty}\sup I_j=2-\sqrt3\), on each of which
+\(E_{2,\lambda}=\{(0,1),(1,0)\}\).
+\end{theorem}
+\begin{proof}
+For each integer \(j\ge3\), define \(I_j\) to be the interval between
+the roots in \((2-\sqrt3,67/250)\) of
+\[
+4\lambda-1-\lambda^2=\frac{379}{100}\lambda^{2j+2},
+\qquad
+4\lambda-1-\lambda^2=\frac{381}{100}\lambda^{2j+2}.
+\]
+We first justify this construction. Since
+\[
+\frac4{15}<2-\sqrt3<\frac{67}{250}<\frac{27}{100},
+\]
+we may use the following elementary bounds throughout the parameter
+interval:
+\[
+\lambda^2<\frac3{40},\qquad
+\lambda^3\le\frac{19683}{1000000}<\frac1{50},\qquad
+\lambda^6<\frac1{2500},\qquad
+\lambda^7<\frac1{1000}.
+\]
+The first comparison with \(2-\sqrt3\) follows by squaring
+\(\sqrt3<26/15\), and the second by squaring \(\sqrt3>433/250\).
+At \(2-\sqrt3\), the left side of either defining equation is zero
+and the right side is positive. At \(67/250\),
+\[
+4\lambda-1-\lambda^2=\frac{11}{62500}
+>\frac{81}{640000}
+=4\left(\frac3{40}\right)^4
+>\frac{381}{100}\lambda^{2j+2}.
+\]
+For \(j\ge3\), the successive terms
+\((2j+2)\lambda^{2j+1}\) decrease, since their ratio is at most
+\((5/4)(3/40)=3/32\). The derivative of either left-minus-right
+difference is therefore greater than
+\[
+4-\frac{54}{100}-\frac{32}{1000}
+=\frac{857}{250}>3.
+\]
+Thus both roots exist uniquely. At the root for \(379/100\), the
+difference for \(381/100\) is negative, so the latter root is larger.
+For either root the mean value theorem gives
+\[
+0<\lambda-(2-\sqrt3)
+<\frac{381}{300}\left(\frac{67}{250}\right)^{2j+2}.
+\]
+In particular, the intervals are nonempty and their endpoints
+converge to \(2-\sqrt3\).
+
+Fix \(\lambda\in I_j\). On \(4/15\le\lambda\le27/100\) we have
+\[
+(1-\lambda)(2-\lambda)
+\ge\frac{73\cdot173}{10000}>1,\qquad
+2(1-\lambda)^2\ge2\left(\frac{73}{100}\right)^2>1,
+\]
+\[
+2\lambda^2\le2\left(\frac{27}{100}\right)^2
+<\left(\frac{73}{100}\right)^2\le(1-\lambda)^2,\qquad
+\frac{381}{100}\lambda^2<4\cdot\frac3{40}<1.
+\]
+The first-level left-left and right-right Cantor rectangles cannot
+meet the unit circle. After exchanging coordinates, any nonaxis
+solution therefore has
+\[
+x=\lambda^kX,\qquad 1-y=\lambda^mY,\qquad
+k,m\ge1,\qquad X,Y\in(1-\lambda)+\lambda C_\lambda .
+\]
+Here we use \(1-C_\lambda=C_\lambda\). The circle equation becomes
+\[
+X^2=\lambda^{m-2k}Y(2-\lambda^mY).
+\]
+If \(m-2k\le0\), its right side is at least
+\((1-\lambda)(2-\lambda)>1\). If \(m-2k\ge2\), it is less than
+\(2\lambda^2<(1-\lambda)^2\). Both are impossible, so \(m=2k+1\) and
+\[
+X^2-2\lambda Y+\lambda^{2k+2}Y^2=0.
+\]
+This expression is increasing in \(X\) and decreasing in \(Y\) on
+\([1-\lambda,1]^2\). Its minimum is
+\(\lambda^{2k+2}-(4\lambda-1-\lambda^2)\). Since
+\[
+4\lambda-1-\lambda^2
+<\frac{381}{100}\lambda^{2j+2}<\lambda^{2j},
+\]
+we must have \(k\ge j\).
+
+The equation further forces
+\[
+X=1-\lambda+\lambda^{2j+1}u,\qquad
+Y=1-\lambda^{2j}v,\qquad u,v\in C_\lambda.
+\]
+Indeed, outside the displayed leftmost subcylinder,
+\(X\ge(1-\lambda)(1+\lambda^{2j})\), and hence
+\[
+X^2>(1-\lambda)^2+\lambda^{2j}>2\lambda,
+\]
+contrary to the equation. Outside the displayed rightmost
+subcylinder, \(1-Y\ge(1-\lambda)\lambda^{2j-1}\), giving
+\[
+2\lambda Y\le2\lambda-2(1-\lambda)\lambda^{2j}
+<2\lambda-\lambda^{2j}<(1-\lambda)^2,
+\]
+again impossible.
+
+Set \(\tau:=(4\lambda-1-\lambda^2)/\lambda^{2j+2}\), so that
+\(379/100<\tau<381/100\). Substitution gives the identity
+\[
+\tau=\frac2\lambda\bigl((1-\lambda)u+v\bigr)
+       +\lambda^{2j}u^2
+       +\lambda^{2(k-j)}(1-\lambda^{2j}v)^2.
+\]
+After expanding the last square, the nonpositive correction to
+\(\lambda(\tau-\lambda^{2(k-j)})/2\) is
+\(-\lambda^{2j+1}u^2/2\), while the nonnegative correction is
+\[
+\lambda^{2(k-j)+2j+1}v
+       \left(1-\frac{\lambda^{2j}v}{2}\right)
+\in[0,\lambda^{2j+1}].
+\]
+Therefore \((1-\lambda)u+v\) lies in
+\[
+\left[
+\frac\lambda2(\tau-\lambda^{2(k-j)})-\frac{\lambda^7}{2},
+\quad
+\frac\lambda2(\tau-\lambda^{2(k-j)})+\lambda^7
+\right].
+\]
+
+We now locate two genuine gaps of the projection
+\((1-\lambda)C_\lambda+C_\lambda\). Its four similarities have
+common contraction ratio \(\lambda\) and translations
+\[
+0,\qquad (1-\lambda)^2,\qquad 1-\lambda,\qquad
+(1-\lambda)(2-\lambda),
+\]
+and its convex hull is \([0,2-\lambda]\). The gap between the first
+hull and the others has length
+\[
+(1-\lambda)^2-\lambda(2-\lambda)
+=1-4\lambda+2\lambda^2
+\ge1-\frac{108}{100}+2\left(\frac4{15}\right)^2
+=\frac{14}{225}>0.
+\]
+The last hull is also separated from all preceding hulls by this same
+positive length. Consequently the first gap and its copy inside the
+last child of the first image are both gaps of the full projection.
+They are
+\[
+\bigl(\lambda(2-\lambda),(1-\lambda)^2\bigr)
+\]
+and
+\[
+\bigl(\lambda(1-\lambda)(2-\lambda)+\lambda^3(2-\lambda),
+\ \lambda(1-\lambda)(2-\lambda)+\lambda^2(1-\lambda)^2\bigr).
+\]
+
+If \(k\ge j+1\), the candidate interval lies strictly in the first gap.
+The candidate lower endpoint minus the left endpoint of the gap,
+divided by \(\lambda\),
+is greater than the following positive quantity:
+\[
+\begin{aligned}
+\lambda-\frac{21}{200}-\frac{\lambda^2}{2}
+                      -\frac{\lambda^6}{2}
+&>\frac4{15}-\frac{21}{200}
+             -\frac{729}{20000}-\frac1{5000}\\
+&=\frac{7501}{60000}>0.
+\end{aligned}
+\]
+For its upper endpoint,
+\[
+(1-\lambda)^2-\frac{381\lambda}{200}-\lambda^7
+>\left(\frac{73}{100}\right)^2
+ -\frac{381}{200}\frac{27}{100}-\frac1{1000}
+=\frac{351}{20000}>0.
+\]
+If \(k=j\), the candidate interval lies strictly in the second gap.
+The candidate lower endpoint minus the left endpoint of the gap,
+divided by \(\lambda\),
+is greater than
+\[
+\frac{79}{200}-(1-\lambda)^3-\frac{\lambda^6}{2}
+>\frac{79}{200}-\left(\frac{11}{15}\right)^3-\frac1{5000}
+=\frac{29}{67500}>0.
+\]
+The right endpoint of the gap minus the candidate upper endpoint,
+divided by \(\lambda\), is greater than
+\[
+\begin{aligned}
+\frac{119}{200}-2\lambda-\lambda^2+\lambda^3-\lambda^6
+&>\frac{119}{200}-\frac{54}{100}-\frac{729}{10000}
+             +\left(\frac4{15}\right)^3-\frac1{2500}\\
+&=\frac{179}{270000}>0.
+\end{aligned}
+\]
+Thus in every remaining case \((1-\lambda)u+v\) lies in a gap of
+\((1-\lambda)C_\lambda+C_\lambda\), contradicting \(u,v\in C_\lambda\).
+Only the two axis points remain.
+\end{proof}
+
+The zero-dimensional intervals above the first Hausdorff phase
+transition give the following separation.
+\begin{theorem}\label{thm:known-separation}
+For the unit circle,
+\[
+\lambda_{\min}(2)=2-\sqrt3<\lambda_{\max}(2).
+\]
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:circle-onset} gives the equality. Every parameter
+in any interval supplied by Theorem~\ref{thm:circle-zero-intervals}
+is greater than \(2-\sqrt3\) and has a zero-dimensional intersection.
+The definition of \(\lambda_{\max}(2)\) gives the strict inequality.
+\end{proof}
+
+Thus the unit circle has positive-dimensional intersections followed
+by zero-dimensional intersections, before positive dimension persists
+near \(1/2\). This establishes non-monotonicity without requiring
+the Hausdorff phase transitions to be isolated.
+Together with Theorem~\ref{thm:punctured-limit}, the exact value
+\(\lambda_{\min}(2)=2-\sqrt3\) also shows that the first Hausdorff
+phase transition parameter is discontinuous as a function of the
+exponent at \(\alpha=2\).
+
+\subsection{Almost-everywhere dimension}\label{sec:ae}
+
+Lemma~\ref{lem:root-fibres} gives equality for almost every parameter
+under a root law. Absolute continuity alone does not turn that into
+Lebesgue almost everywhere on an interval. We obtain the stronger
+quantifier by constructing small root families near a density point,
+with quantitative control of their densities.
+
+The next estimate uses transversality and parameter-averaged Fourier
+bounds, methods developed for Bernoulli convolutions and parameterised
+projections in~\cite{Solomyak1995,PeresSchlag2000}. We give the proof
+for the digit distribution and Sobolev range needed here.
+
+\begin{lemma}\label{lem:average-sobolev}
+Let \([a,b]\subset(3/8,1/2)\) be sufficiently short that
+\[
+0<2\sigma<\frac{2\log(8/3)}{\log(b/a^3)}-1.
+\]
+On every compact subinterval of \((a,b)\), the squared
+\(H^\sigma\) norm of \(\mu_\lambda*\mu_\lambda\) is integrable
+with respect to \(\lambda\).
+\end{lemma}
+\begin{proof}
+Apart from the factor \(1-\lambda\), this self-convolution is
+the distribution of \(\sum_{j\geq0}D_j\lambda^j\), where
+\(D_j=0,1,2\) with probabilities \(1/4,1/2,1/4\).
+For a normalized difference series
+\(f(x)=1+\sum_{i\geq1}u_i x^i\), \(|u_i|\leq2\),
+\begin{equation}
+f'(x)-\frac2x f(x)
+\leq-\frac2x+2+\frac{2x^2}{(1-x)^2}<0
+\quad(0<x<1/2).
+\label{eq:transversality}
+\end{equation}
+The last sign follows after multiplication by \(x(1-x)^2/2\):
+the resulting polynomial \(2x^3-3x^2+3x-1\) increases to zero
+at \(1/2\). Thus \(f'\) is uniformly negative wherever \(|f|\)
+is sufficiently small on \([a,b]\).
+
+Fix two digit sequences whose first difference is at \(j\), and
+let \(Q(\lambda)\) be their actual difference, including the
+factor \(1-\lambda\). It is a nonzero digit difference times
+\((1-\lambda)\lambda^j f(\lambda)\).
+For a sufficiently small fixed \(\varepsilon>0\), on the band
+\begin{equation}
+|Q(\lambda)|<\frac{\varepsilon a^j}{j+1}
+\label{eq:small-value-band}
+\end{equation}
+we have
+\[
+|Q'|\geq c a^j,\qquad |Q''|\leq C(j+1)^2b^j,
+\]
+and \(Q'\) has one fixed sign there. Indeed, the derivative of
+the prefactor contributes at most \(C(j+1)|f|\), which is made
+smaller than the strict bound from \eqref{eq:transversality}
+by \eqref{eq:small-value-band}. This factor \(1/(j+1)\) is needed
+for a bound uniform in \(j\).
+
+Let \(\psi\) be smooth with compact support in \((a,b)\), and
+let \(\Phi\geq0\) be a smooth frequency cutoff supported away
+from zero. Its inverse Fourier transform \(h\) is Schwartz and
+\(\int h=0\). We claim that for \(R\geq1\)
+\begin{equation}
+\left|\int\psi(\lambda)R h(RQ(\lambda))\,d\lambda\right|
+\leq C\min\{R,\,(j+1)^C R^{-1}(b/a^3)^j\}.
+\label{eq:pair-annulus}
+\end{equation}
+The first bound is immediate. For the second, insert a smooth
+cutoff in \eqref{eq:small-value-band}. The fixed derivative sign
+prevents leaving and reentering this band in the opposite
+direction. Changing variables \(u=Q(\lambda)\) gives a compactly
+supported inverse density
+\(\psi(\lambda(u))\chi(u)/|Q'(\lambda(u))|\).
+Its derivative is at most \(C(j+1)^C(b/a^3)^j\), by the two
+derivative bounds and the cutoff scale.
+Subtract its value at zero and use \(\int h=0\); this gives the
+second bound in \eqref{eq:pair-annulus} on the cutoff part.
+Off that part, \(|Q|\geq c a^j/(j+1)\), and the Schwartz bound
+of order two gives \(C(j+1)^2R^{-1}a^{-2j}\).
+When \(Ra^j/(j+1)<1\), the trivial \(CR\) bound is no larger
+than the same expression. This proves \eqref{eq:pair-annulus}.
+
+For two independent digit sequences, the probability of agreement
+at one position is \(3/8\). Fourier inversion and Fubini therefore
+bound the parameter-averaged frequency annulus by
+\[
+C\sum_{j\geq0}(3/8)^j
+\min\{R,(j+1)^C R^{-1}(b/a^3)^j\}.
+\]
+Split at the integer nearest \(2\log R/\log(b/a^3)\).
+The two geometric sums are at most
+\[
+C(1+\log R)^C
+R^{-\{2\log(8/3)/\log(b/a^3)-1\}}.
+\]
+Multiplying by \(R^{2\sigma}\) and summing over dyadic \(R\)
+proves the assertion. The bounded low frequencies cause no issue.
+\end{proof}
+
+By Fourier Cauchy--Schwarz and a change of variables, for \(r\)
+in a fixed compact subset of \((0,\infty)\),
+\begin{equation}
+\|\mu_\lambda*(S_r\mu_\lambda)\|_{H^\sigma}
+\leq C M(\lambda),\qquad
+M(\lambda)^2:=1+\|\mu_\lambda*\mu_\lambda\|_{H^\sigma}^2.
+\label{eq:common-sobolev-bound}
+\end{equation}
+Here \(S_r\) is multiplication by \(r\). Indeed, the squared norm
+is the integral of
+\[
+(1+|\xi|^2)^\sigma|\widehat\mu_\lambda(\xi)|^2
+|\widehat\mu_\lambda(r\xi)|^2,
+\]
+bounded by the geometric mean
+of the two self-convolution integrals.
+The same function \(M\) controls every such slope.
+
+\begin{theorem}\label{thm:ae-dimension}
+For every fixed irrational \(\alpha>1\), for Lebesgue almost every
+\(\lambda\in(\sqrt3/4,1/2)\),
+\[
+\dim_{\mathrm H}(E_{\alpha,\lambda})=\frac{2\log2}{\log(1/\lambda)}-1.
+\]
+\end{theorem}
+\begin{proof}
+Choose a short interval \([a,b]\) inside
+\((\sqrt3/4,1/2)\). Put \(d=\log2/\log(1/a)\).
+It can be chosen, together with \(\sigma>0\), so that
+\begin{equation}
+b^2/a<1,\qquad
+2\sigma<\frac{2\log(8/3)}{\log(b/a^3)}-1,\qquad
+(b^2/a)^{2\sigma}<b^{1-d}.
+\label{eq:ae-exponents}
+\end{equation}
+As \(a,b\to\lambda_0\), the permitted inequalities for \(2\sigma\)
+are
+\[
+1-\frac{\log2}{\log(1/\lambda_0)}
+<2\sigma<
+\frac{\log(8/3)}{\log(1/\lambda_0)}-1.
+\]
+They are compatible exactly when \(\lambda_0>\sqrt3/4\).
+Shrink inside \((a,b)\) so Lemma~\ref{lem:average-sobolev}
+gives a locally integrable \(M^2\) on the whole neighborhood
+used below.
+
+Fix a point \(\lambda_0\) there at which \(M^2\) has finite
+Lebesgue value. For integers \(L\to\infty\), put
+\(\rho=\lambda_0^L\).
+Irrationality supplies arbitrarily large positive \(k,m\) with
+\[
+\left|m-\alpha k+\frac{\log \alpha}{\log\lambda_0}\right|\leq\rho^2,
+\qquad m^2b^m\leq\rho^3,\qquad k\geq L.
+\]
+Take the genuine cylinders
+\begin{equation}
+x=\lambda^k(1-\lambda^L+\lambda^L\pi_\lambda(\omega)),
+\qquad y=1-\lambda^m+\lambda^{m+L}\pi_\lambda(\tau).
+\label{eq:centered-cylinders}
+\end{equation}
+Their residual divided by \(\lambda^{\alpha k}\) is
+\begin{equation}
+(1-\lambda^L+\lambda^L\pi_\lambda(\omega))^\alpha
+-\alpha\lambda^{m-\alpha k}(1-\lambda^L\pi_\lambda(\tau))
++O_\alpha(\lambda^m).
+\label{eq:centered-residual}
+\end{equation}
+The remainder and its first two parameter derivatives are
+uniformly negligible by the choice of \(m\).
+The limiting function \(1-\alpha\lambda^{-\log \alpha/\log\lambda_0}\)
+vanishes transversely at \(\lambda_0\), with negative derivative.
+On a window of radius \(C\rho\), the residual's first derivative
+is bounded away from zero, its second derivative is bounded,
+and its two tail derivatives are positive and comparable to
+\(\rho\). Parameter derivatives of tail coefficients introduce
+only polynomial factors in \(L\), since \(L^2\rho\to0\).
+Choosing \(C\) sufficiently large gives opposite endpoint signs
+for all tails. Hence all pairs have unique roots in this window.
+Call their map \(f\), and their probability law \(\nu\).
+
+Shared depth-\(j\) prefixes give root displacement at most
+\(C\rho b^j\). There is also the small-ball estimate
+\begin{equation}
+\nu(I)\leq C(|I|/\rho)^d.
+\label{eq:root-small-ball}
+\end{equation}
+To verify it, fix the second address. At a common parameter,
+two first addresses first differing at position \(j\) are
+separated by at least \(c a^j\). The positive first-tail
+derivative and bounded parameter derivative of
+\eqref{eq:centered-residual} separate their roots by
+\(c\rho a^j\). An interval smaller than this meets at most one
+first-coordinate cylinder of that depth, of probability \(2^{-j}\).
+Choose \(j\) according to its length and integrate over the
+second address.
+
+For each paired prefix \(w\) of depth \(j\), let \(I_w\) be an
+interval of length \(C\rho b^j\) containing its full root image,
+centered at one of its roots. Equation \eqref{eq:root-small-ball}
+implies
+\begin{equation}
+\sum_{|w|=j}4^{-j}1_{I_w}(u)\leq Cb^{jd}.
+\label{eq:root-overlap}
+\end{equation}
+Choose an auxiliary freezing point \(\lambda_w\in I_w\) such that
+\[
+M(\lambda_w)^2\leq\frac2{|I_w|}\int_{I_w}M(\lambda)^2\,d\lambda.
+\]
+Summing with \eqref{eq:root-overlap}, and using that \(\lambda_0\)
+is a finite Lebesgue point, gives
+\begin{equation}
+\sum_{|w|=j}4^{-j}M(\lambda_w)^2
+\leq C_{\lambda_0}b^{-j(1-d)}
+\label{eq:average-freezing}
+\end{equation}
+uniformly as \(\rho\to0\).
+
+Set the two remaining tails in the residual to zero and denote
+the resulting function by \(G_w(\lambda)\).
+Let \(A_w,B_w\) be its derivatives with respect to the two
+remaining tail values, including their factors \(\lambda^j\).
+The complete affine kernel at \(\lambda_w\) is the law of
+\begin{equation}
+\lambda_w-\frac{G_w(\lambda_w)+A_w(\lambda_w)X+
+ B_w(\lambda_w)Y}{G'_w(\lambda_w)},
+\label{eq:newton-kernel}
+\end{equation}
+with independent full \(\mu_{\lambda_w}\) tails.
+The Newton constant is necessary because \(\lambda_w\) need
+not itself be a root. We have
+\(-G'_w\asymp1\), \(A_w,B_w\asymp\rho\lambda_w^j\).
+Taylor expansion under the same-address coupling bounds the
+distance from the actual root by
+\begin{equation}
+C\rho^2(L+j+1)^C b^{2j}.
+\label{eq:newton-error}
+\end{equation}
+This follows by expanding in both tail values and in
+\(\lambda-\lambda_w=O(\rho b^j)\). Second derivatives in tail
+values are \(O(\rho^2\lambda^{2j})\); mixed derivatives are at
+most \(C(L+j+1)^C\rho\lambda^j\); the second parameter
+derivative is bounded.
+
+Split a parent kernel exactly into four affine child kernels,
+then replace them by the kernels at their chosen freezing points.
+Coupling both through the actual root and dividing by their
+comparable widths bounds the normalized displacement by
+\[
+C\rho(L+j+1)^C(b^2/a)^j.
+\]
+Normalized supports are uniformly bounded, and their Sobolev
+norms are bounded by
+\(C(M(\lambda_w)+M(\lambda_{wi}))\), by
+\eqref{eq:common-sobolev-bound}.
+For bounded-support densities of \(H^\sigma\) norm at most \(A\),
+smoothing at scale \(t\) gives
+\[
+\|h-\widetilde h\|_1
+\leq C A^{1/(1+\sigma)}
+W_1(h,\widetilde h)^{\sigma/(1+\sigma)}.
+\]
+Indeed the two terms are \(CAt^\sigma\) and \(CW_1/t\);
+optimization proves the inequality.
+
+Let \(P_j\) be the mixture of all depth-\(j\) kernels with
+weights \(4^{-j}\). Weighted Hölder and
+\eqref{eq:average-freezing} give
+\begin{equation}
+\|P_{j+1}-P_j\|_1
+\leq C_{\lambda_0}\rho^{\sigma/(1+\sigma)}(L+j+1)^C
+\left(\frac{(b^2/a)^{2\sigma}}{b^{1-d}}\right)^{j/[2(1+\sigma)]}.
+\label{eq:ae-summable}
+\end{equation}
+By \eqref{eq:ae-exponents} this is summable. The total sum tends
+to zero as \(L\to\infty\), because \(\rho=\lambda_0^L\).
+The coupling estimate identifies the weak limit as the true
+root law \(\nu\), so convergence also holds in \(L^1\).
+In particular, if \(h_0\) is the first kernel density,
+\begin{equation}
+\|\nu-h_0\,d\lambda\|_{\rm TV}=o(1),\qquad
+\|h_0\|_2^2\leq C_{\lambda_0}\rho^{-1},\qquad
+\operatorname{supp}h_0\subset
+[\lambda_0-C'\rho,\lambda_0+C'\rho].
+\label{eq:density-point-kernel}
+\end{equation}
+
+Let \(G\) be the set of parameters satisfying the asserted
+dimension equality. This is Borel: on compact parameter
+intervals the fibres have closed graph and are upper
+semicontinuous, and their Hausdorff contents can be tested by
+countably many finite rational-ball covers.
+Lemma~\ref{lem:root-fibres} applies to
+\eqref{eq:centered-cylinders}, so \(\nu(G)=1\).
+Equations \eqref{eq:density-point-kernel} and Cauchy--Schwarz imply
+\[
+|G\cap[\lambda_0-C'\rho,\lambda_0+C'\rho]|
+\geq c_{\lambda_0}\rho
+\]
+for every sufficiently large \(L\).
+If the complement of \(G\) had positive measure, it would have
+a density point that was also a finite Lebesgue point of \(M^2\).
+The preceding bound along \(\rho=\lambda_0^L\to0\) contradicts
+that density property.
+A countable cover by intervals satisfying \eqref{eq:ae-exponents}
+proves the theorem.
+\end{proof}
+
+\begin{example}\label{ex:ae}
+Fix \(\alpha=\sqrt2\). The theorem applies to almost every
+\(\lambda\in(7/16,9/20)\), since \(49/256>3/16\).
+For those parameters,
+\[
+\frac{2\log2}{\log(16/7)}-1
+<\dim_{\mathrm H}(E_{\sqrt2,\lambda})<
+\frac{2\log2}{\log(20/9)}-1.
+\]
+This assertion does not identify an individual parameter outside
+the exceptional null set.
+\end{example}
+
+
+The Hausdorff phase transition diagram is still incomplete.
+Although we have located or bounded the first and last transitions,
+the distribution of zero- and positive-dimensional parameters between
+them remains largely unresolved. The unit-circle case shows that
+positive dimension need not persist after its first appearance;
+understanding this intermediate region for other exponents is a
+natural direction for further study.
+
+\begingroup
+\renewcommand{\addcontentsline}[3]{}
+\section*{Acknowledgements}
+\endgroup
+Kan Jiang was supported by the National Natural Science Foundation of China
+(No.~12671112).
+Nero Ziyu Li was supported by the Additional Funding Programme for Mathematical
+Sciences, delivered by EPSRC (EP/V521917/1) and the Heilbronn Institute for
+Mathematical Research.
+He was also supported by the EPSRC Centre for Doctoral Training in Mathematics
+of Random Systems: Analysis, Modelling and Simulation (EP/S023925/1).
+Lifeng Xi was supported by the National Natural Science Foundation of China
+(No.~12571096).
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

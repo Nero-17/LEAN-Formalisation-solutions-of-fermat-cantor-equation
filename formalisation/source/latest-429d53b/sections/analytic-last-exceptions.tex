@@ -1,0 +1,179 @@
+% Exceptional exponents in the proof of Theorem 4.2.
+\paragraph{The exponents $2$, $3$, and $3/2$.}
+These three exponents admit explicit sources for the endpoint model
+\eqref{eq:uniform-endpoint}, with $j,k$ as defined there.
+A binary word specifies the cylinder obtained by its successive left or
+right branches. We verify the strict corner inequalities and place each
+whole derivative-ratio interval strictly above one inside a band of
+\eqref{eq:two-bands}. All estimates below hold for $c\le\lambda<1/2$;
+we use $c^2+c=1/2$ and $4/11<c<11/30$.
+
+For $\alpha=3$, take $(j,k)=(2,0)$, so the endpoint equation is
+$u^3=3\lambda^2v$.
+For $c\le\lambda\le3/8$, use the words $1010$ and $11$;
+for $3/8\le\lambda<1/2$, use $101$ and $1$.
+In both cases
+\[
+ u_-=1-\lambda+\lambda^2-\lambda^3,
+\]
+while $u_+$ is respectively
+$1-\lambda+\lambda^2-\lambda^3+\lambda^4$ and $1-\lambda+\lambda^2$.
+Both depth differences are two, so the ratio interval is
+$[u_+^{-2},u_-^{-2}]$. We place it in the second band.
+For its upper bound,
+\[
+ (1-\lambda+\lambda^2-\lambda^3)^2-(1-\lambda-\lambda^2)
+ >\lambda[-1+4\lambda(1-\lambda)+2\lambda^3]>0.
+\]
+The first inequality discards the positive term $(1-\lambda)^2\lambda^4$.
+The bracket increases up to $1/2$ and at $c$ equals $11c-4>0$.
+For the first source, $u_+$ decreases on $[0,1/2]$, since its derivative is
+$(2\lambda-1)+\lambda^2(4\lambda-3)<0$.
+Its value at $4/11$ is $10805/14641<3/4$, whence
+\[
+ (1-\lambda)u_+^2<\frac7{11}\left(\frac34\right)^2
+ =\frac{63}{176}<\frac4{11}<\lambda.
+\]
+For the second source, both factors decrease, and
+\[
+ (1-\lambda)u_+^2\le\frac58\left(\frac{49}{64}\right)^2
+ =\frac{12005}{32768}<\frac38\le\lambda.
+\]
+These are exactly the lower-band comparisons, and also show that the ratios
+exceed one.
+The lower corner holds for both sources: $u_-$ decreases and its value
+at $4/11$ is $959/1331<8/11$, so
+\[
+ u_-^3<\frac{512}{1331}<\frac{528}{1331}
+ =3\left(\frac4{11}\right)^2<3\lambda^2=3\lambda^2v_+.
+\]
+For the first upper corner, $u_+$ decreases while
+$3\lambda^2(1-\lambda^2)$ increases on $[c,3/8]$.
+At $3/8$, $u_+=3001/4096>23/32$, and
+\[
+ \left(\frac{23}{32}\right)^3=\frac{12167}{32768}
+ >\frac{11880}{32768}
+ =3\left(\frac38\right)^2\left(1-\left(\frac38\right)^2\right).
+\]
+For the second upper corner,
+\[
+ u_+^3\ge\left(\frac34\right)^3=\frac{27}{64}
+ >\frac38\ge3\lambda^2(1-\lambda)=3\lambda^2v_-.
+\]
+The last bound uses the increase of $\lambda^2(1-\lambda)$ up to $1/2$.
+
+For $\alpha=2$, take $(j,k)=(1,0)$, giving $u^2=2\lambda v$.
+Use the words $1001,100$ on $[c,147/400]$;
+$1010,101$ on $[147/400,3/8]$; and $101,10$ on $[3/8,1/2)$.
+In every case the first depth exceeds the second by one, so the ratio
+interval is $[1/u_+,1/u_-]$. Since $u_->1-\lambda$ and $u_+<1$,
+its upper endpoint is strictly below $1/(1-\lambda)$ and the interval
+lies above one. The remaining first-band comparison is
+\[
+ u_+(1-\lambda-\lambda^2)<\lambda.
+\]
+For the first source, $u_+=1-\lambda+\lambda^3$ decreases, as does its
+product with $1-\lambda-\lambda^2$. At $c$ this product equals
+$(1+c)/4<c$, because $c>1/3$.
+For the middle source,
+$u_+=1-\lambda+\lambda^2-\lambda^3+\lambda^4$ decreases as above.
+At $c$ it equals $11/4-(11/2)c<737/1000<59/80$, using $c>183/500$.
+Hence, for $\lambda\ge147/400$,
+\[
+ u_+(1-\lambda-\lambda^2)
+ <\frac{59}{80}\frac{79591}{160000}<\frac{147}{400}\le\lambda,
+\]
+where $59\cdot79591=4695869<4704000=147\cdot32000$.
+For the final source,
+\[
+ u_+(1-\lambda-\lambda^2)
+ \le\frac{49}{64}\frac{31}{64}
+ =\frac{1519}{4096}<\frac38\le\lambda.
+\]
+
+For the first source's lower corner,
+$u_-=1-\lambda+\lambda^3-\lambda^4$ decreases, and at $c$ it equals
+$(5/2)c-1/4<2/3$, since $c<11/30$.
+Also $v_+=1-\lambda+\lambda^3\ge347/512>2/3$ on this interval.
+Thus $u_-^2<4/9<2\lambda v_+$.
+For its upper corner, $u_+$ decreases and $2\lambda(1-\lambda)$ increases,
+so it suffices to compare at $147/400$.
+There $u_+>341/500$, because
+$147^3=3176523>3168000=99\cdot32000$, and
+\[
+ \left(\frac{341}{500}\right)^2
+ -2\frac{147}{400}\frac{253}{400}
+ =\frac{473}{2000000}>0.
+\]
+For the other two lower corners, the common endpoints satisfy
+\[
+ u_-=1-\lambda+\lambda^2-\lambda^3<\frac8{11},\qquad
+ v_+=1-\lambda+\lambda^2\ge\frac34,
+\]
+so $u_-^2<64/121<6/11<2\lambda v_+$.
+For the middle upper corner, $u_+$ decreases while
+$\lambda(1-\lambda+\lambda^2-\lambda^3)$ increases, since its derivative is
+$(1-2\lambda)+\lambda^2(3-4\lambda)>0$.
+At $3/8$,
+\[
+ u_+^2=\left(\frac{3001}{4096}\right)^2
+ >\frac{1095}{2048}=2\frac38\frac{365}{512}=2\lambda v_-;
+\]
+the integer comparison is $3001^2=9006001>8970240=1095\cdot8192$.
+For the final upper corner,
+\[
+ u_+^2\ge\left(\frac34\right)^2=\frac9{16}
+ >\frac12\ge2\lambda(1-\lambda)=2\lambda v_-.
+\]
+
+For $\alpha=3/2$, one source works throughout the interval.
+Use the words $101$ and $10$, whose hulls are
+\[
+ [1-\lambda+\lambda^2-\lambda^3,1-\lambda+\lambda^2],
+ \qquad[1-\lambda,1-\lambda+\lambda^2].
+\]
+Take $(j,k)=(2,1)$, giving
+$u^{3/2}=(3/2)\lambda^{1/2}v$.
+The ratio interval is
+\[
+ \left[(\lambda(1-\lambda+\lambda^2))^{-1/2},
+       (\lambda(1-\lambda+\lambda^2-\lambda^3))^{-1/2}\right].
+\]
+Its lower endpoint lies above $1/\lambda-1$ precisely when
+\[
+ \lambda>(1-\lambda)^2(1-\lambda+\lambda^2).
+\]
+The right side decreases, and at $c$ the difference is
+$(58c-21)/4>1/44>0$, using $c>4/11$.
+The upper endpoint lies below $1/(1-\lambda-\lambda^2)$ precisely when
+\[
+ (1-\lambda-\lambda^2)^2
+ <\lambda(1-\lambda+\lambda^2-\lambda^3).
+\]
+The left side decreases, whereas the right side increases by the derivative
+calculation above. At $c$ they equal $1/4$ and $(22c-7)/4$, respectively;
+the latter is greater because $c>4/11$.
+Thus the entire ratio interval is strictly inside the second band and
+above one.
+For the lower corner, the decreasing endpoint satisfies
+\[
+ u_-<1-\frac13+\left(\frac13\right)^2-\left(\frac13\right)^3
+ =\frac{20}{27}<\frac34<\frac94\lambda.
+\]
+Since $u_-<u_+=v_+$, we obtain
+$u_-^3<u_-u_+^2<(9/4)\lambda v_+^2$.
+For the upper corner, elementary differentiation gives
+$\lambda(1-\lambda)^2\le4/27$, so
+\[
+ u_+^3\ge\left(\frac34\right)^3=\frac{27}{64}
+ >\frac13\ge\frac94\lambda(1-\lambda)^2.
+\]
+Taking square roots proves both required corner inequalities.
+
+By the preceding endpoint-to-actual transfer and
+Lemma~\ref{lem:two-bands}, these sources give positive-dimensional actual
+intersections for every $c\le\lambda<1/2$.
+For each exponent, the source used at $\lambda=c$ has strict margins,
+so one fixed sufficiently deep actual source persists on a neighbourhood
+of $c$. Together these facts give the required strict last-transition
+bound for $\alpha=2,3,3/2$.

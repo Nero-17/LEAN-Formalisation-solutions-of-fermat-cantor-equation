@@ -1,0 +1,30 @@
+UTC=2026-10-21T11:31:42.5095756Z MODULE=LambdaCantor/Integer/PowerRemainder.lean SHA256=9B7FCE22313BCA292D9789CFD28C82E67ED6A1EAADDAE91A603AF15DDAD182EB
+LambdaCantor/Integer/PowerRemainder.lean:20:15: warning: This simp argument is unused:
+  powerRemainder
+
+Hint: Omit it from the simp argument list.
+  simp only [̵p̵o̵w̵e̵r̵R̵e̵m̵a̵i̵n̵d̵e̵r̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵p̵o̵w̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲P̲i̲.̲s̲u̲b̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲p̲o̲w̲_̲a̲p̲p̲l̲y̲,̲ ̲i̲d̲_̲e̲q̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/PowerRemainder.lean:20:30: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵p̵o̵w̵e̵r̵R̵e̵m̵a̵i̵n̵d̵e̵r̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵p̵o̵w̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲p̲o̲w̲e̲r̲R̲e̲m̲a̲i̲n̲d̲e̲r̲,̲ ̲P̲i̲.̲p̲o̲w̲_̲a̲p̲p̲l̲y̲,̲ ̲i̲d̲_̲e̲q̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/PowerRemainder.lean:20:43: warning: This simp argument is unused:
+  Pi.pow_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵p̵o̵w̵e̵r̵R̵e̵m̵a̵i̵n̵d̵e̵r̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵p̵o̵w̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲p̲o̲w̲e̲r̲R̲e̲m̲a̲i̲n̲d̲e̲r̲,̲ ̲P̲i̲.̲s̲u̲b̲_̲a̲p̲p̲l̲y̲,̲ ̲i̲d̲_̲e̲q̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/PowerRemainder.lean:19:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/PowerRemainder.lean:20:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=40.6633966 END_UTC=2026-10-21T11:32:23.1791643Z
+EXIT=0

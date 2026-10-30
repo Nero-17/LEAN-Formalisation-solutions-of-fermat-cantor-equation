@@ -1,0 +1,14 @@
+UTC=2026-10-27T16:27:56.4942467Z MODULE=LambdaCantor/Last/AnalyticCoarseConclusionAudit.lean SHA256=7F74D6846092BDF95717E766CF99C4471FBA453BFE4A1761CE407E96AD6DCC3B
+'LambdaCantor.Last.coarse_strict_log_link_all_exponents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.coarse_rational_infinite_intersection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Last.rational_lastTransition_lt_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+ELAPSED_SECONDS=30.2403444 END_UTC=2026-10-27T16:28:26.7366312Z
+EXIT=0

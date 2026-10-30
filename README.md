@@ -1,4 +1,16 @@
-# Computational companion: solutions of the Fermat–Cantor equation
+# Lean formalisation and computational companion: the Fermat–Cantor equation
+
+The complete accepted **Lean formalisation** of the English manuscript frozen at
+Overleaf commit `429d53bb243f49b19ba8169de0e82ed70050ec7f` is now in
+[`formalisation/`](formalisation/README.md): **34 numbered environments,
+59 mapped declarations and 4,155 compiled project modules**. Start with the
+[Lean theorem index](formalisation/THEOREMS.md),
+[build instructions](formalisation/README.md#rebuild-with-lean), and
+[explicit trust boundary](formalisation/TRUST.md). The final results use registered
+classical external axioms and authorized `native_decide`; these dependencies are
+reported explicitly. Later live manuscript changes are outside this frozen scope.
+
+The computational companion and its existing release history remain below.
 
 Experiments, algorithms, exact certificates and reproduction instructions for
 **Solutions of $x^\alpha + y^\alpha = 1$ in $\lambda$-Cantor sets**. The current manuscript keeps the rational-exponent part of Theorem 3.1 as a
@@ -15,14 +27,15 @@ programs, data fields and archived records, `n` denotes this same exponent.
 The current plotting scripts use $\alpha$; the fixed v1.2.0 figures retain the
 earlier label $n$. The numerical data and certificates are unchanged.
 
-The current release uses exact Python arithmetic. **It contains no Lean proofs
-and makes no claim of Lean kernel verification.** The repository name also
-serves the broader formalisation project.
+The historical **v1.2.0** computational release uses exact Python arithmetic
+and contains no Lean proofs. The newly added `formalisation/` directory has its
+own source-hashed Lean compilation evidence and reproduction workflow.
 
 ## Contents
 
 | Location | Contents |
 | --- | --- |
+| `formalisation/` | Accepted full frozen-manuscript Lean sources, embedded finite certificates, theorem map, trust register, build driver and historical compilation evidence |
 | `cantor-dust/work/` | Exact certificates, generation/search algorithms, independent verifiers and historical receipts |
 | `experiments/phase-transitions/` | First/last transition scans, raw traces, high-precision checks and CSV export |
 | `figures/` | Published CSV tables, English/Chinese diagrams, plotting programs and Figure 1 TikZ sources |

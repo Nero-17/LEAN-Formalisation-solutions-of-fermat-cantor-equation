@@ -1,0 +1,36 @@
+UTC=2026-10-27T16:32:27.4891335Z MODULE=LambdaCantor/RationalPowers/RealNearAxisRegularity.lean SHA256=635ABABFEDEA9D1F30FCD4B95F8486594A001734D8E2A8E174BAF66214D5003F
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:47:6: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:47:37: warning: `ContinuousLinearMap.neg_apply` has been deprecated: Use `neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `neg_apply x`).
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:48:6: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:52:15: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:52:46: warning: `ContinuousLinearMap.neg_apply` has been deprecated: Use `neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `neg_apply x`).
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:53:6: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:53:37: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:53:6: warning: This simp argument is unused:
+  ContinuousLinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [ContinuousLinearMap.sub_apply, ContinuousLinearMap.neg_apply,
+        C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵ContinuousLinearMap.smul_apply, ContinuousLinearMap.coe_fst', ContinuousLinearMap.coe_snd',
+  ̲  ̲ ̲ ̲ ̲ ̲smul_eq_mul, realNearAxisVertical]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/RealNearAxisRegularity.lean:57:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=27.4058466 END_UTC=2026-10-27T16:32:54.9160625Z
+EXIT=0

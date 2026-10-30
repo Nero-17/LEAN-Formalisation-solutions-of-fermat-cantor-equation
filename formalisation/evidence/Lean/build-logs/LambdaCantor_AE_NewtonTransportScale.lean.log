@@ -1,0 +1,9 @@
+UTC=2026-10-28T01:46:06.1112317Z MODULE=LambdaCantor/AE/NewtonTransportScale.lean SHA256=182376C41669E1EE7B5DDFC304537AC99113194C61E22338D03B12E2C04FD5D8
+LambdaCantor/AE/NewtonTransportScale.lean:26:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/NewtonTransportScale.lean:26:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=22.3977816 END_UTC=2026-10-28T01:46:28.5105413Z
+EXIT=0

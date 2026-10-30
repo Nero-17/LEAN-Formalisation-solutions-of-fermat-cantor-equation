@@ -1,0 +1,17 @@
+UTC=2026-10-27T16:16:05.0179022Z MODULE=LambdaCantor/Last/AnalyticCoarsePerturbedLog.lean SHA256=45FCF18CCDE69B3E9B661DDF854CE3BC06B4013BFD45159F59FB6BEDBCDDC446
+LambdaCantor/Last/AnalyticCoarsePerturbedLog.lean:18:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticCoarsePerturbedLog.lean:18:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticCoarsePerturbedLog.lean:51:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarsePerturbedLog.lean:83:32: warning: Variable name `hratio` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=39.6324188 END_UTC=2026-10-27T16:16:44.6558580Z
+EXIT=0

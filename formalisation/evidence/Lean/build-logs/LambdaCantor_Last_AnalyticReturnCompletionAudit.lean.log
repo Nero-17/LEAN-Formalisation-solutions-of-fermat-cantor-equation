@@ -1,0 +1,12 @@
+UTC=2026-10-24T17:19:13.6281168Z MODULE=LambdaCantor/Last/AnalyticReturnCompletionAudit.lean SHA256=88836D6869D1B62A725019B688E724D772D0D871127F6E4AB572FE610C6E7821
+'LambdaCantor.Last.linearWordReturn_mem_Ioo_of_perfect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.perfect_affine_fibre_strict_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.affine_fibre_strict_returns_of_uncountable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.perfect_fibre_positive_dimension_of_strict_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.compact_strict_returns_persist_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+ELAPSED_SECONDS=30.9137975 END_UTC=2026-10-24T17:19:44.5440804Z
+EXIT=0

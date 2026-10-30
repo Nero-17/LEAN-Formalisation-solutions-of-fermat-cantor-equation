@@ -1,0 +1,25 @@
+UTC=2026-10-27T17:39:45.5058209Z MODULE=LambdaCantor/RationalPowers/LargeExponentFiniteLayers.lean SHA256=96AB019120FAEF3B2CC91B320CC1B3EDD9CC43BF3227DC67A988CC007F4DD0B2
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/RationalPowers/LargeExponentFiniteLayers.lean:32:69: warning: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [̵N̵a̵t̵.̵c̵a̵s̵t̵_̵a̵d̵d̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵m̵u̵l̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵p̵o̵w̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵n̵e̵]̵[̲N̲a̲t̲.̲c̲a̲s̲t̲_̲a̲d̲d̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲m̲u̲l̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲p̲o̲w̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲f̲N̲a̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentFiniteLayers.lean:34:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/LargeExponentFiniteLayers.lean:34:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RationalPowers/LargeExponentFiniteLayers.lean:28:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=38.6832187 END_UTC=2026-10-27T17:40:24.2044261Z
+EXIT=0

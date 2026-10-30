@@ -1,0 +1,23 @@
+UTC=2026-10-27T14:23:38.6495772Z MODULE=LambdaCantor/Circle/Onset.lean SHA256=8ABC24E16BE2B7AFA422052AD8C22BB26E360EDABD0BA6D9A9FFA7E2935566CD
+LambdaCantor/Circle/Onset.lean:15:40: warning: This simp argument is unused:
+  digit
+
+Hint: Omit it from the simp argument list.
+  simp only [d̵i̵g̵i̵t̵,̵ ̵Bool.false_eq_true, if_false, if_true,
+  ̵  ̵ ̵ ̵mul_zero, mul_one,
+  ̲  ̲ ̲ ̲zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Circle/Onset.lean:35:5: warning: Variable name `x_left` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Circle/Onset.lean:69:69: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Circle/Onset.lean:81:90: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=76.210457 END_UTC=2026-10-27T14:24:54.8667244Z
+EXIT=0

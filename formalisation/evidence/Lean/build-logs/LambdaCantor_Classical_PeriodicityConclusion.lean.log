@@ -1,0 +1,8 @@
+UTC=2026-10-27T14:19:14.6612698Z MODULE=LambdaCantor/Classical/PeriodicityConclusion.lean SHA256=3F988A0ADAFBE25EC73E2488E4FCBFE23B3B974B42477D0206E4DD26105A696A
+LambdaCantor/Classical/PeriodicityConclusion.lean:42:5: warning: Variable name `upper` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=40.0484514 END_UTC=2026-10-27T14:19:54.7128221Z
+EXIT=0

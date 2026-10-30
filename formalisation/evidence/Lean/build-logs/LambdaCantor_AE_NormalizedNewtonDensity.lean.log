@@ -1,0 +1,6 @@
+UTC=2026-10-28T04:44:53.5826595Z MODULE=LambdaCantor/AE/NormalizedNewtonDensity.lean SHA256=DA7B32111E721240CD9C40F30E85D44927F20ED952C818FF49252E918A76BA0F
+LambdaCantor/AE/NormalizedNewtonDensity.lean:30:2: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ELAPSED_SECONDS=386.0696579 END_UTC=2026-10-28T04:51:19.6653642Z
+EXIT=0

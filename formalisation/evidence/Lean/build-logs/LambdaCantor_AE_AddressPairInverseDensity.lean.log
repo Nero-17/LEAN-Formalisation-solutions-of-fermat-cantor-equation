@@ -1,0 +1,6 @@
+UTC=2026-10-27T17:06:45.0035673Z MODULE=LambdaCantor/AE/AddressPairInverseDensity.lean SHA256=B708D049BF0A17BD2C1D527353C42EB4080E602FA06D2D71FAB8880D685E695E
+LambdaCantor/AE/AddressPairInverseDensity.lean:92:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=28.4478806 END_UTC=2026-10-27T17:07:13.4543782Z
+EXIT=0

@@ -1,0 +1,12 @@
+UTC=2026-10-27T05:02:59.6541447Z MODULE=LambdaCantor/AE/ClassicalDensityAudit.lean SHA256=5C3EC8959EE68A6FB94779168397E794204320CCEB45B7DA3BCD9DB35DAD7F57
+'LambdaCantor.AE.exists_common_affineSobolev_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.finite_measure_L2_density]
+'LambdaCantor.AE.exists_affine_density_sharp_L2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.finite_measure_L2_density]
+'LambdaCantor.AE.classical_fourier_density_eq_measureFourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ELAPSED_SECONDS=48.9832598 END_UTC=2026-10-27T05:03:48.6421862Z
+EXIT=0

@@ -1,0 +1,30 @@
+UTC=2026-10-27T21:20:32.5388306Z MODULE=LambdaCantor/AE/CenteredVerticalMixed.lean SHA256=FB0B9B3266CE399AC4EFFE25F1401493DDB0F21AC531750DFE1CB491894DAE74
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:4: warning: 'exact displacement_difference' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:36: warning: 'exact velocity_difference' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:64: warning: 'exact second_velocity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:88: warning: 'positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:64: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:87:88: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredVerticalMixed.lean:86:9: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=29.8899507 END_UTC=2026-10-27T21:21:02.4309766Z
+EXIT=0

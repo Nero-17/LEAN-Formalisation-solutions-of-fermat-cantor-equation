@@ -1,0 +1,10 @@
+UTC=2026-10-24T16:25:38.8048967Z MODULE=LambdaCantor/First/LinearRegularityBlocks.lean SHA256=7CC3C6F7AEA812E8F8AD34549B4BEFE7F08A9A2A6291AD305473B4F063DC9263
+LambdaCantor/First/LinearRegularityBlocks.lean:16:20: warning: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  simp [DenseBlock, F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵u̵n̵,̵ ̵Fintype.card_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=24.9341228 END_UTC=2026-10-24T16:26:03.7414852Z
+EXIT=0

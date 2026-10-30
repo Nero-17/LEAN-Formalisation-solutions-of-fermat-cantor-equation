@@ -1,0 +1,18 @@
+UTC=2026-10-21T08:27:34.9546740Z MODULE=LambdaCantor/First/RootsMeasures.lean SHA256=BDA27495F89D0B1AA7689563016369759D0433A191163D2843D22DC5A1BDB008
+LambdaCantor/First/RootsMeasures.lean:34:8: warning: This simp argument is unused:
+  PMF.toMeasure_apply_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [̵P̵M̵F̵.̵t̵o̵M̵e̵a̵s̵u̵r̵e̵_̵a̵p̵p̵l̵y̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵ ̵m̵e̵a̵s̵u̵r̵a̵b̵l̵e̵S̵e̵t̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵[̲m̲e̲a̲s̲u̲r̲a̲b̲l̲e̲S̲e̲t̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲,̲ PMF.uniformOfFintype_apply, Fintype.card_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RootsMeasures.lean:34:39: warning: This simp argument is unused:
+  measurableSet_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [PMF.toMeasure_apply_singleton, m̵e̵a̵s̵u̵r̵a̵b̵l̵e̵S̵e̵t̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵
+  ̵ ̵ ̵ ̵ ̵PMF.uniformOfFintype_apply, Fintype.card_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=28.260838 END_UTC=2026-10-21T08:28:03.2340413Z
+EXIT=0

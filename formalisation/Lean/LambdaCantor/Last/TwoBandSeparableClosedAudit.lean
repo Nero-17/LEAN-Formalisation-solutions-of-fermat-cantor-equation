@@ -1,0 +1,4 @@
+import LambdaCantor.Last.TwoBandSeparableClosed
+
+#print axioms LambdaCantor.Last.closed_interval_c1_extension
+#print axioms LambdaCantor.Last.two_band_separable_c1_closed_interval_criterion

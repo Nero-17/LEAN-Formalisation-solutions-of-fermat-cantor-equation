@@ -1,0 +1,12 @@
+UTC=2026-10-27T22:57:29.5737761Z MODULE=LambdaCantor/Certificates/IntegerExceptionalDimension28.lean SHA256=B59AF5AE9DD83424C05DF8FFF406548BC2BE611FB737BEEEBB175E48B451E44D
+'LambdaCantor.Integer.Exceptional.N28.positive_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ certificate_checked._native.native_decide.ax_1_1,
+ inner_intervals_exact._native.native_decide.ax_1_1,
+ offsets_exact._native.native_decide.ax_1_1,
+ outer_intervals_exact._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1,
+ source_valid._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=19.8901221 END_UTC=2026-10-27T22:57:49.4765451Z
+EXIT=0

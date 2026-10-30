@@ -1,0 +1,25 @@
+import LambdaCantor.Last.UniversalLastAudit
+import LambdaCantor.Last.UniversalLastPositivity
+import LambdaCantor.Last.EndpointTransferPersistence
+import LambdaCantor.Last.ActualRectangleCriterion
+import LambdaCantor.Last.TwoBandSeparableClosedAudit
+import LambdaCantor.Last.AnalyticReturnCompletionAudit
+import LambdaCantor.Last.AnalyticActualIsolationAudit
+import LambdaCantor.Last.AnalyticIsolatedActualC1Audit
+import LambdaCantor.Last.RationalLastActualIsolationAudit
+import LambdaCantor.Last.RationalLastActualIsolationAboveAudit
+import LambdaCantor.Last.RationalLastStrictAudit
+import LambdaCantor.Last.AnalyticCoarseConclusionAudit
+import LambdaCantor.AE.ClassicalDensityAudit
+import LambdaCantor.AE.ClassicalTransportAudit
+import LambdaCantor.AE.ActualDimensionTerminal
+
+/- Consolidated actual Last/AE and shared-return entry point for the frozen
+429d53bb243f49b19ba8169de0e82ed70050ec7f manuscript. Import success and the
+following audits are required; source presence alone does not certify it. -/
+
+#print axioms LambdaCantor.Last.universal_lastTransition_lt_critical
+#print axioms LambdaCantor.Last.universal_positive_dimension_at_or_above_critical
+#print axioms LambdaCantor.Last.universal_positive_dimension_near_critical
+#print axioms LambdaCantor.Last.two_band_separable_c1_closed_interval_criterion
+#print axioms LambdaCantor.AE.irrational_ae_dimension_equality

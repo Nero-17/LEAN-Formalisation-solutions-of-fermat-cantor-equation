@@ -1,0 +1,3 @@
+Relocation smoke test; reuses original accepted compiled dependencies.
+Not a clean full-manuscript rebuild.
+LambdaCantor.lean:1:0: error: object file 'C:\Users\lzysh\Documents\Codex\2026-10-20\new-chat\outputs\fermat-cantor-github\formalisation\Lean\LambdaCantor\Manuscript\All.olean' of module LambdaCantor.Manuscript.All does not exist

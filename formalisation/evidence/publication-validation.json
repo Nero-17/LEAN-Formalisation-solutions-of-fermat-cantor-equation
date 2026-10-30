@@ -1,0 +1,62 @@
+{
+  "distribution_hash_audit": {
+    "passed": true,
+    "source_modules": 4155,
+    "compilation_rerun": false
+  },
+  "git_index_source_identity": {
+    "passed": true,
+    "verified_blobs": 4155
+  },
+  "portable_driver_first_compile": {
+    "passed": true,
+    "module": "LambdaCantor/Common.lean",
+    "compiled": 1,
+    "skipped": 0,
+    "dependencies": "existing pinned mathlib/package caches",
+    "log": "publication-common-build.log"
+  },
+  "portable_driver_resume": {
+    "passed": true,
+    "module": "LambdaCantor/Common.lean",
+    "compiled": 0,
+    "skipped": 1
+  },
+  "lake_configuration": {
+    "passed": true,
+    "toolchain": "Lean 4.32.1",
+    "method": "lake --packages=<local cache overrides> env lean --version",
+    "uses_local_package_cache_overrides": true,
+    "clean_dependency_download_tested": false
+  },
+  "clean_full_Lake_rebuild": {
+    "performed": false,
+    "reason": "Publication preserves all exact sources from the accepted full original serial build; a new clean 4155-module rebuild was not performed."
+  },
+  "history_preserved": true,
+  "proof_source_bytes_changed": false,
+  "public_distribution_scope": "all 4155 modules in the accepted full English-manuscript dependency closure",
+  "documentation_links": {
+    "passed": true,
+    "relative_file_links_checked": 113
+  },
+  "root_relocation": {
+    "started_utc": "2026-10-30T01:32:50.002624+00:00",
+    "finished_utc": "2026-10-30T01:37:34.914920+00:00",
+    "test": "relocated default full-manuscript entry with original accepted compiled dependencies",
+    "clean_full_rebuild": false,
+    "exit_code": 0,
+    "elapsed_seconds": 284.905999999959,
+    "published_entry_sha256": "5eaf51dd0e492f2ff74196e5d005dc397e6a9f0a72227e7ab7ad4685953f1ea9",
+    "log_sha256": "1ee70bc28ff3108d9f9283838ff5268272fe46b2534a261c2205906709239d21"
+  },
+  "root_relocation_initial_attempt": {
+    "exit_code": 1,
+    "reason": "The new unbuilt module directory shadowed the original compiled dependency directory in LEAN_PATH. The validation harness was corrected to use the original artifact directory first.",
+    "proof_source_change": false,
+    "superseded_by_success": true,
+    "receipt": "publication-root-relocation-first-attempt.json"
+  },
+  "verified_utc": "2026-10-30T01:37:57.882748+00:00",
+  "all_publication_checks_passed": true
+}

@@ -1,0 +1,27 @@
+UTC=2026-10-27T17:23:52.3007372Z MODULE=LambdaCantor/RationalPowers/ExceptionalThirteenTwelfthsLowCertificate.lean SHA256=816673DE8C9B589D15C1BBDC262C49398AC7F5722267ED069A038BF742137C55
+'LambdaCantor.RationalPowers.Exceptional.ThirteenTwelfths.lowCertificate_checked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ RemainingSources.sourceCatalogueCheck_verified._native.native_decide.ax_1_1,
+ block000_checked._native.native_decide.ax_1_1,
+ block001_checked._native.native_decide.ax_1_1,
+ block002_checked._native.native_decide.ax_1_1,
+ block003_checked._native.native_decide.ax_1_1,
+ block004_checked._native.native_decide.ax_1_1,
+ block005_checked._native.native_decide.ax_1_1,
+ block006_checked._native.native_decide.ax_1_1,
+ block007_checked._native.native_decide.ax_1_1,
+ block008_checked._native.native_decide.ax_1_1,
+ block009_checked._native.native_decide.ax_1_1,
+ block010_checked._native.native_decide.ax_1_1,
+ block011_checked._native.native_decide.ax_1_1,
+ block012_checked._native.native_decide.ax_1_1,
+ block013_checked._native.native_decide.ax_1_1,
+ block014_checked._native.native_decide.ax_1_1,
+ inner_intervals_exact._native.native_decide.ax_1_1,
+ offsets_exact._native.native_decide.ax_1_1,
+ outer_intervals_exact._native.native_decide.ax_1_1,
+ ranges_cover._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=25.3655322 END_UTC=2026-10-27T17:24:17.6854930Z
+EXIT=0

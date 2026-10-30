@@ -1,0 +1,7 @@
+UTC=2026-10-28T01:57:32.4107658Z MODULE=LambdaCantor/AE/SobolevTransportSupport.lean SHA256=CA41B0DD6B393050BEDC050E5B1A8EFD4D807C260461C120C3C168FBE82D2C64
+LambdaCantor/AE/SobolevTransportSupport.lean:79:5: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/AE/SobolevTransportSupport.lean:92:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=17.7789067 END_UTC=2026-10-28T01:57:50.1908922Z
+EXIT=0

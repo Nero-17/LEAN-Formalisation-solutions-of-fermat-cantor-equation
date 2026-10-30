@@ -1,0 +1,12 @@
+UTC=2026-10-25T05:33:15.9532648Z MODULE=LambdaCantor/First/RootsKernelState.lean SHA256=224A5A2F904398409335E9B48875526845CFA741E8C3F14EDF65C5C389899C77
+LambdaCantor/First/RootsKernelState.lean:41:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/First/RootsKernelState.lean:41:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/First/RootsKernelState.lean:86:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=34.0702028 END_UTC=2026-10-25T05:33:50.0258808Z
+EXIT=0

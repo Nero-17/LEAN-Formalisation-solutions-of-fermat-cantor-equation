@@ -1,0 +1,13 @@
+UTC=2026-10-24T17:24:39.1352201Z MODULE=LambdaCantor/First/FrostmanNull.lean SHA256=A84B5B0ECE1101A164000239EB610286251695E819B07FD613BF2902A1D437FA
+LambdaCantor/First/FrostmanNull.lean:26:8: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/First/FrostmanNull.lean:43:15: warning: `EMetric.ball` has been deprecated: Use `Metric.eball` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ball` to `Metric.eball x`).
+LambdaCantor/First/FrostmanNull.lean:59:37: warning: `EMetric.ball` has been deprecated: Use `Metric.eball` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ball` to `Metric.eball x`).
+LambdaCantor/First/FrostmanNull.lean:73:15: warning: `EMetric.ball` has been deprecated: Use `Metric.eball` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ball` to `Metric.eball x`).
+ELAPSED_SECONDS=24.5805524 END_UTC=2026-10-24T17:25:03.7177568Z
+EXIT=0

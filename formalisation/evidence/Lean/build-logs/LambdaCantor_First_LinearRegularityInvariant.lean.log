@@ -1,0 +1,30 @@
+UTC=2026-10-24T16:45:10.9970043Z MODULE=LambdaCantor/First/LinearRegularityInvariant.lean SHA256=785A3802E5A56F2065988E66FD1769818AB86C95E7F3E1BE7AC1BB1DE3C0A0B9
+LambdaCantor/First/LinearRegularityInvariant.lean:22:0: warning: automatically included section variable(s) unused in theorem `LambdaCantor.First.LinearRegularity.affineAddress_summable`:
+  [Nonempty Alphabet]
+  [MeasurableSpace Alphabet]
+  [MeasurableSingletonClass Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty Alphabet] [MeasurableSpace Alphabet] [MeasurableSingletonClass Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+LambdaCantor/First/LinearRegularityInvariant.lean:31:0: warning: automatically included section variable(s) unused in theorem `LambdaCantor.First.LinearRegularity.measurable_affineAddress`:
+  [Nonempty Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+LambdaCantor/First/LinearRegularityInvariant.lean:54:0: warning: automatically included section variable(s) unused in theorem `LambdaCantor.First.LinearRegularity.uniform_head_tail_independent`:
+  [MeasurableSingletonClass Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSingletonClass Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+LambdaCantor/First/LinearRegularityInvariant.lean:61:61: warning: This simp argument is unused:
+  Set.disjoint_left
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵S̵e̵t̵.̵d̵i̵s̵j̵o̵i̵n̵t̵_̵l̵e̵f̵t̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=28.3670627 END_UTC=2026-10-24T16:45:39.3691376Z
+EXIT=0

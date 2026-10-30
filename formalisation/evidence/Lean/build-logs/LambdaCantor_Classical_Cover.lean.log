@@ -1,0 +1,17 @@
+UTC=2026-10-24T16:06:17.7820335Z MODULE=LambdaCantor/Classical/Cover.lean SHA256=A61B2BC646676F6CDBFF53AD8DEB2C1CEF0A76F11FA1EC89870B132FB6AC7883
+LambdaCantor/Classical/Cover.lean:10:5: warning: Variable name `nonempty` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/Classical/Cover.lean:152:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=39.5518055 END_UTC=2026-10-24T16:06:57.3552239Z
+EXIT=0

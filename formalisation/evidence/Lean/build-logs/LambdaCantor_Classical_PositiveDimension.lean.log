@@ -1,0 +1,12 @@
+UTC=2026-10-26T09:42:53.8787567Z MODULE=LambdaCantor/Classical/PositiveDimension.lean SHA256=3FE4578FB092824C64E0C25514C998CA41763786E25F4BE182D7B4053AC4847C
+LambdaCantor/Classical/PositiveDimension.lean:92:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+LambdaCantor/Classical/PositiveDimension.lean:92:43: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+LambdaCantor/Classical/PositiveDimension.lean:109:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=48.2714727 END_UTC=2026-10-26T09:43:42.1909340Z
+EXIT=0

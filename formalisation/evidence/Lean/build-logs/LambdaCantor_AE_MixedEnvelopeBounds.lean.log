@@ -1,0 +1,30 @@
+UTC=2026-10-27T21:31:30.4394517Z MODULE=LambdaCantor/AE/MixedEnvelopeBounds.lean SHA256=7A4A69E709E365FAB69D918A6F4D9F2116DE040B4DB15B882A8E0CB44131189F
+LambdaCantor/AE/MixedEnvelopeBounds.lean:73:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/MixedEnvelopeBounds.lean:73:17: warning: 'first
+| exact absolute_coefficient
+| exact shifted_power
+| exact power_bound
+| exact depth_derivative
+| positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/MixedEnvelopeBounds.lean:136:4: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/MixedEnvelopeBounds.lean:124:2: warning: 'change _ ≤ _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/MixedEnvelopeBounds.lean:136:4: warning: 'first
+| exact scale_bound
+| exact shift
+| exact combined_derivative
+| exact depth_derivative
+| exact vertical_derivative
+| exact tail_derivative
+| positivity' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=36.377207 END_UTC=2026-10-27T21:32:06.8214061Z
+EXIT=0

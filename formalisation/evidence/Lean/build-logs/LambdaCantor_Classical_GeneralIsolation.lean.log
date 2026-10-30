@@ -1,0 +1,13 @@
+UTC=2026-10-21T09:46:05.5681963Z MODULE=LambdaCantor/Classical/GeneralIsolation.lean SHA256=916DDF49F47BDD17C385A56E5F3C99539AFA0C10472AB12BC54FC69D2E61FCAD
+LambdaCantor/Classical/GeneralIsolation.lean:76:5: warning: Variable name `tailA_bounds` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Classical/GeneralIsolation.lean:77:5: warning: Variable name `tailB_bounds` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=30.6768059 END_UTC=2026-10-21T09:46:36.2469123Z
+EXIT=0

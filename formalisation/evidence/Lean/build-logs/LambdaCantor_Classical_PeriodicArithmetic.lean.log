@@ -1,0 +1,17 @@
+UTC=2026-10-27T05:19:57.7665967Z MODULE=LambdaCantor/Classical/PeriodicArithmetic.lean SHA256=8545ECD007318D76632F22AF807EB5204BBB64E3223A2CE55960424E757588A6
+LambdaCantor/Classical/PeriodicArithmetic.lean:35:42: warning: This simp argument is unused:
+  digit
+
+Hint: Omit it from the simp argument list.
+  simp [d̵i̵g̵i̵t̵,̵ ̵pow_succ, div_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Classical/PeriodicArithmetic.lean:35:59: warning: This simp argument is unused:
+  div_pow
+
+Hint: Omit it from the simp argument list.
+  simp [digit, pow_succ,̵ ̵d̵i̵v̵_̵p̵o̵w̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=76.4066453 END_UTC=2026-10-27T05:21:14.1800182Z
+EXIT=0

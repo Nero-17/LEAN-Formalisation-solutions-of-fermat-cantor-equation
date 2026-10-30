@@ -1,0 +1,111 @@
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group000
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group001
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group002
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group003
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group004
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group005
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group006
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group007
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group008
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group009
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group010
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group011
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group012
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group013
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group014
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group015
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8.DataGroups.Group016
+
+namespace LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8
+
+def grouped8LightEntries : List (Nat × CheapGrid.Row) :=
+  grouped8LightBlock000 ++
+  grouped8LightBlock001 ++
+  grouped8LightBlock002 ++
+  grouped8LightBlock003 ++
+  grouped8LightBlock004 ++
+  grouped8LightBlock005 ++
+  grouped8LightBlock006 ++
+  grouped8LightBlock007 ++
+  grouped8LightBlock008 ++
+  grouped8LightBlock009 ++
+  grouped8LightBlock010 ++
+  grouped8LightBlock011 ++
+  grouped8LightBlock012 ++
+  grouped8LightBlock013 ++
+  grouped8LightBlock014 ++
+  grouped8LightBlock015 ++
+  grouped8LightBlock016 ++
+  grouped8LightBlock017 ++
+  grouped8LightBlock018 ++
+  grouped8LightBlock019 ++
+  grouped8LightBlock020 ++
+  grouped8LightBlock021 ++
+  grouped8LightBlock022 ++
+  grouped8LightBlock023 ++
+  grouped8LightBlock024 ++
+  grouped8LightBlock025 ++
+  grouped8LightBlock026 ++
+  grouped8LightBlock027 ++
+  grouped8LightBlock028 ++
+  grouped8LightBlock029 ++
+  grouped8LightBlock030 ++
+  grouped8LightBlock031 ++
+  grouped8LightBlock032 ++
+  grouped8LightBlock033 ++
+  grouped8LightBlock034 ++
+  grouped8LightBlock035 ++
+  grouped8LightBlock036 ++
+  grouped8LightBlock037 ++
+  grouped8LightBlock038 ++
+  grouped8LightBlock039 ++
+  grouped8LightBlock040 ++
+  grouped8LightBlock041 ++
+  grouped8LightBlock042 ++
+  grouped8LightBlock043 ++
+  grouped8LightBlock044 ++
+  grouped8LightBlock045 ++
+  grouped8LightBlock046 ++
+  grouped8LightBlock047 ++
+  grouped8LightBlock048 ++
+  grouped8LightBlock049 ++
+  grouped8LightBlock050 ++
+  grouped8LightBlock051 ++
+  grouped8LightBlock052 ++
+  grouped8LightBlock053 ++
+  grouped8LightBlock054 ++
+  grouped8LightBlock055 ++
+  grouped8LightBlock056 ++
+  grouped8LightBlock057 ++
+  grouped8LightBlock058 ++
+  grouped8LightBlock059 ++
+  grouped8LightBlock060 ++
+  grouped8LightBlock061 ++
+  grouped8LightBlock062 ++
+  grouped8LightBlock063 ++
+  grouped8LightBlock064 ++
+  grouped8LightBlock065 ++
+  grouped8LightBlock066 ++
+  grouped8LightBlock067 ++
+  grouped8LightBlock068 ++
+  grouped8LightBlock069 ++
+  grouped8LightBlock070 ++
+  grouped8LightBlock071 ++
+  grouped8LightBlock072 ++
+  grouped8LightBlock073 ++
+  grouped8LightBlock074 ++
+  grouped8LightBlock075 ++
+  grouped8LightBlock076 ++
+  grouped8LightBlock077 ++
+  grouped8LightBlock078 ++
+  grouped8LightBlock079 ++
+  grouped8LightBlock080 ++
+  grouped8LightBlock081 ++
+  grouped8LightBlock082 ++
+  grouped8LightBlock083 ++
+  grouped8LightBlock084 ++
+  grouped8LightBlock085 ++
+  grouped8LightBlock086 ++
+  grouped8LightBlock087 ++ []
+
+end LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped8

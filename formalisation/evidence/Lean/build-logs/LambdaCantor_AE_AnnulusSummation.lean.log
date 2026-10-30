@@ -1,0 +1,6 @@
+UTC=2026-10-21T09:50:57.9551193Z MODULE=LambdaCantor/AE/AnnulusSummation.lean SHA256=E4AD5F391B77E0139E13963FB822550451A287C20E339D6BC13449AEE7C4FF55
+LambdaCantor/AE/AnnulusSummation.lean:127:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=23.0952527 END_UTC=2026-10-21T09:51:21.0519111Z
+EXIT=0

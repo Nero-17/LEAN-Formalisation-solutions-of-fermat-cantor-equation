@@ -1,0 +1,17 @@
+UTC=2026-10-27T20:24:12.1792670Z MODULE=LambdaCantor/AE/CenteredFactorSecond.lean SHA256=E6A8252CBEBE4F4F6F9BD0CFDE1D811440F47B982A4068C7E985AD34A6D9431D
+LambdaCantor/AE/CenteredFactorSecond.lean:62:38: warning: This simp argument is unused:
+  Nat.zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_zero, zero_mul, N̵a̵t̵.̵z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵zero_add] at tail_bound
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredFactorSecond.lean:120:38: warning: This simp argument is unused:
+  Nat.zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_zero, zero_mul, N̵a̵t̵.̵z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵zero_add] at tail
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=38.4785717 END_UTC=2026-10-27T20:24:50.6598925Z
+EXIT=0

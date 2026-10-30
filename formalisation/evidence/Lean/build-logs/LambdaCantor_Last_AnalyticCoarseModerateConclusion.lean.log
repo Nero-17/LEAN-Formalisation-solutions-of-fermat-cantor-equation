@@ -1,0 +1,9 @@
+UTC=2026-10-27T14:59:50.9398506Z MODULE=LambdaCantor/Last/AnalyticCoarseModerateConclusion.lean SHA256=132235FDEAEAEEA5A7A9A539270F920B30EFF389C051684AED87AA135A5A7687
+LambdaCantor/Last/AnalyticCoarseModerateConclusion.lean:26:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseModerateConclusion.lean:29:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=24.5033187 END_UTC=2026-10-27T15:00:15.4459213Z
+EXIT=0

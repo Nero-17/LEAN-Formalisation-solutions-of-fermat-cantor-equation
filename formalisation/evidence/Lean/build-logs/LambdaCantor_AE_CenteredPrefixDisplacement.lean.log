@@ -1,0 +1,11 @@
+UTC=2026-10-27T19:57:11.5011314Z MODULE=LambdaCantor/AE/CenteredPrefixDisplacement.lean SHA256=CA804C3269AAE93191C4EA4C20EB43C5475EEF84FE6E8AB2A82975CA7B9A6018
+LambdaCantor/AE/CenteredPrefixDisplacement.lean:39:5: warning: Variable name `rho_positive` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/AE/CenteredPrefixDisplacement.lean:69:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=37.3648921 END_UTC=2026-10-27T19:57:48.8683072Z
+EXIT=0

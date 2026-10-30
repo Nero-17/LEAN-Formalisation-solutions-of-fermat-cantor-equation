@@ -1,0 +1,6 @@
+UTC=2026-10-24T19:17:21.4026648Z MODULE=LambdaCantor/Certificates/IntegerTailEndpoints.lean SHA256=38053B5B4CCBD2575BD3114E645EDB572C149E54E6E3A2BA83E913A5995434DD
+LambdaCantor/Certificates/IntegerTailEndpoints.lean:23:38: warning: 'norm_num at *' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=15.4317072 END_UTC=2026-10-24T19:17:36.8499538Z
+EXIT=0

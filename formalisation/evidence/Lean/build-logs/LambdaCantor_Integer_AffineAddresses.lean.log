@@ -1,0 +1,21 @@
+UTC=2026-10-24T18:14:25.7455072Z MODULE=LambdaCantor/Integer/AffineAddresses.lean SHA256=2A631027A55D5A05F5C8429DF85E28BF693A51FA563931CD38ABF374741DF241
+LambdaCantor/Integer/AffineAddresses.lean:33:23: warning: This simp argument is unused:
+  firstValue
+
+Hint: Omit it from the simp argument list.
+  simp only [̵f̵i̵r̵s̵t̵V̵a̵l̵u̵e̵,̵s̵e̵c̵o̵n̵d̵V̵a̵l̵u̵e̵,̵B̵o̵o̵l̵.̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵i̵f̵_̵f̵a̵l̵s̵e̵,̵i̵f̵_̵t̵r̵u̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵m̵u̵l̵_̵z̵e̵r̵o̵,̵m̵u̵l̵_̵o̵n̵e̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲s̲e̲c̲o̲n̲d̲V̲a̲l̲u̲e̲,̲ ̲B̲o̲o̲l̲.̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲,̲ ̲i̲f̲_̲f̲a̲l̲s̲e̲,̲ ̲i̲f̲_̲t̲r̲u̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/AffineAddresses.lean:33:34: warning: This simp argument is unused:
+  secondValue
+
+Hint: Omit it from the simp argument list.
+  simp only [̵f̵i̵r̵s̵t̵V̵a̵l̵u̵e̵,̵s̵e̵c̵o̵n̵d̵V̵a̵l̵u̵e̵,̵B̵o̵o̵l̵.̵f̵a̵l̵s̵e̵_̵e̵q̵_̵t̵r̵u̵e̵,̵i̵f̵_̵f̵a̵l̵s̵e̵,̵i̵f̵_̵t̵r̵u̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵m̵u̵l̵_̵z̵e̵r̵o̵,̵m̵u̵l̵_̵o̵n̵e̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲f̲i̲r̲s̲t̲V̲a̲l̲u̲e̲,̲ ̲B̲o̲o̲l̲.̲f̲a̲l̲s̲e̲_̲e̲q̲_̲t̲r̲u̲e̲,̲ ̲i̲f̲_̲f̲a̲l̲s̲e̲,̲ ̲i̲f̲_̲t̲r̲u̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲z̲e̲r̲o̲_̲a̲d̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=39.6672655 END_UTC=2026-10-24T18:15:05.4462971Z
+EXIT=0

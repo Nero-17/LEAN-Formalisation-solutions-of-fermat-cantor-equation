@@ -1,0 +1,21 @@
+UTC=2026-10-21T09:03:30.4092373Z MODULE=LambdaCantor/Classical/GeneralCover.lean SHA256=D70308EDA3D6BA0090811EE35458EEFE070427067CDA5638CC2D2DAAA2E71090
+LambdaCantor/Classical/GeneralCover.lean:115:29: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Classical/GeneralCover.lean:119:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Classical/GeneralCover.lean:122:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/Classical/GeneralCover.lean:168:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=112.8598321 END_UTC=2026-10-21T09:05:23.2786938Z
+EXIT=0

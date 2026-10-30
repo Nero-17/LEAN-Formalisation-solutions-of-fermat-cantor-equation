@@ -1,0 +1,12 @@
+UTC=2026-10-21T10:44:16.8497914Z MODULE=LambdaCantor/AE/ExponentWindow.lean SHA256=C367CF843C387B1F44F9158D98673EAFEB7BEDEC984F4E5274913559B81E37A1
+LambdaCantor/AE/ExponentWindow.lean:39:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/ExponentWindow.lean:55:75: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/ExponentWindow.lean:55:75: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=43.5227808 END_UTC=2026-10-21T10:45:00.3772686Z
+EXIT=0

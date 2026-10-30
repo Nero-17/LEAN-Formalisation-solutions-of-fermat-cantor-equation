@@ -1,0 +1,9 @@
+UTC=2026-10-28T22:29:50.1439670Z MODULE=LambdaCantor/RationalPowers/CompactLow/FullBlock01.lean SHA256=BC3B9ED11254A7410EA377984ED5A02B6E4B4750054CCA6EEBA6391E58C5DA91
+'LambdaCantor.RationalPowers.CompactLow.fullBlock01_original_checked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.RationalPowers.exceptionalCertificateEntries_accepted._native.native_decide.ax_1_1,
+ LambdaCantor.RationalPowers.CompactLow.data_checked._native.native_decide.ax_1_1,
+ LambdaCantor.RationalPowers.CompactLow.fullBlock01_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=49.0822653 END_UTC=2026-10-28T22:30:39.2290468Z
+EXIT=0

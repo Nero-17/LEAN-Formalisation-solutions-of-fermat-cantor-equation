@@ -1,0 +1,12 @@
+UTC=2026-10-21T10:25:00.8337515Z MODULE=LambdaCantor/First/RationalNormalization.lean SHA256=C44B16A885A47DE39488B97889AD4A74DD86F478E9663E48BD183D5252A4E780
+LambdaCantor/First/RationalNormalization.lean:21:49: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [zero_add, pow_zero, pow_one, Nat.choose_zero_right,
+  ̵  ̵ ̵ ̵Nat.choose_one_right, Nat.cast_one,
+  ̲  ̲ ̲ ̲one_mul,̵ ̵a̵d̵d̵_̵z̵e̵r̵o̵] at hexpansion
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=18.4051091 END_UTC=2026-10-21T10:25:19.2411565Z
+EXIT=0

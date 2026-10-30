@@ -1,0 +1,16 @@
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table000
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table001
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table002
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table003
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table004
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table005
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table006
+import LambdaCantor.RationalPowers.LargeExponentRawFull14Context014Table007
+
+namespace LambdaCantor.RationalPowers
+
+def largeExponentRawFull14Context014Sources : Array RawPhase.Geometry := (((((((largeExponentRawFull14Context014Table000Sources ++ largeExponentRawFull14Context014Table001Sources) ++ largeExponentRawFull14Context014Table002Sources) ++ largeExponentRawFull14Context014Table003Sources) ++ largeExponentRawFull14Context014Table004Sources) ++ largeExponentRawFull14Context014Table005Sources) ++ largeExponentRawFull14Context014Table006Sources) ++ largeExponentRawFull14Context014Table007Sources)
+
+def largeExponentRawFull14Context014Caches : Array RawPhase.Cache := (((((((largeExponentRawFull14Context014Table000Caches ++ largeExponentRawFull14Context014Table001Caches) ++ largeExponentRawFull14Context014Table002Caches) ++ largeExponentRawFull14Context014Table003Caches) ++ largeExponentRawFull14Context014Table004Caches) ++ largeExponentRawFull14Context014Table005Caches) ++ largeExponentRawFull14Context014Table006Caches) ++ largeExponentRawFull14Context014Table007Caches)
+
+end LambdaCantor.RationalPowers

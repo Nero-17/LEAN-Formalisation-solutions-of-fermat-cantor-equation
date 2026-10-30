@@ -1,0 +1,15 @@
+UTC=2026-10-24T17:18:18.6130810Z MODULE=LambdaCantor/RationalPowers/FixedLogCorners.lean SHA256=7A651EEA2DD128A63EA467CA8A239A4C5DF63B37752D60D96C7BD98ECEFACBFA
+LambdaCantor/RationalPowers/FixedLogCorners.lean:62:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/FixedLogCorners.lean:62:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RationalPowers/FixedLogCorners.lean:98:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/FixedLogCorners.lean:98:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=25.1652673 END_UTC=2026-10-24T17:18:43.8071649Z
+EXIT=0

@@ -1,0 +1,12 @@
+UTC=2026-10-27T16:50:21.6093491Z MODULE=LambdaCantor/AE/ResidualRegularity.lean SHA256=B612FFFAC1B253E0A2B860AD0C2E6020BF44135D3A54DCAD2C7FE75F69D54089
+LambdaCantor/AE/ResidualRegularity.lean:34:21: warning: 'funext parameter' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/ResidualRegularity.lean:34:39: warning: 'simp only [Pi.add_apply, Pi.mul_apply]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/ResidualRegularity.lean:34:39: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=24.8335319 END_UTC=2026-10-27T16:50:46.4454677Z
+EXIT=0

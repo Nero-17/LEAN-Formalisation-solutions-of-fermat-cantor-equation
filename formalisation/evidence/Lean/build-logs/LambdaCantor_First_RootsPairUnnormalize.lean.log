@@ -1,0 +1,9 @@
+UTC=2026-10-26T08:45:07.0954533Z MODULE=LambdaCantor/First/RootsPairUnnormalize.lean SHA256=F292008BD64F2687A5FF7FE5EFAD3DB931736503DA0E677387DDDE67C3E97B2C
+LambdaCantor/First/RootsPairUnnormalize.lean:20:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RootsPairUnnormalize.lean:34:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=21.7980481 END_UTC=2026-10-26T08:45:28.8952055Z
+EXIT=0

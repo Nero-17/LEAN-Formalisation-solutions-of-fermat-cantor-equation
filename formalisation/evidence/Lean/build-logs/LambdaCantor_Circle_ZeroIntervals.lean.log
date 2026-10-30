@@ -1,0 +1,8 @@
+UTC=2026-10-24T16:33:55.1764659Z MODULE=LambdaCantor/Circle/ZeroIntervals.lean SHA256=4A62860030AC2611D0F9F7543287EDEF5A4C8E74293F829D9FC5845119230009
+LambdaCantor/Circle/ZeroIntervals.lean:21:5: warning: Variable name `y_nonnegative` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=34.5082691 END_UTC=2026-10-24T16:34:29.7051209Z
+EXIT=0

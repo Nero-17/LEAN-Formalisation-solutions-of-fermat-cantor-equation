@@ -1,0 +1,9 @@
+UTC=2026-10-27T16:55:04.5578249Z MODULE=LambdaCantor/RationalPowers/CoarseCheckedParameters.lean SHA256=CC2B4F249178DA3DFEEEAA091B915CEB07B492041538931C4957EAFF3A18A3DA
+LambdaCantor/RationalPowers/CoarseCheckedParameters.lean:50:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/CoarseCheckedParameters.lean:50:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=28.4151842 END_UTC=2026-10-27T16:55:32.9885921Z
+EXIT=0

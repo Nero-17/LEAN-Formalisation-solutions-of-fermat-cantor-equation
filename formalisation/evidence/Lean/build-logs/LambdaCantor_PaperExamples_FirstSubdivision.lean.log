@@ -1,0 +1,6 @@
+UTC=2026-10-24T16:58:51.1766998Z MODULE=LambdaCantor/PaperExamples/FirstSubdivision.lean SHA256=51CF7BD99104D757D02BC6F2159348C597E52367A3F6877A783B5C2FA027C076
+'LambdaCantor.PaperExamples.subdivisionResidual_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.PaperExamples.first_subdivision_corner_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Classical.source_first_digits_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+ELAPSED_SECONDS=27.0976795 END_UTC=2026-10-24T16:59:18.2999038Z
+EXIT=0

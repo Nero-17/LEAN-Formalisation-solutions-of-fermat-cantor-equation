@@ -1,0 +1,17 @@
+UTC=2026-10-24T18:23:54.1832031Z MODULE=LambdaCantor/Last/AnalyticIsolatedOrbit.lean SHA256=8ABD3A363EC39ED74C54074E972029747E6296E36D0D631F79BC16EA30CC9B9E
+LambdaCantor/Last/AnalyticIsolatedOrbit.lean:130:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+LambdaCantor/Last/AnalyticIsolatedOrbit.lean:197:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ELAPSED_SECONDS=48.3342692 END_UTC=2026-10-24T18:24:42.5194303Z
+EXIT=0

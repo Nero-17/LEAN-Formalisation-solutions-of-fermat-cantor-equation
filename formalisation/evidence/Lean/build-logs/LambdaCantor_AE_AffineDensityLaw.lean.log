@@ -1,0 +1,6 @@
+UTC=2026-10-28T01:46:32.0257541Z MODULE=LambdaCantor/AE/AffineDensityLaw.lean SHA256=723ACC7092E40D43FD6D4279647F888F076E7BC32676B63B233E22D608EDD6F4
+LambdaCantor/AE/AffineDensityLaw.lean:65:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=25.8939091 END_UTC=2026-10-28T01:46:57.9211427Z
+EXIT=0

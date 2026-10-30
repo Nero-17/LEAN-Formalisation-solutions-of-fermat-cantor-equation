@@ -1,0 +1,18 @@
+UTC=2026-10-27T16:01:59.7453607Z MODULE=LambdaCantor/Last/RationalLastActualIsolationFermat.lean SHA256=74A3CE1871724C1967B9ACF4CDE09EF02874DE010C720E4016D4114AA9D45408
+LambdaCantor/Last/RationalLastActualIsolationFermat.lean:45:8: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+LambdaCantor/Last/RationalLastActualIsolationFermat.lean:54:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/RationalLastActualIsolationFermat.lean:54:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/RationalLastActualIsolationFermat.lean:69:6: warning: 'change IsAlgebraic ℚ (scalarWordMap ratio firstWord tail.1)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/RationalLastActualIsolationFermat.lean:73:6: warning: 'change IsAlgebraic ℚ (scalarWordMap ratio secondWord tail.2)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=55.0754964 END_UTC=2026-10-27T16:02:54.8235474Z
+EXIT=0

@@ -1,0 +1,9 @@
+UTC=2026-10-27T20:15:26.4693552Z MODULE=LambdaCantor/AE/CenteredSmallBallIntervals.lean SHA256=20C0DFEE5B32C4EA3E9B9FA8932B9AEC030EFF355CF8B86277910810FF9DEE4F
+LambdaCantor/AE/CenteredSmallBallIntervals.lean:33:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/CenteredSmallBallIntervals.lean:33:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=30.6183679 END_UTC=2026-10-27T20:15:57.0904347Z
+EXIT=0

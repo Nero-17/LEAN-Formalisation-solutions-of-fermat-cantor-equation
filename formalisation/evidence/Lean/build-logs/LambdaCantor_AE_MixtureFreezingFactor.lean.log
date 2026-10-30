@@ -1,0 +1,16 @@
+UTC=2026-10-27T22:40:09.4075038Z MODULE=LambdaCantor/AE/MixtureFreezingFactor.lean SHA256=1115A049B413607EF1A86478A462957B630AC0FD572E9EAA1808C4B4A0F290C5
+LambdaCantor/AE/MixtureFreezingFactor.lean:12:12: warning: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  simp [̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵u̵n̵,̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵p̵r̵o̵d̵]̵[̲F̲i̲n̲t̲y̲p̲e̲.̲c̲a̲r̲d̲_̲p̲r̲o̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/MixtureFreezingFactor.lean:40:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/MixtureFreezingFactor.lean:40:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=17.9067874 END_UTC=2026-10-27T22:40:27.3157227Z
+EXIT=0

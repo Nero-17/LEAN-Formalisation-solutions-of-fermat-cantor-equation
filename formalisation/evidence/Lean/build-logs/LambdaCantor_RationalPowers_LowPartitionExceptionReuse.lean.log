@@ -1,0 +1,19 @@
+UTC=2026-10-28T07:41:36.7229072Z MODULE=LambdaCantor/RationalPowers/LowPartitionExceptionReuse.lean SHA256=C46E9A78A309CEC79C4EA6091D16141EA08AFC0E28C74F872A6BDED1298E5757
+'LambdaCantor.RationalPowers.LowPartitionExceptionReuse.successfulLookup_payloadAccepted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ exceptionalCertificateEntries_accepted._native.native_decide.ax_1_1]
+'LambdaCantor.RationalPowers.LowPartitionExceptionReuse.reusedExceptionalIdentifierAccepted_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ exceptionalCertificateEntries_accepted._native.native_decide.ax_1_1]
+'LambdaCantor.RationalPowers.LowPartitionExceptionReuse.reusedActualLowPartitionPredicate_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ exceptionalCertificateEntries_accepted._native.native_decide.ax_1_1]
+'LambdaCantor.RationalPowers.LowPartitionExceptionReuse.blockCheck_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ exceptionalCertificateEntries_accepted._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=101.1746028 END_UTC=2026-10-28T07:43:17.8992710Z
+EXIT=0

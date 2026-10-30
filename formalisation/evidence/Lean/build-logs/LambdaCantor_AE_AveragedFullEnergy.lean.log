@@ -1,0 +1,5 @@
+UTC=2026-10-27T19:32:36.3152419Z MODULE=LambdaCantor/AE/AveragedFullEnergy.lean SHA256=F988F8D9A4A12BBF7292507F50341E8FCEE773ADF72D09C2B430622DDE593CF7
+LambdaCantor/AE/AveragedFullEnergy.lean:55:20: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/AE/AveragedFullEnergy.lean:100:8: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+ELAPSED_SECONDS=41.3117128 END_UTC=2026-10-27T19:33:17.6291326Z
+EXIT=0

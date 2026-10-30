@@ -1,0 +1,17 @@
+UTC=2026-10-27T07:26:52.8030560Z MODULE=LambdaCantor/RationalPowers/LargeExponentRawLogArithmeticBridge.lean SHA256=60405B3A433F314057AA978AA6A40FB4B6D7D5B6C865C0AC79B32FD46B69D45A
+LambdaCantor/RationalPowers/LargeExponentRawLogArithmeticBridge.lean:35:15: warning: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.f̵st̵,̵P̵r̵o̵d̵.̵s̵nd] at power_identity sum_identity
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentRawLogArithmeticBridge.lean:35:24: warning: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.fst,̵P̵r̵o̵d̵.̵s̵n̵d̵] at power_identity sum_identity
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=39.5705508 END_UTC=2026-10-27T07:27:32.3771971Z
+EXIT=0

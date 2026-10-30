@@ -1,0 +1,10 @@
+UTC=2026-10-27T18:09:07.8562001Z MODULE=LambdaCantor/AE/CenteredSmallBallMeasure.lean SHA256=C367A31EFB052D5670F071AC08FB4214C7149C28968616DC645DD2E3DE17A529
+LambdaCantor/AE/CenteredSmallBallMeasure.lean:13:32: warning: This simp argument is unused:
+  PMF.toMeasure_apply_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [Last.fairBit_singleton, P̵M̵F̵.̵t̵o̵M̵e̵a̵s̵u̵r̵e̵_̵a̵p̵p̵l̵y̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵ ̵PMF.uniformOfFintype_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=30.8060141 END_UTC=2026-10-27T18:09:38.6644862Z
+EXIT=0

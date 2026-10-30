@@ -1,0 +1,6 @@
+UTC=2026-10-27T04:26:28.3188743Z MODULE=LambdaCantor/Last/RationalLastNormalizationGeometry.lean SHA256=D04B738CD87EB409E972B5390D10F18FAE139FD23CF8D62CD5E3279F17E2F19B
+LambdaCantor/Last/RationalLastNormalizationGeometry.lean:102:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=137.6351808 END_UTC=2026-10-27T04:28:45.9641701Z
+EXIT=0

@@ -1,0 +1,6 @@
+UTC=2026-10-21T09:16:30.0793184Z MODULE=LambdaCantor/First/RootsIncidence.lean SHA256=C0733926C60030EFA990EDB432ADE6398E4D2AFFA7F241277CEA6651E4F48630
+LambdaCantor/First/RootsIncidence.lean:44:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ELAPSED_SECONDS=69.5504608 END_UTC=2026-10-21T09:17:39.6354010Z
+EXIT=0

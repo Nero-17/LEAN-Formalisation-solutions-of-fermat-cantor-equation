@@ -1,0 +1,7 @@
+UTC=2026-10-27T03:45:57.0570572Z MODULE=LambdaCantor/Last/TwoBandSeparableClosedAudit.lean SHA256=62836947EA164E7AF1D4A9D4642ABCF8B344810CDDA4379BB1CEAEEC9EDF0ADA
+'LambdaCantor.Last.closed_interval_c1_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.two_band_separable_c1_closed_interval_criterion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED_SECONDS=285.39577 END_UTC=2026-10-27T03:50:42.4552777Z
+EXIT=0

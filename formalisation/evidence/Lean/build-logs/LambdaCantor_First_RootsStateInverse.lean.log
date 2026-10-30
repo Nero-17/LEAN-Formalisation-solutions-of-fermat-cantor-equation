@@ -1,0 +1,9 @@
+UTC=2026-10-24T17:16:32.0480935Z MODULE=LambdaCantor/First/RootsStateInverse.lean SHA256=CEC5D1794BBD4C08C860F48832FDCED3D81EB307DB83D24027BE9DFA5CD230BE
+LambdaCantor/First/RootsStateInverse.lean:30:28: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/First/RootsStateInverse.lean:30:28: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=28.4426162 END_UTC=2026-10-24T17:17:00.4947733Z
+EXIT=0

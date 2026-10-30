@@ -1,0 +1,6 @@
+UTC=2026-10-27T22:44:12.5996215Z MODULE=LambdaCantor/AE/KernelDensityBridge.lean SHA256=A1627D2C23E12A2684DCA2D39840413ADFE614962035B8504E4994E2EBF3636E
+LambdaCantor/AE/KernelDensityBridge.lean:29:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=19.7637132 END_UTC=2026-10-27T22:44:32.3660881Z
+EXIT=0

@@ -1,0 +1,8 @@
+UTC=2026-10-27T16:29:24.9223333Z MODULE=LambdaCantor/Integer/NearAxisTangent.lean SHA256=7463BC1B57E3A103AF7FDC5B53DD945EF5904431793873FC080288750A1D91A0
+LambdaCantor/Integer/NearAxisTangent.lean:30:25: warning: Variable name `positiveQ` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=28.2192807 END_UTC=2026-10-27T16:29:53.1584176Z
+EXIT=0

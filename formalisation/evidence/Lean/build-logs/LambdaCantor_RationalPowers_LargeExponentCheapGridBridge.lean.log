@@ -1,0 +1,5 @@
+UTC=2026-10-27T05:01:13.2189814Z MODULE=LambdaCantor/RationalPowers/LargeExponentCheapGridBridge.lean SHA256=B5A06B3E9A25A72846332DA12DACC62C76A4F5CD66B6E7B0B1F4927A61E8BC45
+'LambdaCantor.RationalPowers.largeExponent_cheap_grid_cover_eq' depends on axioms: [propext]
+'LambdaCantor.RationalPowers.largeExponent_cheap_grid_accepted' depends on axioms: [propext]
+ELAPSED_SECONDS=57.3422912 END_UTC=2026-10-27T05:02:10.5654323Z
+EXIT=0

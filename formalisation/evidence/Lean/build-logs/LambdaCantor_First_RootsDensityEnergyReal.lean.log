@@ -1,0 +1,4 @@
+UTC=2026-10-24T17:58:05.1961864Z MODULE=LambdaCantor/First/RootsDensityEnergyReal.lean SHA256=7F12AD1200809756A7C9CCC04DAA1C02F5121AA1EDD22E26D598C7018AFBA633
+LambdaCantor/First/RootsDensityEnergyReal.lean:20:30: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+ELAPSED_SECONDS=37.8144494 END_UTC=2026-10-24T17:58:43.0147974Z
+EXIT=0

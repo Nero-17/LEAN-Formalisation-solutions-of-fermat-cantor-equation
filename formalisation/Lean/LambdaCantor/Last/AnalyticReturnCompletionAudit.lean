@@ -1,0 +1,9 @@
+import LambdaCantor.Last.PerfectAffineReturns
+import LambdaCantor.Last.PerfectTangent
+import LambdaCantor.Last.ReturnParameterPersistence
+
+#print axioms LambdaCantor.Last.linearWordReturn_mem_Ioo_of_perfect
+#print axioms LambdaCantor.Last.perfect_affine_fibre_strict_returns
+#print axioms LambdaCantor.Last.affine_fibre_strict_returns_of_uncountable
+#print axioms LambdaCantor.Last.perfect_fibre_positive_dimension_of_strict_returns
+#print axioms LambdaCantor.Last.compact_strict_returns_persist_parameter

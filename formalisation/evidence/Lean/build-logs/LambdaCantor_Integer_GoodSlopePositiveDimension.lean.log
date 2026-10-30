@@ -1,0 +1,40 @@
+UTC=2026-10-26T09:33:05.8661772Z MODULE=LambdaCantor/Integer/GoodSlopePositiveDimension.lean SHA256=304F32225A328031E860CB0061DC2F8955D7400072DF14D11AEEBC16F2A6BD53
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:25:75: warning: This simp argument is unused:
+  addressShift
+
+Hint: Omit it from the simp argument list.
+  simp only [̵p̵a̵i̵r̵e̵d̵P̵r̵e̵f̵i̵x̵,̵L̵i̵s̵t̵.̵o̵f̵F̵n̵_̵s̵u̵c̵c̵,̵L̵i̵s̵t̵.̵o̵f̵F̵n̵_̵z̵e̵r̵o̵,̵F̵i̵n̵.̵v̵a̵l̵_̵z̵e̵r̵o̵,̵a̵d̵d̵r̵e̵s̵s̵S̵h̵i̵f̵t̵]̵[̲p̲a̲i̲r̲e̲d̲P̲r̲e̲f̲i̲x̲,̲ ̲L̲i̲s̲t̲.̲o̲f̲F̲n̲_̲s̲u̲c̲c̲,̲ ̲L̲i̲s̲t̲.̲o̲f̲F̲n̲_̲z̲e̲r̲o̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲F̲i̲n̲.̲v̲a̲l̲_̲z̲e̲r̲o̲]̲ at first_step second_step
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:57:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:99:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:192:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:192:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:196:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:284:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/GoodSlopePositiveDimension.lean:284:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=78.3554246 END_UTC=2026-10-26T09:34:24.2479687Z
+EXIT=0

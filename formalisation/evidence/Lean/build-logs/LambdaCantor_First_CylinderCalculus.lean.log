@@ -1,0 +1,15 @@
+UTC=2026-10-21T09:22:19.9003654Z MODULE=LambdaCantor/First/CylinderCalculus.lean SHA256=BBF02136ECE637B12608651D32EF9D34346AAEC9D28BB8EC94237EFC174802F4
+LambdaCantor/First/CylinderCalculus.lean:26:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/CylinderCalculus.lean:26:128: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/CylinderCalculus.lean:38:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/CylinderCalculus.lean:38:127: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=32.446256 END_UTC=2026-10-21T09:22:52.3497469Z
+EXIT=0

@@ -1,0 +1,16 @@
+UTC=2026-10-26T09:57:53.0740684Z MODULE=LambdaCantor/First/RootsKernelL2Bound.lean SHA256=3C403989B4E369CEC050AB908442F095C2FCAECA67E23E430F66B705EBEE41C4
+LambdaCantor/First/RootsKernelL2Bound.lean:56:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/First/RootsKernelL2Bound.lean:56:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/First/RootsKernelL2Bound.lean:128:23: warning: This simp argument is unused:
+  one_div
+
+Hint: Omit it from the simp argument list.
+  simp only [̵o̵n̵e̵_̵d̵i̵v̵,̵ ̵d̵i̵v̵_̵e̵q̵_̵m̵u̵l̵_̵i̵n̵v̵,̵[̲d̲i̲v̲_̲e̲q̲_̲m̲u̲l̲_̲i̲n̲v̲,̲ one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=68.9755292 END_UTC=2026-10-26T09:59:02.0555383Z
+EXIT=0

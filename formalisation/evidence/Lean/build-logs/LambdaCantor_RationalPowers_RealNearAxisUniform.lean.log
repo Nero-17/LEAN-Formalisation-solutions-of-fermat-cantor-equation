@@ -1,0 +1,9 @@
+UTC=2026-10-27T15:11:30.4319642Z MODULE=LambdaCantor/RationalPowers/RealNearAxisUniform.lean SHA256=0B184DDC8E6670D51640B66BDB5604C00BECA543321896691A32A235D339A540
+LambdaCantor/RationalPowers/RealNearAxisUniform.lean:53:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisUniform.lean:53:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=25.1912795 END_UTC=2026-10-27T15:11:55.6388691Z
+EXIT=0

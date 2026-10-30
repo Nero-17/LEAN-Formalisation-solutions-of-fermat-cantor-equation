@@ -1,0 +1,14 @@
+UTC=2026-10-27T16:06:10.6084130Z MODULE=LambdaCantor/RationalPowers/ExceptionalFiftyThreeHalvesChecked.lean SHA256=FF4EBE72350A3C0B0F7B92F6E3BDE1423433A2E8748C8AE65E618E501B8CD68A
+'LambdaCantor.RationalPowers.Exceptional.FiftyThreeHalves.all_outer_levels_two_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ block000_checked._native.native_decide.ax_1_1,
+ block001_checked._native.native_decide.ax_1_1,
+ block002_checked._native.native_decide.ax_1_1,
+ block003_checked._native.native_decide.ax_1_1,
+ block004_checked._native.native_decide.ax_1_1,
+ block005_checked._native.native_decide.ax_1_1,
+ ranges_cover._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=29.6048602 END_UTC=2026-10-27T16:06:40.2352978Z
+EXIT=0

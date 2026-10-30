@@ -1,0 +1,15 @@
+UTC=2026-10-27T04:38:40.7998005Z MODULE=LambdaCantor/Last/RationalLastNormalizationFermat.lean SHA256=FFF10A9C524605E64D8DE86EE8C08B06DD17DBCB45EED2B067D926F6F6D27E72
+LambdaCantor/Last/RationalLastNormalizationFermat.lean:80:15: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+LambdaCantor/Last/RationalLastNormalizationFermat.lean:80:47: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+LambdaCantor/Last/RationalLastNormalizationFermat.lean:186:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/RationalLastNormalizationFermat.lean:186:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=45.4873894 END_UTC=2026-10-27T04:39:26.2902063Z
+EXIT=0

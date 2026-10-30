@@ -1,0 +1,109 @@
+import LambdaCantor.Certificates.IntegerTailCachedCells000
+import LambdaCantor.Certificates.IntegerTailCachedCells001
+import LambdaCantor.Certificates.IntegerTailCachedCells002
+import LambdaCantor.Certificates.IntegerTailCachedCells003
+import LambdaCantor.Certificates.IntegerTailCachedCells004
+import LambdaCantor.Certificates.IntegerTailCachedCells005
+import LambdaCantor.Certificates.IntegerTailCachedCells006
+import LambdaCantor.Certificates.IntegerTailCachedCells007
+import LambdaCantor.Certificates.IntegerTailCachedCells008
+import LambdaCantor.Certificates.IntegerTailCachedCells009
+import LambdaCantor.Certificates.IntegerTailCachedCells010
+import LambdaCantor.Certificates.IntegerTailCachedCells011
+import LambdaCantor.Certificates.IntegerTailCachedCells012
+import LambdaCantor.Certificates.IntegerTailCachedCells013
+import LambdaCantor.Certificates.IntegerTailCachedCells014
+import LambdaCantor.Certificates.IntegerTailCachedCells015
+import LambdaCantor.Certificates.IntegerTailCachedCells016
+import LambdaCantor.Certificates.IntegerTailCachedCells017
+import LambdaCantor.Certificates.IntegerTailCachedCells018
+import LambdaCantor.Certificates.IntegerTailCachedCells019
+import LambdaCantor.Certificates.IntegerTailCachedCells020
+import LambdaCantor.Certificates.IntegerTailCachedCells021
+import LambdaCantor.Certificates.IntegerTailCachedCells022
+import LambdaCantor.Certificates.IntegerTailCachedCells023
+import LambdaCantor.Certificates.IntegerTailCachedCells024
+import LambdaCantor.Certificates.IntegerTailCachedCells025
+import LambdaCantor.Certificates.IntegerTailCachedCells026
+import LambdaCantor.Certificates.IntegerTailCachedCells027
+import LambdaCantor.Certificates.IntegerTailCachedCells028
+import LambdaCantor.Certificates.IntegerTailCachedCells029
+import LambdaCantor.Certificates.IntegerTailCachedCells030
+import LambdaCantor.Certificates.IntegerTailCachedCells031
+import LambdaCantor.Certificates.IntegerTailCachedCells032
+import LambdaCantor.Certificates.IntegerTailCachedCells033
+import LambdaCantor.Certificates.IntegerTailCachedCells034
+import LambdaCantor.Certificates.IntegerTailCachedCells035
+import LambdaCantor.Certificates.IntegerTailCachedCells036
+import LambdaCantor.Certificates.IntegerTailCachedCells037
+import LambdaCantor.Certificates.IntegerTailCachedCells038
+import LambdaCantor.Certificates.IntegerTailCachedCells039
+import LambdaCantor.Certificates.IntegerTailCachedCells040
+import LambdaCantor.Certificates.IntegerTailCachedCells041
+import LambdaCantor.Certificates.IntegerTailCachedCells042
+import LambdaCantor.Certificates.IntegerTailCachedCells043
+import LambdaCantor.Certificates.IntegerTailCachedCells044
+import LambdaCantor.Certificates.IntegerTailCachedCells045
+import Lean.Elab.Tactic.Decide
+
+namespace LambdaCantor.Integer
+
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+def integerTailCachedBlocks : List CertifiedTailCachedBlock := [
+  integerTailCachedCells000Certified,
+  integerTailCachedCells001Certified,
+  integerTailCachedCells002Certified,
+  integerTailCachedCells003Certified,
+  integerTailCachedCells004Certified,
+  integerTailCachedCells005Certified,
+  integerTailCachedCells006Certified,
+  integerTailCachedCells007Certified,
+  integerTailCachedCells008Certified,
+  integerTailCachedCells009Certified,
+  integerTailCachedCells010Certified,
+  integerTailCachedCells011Certified,
+  integerTailCachedCells012Certified,
+  integerTailCachedCells013Certified,
+  integerTailCachedCells014Certified,
+  integerTailCachedCells015Certified,
+  integerTailCachedCells016Certified,
+  integerTailCachedCells017Certified,
+  integerTailCachedCells018Certified,
+  integerTailCachedCells019Certified,
+  integerTailCachedCells020Certified,
+  integerTailCachedCells021Certified,
+  integerTailCachedCells022Certified,
+  integerTailCachedCells023Certified,
+  integerTailCachedCells024Certified,
+  integerTailCachedCells025Certified,
+  integerTailCachedCells026Certified,
+  integerTailCachedCells027Certified,
+  integerTailCachedCells028Certified,
+  integerTailCachedCells029Certified,
+  integerTailCachedCells030Certified,
+  integerTailCachedCells031Certified,
+  integerTailCachedCells032Certified,
+  integerTailCachedCells033Certified,
+  integerTailCachedCells034Certified,
+  integerTailCachedCells035Certified,
+  integerTailCachedCells036Certified,
+  integerTailCachedCells037Certified,
+  integerTailCachedCells038Certified,
+  integerTailCachedCells039Certified,
+  integerTailCachedCells040Certified,
+  integerTailCachedCells041Certified,
+  integerTailCachedCells042Certified,
+  integerTailCachedCells043Certified,
+  integerTailCachedCells044Certified,
+  integerTailCachedCells045Certified]
+
+theorem integerTailCachedBlocks_cover : tailCachedBlocksCoverCheck integerTailCachedBlocks = true := by native_decide
+
+theorem integer_tail_coverage_certified : TailCoverageCertified :=
+  tailCachedBlocksCoverCheck_sound integerTailCachedBlocks integerTailCachedBlocks_cover
+
+#print axioms integer_tail_coverage_certified
+
+end LambdaCantor.Integer

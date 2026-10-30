@@ -1,0 +1,29 @@
+UTC=2026-10-24T17:27:43.9615670Z MODULE=LambdaCantor/Integer/FermatPolynomial.lean SHA256=FC4C57D98D78426DE22B78BC2647CC85F344EF9783183B57DC3713D5C69D4D10
+LambdaCantor/Integer/FermatPolynomial.lean:30:8: warning: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+LambdaCantor/Integer/FermatPolynomial.lean:37:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Integer/FermatPolynomial.lean:37:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/FermatPolynomial.lean:70:39: warning: This simp argument is unused:
+  Pi.pow_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵P̵i̵.̵p̵o̵w̵_̵a̵p̵p̵l̵y̵,̵ ̵i̵d̵_̵e̵q̵,̵[̲i̲d̲_̲e̲q̲,̲ mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/FermatPolynomial.lean:71:35: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Integer/FermatPolynomial.lean:70:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/FermatPolynomial.lean:70:69: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/FermatPolynomial.lean:71:35: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=22.9873138 END_UTC=2026-10-24T17:28:06.9693418Z
+EXIT=0

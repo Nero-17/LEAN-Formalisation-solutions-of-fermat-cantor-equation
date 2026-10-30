@@ -1,0 +1,6 @@
+UTC=2026-10-24T17:37:02.6065389Z MODULE=LambdaCantor/First/RootsAffineDensity.lean SHA256=73AD3FB84181E050E5520DBF5AAE37F3953074CD3BDDBB3AB1B86CC2754052A6
+LambdaCantor/First/RootsAffineDensity.lean:63:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=23.3613856 END_UTC=2026-10-24T17:37:25.9702434Z
+EXIT=0

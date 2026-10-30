@@ -1,0 +1,18 @@
+UTC=2026-10-27T17:27:26.2350131Z MODULE=LambdaCantor/RationalPowers/ExceptionalFiftyThreeHalvesLowCertificate.lean SHA256=8A974D48E8F05C0BE0B225B9A167D3CF66E7A8964017558349DDB881552BAB5C
+'LambdaCantor.RationalPowers.Exceptional.FiftyThreeHalves.lowCertificate_checked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ block000_checked._native.native_decide.ax_1_1,
+ block001_checked._native.native_decide.ax_1_1,
+ block002_checked._native.native_decide.ax_1_1,
+ block003_checked._native.native_decide.ax_1_1,
+ block004_checked._native.native_decide.ax_1_1,
+ block005_checked._native.native_decide.ax_1_1,
+ inner_intervals_exact._native.native_decide.ax_1_1,
+ offsets_exact._native.native_decide.ax_1_1,
+ outer_intervals_exact._native.native_decide.ax_1_1,
+ ranges_cover._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1,
+ RemainingSources.sourceCatalogueCheck_verified._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=30.7367257 END_UTC=2026-10-27T17:27:56.9964673Z
+EXIT=0

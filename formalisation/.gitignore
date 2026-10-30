@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+Lean/.lake/
+Lean/lake-manifest.json
+Lean/build-logs/
+Lean/.publication-build.lock
+*.olean
+*.olean.*
+*.ilean
+*.ir
+*.c
+*.o
+*.obj
+*.dll
+*.so
+MANUSCRIPT_ACCEPTANCE.json
+manuscript-legacy-baselines-*.txt

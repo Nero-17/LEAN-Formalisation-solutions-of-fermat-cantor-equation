@@ -1,0 +1,8 @@
+UTC=2026-10-27T23:05:41.4233759Z MODULE=LambdaCantor/Certificates/IntegerExceptionalVerified9.lean SHA256=19A03478F978AB4FC07B12D9E5124C0E1E7FF2C6A1A03E273A62465368D039B3
+'LambdaCantor.Integer.Exceptional.N9.all_outer_levels_two_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ certificate_checked._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=38.600464 END_UTC=2026-10-27T23:06:20.0357217Z
+EXIT=0

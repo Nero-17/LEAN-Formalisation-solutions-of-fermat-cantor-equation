@@ -1,0 +1,6 @@
+UTC=2026-10-24T17:37:47.9677543Z MODULE=LambdaCantor/RationalPowers/PositiveQuotient.lean SHA256=26216C52CD204156457150E946D90A3E7F3E7663309B5F0FC2D83F0736A273ED
+LambdaCantor/RationalPowers/PositiveQuotient.lean:51:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=29.9091049 END_UTC=2026-10-24T17:38:17.9004404Z
+EXIT=0

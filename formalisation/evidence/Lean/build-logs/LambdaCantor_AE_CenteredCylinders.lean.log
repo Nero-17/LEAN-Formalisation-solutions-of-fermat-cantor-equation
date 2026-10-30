@@ -1,0 +1,25 @@
+UTC=2026-10-24T16:49:37.8206653Z MODULE=LambdaCantor/AE/CenteredCylinders.lean SHA256=C38F4B69139B9F249FB523059EA41C162DED2FD06CBEEB04046E0CB61127E007
+LambdaCantor/AE/CenteredCylinders.lean:15:18: warning: This simp argument is unused:
+  wordMap
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵w̵o̵r̵d̵M̵a̵p̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredCylinders.lean:26:26: warning: This simp argument is unused:
+  wordMap
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵w̵o̵r̵d̵M̵a̵p̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredCylinders.lean:52:74: warning: Variable name `hless` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/AE/CenteredCylinders.lean:104:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=24.4306035 END_UTC=2026-10-24T16:50:02.2533955Z
+EXIT=0

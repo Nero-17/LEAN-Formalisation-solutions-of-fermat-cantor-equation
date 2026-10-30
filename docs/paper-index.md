@@ -1,5 +1,10 @@
 # Paper-to-files index
 
+The [Lean formalisation index](../formalisation/THEOREMS.md) covers all 34
+numbered English environments at frozen Overleaf commit `429d53b`, with exact
+formal statements and compilation evidence. The computational index below
+describes the separately versioned Python companion.
+
 Current manuscript status, 24 October 2026. Numerical inputs and programs are
 unchanged from their documented releases. The current paper has no certificate
 appendix: its detailed rational-exponent construction and former Appendix A are

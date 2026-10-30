@@ -1,0 +1,15 @@
+UTC=2026-10-21T08:32:50.7400770Z MODULE=LambdaCantor/First/RpowTaylor.lean SHA256=265F69C5EFF05CA1474B8BC82BED8F6DE4039D2E115F1EECCA9508B51FE2E6A8
+LambdaCantor/First/RpowTaylor.lean:33:55: warning: This simp argument is unused:
+  one_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [taylorWithinEval_succ, taylor_within_zero_eval, iteratedDerivWithin_one,
+  ̵  ̵ ̵ ̵hwithin,
+  ̲  ̲ ̲ ̲sub_zero, Real.one_rpow, Nat.factorial_zero, Nat.cast_zero,
+  ̵  ̵ ̵ ̵zero_add, Nat.cast_one, one_mul,
+  ̲  ̲ ̲ ̲inv_one, pow_one, o̵n̵e̵_̵smul,̵
+  ̵ ̵ ̵ ̵ ̵s̵m̵u̵l̵_eq_mul, Real.norm_eq_abs] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=32.1919214 END_UTC=2026-10-21T08:33:22.9361025Z
+EXIT=0

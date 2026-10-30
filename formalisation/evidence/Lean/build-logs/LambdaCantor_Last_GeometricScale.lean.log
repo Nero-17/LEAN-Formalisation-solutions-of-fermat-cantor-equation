@@ -1,0 +1,6 @@
+UTC=2026-10-27T04:43:39.1624310Z MODULE=LambdaCantor/Last/GeometricScale.lean SHA256=DF2F8C3F6FCD3F8BE37E4126A01B871CDDD6E32553A93BE748B37B5DD91CE1D2
+LambdaCantor/Last/GeometricScale.lean:35:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=95.1368766 END_UTC=2026-10-27T04:45:14.3021067Z
+EXIT=0

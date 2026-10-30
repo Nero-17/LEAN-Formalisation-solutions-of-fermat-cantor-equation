@@ -1,0 +1,6 @@
+UTC=2026-10-24T15:58:15.8840113Z MODULE=LambdaCantor/First/Dimension.lean SHA256=7BF853B4EC7DAB646F963390C1AC3806486A7700F6BA567CFFB3DE1D0226692F
+LambdaCantor/First/Dimension.lean:364:67: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=24.3649355 END_UTC=2026-10-24T15:58:40.2574484Z
+EXIT=0

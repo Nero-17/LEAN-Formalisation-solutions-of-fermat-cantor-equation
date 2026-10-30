@@ -1,0 +1,16 @@
+UTC=2026-10-29T00:20:14.7147685Z MODULE=LambdaCantor/Integer/IntegerPositiveDimension.lean SHA256=7E39B15B73FE4FE70568A69F7F871CD9A15D70D13C9E302CD294B325060AC7A8
+'LambdaCantor.Integer.integer_positive_dimension_ge_301' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ External.rational_of_eventually_periodic_digits,
+ External.wiles_fermat_last_theorem,
+ packedLogTable00_checked._native.native_decide.ax_1_1,
+ packedLogTable01_checked._native.native_decide.ax_1_1,
+ packedLogTable02_checked._native.native_decide.ax_1_1,
+ packedLogTable03_checked._native.native_decide.ax_1_1,
+ packedLogTable04_checked._native.native_decide.ax_1_1,
+ packedLogTable05_checked._native.native_decide.ax_1_1,
+ packedLogTable06_checked._native.native_decide.ax_1_1,
+ packedLogTable07_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=40.0442669 END_UTC=2026-10-29T00:20:54.7620261Z
+EXIT=0

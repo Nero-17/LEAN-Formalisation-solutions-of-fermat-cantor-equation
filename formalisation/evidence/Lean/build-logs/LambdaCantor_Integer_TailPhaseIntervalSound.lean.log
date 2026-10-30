@@ -1,0 +1,15 @@
+UTC=2026-10-26T09:20:27.9719375Z MODULE=LambdaCantor/Integer/TailPhaseIntervalSound.lean SHA256=D6C27EA19E9CB1284319C5F5D02DAF38F552E37C7BF3F2184118625F81F09D24
+LambdaCantor/Integer/TailPhaseIntervalSound.lean:55:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/TailPhaseIntervalSound.lean:75:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/TailPhaseIntervalSound.lean:55:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Integer/TailPhaseIntervalSound.lean:75:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=93.9066042 END_UTC=2026-10-26T09:22:01.9357387Z
+EXIT=0

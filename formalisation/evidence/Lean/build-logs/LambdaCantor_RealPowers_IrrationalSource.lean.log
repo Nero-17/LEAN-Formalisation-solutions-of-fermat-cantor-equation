@@ -1,0 +1,9 @@
+UTC=2026-10-27T19:53:25.6210047Z MODULE=LambdaCantor/RealPowers/IrrationalSource.lean SHA256=A66AF2D6693ACA3946DE3F6E17BB8554D0FE4E51536122211A99CDBA167B8E71
+LambdaCantor/RealPowers/IrrationalSource.lean:117:12: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RealPowers/IrrationalSource.lean:117:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=54.683655 END_UTC=2026-10-27T19:54:20.3317747Z
+EXIT=0

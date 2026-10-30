@@ -1,0 +1,11 @@
+UTC=2026-10-29T00:26:41.8140965Z MODULE=LambdaCantor/RealPowers/AllRealCoverage.lean SHA256=74626FBD2D66E0068B2DFC70641B630A967E88CF06340CBDB78E785606BD4003
+LambdaCantor/RealPowers/AllRealCoverage.lean:65:58: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [rationalExceptionalPairs, List.mem_cons, L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵List.not_mem_nil, or_false,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Prod.mk.injEq] at member
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=40.3586503 END_UTC=2026-10-29T00:27:22.1764215Z
+EXIT=0

@@ -1,0 +1,12 @@
+UTC=2026-10-27T04:19:08.4502834Z MODULE=LambdaCantor/Last/RationalLastNormalizationScale.lean SHA256=747DDB33E7A52E36AC720D1667173A7901DD277F855029D0D4E5CF42F4421D86
+LambdaCantor/Last/RationalLastNormalizationScale.lean:55:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/RationalLastNormalizationScale.lean:46:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/RationalLastNormalizationScale.lean:55:12: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=142.9320982 END_UTC=2026-10-27T04:21:31.3861964Z
+EXIT=0

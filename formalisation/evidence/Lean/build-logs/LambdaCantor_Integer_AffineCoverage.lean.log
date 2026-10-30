@@ -1,0 +1,8 @@
+UTC=2026-10-21T09:31:29.2619365Z MODULE=LambdaCantor/Integer/AffineCoverage.lean SHA256=B5F09A75FE93DA54FC70A92B54188E123FE694ADDBC46A87464406EFDD321249
+LambdaCantor/Integer/AffineCoverage.lean:31:55: warning: Variable name `upper` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=18.4726376 END_UTC=2026-10-21T09:31:47.7362759Z
+EXIT=0

@@ -1,0 +1,6 @@
+UTC=2026-10-24T17:32:20.0968427Z MODULE=LambdaCantor/Integer/LogBounds.lean SHA256=BAFE000B14CA623F30B5521A885CF243B317A127C926EC0ED011BA54D6707789
+LambdaCantor/Integer/LogBounds.lean:35:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=23.9554099 END_UTC=2026-10-24T17:32:44.0733174Z
+EXIT=0

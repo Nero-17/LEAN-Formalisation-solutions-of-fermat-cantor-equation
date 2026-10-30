@@ -1,0 +1,15 @@
+UTC=2026-10-24T17:17:43.3384750Z MODULE=LambdaCantor/First/RootsDensity.lean SHA256=D5BD6C392F9E7B41E45C9779FBE41A084DE5D6E588AA3AB398F947F12E897304
+LambdaCantor/First/RootsDensity.lean:50:37: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/First/RootsDensity.lean:50:37: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/First/RootsDensity.lean:177:20: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/First/RootsDensity.lean:177:20: warning: 'rfl' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=35.0293121 END_UTC=2026-10-24T17:18:18.3692388Z
+EXIT=0

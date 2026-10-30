@@ -1,0 +1,238 @@
+The following criterion gives two intervals of derivative ratios for
+which every interior level has positive dimension.
+
+\begin{lemma}\label{lem:two-bands}
+Let \(0<\lambda<1/2\), and let \(f,g\) be increasing \(C^1\)
+functions on \([0,1]\) with positive derivatives.
+If all ratios \(g'(t)/f'(s)\), \(s,t\in[0,1]\), are greater than
+one and belong to a compact subinterval of either
+\begin{equation}\label{eq:two-bands}
+\left(\frac1\lambda-1-\lambda,\frac1{1-\lambda}\right)
+\quad\text{or}\quad
+\left(\frac1\lambda-1,\frac1{1-\lambda-\lambda^2}\right),
+\end{equation}
+then every strict interior level of \(f+g\) on \([0,1]^2\)
+meets \(C_\lambda^2\) in a set of positive Hausdorff dimension.
+\end{lemma}
+\begin{proof}
+Subtract the values at zero. Choose strict bounds
+\(1<L\leq g'(t)/f'(s)\leq U\) in one of the intervals
+\eqref{eq:two-bands}. The four child image hulls, ordered as
+\(00,10,01,11\), are
+\begin{gather*}
+[0,f(\lambda)+g(\lambda)],\quad
+[f(1-\lambda),f(1)+g(\lambda)],\\
+[g(1-\lambda),f(\lambda)+g(1)],\quad
+[f(1-\lambda)+g(1-\lambda),f(1)+g(1)].
+\end{gather*}
+Consecutive hulls overlap strictly: the outer overlaps follow from
+\(L>1/\lambda-2\), and the middle one from
+\(U<1/(1-2\lambda)\). A level in no two child interiors must
+belong to the respective closed regions
+\begin{gather*}
+[0,f(1-\lambda)],\quad
+[f(\lambda)+g(\lambda),g(1-\lambda)],\\
+[f(1)+g(\lambda),f(1-\lambda)+g(1-\lambda)],\quad
+[f(\lambda)+g(1),f(1)+g(1)].
+\end{gather*}
+Empty regions are discarded. Restrict to the continuing child,
+subtract its lower-corner value, and divide by \(\lambda\).
+The derivative bounds are preserved. The inequalities
+\begin{align*}
+f(\lambda)+g(\lambda)&>f(1-\lambda^2),\\
+g(1-\lambda)&<f(1)+g(\lambda^2),\\
+f(1-\lambda)&<f(\lambda^2)+g(\lambda)
+\end{align*}
+follow respectively from
+\(L>1/\lambda-1-\lambda\),
+\(U<1/(1-\lambda-\lambda^2)\), and the first inequality on \(L\).
+They show that a continuing \(10\) must be followed by \(10\),
+and that \(00\) cannot be followed by \(11\), as long as the level
+avoids strict overlap. Simultaneous reflection gives the corresponding
+statements for \(01\) and \(11\).
+
+The constant \(10\) address has level \(f(1)\). This is outside
+its closed region: in the first band \(g(1-\lambda)<f(1)\),
+whereas in the second band \(f(\lambda)+g(\lambda)>f(1)\).
+Reflection excludes the constant \(01\) address. Thus an infinite
+address avoiding overlap can only be \((00)^\infty\) or
+\((11)^\infty\), at the two extreme levels. Every strict interior
+level reaches a strict overlap in finitely many steps.
+
+We need uniform returns to obtain positive dimension. Normalize
+initially by \(\min f'=1\); then
+\(1\leq f'\leq U/L\) and \(L\leq g'\leq U\).
+The closed family of Lipschitz pairs with these individual increment
+bounds and cross-variable increment-ratio bounds \([L,U]\) is
+compact in the uniform topology. Translated cylinder restrictions,
+divided by their geometric scale, preserve this whole family;
+their minimum first derivative need not equal one.
+All preceding comparisons use increment inequalities and hence
+remain valid on the closed family.
+
+Choose \(0<\delta<\lambda(1+L)/(1+\lambda)\).
+Use \([\delta,f(1)+g(1)-\delta]\) as the central level domain.
+The images of central domains under all-zero prefixes are
+\[
+[\delta\lambda^j,
+ f(\lambda^j)+g(\lambda^j)-\delta\lambda^j],\qquad j\geq0.
+\]
+Successive intervals overlap strictly by the lower increment bounds
+and the choice of \(\delta\). Their interiors reach every positive
+level below the upper endpoint of the original central domain;
+reflection reaches the remaining interior levels. At a strict overlap,
+both children can therefore be brought strictly into their central
+domains by finite prefixes. These are two incomparable returning words.
+The space of function pairs and their central levels is compact,
+and each such pair of strict returns remains valid on an open
+neighbourhood. A finite subcover gives a maximum return length
+\(M\) and a positive return margin. Iteration produces a separated
+binary tree of product cylinders. The cylinder separation
+\(1-2\lambda>0\) and the mass distribution principle give dimension
+at least \(\log2/(M|\log\lambda|)>0\). An arbitrary interior level
+first enters a central domain. This initial finite restriction
+does not change positivity of dimension.
+\end{proof}
+
+We apply this criterion to actual rectangles and to endpoint models.
+Let \([u_-,u_+]\), \([v_-,v_+]\) be positive cylinder hulls of
+depths \(p,q\). An actual rectangle satisfies
+\begin{equation}\label{eq:uniform-actual}
+u_-^\alpha+v_-^\alpha<1<u_+^\alpha+v_+^\alpha,
+\end{equation}
+and its derivative-ratio interval is
+\[
+\left[\lambda^{q-p}(v_-/u_+)^{\alpha-1},
+      \lambda^{q-p}(v_+/u_-)^{\alpha-1}\right].
+\]
+An endpoint model, with integers \(j\) and \(k\geq0\), satisfies
+\begin{equation}\label{eq:uniform-endpoint}
+u_-^\alpha<\alpha\lambda^{j-k\alpha}v_+,
+\qquad u_+^\alpha>\alpha\lambda^{j-k\alpha}v_-.
+\end{equation}
+After reflection of the second coordinate, the power form
+\(u^\alpha-\alpha\lambda^{j-k\alpha}v\) has derivative-ratio interval
+\[
+\left[\lambda^{j-k\alpha+q-p}u_+^{1-\alpha},
+      \lambda^{j-k\alpha+q-p}u_-^{1-\alpha}\right],
+\]
+whereas the zero-equivalent logarithmic form
+\(\alpha\log u-\log v-\log \alpha-(j-k\alpha)\log\lambda\) has
+first-to-second derivative-ratio interval
+\begin{equation}\label{eq:uniform-log-ratio}
+\left[\alpha\lambda^{p-q}v_-/u_+,
+      \alpha\lambda^{p-q}v_+/u_-\right].
+\end{equation}
+In each case we may take the reciprocal interval by exchanging
+coordinates. A source is accepted when its whole ratio interval
+lies strictly above one and inside one band of \eqref{eq:two-bands}.
+
+\begin{theorem}\label{thm:last-real}
+For every real \(\alpha>1\),
+\[
+\lambda_{\max}(\alpha)<\frac{\sqrt3-1}{2}.
+\]
+\end{theorem}
+\begin{proof}
+Put $c:=(\sqrt3-1)/2$. We prove positive Hausdorff dimension for
+every $c\le\lambda<1/2$, and obtain the strict inequality by preserving
+a finite collection of strict returns when $\lambda$ varies near $c$.
+The irrational exponents admit direct endpoint sources. For rational
+exponents we first construct infinitely many intersections, then use
+the arithmetic of isolated points to obtain a perfect subset and strict
+returns. The latter argument uses Faltings's theorem and a theorem of
+Adamczewski and Bugeaud on digit expansions.
+
+\paragraph{Transfer from endpoint models.}
+A rectangle satisfying \eqref{eq:uniform-endpoint}, with its entire
+derivative-ratio interval strictly in one of \eqref{eq:two-bands} and
+strictly above one, gives positive dimension for the actual curve.
+To see this for any real $\alpha>1$, choose positive integers $t_i$ with
+$\displaystyle\lim_{i\to\infty}t_i=\infty$ and integers $r_i$ with
+$\displaystyle\lim_{i\to\infty}(r_i-\alpha t_i)=0$.
+For rational $\alpha$ use multiples of its denominator; for irrational
+$\alpha$ use recurrence modulo one. Set
+\[
+x:=\lambda^{k+t_i}u,\qquad y:=1-\lambda^{j+r_i}v.
+\]
+For large $i$ these are Cantor coordinates, and Taylor's formula gives
+\[
+\lim_{i\to\infty}
+\lambda^{-\alpha(k+t_i)}(x^\alpha+y^\alpha-1)
+=u^\alpha-\alpha\lambda^{j-k\alpha}v
+\quad\text{in }C^1
+\]
+on the fixed positive rectangle. For a logarithmic source use instead
+the exactly zero-equivalent expression
+\[
+\alpha\log u-
+\log\left(\frac{1-(1-\lambda^{j+r_i}v)^\alpha}
+{\lambda^{\alpha(k+t_i)}}\right).
+\]
+Its $C^1$ limit is the logarithmic endpoint expression used in
+\eqref{eq:uniform-log-ratio}. Reflection of the second coordinate makes
+both summands increasing. For a sufficiently large fixed $i$, all
+strict corner and derivative inequalities persist, so
+Lemma~\ref{lem:two-bands} gives positive dimension. The affine map back
+to $(x,y)$ preserves dimension. These finitely many strict inequalities
+also persist when $\lambda$ varies near its original value.
+
+\input{sections/analytic-last-irrational}
+\input{sections/analytic-last-exceptions}
+\input{sections/analytic-last-coarse}
+\input{sections/analytic-last-isolated}
+\input{sections/analytic-last-returns}
+
+\paragraph{Completion for rational exponents.}
+Let $\alpha=p/q>1$ be reduced, with $p\ge4$. The endpoint construction
+above gives infinitely many distinct nontrivial points for every
+$c\le\lambda<1/2$. The address classification, including the boundary
+phase argument at $c$, puts every positive isolated point in
+$\mathbb Q(\lambda)^2$.
+Its positive $q$th coordinate roots also belong to $\mathbb Q(\lambda)$.
+Indeed, in a normal extension containing $x^{p/q}$ and $y^{p/q}$,
+an automorphism over $\mathbb Q(\lambda)$ multiplies these two positive
+numbers by $q$th roots of unity. Their sum remains one; equality in
+the triangle inequality forces both roots of unity to equal one.
+Thus $x^{p/q},y^{p/q}\in\mathbb Q(\lambda)$, and B\'ezout's identity
+for $p,q$ gives $x^{1/q},y^{1/q}\in\mathbb Q(\lambda)$.
+Each isolated point consequently gives a point on the projective
+Fermat curve of degree $p$ over $\mathbb Q(\lambda)$. This curve is
+smooth and has genus $(p-1)(p-2)/2\ge3$. If $\lambda$ is algebraic,
+Faltings's theorem \cite{Faltings1983} gives only finitely many such
+points. If $\lambda$ is transcendental, identify $\mathbb Q(\lambda)$
+with $\mathbb Q(T)$. A nonconstant point would give a nonconstant
+rational map from $\mathbb P^1$ to this smooth projective curve.
+It extends to a morphism, which is impossible by Riemann--Hurwitz.
+All coordinates therefore belong to $\mathbb Q$, and Faltings's
+theorem again gives finiteness. Hence the full compact intersection
+has only finitely many isolated points, including its possible axis
+points.
+
+Removing these finitely many isolated points leaves a nonempty perfect
+compact set: the complement is closed, and a point that became isolated
+after this removal would already have been isolated before it.
+The ratio $(y/x)^{\alpha-1}$ is strictly monotone along
+the positive Fermat arc. The field $\mathbb Q(\lambda)$ is countable,
+and the set of cylinder endpoints is countable, so we can choose
+a non-axis point of this perfect set whose ratio is
+outside that field and whose coordinates are not cylinder endpoints.
+Changing cylinder depths multiplies the ratio by an integral power of
+$\lambda$, and coordinate exchange inverts it; these operations
+preserve exclusion from $\mathbb Q(\lambda)$. The normalised ratio
+lies in one of the open periodicity intervals above. At $\lambda=c$,
+it cannot be either boundary phase, since $1+c$ and $2$ belong to
+$\mathbb Q(c)$. The strict-return argument therefore gives a
+positive-dimensional subset of the actual intersection.
+
+This proves positivity for every exponent and every
+$c\le\lambda<1/2$. At $\lambda=1/2$, the Cantor set is $[0,1]$ and
+the Fermat arc has dimension one. For each fixed exponent the source
+at $\lambda=c$ is described by finitely many strict returns and a
+finite entrance cylinder, or by the strict inequalities of
+Lemma~\ref{lem:two-bands}. The persistence proved above supplies
+$\varepsilon>0$ such that positivity also holds for
+$c-\varepsilon<\lambda<c$. Together with the whole upper interval,
+this gives $\lambda_{\max}(\alpha)<c$. The value of $\varepsilon$
+may depend on $\alpha$.
+\end{proof}

@@ -1,0 +1,18 @@
+UTC=2026-10-27T16:40:28.4884610Z MODULE=LambdaCantor/Last/UniversalLastPositivity.lean SHA256=7C92E3128878161A7E6CF9D12CB68BA9B4F8367DF5FF8FF603C307C2ED334A6E
+'LambdaCantor.Last.positive_dimension_above_lastTransition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.universal_positive_dimension_at_or_above_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Last.universal_positive_dimension_near_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+ELAPSED_SECONDS=34.1200743 END_UTC=2026-10-27T16:41:02.6105479Z
+EXIT=0

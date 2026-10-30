@@ -1,0 +1,31 @@
+UTC=2026-10-24T17:14:03.3884720Z MODULE=LambdaCantor/Last/AnalyticCoarseCapacityCases.lean SHA256=CE876988007685146BB9A109A3CE92DA93AB6BFBF518B8DF4B39540F9CB7C9D4
+LambdaCantor/Last/AnalyticCoarseCapacityCases.lean:27:17: warning: This simp argument is unused:
+  Int.cast_add
+
+Hint: Omit it from the simp argument list.
+  simp only [I̵n̵t̵.̵c̵a̵s̵t̵_̵a̵d̵d̵,̵ ̵hsecond_zero, hthird_zero, Int.cast_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticCoarseCapacityCases.lean:27:58: warning: This simp argument is unused:
+  Int.cast_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Int.cast_add, hsecond_zero, hthird_zero, I̵n̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticCoarseCapacityCases.lean:41:48: warning: This simp argument is unused:
+  Int.cast_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Int.cast_add, hthird_zero, I̵n̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticCoarseCapacityCases.lean:48:50: warning: This simp argument is unused:
+  Int.cast_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Int.cast_add, hthird_zero, I̵n̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=37.7454906 END_UTC=2026-10-24T17:14:41.1356714Z
+EXIT=0

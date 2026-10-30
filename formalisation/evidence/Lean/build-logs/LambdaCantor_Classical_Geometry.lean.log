@@ -1,0 +1,16 @@
+UTC=2026-10-24T16:04:11.4195511Z MODULE=LambdaCantor/Classical/Geometry.lean SHA256=42A3C9E1C643C9ADCC65065C4A895802EA0EB142531AA19C5E3FA35AD4C35ABC
+LambdaCantor/Classical/Geometry.lean:87:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Classical/Geometry.lean:150:5: warning: Variable name `herr` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Classical/Geometry.lean:164:5: warning: Variable name `herr` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=27.9689673 END_UTC=2026-10-24T16:04:39.4125410Z
+EXIT=0

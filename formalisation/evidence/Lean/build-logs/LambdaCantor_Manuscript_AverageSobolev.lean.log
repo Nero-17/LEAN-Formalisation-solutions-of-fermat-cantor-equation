@@ -1,0 +1,7 @@
+UTC=2026-10-27T20:15:57.1971587Z MODULE=LambdaCantor/Manuscript/AverageSobolev.lean SHA256=BD27FC7C8B1A00222AF21B4364C4427DD950A4092E9F3987B7162575A7DCE6BC
+'LambdaCantor.Manuscript.average_sobolev' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.finite_measure_L2_density]
+ELAPSED_SECONDS=32.0497597 END_UTC=2026-10-27T20:16:29.2684100Z
+EXIT=0

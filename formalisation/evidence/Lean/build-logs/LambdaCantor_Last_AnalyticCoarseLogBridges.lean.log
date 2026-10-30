@@ -1,0 +1,9 @@
+UTC=2026-10-24T17:55:49.3088022Z MODULE=LambdaCantor/Last/AnalyticCoarseLogBridges.lean SHA256=CFAFC637F6117477FE640E7EE842882227EBD047673D352CF4DA500753861C8C
+LambdaCantor/Last/AnalyticCoarseLogBridges.lean:48:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticCoarseLogBridges.lean:48:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=30.1773223 END_UTC=2026-10-24T17:56:19.4901490Z
+EXIT=0

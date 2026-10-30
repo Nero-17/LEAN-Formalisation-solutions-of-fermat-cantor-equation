@@ -1,0 +1,11 @@
+UTC=2026-10-27T07:25:36.0919189Z MODULE=LambdaCantor/Last/AnalyticCoarsePeriodicRoot.lean SHA256=0595F83220014B9CD3B84EB230535698245B8F741CEB423A213918E19D47589F
+LambdaCantor/Last/AnalyticCoarsePeriodicRoot.lean:10:28: warning: Variable name `hwidth` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Last/AnalyticCoarsePeriodicRoot.lean:39:52: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=34.9111275 END_UTC=2026-10-27T07:26:11.0068755Z
+EXIT=0

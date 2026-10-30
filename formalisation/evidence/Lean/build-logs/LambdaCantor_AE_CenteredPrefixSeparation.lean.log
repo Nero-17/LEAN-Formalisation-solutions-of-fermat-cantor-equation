@@ -1,0 +1,8 @@
+UTC=2026-10-27T19:55:47.5314424Z MODULE=LambdaCantor/AE/CenteredPrefixSeparation.lean SHA256=314470E98364534531091D4AA2CF030A626BEB1F4E3589CAA2C03D7CAB8E5A2A
+LambdaCantor/AE/CenteredPrefixSeparation.lean:38:5: warning: Variable name `rho_positive` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=36.237922 END_UTC=2026-10-27T19:56:23.7723191Z
+EXIT=0

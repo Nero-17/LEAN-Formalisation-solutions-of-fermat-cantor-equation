@@ -1,0 +1,6 @@
+UTC=2026-10-27T19:30:41.4811678Z MODULE=LambdaCantor/RealPowers/StrictSource.lean SHA256=1BC35A5C57C0406798CA83BFE13EA4246EBB00DD5B17F5C1FBF31A1FE194DA04
+LambdaCantor/RealPowers/StrictSource.lean:66:70: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=38.7767653 END_UTC=2026-10-27T19:31:20.2842796Z
+EXIT=0

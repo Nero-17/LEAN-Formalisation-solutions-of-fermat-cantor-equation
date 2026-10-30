@@ -1,0 +1,5 @@
+import LambdaCantor.Last.RationalLastConclusion
+
+#print axioms LambdaCantor.Last.coarse_strict_log_link_all_exponents
+#print axioms LambdaCantor.Last.coarse_rational_infinite_intersection
+#print axioms LambdaCantor.Last.rational_lastTransition_lt_critical

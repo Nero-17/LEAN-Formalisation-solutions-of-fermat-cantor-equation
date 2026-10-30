@@ -1,0 +1,49 @@
+UTC=2026-10-27T07:01:06.3947963Z MODULE=LambdaCantor/RationalPowers/LargeExponentRawBatchBridge.lean SHA256=E830C887894C25EF8DD88E12B65AF752C33C1E2BBC2BA869ED58415574CB532A
+LambdaCantor/RationalPowers/LargeExponentRawBatchBridge.lean:30:15: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵d̵e̵f̵,̵R̵a̵w̵P̵h̵a̵s̵e̵.̵C̵a̵c̵h̵e̵d̵C̵e̵l̵l̵.̵t̵o̵C̵e̵l̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵l̵a̵r̵g̵e̵E̵x̵p̵o̵n̵e̵n̵t̵_̵r̵a̵w̵_̵c̵e̵l̵l̵_̵c̵h̵e̵c̵k̵e̵d̵_̵e̵q̵,̵l̵a̵r̵g̵e̵E̵x̵p̵o̵n̵e̵n̵t̵_̵r̵a̵w̵_̵s̵a̵m̵e̵_̵c̵o̵n̵t̵e̵x̵t̵_̵e̵q̵]̵[̲R̲a̲w̲P̲h̲a̲s̲e̲.̲C̲a̲c̲h̲e̲d̲C̲e̲l̲l̲.̲t̲o̲C̲e̲l̲l̲,̲ ̲l̲a̲r̲g̲e̲E̲x̲p̲o̲n̲e̲n̲t̲_̲r̲a̲w̲_̲c̲e̲l̲l̲_̲c̲h̲e̲c̲k̲e̲d̲_̲e̲q̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲l̲a̲r̲g̲e̲E̲x̲p̲o̲n̲e̲n̲t̲_̲r̲a̲w̲_̲s̲a̲m̲e̲_̲c̲o̲n̲t̲e̲x̲t̲_̲e̲q̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentRawBatchBridge.lean:60:47: warning: This simp argument is unused:
+  List.map_map
+
+Hint: Omit it from the simp argument list.
+  simp only [̵L̵i̵s̵t̵.̵f̵l̵a̵t̵M̵a̵p̵_̵m̵a̵p̵,̵L̵i̵s̵t̵.̵m̵a̵p̵_̵f̵l̵a̵t̵M̵a̵p̵,̵L̵i̵s̵t̵.̵m̵a̵p̵_̵m̵a̵p̵,̵
+  ̵ ̵ ̵ ̵ ̵A̵c̵c̵e̵p̵t̵e̵d̵L̵a̵r̵g̵e̵E̵x̵p̵o̵n̵e̵n̵t̵R̵a̵w̵B̵l̵o̵c̵k̵.̵t̵o̵C̵e̵r̵t̵i̵f̵i̵e̵d̵,̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵d̵e̵f̵]̵[̲L̲i̲s̲t̲.̲f̲l̲a̲t̲M̲a̲p̲_̲m̲a̲p̲,̲ ̲L̲i̲s̲t̲.̲m̲a̲p̲_̲f̲l̲a̲t̲M̲a̲p̲,̲ ̲A̲c̲c̲e̲p̲t̲e̲d̲L̲a̲r̲g̲e̲E̲x̲p̲o̲n̲e̲n̲t̲R̲a̲w̲B̲l̲o̲c̲k̲.̲t̲o̲C̲e̲r̲t̲i̲f̲i̲e̲d̲,̲
+  ̲ ̲ ̲ ̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲c̲o̲m̲p̲_̲d̲e̲f̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentRawBatchBridge.lean:61:46: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  simp only [List.flatMap_map, ̲List.map_flatMap, ̲List.map_map,
+      AcceptedLargeExponentRawBlock.toCertified,̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵d̵e̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentRawBatchBridge.lean:74:52: warning: This simp argument is unused:
+  RawPhase.CachedCell.gridRow
+
+Hint: Omit it from the simp argument list.
+  simp only [̵R̵a̵w̵P̵h̵a̵s̵e̵.̵c̵o̵v̵e̵r̵a̵g̵e̵R̵o̵w̵s̵,̵l̵a̵r̵g̵e̵E̵x̵p̵o̵n̵e̵n̵t̵_̵r̵a̵w̵_̵c̵e̵r̵t̵i̵f̵i̵e̵d̵_̵c̵e̵l̵l̵s̵,̵L̵i̵s̵t̵.̵f̵i̵l̵t̵e̵r̵_̵m̵a̵p̵,̵L̵i̵s̵t̵.̵m̵a̵p̵_̵m̵a̵p̵,̵
+  ̵ ̵ ̵ ̵ ̵R̵a̵w̵P̵h̵a̵s̵e̵.̵C̵a̵c̵h̵e̵d̵C̵e̵l̵l̵.̵t̵o̵C̵e̵l̵l̵,̵R̵a̵w̵P̵h̵a̵s̵e̵.̵C̵e̵l̵l̵.̵t̵o̵C̵e̵l̵l̵,̵R̵a̵w̵P̵h̵a̵s̵e̵.̵C̵a̵c̵h̵e̵d̵C̵e̵l̵l̵.̵g̵r̵i̵d̵R̵o̵w̵,̵
+  ̵ ̵ ̵ ̵ ̵l̵a̵r̵g̵e̵E̵x̵p̵o̵n̵e̵n̵t̵_̵r̵a̵w̵_̵g̵r̵i̵d̵_̵p̵r̵o̵j̵e̵c̵t̵i̵o̵n̵,̵F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵d̵e̵f̵]̵[̲R̲a̲w̲P̲h̲a̲s̲e̲.̲c̲o̲v̲e̲r̲a̲g̲e̲R̲o̲w̲s̲,̲ ̲l̲a̲r̲g̲e̲E̲x̲p̲o̲n̲e̲n̲t̲_̲r̲a̲w̲_̲c̲e̲r̲t̲i̲f̲i̲e̲d̲_̲c̲e̲l̲l̲s̲,̲ ̲L̲i̲s̲t̲.̲f̲i̲l̲t̲e̲r̲_̲m̲a̲p̲,̲
+  ̲ ̲ ̲ ̲ ̲L̲i̲s̲t̲.̲m̲a̲p̲_̲m̲a̲p̲,̲ ̲R̲a̲w̲P̲h̲a̲s̲e̲.̲C̲a̲c̲h̲e̲d̲C̲e̲l̲l̲.̲t̲o̲C̲e̲l̲l̲,̲ ̲R̲a̲w̲P̲h̲a̲s̲e̲.̲C̲e̲l̲l̲.̲t̲o̲C̲e̲l̲l̲,̲
+  ̲ ̲ ̲ ̲ ̲l̲a̲r̲g̲e̲E̲x̲p̲o̲n̲e̲n̲t̲_̲r̲a̲w̲_̲g̲r̲i̲d̲_̲p̲r̲o̲j̲e̲c̲t̲i̲o̲n̲,̲ ̲F̲u̲n̲c̲t̲i̲o̲n̲.̲c̲o̲m̲p̲_̲d̲e̲f̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentRawBatchBridge.lean:75:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'LambdaCantor.RationalPowers.largeExponent_raw_cells_check_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.RationalPowers.largeExponent_raw_blocks_cover_check_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED_SECONDS=36.2033142 END_UTC=2026-10-27T07:01:42.6015754Z
+EXIT=0

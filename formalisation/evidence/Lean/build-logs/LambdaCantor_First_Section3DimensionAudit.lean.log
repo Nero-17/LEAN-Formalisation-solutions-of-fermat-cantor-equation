@@ -1,0 +1,35 @@
+UTC=2026-10-24T17:52:15.0244444Z MODULE=LambdaCantor/First/Section3DimensionAudit.lean SHA256=D4E5DDC91BF948DC238E8CBC7DE44548DB448C998994B9F2211545D3CCF08B18
+'LambdaCantor.First.dimension_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps]
+'LambdaCantor.First.first_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps]
+'LambdaCantor.First.LinearRegularity.projected_law_positive_sobolev_off_exception' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.LinearRegularity.linear_regularity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.Roots.rootFibreData_continuous_state' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.First.Roots.rootFibreData_state_exceptional_null' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.First.Roots.conditional_dimension_lower_of_prefix_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.First.Roots.conditional_dimension_lower_of_arbitrarily_small_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED_SECONDS=36.2045094 END_UTC=2026-10-24T17:52:51.2322744Z
+EXIT=0

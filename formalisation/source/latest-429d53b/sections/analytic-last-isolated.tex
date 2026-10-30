@@ -1,0 +1,58 @@
+\par\medskip\noindent\emph{Isolated points and their addresses.}
+We first classify isolated points of a separable level curve with positive derivatives. A restriction to two Cantor cylinders, followed by affine rescaling, allows us to normalise its tangent ratio to $1\le r<1/\lambda$. Interchanging the coordinates and changing one cylinder depth replaces $r$ by $1/(\lambda r)$.
+For the affine function $x+ry$, the four child hulls, in the order $00,10,01,11$, are
+\[
+[0,\lambda(1+r)],\quad
+[1-\lambda,1+r\lambda],\quad
+[r(1-\lambda),\lambda+r],\quad
+[(1-\lambda)(1+r),1+r].
+\]
+If $1/\lambda-2<r<1/(1-2\lambda)$, consecutive hulls overlap strictly. The same holds throughout every sufficiently small descendant of a $C^1$ curve with this tangent ratio. Iterating the covering of each parent hull by its child hulls shows, by compactness, that every level in a descendant hull has a Cantor preimage there. Hence, along the address of an isolated point, only its actual child hull can contain the level once the depth is sufficiently large. Another child would give a distinct point arbitrarily close to it. This also excludes contacts with another child at a hull endpoint.
+
+Suppose first that
+\[
+1\le r<\frac{\lambda}{1-2\lambda}.
+\]
+The exclusive regions of the mixed children $10$ and $01$ are empty, so an isolated address eventually uses only $00$ and $11$. At $r=1$ the two mixed hulls coincide. Under a small $C^1$ perturbation, any possible exclusive strips near their two ends are still covered by $00$ and $11$, respectively, since both affine covering margins are $3\lambda-1>0$. Write these paired symbols as $0$ and $3$. Their exclusive levels are at most $1-\lambda$ and at least $\lambda+r$, respectively. If $033$ occurred, the level after the first symbol would be at most $(1-\lambda)/\lambda$, whereas the next two symbols would require it to be at least
+\[
+(1-\lambda)(1+r)+\lambda(\lambda+r)
+=1-\lambda+\lambda^2+r.
+\]
+These bounds are incompatible whenever
+$r>1/\lambda-2+\lambda-\lambda^2$.
+The expression on the right decreases on $[c,1/2)$ and equals $4c-1/2<1$ at $c$. Reflection excludes $300$. After the first change of symbol, the address must therefore alternate. The comparisons have positive margins, so the same exclusions hold after sufficiently small $C^1$ perturbations. Thus each coordinate address is eventually constant or alternating, including when $r=1$.
+
+The child comparisons in the proof of Lemma~\ref{lem:two-bands}, before the constant mixed addresses are excluded, also apply throughout
+\[
+\max\{1,1/\lambda-1-\lambda\}<r<\frac1{1-\lambda-\lambda^2}.
+\]
+They force a continuing $10$ to be followed by $10$, and similarly for $01$, while $00$ cannot be followed by $11$ and conversely. An address avoiding overlap is consequently eventually constant. Again the strict comparisons persist under the vanishing linearisation errors. In either interval, an isolated point therefore has coordinates in $\mathbb Q(\lambda)$.
+
+For $\lambda>c$ these intervals cover all normalised phases after the permitted coordinate exchange. Indeed
+\[
+\frac{\lambda}{1-2\lambda}>\frac1\lambda-1-\lambda,
+\]
+because the numerator of their difference is $3\lambda-1-2\lambda^3$, which vanishes at $c$ and increases on $[c,1/2]$. If $r\ge1/(1-\lambda-\lambda^2)$, then $1/(\lambda r)\le1/\lambda-1-\lambda$ and belongs to the first interval. Thus, for $\lambda>c$, every isolated positive point of the Fermat curve has eventually constant or alternating addresses and coordinates in $\mathbb Q(\lambda)$.
+
+\par\medskip\noindent\emph{The two boundary phases at $\lambda=c$.}
+At $c$, the intervals above cover every phase except $1+c$ and $2$. The second is reduced to the first by $r\mapsto1/(cr)$. We prove that an isolated point of a $C^2$ curve with algebraic coordinates and tangent ratio $1+c$ has coordinates in $\mathbb Q(c)$.
+For this ratio, the limiting closed regions allowed by the unique-child condition are
+\[
+[0,1-c],\qquad \{1/2+c\},\qquad
+\{3/2\},\qquad [1+2c,2+c].
+\]
+The two singletons are limiting exclusive regions; at the exact affine ratio their levels are covered by more than one child.
+Let $x_n,y_n\in[0,1]$ denote its coordinate tails after $n$ paired digits, and define the tangent level
+$z_n:=x_n+(1+c)y_n$.
+Taylor expansion of the $C^2$ curve at the fixed point shows that $z_n$ is within $Kc^n$ of the exclusive set corresponding to its next paired digit, for some fixed $K>0$. Indeed every child-hull endpoint has this error after division by the first derivative and the cylinder scale; the unique-child condition proved above then gives the asserted bound.
+If the next digits are $\varepsilon_{n+1},\eta_{n+1}\in\{0,1\}$, the tails satisfy the exact recurrence
+\[
+z_{n+1}
+=\frac{z_n-(1-c)\bigl(\varepsilon_{n+1}+(1+c)\eta_{n+1}\bigr)}{c}.
+\]
+A mixed $10$ sends the centre $1/2+c$ to $1-c$, and a mixed $01$ sends $3/2$ to $1+2c$. The paired digits $00$ and $11$ exchange the latter two centres. Each centre is separated from every wrong exclusive set by at least $2c-1/2>0$.
+Choose an integer $L\ge1$ with $2Kc^L<2c-1/2$. After a mixed digit at depth $n$, the next $n-L$ paired digits must alternate $00,11$: after $k$ shifts the initial error is at most $Kc^{n-k}$, whereas the exclusive-set error is at most $Kc^{n+k}$, and their sum is less than $2c-1/2$ for $k\le n-L$. Changing the depth convention only changes $L$ by one.
+
+If mixed digits occur only finitely often, the strict $033$ and $300$ exclusions already prove eventual constancy or alternation. Otherwise each coordinate address has arbitrarily long alternating blocks whose lengths are at least their starting positions minus a fixed constant. Such a nonperiodic address satisfies the stammering condition of \cite[Theorem~5]{AdamczewskiBugeaud2007}: take an even word of approximately half the block length and repeat it twice. The preceding prefix length divided by this word length is bounded, and a subsequence makes the word lengths strictly increasing. A Cantor coordinate equals $(1/c-1)\sum_{j\ge1}\varepsilon_jc^j$; its digit-series value is algebraic whenever the coordinate is algebraic. Since $1/c=1+\sqrt3$ is a Pisot number, that theorem puts the digit-series value in $\mathbb Q(\sqrt3)$ unless it is transcendental. The algebraic-coordinate hypothesis excludes the latter alternative. Already periodic addresses also give values in this field.
+
+For rational $\alpha>1$, a critical tangent equation makes $y/x$ algebraic, since $(y/x)^{\alpha-1}$ is an algebraic multiple of an integral power of $c$. The equation $x^\alpha+y^\alpha=1$ then makes both positive coordinates algebraic. Thus every positive isolated rational Fermat point at $c$ has coordinates in $\mathbb Q(c)$.

@@ -1,0 +1,69 @@
+UTC=2026-10-26T09:56:56.1158880Z MODULE=LambdaCantor/AE/CenteredNewtonCoefficients.lean SHA256=58038E154CBEED3E62B0A4E66C5B9AE5F3D102B01DDF4F2F1D1D0A058FD1C4BF
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:33:10: warning: This simp argument is unused:
+  centeredTailResidual
+
+Hint: Omit it from the simp argument list.
+  simp [̵c̵e̵n̵t̵e̵r̵e̵d̵T̵a̵i̵l̵R̵e̵s̵i̵d̵u̵a̵l̵,̵ ̵c̵e̵n̵t̵e̵r̵e̵d̵N̵e̵w̵t̵o̵n̵F̵i̵r̵s̵t̵C̵o̵e̵f̵f̵i̵c̵i̵e̵n̵t̵,̵[̲c̲e̲n̲t̲e̲r̲e̲d̲N̲e̲w̲t̲o̲n̲F̲i̲r̲s̲t̲C̲o̲e̲f̲f̲i̲c̲i̲e̲n̲t̲,̲ pow_add, mul_assoc, mul_comm, mul_left_comm, add_assoc,
+  ̲  ̲ ̲ ̲ ̲ ̲add_comm, add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:34:27: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [centeredTailResidual, centeredNewtonFirstCoefficient, pow_add,
+  ̵  ̵ ̵ ̵ ̵ ̵mul_assoc, mul_comm,
+  ̲ m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵  ̲ ̲ ̲ ̲add_assoc, add_comm, add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:34:42: warning: This simp argument is unused:
+  add_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [centeredTailResidual, centeredNewtonFirstCoefficient, pow_add,
+  ̵  ̵ ̵ ̵ ̵ ̵mul_assoc, mul_comm,
+  ̲  ̲ ̲ ̲ ̲ ̲mul_left_comm, add_a̵s̵s̵o̵c,̵ ̵a̵d̵d̵_̵c̵omm, add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:34:63: warning: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [centeredTailResidual, centeredNewtonFirstCoefficient, pow_add, mul_assoc, mul_comm,
+  ̲  ̲ ̲ ̲ ̲ ̲mul_left_comm, add_assoc, a̵d̵d̵_̵c̵o̵m̵m̵,̵ ̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵]̵a̲d̲d̲_̲c̲o̲m̲m̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:32:52: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:49:10: warning: This simp argument is unused:
+  centeredTailResidual
+
+Hint: Omit it from the simp argument list.
+  simp [̵c̵e̵n̵t̵e̵r̵e̵d̵T̵a̵i̵l̵R̵e̵s̵i̵d̵u̵a̵l̵,̵ ̵c̵e̵n̵t̵e̵r̵e̵d̵N̵e̵w̵t̵o̵n̵S̵e̵c̵o̵n̵d̵C̵o̵e̵f̵f̵i̵c̵i̵e̵n̵t̵,̵[̲c̲e̲n̲t̲e̲r̲e̲d̲N̲e̲w̲t̲o̲n̲S̲e̲c̲o̲n̲d̲C̲o̲e̲f̲f̲i̲c̲i̲e̲n̲t̲,̲ pow_add, mul_assoc, mul_comm, mul_left_comm, add_assoc,
+  ̲  ̲ ̲ ̲ ̲ ̲add_comm, add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:50:27: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [centeredTailResidual, centeredNewtonSecondCoefficient, pow_add,
+  ̵  ̵ ̵ ̵ ̵ ̵mul_assoc, mul_comm,
+  ̲ m̵u̵l̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵,̵  ̲ ̲ ̲ ̲add_assoc, add_comm, add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:50:42: warning: This simp argument is unused:
+  add_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [centeredTailResidual, centeredNewtonSecondCoefficient, pow_add,
+  ̵  ̵ ̵ ̵ ̵ ̵mul_assoc, mul_comm,
+  ̲  ̲ ̲ ̲ ̲ ̲mul_left_comm, add_a̵s̵s̵o̵c,̵ ̵a̵d̵d̵_̵c̵omm, add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonCoefficients.lean:48:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=56.8834817 END_UTC=2026-10-26T09:57:53.0030953Z
+EXIT=0

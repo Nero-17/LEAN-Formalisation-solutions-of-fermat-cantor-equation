@@ -1,0 +1,24 @@
+UTC=2026-10-25T07:21:56.7503671Z MODULE=LambdaCantor/First/RealNormalizationFull.lean SHA256=F689199FAEE53BDFB990279F53D9AE242D196FC4234544335A5CE6B5CF744F41
+LambdaCantor/First/RealNormalizationFull.lean:68:32: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Function.comp_def, Pi.s̵u̵b̵_̵ap̵p̵l̵y̵,̵ ̵P̵i̵.̵a̵dd_apply, mul_zero, add_zero] at hcombined hcombinedD
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RealNormalizationFull.lean:68:46: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Function.comp_def, Pi.sub_apply, P̵i̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵mul_zero, add_zero] at hcombined hcombinedD
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RealNormalizationFull.lean:68:70: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Function.comp_def, Pi.sub_apply, Pi.add_apply, mul_zero,̵ ̵a̵d̵d̵_̵z̵e̵r̵o̵] at hcombined hcombinedD
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=30.604122 END_UTC=2026-10-25T07:22:27.3567026Z
+EXIT=0

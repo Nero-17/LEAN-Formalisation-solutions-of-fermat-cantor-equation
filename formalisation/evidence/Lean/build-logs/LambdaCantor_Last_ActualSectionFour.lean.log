@@ -1,0 +1,53 @@
+UTC=2026-10-28T21:53:49.0648580Z MODULE=LambdaCantor/Last/ActualSectionFour.lean SHA256=B7165368B9DBE9EAF4C8983C21F5B9935FD226C00CB49E6E11D1F57B0C84E723
+'LambdaCantor.Last.two_band_separable_c1_closed_interval_criterion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.universal_lastTransition_lt_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Circle.circle_positive_measure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.Circle.circle_onset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.Circle.circle_zero_intervals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Circle.circle_known_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.AE.irrational_ae_dimension_equality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.complex_L1_of_fourier_L2,
+ LambdaCantor.AE.ExternalPlancherel.finite_measure_L2_density,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=147.3770273 END_UTC=2026-10-28T21:56:16.4523231Z
+EXIT=0

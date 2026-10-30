@@ -1,0 +1,6 @@
+UTC=2026-10-26T08:46:36.2902514Z MODULE=LambdaCantor/RationalPowers/SharedLogRows.lean SHA256=864D63FB2B83D6D750E6575386D25F22B2789F53DA94B00E27C8271CD11151B2
+LambdaCantor/RationalPowers/SharedLogRows.lean:150:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=20.485799 END_UTC=2026-10-26T08:46:56.7940769Z
+EXIT=0

@@ -1,0 +1,21 @@
+UTC=2026-10-21T11:25:55.8725335Z MODULE=LambdaCantor/First/RationalComparison.lean SHA256=9FF52036B05EF6332E70166A6C28831650C9EC033CA6DA4B5721AEEFD6A0432E
+LambdaCantor/First/RationalComparison.lean:23:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalComparison.lean:23:109: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalComparison.lean:42:16: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalComparison.lean:78:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalComparison.lean:138:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/First/RationalComparison.lean:138:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=29.5270998 END_UTC=2026-10-21T11:26:25.4020099Z
+EXIT=0

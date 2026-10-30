@@ -1,0 +1,8 @@
+UTC=2026-10-27T06:48:13.7026113Z MODULE=LambdaCantor/Last/AnalyticIrrationalGeometry.lean SHA256=0575D87DDB83A4C1A1F54D2D3E48EA731A645549FB6CAF935D283060D56B8276
+LambdaCantor/Last/AnalyticIrrationalGeometry.lean:35:49: warning: Variable name `hexponent` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=45.8937998 END_UTC=2026-10-27T06:48:59.5989438Z
+EXIT=0

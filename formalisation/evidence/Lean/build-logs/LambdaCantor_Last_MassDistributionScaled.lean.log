@@ -1,0 +1,4 @@
+UTC=2026-10-21T11:23:25.1828611Z MODULE=LambdaCantor/Last/MassDistributionScaled.lean SHA256=3F4AC157BD705B2E2F399C474745B080AF8209509BB49CC53F5C4A58CFB2DF11
+LambdaCantor/Last/MassDistributionScaled.lean:21:11: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+ELAPSED_SECONDS=26.3301588 END_UTC=2026-10-21T11:23:51.5155391Z
+EXIT=0

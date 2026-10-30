@@ -1,0 +1,19 @@
+UTC=2026-10-27T14:31:31.4481083Z MODULE=LambdaCantor/Last/EndpointTransferCompleteAudit.lean SHA256=25E6394956B9C6437EA38D9F64CF0C694F9E8FB4FF508C743FB581AD98D00EAA
+'LambdaCantor.Last.two_band_separable_c1_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.two_band_positive_derivative_criterion_reciprocal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.power_endpoint_source_reciprocal_positive_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+'LambdaCantor.Last.logarithmic_endpoint_source_reciprocal_positive_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+'LambdaCantor.Last.endpoint_source_positive_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+ELAPSED_SECONDS=45.6335883 END_UTC=2026-10-27T14:32:17.0886125Z
+EXIT=0

@@ -1,0 +1,6 @@
+UTC=2026-10-26T08:35:30.0775224Z MODULE=LambdaCantor/Integer/GoodSlopeReturnAdapter.lean SHA256=7E4876B6225BD5B08B797DF4C87359CA8148A0850A99ACAD18E51AA418F0D7CA
+LambdaCantor/Integer/GoodSlopeReturnAdapter.lean:71:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=49.725787 END_UTC=2026-10-26T08:36:19.8287083Z
+EXIT=0

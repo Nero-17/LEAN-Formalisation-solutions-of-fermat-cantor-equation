@@ -1,0 +1,21 @@
+UTC=2026-10-27T05:16:45.6584858Z MODULE=LambdaCantor/Classical/Arithmetic.lean SHA256=AA4B5744D0F97CBC6238B6FF51BE0F4B35F026FDF2E526A3D9B208C561BB0280
+LambdaCantor/Classical/Arithmetic.lean:48:24: warning: 'omega' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Classical/Arithmetic.lean:48:24: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Classical/Arithmetic.lean:91:39: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Classical/Arithmetic.lean:91:63: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Classical/Arithmetic.lean:94:40: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Classical/Arithmetic.lean:94:64: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=52.877452 END_UTC=2026-10-27T05:17:38.5423136Z
+EXIT=0

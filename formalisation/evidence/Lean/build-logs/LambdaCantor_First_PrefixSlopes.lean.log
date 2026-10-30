@@ -1,0 +1,10 @@
+UTC=2026-10-24T16:05:52.8488315Z MODULE=LambdaCantor/First/PrefixSlopes.lean SHA256=DE90EA124761B7CE709D43B20D28054AD0CABA014600C1C6065692EEC3EED73A
+LambdaCantor/First/PrefixSlopes.lean:55:37: warning: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵u̵n̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=24.8049954 END_UTC=2026-10-24T16:06:17.6554231Z
+EXIT=0

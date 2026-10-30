@@ -1,0 +1,12 @@
+UTC=2026-10-24T18:50:39.9284786Z MODULE=LambdaCantor/Last/RealPowerLimit.lean SHA256=28E01FD287577E0D17570F282C10F88C6572B450672AAF60D745209172D51418
+LambdaCantor/Last/RealPowerLimit.lean:24:13: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/RealPowerLimit.lean:120:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/RealPowerLimit.lean:120:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=42.3790336 END_UTC=2026-10-24T18:51:22.3093900Z
+EXIT=0

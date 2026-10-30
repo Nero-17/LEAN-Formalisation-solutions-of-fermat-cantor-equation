@@ -1,0 +1,30 @@
+UTC=2026-10-27T04:41:13.9571764Z MODULE=LambdaCantor/Circle/ManuscriptEndpoints.lean SHA256=89F54AA147CA519A22518D09598C68D32914754762016B9D4CED3BB86C56CB4E
+'LambdaCantor.Circle.circle_positive_measure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.Circle.circle_onset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.Circle.circle_known_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=52.7969461 END_UTC=2026-10-27T04:42:06.7572618Z
+EXIT=0

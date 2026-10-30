@@ -1,0 +1,5 @@
+import LambdaCantor.AE.SobolevTransport
+
+#print axioms LambdaCantor.AE.classical_signed_density_memLp_and_norm_bound
+#print axioms LambdaCantor.AE.mollification_error_memLp_and_energy_bound
+#print axioms LambdaCantor.AE.exists_density_transport_constant

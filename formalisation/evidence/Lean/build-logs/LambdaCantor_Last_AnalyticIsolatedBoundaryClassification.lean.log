@@ -1,0 +1,10 @@
+UTC=2026-10-27T15:33:25.4634827Z MODULE=LambdaCantor/Last/AnalyticIsolatedBoundaryClassification.lean SHA256=6DAF510B50016CA0699DEB83597D2D2F6FC864D4F89DC1AFA0B9F253CCB9BECB
+LambdaCantor/Last/AnalyticIsolatedBoundaryClassification.lean:35:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ELAPSED_SECONDS=32.448565 END_UTC=2026-10-27T15:33:57.9149018Z
+EXIT=0

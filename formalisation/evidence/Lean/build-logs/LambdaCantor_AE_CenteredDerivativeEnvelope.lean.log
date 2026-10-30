@@ -1,0 +1,30 @@
+UTC=2026-10-27T18:31:19.8723002Z MODULE=LambdaCantor/AE/CenteredDerivativeEnvelope.lean SHA256=C5F79843C3F9BE83B100F4E66F53EC32CDB2C0473EA587A476FB948566C4132D
+LambdaCantor/AE/CenteredDerivativeEnvelope.lean:14:33: warning: Variable name `hvelocityBound` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/AE/CenteredDerivativeEnvelope.lean:38:60: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredDerivativeEnvelope.lean:38:60: warning: 'assumption' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredDerivativeEnvelope.lean:61:33: warning: Variable name `hvelocityBound` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/AE/CenteredDerivativeEnvelope.lean:62:5: warning: Variable name `haccelerationBound` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/AE/CenteredDerivativeEnvelope.lean:104:79: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredDerivativeEnvelope.lean:104:79: warning: 'assumption' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=42.7525063 END_UTC=2026-10-27T18:32:02.6271115Z
+EXIT=0

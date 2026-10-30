@@ -1,0 +1,16 @@
+UTC=2026-10-27T21:16:38.9235520Z MODULE=LambdaCantor/AE/MixedScaleArithmetic.lean SHA256=44D613716CB6D8BCE7D3CC105B651CABA3BF42068E9C434F78F92FD8BE392234
+LambdaCantor/AE/MixedScaleArithmetic.lean:21:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/MixedScaleArithmetic.lean:26:5: warning: Variable name `tail_nonnegative` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/AE/MixedScaleArithmetic.lean:134:53: warning: Variable name `vertical_power_nonnegative` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=30.9559537 END_UTC=2026-10-27T21:17:09.8821228Z
+EXIT=0

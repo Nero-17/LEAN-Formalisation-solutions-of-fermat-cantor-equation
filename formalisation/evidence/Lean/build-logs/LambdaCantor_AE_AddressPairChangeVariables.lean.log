@@ -1,0 +1,9 @@
+UTC=2026-10-27T17:43:30.2394253Z MODULE=LambdaCantor/AE/AddressPairChangeVariables.lean SHA256=07C9B55AA9691F56ECE2B126492021C3704B3B00F77C670C6D25C72986E171AB
+LambdaCantor/AE/AddressPairChangeVariables.lean:78:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/AddressPairChangeVariables.lean:78:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=28.1573657 END_UTC=2026-10-27T17:43:58.3988593Z
+EXIT=0

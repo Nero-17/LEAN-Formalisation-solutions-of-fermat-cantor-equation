@@ -1,0 +1,10 @@
+UTC=2026-10-27T15:49:26.2362591Z MODULE=LambdaCantor/Last/AnalyticActualIsolationAudit.lean SHA256=439AA29B47D3807705967424C0B0E59229EC5B87C3EAB0884A1FE30785E744B2
+'LambdaCantor.Last.open_phase_isolated_c2_point_in_parameterField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.critical_isolated_c2_point_in_parameterField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering]
+ELAPSED_SECONDS=27.6128036 END_UTC=2026-10-27T15:49:53.8508510Z
+EXIT=0

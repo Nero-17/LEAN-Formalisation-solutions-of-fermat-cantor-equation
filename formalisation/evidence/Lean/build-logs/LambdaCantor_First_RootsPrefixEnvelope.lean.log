@@ -1,0 +1,14 @@
+UTC=2026-10-27T03:43:40.8297263Z MODULE=LambdaCantor/First/RootsPrefixEnvelope.lean SHA256=5509018CE9A456F2AFFEBFC3FFF956558238B763F26666BC1D71976161F71663
+LambdaCantor/First/RootsPrefixEnvelope.lean:24:20: warning: Variable name `rate_nonnegative` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/First/RootsPrefixEnvelope.lean:585:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RootsPrefixEnvelope.lean:712:12: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=54.8164896 END_UTC=2026-10-27T03:44:35.6513488Z
+EXIT=0

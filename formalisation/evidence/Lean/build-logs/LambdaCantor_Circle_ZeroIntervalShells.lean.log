@@ -1,0 +1,6 @@
+UTC=2026-10-24T16:34:53.3543047Z MODULE=LambdaCantor/Circle/ZeroIntervalShells.lean SHA256=4A4D6720EB9B5ED6D2FFA5A5EDD780C1BCE0419387D07BE2BD9A247269116148
+LambdaCantor/Circle/ZeroIntervalShells.lean:29:69: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=54.9145437 END_UTC=2026-10-24T16:35:48.2852707Z
+EXIT=0

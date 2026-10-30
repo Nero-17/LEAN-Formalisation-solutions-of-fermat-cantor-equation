@@ -1,0 +1,23 @@
+UTC=2026-10-24T18:55:45.4403621Z MODULE=LambdaCantor/AE/CenteredNewtonKernel.lean SHA256=38340D97D24C04C10D9AE80B53185A38751C5F2E6A2C43503695D3944F241019
+LambdaCantor/AE/CenteredNewtonKernel.lean:36:13: warning: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  simp only [̵P̵r̵o̵d̵.̵f̵s̵t̵,̵ ̵P̵r̵o̵d̵.̵s̵n̵d̵]̵[̲P̲r̲o̲d̲.̲s̲n̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonKernel.lean:36:23: warning: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.fst,̵ ̵P̵r̵o̵d̵.̵s̵n̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredNewtonKernel.lean:39:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/CenteredNewtonKernel.lean:87:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=33.5279234 END_UTC=2026-10-24T18:56:18.9695004Z
+EXIT=0

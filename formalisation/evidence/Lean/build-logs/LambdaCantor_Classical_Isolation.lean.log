@@ -1,0 +1,10 @@
+UTC=2026-10-24T16:13:01.2173315Z MODULE=LambdaCantor/Classical/Isolation.lean SHA256=9EF3749DBDB5C2E3742C278D27154CE165164F4800B43FE8C2AC00F754B413AA
+LambdaCantor/Classical/Isolation.lean:23:39: warning: This simp argument is unused:
+  digit
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵d̵i̵g̵i̵t̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=29.4659413 END_UTC=2026-10-24T16:13:30.7044671Z
+EXIT=0

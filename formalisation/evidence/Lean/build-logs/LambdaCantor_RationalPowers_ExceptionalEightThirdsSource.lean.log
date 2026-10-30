@@ -1,0 +1,7 @@
+UTC=2026-10-24T19:08:31.1742062Z MODULE=LambdaCantor/RationalPowers/ExceptionalEightThirdsSource.lean SHA256=336206EA0F0D70C2DE0B6A103E9B4E1B1118DFA6DF27061074B8257A3C2D9CD6
+'LambdaCantor.RationalPowers.Exceptional.EightThirds.source_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ source_valid._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=17.913757 END_UTC=2026-10-24T19:08:49.1096853Z
+EXIT=0

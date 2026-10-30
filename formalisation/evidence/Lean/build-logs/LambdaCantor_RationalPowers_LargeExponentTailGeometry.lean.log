@@ -1,0 +1,35 @@
+UTC=2026-10-27T17:41:58.9971377Z MODULE=LambdaCantor/RationalPowers/LargeExponentTailGeometry.lean SHA256=F1DBED5F2A4441B2BDB682179BA9E5F4BD072841393416DA5207A3BB101FF0D9
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/RationalPowers/LargeExponentTailGeometry.lean:33:69: warning: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [̵N̵a̵t̵.̵c̵a̵s̵t̵_̵a̵d̵d̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵m̵u̵l̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵p̵o̵w̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵n̵e̵,̵a̵d̵d̵_̵a̵s̵s̵o̵c̵]̵[̲N̲a̲t̲.̲c̲a̲s̲t̲_̲a̲d̲d̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲m̲u̲l̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲p̲o̲w̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲f̲N̲a̲t̲,̲ ̲a̲d̲d̲_̲a̲s̲s̲o̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentTailGeometry.lean:33:82: warning: This simp argument is unused:
+  add_assoc
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_add, ̲Nat.cast_mul, ̲Nat.cast_pow, ̲Nat.cast_ofNat, ̲Nat.cast_one,̵a̵d̵d̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/LargeExponentTailGeometry.lean:30:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/RationalPowers/LargeExponentTailGeometry.lean:36:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=31.0318958 END_UTC=2026-10-27T17:42:30.0450706Z
+EXIT=0

@@ -1,0 +1,12 @@
+UTC=2026-10-27T20:28:25.0619166Z MODULE=LambdaCantor/AE/CenteredFullSecond.lean SHA256=F918332F96907410F03DE5012625EE2A77DCE4EA425474018BE4637AD6A3D7CC
+LambdaCantor/AE/CenteredFullSecond.lean:55:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/CenteredFullSecond.lean:91:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFullSecond.lean:91:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=29.234868 END_UTC=2026-10-27T20:28:54.2988301Z
+EXIT=0

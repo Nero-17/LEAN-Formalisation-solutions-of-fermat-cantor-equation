@@ -1,0 +1,9 @@
+UTC=2026-10-26T09:48:44.3074584Z MODULE=LambdaCantor/Classical/DimensionBounds.lean SHA256=0D5EE5571D293AE2DF27C6EF3F06FBF0EBD352204515E0538573459A6172409B
+'LambdaCantor.Classical.classical_circle_dimension_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.External.periodic_digits_of_coprime_denominator,
+ LambdaCantor.External.rational_of_eventually_periodic_digits,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps]
+ELAPSED_SECONDS=100.6937899 END_UTC=2026-10-26T09:50:25.0287869Z
+EXIT=0

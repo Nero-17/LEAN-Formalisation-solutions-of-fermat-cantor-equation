@@ -1,0 +1,21 @@
+UTC=2026-10-27T06:52:08.2157875Z MODULE=LambdaCantor/Last/AnalyticExceptionsCubic.lean SHA256=6CD58867C178EA46369586E4844F49974C6C5E0AB4DC59092FABF261FF129667
+LambdaCantor/Last/AnalyticExceptionsCubic.lean:20:73: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticExceptionsCubic.lean:24:53: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticExceptionsCubic.lean:56:73: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticExceptionsCubic.lean:75:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticExceptionsCubic.lean:76:12: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticExceptionsCubic.lean:76:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=69.628775 END_UTC=2026-10-27T06:53:17.8476861Z
+EXIT=0

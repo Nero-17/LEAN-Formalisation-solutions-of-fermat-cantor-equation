@@ -1,0 +1,6 @@
+UTC=2026-10-27T05:02:10.8502548Z MODULE=LambdaCantor/First/Rational.lean SHA256=ABEBBC13BC04870E8A9ABB242576655021941866E4DD888B59E91598641657B5
+LambdaCantor/First/Rational.lean:21:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ELAPSED_SECONDS=48.580459 END_UTC=2026-10-27T05:02:59.4893055Z
+EXIT=0

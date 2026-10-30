@@ -1,0 +1,11 @@
+UTC=2026-10-21T10:02:30.1920375Z MODULE=LambdaCantor/AE/Transversality.lean SHA256=0155DC91730DF053479AB8E3914606AD0597E39361BE1358F3494FBB19E8F37E
+LambdaCantor/AE/Transversality.lean:34:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/Transversality.lean:66:24: warning: Variable name `hmargin` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=26.488952 END_UTC=2026-10-21T10:02:56.7002198Z
+EXIT=0

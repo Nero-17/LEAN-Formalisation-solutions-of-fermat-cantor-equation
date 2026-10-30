@@ -1,0 +1,39 @@
+UTC=2026-10-28T21:44:50.9180530Z MODULE=LambdaCantor/Last/SectionFourLastAE.lean SHA256=A6AD399AB01D9332201AD6EF73386CDDA08772E540E54B8743F3DA917B297047
+'LambdaCantor.Last.universal_lastTransition_lt_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Last.universal_positive_dimension_at_or_above_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Last.universal_positive_dimension_near_critical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.Last.ExternalNewhouse.binary_defining_sequence_gap_lemma]
+'LambdaCantor.Last.two_band_separable_c1_closed_interval_criterion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.AE.irrational_ae_dimension_equality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.complex_L1_of_fourier_L2,
+ LambdaCantor.AE.ExternalPlancherel.finite_measure_L2_density,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=30.3442023 END_UTC=2026-10-28T21:45:21.2643532Z
+EXIT=0

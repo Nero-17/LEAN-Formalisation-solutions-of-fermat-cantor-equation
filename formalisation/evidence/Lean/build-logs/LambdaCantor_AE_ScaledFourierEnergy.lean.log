@@ -1,0 +1,5 @@
+UTC=2026-10-26T09:47:56.2724596Z MODULE=LambdaCantor/AE/ScaledFourierEnergy.lean SHA256=092F78B60274AA0EFFF4B4A9AED31C4AA857AFDED7D677DB2973846D1C216D8B
+LambdaCantor/AE/ScaledFourierEnergy.lean:79:12: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/AE/ScaledFourierEnergy.lean:79:30: warning: `mul_le_mul_right'` has been deprecated: Use `mul_le_mul_left` instead
+ELAPSED_SECONDS=47.7579106 END_UTC=2026-10-26T09:48:44.0325084Z
+EXIT=0

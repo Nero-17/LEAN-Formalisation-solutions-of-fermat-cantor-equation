@@ -1,0 +1,9 @@
+UTC=2026-10-28T09:34:29.8512999Z MODULE=LambdaCantor/AE/ActualParentFreezeTransport.lean SHA256=F71D7555B76F1E74E29909EF4468B026F2EF6A06CFE11792A52970D43B91E8AE
+LambdaCantor/AE/ActualParentFreezeTransport.lean:120:4: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+LambdaCantor/AE/ActualParentFreezeTransport.lean:122:4: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+LambdaCantor/AE/ActualParentFreezeTransport.lean:434:10: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/AE/ActualParentFreezeTransport.lean:435:5: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/AE/ActualParentFreezeTransport.lean:1647:10: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+LambdaCantor/AE/ActualParentFreezeTransport.lean:1651:10: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+ELAPSED_SECONDS=362.5724619 END_UTC=2026-10-28T09:40:32.4886569Z
+EXIT=0

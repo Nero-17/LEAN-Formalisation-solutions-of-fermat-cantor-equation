@@ -1,0 +1,13 @@
+UTC=2026-10-21T09:27:29.3477297Z MODULE=LambdaCantor/Last/AdaptiveTree.lean SHA256=9B5D76AC4F019768C9F23C20FE437454F070FC0AC5DCF85FBA20C19E1395C6CF
+LambdaCantor/Last/AdaptiveTree.lean:35:67: warning: `Nat.lt.step` has been deprecated: Use `Nat.lt_succ_of_lt` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.step` to `Nat.lt_succ_of_lt x`).
+LambdaCantor/Last/AdaptiveTree.lean:82:23: warning: This simp argument is unused:
+  wordMap
+
+Hint: Omit it from the simp argument list.
+  simp [run,̵ ̵w̵o̵r̵d̵M̵a̵p̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=29.5336385 END_UTC=2026-10-21T09:27:58.8972981Z
+EXIT=0

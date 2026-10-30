@@ -1,0 +1,6 @@
+UTC=2026-10-21T09:43:41.1966330Z MODULE=LambdaCantor/First/CurveSlope.lean SHA256=17D38779C146928B07FECBD034C4C95775F03D4E1A8F13AF2E6C80E9497087A6
+LambdaCantor/First/CurveSlope.lean:22:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=23.7509931 END_UTC=2026-10-21T09:44:04.9531097Z
+EXIT=0

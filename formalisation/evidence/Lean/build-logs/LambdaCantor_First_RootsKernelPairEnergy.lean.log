@@ -1,0 +1,4 @@
+UTC=2026-10-25T07:19:50.5669592Z MODULE=LambdaCantor/First/RootsKernelPairEnergy.lean SHA256=F14AD26C523745D3668F5660E20B670D838C913BA23B61FEF8EFB4E16BF0A63C
+LambdaCantor/First/RootsKernelPairEnergy.lean:79:45: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+ELAPSED_SECONDS=31.0657782 END_UTC=2026-10-25T07:20:21.6349966Z
+EXIT=0

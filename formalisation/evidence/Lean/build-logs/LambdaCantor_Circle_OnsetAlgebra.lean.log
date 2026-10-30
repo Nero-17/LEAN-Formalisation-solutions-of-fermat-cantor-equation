@@ -1,0 +1,24 @@
+UTC=2026-10-27T04:38:06.3703562Z MODULE=LambdaCantor/Circle/OnsetAlgebra.lean SHA256=481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692
+LambdaCantor/Circle/OnsetAlgebra.lean:36:43: warning: Variable name `nonneg` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Circle/OnsetAlgebra.lean:45:5: warning: Variable name `ratio_nonneg` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Circle/OnsetAlgebra.lean:55:70: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Circle/OnsetAlgebra.lean:66:5: warning: Variable name `scale_nonneg` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Circle/OnsetAlgebra.lean:73:78: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=34.0945015 END_UTC=2026-10-27T04:38:40.4678098Z
+EXIT=0

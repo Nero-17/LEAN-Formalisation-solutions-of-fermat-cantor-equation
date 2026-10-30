@@ -1,0 +1,9 @@
+UTC=2026-10-27T17:33:58.8378879Z MODULE=LambdaCantor/AE/FreezingAverageLocal.lean SHA256=5DB19EE14D52D7DFA841605D3633D5A5498D4EE81C4E14C3660B1FAB494C7F34
+LambdaCantor/AE/FreezingAverageLocal.lean:72:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/FreezingAverageLocal.lean:72:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=30.0389986 END_UTC=2026-10-27T17:34:28.8790619Z
+EXIT=0

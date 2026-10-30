@@ -1,0 +1,127 @@
+UTC=2026-10-24T18:30:44.0852073Z MODULE=LambdaCantor/AE/CenteredTaylor.lean SHA256=064C15FEB5C86F66BA7D2BA263DB8C9D63A7C7A5FE563C729872D29A2156E4FE
+LambdaCantor/AE/CenteredTaylor.lean:24:18: warning: This simp argument is unused:
+  centeredTaylorRemainder
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorR̵e̵m̵a̵i̵n̵d̵e̵r̵,̵ ̵c̵e̵n̵t̵e̵r̵e̵d̵T̵a̵y̵l̵o̵r̵First, Pi.add_apply, Pi.sub_apply, Pi.mul_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:24:64: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorRemainder, centeredTaylorFirst, Pi.a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵P̵i̵.̵sub_apply, Pi.mul_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:24:78: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorRemainder, centeredTaylorFirst, Pi.add_apply, Pi.s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵ ̵P̵i̵.̵mul_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:24:92: warning: This simp argument is unused:
+  Pi.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorRemainder, centeredTaylorFirst, Pi.add_apply, Pi.sub_apply, P̵i.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵i̵d_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:24:106: warning: This simp argument is unused:
+  id_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorRemainder, centeredTaylorFirst, Pi.add_apply, Pi.sub_apply,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Pi.mul_apply,̵ ̵i̵d̵_̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:18:72: warning: 'simp' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:22:19: warning: 'funext parameter' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:22:37: warning: 'simp only [centeredTaylorRemainder, centeredTaylorFirst, Pi.add_apply, Pi.sub_apply, Pi.mul_apply,
+  id_eq]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:23:56: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:24:122: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:18:72: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:22:37: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:23:56: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:24:122: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:36:18: warning: This simp argument is unused:
+  centeredTaylorFirst
+
+Hint: Omit it from the simp argument list.
+  simp only [̵c̵e̵n̵t̵e̵r̵e̵d̵T̵a̵y̵l̵o̵r̵F̵i̵r̵s̵t̵,̵ ̵c̵e̵n̵t̵e̵r̵e̵d̵T̵a̵y̵l̵o̵r̵S̵e̵c̵o̵n̵d̵,̵[̲c̲e̲n̲t̲e̲r̲e̲d̲T̲a̲y̲l̲o̲r̲S̲e̲c̲o̲n̲d̲,̲ Pi.sub_apply, Pi.mul_apply, id_eq,
+          show e̵x̵p̵o̵n̵e̵n̵t̵-̵1̵-̵1̵e̲x̲p̲o̲n̲e̲n̲t̲ ̲-̲ ̲1̲ ̲-̲ ̲1̲ = e̵x̵p̵o̵n̵e̵n̵t̵-̵2̵e̲x̲p̲o̲n̲e̲n̲t̲ ̲-̲ ̲2̲ by ring]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:36:61: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorFirst, centeredTaylorSecond, Pi.s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵ ̵P̵i̵.̵mul_apply, id_eq,
+          show exponent ̲- ̲1 ̲- ̲1 = exponent ̲- ̲2 by ring]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:36:75: warning: This simp argument is unused:
+  Pi.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorFirst, centeredTaylorSecond, Pi.sub_apply, P̵i.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵i̵d_eq,
+          show exponent ̲- ̲1 ̲- ̲1 = exponent ̲- ̲2 by ring]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:36:89: warning: This simp argument is unused:
+  id_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredTaylorFirst, centeredTaylorSecond, Pi.sub_apply, Pi.mul_apply, ̵i̵d̵_̵e̵q̵,̵
+          show exponent ̲- ̲1 ̲- ̲1 = exponent ̲- ̲2 by ring]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredTaylor.lean:30:72: warning: 'simp' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:34:19: warning: 'funext parameter' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:34:37: warning: 'simp only [centeredTaylorFirst, centeredTaylorSecond, Pi.sub_apply, Pi.mul_apply, id_eq,
+  show exponent - 1 - 1 = exponent - 2 by ring]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:35:82: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:37:57: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:30:72: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:34:37: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:35:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredTaylor.lean:37:57: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=28.9405951 END_UTC=2026-10-24T18:31:13.0280784Z
+EXIT=0

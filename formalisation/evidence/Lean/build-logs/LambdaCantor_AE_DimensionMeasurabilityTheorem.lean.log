@@ -1,0 +1,10 @@
+UTC=2026-10-28T02:11:35.9573008Z MODULE=LambdaCantor/AE/DimensionMeasurabilityTheorem.lean SHA256=70E72284DDB33E90BE87D646ABD6AE893BF1CDFA137AD97D29D88923C5DC3573
+LambdaCantor/AE/DimensionMeasurabilityTheorem.lean:66:25: warning: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  simp only [positive, t̵r̵u̵e̵_̵a̵n̵d̵,̵ ̵setOf_true, univ_inter]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=16.6349517 END_UTC=2026-10-28T02:11:52.5949446Z
+EXIT=0

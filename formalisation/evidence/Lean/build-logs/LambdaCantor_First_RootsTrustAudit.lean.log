@@ -1,0 +1,36 @@
+UTC=2026-10-27T04:00:58.7079764Z MODULE=LambdaCantor/First/RootsTrustAudit.lean SHA256=34E2F7DCC0ECEEC3560D5DFB57BC52318F314D9045518C22642276E662059B19
+'LambdaCantor.First.Roots.root_fibres' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.Roots.rootFibreData_rootLaw_absolutelyContinuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.Roots.rootSobolevGoodSet_ae_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.Roots.goodSetPrefixLocalKernel_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.Roots.goodSetPrefixDensity_actual_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=32.6090164 END_UTC=2026-10-27T04:01:31.3191091Z
+EXIT=0

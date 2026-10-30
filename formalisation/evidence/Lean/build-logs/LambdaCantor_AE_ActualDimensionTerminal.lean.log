@@ -1,0 +1,15 @@
+UTC=2026-10-28T21:43:49.7315325Z MODULE=LambdaCantor/AE/ActualDimensionTerminal.lean SHA256=59CA4F40E7810C075894C622DABF396B8C31FFF09C7170FF6713E159FC03F75C
+'LambdaCantor.AE.irrational_ae_dimension_equality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.complex_L1_of_fourier_L2,
+ LambdaCantor.AE.ExternalPlancherel.finite_measure_L2_density,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=35.9787473 END_UTC=2026-10-28T21:44:25.7237961Z
+EXIT=0

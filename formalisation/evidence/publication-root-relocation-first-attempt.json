@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-30T01:30:57.719897+00:00",
+  "finished_utc": "2026-10-30T01:31:15.741877+00:00",
+  "test": "relocated default full-manuscript entry with original accepted compiled dependencies",
+  "clean_full_rebuild": false,
+  "exit_code": 1,
+  "elapsed_seconds": 18.01500000001397,
+  "published_entry_sha256": "5eaf51dd0e492f2ff74196e5d005dc397e6a9f0a72227e7ab7ad4685953f1ea9",
+  "log_sha256": "ab2072d970f66c6bd258c191d3946a0d20c1c904615dd846038ec188155ee70b"
+}

@@ -1,0 +1,87 @@
+UTC=2026-10-27T04:06:39.9418665Z MODULE=LambdaCantor/First/Section3TerminalAudit.lean SHA256=A77881D17D1EBB78B6F5A159275F1340CE0582FC40458F1029BD48FCC0F1FE57
+LambdaCantor.First.Roots.root_fibres {exponent : ℝ} (data : LambdaCantor.First.Roots.RootFibreData exponent) :
+  LambdaCantor.First.Roots.RootFibreConclusion data
+LambdaCantor.First.dimension_upper {exponent ratio : ℝ} (hexponent : 1 < exponent) (hratio : 0 < ratio)
+  (hhalf : ratio ≤ 1 / 2) :
+  dimH (LambdaCantor.intersection exponent ratio) ≤ ENNReal.ofReal (LambdaCantor.First.dimensionUpperBound ratio)
+LambdaCantor.First.irrational_parameters {exponent lower upper : ℝ} (hirrational : Irrational exponent)
+  (hexponent : 1 < exponent) (hlower : 1 / 4 ≤ lower) (hordered : lower < upper) (hupper : upper ≤ 1 / 2) :
+  0 < MeasureTheory.volume {ratio | ratio ∈ Set.Ioo lower upper ∧ 0 < dimH (LambdaCantor.intersection exponent ratio)}
+LambdaCantor.First.irrational_onset {exponent : ℝ} (hirrational : Irrational exponent) (hexponent : 1 < exponent) :
+  LambdaCantor.firstTransition exponent = 1 / 4
+LambdaCantor.First.denominator (numerator denominator : ℕ) (hnumerator : 0 < numerator) (hdenominator : 0 < denominator)
+  (hcoprime : numerator.Coprime denominator) (hexponent : 2 ≤ ↑numerator / ↑denominator) :
+  0 ≤ LambdaCantor.firstTransition (↑numerator / ↑denominator) - 1 / 4 ∧
+    LambdaCantor.firstTransition (↑numerator / ↑denominator) - 1 / 4 ≤
+      (3 / 2) ^ (↑numerator / ↑denominator) * Real.log 4 / (2 * (↑numerator / ↑denominator) * ↑denominator)
+LambdaCantor.First.punctured_limit (center : ℝ) :
+  Filter.Tendsto LambdaCantor.firstTransition (nhdsWithin center {exponent | 2 ≤ exponent ∧ exponent ≠ center})
+    (nhds (1 / 4))
+LambdaCantor.First.continuity_iff_quarter {exponent : ℝ} (hexponent : 2 ≤ exponent) :
+  ContinuousWithinAt LambdaCantor.firstTransition (Set.Ici 2) exponent ↔ LambdaCantor.firstTransition exponent = 1 / 4
+LambdaCantor.First.powers_four (phase : ℕ) (hphase : 1 ≤ phase) : LambdaCantor.firstTransition ↑(4 ^ phase) = 1 / 4
+'LambdaCantor.First.irrational_parameters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.irrational_onset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.denominator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.denominator_rat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.punctured_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.continuity_iff_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+'LambdaCantor.First.powers_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=46.4997271 END_UTC=2026-10-27T04:07:26.4444869Z
+EXIT=0

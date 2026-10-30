@@ -1,0 +1,8 @@
+UTC=2026-10-24T16:54:36.3202301Z MODULE=LambdaCantor/Last/TwoBandOrbit.lean SHA256=E0871EFFF7BC19C7842B165088FD2C1DDF17EEC1ADD9D27186525A86B8D7B26F
+LambdaCantor/Last/TwoBandOrbit.lean:42:49: warning: Variable name `hbound` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=34.2551764 END_UTC=2026-10-24T16:55:10.5771987Z
+EXIT=0

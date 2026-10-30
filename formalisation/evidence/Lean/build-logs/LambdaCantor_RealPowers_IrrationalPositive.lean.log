@@ -1,0 +1,13 @@
+UTC=2026-10-27T20:03:30.8726588Z MODULE=LambdaCantor/RealPowers/IrrationalPositive.lean SHA256=AA13F6B62D8B2890DD519E0588F4D3D92371A551C654DB421845B66227E23838
+LambdaCantor/RealPowers/IrrationalPositive.lean:15:20: warning: This simp argument is unused:
+  one_div_pow
+
+Hint: Omit it from the simp argument list.
+  simp [zpow_neg,̵ ̵o̵n̵e̵_̵d̵i̵v̵_̵p̵o̵w̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RealPowers/IrrationalPositive.lean:17:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=156.5173678 END_UTC=2026-10-27T20:06:07.4157822Z
+EXIT=0

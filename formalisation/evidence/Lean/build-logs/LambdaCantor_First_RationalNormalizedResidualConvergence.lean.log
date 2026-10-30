@@ -1,0 +1,75 @@
+UTC=2026-10-25T08:20:50.2392149Z MODULE=LambdaCantor/First/RationalNormalizedResidualConvergence.lean SHA256=960844C2326A11B24B220EEF5DA4AFB754FBECDF8E6704BDBF49D0C63C3B2AC9
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:65:13: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵ ̵P̵i̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵[̲P̲i̲.̲a̲d̲d̲_̲a̲p̲p̲l̲y̲,̲ Function.comp_apply, add_zero] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:65:27: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, P̵i̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵Function.comp_apply, add_zero] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:65:41: warning: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, Pi.add_apply, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵ ̵add_zero] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:65:62: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, Pi.add_apply, Function.comp_apply,̵ ̵a̵d̵d̵_̵z̵e̵r̵o̵] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:132:13: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.s̵u̵b̵_̵ap̵p̵l̵y̵,̵ ̵P̵i̵.̵a̵dd_apply, Function.comp_apply, add_zero, zero_sub, ← neg_mul] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:132:27: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, P̵i̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵Function.comp_apply, add_zero, zero_sub, ← neg_mul] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:132:41: warning: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, Pi.add_apply, F̵u̵n̵c̵t̵i̵o̵n̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵ ̵add_zero, zero_sub, ← neg_mul] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:132:62: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, Pi.add_apply, Function.comp_apply, a̵d̵d̵_̵zero,̵ ̵z̵e̵r̵o̵_sub, ← neg_mul] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:132:72: warning: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, Pi.add_apply, Function.comp_apply, add_zero, z̵e̵r̵o̵_̵s̵u̵b̵,̵ ̵← neg_mul] at hcombined
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/RationalNormalizedResidualConvergence.lean:132:82: warning: This simp argument is unused:
+  ← neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, Pi.add_apply, Function.comp_apply, add_zero, zero_sub,̵ ̵←̵ ̵n̵e̵g̵_̵m̵u̵l̵] at hcombined
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=32.4518883 END_UTC=2026-10-25T08:21:22.6936348Z
+EXIT=0

@@ -1,0 +1,10 @@
+UTC=2026-10-27T22:28:00.4185095Z MODULE=LambdaCantor/AE/NewtonRefinement.lean SHA256=ED0A0930FC33E57AC304052ABEF22C0731CD3CDD5DAED68B45F816908C298010
+LambdaCantor/AE/NewtonRefinement.lean:64:46: warning: This simp argument is unused:
+  Nat.succ_ne_zero
+
+Hint: Omit it from the simp argument list.
+  simp [prependNewtonDigit,̵ ̵N̵a̵t̵.̵s̵u̵c̵c̵_̵n̵e̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=41.0860915 END_UTC=2026-10-27T22:28:41.5059512Z
+EXIT=0

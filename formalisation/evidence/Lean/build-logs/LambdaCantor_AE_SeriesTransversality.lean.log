@@ -1,0 +1,13 @@
+UTC=2026-10-21T10:13:32.0459033Z MODULE=LambdaCantor/AE/SeriesTransversality.lean SHA256=CDE899E34194F567D710551AE3CDFE3601F155507CCD052D871F2C3F38BB3259
+LambdaCantor/AE/SeriesTransversality.lean:60:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/SeriesTransversality.lean:78:15: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  simp only [pow_o̵n̵e̵,̵ ̵p̵o̵w̵_̵succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=77.7015142 END_UTC=2026-10-21T10:14:49.7524170Z
+EXIT=0

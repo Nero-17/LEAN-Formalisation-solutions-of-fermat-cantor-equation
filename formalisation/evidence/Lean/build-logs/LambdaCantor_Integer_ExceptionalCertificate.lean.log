@@ -1,0 +1,44 @@
+UTC=2026-10-21T09:54:48.0065815Z MODULE=LambdaCantor/Integer/ExceptionalCertificate.lean SHA256=A7B1EE7F7822094DF3F68CE2EE7D2E4CB7289B6DF4102B5BF3AD0C34B6881D2F
+LambdaCantor/Integer/ExceptionalCertificate.lean:145:72: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/ExceptionalCertificate.lean:145:72: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Integer/ExceptionalCertificate.lean:177:17: warning: This simp argument is unused:
+  carry
+
+Hint: Omit it from the simp argument list.
+  simp only [c̵a̵r̵r̵y̵,̵ ̵lift, if_false, if_true] at rule_valid
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/ExceptionalCertificate.lean:177:30: warning: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [carry, lift, if_f̵a̵l̵s̵e̵,̵ ̵i̵f̵_̵true] at rule_valid
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/ExceptionalCertificate.lean:195:42: warning: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [returnClaim, first_mode,̵ ̵i̵f̵_̵f̵a̵l̵s̵e̵] at first_child
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/ExceptionalCertificate.lean:196:43: warning: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [returnClaim, second_mode,̵ ̵i̵f̵_̵f̵a̵l̵s̵e̵] at second_child
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/ExceptionalCertificate.lean:217:34: warning: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [returnClaim, mode, i̵f̵_̵f̵a̵l̵s̵e̵,̵ ̵depth]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=20.8553032 END_UTC=2026-10-21T09:55:08.8639068Z
+EXIT=0

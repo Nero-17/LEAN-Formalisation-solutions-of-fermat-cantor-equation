@@ -1,0 +1,46 @@
+UTC=2026-10-24T16:27:17.8830629Z MODULE=LambdaCantor/AE/DigitResidual.lean SHA256=9B8E97E4DD9C3743851507106CF44EC0BCF40438CDC68D7D78368CF00A2F29CC
+LambdaCantor/AE/DigitResidual.lean:38:30: warning: This simp argument is unused:
+  Pi.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, P̵i̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵id_eq, Nat.sub_sub, show 1 + 1 = 2 from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/DigitResidual.lean:92:71: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DigitResidual.lean:92:71: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/DigitResidual.lean:115:19: warning: 'funext parameter' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DigitResidual.lean:115:37: warning: 'simp only [Pi.mul_apply, Pi.add_apply]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DigitResidual.lean:115:77: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DigitResidual.lean:116:11: warning: 'simp only [Pi.mul_apply, Pi.add_apply]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DigitResidual.lean:116:51: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DigitResidual.lean:115:37: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/DigitResidual.lean:115:77: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/DigitResidual.lean:116:51: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/DigitResidual.lean:178:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DigitResidual.lean:178:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=27.5258455 END_UTC=2026-10-24T16:27:45.4113160Z
+EXIT=0

@@ -1,0 +1,10 @@
+UTC=2026-10-27T18:20:19.4138548Z MODULE=LambdaCantor/RationalPowers/LargeExponentCachedCoverage.lean SHA256=75EF6495C30152F9DEE54D17BB93CF2987D8CD936FE02FF9C11CB42654F322AD
+'LambdaCantor.RationalPowers.largeExponentCachedCellsCheck_cell' depends on axioms: [propext, Quot.sound]
+'LambdaCantor.RationalPowers.largeExponentCachedBlocksCoverCheck_grouped' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.RationalPowers.largeExponentCachedBlocksCoverCheck_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED_SECONDS=30.3928932 END_UTC=2026-10-27T18:20:49.8249290Z
+EXIT=0

@@ -1,0 +1,9 @@
+UTC=2026-10-28T02:52:55.7255632Z MODULE=LambdaCantor/RationalPowers/SharedLogData/Catalogue.lean SHA256=D31640F8D71FB8DC6F6CF9864E1872637B4EAC010B7444B00F45C2E629B82F1F
+True.intro : True
+LambdaCantor.RationalPowers.sharedFullSourceBlocks : Array SharedSourceBlock
+LambdaCantor.RationalPowers.sharedFullSourceBlocks_accepted : ordinaryCatalogueAccepted sharedFullSourceBlocks = true
+LambdaCantor.RationalPowers.sharedFullSourceBlocks_row_count :
+  Array.foldl (fun count block => count + block.rows.size) 0 sharedFullSourceBlocks = 295480
+LambdaCantor.RationalPowers.sharedFullOrdinaryEntries : Array (IdentifierEntry OrdinaryReference)
+ELAPSED_SECONDS=536.5087781 END_UTC=2026-10-28T03:01:52.2627574Z
+EXIT=0

@@ -1,0 +1,23 @@
+UTC=2026-10-24T15:47:18.1118157Z MODULE=LambdaCantor/Last/DerivativeGrowth.lean SHA256=BD05A74D95C942969356EA72E5B128D058A93BDB1AF0B955DAF724E779678B11
+LambdaCantor/Last/DerivativeGrowth.lean:55:13: warning: Variable name `first` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Last/DerivativeGrowth.lean:55:19: warning: Variable name `second` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Last/DerivativeGrowth.lean:59:11: warning: Variable name `first` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Last/DerivativeGrowth.lean:59:17: warning: Variable name `second` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=53.7036654 END_UTC=2026-10-24T15:48:11.8176884Z
+EXIT=0

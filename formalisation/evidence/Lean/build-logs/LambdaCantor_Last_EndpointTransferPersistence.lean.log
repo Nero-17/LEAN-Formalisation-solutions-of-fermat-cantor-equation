@@ -1,0 +1,8 @@
+UTC=2026-10-27T14:53:35.1338184Z MODULE=LambdaCantor/Last/EndpointTransferPersistence.lean SHA256=DD9A6C8E3A00192C65BC3001D1CFC58D226BB4F18BF6C58F2F62CB838199C9CB
+'LambdaCantor.Last.endpoint_accepted_source_persists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.endpoint_source_positive_dimension_neighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.ExternalKronecker.forward_integer_difference_approximation]
+ELAPSED_SECONDS=35.1164785 END_UTC=2026-10-27T14:54:10.2524475Z
+EXIT=0

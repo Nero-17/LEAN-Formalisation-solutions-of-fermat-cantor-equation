@@ -1,0 +1,9 @@
+UTC=2026-10-24T17:33:40.9539246Z MODULE=LambdaCantor/First/FrostmanPushforward.lean SHA256=1C5A0CC7B9B2196D907FFE30290381671441ECCAD4BDF0B27C902C8858F90AFA
+LambdaCantor/First/FrostmanPushforward.lean:46:13: warning: `EMetric.ball` has been deprecated: Use `Metric.eball` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ball` to `Metric.eball x`).
+LambdaCantor/First/FrostmanPushforward.lean:53:17: warning: `EMetric.ball` has been deprecated: Use `Metric.eball` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ball` to `Metric.eball x`).
+ELAPSED_SECONDS=25.0889403 END_UTC=2026-10-24T17:34:06.0445396Z
+EXIT=0

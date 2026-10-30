@@ -1,0 +1,13 @@
+UTC=2026-10-21T11:08:38.0367763Z MODULE=LambdaCantor/Last/VariableTree.lean SHA256=27F6A532CDE1E6AE294F5BE63B8FA9ED348167959FBDDED8E35983169F49E379
+LambdaCantor/Last/VariableTree.lean:30:67: warning: `Nat.lt.step` has been deprecated: Use `Nat.lt_succ_of_lt` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.step` to `Nat.lt_succ_of_lt x`).
+LambdaCantor/Last/VariableTree.lean:76:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ELAPSED_SECONDS=27.7344138 END_UTC=2026-10-21T11:09:05.7736188Z
+EXIT=0

@@ -1,0 +1,9 @@
+UTC=2026-10-24T16:25:12.3133336Z MODULE=LambdaCantor/AE/SobolevTransportOptimization.lean SHA256=83B32C8C630513D510230079141D786A872E11FA6AE2AC15DACCA39255440334
+LambdaCantor/AE/SobolevTransportOptimization.lean:38:52: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/SobolevTransportOptimization.lean:38:52: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=26.4617951 END_UTC=2026-10-24T16:25:38.7766757Z
+EXIT=0

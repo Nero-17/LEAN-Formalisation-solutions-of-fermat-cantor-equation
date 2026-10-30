@@ -1,0 +1,6 @@
+UTC=2026-10-27T16:18:30.4223689Z MODULE=LambdaCantor/Integer/NearAxisDifferentiable.lean SHA256=68D493CAAD2578C6153EC940A42643857339AA41A03CC52829267BEA29147F05
+LambdaCantor/Integer/NearAxisDifferentiable.lean:35:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+ELAPSED_SECONDS=29.6967892 END_UTC=2026-10-27T16:19:00.1554090Z
+EXIT=0

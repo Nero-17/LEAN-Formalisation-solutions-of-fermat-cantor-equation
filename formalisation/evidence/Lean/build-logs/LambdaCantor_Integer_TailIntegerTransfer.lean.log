@@ -1,0 +1,6 @@
+UTC=2026-10-28T21:59:49.5719765Z MODULE=LambdaCantor/Integer/TailIntegerTransfer.lean SHA256=C14795923CB8B9079FD8834DDEFC84EC5FFFBE125B875BE9D77620E4567A952A
+LambdaCantor/Integer/TailIntegerTransfer.lean:55:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=33.593263 END_UTC=2026-10-28T22:00:23.1808525Z
+EXIT=0

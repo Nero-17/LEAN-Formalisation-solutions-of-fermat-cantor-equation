@@ -1,0 +1,8 @@
+UTC=2026-10-27T05:07:03.1923727Z MODULE=LambdaCantor/Manuscript/Classical.lean SHA256=C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B
+'LambdaCantor.Manuscript.rational_classical_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.External.periodic_digits_of_coprime_denominator]
+'LambdaCantor.Manuscript.classical_source_nonempty_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ELAPSED_SECONDS=50.3246621 END_UTC=2026-10-27T05:07:53.5208616Z
+EXIT=0

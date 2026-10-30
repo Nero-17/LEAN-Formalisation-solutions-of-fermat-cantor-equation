@@ -1,0 +1,9 @@
+UTC=2026-10-27T20:40:26.6952334Z MODULE=LambdaCantor/AE/CenteredResidualLimit.lean SHA256=1A249ADAA3C51FF2E38EDCB6738D3114C91CC486000F7D270983FDCC5DE5D963
+LambdaCantor/AE/CenteredResidualLimit.lean:27:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredResidualLimit.lean:27:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=30.2065841 END_UTC=2026-10-27T20:40:56.9047475Z
+EXIT=0

@@ -1,0 +1,10 @@
+UTC=2026-10-24T17:06:02.6939969Z MODULE=LambdaCantor/First/LinearRegularityBlockCollisions.lean SHA256=3B4C077AEEE30E0FC5E1F3ACC2F687443AB4516E1A17EFE9EFE2B966ED4AD55A
+LambdaCantor/First/LinearRegularityBlockCollisions.lean:32:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ELAPSED_SECONDS=24.1424663 END_UTC=2026-10-24T17:06:26.8384558Z
+EXIT=0

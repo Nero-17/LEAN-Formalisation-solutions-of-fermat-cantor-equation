@@ -1,0 +1,10 @@
+UTC=2026-10-27T14:33:47.6811701Z MODULE=LambdaCantor/Last/BinaryGapBasics.lean SHA256=02BF4D7025E81DF5426C1070B32E85B6ED862EA3AB9561BE88D646EF89C3E034
+LambdaCantor/Last/BinaryGapBasics.lean:71:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ELAPSED_SECONDS=18.5955889 END_UTC=2026-10-27T14:34:06.2798295Z
+EXIT=0

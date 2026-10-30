@@ -1,0 +1,12 @@
+UTC=2026-10-27T06:42:29.1332183Z MODULE=LambdaCantor/Last/EndpointTransferPower.lean SHA256=7B1857AD95A49561F37BF8FAE350C9E7BC9B33BEAF6BC8D967984D212BEAE254
+LambdaCantor/Last/EndpointTransferPower.lean:33:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/EndpointTransferPower.lean:57:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/EndpointTransferPower.lean:57:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=97.5055853 END_UTC=2026-10-27T06:44:06.6446336Z
+EXIT=0

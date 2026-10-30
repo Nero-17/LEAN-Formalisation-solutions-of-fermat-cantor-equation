@@ -1,0 +1,17 @@
+UTC=2026-10-28T02:13:35.4664695Z MODULE=LambdaCantor/AE/CenteredRootFibreAdapter.lean SHA256=6682975D5D93FC34ABC4BFE49072DD0F2F6CCE8F53541DDD6D454DEB167EA4A0
+LambdaCantor/AE/CenteredRootFibreAdapter.lean:21:13: warning: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.f̵st̵,̵ ̵P̵r̵o̵d̵.̵s̵nd] at first_coordinate second_coordinate
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredRootFibreAdapter.lean:21:23: warning: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  simp only [Prod.fst,̵ ̵P̵r̵o̵d̵.̵s̵n̵d̵] at first_coordinate second_coordinate
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=20.0481325 END_UTC=2026-10-28T02:13:55.5159564Z
+EXIT=0

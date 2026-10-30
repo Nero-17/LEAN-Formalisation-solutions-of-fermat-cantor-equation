@@ -1,0 +1,10 @@
+UTC=2026-10-27T19:32:01.3567002Z MODULE=LambdaCantor/RealPowers/EndpointWords.lean SHA256=C4EC8C24F8C4A5BC4FFCFBDEF20946A93C305A33DFDF2871244247DFCD0896CA
+LambdaCantor/RealPowers/EndpointWords.lean:36:50: warning: This simp argument is unused:
+  first_digit
+
+Hint: Omit it from the simp argument list.
+  simp only [f̵i̵r̵s̵t̵_̵d̵i̵g̵i̵t̵,̵ ̵Bool.false_eq_true, if_false, if_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=34.6276405 END_UTC=2026-10-27T19:32:36.0242738Z
+EXIT=0

@@ -1,0 +1,9 @@
+UTC=2026-10-24T16:08:15.9146721Z MODULE=LambdaCantor/Classical/Source.lean SHA256=DAAF2C332A1B87FEBA9C35FF2DB904DE009E51919BB4FEA7A7B109070BE1BD45
+LambdaCantor/Classical/Source.lean:21:51: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Classical/Source.lean:28:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=31.3282305 END_UTC=2026-10-24T16:08:47.2632250Z
+EXIT=0

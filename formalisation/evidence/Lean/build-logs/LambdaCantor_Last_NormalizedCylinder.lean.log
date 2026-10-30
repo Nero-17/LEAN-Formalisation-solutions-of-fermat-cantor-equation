@@ -1,0 +1,9 @@
+UTC=2026-10-24T18:10:58.9898067Z MODULE=LambdaCantor/Last/NormalizedCylinder.lean SHA256=C27A13CACC9D89E6B2C20F7FA58D81364D5BD961D3F0E3B8B48AD54F26F30BB2
+LambdaCantor/Last/NormalizedCylinder.lean:54:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/NormalizedCylinder.lean:54:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=27.4969846 END_UTC=2026-10-24T18:11:26.4892703Z
+EXIT=0

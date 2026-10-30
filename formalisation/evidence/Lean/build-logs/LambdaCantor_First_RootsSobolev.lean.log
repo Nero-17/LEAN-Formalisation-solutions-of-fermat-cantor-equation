@@ -1,0 +1,17 @@
+UTC=2026-10-24T17:18:43.9642744Z MODULE=LambdaCantor/First/RootsSobolev.lean SHA256=15599D6E5CF06B79779CF7502AD2654B530DDD51DF9371ACBA2283D8E41838B9
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/First/RootsSobolev.lean:46:49: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RootsSobolev.lean:104:8: warning: 'change
+  ‖(1 + frequency ^ 2) ^ order * ‖charFun (left ∗ right) frequency‖ ^ 2‖ ≤
+    ((2 : ℝ) ^ order * (1 + constant ^ 2)) * ‖charFun left frequency‖ ^ 2' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=29.6139194 END_UTC=2026-10-24T17:19:13.5797190Z
+EXIT=0

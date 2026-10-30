@@ -1,0 +1,8 @@
+UTC=2026-10-24T19:03:27.9456923Z MODULE=LambdaCantor/Integer/PhaseNaturalShift.lean SHA256=022ED8CB1C153AFED4FF710AA14884CD923B736A3B1A0E1354500A387B038AC6
+LambdaCantor/Integer/PhaseNaturalShift.lean:47:5: warning: Variable name `positiveN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=19.9031287 END_UTC=2026-10-24T19:03:47.8715006Z
+EXIT=0

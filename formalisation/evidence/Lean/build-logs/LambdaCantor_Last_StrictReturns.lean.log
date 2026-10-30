@@ -1,0 +1,11 @@
+UTC=2026-10-21T08:29:29.7009444Z MODULE=LambdaCantor/Last/StrictReturns.lean SHA256=6CB99E35938CE903B5B126DE0421EE8EE6138A3A90F050BFC34239F259495824
+LambdaCantor/Last/StrictReturns.lean:40:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/StrictReturns.lean:45:26: warning: Variable name `hmargin` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=18.6867186 END_UTC=2026-10-21T08:29:48.3900459Z
+EXIT=0

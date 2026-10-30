@@ -1,0 +1,30 @@
+UTC=2026-10-24T15:34:06.7000309Z MODULE=LambdaCantor/Last/NonlinearGeometry.lean SHA256=C067F0D653F5D40069FDC4C063DEA9996AC505BC9E06E311A0D69943D5787E4D
+LambdaCantor/Last/NonlinearGeometry.lean:148:34: warning: Variable name `hlower12` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/Last/NonlinearGeometry.lean:217:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/NonlinearGeometry.lean:217:39: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/NonlinearGeometry.lean:217:64: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/NonlinearGeometry.lean:247:26: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵s̵u̵b̵_̵z̵e̵r̵o̵,̵ ̵s̵u̵b̵_̵s̵e̵l̵f̵]̵[̲s̲u̲b̲_̲s̲e̲l̲f̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=708.6888149 END_UTC=2026-10-24T15:45:55.4529804Z
+EXIT=0

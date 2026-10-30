@@ -1,0 +1,15 @@
+UTC=2026-10-28T05:01:01.4188631Z MODULE=LambdaCantor/AE/ClassicalTransportAudit.lean SHA256=BFD7E4CD7E29D7F35B50497F7F32289A8AFDD267608078DA88FACCE79A9960FB
+'LambdaCantor.AE.classical_signed_density_memLp_and_norm_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.complex_L1_of_fourier_L2]
+'LambdaCantor.AE.mollification_error_memLp_and_energy_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.complex_L1_of_fourier_L2]
+'LambdaCantor.AE.exists_density_transport_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.AE.ExternalPlancherel.complex_L1_of_fourier_L2]
+ELAPSED_SECONDS=113.7322006 END_UTC=2026-10-28T05:02:55.1801114Z
+EXIT=0

@@ -1,0 +1,9 @@
+import LambdaCantor.Last.RationalLastStrict
+
+#print axioms LambdaCantor.Last.selected_perfect_actual_fermat_normalization
+#print axioms LambdaCantor.Last.strict_return_criterion_persist_parameter
+#print axioms LambdaCantor.Last.joint_strict_derivative_moving_cylinder_error
+#print axioms LambdaCantor.Last.perfect_fibre_positive_dimension_persist_parameter
+#print axioms LambdaCantor.Last.actual_fermat_positive_dimension_persist_of_infinite_of_finite_isolated
+#print axioms LambdaCantor.Last.rational_positive_dimension_at_or_above_critical_of_infinite
+#print axioms LambdaCantor.Last.rational_lastTransition_lt_critical_of_infinite_intersections

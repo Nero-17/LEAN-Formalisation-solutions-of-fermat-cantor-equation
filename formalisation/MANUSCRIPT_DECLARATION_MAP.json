@@ -1,0 +1,1898 @@
+{
+  "paper_commit": "429d53bb243f49b19ba8169de0e82ed70050ec7f",
+  "generated_utc": "2026-10-27T20:14:10.256473+00:00",
+  "scope": "English compiled inputs; includes introduction restatements and examples; excludes inactive certificate appendix and Chinese duplicate.",
+  "environment_count": 34,
+  "entry_module": "LambdaCantor/Manuscript/All.lean",
+  "entry_source_sha256": "AE7A4795B2CFDA7DA20FFC29B23D530EB4F37CD966742DD429F3282467D25285",
+  "entry_acceptance": {
+    "source_sha256": "AE7A4795B2CFDA7DA20FFC29B23D530EB4F37CD966742DD429F3282467D25285",
+    "own_current_source_exit_zero": false,
+    "log_end_utc": null,
+    "log_exit": null,
+    "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_All.lean.log"
+  },
+  "hash_convention": "SHA256 over exact LF-normalized declaration signature plus final LF for theorems/lemmas. Definitions/structures additionally include their source body. Module hashes are over original file bytes. These source hashes are not kernel type hashes or compilation evidence.",
+  "statement_inventory_sha256": "480E1CDC2B95620343FDD61D4022DED475EAFF1D3524F2D93A5BD40ABB6A32FE",
+  "statement_inventory": "MANUSCRIPT_STATEMENTS_LATEST.json",
+  "statements": [
+    {
+      "number": "1.1",
+      "kind": "theorem",
+      "id": "intro:integer-powers",
+      "labels": [
+        "intro:integer-powers"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 196
+      },
+      "manuscript_statement_sha256": "10e4f110db3a20dfed6cdd81932a651ca36afc3a7b1fa89716baaa361aedcd59",
+      "manuscript_statement_tex": "\\label{intro:integer-powers}\nFor every real \\(\\alpha>1\\), \\(\\dim_{\\mathrm H}(E_{\\alpha,1/3})>0\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.introductory_real_powers",
+          "module": "LambdaCantor/Manuscript/All.lean",
+          "declaration_kind": "theorem",
+          "source_line": 24,
+          "lean_statement_text": "theorem introductory_real_powers (exponent : ℝ) (above_one : 1 < exponent) :\n    0 < dimH (intersection exponent (1/3))\n",
+          "lean_statement_sha256": "AD9E39959FE5BDDF9F5C4E63E03553BA66C83DD230B7544DEBD91DC378F9117E",
+          "lean_signature_sha256": "AD9E39959FE5BDDF9F5C4E63E03553BA66C83DD230B7544DEBD91DC378F9117E",
+          "declaration_source_sha256": "4E92950D768DE758A3A7AC86A697F87B9F32F2672149EA7C01AE4963488DA982",
+          "module_source_sha256": "AE7A4795B2CFDA7DA20FFC29B23D530EB4F37CD966742DD429F3282467D25285",
+          "build_evidence": {
+            "source_sha256": "AE7A4795B2CFDA7DA20FFC29B23D530EB4F37CD966742DD429F3282467D25285",
+            "own_current_source_exit_zero": false,
+            "log_end_utc": null,
+            "log_exit": null,
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_All.lean.log",
+            "current_dependency_closure": false
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "1.2",
+      "kind": "theorem",
+      "id": "intro:irrational-onset",
+      "labels": [
+        "intro:irrational-onset"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 240
+      },
+      "manuscript_statement_sha256": "1a051e3deee1b2c891f45150225c764ab2da0474719d8e286de1161c79a87eb4",
+      "manuscript_statement_tex": "\\label{intro:irrational-onset}\nFor every real \\(\\alpha>1\\), \\(\\lambda_{\\min}(\\alpha)\\geq1/4\\),\nwith equality whenever \\(\\alpha\\) is irrational.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.introductory_first_transition",
+          "module": "LambdaCantor/Manuscript/First.lean",
+          "declaration_kind": "theorem",
+          "source_line": 7,
+          "lean_statement_text": "theorem introductory_first_transition (exponent : ℝ) (above_one : 1 < exponent) :\n    1 / 4 ≤ firstTransition exponent ∧\n      (Irrational exponent → firstTransition exponent = 1 / 4)\n",
+          "lean_statement_sha256": "A25CDC17549F9BCBAD01CDEB0B804E94203411AE31805BFFD1EB872F448E6603",
+          "lean_signature_sha256": "A25CDC17549F9BCBAD01CDEB0B804E94203411AE31805BFFD1EB872F448E6603",
+          "declaration_source_sha256": "3EF047CEE166421EEC04B56B40168273B26AA7A7595828901506406254960E61",
+          "module_source_sha256": "4D747BF4BD3D0FF388E19A011DC5C6C4C1165C31725834698D6723A055616A56",
+          "build_evidence": {
+            "source_sha256": "4D747BF4BD3D0FF388E19A011DC5C6C4C1165C31725834698D6723A055616A56",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:43:38.8605921Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_First.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "1.3",
+      "kind": "theorem",
+      "id": "intro:last-real",
+      "labels": [
+        "intro:last-real"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 259
+      },
+      "manuscript_statement_sha256": "657347c6c851f595f35d69094d0ea324c4e333d91b44735fa566970154464cb4",
+      "manuscript_statement_tex": "\\label{intro:last-real}\nFor every real \\(\\alpha>1\\),\n\\[\n\\lambda_{\\max}(\\alpha)<\\frac{\\sqrt3-1}{2}.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.introductory_last_transition",
+          "module": "LambdaCantor/Manuscript/SectionFour.lean",
+          "declaration_kind": "theorem",
+          "source_line": 14,
+          "lean_statement_text": "theorem introductory_last_transition {exponent : ℝ} (above_one : 1 < exponent) :\n    lastTransition exponent < (Real.sqrt 3-1)/2\n",
+          "lean_statement_sha256": "9BA8B65F1802F4F94D31B9CDEE642CE76773DB06E7001B5DD144947D7E859248",
+          "lean_signature_sha256": "9BA8B65F1802F4F94D31B9CDEE642CE76773DB06E7001B5DD144947D7E859248",
+          "declaration_source_sha256": "F42AEEE1172F3B65E2C9CED6BC492744BEBB8D5953362BEA65BBFC28B6848E69",
+          "module_source_sha256": "7287CF7CD77A54F97B7DD3E2DA45F4617511AE37A716EB4143F28E1395635EC9",
+          "build_evidence": {
+            "source_sha256": "7287CF7CD77A54F97B7DD3E2DA45F4617511AE37A716EB4143F28E1395635EC9",
+            "own_current_source_exit_zero": false,
+            "log_end_utc": null,
+            "log_exit": null,
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_SectionFour.lean.log",
+            "current_dependency_closure": false
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "1.4",
+      "kind": "theorem",
+      "id": "intro:ae-dimension",
+      "labels": [
+        "intro:ae-dimension"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 280
+      },
+      "manuscript_statement_sha256": "39f08ec9eb472e8772aee008b1796d2c85d422cc06b6830d25726f2c12228215",
+      "manuscript_statement_tex": "\\label{intro:ae-dimension}\nFor every fixed irrational \\(\\alpha>1\\), for Lebesgue almost every\n\\(\\lambda\\in(\\sqrt3/4,1/2)\\),\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})\n=\\frac{2\\log2}{\\log(1/\\lambda)}-1.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.introductory_ae_dimension",
+          "module": "LambdaCantor/Manuscript/SectionFour.lean",
+          "declaration_kind": "theorem",
+          "source_line": 19,
+          "lean_statement_text": "theorem introductory_ae_dimension {exponent : ℝ}\n    (irrational : Irrational exponent) (above_one : 1 < exponent) :\n    ∀ᵐ ratio : ℝ, ratio ∈ Set.Ioo (Real.sqrt 3/4) (1/2) →\n      dimH (intersection exponent ratio) = ENNReal.ofReal (expectedDimension ratio)\n",
+          "lean_statement_sha256": "6AEB7B3254CDE6E25B4D04E3A2624C9E2A19A260C434D517307965EC4D51C26D",
+          "lean_signature_sha256": "6AEB7B3254CDE6E25B4D04E3A2624C9E2A19A260C434D517307965EC4D51C26D",
+          "declaration_source_sha256": "67CDA90F7C6DA5E1B0B223DC252EC3A12FB55019923CFB210A05BC2C131722DE",
+          "module_source_sha256": "7287CF7CD77A54F97B7DD3E2DA45F4617511AE37A716EB4143F28E1395635EC9",
+          "build_evidence": {
+            "source_sha256": "7287CF7CD77A54F97B7DD3E2DA45F4617511AE37A716EB4143F28E1395635EC9",
+            "own_current_source_exit_zero": false,
+            "log_end_utc": null,
+            "log_exit": null,
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_SectionFour.lean.log",
+            "current_dependency_closure": false
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.1",
+      "kind": "definition",
+      "id": "def:cantor-circle",
+      "labels": [
+        "def:cantor-circle"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 326
+      },
+      "manuscript_statement_sha256": "1b3a153752dc0e3de48ac86c081ab46b49d7d32d98330aec7a6669dc81de6b7d",
+      "manuscript_statement_tex": "\\label{def:cantor-circle}\nFor the following unit-circle construction, write\n\\[\nC:=C_{1/3}\n=\\left\\{\\sum_{j=1}^{\\infty}\\frac{2\\varepsilon_j}{3^j}:\n                \\varepsilon_j\\in\\{0,1\\}\\right\\},\n\\qquad\nE:=E_{2,1/3}.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.classicalCantor",
+          "module": "LambdaCantor/Manuscript/Classical.lean",
+          "declaration_kind": "abbrev",
+          "source_line": 10,
+          "lean_statement_text": "abbrev classicalCantor : Set ℝ := cantorSet (1/3)\n",
+          "lean_statement_sha256": "6FEFFA5D79488BB84856646DEBD50B075769C5286D605662A42AA19B8DD54C63",
+          "lean_signature_sha256": "AC76325FD73DAB99B24A6E159430F59CFC13765F8A8E4A83CAA1BC4394D747EA",
+          "declaration_source_sha256": "6FEFFA5D79488BB84856646DEBD50B075769C5286D605662A42AA19B8DD54C63",
+          "module_source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+          "build_evidence": {
+            "source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T05:07:53.5208616Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_Classical.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Manuscript.classicalCircle",
+          "module": "LambdaCantor/Manuscript/Classical.lean",
+          "declaration_kind": "abbrev",
+          "source_line": 13,
+          "lean_statement_text": "abbrev classicalCircle : Set (ℝ × ℝ) := intersection 2 (1/3)\n",
+          "lean_statement_sha256": "1625701F31B5B458CB3966AE5720CBFD5BA69453BBA768F217DB14C86C92E72B",
+          "lean_signature_sha256": "8AC77027D519EF37BF66A48A978AB4951636C1F324B77B2E668478A805C2DBAE",
+          "declaration_source_sha256": "1625701F31B5B458CB3966AE5720CBFD5BA69453BBA768F217DB14C86C92E72B",
+          "module_source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+          "build_evidence": {
+            "source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T05:07:53.5208616Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_Classical.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.address",
+          "module": "LambdaCantor/Common.lean",
+          "declaration_kind": "def",
+          "source_line": 10,
+          "lean_statement_text": "def address (ratio : ℝ) (digits : ℕ → Bool) : ℝ :=\n  (1 - ratio) * ∑' j : ℕ, (if digits j then (1 : ℝ) else 0) * ratio ^ j\n",
+          "lean_statement_sha256": "62925217E8EC21B67B3EE21F6D9A6EBB6A313626AC3B8765BC06822C3B9BA95F",
+          "lean_signature_sha256": "BE771742AEC1AF9948557E105703B1E9E32152362163AF6AF4C8473830D0B7EC",
+          "declaration_source_sha256": "62925217E8EC21B67B3EE21F6D9A6EBB6A313626AC3B8765BC06822C3B9BA95F",
+          "module_source_sha256": "3AAC82E2010B0577D71F745BDFC82963143E84DBE6385A6D69E298C5D0A12E76",
+          "build_evidence": {
+            "source_sha256": "3AAC82E2010B0577D71F745BDFC82963143E84DBE6385A6D69E298C5D0A12E76",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T15:54:14.8016590Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Common.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.address_third_eq_ofDigits",
+          "module": "LambdaCantor/ClassicalBridge.lean",
+          "declaration_kind": "theorem",
+          "source_line": 8,
+          "lean_statement_text": "theorem address_third_eq_ofDigits (digits : ℕ → Bool) :\n    address (1 / 3) digits =\n      Real.ofDigits (fun j => cond (digits j) (2 : Fin 3) 0)\n",
+          "lean_statement_sha256": "FA5D1A652618C4B780E0924EE6E772CE050E3EE98E208E09EA62344B553E1EA3",
+          "lean_signature_sha256": "FA5D1A652618C4B780E0924EE6E772CE050E3EE98E208E09EA62344B553E1EA3",
+          "declaration_source_sha256": "C556A1298FFE3292B9382E338DB99D1D4B62E3DDC7D0EC9ED01BE3AFEEF1753E",
+          "module_source_sha256": "1112F688A4E6983D81E4C2977529FBA4E1CC574620BB27920171AA71064B2FAC",
+          "build_evidence": {
+            "source_sha256": "1112F688A4E6983D81E4C2977529FBA4E1CC574620BB27920171AA71064B2FAC",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T15:58:15.8051734Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_ClassicalBridge.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.cantorSet_third_eq",
+          "module": "LambdaCantor/ClassicalBridge.lean",
+          "declaration_kind": "theorem",
+          "source_line": 18,
+          "lean_statement_text": "theorem cantorSet_third_eq : cantorSet (1 / 3) = _root_.cantorSet\n",
+          "lean_statement_sha256": "797F2A839E2B86155D814193A923F3D1AE2D14961355A78502B7D5FE4FFA786A",
+          "lean_signature_sha256": "797F2A839E2B86155D814193A923F3D1AE2D14961355A78502B7D5FE4FFA786A",
+          "declaration_source_sha256": "0B5588FA7076F8E1B85251504960DCFB9605D53889F5AE34D1B77A4A46CD3988",
+          "module_source_sha256": "1112F688A4E6983D81E4C2977529FBA4E1CC574620BB27920171AA71064B2FAC",
+          "build_evidence": {
+            "source_sha256": "1112F688A4E6983D81E4C2977529FBA4E1CC574620BB27920171AA71064B2FAC",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T15:58:15.8051734Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_ClassicalBridge.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "C is cantorSet(1/3); address_third_eq_ofDigits and cantorSet_third_eq identify its series and classical Cantor definitions. E is intersection 2 (1/3).",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.2",
+      "kind": "lemma",
+      "id": "lem:rational",
+      "labels": [
+        "lem:rational"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 379
+      },
+      "manuscript_statement_sha256": "745c34ae54c02b6afc3e6a2403766c6f14a54d7cfe34ac4a9ed8b9a21cd4196d",
+      "manuscript_statement_tex": "\\label{lem:rational}\nThe rational points of \\(E\\) are exactly \\((0,1)\\) and \\((1,0)\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.rational_classical_circle",
+          "module": "LambdaCantor/Manuscript/Classical.lean",
+          "declaration_kind": "theorem",
+          "source_line": 16,
+          "lean_statement_text": "theorem rational_classical_circle (first second : ℚ) :\n    ((first : ℝ), (second : ℝ)) ∈ classicalCircle ↔\n      (first = 0 ∧ second = 1) ∨ (first = 1 ∧ second = 0)\n",
+          "lean_statement_sha256": "9ECFBDFD1CD8137254F93417D5532E1C763A5ED87A42607566C93F5AC7D7B7EA",
+          "lean_signature_sha256": "9ECFBDFD1CD8137254F93417D5532E1C763A5ED87A42607566C93F5AC7D7B7EA",
+          "declaration_source_sha256": "DD85D3F0D975C8C6FD60087121D7F13AFDA3B9D3380B10060B20E7E362B15CD6",
+          "module_source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+          "build_evidence": {
+            "source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T05:07:53.5208616Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_Classical.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.3",
+      "kind": "lemma",
+      "id": "lem:interval-cover",
+      "labels": [
+        "lem:interval-cover"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 450
+      },
+      "manuscript_statement_sha256": "c1fb1e5366bcbc538690b602ba6367c99ef5ed73843ab1ad08e643f84e3c99c2",
+      "manuscript_statement_tex": "\\label{lem:interval-cover}\nSuppose that\n\\[\n0<\\min_{[0,1]^2}G_b\n\\leq\\max_{[0,1]^2}G_b\n<\\min_{[0,1]^2}G_a,\n\\qquad\n\\max_{[0,1]^2}G_a<3\\min_{[0,1]^2}G_b.\n\\]\nThen every square \\(Q\\) described above satisfies\n\\[\nG\\bigl((u+3^{-n}C)\\times(v+3^{-n}C)\\bigr)\n=[G(u,v),G(u+3^{-n},v+3^{-n})].\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Classical.general_cantor_image",
+          "module": "LambdaCantor/Classical/GeneralCoverLocal.lean",
+          "declaration_kind": "theorem",
+          "source_line": 75,
+          "lean_statement_text": "theorem general_cantor_image (function : ℝ → ℝ → ℝ)\n    (continuous : ContinuousOn (fun point : ℝ × ℝ => function point.1 point.2)\n      (Set.Icc (0 : ℝ) 1 ×ˢ Set.Icc (0 : ℝ) 1))\n    (horizontalLower horizontalUpper verticalLower verticalUpper : ℝ)\n    (bounds : CoordinateBounds function horizontalLower horizontalUpper verticalLower verticalUpper)\n    (horizontal_nonnegative : 0 ≤ horizontalLower) (vertical_nonnegative : 0 ≤ verticalLower)\n    (first_gap : verticalUpper ≤ horizontalLower)\n    (middle_gap : horizontalUpper ≤ 3*verticalLower)\n    (u v side : ℝ) (u_nonnegative : 0 ≤ u) (v_nonnegative : 0 ≤ v)\n    (side_nonnegative : 0 ≤ side) (u_upper : u+side ≤ 1) (v_upper : v+side ≤ 1) :\n    (fun point : ℝ × ℝ => function (u+side*point.1) (v+side*point.2)) ''\n      (_root_.cantorSet ×ˢ _root_.cantorSet) =\n        Set.Icc (function u v) (function (u+side) (v+side))\n",
+          "lean_statement_sha256": "584E61224030294FCAAE889CC015D1F79DF5439202ABB64E6FD8EF0B5F256167",
+          "lean_signature_sha256": "584E61224030294FCAAE889CC015D1F79DF5439202ABB64E6FD8EF0B5F256167",
+          "declaration_source_sha256": "BE42B62D31423AF57F88236D96470938511D73F019270CE3413128F8F1646CDF",
+          "module_source_sha256": "9F67D916D6EE5050AA5DC746886637F6F037B459D2FE3A282190F3456168EBAE",
+          "build_evidence": {
+            "source_sha256": "9F67D916D6EE5050AA5DC746886637F6F037B459D2FE3A282190F3456168EBAE",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:07:57.0065283Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_GeneralCoverLocal.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Classical.coordinateBounds_of_partial_derivatives",
+          "module": "LambdaCantor/Classical/GeneralCover.lean",
+          "declaration_kind": "theorem",
+          "source_line": 38,
+          "lean_statement_text": "theorem coordinateBounds_of_partial_derivatives\n    (function : ℝ → ℝ → ℝ)\n    (horizontalLower horizontalUpper verticalLower verticalUpper : ℝ)\n    (horizontal_continuous : ∀ y ∈ Set.Icc (0 : ℝ) 1,\n      ContinuousOn (fun x => function x y) (Set.Icc (0 : ℝ) 1))\n    (vertical_continuous : ∀ x ∈ Set.Icc (0 : ℝ) 1,\n      ContinuousOn (fun y => function x y) (Set.Icc (0 : ℝ) 1))\n    (horizontal_differentiable : ∀ y ∈ Set.Icc (0 : ℝ) 1,\n      DifferentiableOn ℝ (fun x => function x y) (Set.Ioo (0 : ℝ) 1))\n    (vertical_differentiable : ∀ x ∈ Set.Icc (0 : ℝ) 1,\n      DifferentiableOn ℝ (fun y => function x y) (Set.Ioo (0 : ℝ) 1))\n    (horizontal_bounds : ∀ y ∈ Set.Icc (0 : ℝ) 1, ∀ x ∈ Set.Ioo (0 : ℝ) 1,\n      horizontalLower ≤ deriv (fun t => function t y) x ∧\n        deriv (fun t => function t y) x ≤ horizontalUpper)\n    (vertical_bounds : ∀ x ∈ Set.Icc (0 : ℝ) 1, ∀ y ∈ Set.Ioo (0 : ℝ) 1,\n      verticalLower ≤ deriv (fun t => function x t) y ∧\n        deriv (fun t => function x t) y ≤ verticalUpper) :\n    CoordinateBounds function horizontalLower horizontalUpper verticalLower verticalUpper\n",
+          "lean_statement_sha256": "F4E7F6CD923763247E8C19A9921EF87969EE7DB90CE445B658905CE7432BE70D",
+          "lean_signature_sha256": "F4E7F6CD923763247E8C19A9921EF87969EE7DB90CE445B658905CE7432BE70D",
+          "declaration_source_sha256": "39C4822ADB64DAF9C46B0B357D751C6FB4148DA2EFE4F3045FF3B4FDB31FDDDB",
+          "module_source_sha256": "D70308EDA3D6BA0090811EE35458EEFE070427067CDA5638CC2D2DAAA2E71090",
+          "build_evidence": {
+            "source_sha256": "D70308EDA3D6BA0090811EE35458EEFE070427067CDA5638CC2D2DAAA2E71090",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:05:23.2786938Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_GeneralCover.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The image theorem is stated for every legal nonnegative side length, hence specializes to 3^(-n). The derivative-to-increment theorem supplies CoordinateBounds from the displayed derivative extrema; its non-strict gap hypotheses are weaker than the strict manuscript assumptions.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.4",
+      "kind": "proposition",
+      "id": "prop:source",
+      "labels": [
+        "prop:source"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 509
+      },
+      "manuscript_statement_sha256": "c6819a1303243f958709c11298a59ffe2d792f8a2c7ef69f1e0d0e6f169172de",
+      "manuscript_statement_tex": "\\label{prop:source}\nThe set \\(S\\) is nonempty and compact.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.classical_source_nonempty_compact",
+          "module": "LambdaCantor/Manuscript/Classical.lean",
+          "declaration_kind": "theorem",
+          "source_line": 32,
+          "lean_statement_text": "theorem classical_source_nonempty_compact :\n    Classical.source.Nonempty ∧ IsCompact Classical.source\n",
+          "lean_statement_sha256": "6B98E8E9BDF19284014B371740AED5DC0B8C430544D1B6A0FC890C970CC84E88",
+          "lean_signature_sha256": "6B98E8E9BDF19284014B371740AED5DC0B8C430544D1B6A0FC890C970CC84E88",
+          "declaration_source_sha256": "CC3FBAE22152F090CAB018954E14EB8AC5B302C0AFDFF2329A0DF63E7A1599CB",
+          "module_source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+          "build_evidence": {
+            "source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T05:07:53.5208616Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_Classical.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Classical.source",
+          "module": "LambdaCantor/Classical/Source.lean",
+          "declaration_kind": "def",
+          "source_line": 34,
+          "lean_statement_text": "def source : Set (ℝ × ℝ) := cylinderMap '' sourceLevel\n",
+          "lean_statement_sha256": "4A553020D28C04C897539564083631FEF64399098078D97C24EC72477CECCEA4",
+          "lean_signature_sha256": "9AC58C7FA049023C817F9F96BEBB7D1E871781696BB2EEB6C4BCB8F32F4103C7",
+          "declaration_source_sha256": "4A553020D28C04C897539564083631FEF64399098078D97C24EC72477CECCEA4",
+          "module_source_sha256": "DAAF2C332A1B87FEBA9C35FF2DB904DE009E51919BB4FEA7A7B109070BE1BD45",
+          "build_evidence": {
+            "source_sha256": "DAAF2C332A1B87FEBA9C35FF2DB904DE009E51919BB4FEA7A7B109070BE1BD45",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:08:47.2632250Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_Source.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.5",
+      "kind": "lemma",
+      "id": "lem:periodicity",
+      "labels": [
+        "lem:periodicity"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 566
+      },
+      "manuscript_statement_sha256": "157222f6122e2a544f57bb511c775e5e299db063e207d8cd5f2de1dccf6e16aa",
+      "manuscript_statement_tex": "\\label{lem:periodicity}\nFor \\(r\\) satisfying \\eqref{eq:r-band}, the sequence \\((c_n)\\) is\neventually periodic whenever\n\\[\n\\lim_{n\\to\\infty}\\operatorname{dist}(T_n,I_{c_n})=0.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Classical.infDist_exclusive_domains_eventually_periodic",
+          "module": "LambdaCantor/Classical/PeriodicityConclusion.lean",
+          "declaration_kind": "theorem",
+          "source_line": 64,
+          "lean_statement_text": "theorem infDist_exclusive_domains_eventually_periodic\n    (slope : ℝ) (slope_lower : 11 / 9 < slope) (slope_upper : slope < 2027 / 1624)\n    (digits : ℕ → Fin 4) (tails : ℕ → ℝ)\n    (vanishing : ∀ ε > 0, ∃ start, ∀ n ≥ start,\n      Metric.infDist (tails n) (exclusiveInterval slope (digits n)) < ε)\n    (recurrence : ∀ n, tails (n+1) = 3 * tails n -\n      (((digits n).val / 2 : ℕ) : ℝ) * slope - (((digits n).val % 2 : ℕ) : ℝ)) :\n    ∃ start, ∀ n ≥ start, digits (n+4) = digits n\n",
+          "lean_statement_sha256": "822A1B1CF630D7DC7B53BBEBC4C140B9A3F8C59CF0A15CB82F5912671B70007C",
+          "lean_signature_sha256": "822A1B1CF630D7DC7B53BBEBC4C140B9A3F8C59CF0A15CB82F5912671B70007C",
+          "declaration_source_sha256": "E6CF87CE3AC36173BA45C62034803736A257B83B3D47F0EFFDF316F55CD5D353",
+          "module_source_sha256": "3F988A0ADAFBE25EC73E2488E4FCBFE23B3B974B42477D0206E4DD26105A696A",
+          "build_evidence": {
+            "source_sha256": "3F988A0ADAFBE25EC73E2488E4FCBFE23B3B974B42477D0206E4DD26105A696A",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T14:19:54.7128221Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_PeriodicityConclusion.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.6",
+      "kind": "theorem",
+      "id": "thm:main",
+      "labels": [
+        "thm:main"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 666
+      },
+      "manuscript_statement_sha256": "7843aaa20b26a488f4845fa8e5ffba229966151234a6db3380c7a5bfcae7d5ec",
+      "manuscript_statement_tex": "\\label{thm:main}\nThe set \\(E\\) has cardinality \\(2^{\\aleph_0}\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Classical.classical_circle_cardinality",
+          "module": "LambdaCantor/Classical/NoIsolation.lean",
+          "declaration_kind": "theorem",
+          "source_line": 192,
+          "lean_statement_text": "theorem classical_circle_cardinality :\n    Cardinal.mk (intersection 2 (1 / 3)) = Cardinal.continuum\n",
+          "lean_statement_sha256": "5379797BB9E0FA14865DBF58C27EB076C9BD7B4AD24EDDEE1FF255EF4569FB5A",
+          "lean_signature_sha256": "5379797BB9E0FA14865DBF58C27EB076C9BD7B4AD24EDDEE1FF255EF4569FB5A",
+          "declaration_source_sha256": "531C1AE0134DD2536ECB3C0CF0FD5F77EB82601A71C71C36E225C341FC62FDBC",
+          "module_source_sha256": "4B1D2F36B8C46D6C7A60F4B2A84BCBA0790AC3F62C372044BE249065C2E2E1CA",
+          "build_evidence": {
+            "source_sha256": "4B1D2F36B8C46D6C7A60F4B2A84BCBA0790AC3F62C372044BE249065C2E2E1CA",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:01:56.5552964Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_NoIsolation.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.7",
+      "kind": "example",
+      "id": "ex:first-subdivision",
+      "labels": [
+        "ex:first-subdivision"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 793
+      },
+      "manuscript_statement_sha256": "ddab53a6e5c26e40e2f5a36a151f5d9e98807f2cced806e3b8da6bf25130a6a5",
+      "manuscript_statement_tex": "\\label{ex:first-subdivision}\nFor a child with first ternary digits \\(d,e\\in\\{0,2\\}\\) in the\n\\(a,b\\) coordinates, write\n\\(a=(d+s)/3\\), \\(b=(e+t)/3\\), with \\(s,t\\in[0,1]\\).\nMultiplying \\(F(a,b)-3^{16}\\) by \\(9\\) gives\n\\[\n(19008+d+s)^2+9(1698+e+t)^2-3^{18}.\n\\]\nIts corner-value intervals are\n\\[\n\\begin{array}{c@{\\qquad}r@{\\ ,\\ }l}\n\\toprule\n(d,e)&\\multicolumn{2}{c}{\\text{corner-value interval}}\\\\\n\\midrule\n(0,0)&[-167589&-98999]\\\\\n(0,2)&[-106425&-37799]\\\\\n(2,0)&[-91553&-22959]\\\\\n(2,2)&[-30389&38241]\\\\\n\\bottomrule\n\\end{array}\n\\]\nOnly the child \\((2,2)\\) meets the level zero.\nLemma~\\ref{lem:interval-cover} makes this a statement about actual\nCantor points, not merely ordinary-square crossings.\nThe theorem proves that the surviving compact intersection is\nperfect despite this first subdivision having a single surviving\nchild.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.PaperExamples.subdivisionResidual_identity",
+          "module": "LambdaCantor/PaperExamples/FirstSubdivision.lean",
+          "declaration_kind": "theorem",
+          "source_line": 11,
+          "lean_statement_text": "theorem subdivisionResidual_identity (firstDigit secondDigit firstTail secondTail : ℝ) :\n    subdivisionResidual firstDigit secondDigit firstTail secondTail =\n      9 * (Classical.cylinderPolynomial ((firstDigit + firstTail) / 3)\n        ((secondDigit + secondTail) / 3) - 3 ^ 16)\n",
+          "lean_statement_sha256": "9A2855EF94AF47CA6C4BD95335A4DA9E686877771D6CF7AA0B3ADC6404B62250",
+          "lean_signature_sha256": "9A2855EF94AF47CA6C4BD95335A4DA9E686877771D6CF7AA0B3ADC6404B62250",
+          "declaration_source_sha256": "A0BF112BF7A594207497B55E19FB9FFFDA2C4C0C9FAC5DCDA3EC5BA9CAEFA5E9",
+          "module_source_sha256": "51CF7BD99104D757D02BC6F2159348C597E52367A3F6877A783B5C2FA027C076",
+          "build_evidence": {
+            "source_sha256": "51CF7BD99104D757D02BC6F2159348C597E52367A3F6877A783B5C2FA027C076",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:59:18.2999038Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_PaperExamples_FirstSubdivision.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.PaperExamples.first_subdivision_corner_table",
+          "module": "LambdaCantor/PaperExamples/FirstSubdivision.lean",
+          "declaration_kind": "theorem",
+          "source_line": 18,
+          "lean_statement_text": "theorem first_subdivision_corner_table :\n    subdivisionResidual 0 0 0 0 = -167589 ∧\n    subdivisionResidual 0 0 1 1 = -98999 ∧\n    subdivisionResidual 0 2 0 0 = -106425 ∧\n    subdivisionResidual 0 2 1 1 = -37799 ∧\n    subdivisionResidual 2 0 0 0 = -91553 ∧\n    subdivisionResidual 2 0 1 1 = -22959 ∧\n    subdivisionResidual 2 2 0 0 = -30389 ∧\n    subdivisionResidual 2 2 1 1 = 38241\n",
+          "lean_statement_sha256": "1B8C3EF0AC74FCCEA2705B301B5B236D0D1F13416B51464475EF35ECBC66FBDD",
+          "lean_signature_sha256": "1B8C3EF0AC74FCCEA2705B301B5B236D0D1F13416B51464475EF35ECBC66FBDD",
+          "declaration_source_sha256": "9042D676EB33AAC2ED58203958F6532576609772CE49FE5361AE0B9B74FCFDFB",
+          "module_source_sha256": "51CF7BD99104D757D02BC6F2159348C597E52367A3F6877A783B5C2FA027C076",
+          "build_evidence": {
+            "source_sha256": "51CF7BD99104D757D02BC6F2159348C597E52367A3F6877A783B5C2FA027C076",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:59:18.2999038Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_PaperExamples_FirstSubdivision.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Classical.source_first_digits_true",
+          "module": "LambdaCantor/Classical/FirstSubdivision.lean",
+          "declaration_kind": "theorem",
+          "source_line": 29,
+          "lean_statement_text": "theorem source_first_digits_true (first second : ℕ → Bool)\n    (level : cylinderPolynomial (address (1 / 3) first) (address (1 / 3) second) = 3 ^ 16) :\n    first 0 = true ∧ second 0 = true\n",
+          "lean_statement_sha256": "6CA376BD956D72F163467B8F53E3D6A4FB6E987C0C72FBBE609D94BD4A34FDB0",
+          "lean_signature_sha256": "6CA376BD956D72F163467B8F53E3D6A4FB6E987C0C72FBBE609D94BD4A34FDB0",
+          "declaration_source_sha256": "953ADA39582A0F38007B31D0CCF0CE22FD297640F447AF9144758CB09116F286",
+          "module_source_sha256": "F42B1E569048B7F8CCD00BEC6FDB8D6E65BB74CBD72DB3D88C98D4D0E25518EF",
+          "build_evidence": {
+            "source_sha256": "F42B1E569048B7F8CCD00BEC6FDB8D6E65BB74CBD72DB3D88C98D4D0E25518EF",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:11:08.4330951Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_FirstSubdivision.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Classical.source_perfect",
+          "module": "LambdaCantor/Classical/NoIsolation.lean",
+          "declaration_kind": "theorem",
+          "source_line": 180,
+          "lean_statement_text": "theorem source_perfect : Perfect source\n",
+          "lean_statement_sha256": "9C720C9B08556F3EEAC9801C81E172E9803BCD53E5E9E50BA8C18492690B5969",
+          "lean_signature_sha256": "9C720C9B08556F3EEAC9801C81E172E9803BCD53E5E9E50BA8C18492690B5969",
+          "declaration_source_sha256": "9D664C13B5AC142F599B74C57798DA2867AB3593F32E077C0CD04143B1A4D585",
+          "module_source_sha256": "4B1D2F36B8C46D6C7A60F4B2A84BCBA0790AC3F62C372044BE249065C2E2E1CA",
+          "build_evidence": {
+            "source_sha256": "4B1D2F36B8C46D6C7A60F4B2A84BCBA0790AC3F62C372044BE249065C2E2E1CA",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:01:56.5552964Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_NoIsolation.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Classical.source_nonempty",
+          "module": "LambdaCantor/Classical/Source.lean",
+          "declaration_kind": "theorem",
+          "source_line": 40,
+          "lean_statement_text": "theorem source_nonempty : source.Nonempty\n",
+          "lean_statement_sha256": "38495243675EA497A31E377A1B07C930EED5C97D1AF5942F87396BFE4850F850",
+          "lean_signature_sha256": "38495243675EA497A31E377A1B07C930EED5C97D1AF5942F87396BFE4850F850",
+          "declaration_source_sha256": "3BFE57C0AA60C0EB836AE448D3E6A888954D3E428C4C1F3F1165381FAE11E1A4",
+          "module_source_sha256": "DAAF2C332A1B87FEBA9C35FF2DB904DE009E51919BB4FEA7A7B109070BE1BD45",
+          "build_evidence": {
+            "source_sha256": "DAAF2C332A1B87FEBA9C35FF2DB904DE009E51919BB4FEA7A7B109070BE1BD45",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:08:47.2632250Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_Source.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Classical.source_compact",
+          "module": "LambdaCantor/Classical/Source.lean",
+          "declaration_kind": "theorem",
+          "source_line": 49,
+          "lean_statement_text": "theorem source_compact : IsCompact source\n",
+          "lean_statement_sha256": "00940D516E13949A1DD7AB8591816F617857811776507BBC06592351167F50C3",
+          "lean_signature_sha256": "00940D516E13949A1DD7AB8591816F617857811776507BBC06592351167F50C3",
+          "declaration_source_sha256": "D3AD785DD6410023116378C1913B7E28C30B26986FA77AF2ACDCF70F27BEAD87",
+          "module_source_sha256": "DAAF2C332A1B87FEBA9C35FF2DB904DE009E51919BB4FEA7A7B109070BE1BD45",
+          "build_evidence": {
+            "source_sha256": "DAAF2C332A1B87FEBA9C35FF2DB904DE009E51919BB4FEA7A7B109070BE1BD45",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:08:47.2632250Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_Source.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Classical.general_cantor_image",
+          "module": "LambdaCantor/Classical/GeneralCoverLocal.lean",
+          "declaration_kind": "theorem",
+          "source_line": 75,
+          "lean_statement_text": "theorem general_cantor_image (function : ℝ → ℝ → ℝ)\n    (continuous : ContinuousOn (fun point : ℝ × ℝ => function point.1 point.2)\n      (Set.Icc (0 : ℝ) 1 ×ˢ Set.Icc (0 : ℝ) 1))\n    (horizontalLower horizontalUpper verticalLower verticalUpper : ℝ)\n    (bounds : CoordinateBounds function horizontalLower horizontalUpper verticalLower verticalUpper)\n    (horizontal_nonnegative : 0 ≤ horizontalLower) (vertical_nonnegative : 0 ≤ verticalLower)\n    (first_gap : verticalUpper ≤ horizontalLower)\n    (middle_gap : horizontalUpper ≤ 3*verticalLower)\n    (u v side : ℝ) (u_nonnegative : 0 ≤ u) (v_nonnegative : 0 ≤ v)\n    (side_nonnegative : 0 ≤ side) (u_upper : u+side ≤ 1) (v_upper : v+side ≤ 1) :\n    (fun point : ℝ × ℝ => function (u+side*point.1) (v+side*point.2)) ''\n      (_root_.cantorSet ×ˢ _root_.cantorSet) =\n        Set.Icc (function u v) (function (u+side) (v+side))\n",
+          "lean_statement_sha256": "584E61224030294FCAAE889CC015D1F79DF5439202ABB64E6FD8EF0B5F256167",
+          "lean_signature_sha256": "584E61224030294FCAAE889CC015D1F79DF5439202ABB64E6FD8EF0B5F256167",
+          "declaration_source_sha256": "BE42B62D31423AF57F88236D96470938511D73F019270CE3413128F8F1646CDF",
+          "module_source_sha256": "9F67D916D6EE5050AA5DC746886637F6F037B459D2FE3A282190F3456168EBAE",
+          "build_evidence": {
+            "source_sha256": "9F67D916D6EE5050AA5DC746886637F6F037B459D2FE3A282190F3456168EBAE",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:07:57.0065283Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_GeneralCoverLocal.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The polynomial identity and all eight exact corner values are separate checked declarations. source_first_digits_true excludes the other three children. Actual Cantor crossing, nonemptiness, compactness and perfection are explicitly included; the corner table alone is not treated as a dimension or perfection proof.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.8",
+      "kind": "lemma",
+      "id": "lem:strict-returns",
+      "labels": [
+        "lem:strict-returns"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 826
+      },
+      "manuscript_statement_sha256": "08ea4f8299ac37b5e1a1e9e5fe168814f2988fa9b7ef5af4365aa45ff8f9d01c",
+      "manuscript_statement_tex": "\\label{lem:strict-returns}\nLet \\(0<\\lambda<1/2\\), let \\(L(s,t)\\) be a positive linear function,\nand let \\(B\\) be a compact\nset of levels such that every \\(u\\in B\\) has two incomparable\nnonempty Cantor words returning its normalized level into\n\\(\\operatorname{int}B\\).\nThen every sufficiently small Lipschitz perturbation of \\(L\\),\nat every level sufficiently close to \\(B\\), has a positive-dimensional\nzero set in \\(C_\\lambda^2\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Last.strict_return_criterion",
+          "module": "LambdaCantor/Last/StrictReturnCriterion.lean",
+          "declaration_kind": "theorem",
+          "source_line": 12,
+          "lean_statement_text": "theorem strict_return_criterion (ratio : ℝ) (hpositive : 0 < ratio) (hless : ratio < 1 / 2)\n    (linear : (ℝ × ℝ) →L[ℝ] ℝ) (levels : Set ℝ)\n    (hcompact : IsCompact levels) (hnonempty : levels.Nonempty)\n    (hreturns : ∀ level ∈ levels, ∃ pair : ReturnPair,\n      linearWordReturn ratio linear.toLinearMap (pair.word false) level ∈ interior levels ∧\n      linearWordReturn ratio linear.toLinearMap (pair.word true) level ∈ interior levels) :\n    ∃ threshold : ℝ, 0 < threshold ∧ ∃ neighborhood : Set ℝ,\n      IsOpen neighborhood ∧ levels ⊆ neighborhood ∧\n      ∀ bound : ℝ≥0, (bound : ℝ) < threshold →\n      ∀ error : (ℝ × ℝ) → ℝ, LipschitzOnWith bound error (cantorDust ratio) → error 0 = 0 →\n      ∀ level ∈ neighborhood,\n        0 < dimH {point : ℝ × ℝ | point ∈ cantorDust ratio ∧ linear point + error point = level}\n",
+          "lean_statement_sha256": "DB7C0F16425CF2775361567C4E614E77E0293553813307D2A7484A5BB8A60996",
+          "lean_signature_sha256": "DB7C0F16425CF2775361567C4E614E77E0293553813307D2A7484A5BB8A60996",
+          "declaration_source_sha256": "ACDCD5C89B3D0BB35F891A512372EAA35EC7538FE2BBCD54E56FDA28B94AF64A",
+          "module_source_sha256": "96DEBF48A4B320E6B29B6B64BF6C4B72CC522EA37FF4ACC21DBE00EF3A37A4BC",
+          "build_evidence": {
+            "source_sha256": "96DEBF48A4B320E6B29B6B64BF6C4B72CC522EA37FF4ACC21DBE00EF3A37A4BC",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T10:20:56.8504282Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Last_StrictReturnCriterion.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The perturbation error is normalized to vanish at the origin, absorbing its constant value into the target level. Returning words are nonempty and incomparable through ReturnPair. The theorem gives one threshold and an open neighborhood of the full compact level set.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.9",
+      "kind": "lemma",
+      "id": "lem:good-slopes",
+      "labels": [
+        "lem:good-slopes"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 875
+      },
+      "manuscript_statement_sha256": "b7b8aca1c26e827543115d7b69412e9fd0d33d62880c33e462a8c1be42a52e8c",
+      "manuscript_statement_tex": "\\label{lem:good-slopes}\nThe eventual-periodicity conclusion of Lemma~\\ref{lem:periodicity},\nincluding vanishing errors, holds when the slope belongs to any of\n\\[\n\\left(\\frac{89}{73},\\frac{171}{137}\\right),\\\n\\left(\\frac{101}{79},\\frac{183}{143}\\right),\\\n\\left(\\frac{89}{57},\\frac{171}{89}\\right),\\\n\\left(\\frac{143}{61},\\frac{237}{101}\\right),\\\n\\left(\\frac{137}{57},\\frac{219}{89}\\right).\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Classical.good_slope_infDist_eventually_periodic",
+          "module": "LambdaCantor/Classical/GoodSlopeIsolation.lean",
+          "declaration_kind": "theorem",
+          "source_line": 11,
+          "lean_statement_text": "theorem good_slope_infDist_eventually_periodic\n    (slope : ℝ) (good : Integer.GoodSlope slope)\n    (digits : ℕ → Fin 4) (tails : ℕ → ℝ)\n    (vanishing : ∀ error > 0, ∃ start, ∀ depth ≥ start,\n      Metric.infDist (tails depth) (exclusiveInterval slope (digits depth)) < error)\n    (recurrence : ∀ depth, tails (depth+1) = 3 * tails depth -\n      (((digits depth).val / 2 : ℕ) : ℝ) * slope -\n      (((digits depth).val % 2 : ℕ) : ℝ)) :\n    ∃ start, ∀ depth ≥ start, digits (depth+4) = digits depth\n",
+          "lean_statement_sha256": "E5E4D4E467D47EDABB27BE09B62B27B0E56B444986160B6B87305CF5EA417BA0",
+          "lean_signature_sha256": "E5E4D4E467D47EDABB27BE09B62B27B0E56B444986160B6B87305CF5EA417BA0",
+          "declaration_source_sha256": "B048A9BDFB038D0634874AAAD75B8EE6435379C4E30FE1DEF5A3DDEC238244A1",
+          "module_source_sha256": "4F45BCD546B98EC632118ED7905262286F4C1B2D2D35C39442A22411DF4036C9",
+          "build_evidence": {
+            "source_sha256": "4F45BCD546B98EC632118ED7905262286F4C1B2D2D35C39442A22411DF4036C9",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:20:20.9636786Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_GoodSlopeIsolation.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Integer.GoodSlope",
+          "module": "LambdaCantor/Integer/GoodSlopes.lean",
+          "declaration_kind": "def",
+          "source_line": 12,
+          "lean_statement_text": "def GoodSlope (r : ℝ) : Prop :=\n  (89 / 73 < r ∧ r < 171 / 137) ∨\n  (101 / 79 < r ∧ r < 183 / 143) ∨\n  (89 / 57 < r ∧ r < 171 / 89) ∨\n  (143 / 61 < r ∧ r < 237 / 101) ∨\n  (137 / 57 < r ∧ r < 219 / 89)\n",
+          "lean_statement_sha256": "EC37186DDABE7215ACFC5F9AD9CF21E40379F3855FEFEADA4859CF82690E70C2",
+          "lean_signature_sha256": "06E9AD0F32F98C75D5B97AFE99ACD209023445B828151ABE65FFB6A4606F9D8F",
+          "declaration_source_sha256": "EC37186DDABE7215ACFC5F9AD9CF21E40379F3855FEFEADA4859CF82690E70C2",
+          "module_source_sha256": "2A71EC400E14E0FB892450738C72B73B5471F4507D14635D1A1BBA3B02844B1B",
+          "build_evidence": {
+            "source_sha256": "2A71EC400E14E0FB892450738C72B73B5471F4507D14635D1A1BBA3B02844B1B",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T15:52:16.1405868Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Integer_GoodSlopes.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "GoodSlope is the exact five-band predicate. The distance-to-domain and recurrence formulation explicitly includes vanishing errors and gives period four eventually.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.10",
+      "kind": "lemma",
+      "id": "lem:irrational-tangent",
+      "labels": [
+        "lem:irrational-tangent"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1127
+      },
+      "manuscript_statement_sha256": "cc4008c78219cba07b9ce500e7a8ba37fe267b07a6e66e7247e7fe44755b5c2f",
+      "manuscript_statement_tex": "\\label{lem:irrational-tangent}\nSuppose a \\(C^1\\) level curve in a Cantor rectangle contains a\nnonempty compact perfect subset of \\(C^2\\).\nIf at one of its points the positive normalized derivative ratio\nis irrational and lies in an admissible slope interval, then\nthe Cantor intersection of the curve has positive Hausdorff dimension.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Integer.good_slope_positive_dimension_of_perfect_subset",
+          "module": "LambdaCantor/Integer/GoodSlopePositiveDimension.lean",
+          "declaration_kind": "theorem",
+          "source_line": 296,
+          "lean_statement_text": "theorem good_slope_positive_dimension_of_perfect_subset\n    (function : (ℝ × ℝ) → ℝ) (level horizontal vertical : ℝ)\n    (vertical_positive : 0 < vertical)\n    (good : GoodSlope (horizontal/vertical))\n    (irrational : ∀ rational : ℚ, horizontal/vertical ≠ (rational : ℝ))\n    (source : Set (ℝ × ℝ)) (perfect : Perfect source)\n    (contained : source ⊆ {point : ℝ × ℝ | point ∈ cantorDust (1/3) ∧ function point = level})\n    (point : ℝ × ℝ) (membership : point ∈ source)\n    (smooth : ContDiffAt ℝ 1 function point)\n    (derivative : (ℝ × ℝ) →L[ℝ] ℝ) (differentiable : HasFDerivAt function derivative point)\n    (formula : ∀ direction, derivative direction = horizontal*direction.1+vertical*direction.2) :\n    0 < dimH {point : ℝ × ℝ | point ∈ cantorDust (1/3) ∧ function point = level}\n",
+          "lean_statement_sha256": "BAB63E2043CE19D93F1A303D4EC64EB1F5EAF50572CF06ECEB916A2E811F0D41",
+          "lean_signature_sha256": "BAB63E2043CE19D93F1A303D4EC64EB1F5EAF50572CF06ECEB916A2E811F0D41",
+          "declaration_source_sha256": "97DF68B3FD9522BC16F4CC2ECF5FFFE08F2ABDCD4769C051E356664969B0A617",
+          "module_source_sha256": "304F32225A328031E860CB0061DC2F8955D7400072DF14D11AEEBC16F2A6BD53",
+          "build_evidence": {
+            "source_sha256": "304F32225A328031E860CB0061DC2F8955D7400072DF14D11AEEBC16F2A6BD53",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-26T09:34:24.2479687Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Integer_GoodSlopePositiveDimension.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The endpoint requires only a perfect subset through the selected point; compactness of that subset is unnecessary. The local C1 hypothesis supplies the actual strict derivative, and the full Cantor level need not itself be perfect.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "2.11",
+      "kind": "theorem",
+      "id": "thm:circle-quantitative",
+      "labels": [
+        "thm:circle-quantitative"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1201
+      },
+      "manuscript_statement_sha256": "1886abf98870239b0ba4200bce022a592086b00a8df528e18578e5b65032ce4f",
+      "manuscript_statement_tex": "\\label{thm:circle-quantitative}\nFor the unit circle in the classical Cantor dust,\n\\[\n0<\\dim_{\\mathrm H}(E_{2,1/3})\n                  \\leq\\frac{2\\log2}{\\log3}-1 .\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Classical.classical_circle_dimension_bounds",
+          "module": "LambdaCantor/Classical/DimensionBounds.lean",
+          "declaration_kind": "theorem",
+          "source_line": 24,
+          "lean_statement_text": "theorem classical_circle_dimension_bounds :\n    0 < dimH (intersection 2 (1/3)) ∧\n      dimH (intersection 2 (1/3)) ≤ ENNReal.ofReal (2*Real.log 2/Real.log 3-1)\n",
+          "lean_statement_sha256": "AD5E8409CAD18BC01EFCE8AC3CE1E0207A6FC4CA406A4CB558AC9575A1F6863B",
+          "lean_signature_sha256": "AD5E8409CAD18BC01EFCE8AC3CE1E0207A6FC4CA406A4CB558AC9575A1F6863B",
+          "declaration_source_sha256": "6AD81B1958AE7B6C14739D20E24DBA8F0247A3A88A92D7A858C35F9C1EB887C6",
+          "module_source_sha256": "0D5EE5571D293AE2DF27C6EF3F06FBF0EBD352204515E0538573459A6172409B",
+          "build_evidence": {
+            "source_sha256": "0D5EE5571D293AE2DF27C6EF3F06FBF0EBD352204515E0538573459A6172409B",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-26T09:50:25.0287869Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Classical_DimensionBounds.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.1",
+      "kind": "theorem",
+      "id": "thm:integer-powers",
+      "labels": [
+        "thm:integer-powers",
+        "thm:real-powers"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1270
+      },
+      "manuscript_statement_sha256": "671ca797702edbfa9b9b9c725a94e3504cf7f073945b2435105fc2aa6f9a6139",
+      "manuscript_statement_tex": "\\label{thm:integer-powers}\\label{thm:real-powers}\nFor every real \\(\\alpha>1\\),\n\\[\n\\dim_{\\mathrm H}\\{(x,y)\\in C\\times C:x^\\alpha+y^\\alpha=1\\}>0.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.RealPowers.real_powers_positive_dimension_set",
+          "module": "LambdaCantor/RealPowers/RealPowers.lean",
+          "declaration_kind": "theorem",
+          "source_line": 25,
+          "lean_statement_text": "theorem real_powers_positive_dimension_set (exponent : ℝ) (exponent_gt_one : 1 < exponent) :\n    0 < dimH {point : ℝ × ℝ | point.1 ∈ cantorSet (1/3) ∧\n      point.2 ∈ cantorSet (1/3) ∧ point.1 ^ exponent + point.2 ^ exponent = 1}\n",
+          "lean_statement_sha256": "50ADE93678C44E5D69CE85728171C14C51FDA6ECE728E7668BA4B568727A09FF",
+          "lean_signature_sha256": "50ADE93678C44E5D69CE85728171C14C51FDA6ECE728E7668BA4B568727A09FF",
+          "declaration_source_sha256": "13BBB7A3882201A0E06216F35B0632261BF322B13B1BB84E4C8D94DC027146C4",
+          "module_source_sha256": "00AF5C0FD97B3B2714F847C732FAFFE858A4349D8045FD2FB12B1E58E2F434D4",
+          "build_evidence": {
+            "source_sha256": "00AF5C0FD97B3B2714F847C732FAFFE858A4349D8045FD2FB12B1E58E2F434D4",
+            "own_current_source_exit_zero": false,
+            "log_end_utc": null,
+            "log_exit": null,
+            "canonical_log": "Lean/build-logs/LambdaCantor_RealPowers_RealPowers.lean.log",
+            "current_dependency_closure": false
+          }
+        }
+      ],
+      "scope_note": "Both thm:integer-powers and thm:real-powers labels identify this same all-real statement. Its only theorem hypothesis is exponent > 1; concrete finite data acceptance is supplied by imported production theorems.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.2",
+      "kind": "theorem",
+      "id": "thm:dimension-upper",
+      "labels": [
+        "thm:dimension-upper"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1423
+      },
+      "manuscript_statement_sha256": "aa1e3ea9cd4a2257084cb418157f0f032088504db889b3e881158abf77c56ad6",
+      "manuscript_statement_tex": "\\label{thm:dimension-upper}\nFor every real \\(\\alpha>1\\) and \\(0<\\lambda\\leq1/2\\),\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})\\leq\n\\max\\left\\{\\frac{2\\log2}{\\log(1/\\lambda)}-1,0\\right\\}.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.dimension_upper",
+          "module": "LambdaCantor/First/Upper.lean",
+          "declaration_kind": "theorem",
+          "source_line": 95,
+          "lean_statement_text": "theorem dimension_upper {exponent ratio : ℝ} (hexponent : 1 < exponent)\n    (hratio : 0 < ratio) (hhalf : ratio ≤ 1 / 2) :\n    dimH (intersection exponent ratio) ≤ ENNReal.ofReal (dimensionUpperBound ratio)\n",
+          "lean_statement_sha256": "E7FE48AD6606C28FE6FE3C5A7E2B6D556A88CE25630198A2D02A6E944F5D3AAF",
+          "lean_signature_sha256": "E7FE48AD6606C28FE6FE3C5A7E2B6D556A88CE25630198A2D02A6E944F5D3AAF",
+          "declaration_source_sha256": "461494FAE3674C7438FBF294A4F6A21F461DBB059C21ED6167B3E35622B288BF",
+          "module_source_sha256": "6E9581C0DBB35A6AD4AF4FCA79462D794F798D10BAB000B236C2E3446E50E22C",
+          "build_evidence": {
+            "source_sha256": "6E9581C0DBB35A6AD4AF4FCA79462D794F798D10BAB000B236C2E3446E50E22C",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:33:01.8738566Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_Upper.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.First.dimensionUpperBound",
+          "module": "LambdaCantor/First/Dimension.lean",
+          "declaration_kind": "def",
+          "source_line": 16,
+          "lean_statement_text": "noncomputable def dimensionUpperBound (ratio : ℝ) : ℝ :=\n  max (2 * Real.log 2 / Real.log (1 / ratio) - 1) 0\n",
+          "lean_statement_sha256": "236A1BD596284314B9E329D961BAC16443AEA0D9591A9BF3BF7517C15F6561A5",
+          "lean_signature_sha256": "C81931D261A21B34BBB576CFA0BE36343CC56C47B6416E4262DC9353C5AF40CD",
+          "declaration_source_sha256": "236A1BD596284314B9E329D961BAC16443AEA0D9591A9BF3BF7517C15F6561A5",
+          "module_source_sha256": "7BF853B4EC7DAB646F963390C1AC3806486A7700F6BA567CFFB3DE1D0226692F",
+          "build_evidence": {
+            "source_sha256": "7BF853B4EC7DAB646F963390C1AC3806486A7700F6BA567CFFB3DE1D0226692F",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T15:58:40.2574484Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_Dimension.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.3",
+      "kind": "corollary",
+      "id": "cor:first-lower",
+      "labels": [
+        "cor:first-lower"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1489
+      },
+      "manuscript_statement_sha256": "8e853008e372f4fcfc3436606dafe04594e64a111d2368ac6c8983733f3b62ac",
+      "manuscript_statement_tex": "\\label{cor:first-lower}\nFor every real \\(\\alpha>1\\), \\(\\lambda_{\\min}(\\alpha)\\geq1/4\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.first_lower",
+          "module": "LambdaCantor/First/Upper.lean",
+          "declaration_kind": "theorem",
+          "source_line": 115,
+          "lean_statement_text": "theorem first_lower {exponent : ℝ} (hexponent : 1 < exponent) :\n    1 / 4 ≤ firstTransition exponent\n",
+          "lean_statement_sha256": "8B195B3747B49CC4A014184C41814F939FE3F2D371A9243E4D5A0BFD6D074F62",
+          "lean_signature_sha256": "8B195B3747B49CC4A014184C41814F939FE3F2D371A9243E4D5A0BFD6D074F62",
+          "declaration_source_sha256": "008799E36400953EE3C4CB974D621090B093911ABDDA3F08EDFF82611D0F1EFA",
+          "module_source_sha256": "6E9581C0DBB35A6AD4AF4FCA79462D794F798D10BAB000B236C2E3446E50E22C",
+          "build_evidence": {
+            "source_sha256": "6E9581C0DBB35A6AD4AF4FCA79462D794F798D10BAB000B236C2E3446E50E22C",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T16:33:01.8738566Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_Upper.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.4",
+      "kind": "lemma",
+      "id": "lem:linear-regularity",
+      "labels": [
+        "lem:linear-regularity"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1517
+      },
+      "manuscript_statement_sha256": "432c3f1b41432d4324c89a4fcc1d2f48cb0ba985e7f4121ebfe435945c816eb9",
+      "manuscript_statement_tex": "\\label{lem:linear-regularity}\nOutside a set of Hausdorff dimension at most one in\n\\((1/4,1/2)\\times(0,\\infty)\\), the distribution of\n\\(rX+Y\\), for independent \\(X,Y\\) with distribution \\(\\mu_\\lambda\\),\nhas a density in \\(H^\\sigma\\) for some \\(\\sigma>0\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.LinearRegularity.linear_regularity",
+          "module": "LambdaCantor/First/LinearRegularityMain.lean",
+          "declaration_kind": "theorem",
+          "source_line": 46,
+          "lean_statement_text": "theorem linear_regularity :\n    ∃ exceptional : Set (ℝ × ℝ),\n      exceptional ⊆ Set.Ioo (1 / 4 : ℝ) (1 / 2) ×ˢ Set.Ioi (0 : ℝ) ∧\n      dimH exceptional ≤ 1 ∧\n      ∀ ratio ∈ Set.Ioo (1 / 4 : ℝ) (1 / 2), ∀ slope ∈ Set.Ioi (0 : ℝ),\n        (ratio, slope) ∉ exceptional →\n        HasPositiveSobolevDensity\n          (Roots.pairedAddressMeasure.map (pairedProjection ratio slope))\n",
+          "lean_statement_sha256": "0E7DAFE6D9564CE7229018BF5A21B71C6BD59C8EB1266993E20CFDB0320EAF3B",
+          "lean_signature_sha256": "0E7DAFE6D9564CE7229018BF5A21B71C6BD59C8EB1266993E20CFDB0320EAF3B",
+          "declaration_source_sha256": "76EE497AFA0DF2DFE691243DE60CA7DE02BF5F13AD5CE4D38C6122D29ECCBE9D",
+          "module_source_sha256": "4809DC2C8A6C7117E638CE0299E80E0111A163672B910428B961F00455624050",
+          "build_evidence": {
+            "source_sha256": "4809DC2C8A6C7117E638CE0299E80E0111A163672B910428B961F00455624050",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T17:27:43.8805450Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_LinearRegularityMain.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.First.LinearRegularity.HasPositiveSobolevDensity",
+          "module": "LambdaCantor/First/LinearRegularityRectangle.lean",
+          "declaration_kind": "def",
+          "source_line": 12,
+          "lean_statement_text": "def HasPositiveSobolevDensity (measure : Measure ℝ) : Prop :=\n  HasL2Density measure ∧ ∃ order : ℝ, 0 < order ∧\n    Integrable (fun frequency : ℝ => (1 + frequency ^ 2) ^ order * ‖charFun measure frequency‖ ^ 2)\n",
+          "lean_statement_sha256": "3D88B79EFE0038D200652DBA97F8F3708E1165EFD50160BDB598177B1CB3FC5F",
+          "lean_signature_sha256": "AD94BC2B3463BE0F107B79972465E2DFAA01399B86E05F5F3E43BDDEB14C8DFA",
+          "declaration_source_sha256": "3D88B79EFE0038D200652DBA97F8F3708E1165EFD50160BDB598177B1CB3FC5F",
+          "module_source_sha256": "090D624CF3069700A73795B3686E224BCDFE6D0B16FA56E578409F811B2E8CEF",
+          "build_evidence": {
+            "source_sha256": "090D624CF3069700A73795B3686E224BCDFE6D0B16FA56E578409F811B2E8CEF",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T17:26:47.2821483Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_LinearRegularityRectangle.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.5",
+      "kind": "lemma",
+      "id": "lem:root-fibres",
+      "labels": [
+        "lem:root-fibres"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1551
+      },
+      "manuscript_statement_sha256": "806c466896745205ae5202aab257858fc4d8cc42408e12bcaf3d091c3875bf82",
+      "manuscript_statement_tex": "\\label{lem:root-fibres}\nFix \\(\\alpha>1\\), two cylinder coordinates \\(x_\\omega(\\lambda)\\),\n\\(y_\\tau(\\lambda)\\) of lengths \\(h,\\ell\\), and\n\\([a,b]\\subset(1/4,1/2)\\) on which both coordinates stay positive.\nSuppose every paired address has a unique root of\n\\(x_\\omega(\\lambda)^\\alpha+y_\\tau(\\lambda)^\\alpha=1\\) in \\([a,b]\\),\nand the parameter derivative of the residual is bounded away\nfrom zero at all these roots.\nThe distribution of these roots under fair independent addresses\nis absolutely continuous, and for almost every parameter with\nrespect to that distribution,\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})=\\frac{\\log4}{\\log(1/\\lambda)}-1.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.Roots.root_fibres",
+          "module": "LambdaCantor/First/RootsMain.lean",
+          "declaration_kind": "theorem",
+          "source_line": 89,
+          "lean_statement_text": "theorem root_fibres {exponent : ℝ} (data : RootFibreData exponent) : RootFibreConclusion data\n",
+          "lean_statement_sha256": "17EA22A22B08C74008D03B586F678B4C3437FFBADA251CA55DACF0260A4CB8DE",
+          "lean_signature_sha256": "17EA22A22B08C74008D03B586F678B4C3437FFBADA251CA55DACF0260A4CB8DE",
+          "declaration_source_sha256": "17CB4CAC0FC9E933AA888C7E002048CFA92055F057843C42B814F49F3E2CB6A0",
+          "module_source_sha256": "09FCC6C7129D33256B1FF156173D970880544C6E989CEA28F71D00439FA5CC14",
+          "build_evidence": {
+            "source_sha256": "09FCC6C7129D33256B1FF156173D970880544C6E989CEA28F71D00439FA5CC14",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T03:59:07.9940293Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RootsMain.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.First.Roots.RootFibreData",
+          "module": "LambdaCantor/First/RootFibreInterface.lean",
+          "declaration_kind": "structure",
+          "source_line": 29,
+          "lean_statement_text": "structure RootFibreData (exponent : ℝ) where\n  exponent_gt_one : 1 < exponent\n  lower : ℝ\n  upper : ℝ\n  lower_gt_quarter : 1 / 4 < lower\n  upper_lt_half : upper < 1 / 2\n  ordered : lower ≤ upper\n  leftWord : ℕ → Bool\n  rightWord : ℕ → Bool\n  leftLength : ℕ\n  rightLength : ℕ\n  root : (ℕ → Bool × Bool) → ℝ\n  root_in_band : ∀ digits, root digits ∈ Set.Icc lower upper\n  left_positive : ∀ (digits : ℕ → Bool × Bool) (ratio : ℝ), ratio ∈ Set.Icc lower upper →\n    0 < cylinderCoordinate leftWord leftLength (fun index => (digits index).1) ratio\n  right_positive : ∀ (digits : ℕ → Bool × Bool) (ratio : ℝ), ratio ∈ Set.Icc lower upper →\n    0 < cylinderCoordinate rightWord rightLength (fun index => (digits index).2) ratio\n  unique_root : ∀ digits ratio, ratio ∈ Set.Icc lower upper →\n    (cylinderResidual exponent leftWord rightWord leftLength rightLength digits ratio = 0 ↔\n      ratio = root digits)\n  derivative_lower_bound : ℝ\n  derivative_lower_bound_positive : 0 < derivative_lower_bound\n  transverse : ∀ digits, derivative_lower_bound ≤\n    |deriv (cylinderResidual exponent leftWord rightWord leftLength rightLength digits) (root digits)|\n",
+          "lean_statement_sha256": "98E035306AD0EE45C626D754FFF0E39A021F11EB7BC748BD2145778CA15BFDBB",
+          "lean_signature_sha256": "7CC0D26731464FD933DB93E2E5806D5DBE187458F6C05A9A4B3A3C99E54613DD",
+          "declaration_source_sha256": "98E035306AD0EE45C626D754FFF0E39A021F11EB7BC748BD2145778CA15BFDBB",
+          "module_source_sha256": "F5C964E1DEB3D616D8516BD25ACA833B9455B494837205219A9E8B43D72952AC",
+          "build_evidence": {
+            "source_sha256": "F5C964E1DEB3D616D8516BD25ACA833B9455B494837205219A9E8B43D72952AC",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:09:04.4928188Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RootFibreInterface.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.First.Roots.RootFibreConclusion",
+          "module": "LambdaCantor/First/RootFibreInterface.lean",
+          "declaration_kind": "def",
+          "source_line": 56,
+          "lean_statement_text": "def RootFibreConclusion {exponent : ℝ} (data : RootFibreData exponent) : Prop :=\n  rootLaw data.root ≪ volume ∧\n    ∀ᵐ ratio ∂rootLaw data.root,\n      dimH (intersection exponent ratio) = ENNReal.ofReal (expectedDimension ratio)\n",
+          "lean_statement_sha256": "73FA15D830FD2379212B11161F29C930F4B1847A6600A2DDF6C750B98E8C3B1B",
+          "lean_signature_sha256": "F6A4830DBDA312A44DE93594388918BACABC5B630F7429F35D685B050AC39A79",
+          "declaration_source_sha256": "73FA15D830FD2379212B11161F29C930F4B1847A6600A2DDF6C750B98E8C3B1B",
+          "module_source_sha256": "F5C964E1DEB3D616D8516BD25ACA833B9455B494837205219A9E8B43D72952AC",
+          "build_evidence": {
+            "source_sha256": "F5C964E1DEB3D616D8516BD25ACA833B9455B494837205219A9E8B43D72952AC",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-21T09:09:04.4928188Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RootFibreInterface.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "RootFibreData contains exactly concrete positivity, unique-root, parameter-band and transversality geometry; RootFibreConclusion expands to actual root-law absolute continuity and full-mass dimension equality. The root_fibres theorem discharges the conclusion internally.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.6",
+      "kind": "theorem",
+      "id": "thm:irrational-parameters",
+      "labels": [
+        "thm:irrational-parameters"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1698
+      },
+      "manuscript_statement_sha256": "4b4ec852e327386c4061e87f6deff4487596d128d91acae46324b316507497fd",
+      "manuscript_statement_tex": "\\label{thm:irrational-parameters}\nFor every irrational \\(\\alpha>1\\) and every nonempty open interval\n\\(J\\subset(1/4,1/2)\\), the set\n\\(\\{\\lambda\\in J:\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})>0\\}\\)\nhas positive Lebesgue measure.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.irrational_parameters",
+          "module": "LambdaCantor/First/RationalEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 15,
+          "lean_statement_text": "theorem irrational_parameters {exponent lower upper : ℝ}\n    (hirrational : Irrational exponent) (hexponent : 1 < exponent)\n    (hlower : (1 / 4 : ℝ) ≤ lower) (hordered : lower < upper)\n    (hupper : upper ≤ 1 / 2) :\n    0 < volume {ratio : ℝ | ratio ∈ Ioo lower upper ∧\n      0 < dimH (intersection exponent ratio)}\n",
+          "lean_statement_sha256": "AE82C56B73E34A472A69FD9581C00A749BB16062B8767779C9C53D24E81BD67C",
+          "lean_signature_sha256": "AE82C56B73E34A472A69FD9581C00A749BB16062B8767779C9C53D24E81BD67C",
+          "declaration_source_sha256": "E6A51C9A2164C877B48BDCF1FF4892B6A37F6F457D299D181147F2137C3FF0D3",
+          "module_source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+          "build_evidence": {
+            "source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:06:02.3013392Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RationalEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The Ioo lower upper form covers every nonempty open interval in the stated parameter domain; endpoints may equal 1/4 and 1/2, which is stronger.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.7",
+      "kind": "theorem",
+      "id": "thm:irrational-onset",
+      "labels": [
+        "thm:irrational-onset"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1734
+      },
+      "manuscript_statement_sha256": "87c1474091c3fcfa54832e522db3b49fb310f4c7c5824a1cbdd6ccc9f94317a6",
+      "manuscript_statement_tex": "\\label{thm:irrational-onset}\nFor every irrational \\(\\alpha>1\\), \\(\\lambda_{\\min}(\\alpha)=1/4\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.irrational_onset",
+          "module": "LambdaCantor/First/RationalEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 36,
+          "lean_statement_text": "theorem irrational_onset {exponent : ℝ}\n    (hirrational : Irrational exponent) (hexponent : 1 < exponent) :\n    firstTransition exponent = 1 / 4\n",
+          "lean_statement_sha256": "D916A717CFEC54A4DE3959DDD7488FFEA18E8E19BA06298F468F0999C7F0562D",
+          "lean_signature_sha256": "D916A717CFEC54A4DE3959DDD7488FFEA18E8E19BA06298F468F0999C7F0562D",
+          "declaration_source_sha256": "913276401BF66BEEE76D0892F6E28CE7BFF7A1C8C286DF04E123981A1F323980",
+          "module_source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+          "build_evidence": {
+            "source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:06:02.3013392Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RationalEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.8",
+      "kind": "theorem",
+      "id": "thm:denominator",
+      "labels": [
+        "thm:denominator"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1752
+      },
+      "manuscript_statement_sha256": "0afa5353e0b5044da4c868bcbdd435583eaec8a56abad9288ccc949102905e26",
+      "manuscript_statement_tex": "\\label{thm:denominator}\nFor every reduced rational \\(\\alpha=a/b\\geq2\\), with positive integers\n\\(a,b\\),\n\\[\n0\\leq\\lambda_{\\min}(\\alpha)-\\frac14\n\\leq\\frac{(3/2)^\\alpha\\log4}{2\\alpha b}.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.denominator",
+          "module": "LambdaCantor/First/RationalEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 47,
+          "lean_statement_text": "theorem denominator (numerator denominator : ℕ)\n    (hnumerator : 0 < numerator) (hdenominator : 0 < denominator)\n    (hcoprime : numerator.Coprime denominator)\n    (hexponent : 2 ≤ (numerator : ℝ) / denominator) :\n    0 ≤ firstTransition ((numerator : ℝ) / denominator) - 1 / 4 ∧\n      firstTransition ((numerator : ℝ) / denominator) - 1 / 4 ≤\n        (3 / 2 : ℝ) ^ ((numerator : ℝ) / denominator) * Real.log 4 /\n          (2 * ((numerator : ℝ) / denominator) * denominator)\n",
+          "lean_statement_sha256": "B780214DB55B46FCC48D83617F60D5DCD10E4A67A9D55D2344DEB8AB563D6961",
+          "lean_signature_sha256": "B780214DB55B46FCC48D83617F60D5DCD10E4A67A9D55D2344DEB8AB563D6961",
+          "declaration_source_sha256": "3D389DC3CAA3C15F8EA91213AD9CF43D3DE368DDF1D8630E6B5C65683E76895B",
+          "module_source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+          "build_evidence": {
+            "source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:06:02.3013392Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RationalEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.9",
+      "kind": "theorem",
+      "id": "thm:punctured-limit",
+      "labels": [
+        "thm:punctured-limit"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1785
+      },
+      "manuscript_statement_sha256": "aa87730a95b60c848fa3319213b82544640fca020e55abf3c6305baf0a839791",
+      "manuscript_statement_tex": "\\label{thm:punctured-limit}\nFor every \\(\\alpha_0\\geq2\\),\n\\[\n\\lim_{\\substack{\\alpha\\to \\alpha_0\\\\\\alpha\\geq2,\\ \\alpha\\ne \\alpha_0}}\\lambda_{\\min}(\\alpha)=\\frac14.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.punctured_limit",
+          "module": "LambdaCantor/First/RationalEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 95,
+          "lean_statement_text": "theorem punctured_limit (center : ℝ) :\n    Tendsto firstTransition\n      (𝓝[{exponent : ℝ | 2 ≤ exponent ∧ exponent ≠ center}] center) (𝓝 (1 / 4))\n",
+          "lean_statement_sha256": "AAB771ABD13BB6616DF5D55881BF51881D877AB9788379F8274849FB1EFD4BAB",
+          "lean_signature_sha256": "AAB771ABD13BB6616DF5D55881BF51881D877AB9788379F8274849FB1EFD4BAB",
+          "declaration_source_sha256": "FAAF46BD995E9B9DC872DB2F0D59C072099DA16D7E9A1D58A16EEEE9DA904DD5",
+          "module_source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+          "build_evidence": {
+            "source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:06:02.3013392Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RationalEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The endpoint proves the punctured limit on exponents >= 2 for every real center, hence includes every center >= 2 in the manuscript.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "3.10",
+      "kind": "proposition",
+      "id": "prop:powers-four",
+      "labels": [
+        "prop:powers-four"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1804
+      },
+      "manuscript_statement_sha256": "1bf5102c9cc8f6856d20f5abf6d0d620a5a72c401472aaccb7919afe893a5408",
+      "manuscript_statement_tex": "\\label{prop:powers-four}\nFor every integer \\(r\\geq1\\), \\(\\lambda_{\\min}(4^r)=1/4\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.First.powers_four",
+          "module": "LambdaCantor/First/RationalEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 114,
+          "lean_statement_text": "theorem powers_four (phase : ℕ) (hphase : 1 ≤ phase) :\n    firstTransition ((4 ^ phase : ℕ) : ℝ) = 1 / 4\n",
+          "lean_statement_sha256": "ACDBD468A9797C03E3CD19B3945030369CDC3B7C6E17D7DD2B705D493F5A46A8",
+          "lean_signature_sha256": "ACDBD468A9797C03E3CD19B3945030369CDC3B7C6E17D7DD2B705D493F5A46A8",
+          "declaration_source_sha256": "176DA63F642BDED7DC62A19DD1976B4F7E53CA13D94F34161C0EF97DE0734B79",
+          "module_source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+          "build_evidence": {
+            "source_sha256": "C11662AA931AE915A11352B08F9406885D53E0E5C3DCD2213C3E7BD9C6CA387C",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:06:02.3013392Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_First_RationalEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.1",
+      "kind": "lemma",
+      "id": "lem:two-bands",
+      "labels": [
+        "lem:two-bands",
+        "eq:two-bands"
+      ],
+      "manuscript_source": {
+        "path": "sections/universal-last-bound.tex",
+        "line": 4
+      },
+      "manuscript_statement_sha256": "b7dec8bdf1e6a70dee79238776bc55cb7246b4326887a8b8ee97805de7328374",
+      "manuscript_statement_tex": "\\label{lem:two-bands}\nLet \\(0<\\lambda<1/2\\), and let \\(f,g\\) be increasing \\(C^1\\)\nfunctions on \\([0,1]\\) with positive derivatives.\nIf all ratios \\(g'(t)/f'(s)\\), \\(s,t\\in[0,1]\\), are greater than\none and belong to a compact subinterval of either\n\\begin{equation}\\label{eq:two-bands}\n\\left(\\frac1\\lambda-1-\\lambda,\\frac1{1-\\lambda}\\right)\n\\quad\\text{or}\\quad\n\\left(\\frac1\\lambda-1,\\frac1{1-\\lambda-\\lambda^2}\\right),\n\\end{equation}\nthen every strict interior level of \\(f+g\\) on \\([0,1]^2\\)\nmeets \\(C_\\lambda^2\\) in a set of positive Hausdorff dimension.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Last.two_band_separable_c1_closed_interval_criterion",
+          "module": "LambdaCantor/Last/TwoBandSeparableClosed.lean",
+          "declaration_kind": "theorem",
+          "source_line": 10,
+          "lean_statement_text": "theorem two_band_separable_c1_closed_interval_criterion\n    {first second : ℝ → ℝ} {ratio level lower upper : ℝ}\n    (hfirst : ContDiffOn ℝ 1 first (Set.Icc (0 : ℝ) 1))\n    (hsecond : ContDiffOn ℝ 1 second (Set.Icc (0 : ℝ) 1))\n    (hpositive : 0 < ratio) (hhalf : ratio < 1 / 2)\n    (hfirst_positive : ∀ coordinate ∈ Set.Icc (0 : ℝ) 1,\n      0 < derivWithin first (Set.Icc (0 : ℝ) 1) coordinate)\n    (hsecond_positive : ∀ coordinate ∈ Set.Icc (0 : ℝ) 1,\n      0 < derivWithin second (Set.Icc (0 : ℝ) 1) coordinate)\n    (bands : TwoBandInterval ratio lower upper)\n    (hratios : ∀ firstCoordinate ∈ Set.Icc (0 : ℝ) 1,\n      ∀ secondCoordinate ∈ Set.Icc (0 : ℝ) 1,\n        lower ≤ derivWithin second (Set.Icc (0 : ℝ) 1) secondCoordinate /\n          derivWithin first (Set.Icc (0 : ℝ) 1) firstCoordinate ∧\n        derivWithin second (Set.Icc (0 : ℝ) 1) secondCoordinate /\n          derivWithin first (Set.Icc (0 : ℝ) 1) firstCoordinate ≤ upper)\n    (hlevel : level ∈ Set.Ioo (first 0 + second 0) (first 1 + second 1)) :\n    0 < dimH {point : ℝ × ℝ | point ∈ cantorDust ratio ∧\n      first point.1 + second point.2 = level}\n",
+          "lean_statement_sha256": "A9D775FF2DFD5A0D5BB2655F8A89EC4643DF41230F6FFB47314D22A3A3C9BFDD",
+          "lean_signature_sha256": "A9D775FF2DFD5A0D5BB2655F8A89EC4643DF41230F6FFB47314D22A3A3C9BFDD",
+          "declaration_source_sha256": "4F25A7D93205FD93B437E45F9F0B3AC9F8B9E780AD0155CC193EFB33C0883A26",
+          "module_source_sha256": "A5D68AB7B9B36A2533BA1268700D88A579C18B12498E746F1F20255E3E7C0D10",
+          "build_evidence": {
+            "source_sha256": "A5D68AB7B9B36A2533BA1268700D88A579C18B12498E746F1F20255E3E7C0D10",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T03:37:21.1393079Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Last_TwoBandSeparableClosed.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.2",
+      "kind": "theorem",
+      "id": "thm:last-real",
+      "labels": [
+        "thm:last-real"
+      ],
+      "manuscript_source": {
+        "path": "sections/universal-last-bound.tex",
+        "line": 130
+      },
+      "manuscript_statement_sha256": "b677e4e53a72b207e62a4aeab0d494e0b2dd92aea6d65c44633bacb1ac24a7ec",
+      "manuscript_statement_tex": "\\label{thm:last-real}\nFor every real \\(\\alpha>1\\),\n\\[\n\\lambda_{\\max}(\\alpha)<\\frac{\\sqrt3-1}{2}.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Last.universal_lastTransition_lt_critical",
+          "module": "LambdaCantor/Last/UniversalLastConclusion.lean",
+          "declaration_kind": "theorem",
+          "source_line": 12,
+          "lean_statement_text": "theorem universal_lastTransition_lt_critical {exponent : ℝ} (hexponent : 1 < exponent) :\n    lastTransition exponent < (Real.sqrt 3 - 1) / 2\n",
+          "lean_statement_sha256": "F24CB9C880948EEADB58B5DF09A3A624A68B3D2C78222335E7945B37C7A63140",
+          "lean_signature_sha256": "F24CB9C880948EEADB58B5DF09A3A624A68B3D2C78222335E7945B37C7A63140",
+          "declaration_source_sha256": "B8C09C809AAC770EDAD2C7892AC83142D008C86E167F500DDEEBFA9D6D1FF484",
+          "module_source_sha256": "B5BBA1C4967944527C1010A60D0C7B98EB6E8692610B01BB918AA0017E3E0E3D",
+          "build_evidence": {
+            "source_sha256": "B5BBA1C4967944527C1010A60D0C7B98EB6E8692610B01BB918AA0017E3E0E3D",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T16:33:24.8662270Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Last_UniversalLastConclusion.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.3",
+      "kind": "theorem",
+      "id": "thm:circle-positive-measure",
+      "labels": [
+        "thm:circle-positive-measure"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1878
+      },
+      "manuscript_statement_sha256": "a9f8bda2beceeeac174aab8015b030b4b131dbe7052c561fadfbbc90abe79837",
+      "manuscript_statement_tex": "\\label{thm:circle-positive-measure}\nFor every \\(0<\\varepsilon<1/2-(2-\\sqrt3)\\), the set\n\\[\n\\{\\lambda\\in(2-\\sqrt3,2-\\sqrt3+\\varepsilon):\n                       \\dim_{\\mathrm H}(E_{2,\\lambda})>0\\}\n\\]\nhas positive Lebesgue measure.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Circle.circle_positive_measure",
+          "module": "LambdaCantor/Circle/ManuscriptEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 10,
+          "lean_statement_text": "theorem circle_positive_measure (epsilon : ℝ) (epsilon_positive : 0 < epsilon) :\n    0 < volume {ratio : ℝ | ratio ∈ Set.Ioo onset (onset + epsilon) ∧\n      0 < dimH (intersection 2 ratio)}\n",
+          "lean_statement_sha256": "23FF22859518CEE7585C340E55D0AE0C9E59E563C0719044BB49278E5F214FFF",
+          "lean_signature_sha256": "23FF22859518CEE7585C340E55D0AE0C9E59E563C0719044BB49278E5F214FFF",
+          "declaration_source_sha256": "CB0CF66AAC626B0EC6F4E8322953495AB9C48D23DA3C6C4AA562A6FD13645410",
+          "module_source_sha256": "89F54AA147CA519A22518D09598C68D32914754762016B9D4CED3BB86C56CB4E",
+          "build_evidence": {
+            "source_sha256": "89F54AA147CA519A22518D09598C68D32914754762016B9D4CED3BB86C56CB4E",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:42:06.7572618Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_ManuscriptEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Circle.onset",
+          "module": "LambdaCantor/Circle/OnsetAlgebra.lean",
+          "declaration_kind": "def",
+          "source_line": 11,
+          "lean_statement_text": "noncomputable def onset : ℝ := 2 - Real.sqrt 3\n",
+          "lean_statement_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "lean_signature_sha256": "58C4A9492A622B5FEC3D92D2755E2BE55E6038255639849DAE6134BD8217DCB7",
+          "declaration_source_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "module_source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+          "build_evidence": {
+            "source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:38:40.4678098Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_OnsetAlgebra.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The endpoint holds for every positive epsilon; the manuscript upper restriction is not needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.4",
+      "kind": "theorem",
+      "id": "thm:circle-onset",
+      "labels": [
+        "thm:circle-onset"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1933
+      },
+      "manuscript_statement_sha256": "83d859c1c426073dcce3a07cff80a7ed4941a0cd825893de297891611145adce",
+      "manuscript_statement_tex": "\\label{thm:circle-onset}\nThe first Hausdorff phase transition for the unit circle is\n\\(\\lambda_{\\min}(2)=2-\\sqrt3\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Circle.circle_onset",
+          "module": "LambdaCantor/Circle/ManuscriptEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 17,
+          "lean_statement_text": "theorem circle_onset : firstTransition 2 = onset\n",
+          "lean_statement_sha256": "EDBCC83A883C6793B7BDC9C32C560552CD679223BC8CD3ED80DD24E7A9571DA4",
+          "lean_signature_sha256": "EDBCC83A883C6793B7BDC9C32C560552CD679223BC8CD3ED80DD24E7A9571DA4",
+          "declaration_source_sha256": "7057CFEE9570A94978E5DA09BB4FEB614C0CE0E1250BDAB65BF5C2F910426975",
+          "module_source_sha256": "89F54AA147CA519A22518D09598C68D32914754762016B9D4CED3BB86C56CB4E",
+          "build_evidence": {
+            "source_sha256": "89F54AA147CA519A22518D09598C68D32914754762016B9D4CED3BB86C56CB4E",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:42:06.7572618Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_ManuscriptEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Circle.onset",
+          "module": "LambdaCantor/Circle/OnsetAlgebra.lean",
+          "declaration_kind": "def",
+          "source_line": 11,
+          "lean_statement_text": "noncomputable def onset : ℝ := 2 - Real.sqrt 3\n",
+          "lean_statement_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "lean_signature_sha256": "58C4A9492A622B5FEC3D92D2755E2BE55E6038255639849DAE6134BD8217DCB7",
+          "declaration_source_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "module_source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+          "build_evidence": {
+            "source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:38:40.4678098Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_OnsetAlgebra.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.5",
+      "kind": "theorem",
+      "id": "thm:circle-zero-intervals",
+      "labels": [
+        "thm:circle-zero-intervals"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 1959
+      },
+      "manuscript_statement_sha256": "d924be954eb7fdad513a093f14d07b2f10b8d951f5fb363fd4570a2494eca6c6",
+      "manuscript_statement_tex": "\\label{thm:circle-zero-intervals}\nThere is a sequence of nonempty open intervals\n\\(I_j\\subset(2-\\sqrt3,1/2)\\) with\n\\(\\lim_{j\\to\\infty}\\sup I_j=2-\\sqrt3\\), on each of which\n\\(E_{2,\\lambda}=\\{(0,1),(1,0)\\}\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Circle.circle_zero_intervals",
+          "module": "LambdaCantor/Circle/ZeroIntervalSequence.lean",
+          "declaration_kind": "theorem",
+          "source_line": 11,
+          "lean_statement_text": "theorem circle_zero_intervals :\n    ∃ intervals : ℕ → Set ℝ,\n      (∀ index, IsOpen (intervals index) ∧ Set.OrdConnected (intervals index) ∧\n        (intervals index).Nonempty ∧\n        intervals index ⊆ Set.Ioo onset (1 / 2 : ℝ) ∧\n        ∀ ratio ∈ intervals index,\n          intersection 2 ratio = ({(0, 1), (1, 0)} : Set (ℝ × ℝ))) ∧\n      Tendsto (fun index => sSup (intervals index)) atTop (𝓝 onset)\n",
+          "lean_statement_sha256": "6AA9C62D7952B5D0E1376E69430EBE37EEF129130E3A9B45898F0F2038EFC943",
+          "lean_signature_sha256": "6AA9C62D7952B5D0E1376E69430EBE37EEF129130E3A9B45898F0F2038EFC943",
+          "declaration_source_sha256": "835AB52A2CE904919F0A10E753943837ACBE4A40E21A089565EF47060140BF29",
+          "module_source_sha256": "FDF5439250F86239B2C73F696261B7824470E98B2B9ADD81D5D08224F7B6B5E1",
+          "build_evidence": {
+            "source_sha256": "FDF5439250F86239B2C73F696261B7824470E98B2B9ADD81D5D08224F7B6B5E1",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T18:27:12.0840438Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_ZeroIntervalSequence.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Circle.onset",
+          "module": "LambdaCantor/Circle/OnsetAlgebra.lean",
+          "declaration_kind": "def",
+          "source_line": 11,
+          "lean_statement_text": "noncomputable def onset : ℝ := 2 - Real.sqrt 3\n",
+          "lean_statement_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "lean_signature_sha256": "58C4A9492A622B5FEC3D92D2755E2BE55E6038255639849DAE6134BD8217DCB7",
+          "declaration_source_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "module_source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+          "build_evidence": {
+            "source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:38:40.4678098Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_OnsetAlgebra.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.6",
+      "kind": "theorem",
+      "id": "thm:known-separation",
+      "labels": [
+        "thm:known-separation"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 2166
+      },
+      "manuscript_statement_sha256": "ed13177054276fcfd64453478b79354649ef441529e6f8791e7f875bd4f08f20",
+      "manuscript_statement_tex": "\\label{thm:known-separation}\nFor the unit circle,\n\\[\n\\lambda_{\\min}(2)=2-\\sqrt3<\\lambda_{\\max}(2).\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Circle.circle_known_separation",
+          "module": "LambdaCantor/Circle/ManuscriptEndpoints.lean",
+          "declaration_kind": "theorem",
+          "source_line": 21,
+          "lean_statement_text": "theorem circle_known_separation :\n    firstTransition 2 = onset ∧ onset < lastTransition 2\n",
+          "lean_statement_sha256": "A7FB8F0732C8531AAEB78E073ED9EFFDC4B3DCCD50FFF1E1E7D18E32A45D761D",
+          "lean_signature_sha256": "A7FB8F0732C8531AAEB78E073ED9EFFDC4B3DCCD50FFF1E1E7D18E32A45D761D",
+          "declaration_source_sha256": "7A34A98343D5184292FE52064569261814F41BCA03D0ADD5E9B5C93C89380DEF",
+          "module_source_sha256": "89F54AA147CA519A22518D09598C68D32914754762016B9D4CED3BB86C56CB4E",
+          "build_evidence": {
+            "source_sha256": "89F54AA147CA519A22518D09598C68D32914754762016B9D4CED3BB86C56CB4E",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:42:06.7572618Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_ManuscriptEndpoints.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.Circle.onset",
+          "module": "LambdaCantor/Circle/OnsetAlgebra.lean",
+          "declaration_kind": "def",
+          "source_line": 11,
+          "lean_statement_text": "noncomputable def onset : ℝ := 2 - Real.sqrt 3\n",
+          "lean_statement_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "lean_signature_sha256": "58C4A9492A622B5FEC3D92D2755E2BE55E6038255639849DAE6134BD8217DCB7",
+          "declaration_source_sha256": "DD76D900F1FD6F58495F6327AC6EB44341AA3487635A3A81634D460FAB616CAF",
+          "module_source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+          "build_evidence": {
+            "source_sha256": "481653E0B8DA118400E3320005BAE759EA0A86BC3A5269BF7DF5593C43B9F692",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T04:38:40.4678098Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Circle_OnsetAlgebra.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.7",
+      "kind": "lemma",
+      "id": "lem:average-sobolev",
+      "labels": [
+        "lem:average-sobolev"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 2201
+      },
+      "manuscript_statement_sha256": "98362212a0a792687dae05646093cb6d407c3398319f4121a6d32149dfbf7e7d",
+      "manuscript_statement_tex": "\\label{lem:average-sobolev}\nLet \\([a,b]\\subset(3/8,1/2)\\) be sufficiently short that\n\\[\n0<2\\sigma<\\frac{2\\log(8/3)}{\\log(b/a^3)}-1.\n\\]\nOn every compact subinterval of \\((a,b)\\), the squared\n\\(H^\\sigma\\) norm of \\(\\mu_\\lambda*\\mu_\\lambda\\) is integrable\nwith respect to \\(\\lambda\\).",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.average_sobolev",
+          "module": "LambdaCantor/Manuscript/AverageSobolev.lean",
+          "declaration_kind": "theorem",
+          "source_line": 14,
+          "lean_statement_text": "theorem average_sobolev {lower upper regularity : ℝ}\n    (lower_above_three_eighths : 3/8 < lower) (ordered : lower ≤ upper)\n    (upper_below_half : upper < 1/2) (regularity_positive : 0 < regularity)\n    (regularity_range : 2*regularity <\n      2*Real.log (8/3 : ℝ)/Real.log (upper/lower^3)-1) :\n    (∀ compact : Set ℝ, compact ⊆ Set.Ioo lower upper → IsCompact compact →\n      (∫⁻ ratio in compact, AE.canonicalSobolevEnergy ratio regularity) < ⊤ ∧\n      IntegrableOn (fun ratio => (AE.canonicalSobolevEnergy ratio regularity).toReal) compact volume) ∧\n    (∀ᵐ ratio : ℝ, ratio ∈ Set.Ioo lower upper →\n      AE.HasCanonicalSobolevDensity (AE.selfConvolutionProbability ratio) regularity)\n",
+          "lean_statement_sha256": "B84E955771371A04AAA5CBE9A4D24165FF7897A6D5DA6823894E02DF4BE72BEC",
+          "lean_signature_sha256": "B84E955771371A04AAA5CBE9A4D24165FF7897A6D5DA6823894E02DF4BE72BEC",
+          "declaration_source_sha256": "E95617C3ED0DFC1DBD8E69B866B77C525B328C01FA6F084C9096CA6C61E6142A",
+          "module_source_sha256": "BD27FC7C8B1A00222AF21B4364C4427DD950A4092E9F3987B7162575A7DCE6BC",
+          "build_evidence": {
+            "source_sha256": "BD27FC7C8B1A00222AF21B4364C4427DD950A4092E9F3987B7162575A7DCE6BC",
+            "own_current_source_exit_zero": false,
+            "log_end_utc": "2026-10-27T20:11:12.8878102Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_AverageSobolev.lean.log",
+            "current_dependency_closure": false
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.fullFourierEnergy_eq_convolution_energy",
+          "module": "LambdaCantor/AE/ConvolutionMeasure.lean",
+          "declaration_kind": "theorem",
+          "source_line": 9,
+          "lean_statement_text": "theorem fullFourierEnergy_eq_convolution_energy (ratio regularity : ℝ) :\n    fullFourierEnergy ratio regularity =\n      ∫⁻ frequency : ℝ, ENNReal.ofReal ((1 + |frequency| ^ (2 * regularity)) *\n        ‖measureFourier (selfConvolutionProbability ratio) frequency‖ ^ 2)\n",
+          "lean_statement_sha256": "D1766B85AC8219310FE55A383919A5F7366AE9E40D0B2E4508C1ADDEE6902348",
+          "lean_signature_sha256": "D1766B85AC8219310FE55A383919A5F7366AE9E40D0B2E4508C1ADDEE6902348",
+          "declaration_source_sha256": "138DE81BB22015316DE542BF42109F9D7E4E762545E7D0ACAC85CA35711A48BD",
+          "module_source_sha256": "3A60428E4E85962518600DA30E530A396221B829DA05A67E8DC2026285177828",
+          "build_evidence": {
+            "source_sha256": "3A60428E4E85962518600DA30E530A396221B829DA05A67E8DC2026285177828",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T19:22:15.5274117Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_ConvolutionMeasure.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.fourier_density_eq_measureFourier",
+          "module": "LambdaCantor/AE/SobolevDensity.lean",
+          "declaration_kind": "theorem",
+          "source_line": 12,
+          "lean_statement_text": "theorem fourier_density_eq_measureFourier {density : ℝ → ℝ}\n    (hmeasurable : AEStronglyMeasurable density volume)\n    (hnonnegative : ∀ᵐ value : ℝ, 0 ≤ density value) (frequency : ℝ) :\n    𝓕 (fun value => (density value : ℂ)) frequency =\n      measureFourier (volume.withDensity (fun value => ENNReal.ofReal (density value))) frequency\n",
+          "lean_statement_sha256": "8B46F4848A1F2088319BE8C86BAAA7D67B33C4E0CE0AFD4216740B76E8F1AEEC",
+          "lean_signature_sha256": "8B46F4848A1F2088319BE8C86BAAA7D67B33C4E0CE0AFD4216740B76E8F1AEEC",
+          "declaration_source_sha256": "FA03CEABBE4D8C529869E437197AEFBC0D2162ACC8588DF1E39D56935342EA16",
+          "module_source_sha256": "DC209A675FC36B492C75FACC688A627BFCA6F392B07DA412FDD963A96068F559",
+          "build_evidence": {
+            "source_sha256": "DC209A675FC36B492C75FACC688A627BFCA6F392B07DA412FDD963A96068F559",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T19:41:42.9149465Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_SobolevDensity.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.HasSobolevDensity",
+          "module": "LambdaCantor/AE/SobolevDensity.lean",
+          "declaration_kind": "def",
+          "source_line": 29,
+          "lean_statement_text": "def HasSobolevDensity (probability : Measure ℝ) (regularity : ℝ) : Prop :=\n  ∃ density : ℝ → ℝ, Integrable density volume ∧ MemLp density 2 volume ∧\n    (∀ᵐ value : ℝ, 0 ≤ density value) ∧\n    probability = volume.withDensity (fun value => ENNReal.ofReal (density value)) ∧\n    (∫⁻ frequency : ℝ, ENNReal.ofReal ((1 + |frequency| ^ (2 * regularity)) *\n      ‖𝓕 (fun value => (density value : ℂ)) frequency‖ ^ 2)) < ⊤\n",
+          "lean_statement_sha256": "CB31285661AFBB4211029A320C20D56524250B6982AFA9A199A8766396D92D6B",
+          "lean_signature_sha256": "47FC1387F022F651DEAFCB4BDA3C917C760DD876E64B3B755CFA1D5A54809DC1",
+          "declaration_source_sha256": "CB31285661AFBB4211029A320C20D56524250B6982AFA9A199A8766396D92D6B",
+          "module_source_sha256": "DC209A675FC36B492C75FACC688A627BFCA6F392B07DA412FDD963A96068F559",
+          "build_evidence": {
+            "source_sha256": "DC209A675FC36B492C75FACC688A627BFCA6F392B07DA412FDD963A96068F559",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T19:41:42.9149465Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_SobolevDensity.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.selfConvolutionProbability",
+          "module": "LambdaCantor/AE/ConvolutionMeasureCore.lean",
+          "declaration_kind": "def",
+          "source_line": 16,
+          "lean_statement_text": "def selfConvolutionProbability (ratio : ℝ) : Measure ℝ :=\n  (addressProbability.prod addressProbability).map\n    (fun digits : (ℕ → Bool) × (ℕ → Bool) => address ratio digits.1 + address ratio digits.2)\n",
+          "lean_statement_sha256": "3440895C477215A9CD1CCEA4FB91979E9D8CF5FF9B01CE17E95183ECD1F32A69",
+          "lean_signature_sha256": "0D93C29B8597982CDF7183E0222AFF78C9AA4BA47FCE0055A55E8D895585ACC8",
+          "declaration_source_sha256": "3440895C477215A9CD1CCEA4FB91979E9D8CF5FF9B01CE17E95183ECD1F32A69",
+          "module_source_sha256": "434780D7FFEE67A08C998CF794CCF837214AB8CDB3718BF7F9F7CB1C7EBE2481",
+          "build_evidence": {
+            "source_sha256": "434780D7FFEE67A08C998CF794CCF837214AB8CDB3718BF7F9F7CB1C7EBE2481",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-24T18:33:14.5136957Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_ConvolutionMeasureCore.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.canonicalSobolevEnergy",
+          "module": "LambdaCantor/AE/CanonicalSobolevEnergy.lean",
+          "declaration_kind": "def",
+          "source_line": 13,
+          "lean_statement_text": "def canonicalSobolevEnergy (ratio regularity : ℝ) : ℝ≥0∞ :=\n  ∫⁻ frequency : ℝ, ENNReal.ofReal\n    (Real.rpow (1 + |frequency| ^ 2) regularity *\n      ‖addressFourier ratio frequency‖ ^ 4)\n",
+          "lean_statement_sha256": "7A317D33F05B534A9295387F1E8910B45EC1119810EFC7A48C7F0E157DF20E50",
+          "lean_signature_sha256": "D05325E8FBCF062D248B5E3B4D3C05505F2D6F5F111A4E473EEB76C5CAC01903",
+          "declaration_source_sha256": "7A317D33F05B534A9295387F1E8910B45EC1119810EFC7A48C7F0E157DF20E50",
+          "module_source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+          "build_evidence": {
+            "source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T19:53:25.2191566Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_CanonicalSobolevEnergy.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.HasCanonicalSobolevDensity",
+          "module": "LambdaCantor/AE/CanonicalSobolevEnergy.lean",
+          "declaration_kind": "def",
+          "source_line": 113,
+          "lean_statement_text": "def HasCanonicalSobolevDensity (probability : Measure ℝ) (regularity : ℝ) : Prop :=\n  ∃ density : ℝ → ℝ, Integrable density volume ∧ MemLp density 2 volume ∧\n    (∀ᵐ value : ℝ, 0 ≤ density value) ∧\n    probability = volume.withDensity (fun value => ENNReal.ofReal (density value)) ∧\n    (∫⁻ frequency : ℝ, ENNReal.ofReal\n      (Real.rpow (1 + |frequency| ^ 2) regularity *\n        ‖𝓕 (fun value => (density value : ℂ)) frequency‖ ^ 2)) < ⊤\n",
+          "lean_statement_sha256": "201DF4D9E5CD99C10BAA8A74C4986DD3C793C0F1CBE559C3B8B1FAAF87FAF29A",
+          "lean_signature_sha256": "7162D4AE3D67EE5B8A7B0C28F78A9A0704F9AE359A58980F569D38F2C96FA29B",
+          "declaration_source_sha256": "201DF4D9E5CD99C10BAA8A74C4986DD3C793C0F1CBE559C3B8B1FAAF87FAF29A",
+          "module_source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+          "build_evidence": {
+            "source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T19:53:25.2191566Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_CanonicalSobolevEnergy.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.canonicalSobolevEnergy_eq_convolution_energy",
+          "module": "LambdaCantor/AE/CanonicalSobolevEnergy.lean",
+          "declaration_kind": "theorem",
+          "source_line": 30,
+          "lean_statement_text": "theorem canonicalSobolevEnergy_eq_convolution_energy (ratio regularity : ℝ) :\n    canonicalSobolevEnergy ratio regularity =\n      ∫⁻ frequency : ℝ, ENNReal.ofReal\n        (Real.rpow (1 + |frequency| ^ 2) regularity *\n          ‖measureFourier (selfConvolutionProbability ratio) frequency‖ ^ 2)\n",
+          "lean_statement_sha256": "F3673AC01E4800DE960AB333B5F07643CD2BCC1E05F7A10DC5776351B37378CE",
+          "lean_signature_sha256": "F3673AC01E4800DE960AB333B5F07643CD2BCC1E05F7A10DC5776351B37378CE",
+          "declaration_source_sha256": "1BD72051CDAB7191C68B10BFAD5822FEDAEC8A96DE0FFBD92B473F618A33FDA5",
+          "module_source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+          "build_evidence": {
+            "source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T19:53:25.2191566Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_CanonicalSobolevEnergy.lean.log",
+            "current_dependency_closure": true
+          }
+        },
+        {
+          "name": "LambdaCantor.AE.canonicalSobolevEnergy_eq_densityFourier",
+          "module": "LambdaCantor/AE/CanonicalSobolevEnergy.lean",
+          "declaration_kind": "theorem",
+          "source_line": 99,
+          "lean_statement_text": "theorem canonicalSobolevEnergy_eq_densityFourier\n    {ratio regularity : ℝ} {density : ℝ → ℝ}\n    (hintegrable : Integrable density volume)\n    (hnonnegative : ∀ᵐ value : ℝ, 0 ≤ density value)\n    (hmeasure : selfConvolutionProbability ratio =\n      volume.withDensity (fun value => ENNReal.ofReal (density value))) :\n    canonicalSobolevEnergy ratio regularity =\n      ∫⁻ frequency : ℝ, ENNReal.ofReal\n        (Real.rpow (1 + |frequency| ^ 2) regularity *\n          ‖𝓕 (fun value => (density value : ℂ)) frequency‖ ^ 2)\n",
+          "lean_statement_sha256": "C77DBA2CD03CD781C526236CE4C6D62C02018B249E96902A143A5E2C4E0C6BA5",
+          "lean_signature_sha256": "C77DBA2CD03CD781C526236CE4C6D62C02018B249E96902A143A5E2C4E0C6BA5",
+          "declaration_source_sha256": "61A6267B2CCEC1FA8A8E6789BA887F2881E6239F9ABD32B6C3731C0BA799D136",
+          "module_source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+          "build_evidence": {
+            "source_sha256": "450C9BA5DB8B478B35B58D46623634DA57DD06021A200443EA2C537FA322971A",
+            "own_current_source_exit_zero": true,
+            "log_end_utc": "2026-10-27T19:53:25.2191566Z",
+            "log_exit": "0",
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_CanonicalSobolevEnergy.lean.log",
+            "current_dependency_closure": true
+          }
+        }
+      ],
+      "scope_note": "The independently compilable wrapper uses the canonical Fourier weight (1+|frequency|^2)^sigma. It explicitly proves a finite extended parameter integral AND toReal integrability on every compact subset, together with actual nonnegative L1/L2 Sobolev densities almost everywhere. The exact canonical measure/density Fourier identities and definitions are added to the map; every original energy/density reference and axiom-print obligation is retained. The original weight 1+|frequency|^(2*sigma) is comparable by two actual proved inequalities. All original a,b,sigma hypotheses remain. Source-scope confirmation and actual compiler acceptance are separate requirements.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation",
+      "source_scope_review": {
+        "status": "owner confirmed manuscript scope; compiler acceptance remains separate",
+        "reviewed_lean_statement_sha256": "B84E955771371A04AAA5CBE9A4D24165FF7897A6D5DA6823894E02DF4BE72BEC",
+        "evidence": "STATUS-LastAE.md",
+        "review_utc": "2026-10-27T20:08:07.710969+00:00",
+        "review_evidence_exact_line": "2026-10-27T20:08:07.710969+00:00 ROOT REQUESTED EXACT-STATEMENT OWNER CONFIRMATION: LastAE independently extracted theorem average_sobolev signature through := and recomputed strip()+newline SHA B84E955771371A04AAA5CBE9A4D24165FF7897A6D5DA6823894E02DF4BE72BEC from sourceSHA 7EF5E2724AC9CA4D06E2FF912EAB6ED01226432194FE3E901DC90C69B90FEC1F. Read it in full against BOTH frozen429d53b main.tex copies, Lemma4.7 lines2201-2208. Confirmed exact applicable range:3/8<lower<=upper<1/2,0<regularity (equivalent0<2regularity), same strict2regularity<2log(8/3)/log(upper/lower^3)-1. Conclusion covers every compact SUBSET of(lower,upper), stronger than compact subintervals, with actual canonical self-convolution squared Fourier norm extended parameter integral<top AND toReal IntegrableOn; also AEactual nonnegativeL1/L2canonical density ofthe SAME selfConvolutionProbability, no abstractkernel/model/callerenergy/rootfibre premise. Coreexactdensity/measureFourieridentity andindependentAEfinite safeguard proved by450/A777. This is source-scope ownerconfirmation, NOT the stillmissingliteralwrapper compiler certificate. All5finalManuscriptAudit heads remain, SectionFour importsnewAverage andpreserves other4theorems, all16requirements/fullentries unchanged. Targetgroupmodule/audit already synchronized toAverageSobolev, withall3strongAEcoreaudits retained. Root mayuse this B84 exactstatement/time in reviewedmap; any changedstatement needsfreshscope review. No passedcore/audit edited.",
+        "review_evidence_file_sha256": "D3B057688219A65C8CBC27F1B0DAAADCAD49350EBE6A593B5595A281683C1871",
+        "contract": "SECTION4_LASTAE_TARGETS.json",
+        "contract_requirement": "average-sobolev-compact-subinterval",
+        "contract_sha256": "A1A3D68A302FC5671D01BBC1BEBEB0C77851CB1924124B1AF1B0C142BCD4F25A",
+        "unchanged_reviewed_statement_and_current_contract": true,
+        "not_a_compiler_or_proof_acceptance": true
+      }
+    },
+    {
+      "number": "4.8",
+      "kind": "theorem",
+      "id": "thm:ae-dimension",
+      "labels": [
+        "thm:ae-dimension"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 2305
+      },
+      "manuscript_statement_sha256": "fc268a0598f33b663f72a13eff5be6d09555737f2c8cb138f5657c1ae2fc4573",
+      "manuscript_statement_tex": "\\label{thm:ae-dimension}\nFor every fixed irrational \\(\\alpha>1\\), for Lebesgue almost every\n\\(\\lambda\\in(\\sqrt3/4,1/2)\\),\n\\[\n\\dim_{\\mathrm H}(E_{\\alpha,\\lambda})=\\frac{2\\log2}{\\log(1/\\lambda)}-1.\n\\]",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.AE.irrational_ae_dimension_equality",
+          "module": "LambdaCantor/AE/ActualDimensionTerminal.lean",
+          "declaration_kind": "theorem",
+          "source_line": 145,
+          "lean_statement_text": "theorem irrational_ae_dimension_equality\n    {exponent : ℝ} (irrational : Irrational exponent) (exponent_greater_one : 1 < exponent) :\n    ∀ᵐ ratio : ℝ, ratio ∈ Ioo (Real.sqrt 3/4) (1/2) →\n      dimH (intersection exponent ratio) = ENNReal.ofReal (expectedDimension ratio)\n",
+          "lean_statement_sha256": "DDC2E0501DDDD5280D5D04CB18639DEBD1C8E62671B5A3CF25FBAEB2D8625383",
+          "lean_signature_sha256": "DDC2E0501DDDD5280D5D04CB18639DEBD1C8E62671B5A3CF25FBAEB2D8625383",
+          "declaration_source_sha256": "277B801661A73D8F0B564C54E8513948F7C6691ACA46547C0E4D9D4842C8D669",
+          "module_source_sha256": "59CA4F40E7810C075894C622DABF396B8C31FFF09C7170FF6713E159FC03F75C",
+          "build_evidence": {
+            "source_sha256": "2D9D08B57E55F32A98B48EF8ADDA5BC9DE63ECF45F695553966C68B3E9D93E34",
+            "own_current_source_exit_zero": false,
+            "log_end_utc": null,
+            "log_exit": null,
+            "canonical_log": "Lean/build-logs/LambdaCantor_AE_ActualDimensionTerminal.lean.log",
+            "current_dependency_closure": false
+          }
+        }
+      ],
+      "scope_note": "Direct manuscript endpoint; auxiliary definitions are expanded in this record when needed.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation"
+    },
+    {
+      "number": "4.9",
+      "kind": "example",
+      "id": "ex:ae",
+      "labels": [
+        "ex:ae"
+      ],
+      "manuscript_source": {
+        "path": "main.tex",
+        "line": 2495
+      },
+      "manuscript_statement_sha256": "611fcd463dd9442aabdbc8b2f9ed0e91cb2ec44c1936c13f19e689db28abac29",
+      "manuscript_statement_tex": "\\label{ex:ae}\nFix \\(\\alpha=\\sqrt2\\). The theorem applies to almost every\n\\(\\lambda\\in(7/16,9/20)\\), since \\(49/256>3/16\\).\nFor those parameters,\n\\[\n\\frac{2\\log2}{\\log(16/7)}-1\n<\\dim_{\\mathrm H}(E_{\\sqrt2,\\lambda})<\n\\frac{2\\log2}{\\log(20/9)}-1.\n\\]\nThis assertion does not identify an individual parameter outside\nthe exceptional null set.",
+      "lean_declarations": [
+        {
+          "name": "LambdaCantor.Manuscript.ae_sqrt_two_dimension_bounds",
+          "module": "LambdaCantor/Manuscript/SectionFour.lean",
+          "declaration_kind": "theorem",
+          "source_line": 46,
+          "lean_statement_text": "theorem ae_sqrt_two_dimension_bounds :\n    ∀ᵐ ratio : ℝ, ratio ∈ Set.Ioo (7/16 : ℝ) (9/20) →\n      ENNReal.ofReal (2*Real.log 2/Real.log (16/7 : ℝ)-1) <\n          dimH (intersection (Real.sqrt 2) ratio) ∧\n      dimH (intersection (Real.sqrt 2) ratio) <\n        ENNReal.ofReal (2*Real.log 2/Real.log (20/9 : ℝ)-1)\n",
+          "lean_statement_sha256": "AAFD356F776E09FD49C2223E238B80F83A4BC7621D4F9405628249DF65A0EF59",
+          "lean_signature_sha256": "AAFD356F776E09FD49C2223E238B80F83A4BC7621D4F9405628249DF65A0EF59",
+          "declaration_source_sha256": "2DE8923B7D3ADB93E0D2FD2FA01027BADECB019C3CC8765BED8737595C965348",
+          "module_source_sha256": "7287CF7CD77A54F97B7DD3E2DA45F4617511AE37A716EB4143F28E1395635EC9",
+          "build_evidence": {
+            "source_sha256": "7287CF7CD77A54F97B7DD3E2DA45F4617511AE37A716EB4143F28E1395635EC9",
+            "own_current_source_exit_zero": false,
+            "log_end_utc": null,
+            "log_exit": null,
+            "canonical_log": "Lean/build-logs/LambdaCantor_Manuscript_SectionFour.lean.log",
+            "current_dependency_closure": false
+          }
+        }
+      ],
+      "scope_note": "The wrapper explicitly derives the sqrt(2) exponent, containment of (7/16,9/20) in the main a.e. band, and both strict logarithmic dimension inequalities. It selects no individual parameter outside the null set.",
+      "acceptance": "source mapping only; final entry and current dependency closure require actual compilation",
+      "source_scope_review": {
+        "status": "owner confirmed manuscript scope; compiler acceptance remains separate",
+        "reviewed_lean_statement_sha256": "AAFD356F776E09FD49C2223E238B80F83A4BC7621D4F9405628249DF65A0EF59",
+        "evidence": "STATUS-LastAE.md",
+        "review_utc": "2026-10-27T04:33:21.9770849Z",
+        "review_evidence_exact_line": "2026-10-27T04:33:21.9770849Z ROOT4.7/4.9 scope review: read actual newly written Manuscript/All.lean:75 average_sobolev and112 ae_sqrt_two_dimension_bounds, without editing owner file. 4.7 DOES assert IntegrableOn energy.toReal for every compact subset, plus a.e.HasSobolevDensity of the actual selfConvolutionProbability; therefore it is stronger than mere ae finiteness and matches the manuscript in the Fourier norm convention (weight1+abs(frequency)^(2sigma), equivalent to usual inhomogeneous Hsigma). Existing ConvolutionMeasure.fullFourierEnergy_eq_convolution_energy gives equality to actual convolution measure Fourier energy and SobolevDensity.fourier_density_eq_measureFourier identifies actual density Fourier transform. No additional mathematical bridge source needed; all still source-only until real compile. 4.9 exact lower/upper ENNReal bounds + actualsqrt2 scope also match displayed paper. Root owner keeps All unchanged; LastAE will extend contract exact names LambdaCantor.Manuscript.average_sobolev and LambdaCantor.Manuscript.ae_sqrt_two_dimension_bounds. NormalizationGeometry D04B actualPASS END04:28:45.9641701Z/137.6351808s. Fermat80375 actualEXIT1 only implicitexponent inference; owner F284D repair frozen and queued with Exchange retry, no changedpremise.",
+        "review_evidence_file_sha256": "D3B057688219A65C8CBC27F1B0DAAADCAD49350EBE6A593B5595A281683C1871",
+        "contract": "SECTION4_LASTAE_TARGETS.json",
+        "contract_requirement": "sqrt-two-ae-example",
+        "contract_sha256": "A1A3D68A302FC5671D01BBC1BEBEB0C77851CB1924124B1AF1B0C142BCD4F25A",
+        "unchanged_reviewed_statement_and_current_contract": true,
+        "not_a_compiler_or_proof_acceptance": true
+      }
+    }
+  ],
+  "pending_scope_review": [],
+  "known_exact_statement_gaps": [],
+  "independently_compilable_entries": [
+    {
+      "module": "LambdaCantor/Manuscript/Classical.lean",
+      "source_sha256": "C8166BD8C0672C21E134385B8055F621CF1E38AC891873634EA2692FE73C150B",
+      "module_count": 29,
+      "queue": "build-order-manuscript-classical.txt",
+      "missing_generated_boundaries": [],
+      "imports_no_middle_third_production_data": true
+    },
+    {
+      "module": "LambdaCantor/Manuscript/SectionFour.lean",
+      "source_sha256": "7287CF7CD77A54F97B7DD3E2DA45F4617511AE37A716EB4143F28E1395635EC9",
+      "module_count": 608,
+      "queue": "build-order-manuscript-sectionfour.txt",
+      "missing_generated_boundaries": [],
+      "imports_no_middle_third_production_data": true
+    },
+    {
+      "module": "LambdaCantor/Manuscript/AverageSobolev.lean",
+      "source_sha256": "BD27FC7C8B1A00222AF21B4364C4427DD950A4092E9F3987B7162575A7DCE6BC",
+      "module_count": 67,
+      "queue": "build-order-manuscript-averagesobolev.txt",
+      "missing_generated_boundaries": [],
+      "imports_no_middle_third_production_data": true
+    }
+  ],
+  "static_import_topology": {
+    "module_count": 3934,
+    "queue": "build-order-manuscript-all.txt",
+    "acyclic": true,
+    "all_imports_precede_consumers": true,
+    "missing_generated_boundaries": [
+      {
+        "module": "LambdaCantor/RationalPowers/LowPartitionData/PositiveDimension.lean",
+        "state": "待生成; not accepted or fabricated"
+      }
+    ]
+  },
+  "verification_limit": "This script starts no Lean compiler, evaluates no finite certificate, and neither proves full coverage nor substitutes the old foundations entrypoint for the manuscript."
+}

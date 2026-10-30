@@ -1,0 +1,11 @@
+import LambdaCantor.Last.UniversalLastConclusion
+import LambdaCantor.Last.EndpointTransferCompleteAudit
+
+#print axioms LambdaCantor.Last.analytic_irrational_last_strict_upper
+#print axioms LambdaCantor.Last.analytic_quadratic_last_strict_upper
+#print axioms LambdaCantor.Last.analytic_cubic_last_strict_upper
+#print axioms LambdaCantor.Last.analytic_three_halves_last_strict_upper
+#print axioms LambdaCantor.Last.coarse_strict_log_link_all_exponents
+#print axioms LambdaCantor.Last.coarse_rational_infinite_intersection
+#print axioms LambdaCantor.Last.rational_lastTransition_lt_critical
+#print axioms LambdaCantor.Last.universal_lastTransition_lt_critical

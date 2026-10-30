@@ -1,0 +1,23 @@
+UTC=2026-10-27T15:33:58.3407974Z MODULE=LambdaCantor/RationalPowers/ExceptionalThirteenTwelfthsChecked.lean SHA256=79D378803194B90F94554BAC90E17AFB52C9861D5613341C79A9654578AF5D96
+'LambdaCantor.RationalPowers.Exceptional.ThirteenTwelfths.all_outer_levels_two_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ block000_checked._native.native_decide.ax_1_1,
+ block001_checked._native.native_decide.ax_1_1,
+ block002_checked._native.native_decide.ax_1_1,
+ block003_checked._native.native_decide.ax_1_1,
+ block004_checked._native.native_decide.ax_1_1,
+ block005_checked._native.native_decide.ax_1_1,
+ block006_checked._native.native_decide.ax_1_1,
+ block007_checked._native.native_decide.ax_1_1,
+ block008_checked._native.native_decide.ax_1_1,
+ block009_checked._native.native_decide.ax_1_1,
+ block010_checked._native.native_decide.ax_1_1,
+ block011_checked._native.native_decide.ax_1_1,
+ block012_checked._native.native_decide.ax_1_1,
+ block013_checked._native.native_decide.ax_1_1,
+ block014_checked._native.native_decide.ax_1_1,
+ ranges_cover._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=40.6107692 END_UTC=2026-10-27T15:34:38.9685494Z
+EXIT=0

@@ -1,0 +1,6 @@
+UTC=2026-10-26T08:56:29.7900541Z MODULE=LambdaCantor/Integer/ExceptionalWordGeometry.lean SHA256=3E0AD5F75BE85CDE6871398A10B27F9DE0000A8B297762748D05058B8A338892
+LambdaCantor/Integer/ExceptionalWordGeometry.lean:30:78: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=34.5496318 END_UTC=2026-10-26T08:57:04.3615947Z
+EXIT=0

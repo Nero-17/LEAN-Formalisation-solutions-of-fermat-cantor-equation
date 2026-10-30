@@ -1,0 +1,27 @@
+UTC=2026-10-24T16:26:49.0206205Z MODULE=LambdaCantor/First/LinearRegularityBlockLaw.lean SHA256=E511743F15FEFC1201782952AFA55ECA3E652B43E2A5092972CE383F0D023F52
+LambdaCantor/First/LinearRegularityBlockLaw.lean:48:8: warning: This simp argument is unused:
+  PMF.toMeasure_apply_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [̵P̵M̵F̵.̵t̵o̵M̵e̵a̵s̵u̵r̵e̵_̵a̵p̵p̵l̵y̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵ ̵m̵e̵a̵s̵u̵r̵a̵b̵l̵e̵S̵e̵t̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵[̲m̲e̲a̲s̲u̲r̲a̲b̲l̲e̲S̲e̲t̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲,̲ PMF.uniformOfFintype_apply, Fintype.card_prod, denseBlock_card,
+      ENNReal.inv_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/LinearRegularityBlockLaw.lean:48:39: warning: This simp argument is unused:
+  measurableSet_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [PMF.toMeasure_apply_singleton, m̵e̵a̵s̵u̵r̵a̵b̵l̵e̵S̵e̵t̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵PMF.uniformOfFintype_apply, Fintype.card_prod,
+  ̲  ̲ ̲ ̲denseBlock_card, ENNReal.inv_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/LinearRegularityBlockLaw.lean:49:51: warning: This simp argument is unused:
+  denseBlock_card
+
+Hint: Omit it from the simp argument list.
+  simp [PMF.toMeasure_apply_singleton, measurableSet_singleton, PMF.uniformOfFintype_apply,
+  ̲  ̲ ̲ ̲Fintype.card_prod, d̵e̵n̵s̵e̵B̵l̵o̵c̵k̵_̵c̵a̵r̵d̵,̵ENNReal.inv_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=28.7019294 END_UTC=2026-10-24T16:27:17.7257670Z
+EXIT=0

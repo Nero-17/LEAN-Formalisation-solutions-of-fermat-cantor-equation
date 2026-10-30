@@ -1,0 +1,14 @@
+UTC=2026-10-27T04:42:52.2188949Z MODULE=LambdaCantor/Manuscript/First.lean SHA256=4D747BF4BD3D0FF388E19A011DC5C6C4C1165C31725834698D6723A055616A56
+LambdaCantor.Manuscript.introductory_first_transition (exponent : ℝ) (above_one : 1 < exponent) :
+  1 / 4 ≤ LambdaCantor.firstTransition exponent ∧ (Irrational exponent → LambdaCantor.firstTransition exponent = 1 / 4)
+'LambdaCantor.Manuscript.introductory_first_transition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.First.ExternalProjection.shmerkin2019_theorem62_four_maps,
+ LambdaCantor.First.LinearRegularity.falconer2003_product73_interval,
+ LambdaCantor.First.LinearRegularity.shmerkin2014_proposition23_two_maps,
+ LambdaCantor.First.LinearRegularity.shmerkin2019_theorem92_uniform_l2,
+ LambdaCantor.First.Roots.External.classical_compact_measure_l2_fourier_density,
+ LambdaCantor.First.Roots.External.classical_plancherel_l1_l2]
+ELAPSED_SECONDS=46.6359308 END_UTC=2026-10-27T04:43:38.8605921Z
+EXIT=0

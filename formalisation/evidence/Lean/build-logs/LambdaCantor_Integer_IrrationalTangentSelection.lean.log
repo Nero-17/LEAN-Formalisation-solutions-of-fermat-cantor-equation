@@ -1,0 +1,10 @@
+UTC=2026-10-24T16:23:23.3015134Z MODULE=LambdaCantor/Integer/IrrationalTangentSelection.lean SHA256=40E9DE3E56538308AB85F18CD5D93F748EBF6BB5440AB8DCA46532CD1337A2E4
+LambdaCantor/Integer/IrrationalTangentSelection.lean:28:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ELAPSED_SECONDS=16.6947101 END_UTC=2026-10-24T16:23:40.0134607Z
+EXIT=0

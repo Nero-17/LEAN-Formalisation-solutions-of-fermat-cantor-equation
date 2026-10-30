@@ -1,0 +1,8 @@
+UTC=2026-10-25T07:51:58.2681570Z MODULE=LambdaCantor/First/RationalPowerFourEndpoint.lean SHA256=BBD729581781A55946ED562688286F13B7DFD8D407C9F560FBBA268BB8A446F3
+LambdaCantor/First/RationalPowerFourEndpoint.lean:12:5: warning: Variable name `hpadding` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=38.1936033 END_UTC=2026-10-25T07:52:36.4636430Z
+EXIT=0

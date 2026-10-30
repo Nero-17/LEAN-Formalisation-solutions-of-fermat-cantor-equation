@@ -1,0 +1,4 @@
+UTC=2026-10-28T01:43:08.0931950Z MODULE=LambdaCantor/AE/FiniteDensityMixture.lean SHA256=29164FAC30CFCEB98C0F50E3463C8B836C058155D4A5482E0F810516CCA442B0
+LambdaCantor/AE/FiniteDensityMixture.lean:52:4: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+ELAPSED_SECONDS=18.690899 END_UTC=2026-10-28T01:43:26.7857291Z
+EXIT=0

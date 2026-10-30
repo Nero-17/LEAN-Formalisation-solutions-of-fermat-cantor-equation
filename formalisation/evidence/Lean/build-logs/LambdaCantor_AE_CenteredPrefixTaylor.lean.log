@@ -1,0 +1,8 @@
+UTC=2026-10-28T05:39:57.5680709Z MODULE=LambdaCantor/AE/CenteredPrefixTaylor.lean SHA256=1E263C47DC516C1335CEE915FC57A392AA3CD537531A01301D34D103675AE8B3
+LambdaCantor/AE/CenteredPrefixTaylor.lean:96:58: warning: Variable name `rho_nonnegative` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=108.3166623 END_UTC=2026-10-28T05:41:45.8924308Z
+EXIT=0

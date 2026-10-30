@@ -1,0 +1,7 @@
+UTC=2026-10-24T17:42:16.1855200Z MODULE=LambdaCantor/First/RootsStateNull.lean SHA256=C6B6A3F995C4293BAB08F01591D4FDB2B6A33E2583CB5E25192B690D619C9DB9
+'LambdaCantor.First.Roots.rootFibreData_continuous_state' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.First.Roots.rootFibreData_state_exceptional_null' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED_SECONDS=23.4138961 END_UTC=2026-10-24T17:42:39.6010067Z
+EXIT=0

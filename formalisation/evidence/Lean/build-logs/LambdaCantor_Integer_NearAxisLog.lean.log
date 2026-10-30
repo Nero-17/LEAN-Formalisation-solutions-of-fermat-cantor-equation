@@ -1,0 +1,15 @@
+UTC=2026-10-27T15:43:20.3509276Z MODULE=LambdaCantor/Integer/NearAxisLog.lean SHA256=829D219F323D76B1B3F339A0A9468B98303BEF9739FDD4799BF67F43AA740C0A
+LambdaCantor/Integer/NearAxisLog.lean:35:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Integer/NearAxisLog.lean:35:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/NearAxisLog.lean:96:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Integer/NearAxisLog.lean:96:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=28.7233311 END_UTC=2026-10-27T15:43:49.0766443Z
+EXIT=0

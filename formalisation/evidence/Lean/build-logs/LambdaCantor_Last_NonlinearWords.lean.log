@@ -1,0 +1,12 @@
+UTC=2026-10-24T15:50:45.8143980Z MODULE=LambdaCantor/Last/NonlinearWords.lean SHA256=BF68DD811F529367F5A1CA4161736606D750CC119858682F203164CEED30780A
+LambdaCantor/Last/NonlinearWords.lean:63:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/NonlinearWords.lean:90:76: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/NonlinearWords.lean:90:76: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=71.8138319 END_UTC=2026-10-24T15:51:57.6328129Z
+EXIT=0

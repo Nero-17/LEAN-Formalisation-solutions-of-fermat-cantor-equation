@@ -1,0 +1,22 @@
+UTC=2026-10-21T11:18:06.4201506Z MODULE=LambdaCantor/First/AddressSecondParameter.lean SHA256=E65D85EAA5A443BF833EF9E67F277FE7CAF20819D60A8A02B298EB1D46691DB9
+LambdaCantor/First/AddressSecondParameter.lean:17:65: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_add, Nat.cast_one, Nat.add_sub_cancel, pow_o̵n̵e̵,̵ ̵p̵o̵w̵_̵succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/AddressSecondParameter.lean:19:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/First/AddressSecondParameter.lean:19:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/First/AddressSecondParameter.lean:91:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/AddressSecondParameter.lean:92:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=33.29786 END_UTC=2026-10-21T11:18:39.7570919Z
+EXIT=0

@@ -1,0 +1,14 @@
+UTC=2026-10-27T16:58:59.8350561Z MODULE=LambdaCantor/AE/PairAnnulusScale.lean SHA256=924DDD6531934DD5EC33BBA64A8D4DB40106F65C7A29B76848E969C9344691C8
+LambdaCantor/AE/PairAnnulusScale.lean:27:33: warning: Variable name `hsecond` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/AE/PairAnnulusScale.lean:71:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/PairAnnulusScale.lean:71:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=33.5552917 END_UTC=2026-10-27T16:59:33.3920887Z
+EXIT=0

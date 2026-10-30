@@ -1,0 +1,9 @@
+UTC=2026-10-28T22:28:07.0985931Z MODULE=LambdaCantor/RationalPowers/CompactLow/Bridge.lean SHA256=36A9CD783195C57B62003B4861A47FFBBC9DF712C42B52321DDD9209B77FC995
+LambdaCantor.RationalPowers.CompactLow.predicate_eq :
+  LambdaCantor.RationalPowers.CompactLow.predicate = LambdaCantor.RationalPowers.actualLowPartitionPredicate
+LambdaCantor.RationalPowers.CompactLow.blockCheck_eq (first count : ℕ) :
+  LambdaCantor.RationalPowers.lowRationalBlockCheck first count LambdaCantor.RationalPowers.CompactLow.predicate =
+    LambdaCantor.RationalPowers.lowRationalBlockCheck first count
+      LambdaCantor.RationalPowers.actualLowPartitionPredicate
+ELAPSED_SECONDS=30.1102629 END_UTC=2026-10-28T22:28:37.2221324Z
+EXIT=0

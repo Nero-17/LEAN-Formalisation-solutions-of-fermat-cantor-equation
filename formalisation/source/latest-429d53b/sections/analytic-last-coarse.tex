@@ -1,0 +1,340 @@
+% Endpoint construction for the proof of Theorem 4.2.
+% Assumes c=(sqrt(3)-1)/2 and c<=lambda<1/2.
+\paragraph{Nonempty endpoint fibres.}
+We first construct infinitely many nontrivial points of the intersection for
+rational $\alpha>1$. The construction will also give the strict margins needed
+below. Put
+\[
+ A:=\log\bigl((1-\lambda)+\lambda C_\lambda\bigr),
+ \qquad b:=-\log(1-\lambda),\qquad h:=-\log\lambda.
+\]
+Thus $\operatorname{conv}A=[-b,0]$ and $0<b<h$.
+We will show that, for every real $\alpha>1$, there is an integer $j$ such that
+\begin{equation}\label{eq:coarse-strict-link}
+ \alpha A\cap
+ (\log\alpha-jh-b,\log\alpha-jh)\ne\varnothing.
+\end{equation}
+This is a statement about a point lying strictly inside a translated hull;
+we will use the Gap Lemma to obtain actual intersections of Cantor sets.
+
+First, $A$ has thickness greater than one. Consider a cylinder hull $[a,a+d]$
+inside $[1-\lambda,1]$, where $d=\lambda^n$ and $n\ge1$.
+Its central gap is $(a+\lambda d,a+(1-\lambda)d)$.
+Since the derivative of the logarithm decreases, the logarithmic left bridge
+is at least $\lambda/(1-2\lambda)>1$ times the logarithmic gap.
+The right bridge is longer than the gap precisely when
+\[
+ (a+d)(a+\lambda d)>(a+(1-\lambda)d)^2,
+\]
+or, equivalently,
+\[
+ (3\lambda-1)+(3\lambda-1-\lambda^2)\frac da>0.
+\]
+Here $0<d/a\le\lambda/(1-\lambda)$. If the second coefficient is negative,
+the left side is at least
+\[
+ \frac{3\lambda-1-\lambda^3}{1-\lambda}>0;
+\]
+the numerator increases on $[c,1/2]$ and its value at $c$ is $(3c-1)/2>0$.
+If the coefficient is nonnegative, positivity is immediate.
+The bridge-to-gap ratios extend continuously to $d/a=0$, with limiting
+value $\lambda/(1-2\lambda)>1$, so they have a strict common lower bound
+above one for each fixed $\lambda$.
+Moreover, every logarithmic gap one generation deeper is at most
+$\lambda/(1-\lambda)<1$ times every gap of the preceding generation:
+this follows by integrating $1/x$ over the corresponding gaps in
+$[1-\lambda,1]$. Hence later gaps cannot truncate these bridges when the
+gaps are removed in decreasing order. This proves the thickness assertion.
+
+The Gap Lemma~\cite{Newhouse1979} now gives the exact identity
+\begin{equation}\label{eq:coarse-thickening}
+ \alpha A-A=\alpha A+[0,b],\qquad \alpha\ge1.
+\end{equation}
+Indeed, if $s\in\alpha A+[0,b]$, the hull of $s+A$ meets $\alpha A$.
+A contact at a hull endpoint already gives an intersection.
+Otherwise $s+A$ is not contained in a gap of $\alpha A$, because its hull
+meets $\alpha A$, and $\alpha A$ is not contained in a gap of $s+A$,
+because its diameter is at least $b$, larger than every bounded gap of $A$;
+the hull intersection excludes containment in an unbounded gap.
+The thickness product exceeds one, so the two Cantor sets intersect.
+The reverse inclusion is immediate from $-A\subset[0,b]$.
+The largest gap of $A$ has length
+\[
+ \log\frac{1-\lambda^2}{1-\lambda+\lambda^2}.
+\]
+Consequently, if this length multiplied by $\alpha$ is strictly less than
+$b$, then $\alpha A+[0,b]=[-\alpha b,b]$, with strict overlap across each
+gap. If also $(\alpha+1)b>h$, every residue modulo $h$ has a representative
+$s$ for which $\alpha A\cap(s-b,s)\ne\varnothing$.
+More generally, the same conclusion holds whenever every complementary arc
+of $\alpha A$ modulo $h$ has length strictly less than $b$.
+
+For $1<\alpha\le23/19$, we have
+$0<\log\alpha<b$, since $23/19<3/2<1/(1-c)$.
+The point $0\in\alpha A$ therefore proves
+\eqref{eq:coarse-strict-link} with $j=0$.
+For $23/19\le\alpha\le3$, the ratio
+$(1-\lambda^2)/(1-\lambda+\lambda^2)$ decreases with $\lambda$:
+its derivative has the sign of $1-4\lambda+\lambda^2<0$.
+Using $\lambda\ge c>4/11$ gives
+\[
+ \left(\frac{1-\lambda^2}{1-\lambda+\lambda^2}\right)^3(1-\lambda)
+ <\left(\frac{35}{31}\right)^3\frac7{11}
+ =\frac{300125}{327701}<1.
+\]
+Thus all gaps of $\alpha A$ are shorter than $b$.
+Also $(42/19)b>h$. It suffices to verify this at $\lambda=c$;
+using $1-c=\sqrt3c$, it is equivalent to $3^{21}c^{23}<1$.
+Since $c<11/30$ and
+\[
+ \left(\frac{11}{10}\right)^{10}<\frac{13}{5},\qquad
+ \left(\frac{11}{10}\right)^{23}
+ <\left(\frac{13}{5}\right)^2\left(\frac{11}{10}\right)^3
+ =\frac{224939}{25000}<9,
+\]
+where the first comparison is $25937424601<26000000000$, the desired
+inequality follows. This proves \eqref{eq:coarse-strict-link} up to $\alpha=3$.
+
+We next prove that every complementary circle arc is shorter than $b$ for
+$3\le\alpha\le6$. Reflecting $A$, write its root gap in $[0,b]$ as $(L,U)$,
+where
+\[
+ L:=-\log(1-\lambda^2),\qquad U:=-\log(1-\lambda+\lambda^2).
+\]
+Every other logarithmic gap has length at most
+$\lambda^2(1-2\lambda)/(1-\lambda)<2/27$;
+here $\lambda^2(1-2\lambda)\le1/27$ and $1-\lambda>1/2$.
+Their dilations by $\alpha\le6$ therefore have length less than $4/9<b$.
+The elementary bounds
+\begin{equation}\label{eq:coarse-basic-bounds}
+ b>\frac{91}{200},\qquad h<\frac{503}{500}
+\end{equation}
+will be justified explicitly below. Furthermore,
+\[
+ b-U=\log\left(1+\frac{\lambda^2}{1-\lambda}\right)>
+ \frac{16}{93},\qquad
+ U-L<\log\frac{35}{31}<\frac4{31},\qquad
+ h-b<\log\frac74<\frac35.
+\]
+The first bound follows from $\lambda>4/11$ and
+$\log(1+x)>x/(1+x)$; the last follows from
+$1+3/5+(3/5)^2/2=89/50>7/4$. Hence
+\[
+ b(b-U)>\frac{182}{2325}>\frac{12}{155}>(U-L)(h-b),
+ \qquad \frac{182}{2325}-\frac{12}{155}=\frac{62}{72075}>0.
+\]
+Also $\alpha b>h$ and $\alpha(U-L)<24/31<h+b$, using
+$h>\log2>1/2$.
+If an empty circle arc had length at least $b$, choose an empty open subarc
+$I=(a,a+b)\subset(0,h)$, allowing endpoints $0,h$.
+It lies in the root gap $(\alpha L,\alpha U)$, so $\alpha(U-L)\ge b$.
+Its translate $I+h$ cannot partly meet $[0,\alpha b]$, since the hull endpoint
+$\alpha b$ belongs to $-\alpha A$; nor can it lie wholly in that hull,
+since then the same root gap would have length at least $h+b$.
+Thus $a\ge\alpha b-h$, and $a+b\le\alpha U$ gives
+$\alpha(b-U)\le h-b$. The last two inequalities contradict
+$b(b-U)>(U-L)(h-b)$.
+
+For $6\le\alpha\le20$, only three logarithmic gaps can be relevant.
+Their lengths, in decreasing generations, are
+\[
+ \log\frac{1-\lambda^2}{1-\lambda+\lambda^2},\qquad
+ \log\frac{(1-\lambda)(1+\lambda^2)}{1-\lambda+\lambda^3},\qquad
+ \log\frac{1-\lambda^3}{1-\lambda^2+\lambda^3}.
+\]
+They are respectively less than
+\begin{equation}\label{eq:coarse-three-gaps}
+ \frac{33}{125}b,\qquad\frac{113}{1000}b,\qquad\frac{17}{200}b;
+ \qquad \frac bh>\frac{453}{1000},
+\end{equation}
+and every deeper gap is shorter than $b/20$.
+Here are explicit bounds for these claims and for
+\eqref{eq:coarse-basic-bounds}. We have $c>183/500$.
+The derivatives of the three logarithmic lengths have, after multiplication
+by positive denominators, the numerators
+\[
+ 1-4\lambda+\lambda^2,\quad
+ \lambda(2-7\lambda+4\lambda^2-\lambda^3),\quad
+ \lambda(2-6\lambda+\lambda^3).
+\]
+Each is negative for $183/500\le\lambda\le1/2$, since the relevant polynomial
+is negative at $183/500$ and decreases thereafter. The logarithmic lengths
+therefore decrease while $b$ increases.
+The positive logarithmic series gives
+\[
+ b>2\left(\frac{183}{817}+\frac{(183/817)^3}{3}
+                   +\frac{(183/817)^5}{5}\right)>\frac{45569}{100000}.
+\]
+For $0<z<1$,
+\[
+ \log\frac{1+z}{1-z}
+ \le2\left(z+\frac{z^3}{3}+\frac{z^5}{5(1-z^2)}\right).
+\]
+Substituting $z=(R-1)/(R+1)$ gives the following rational bounds:
+\[
+\begin{array}{c|c}
+R&2\bigl(z+z^3/3+z^5/[5(1-z^2)]\bigr)\ \text{is less than}\\ \hline
+216511/191989&12021/100000\\
+89866013/85378487&5123/100000\\
+118871513/114383987&3849/100000
+\end{array}
+\]
+The left column gives the three gap ratios at $\lambda=183/500$.
+The entries in the right column are respectively smaller than
+$33/125,113/1000,17/200$ times $45569/100000$.
+Also
+\[
+ \sum_{k=0}^{8}\frac{(10053/10000)^k}{k!}-\frac{500}{183}
+ =\frac{39624613635943016066263577308071007}
+ {81984000000000000000000000000000000000}>0.
+\]
+Thus $h<10053/10000<503/500$, and
+$(45569/100000)/(10053/10000)>453/1000$.
+For the largest depth-three gap, $\log(1+x)\le x$ and
+$b\ge\lambda+\lambda^2/2$ give the ratio bound
+\[
+ \frac{\text{gap length}}b
+ \le\frac{(1-2\lambda)\lambda^2}{(1-\lambda)(1+\lambda/2)}<\frac1{20}.
+\]
+The rational function decreases on $[183/500,1/2]$, because its derivative
+has the sign of $2-(13/2)\lambda+2\lambda^2+\lambda^3<0$.
+At $183/500$ its difference from $1/20$ is
+$400223/187505500>0$. The ordering by generation treats all later gaps.
+
+Suppose now that an open circle arc of length $b$ misses $\alpha A$.
+At least $\lfloor(\alpha-1)b/h\rfloor$ of its translates lie wholly in
+$[-\alpha b,0]$. Each must lie in a gap of $\alpha A$.
+A gap of length $\alpha g$ accommodates at most
+$\lfloor(\alpha g-b)/h\rfloor+1$ such translates, and none if $\alpha g<b$.
+Use the normalized hull length $t:=b/h\in(453/1000,1)$.
+If $k$ of the three upper bounds in \eqref{eq:coarse-three-gaps} can be active,
+the total capacity is at most
+$\alpha t$ times their sum, minus $kt$, plus $k$.
+The required number is greater than $(\alpha-1)t-1$.
+Thus capacity is insufficient whenever
+\[
+ [\alpha(1-\text{sum of the active upper ratios})+k-1]t>k+1.
+\]
+For $6\le\alpha<1000/113$, only the first gap can be active, and
+$6(1-33/125)(453/1000)-2=7/15625>0$.
+For $1000/113\le\alpha<200/17$, the sum is $377/1000$.
+The sufficient inequality holds if $\alpha\ge91/10$ or $t\ge47/100$;
+the respective endpoint margins are
+$211929/10000000$ and $173/2825$.
+In the remaining rectangle, each capacity is at most one, whereas
+$\lfloor(\alpha-1)t\rfloor\ge3$.
+For $200/17\le\alpha\le20$, the sum is $231/500$.
+The sufficient inequality holds if $\alpha\ge13$ or $t\ge49/100$;
+the endpoint margins are $37141/500000$ and $173/2125$.
+In the remaining rectangle the two smaller capacities are at most one
+and the root capacity is at most two. If the latter is at most one,
+the total is at most three, but the required number is at least four.
+If it is two, then $((33/125)\alpha-1)t\ge1$.
+For $\alpha\le25/2$ this gives
+\[
+ (\alpha-1)t\ge\frac{\alpha-1}{(33/125)\alpha-1}\ge5;
+\]
+for $\alpha\ge25/2$ the bound $t>453/1000$ gives the same conclusion.
+The required number is therefore at least five, against capacity at most four.
+All cases are impossible, proving the strict circle-gap bound.
+
+It remains to treat $\alpha\ge20$.
+For $1\le\beta<1/\lambda$, the largest complementary arc of
+$\beta C_\lambda$ modulo one is at most
+\[
+ \begin{cases}
+ \beta(1-2\lambda),&1\le\beta\le1/(1-\lambda),\\
+ 2-\beta,&1/(1-\lambda)\le\beta\le1+2\lambda,\\
+ 1-2\lambda,&1+2\lambda\le\beta<1/\lambda.
+ \end{cases}
+\]
+Indeed, all nonroot gaps have length at most $1-2\lambda$.
+A longer empty arc has a representative in $(0,1)$ lying in the root gap.
+Its translate by one cannot partly meet $[0,\beta]$, because $\beta$ belongs
+to the Cantor set, and cannot lie wholly in that hull, because the root gap
+has length $\beta(1-2\lambda)<1$. It therefore lies outside the hull.
+The first arc is consequently contained in
+\[
+ (\max(\beta\lambda,\beta-1),\min(\beta(1-\lambda),1)).
+\]
+Taking the maximum of this interval length and $1-2\lambda$ gives the
+three displayed pieces. This bound decreases with $\lambda$ for fixed $\beta$.
+
+Choose the largest integer $n\ge1$ such that
+\[
+ \beta:=\frac{\alpha}{h}
+       \log\left(1+\frac{\lambda^n}{1-\lambda}\right)\ge1.
+\]
+Such an $n$ exists because the value at $n=1$ is $\alpha b/h>1$.
+Concavity of the logarithm and maximality give $\beta<1/\lambda<11/4$.
+The set $\alpha A$ contains the image
+$\alpha\log((1-\lambda)+\lambda^n C_\lambda)$.
+Compared with its secant parametrisation
+$\alpha\log(1-\lambda)+\beta h C_\lambda$, every point moves in the same
+direction by at most
+\[
+ \frac\alpha8\left(\frac{\lambda^n}{1-\lambda}\right)^2
+ =\frac\alpha8(e^{\beta h/\alpha}-1)^2
+ \le\frac{\beta^2(503/500)^2}
+ {160(1-\beta(503/500)/20)^2}.
+\]
+The first estimate follows from the second derivative of $\log(1+zs)$
+and $s(1-s)\le1/4$; the last uses $e^x-1\le x/(1-x)$ for $0\le x<1$.
+The bound decreases when $\alpha$ increases from twenty.
+Moving points in one direction by at most this amount enlarges a circle
+gap by at most the same amount: remove that amount from the appropriate
+end of a purported larger empty arc and pull it back.
+
+Compare this error with $91/200$ minus $503/500$ times the preceding
+three-piece gap bound at $\lambda=183/500$.
+On the first piece their ratio increases with $\beta$.
+On the middle piece its derivative has the sign of
+\[
+ 2\frac{91}{200}-4\frac{503}{500}
+ +\frac{503}{500}\beta+\frac{(503/500)^2}{20}\beta^2,
+\]
+which increases but is still
+$-381191095599/312500000000<0$ at its right endpoint $\beta=433/250$.
+On the last piece the ratio increases.
+At the two possible maxima, the available width minus the error is
+\[
+ \begin{array}{c|c}
+ \beta=500/317&120809903739/10800370373000>0\\
+ \beta=11/4&8981604362993/74248380562500>0.
+ \end{array}
+\]
+Hence every circle gap of $\alpha A$ is strictly shorter than $b$ for
+$\alpha\ge20$. Together with the preceding ranges, this proves
+\eqref{eq:coarse-strict-link} for all real $\alpha>1$.
+
+Finally fix $\alpha=p/q>1$ in lowest terms and the integer $j$ supplied by
+\eqref{eq:coarse-strict-link}. For sufficiently large integers $N$, define
+on $[1-\lambda,1]$
+\[
+ H_N(v):=\log\left(
+ \frac{1-(1-\lambda^{j+pN}v)^\alpha}
+ {\alpha\lambda^{j+pN}}\right).
+\]
+Then $\displaystyle\lim_{N\to\infty}H_N(v)=\log v$ in $C^1$.
+The thickness of $H_N((1-\lambda)+\lambda C_\lambda)$ remains greater than
+one: relative to $A$, the derivative ratio of this change of coordinates
+has limit one. Its hull tends to $[-b,0]$.
+By \eqref{eq:coarse-strict-link}, a fixed point of $\alpha A$ remains
+strictly inside its translate by $\log\alpha-jh$.
+This prevents that translated Cantor set from lying in a gap of $\alpha A$.
+Conversely, the diameter $\alpha b$ of $\alpha A$ exceeds the diameter of
+the translated set for all large $N$, so $\alpha A$ cannot lie in one of
+its bounded gaps. The strict hull linkage excludes unbounded gaps as well.
+The Gap Lemma yields $u,v\in(1-\lambda)+\lambda C_\lambda$ with
+\[
+ \alpha\log u-H_N(v)=\log\alpha-jh.
+\]
+Equivalently,
+\[
+ x:=\lambda^{qN}u,\qquad y:=1-\lambda^{j+pN}v
+ \quad\hbox{satisfy}\quad x^\alpha+y^\alpha=1.
+\]
+For $j+pN\ge0$ these points belong to $C_\lambda^2$ and are nontrivial.
+Their $x$-coordinates lie in the pairwise disjoint intervals
+$\lambda^{qN}[1-\lambda,1]$, since $\lambda^q<1-\lambda$.
+Thus the intersection contains infinitely many distinct nontrivial points.

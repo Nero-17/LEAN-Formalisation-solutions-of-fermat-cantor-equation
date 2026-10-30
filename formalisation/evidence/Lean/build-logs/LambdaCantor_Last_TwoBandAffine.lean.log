@@ -1,0 +1,17 @@
+UTC=2026-10-24T17:08:25.1667070Z MODULE=LambdaCantor/Last/TwoBandAffine.lean SHA256=78DE02C59258C48D5DBFF9A4FC3504D8C507550CF9C0A8A9A95F1CB8775CFE26
+LambdaCantor/Last/TwoBandAffine.lean:106:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+LambdaCantor/Last/TwoBandAffine.lean:128:72: warning: This simp argument is unused:
+  wordMap
+
+Hint: Omit it from the simp argument list.
+  simp [hrun_zero, linearWordReturn, returnLevel,̵ ̵w̵o̵r̵d̵M̵a̵p̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=33.0888006 END_UTC=2026-10-24T17:08:58.2587768Z
+EXIT=0

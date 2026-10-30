@@ -1,0 +1,5 @@
+UTC=2026-10-24T17:41:19.1337437Z MODULE=LambdaCantor/First/RootsAffineEnergy.lean SHA256=16B8498C29A63AED6B4E2CE262961CED9A92E4E9AC56D5C7F1093EB9300AADCD
+LambdaCantor/First/RootsAffineEnergy.lean:86:12: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/First/RootsAffineEnergy.lean:86:30: warning: `mul_le_mul_right'` has been deprecated: Use `mul_le_mul_left` instead
+ELAPSED_SECONDS=29.9590682 END_UTC=2026-10-24T17:41:49.0945711Z
+EXIT=0

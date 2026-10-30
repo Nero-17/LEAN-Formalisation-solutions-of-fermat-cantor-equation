@@ -1,0 +1,6 @@
+UTC=2026-10-27T05:04:38.0950696Z MODULE=LambdaCantor/Last/Transitions.lean SHA256=DA4D7BEF2D0E469EA0A8DA207B91B20B467F68B76892B253B189D53EA8022AC5
+LambdaCantor/Last/Transitions.lean:48:4: warning: Try `simp at hp` instead of `simpa using hp`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ELAPSED_SECONDS=49.1541465 END_UTC=2026-10-27T05:05:27.2543051Z
+EXIT=0

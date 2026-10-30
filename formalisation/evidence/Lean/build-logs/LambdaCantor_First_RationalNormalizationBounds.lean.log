@@ -1,0 +1,26 @@
+UTC=2026-10-25T05:16:22.3946451Z MODULE=LambdaCantor/First/RationalNormalizationBounds.lean SHA256=2FA41DCD2C7A84C28C101AE6D88DF253C23736E176458D39EB6838B23B82C14E
+LambdaCantor/First/RationalNormalizationBounds.lean:24:34: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalNormalizationBounds.lean:24:141: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalNormalizationBounds.lean:33:78: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalNormalizationBounds.lean:34:94: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalNormalizationBounds.lean:38:56: warning: Variable name `hupper` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/First/RationalNormalizationBounds.lean:146:87: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalNormalizationBounds.lean:147:59: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=28.5330907 END_UTC=2026-10-25T05:16:50.9302268Z
+EXIT=0

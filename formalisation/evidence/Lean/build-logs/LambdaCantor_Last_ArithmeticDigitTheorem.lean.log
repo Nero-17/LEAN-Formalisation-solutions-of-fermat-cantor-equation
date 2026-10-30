@@ -1,0 +1,9 @@
+UTC=2026-10-27T07:20:22.8542958Z MODULE=LambdaCantor/Last/ArithmeticDigitTheorem.lean SHA256=D8F4D637193B472D67BB60428F274568F5F40D41C2467507420673E34F73FD59
+LambdaCantor/Last/ArithmeticDigitTheorem.lean:63:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/ArithmeticDigitTheorem.lean:68:34: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=60.1280497 END_UTC=2026-10-27T07:21:22.9847243Z
+EXIT=0

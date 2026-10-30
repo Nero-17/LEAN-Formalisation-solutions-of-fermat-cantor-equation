@@ -1,0 +1,31 @@
+UTC=2026-10-21T08:59:54.3203434Z MODULE=LambdaCantor/Classical/NoIsolation.lean SHA256=4B1D2F36B8C46D6C7A60F4B2A84BCBA0790AC3F62C372044BE249065C2E2E1CA
+LambdaCantor/Classical/NoIsolation.lean:31:36: warning: This simp argument is unused:
+  first_value
+
+Hint: Omit it from the simp argument list.
+  simp [digitLabel, ternaryChild, f̵i̵r̵s̵t̵_̵v̵a̵l̵u̵e̵,̵ ̵second_value]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Classical/NoIsolation.lean:31:49: warning: This simp argument is unused:
+  second_value
+
+Hint: Omit it from the simp argument list.
+  simp [digitLabel, ternaryChild, first_value,̵ ̵s̵e̵c̵o̵n̵d̵_̵v̵a̵l̵u̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Classical/NoIsolation.lean:138:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+LambdaCantor/Classical/NoIsolation.lean:186:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ELAPSED_SECONDS=122.180942 END_UTC=2026-10-21T09:01:56.5552964Z
+EXIT=0

@@ -1,0 +1,46 @@
+UTC=2026-10-24T19:20:48.0977048Z MODULE=LambdaCantor/Circle/Transversality.lean SHA256=A55B54955F5C2735D05EE4374731D723C35F0A7A00CA67EC23A22509B9EF53A3
+LambdaCantor/Circle/Transversality.lean:44:17: warning: This simp argument is unused:
+  Pi.neg_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵P̵i̵.̵n̵e̵g̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵p̵o̵w̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵e̵c̵o̵n̵d̵_̵i̵n̵d̵e̵x̵,̵t̵h̵i̵r̵d̵_̵i̵n̵d̵e̵x̵,̵N̵a̵t̵.̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵,̵N̵a̵t̵.̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵_̵r̵i̵g̵h̵t̵,̵N̵a̵t̵.̵r̵e̵d̵u̵c̵e̵S̵u̵b̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵,̵p̵o̵w̵_̵o̵n̵e̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲P̲i̲.̲a̲d̲d̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲s̲u̲b̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲m̲u̲l̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲p̲o̲w̲_̲a̲p̲p̲l̲y̲,̲ ̲i̲d̲_̲e̲q̲,̲ ̲s̲e̲c̲o̲n̲d̲_̲i̲n̲d̲e̲x̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲t̲h̲i̲r̲d̲_̲i̲n̲d̲e̲x̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲s̲u̲b̲_̲c̲a̲n̲c̲e̲l̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲s̲u̲b̲_̲c̲a̲n̲c̲e̲l̲_̲r̲i̲g̲h̲t̲,̲ ̲N̲a̲t̲.̲r̲e̲d̲u̲c̲e̲S̲u̲b̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲f̲N̲a̲t̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲p̲o̲w̲_̲o̲n̲e̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Circle/Transversality.lean:44:43: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵P̵i̵.̵n̵e̵g̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵p̵o̵w̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵e̵c̵o̵n̵d̵_̵i̵n̵d̵e̵x̵,̵t̵h̵i̵r̵d̵_̵i̵n̵d̵e̵x̵,̵N̵a̵t̵.̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵,̵N̵a̵t̵.̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵_̵r̵i̵g̵h̵t̵,̵N̵a̵t̵.̵r̵e̵d̵u̵c̵e̵S̵u̵b̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵,̵p̵o̵w̵_̵o̵n̵e̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲P̲i̲.̲n̲e̲g̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲a̲d̲d̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲m̲u̲l̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲p̲o̲w̲_̲a̲p̲p̲l̲y̲,̲ ̲i̲d̲_̲e̲q̲,̲ ̲s̲e̲c̲o̲n̲d̲_̲i̲n̲d̲e̲x̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲t̲h̲i̲r̲d̲_̲i̲n̲d̲e̲x̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲s̲u̲b̲_̲c̲a̲n̲c̲e̲l̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲s̲u̲b̲_̲c̲a̲n̲c̲e̲l̲_̲r̲i̲g̲h̲t̲,̲ ̲N̲a̲t̲.̲r̲e̲d̲u̲c̲e̲S̲u̲b̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲f̲N̲a̲t̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲p̲o̲w̲_̲o̲n̲e̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Circle/Transversality.lean:45:52: warning: This simp argument is unused:
+  Nat.add_sub_cancel_right
+
+Hint: Omit it from the simp argument list.
+  simp only [̵P̵i̵.̵n̵e̵g̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵P̵i̵.̵p̵o̵w̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵s̵e̵c̵o̵n̵d̵_̵i̵n̵d̵e̵x̵,̵t̵h̵i̵r̵d̵_̵i̵n̵d̵e̵x̵,̵N̵a̵t̵.̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵,̵N̵a̵t̵.̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵_̵r̵i̵g̵h̵t̵,̵N̵a̵t̵.̵r̵e̵d̵u̵c̵e̵S̵u̵b̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵,̵p̵o̵w̵_̵o̵n̵e̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲P̲i̲.̲n̲e̲g̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲a̲d̲d̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲s̲u̲b̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲m̲u̲l̲_̲a̲p̲p̲l̲y̲,̲ ̲P̲i̲.̲p̲o̲w̲_̲a̲p̲p̲l̲y̲,̲ ̲i̲d̲_̲e̲q̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲s̲e̲c̲o̲n̲d̲_̲i̲n̲d̲e̲x̲,̲ ̲t̲h̲i̲r̲d̲_̲i̲n̲d̲e̲x̲,̲ ̲N̲a̲t̲.̲a̲d̲d̲_̲s̲u̲b̲_̲c̲a̲n̲c̲e̲l̲,̲ ̲N̲a̲t̲.̲r̲e̲d̲u̲c̲e̲S̲u̲b̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲f̲N̲a̲t̲,̲ ̲p̲o̲w̲_̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Circle/Transversality.lean:40:6: warning: 'funext parameter' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Circle/Transversality.lean:41:6: warning: 'simp only [expandedCircleResidual, Pi.neg_apply, Pi.add_apply, Pi.sub_apply, Pi.mul_apply, Pi.pow_apply,
+  id_eq]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Circle/Transversality.lean:41:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=23.3314776 END_UTC=2026-10-24T19:21:11.4455522Z
+EXIT=0

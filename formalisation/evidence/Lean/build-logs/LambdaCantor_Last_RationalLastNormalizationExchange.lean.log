@@ -1,0 +1,9 @@
+UTC=2026-10-27T04:52:58.9751719Z MODULE=LambdaCantor/Last/RationalLastNormalizationExchange.lean SHA256=30A1656642C81EAE06EA109331627650FEEE925E784B17F8FBABC716958BB3CB
+LambdaCantor/Last/RationalLastNormalizationExchange.lean:86:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/RationalLastNormalizationExchange.lean:123:4: warning: 'change IsAlgebraic ℚ (scalarWordMap ratio [digit] preimage.1)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=60.6321769 END_UTC=2026-10-27T04:53:59.6100071Z
+EXIT=0

@@ -1,0 +1,9 @@
+UTC=2026-10-27T15:06:36.7817437Z MODULE=LambdaCantor/Last/BinaryGapMonotoneImage.lean SHA256=8D506129043E3996CF825DCE2B17D2606DBA4336DD54472B7BE1C872EA81D8A8
+LambdaCantor/Last/BinaryGapMonotoneImage.lean:112:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/BinaryGapMonotoneImage.lean:112:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=24.3479593 END_UTC=2026-10-27T15:07:01.1323207Z
+EXIT=0

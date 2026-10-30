@@ -1,0 +1,15 @@
+UTC=2026-10-27T15:28:35.5031796Z MODULE=LambdaCantor/RationalPowers/ExceptionalNineteenEighteenthsChecked.lean SHA256=23453FCD1829ABFB7ACBA4D4887FD687BB6944106BEC503EAB706CA6F099977A
+'LambdaCantor.RationalPowers.Exceptional.NineteenEighteenths.all_outer_levels_two_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ block000_checked._native.native_decide.ax_1_1,
+ block001_checked._native.native_decide.ax_1_1,
+ block002_checked._native.native_decide.ax_1_1,
+ block003_checked._native.native_decide.ax_1_1,
+ block004_checked._native.native_decide.ax_1_1,
+ block005_checked._native.native_decide.ax_1_1,
+ block006_checked._native.native_decide.ax_1_1,
+ ranges_cover._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=27.6913469 END_UTC=2026-10-27T15:29:03.2234790Z
+EXIT=0

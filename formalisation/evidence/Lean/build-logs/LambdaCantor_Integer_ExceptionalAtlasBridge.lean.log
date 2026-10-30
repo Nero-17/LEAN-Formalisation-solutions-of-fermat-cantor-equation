@@ -1,0 +1,12 @@
+UTC=2026-10-26T09:08:09.3193473Z MODULE=LambdaCantor/Integer/ExceptionalAtlasBridge.lean SHA256=2D21FFB057B4BEAD5A7E7356BA5F93CF4AF2B49767108EF575460B15D7E57C70
+LambdaCantor/Integer/ExceptionalAtlasBridge.lean:55:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/ExceptionalAtlasBridge.lean:65:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/ExceptionalAtlasBridge.lean:65:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=25.9323229 END_UTC=2026-10-26T09:08:35.2789228Z
+EXIT=0

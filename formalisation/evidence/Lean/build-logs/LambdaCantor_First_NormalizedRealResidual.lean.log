@@ -1,0 +1,12 @@
+UTC=2026-10-21T11:11:00.1149279Z MODULE=LambdaCantor/First/NormalizedRealResidual.lean SHA256=6241BF91B50191F73953FC93D3A11344A0CAFEE6138C7151B37875D1916CEECC
+LambdaCantor/First/NormalizedRealResidual.lean:26:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/NormalizedRealResidual.lean:69:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/First/NormalizedRealResidual.lean:69:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=86.9278111 END_UTC=2026-10-21T11:12:27.0632053Z
+EXIT=0

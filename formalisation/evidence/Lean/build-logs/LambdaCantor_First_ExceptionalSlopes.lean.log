@@ -1,0 +1,5 @@
+UTC=2026-10-24T16:04:39.5702327Z MODULE=LambdaCantor/First/ExceptionalSlopes.lean SHA256=CD2017877DEF01F144D898A7E75733276C89F97A91174C8F7A7EE50426DA75C3
+LambdaCantor/First/ExceptionalSlopes.lean:29:29: warning: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+LambdaCantor/First/ExceptionalSlopes.lean:91:8: warning: `mul_le_mul_right'` has been deprecated: Use `mul_le_mul_left` instead
+ELAPSED_SECONDS=44.0986959 END_UTC=2026-10-24T16:05:23.6732587Z
+EXIT=0

@@ -1,0 +1,8 @@
+UTC=2026-10-28T02:07:58.3746315Z MODULE=LambdaCantor/AE/CenteredNewtonWidth.lean SHA256=3ED8784DCE3D51D83083531811CFC0DBF01E987C4E89F3DA7AF9B45572233158
+LambdaCantor/AE/CenteredNewtonWidth.lean:48:5: warning: Variable name `resonance_lower_nonnegative` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=21.0571061 END_UTC=2026-10-28T02:08:19.4333768Z
+EXIT=0

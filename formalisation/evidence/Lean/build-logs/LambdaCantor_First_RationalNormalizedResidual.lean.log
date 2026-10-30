@@ -1,0 +1,9 @@
+UTC=2026-10-25T07:51:22.4367879Z MODULE=LambdaCantor/First/RationalNormalizedResidual.lean SHA256=C6D87B789FF6B1B1FAD1FADD71B4EACDFAFB8322DD3752608F58DF5EE20EBE45
+LambdaCantor/First/RationalNormalizedResidual.lean:117:28: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RationalNormalizedResidual.lean:118:73: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=27.7277649 END_UTC=2026-10-25T07:51:50.1669303Z
+EXIT=0

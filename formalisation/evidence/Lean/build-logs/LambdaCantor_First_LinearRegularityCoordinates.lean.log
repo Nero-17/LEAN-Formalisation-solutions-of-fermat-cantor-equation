@@ -1,0 +1,10 @@
+UTC=2026-10-24T17:07:02.6877109Z MODULE=LambdaCantor/First/LinearRegularityCoordinates.lean SHA256=BEE5ECDCB669B15975A2EA74DCED83FC1B4EDD18BD599856E5869728AD17C9ED
+LambdaCantor/First/LinearRegularityCoordinates.lean:18:8: warning: This simp argument is unused:
+  PMF.toMeasure_apply_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [̵P̵M̵F̵.̵t̵o̵M̵e̵a̵s̵u̵r̵e̵_̵a̵p̵p̵l̵y̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵ ̵P̵M̵F̵.̵u̵n̵i̵f̵o̵r̵m̵O̵f̵F̵i̵n̵t̵y̵p̵e̵_̵a̵p̵p̵l̵y̵,̵[̲P̲M̲F̲.̲u̲n̲i̲f̲o̲r̲m̲O̲f̲F̲i̲n̲t̲y̲p̲e̲_̲a̲p̲p̲l̲y̲,̲ Fintype.card_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=29.1130551 END_UTC=2026-10-24T17:07:31.8053498Z
+EXIT=0

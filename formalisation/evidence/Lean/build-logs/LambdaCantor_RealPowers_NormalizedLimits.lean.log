@@ -1,0 +1,6 @@
+UTC=2026-10-27T19:26:39.0846396Z MODULE=LambdaCantor/RealPowers/NormalizedLimits.lean SHA256=8089B3D41E9D45BCD4BEAD38F0DB1D00BA0AAE9E193B584922BFFE8592FFD245
+LambdaCantor/RealPowers/NormalizedLimits.lean:29:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=40.1953525 END_UTC=2026-10-27T19:27:19.3016426Z
+EXIT=0

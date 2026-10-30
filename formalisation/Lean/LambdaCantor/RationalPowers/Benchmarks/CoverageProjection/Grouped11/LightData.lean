@@ -1,0 +1,80 @@
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group000
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group001
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group002
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group003
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group004
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group005
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group006
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group007
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group008
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group009
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group010
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group011
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group012
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group013
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group014
+import LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11.DataGroups.Group015
+
+namespace LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11
+
+def grouped11LightEntries : List (Nat × CheapGrid.Row) :=
+  grouped11LightBlock000 ++
+  grouped11LightBlock001 ++
+  grouped11LightBlock002 ++
+  grouped11LightBlock003 ++
+  grouped11LightBlock004 ++
+  grouped11LightBlock005 ++
+  grouped11LightBlock006 ++
+  grouped11LightBlock007 ++
+  grouped11LightBlock008 ++
+  grouped11LightBlock009 ++
+  grouped11LightBlock010 ++
+  grouped11LightBlock011 ++
+  grouped11LightBlock012 ++
+  grouped11LightBlock013 ++
+  grouped11LightBlock014 ++
+  grouped11LightBlock015 ++
+  grouped11LightBlock016 ++
+  grouped11LightBlock017 ++
+  grouped11LightBlock018 ++
+  grouped11LightBlock019 ++
+  grouped11LightBlock020 ++
+  grouped11LightBlock021 ++
+  grouped11LightBlock022 ++
+  grouped11LightBlock023 ++
+  grouped11LightBlock024 ++
+  grouped11LightBlock025 ++
+  grouped11LightBlock026 ++
+  grouped11LightBlock027 ++
+  grouped11LightBlock028 ++
+  grouped11LightBlock029 ++
+  grouped11LightBlock030 ++
+  grouped11LightBlock031 ++
+  grouped11LightBlock032 ++
+  grouped11LightBlock033 ++
+  grouped11LightBlock034 ++
+  grouped11LightBlock035 ++
+  grouped11LightBlock036 ++
+  grouped11LightBlock037 ++
+  grouped11LightBlock038 ++
+  grouped11LightBlock039 ++
+  grouped11LightBlock040 ++
+  grouped11LightBlock041 ++
+  grouped11LightBlock042 ++
+  grouped11LightBlock043 ++
+  grouped11LightBlock044 ++
+  grouped11LightBlock045 ++
+  grouped11LightBlock046 ++
+  grouped11LightBlock047 ++
+  grouped11LightBlock048 ++
+  grouped11LightBlock049 ++
+  grouped11LightBlock050 ++
+  grouped11LightBlock051 ++
+  grouped11LightBlock052 ++
+  grouped11LightBlock053 ++
+  grouped11LightBlock054 ++
+  grouped11LightBlock055 ++
+  grouped11LightBlock056 ++
+  grouped11LightBlock057 ++ []
+
+end LambdaCantor.RationalPowers.Benchmarks.CoverageProjection.Grouped11

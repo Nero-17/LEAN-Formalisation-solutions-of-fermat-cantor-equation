@@ -1,0 +1,6 @@
+UTC=2026-10-27T20:16:29.6238214Z MODULE=LambdaCantor/AE/CenteredSmallBallActual.lean SHA256=67A48B88DE6BA04CCA6E61632A6F7A5F71862FAE3BBB43C5151B0A5E2EB887EB
+LambdaCantor/AE/CenteredSmallBallActual.lean:60:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=31.4178141 END_UTC=2026-10-27T20:17:01.0435440Z
+EXIT=0

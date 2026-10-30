@@ -1,0 +1,21 @@
+UTC=2026-10-27T18:58:35.7543711Z MODULE=LambdaCantor/Integer/CubicSource.lean SHA256=CB5849E39E5E8E12B6B9CE9F0F3D5EF859C3A71B2849C6CFF6806B13B448E561
+LambdaCantor/Integer/CubicSource.lean:99:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+LambdaCantor/Integer/CubicSource.lean:157:4: warning: 'change (cubicEmbedding point).1 ^ (3 : ℝ) + (cubicEmbedding point).2 ^ (3 : ℝ) = 1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Integer/CubicSource.lean:155:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/CubicSource.lean:155:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/CubicSource.lean:156:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/CubicSource.lean:156:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=42.3780095 END_UTC=2026-10-27T18:59:18.1575368Z
+EXIT=0

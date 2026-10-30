@@ -1,0 +1,15 @@
+UTC=2026-10-24T16:40:12.3767067Z MODULE=LambdaCantor/Circle/AddressRoots.lean SHA256=423A9461871AA8E6FA650F18E1EF2B59A197665DF876BD96989A7D27F705BE8D
+LambdaCantor/Circle/AddressRoots.lean:26:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Circle/AddressRoots.lean:26:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Circle/AddressRoots.lean:27:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Circle/AddressRoots.lean:27:67: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=24.6173467 END_UTC=2026-10-24T16:40:37.0198233Z
+EXIT=0

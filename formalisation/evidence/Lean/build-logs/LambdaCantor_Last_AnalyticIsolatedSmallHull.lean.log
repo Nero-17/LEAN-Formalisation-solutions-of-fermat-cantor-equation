@@ -1,0 +1,19 @@
+UTC=2026-10-24T19:27:17.2136866Z MODULE=LambdaCantor/Last/AnalyticIsolatedSmallHull.lean SHA256=B066866DAE42906F930DD34410540E60AFB1384E41F768372D46B34187736BA8
+LambdaCantor/Last/AnalyticIsolatedSmallHull.lean:88:6: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [affineChildOffset, Bool.false_eq_true, if_false, if_true, m̵u̵l̵_̵z̵e̵r̵o̵,̵ ̵zero_add, add_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲mul_one] at upper01 lower01 lower11
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticIsolatedSmallHull.lean:88:26: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [affineChildOffset, Bool.false_eq_true, if_false, if_true, mul_zero, zero_add,
+  ̲  ̲ ̲ ̲ ̲ ̲a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̵mul_one] at upper01 lower01 lower11
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=35.9113456 END_UTC=2026-10-24T19:27:53.1262611Z
+EXIT=0

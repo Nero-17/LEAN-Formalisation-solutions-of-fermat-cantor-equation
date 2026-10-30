@@ -1,0 +1,13 @@
+UTC=2026-10-24T16:07:45.8039764Z MODULE=LambdaCantor/First/ProjectionSeparation.lean SHA256=F0ABED69418B2AF9C05A5FE2E72464D33982A2A180F0D34AD6651AAEFAA6AB4E
+LambdaCantor/First/ProjectionSeparation.lean:64:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+LambdaCantor/First/ProjectionSeparation.lean:73:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=29.9546203 END_UTC=2026-10-24T16:08:15.7623547Z
+EXIT=0

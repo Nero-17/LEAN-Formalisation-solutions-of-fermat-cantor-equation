@@ -1,0 +1,13 @@
+UTC=2026-10-24T15:57:44.1244611Z MODULE=LambdaCantor/ClassicalBridge.lean SHA256=1112F688A4E6983D81E4C2977529FBA4E1CC574620BB27920171AA71064B2FAC
+LambdaCantor/ClassicalBridge.lean:16:42: warning: This simp argument is unused:
+  mul_inv
+
+Hint: Omit it from the simp argument list.
+  simp [digit_value, pow_succ, one_div, m̵u̵l̵_̵inv,̵ ̵i̵n̵v̵_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/ClassicalBridge.lean:16:60: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=31.6591256 END_UTC=2026-10-24T15:58:15.8051734Z
+EXIT=0

@@ -1,0 +1,6 @@
+UTC=2026-10-25T07:19:07.9928453Z MODULE=LambdaCantor/First/RootsKernelPairModel.lean SHA256=1AB98843D613572B6289F14BC4C6B4EC30BE68BD615E89F9D283221F4DB54460
+LambdaCantor/First/RootsKernelPairModel.lean:32:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=36.4588447 END_UTC=2026-10-25T07:19:44.4534470Z
+EXIT=0

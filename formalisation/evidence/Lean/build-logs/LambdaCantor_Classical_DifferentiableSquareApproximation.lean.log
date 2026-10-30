@@ -1,0 +1,6 @@
+UTC=2026-10-21T10:17:48.4324322Z MODULE=LambdaCantor/Classical/DifferentiableSquareApproximation.lean SHA256=7D7B0298FCABEE2428993469C05F89EC0E6E65FDA14E614A4E40711093E2460D
+LambdaCantor/Classical/DifferentiableSquareApproximation.lean:65:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=73.4355367 END_UTC=2026-10-21T10:19:01.9323800Z
+EXIT=0

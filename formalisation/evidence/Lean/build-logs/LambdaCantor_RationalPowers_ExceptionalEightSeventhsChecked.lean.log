@@ -1,0 +1,13 @@
+UTC=2026-10-27T14:57:42.1316639Z MODULE=LambdaCantor/RationalPowers/ExceptionalEightSeventhsChecked.lean SHA256=E2E4A5BDE79355E2DA2051AF0872398BF53C26B7526407382F468FF50AF4D835
+'LambdaCantor.RationalPowers.Exceptional.EightSevenths.all_outer_levels_two_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ block000_checked._native.native_decide.ax_1_1,
+ block001_checked._native.native_decide.ax_1_1,
+ block002_checked._native.native_decide.ax_1_1,
+ block003_checked._native.native_decide.ax_1_1,
+ block004_checked._native.native_decide.ax_1_1,
+ ranges_cover._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=19.1647391 END_UTC=2026-10-27T14:58:01.3088694Z
+EXIT=0

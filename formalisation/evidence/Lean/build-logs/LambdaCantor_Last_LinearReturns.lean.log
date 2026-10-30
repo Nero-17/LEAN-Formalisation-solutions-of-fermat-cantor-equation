@@ -1,0 +1,13 @@
+UTC=2026-10-21T10:26:33.4399193Z MODULE=LambdaCantor/Last/LinearReturns.lean SHA256=1F11CED1BB2F0ABD1D0571FA810BEACFEF908D0FAEF16EC4FBCC1E6C8EE18F20
+LambdaCantor/Last/LinearReturns.lean:17:26: warning: This simp argument is unused:
+  wordMap
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵w̵o̵r̵d̵M̵a̵p̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/LinearReturns.lean:33:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=39.5129355 END_UTC=2026-10-21T10:27:12.9598218Z
+EXIT=0

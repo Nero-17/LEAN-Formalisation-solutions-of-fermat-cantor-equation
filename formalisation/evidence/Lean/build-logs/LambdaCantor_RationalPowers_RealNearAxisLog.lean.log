@@ -1,0 +1,72 @@
+UTC=2026-10-27T15:10:17.2695802Z MODULE=LambdaCantor/RationalPowers/RealNearAxisLog.lean SHA256=61FCD750E79CFFD1A134B0F81245D5CDBF1C3D97CFE83C38AC90BFDAC23CE96E
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:31:45: warning: This simp argument is unused:
+  realPowerDrop
+
+Hint: Omit it from the simp argument list.
+  simp only [r̵e̵a̵l̵P̵o̵w̵e̵r̵D̵r̵o̵p̵,̵ ̵id_eq, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:33:7: warning: 'funext value' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:33:24: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:34:38: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:33:24: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:34:38: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:31:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:54:45: warning: This simp argument is unused:
+  realNearAxisLog
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵a̵l̵N̵e̵a̵r̵A̵x̵i̵s̵L̵o̵g̵,̵ ̵i̵d̵_̵e̵q̵]̵[̲i̲d̲_̲e̲q̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:56:7: warning: 'funext value' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:56:24: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:57:48: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:56:24: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:57:48: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:54:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:74:45: warning: This simp argument is unused:
+  realNearAxisLog
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵a̵l̵N̵e̵a̵r̵A̵x̵i̵s̵L̵o̵g̵,̵ ̵i̵d̵_̵e̵q̵,̵[̲i̲d̲_̲e̲q̲,̲ Function.comp_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:76:7: warning: 'funext value' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:76:24: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:76:24: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RationalPowers/RealNearAxisLog.lean:74:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=39.2561474 END_UTC=2026-10-27T15:10:56.5527764Z
+EXIT=0

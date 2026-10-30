@@ -1,0 +1,9 @@
+UTC=2026-10-27T19:47:05.3167181Z MODULE=LambdaCantor/RealPowers/ReciprocalEndpointSource.lean SHA256=CB8BDBF559B742AB5EA2C16F0751E045AC4127DADF6E3000FC0105DFFC367DC9
+LambdaCantor/RealPowers/ReciprocalEndpointSource.lean:82:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RealPowers/ReciprocalEndpointSource.lean:82:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=40.8546014 END_UTC=2026-10-27T19:47:46.1973541Z
+EXIT=0

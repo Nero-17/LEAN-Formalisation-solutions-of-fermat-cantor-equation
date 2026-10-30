@@ -1,0 +1,13 @@
+UTC=2026-10-27T06:54:26.6805277Z MODULE=LambdaCantor/Classical/Periodicity.lean SHA256=24EF239AF48DD8128493824298643CBC67EDA7166186CB899FB00B2C43D6F391
+LambdaCantor/Classical/Periodicity.lean:37:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+LambdaCantor/Classical/Periodicity.lean:141:15: warning: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only [̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵ ̵at digit_eq
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=27.4850061 END_UTC=2026-10-27T06:54:54.1688648Z
+EXIT=0

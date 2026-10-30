@@ -1,0 +1,10 @@
+UTC=2026-10-21T11:32:23.2690722Z MODULE=LambdaCantor/First/RationalCurvature.lean SHA256=04349EB3F4BCDEDC23F856877794DC8E2D06AAAB28D8EC71FC62BF3C99823ADB
+LambdaCantor/First/RationalCurvature.lean:33:30: warning: This simp argument is unused:
+  Nat.succ_eq_add_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_succ,̵ ̵N̵a̵t̵.̵s̵u̵c̵c̵_̵e̵q̵_̵a̵d̵d̵_̵o̵n̵e̵] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=25.1400307 END_UTC=2026-10-21T11:32:48.4182408Z
+EXIT=0

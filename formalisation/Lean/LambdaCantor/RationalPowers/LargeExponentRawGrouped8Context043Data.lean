@@ -1,0 +1,9 @@
+import LambdaCantor.RationalPowers.LargeExponentRawGrouped8Context043Table000
+
+namespace LambdaCantor.RationalPowers
+
+def largeExponentRawGrouped8Context043Sources : Array RawPhase.Geometry := largeExponentRawGrouped8Context043Table000Sources
+
+def largeExponentRawGrouped8Context043Caches : Array RawPhase.Cache := largeExponentRawGrouped8Context043Table000Caches
+
+end LambdaCantor.RationalPowers

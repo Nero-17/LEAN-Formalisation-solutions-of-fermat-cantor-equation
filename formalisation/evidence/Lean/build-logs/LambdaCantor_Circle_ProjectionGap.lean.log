@@ -1,0 +1,17 @@
+UTC=2026-10-21T08:32:12.6339101Z MODULE=LambdaCantor/Circle/ProjectionGap.lean SHA256=3ED4ED64FF845D088BFF9CD7085FED858F9CA8E3CFE60F919EF4B88246503F85
+LambdaCantor/Circle/ProjectionGap.lean:90:15: warning: This simp argument is unused:
+  first
+
+Hint: Omit it from the simp argument list.
+  simp only [f̵i̵r̵st̵,̵ ̵s̵econd, Bool.false_eq_true, if_false, if_true, mul_zero, mul_one, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Circle/ProjectionGap.lean:90:22: warning: This simp argument is unused:
+  second
+
+Hint: Omit it from the simp argument list.
+  simp only [first, s̵e̵c̵o̵n̵d̵,̵ ̵Bool.false_eq_true, if_false, if_true, mul_zero, mul_one, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=37.8012752 END_UTC=2026-10-21T08:32:50.4397370Z
+EXIT=0

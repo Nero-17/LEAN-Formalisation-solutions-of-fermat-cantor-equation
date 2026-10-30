@@ -1,0 +1,17 @@
+UTC=2026-10-27T15:45:17.4552628Z MODULE=LambdaCantor/RationalPowers/ExceptionalElevenFourthsChecked.lean SHA256=DAACDA3616F491F5CC0BB40CF309BC466A4B5BA1671090944EA82CB1C67636B3
+'LambdaCantor.RationalPowers.Exceptional.ElevenFourths.all_outer_levels_two_returns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ block000_checked._native.native_decide.ax_1_1,
+ block001_checked._native.native_decide.ax_1_1,
+ block002_checked._native.native_decide.ax_1_1,
+ block003_checked._native.native_decide.ax_1_1,
+ block004_checked._native.native_decide.ax_1_1,
+ block005_checked._native.native_decide.ax_1_1,
+ block006_checked._native.native_decide.ax_1_1,
+ block007_checked._native.native_decide.ax_1_1,
+ block008_checked._native.native_decide.ax_1_1,
+ ranges_cover._native.native_decide.ax_1_1,
+ roots_checked._native.native_decide.ax_1_1]
+ELAPSED_SECONDS=30.8849444 END_UTC=2026-10-27T15:45:48.3417251Z
+EXIT=0

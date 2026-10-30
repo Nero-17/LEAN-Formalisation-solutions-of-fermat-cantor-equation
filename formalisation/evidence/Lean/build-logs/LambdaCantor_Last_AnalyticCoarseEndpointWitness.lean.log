@@ -1,0 +1,6 @@
+UTC=2026-10-27T16:19:00.2618182Z MODULE=LambdaCantor/Last/AnalyticCoarseEndpointWitness.lean SHA256=C5316A009787F1032AD09DBAC38F3560E6E43512595CF0AC8FCD580EDEF99143
+LambdaCantor/Last/AnalyticCoarseEndpointWitness.lean:73:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=34.8700505 END_UTC=2026-10-27T16:19:35.1352384Z
+EXIT=0

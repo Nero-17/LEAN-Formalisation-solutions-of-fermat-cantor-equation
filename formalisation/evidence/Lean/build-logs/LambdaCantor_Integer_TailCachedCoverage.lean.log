@@ -1,0 +1,4 @@
+UTC=2026-10-26T09:39:27.4937236Z MODULE=LambdaCantor/Integer/TailCachedCoverage.lean SHA256=4AC4D359A183CA680BF253DAC2C42275D8E6237042C2F5B523EE4B15877B4B79
+'LambdaCantor.Integer.tailCachedBlocksCoverCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ELAPSED_SECONDS=44.7696195 END_UTC=2026-10-26T09:40:12.2845475Z
+EXIT=0

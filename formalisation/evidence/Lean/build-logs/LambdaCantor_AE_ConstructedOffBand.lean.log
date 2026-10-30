@@ -1,0 +1,6 @@
+UTC=2026-10-27T18:07:05.5980234Z MODULE=LambdaCantor/AE/ConstructedOffBand.lean SHA256=E578FF349F259EA2C791DE95E0A911FF9439555D676070A1825C982B37A1B3F0
+LambdaCantor/AE/ConstructedOffBand.lean:57:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=29.4937005 END_UTC=2026-10-27T18:07:35.0941172Z
+EXIT=0

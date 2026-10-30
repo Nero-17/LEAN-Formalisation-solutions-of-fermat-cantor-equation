@@ -1,0 +1,26 @@
+UTC=2026-10-24T17:53:32.7600111Z MODULE=LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean SHA256=2467BE97F1CC8B670D76DD26A5AED5987AEFA675236A1F720693418B58BE66FC
+LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean:22:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean:29:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean:44:5: warning: Variable name `hratio` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean:57:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean:64:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean:57:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticCoarseLogBridgesLeft.lean:64:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=30.2660026 END_UTC=2026-10-24T17:54:03.0278166Z
+EXIT=0

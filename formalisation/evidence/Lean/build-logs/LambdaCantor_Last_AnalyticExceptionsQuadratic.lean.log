@@ -1,0 +1,45 @@
+UTC=2026-10-27T06:59:43.9987865Z MODULE=LambdaCantor/Last/AnalyticExceptionsQuadratic.lean SHA256=44A51E7A984A0B51FC475E2FDF6C8AEB5BBD06B99B109E443F68ECE2C2150073
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:36:16: warning: 'field_simp [hcomplement.ne', hfirst_upper.ne']' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:36:67: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:36:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:36:67: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:35:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:68:16: warning: 'field_simp [hcomplement.ne', hfirst_upper.ne']' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:68:67: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:68:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:68:67: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:99:16: warning: 'field_simp [hcomplement.ne', hfirst_upper.ne']' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:99:67: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:99:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:99:67: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsQuadratic.lean:98:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=81.9383182 END_UTC=2026-10-27T07:01:05.9431841Z
+EXIT=0

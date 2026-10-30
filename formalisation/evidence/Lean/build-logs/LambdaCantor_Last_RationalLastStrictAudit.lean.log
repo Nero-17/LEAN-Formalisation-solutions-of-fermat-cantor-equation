@@ -1,0 +1,26 @@
+UTC=2026-10-27T16:25:50.5871018Z MODULE=LambdaCantor/Last/RationalLastStrictAudit.lean SHA256=85C2530D352501C4D0C36405DA3429C25F831F9D7D7BBF21FFD1176F2F60C7BB
+'LambdaCantor.Last.selected_perfect_actual_fermat_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.strict_return_criterion_persist_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Last.joint_strict_derivative_moving_cylinder_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.perfect_fibre_positive_dimension_persist_parameter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.actual_fermat_positive_dimension_persist_of_infinite_of_finite_isolated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.Last.rational_positive_dimension_at_or_above_critical_of_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve]
+'LambdaCantor.Last.rational_lastTransition_lt_critical_of_infinite_intersections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LambdaCantor.Last.External.adamczewski_bugeaud_pisot_stammering,
+ LambdaCantor.Last.External.mordell_smooth_plane_curve]
+ELAPSED_SECONDS=30.7624157 END_UTC=2026-10-27T16:26:21.3515909Z
+EXIT=0

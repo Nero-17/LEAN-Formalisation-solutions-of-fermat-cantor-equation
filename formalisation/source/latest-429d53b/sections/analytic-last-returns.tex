@@ -1,0 +1,104 @@
+\par\medskip\noindent\emph{From a perfect fibre to strict returns.}
+We give the dimension argument, including its stability when the contraction
+changes. Fix $\lambda\in[c,1/2)$ and a positive ratio
+$r\notin\mathbb Q(\lambda)$ in one of the open periodicity intervals
+established above, after a fixed cylinder restriction and, if necessary,
+interchanging coordinates. Put $L(s,t):=s+rt$.
+The four child hulls of $L$ cover $[0,1+r]$ with strict consecutive
+overlaps. Iteration and compactness therefore give
+$L(C_\lambda^2)=[0,1+r]$.
+The address argument above shows that every isolated point of every affine
+fibre has coordinates in $\mathbb Q(\lambda)$.
+
+A compact countable fibre containing two points would have two isolated
+points: restrict it to two disjoint product cylinders containing the
+original points, and use the existence of an isolated point in each
+nonempty compact countable set. Product cylinders are relatively open
+in $C_\lambda^2$, so these points are isolated in the whole fibre.
+Equality of their affine levels would put $r$ in $\mathbb Q(\lambda)$,
+a contradiction. Thus a fibre containing at least two points is uncountable.
+
+Let $B$ be the union of \emph{all} pairwise intersections of the four
+closed child hulls. This is a compact set. Every level in $B$ has two
+distinct Cantor preimages, because each child hull is filled and distinct
+product children are disjoint. Its fibre is therefore uncountable.
+In an uncountable fibre, some descendant has two uncountable children.
+Otherwise following the unique uncountable child at each step expresses
+the fibre as one limiting point together with countably many countable
+offshoots. At a node with two uncountable children, the level lies in the
+interior of each of their hulls: an extreme level of a child has a unique
+preimage, since both coefficients of $L$ are positive. The normalized
+level consequently belongs to $\operatorname{int}B$.
+Repeating this argument separately inside the two uncountable children
+produces two incomparable nonempty words whose normalized levels return
+to $\operatorname{int}B$. This works for every initial level in $B$ and
+does not require the absence of triple overlaps.
+
+For a product word $w$, let $z_w(\lambda)$ be its lower corner and write
+\[
+ \Phi_{w,\lambda}(u)
+ :=\lambda^{-|w|}\bigl(u-L(z_w(\lambda))\bigr).
+\]
+The two strict return inequalities persist on a neighborhood of their
+initial level. Compactness of $B$ gives finitely many word pairs, a maximum
+length $M$, an open bounded neighborhood $U\supset B$, and $\eta>0$ such
+that every $u\in U$ has a selected pair returning to points of $B$ at
+distance at least $\eta$ from $\mathbb R\setminus B$.
+Consider a normalized equation $L+e-u=0$, where $e(0,0)=0$ and
+$\operatorname{Lip}(e)<\eta\lambda^M/2$, using the sup norm.
+Restriction to $w$ replaces the error by
+\[
+ \lambda^{-|w|}
+ \bigl(e(z_w+\lambda^{|w|}(s,t))-e(z_w)\bigr).
+\]
+Its Lipschitz constant does not increase, and the level correction is
+bounded by $\lambda^{-|w|}\operatorname{Lip}(e)<\eta/2$.
+Both children still return to $B$, so this construction iterates.
+
+Every infinite branch converges to a zero, because the original residual
+is the cylinder scale times a bounded normalized residual.
+Assigning mass $2^{-j}$ to each binary generation-$j$ cylinder gives a
+positive-dimensional measure. Indeed their depths are at most $jM$,
+and any two distinct such cylinders are separated in at least one
+coordinate by at least $(1-2\lambda)\lambda^{jM-1}$.
+At radii comparable to $\lambda^{jM}$ a ball therefore meets a bounded
+number of these cylinders. The mass distribution principle gives
+dimension at least $\log2/(M|\log\lambda|)>0$.
+
+Now suppose a $C^1$ level curve contains a compact perfect subset, and
+at one of its points the normalized tangent ratio is the chosen $r$.
+In the depth-$n$ product cylinder containing that point, subtract the
+lower-corner value and divide by the first derivative at the point times
+$\lambda^n$. The equation becomes $L+e_n-u_n=0$, with $e_n(0,0)=0$ and
+$\displaystyle\lim_{n\to\infty}\operatorname{Lip}(e_n)=0$.
+There are arbitrarily deep branching cylinders along this address;
+otherwise the point would be isolated in the perfect subset.
+At a branching cylinder, two distinct child image hulls of $L+e_n$
+contain $u_n$. For the affine hulls, this implies
+$\displaystyle\lim_{n\to\infty}\operatorname{dist}(u_n,B)=0$ along these branching depths:
+there are only finitely many child
+pairs, disjoint pairs have a fixed positive separation, and for an
+intersecting pair the endpoint errors tend to zero.
+A sufficiently deep branching cylinder thus has $u_n\in U$ and the
+required Lipschitz bound. The preceding binary construction proves
+positive Hausdorff dimension of the actual fibre.
+
+\par\medskip\noindent\emph{Stability in the contraction parameter.}
+The construction just obtained is also stable when $\lambda$ changes.
+Keep its ratio $r$, compact core $B$, and finitely many return pairs fixed
+at the original contraction. Each $z_w(\lambda)$ is a finite polynomial
+in $\lambda$, so each selected map $\Phi_{w,\lambda}$ is continuous in
+$\lambda$ and its level argument. Shrinking $U$ if necessary, the finite
+cover and its positive margins persist for all contractions in a
+neighborhood of the original one. The allowable Lipschitz bound can be
+chosen uniformly there, since $M$ is fixed and the contractions stay
+bounded away from zero and one half. The same restriction calculation
+then constructs a binary tree for every nearby contraction.
+The finite initial entrance cylinder also varies continuously with the
+contraction. Its normalized level remains in $U$, and its defining
+function remains within the chosen Lipschitz bound, after making the
+neighborhood smaller. Thus positivity holds for the same actual level,
+not merely for a nearby unspecified level.
+In particular, a strict-return construction at $\lambda=c$ persists
+for all $\lambda$ in some interval $(c-\varepsilon,c+\varepsilon)$.
+No arithmetic classification at the perturbed contractions is needed.

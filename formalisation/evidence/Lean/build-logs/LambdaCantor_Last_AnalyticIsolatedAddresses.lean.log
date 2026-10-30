@@ -1,0 +1,11 @@
+UTC=2026-10-27T15:29:03.5613401Z MODULE=LambdaCantor/Last/AnalyticIsolatedAddresses.lean SHA256=50F035EADA7347844B6D1C281F216B4DDE22DAD7D238188C8A85EB629C0FF905
+LambdaCantor/Last/AnalyticIsolatedAddresses.lean:13:22: warning: This simp argument is unused:
+  wordMap_nil
+
+Hint: Omit it from the simp argument list.
+  simp only [wordMap, w̵o̵r̵d̵M̵a̵p̵_̵n̵i̵l̵,̵ ̵boundaryChildOffset, digitPoint, Prod.fst_add, Prod.snd_add, Prod.smul_fst,
+  ̲  ̲ ̲ ̲Prod.smul_snd, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=26.3564588 END_UTC=2026-10-27T15:29:29.9195176Z
+EXIT=0

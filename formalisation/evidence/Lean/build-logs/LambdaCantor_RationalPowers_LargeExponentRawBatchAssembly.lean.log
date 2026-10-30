@@ -1,0 +1,5 @@
+UTC=2026-10-27T07:02:47.1914213Z MODULE=LambdaCantor/RationalPowers/LargeExponentRawBatchAssembly.lean SHA256=27747197691124AD11EF0771969059869B2B4FA90AC32D07EF3C57F538E03B4F
+'LambdaCantor.RationalPowers.largeExponent_raw_table_append_checked' depends on axioms: [propext, Quot.sound]
+'LambdaCantor.RationalPowers.largeExponent_raw_cells_append_checked' depends on axioms: [propext]
+ELAPSED_SECONDS=27.5553912 END_UTC=2026-10-27T07:03:14.7515346Z
+EXIT=0

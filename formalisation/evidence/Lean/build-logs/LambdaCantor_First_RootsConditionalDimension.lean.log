@@ -1,0 +1,16 @@
+UTC=2026-10-24T17:50:51.4504345Z MODULE=LambdaCantor/First/RootsConditionalDimension.lean SHA256=27052DE97B8EC5B76B0ADE197E6F04C710AA41A4293F97DA134177267C9F4F4E
+LambdaCantor/First/RootsConditionalDimension.lean:155:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'LambdaCantor.First.Roots.conditional_dimension_lower_of_prefix_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LambdaCantor.First.Roots.conditional_dimension_lower_of_arbitrarily_small_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED_SECONDS=29.2460546 END_UTC=2026-10-24T17:51:20.6980804Z
+EXIT=0

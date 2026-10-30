@@ -1,0 +1,35 @@
+UTC=2026-10-27T19:47:46.4131860Z MODULE=LambdaCantor/AE/CenteredPrefixLipschitz.lean SHA256=7AFF84AE3676315A11F82718C7DBD4F9BAC6B7FB6800EB0D61822F8820E6D84E
+LambdaCantor/AE/CenteredPrefixLipschitz.lean:10:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/CenteredPrefixLipschitz.lean:42:31: warning: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredCylinder, P̵r̵o̵d̵.̵f̵s̵t̵,̵ ̵Prod.snd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredPrefixLipschitz.lean:42:41: warning: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  simp only [centeredCylinder, Prod.fst,̵ ̵P̵r̵o̵d̵.̵s̵n̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/AE/CenteredPrefixLipschitz.lean:45:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/AE/CenteredPrefixLipschitz.lean:109:76: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/CenteredPrefixLipschitz.lean:109:88: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=49.6724237 END_UTC=2026-10-27T19:48:36.0882288Z
+EXIT=0

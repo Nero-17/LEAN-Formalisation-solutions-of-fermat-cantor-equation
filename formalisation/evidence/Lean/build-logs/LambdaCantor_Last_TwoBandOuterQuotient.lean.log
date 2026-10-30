@@ -1,0 +1,6 @@
+UTC=2026-10-26T08:44:39.0554875Z MODULE=LambdaCantor/Last/TwoBandOuterQuotient.lean SHA256=2AA3B6ED5FC11207507944E8ED2B7FC5C996EDFC230237920D347C35A45F6418
+LambdaCantor/Last/TwoBandOuterQuotient.lean:42:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=27.9031743 END_UTC=2026-10-26T08:45:06.9619298Z
+EXIT=0

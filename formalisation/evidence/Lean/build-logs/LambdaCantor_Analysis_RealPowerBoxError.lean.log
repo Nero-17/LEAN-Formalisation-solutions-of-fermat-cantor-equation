@@ -1,0 +1,47 @@
+UTC=2026-10-24T18:25:23.6473375Z MODULE=LambdaCantor/Analysis/RealPowerBoxError.lean SHA256=B67BE7E32FE79D38C40DBF285B7EE628544FEEF357B845235937ACDB1CF76088
+LambdaCantor/Analysis/RealPowerBoxError.lean:43:15: warning: This simp argument is unused:
+  realPowerSlope
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵a̵l̵P̵o̵w̵e̵r̵S̵l̵o̵p̵e̵,̵s̵h̵o̵w̵ ̵e̵x̵p̵o̵n̵e̵n̵t̵-̵1̵-̵1̵[̲s̲h̲o̲w̲ ̲e̲x̲p̲o̲n̲e̲n̲t̲ ̲-̲ ̲1̲ ̲-̲ ̲1̲ = e̵x̵p̵o̵n̵e̵n̵t̵-̵2̵e̲x̲p̲o̲n̲e̲n̲t̲ ̲-̲ ̲2̲ by r̵i̵n̵g̵,̵m̵u̵l̵_̵a̵s̵s̵o̵c̵]̵r̲i̲n̲g̲,̲ ̲m̲u̲l̲_̲a̲s̲s̲o̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Analysis/RealPowerBoxError.lean:42:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Analysis/RealPowerBoxError.lean:91:27: warning: This simp argument is unused:
+  id_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_one,̵i̵d̵_̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Analysis/RealPowerBoxError.lean:95:19: warning: This simp argument is unused:
+  realPowerRemainder
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵a̵l̵P̵o̵w̵e̵r̵R̵e̵m̵a̵i̵n̵d̵e̵r̵,̵r̵e̵a̵l̵P̵o̵w̵e̵r̵S̵l̵o̵p̵e̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲r̲e̲a̲l̲P̲o̲w̲e̲r̲S̲l̲o̲p̲e̲,̲ ̲P̲i̲.̲s̲u̲b̲_̲a̲p̲p̲l̲y̲,̲ ̲i̲d̲_̲e̲q̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Analysis/RealPowerBoxError.lean:95:53: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [̵r̵e̵a̵l̵P̵o̵w̵e̵r̵R̵e̵m̵a̵i̵n̵d̵e̵r̵,̵r̵e̵a̵l̵P̵o̵w̵e̵r̵S̵l̵o̵p̵e̵,̵P̵i̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵i̵d̵_̵e̵q̵,̵m̵u̵l̵_̵o̵n̵e̵]̵[̲r̲e̲a̲l̲P̲o̲w̲e̲r̲R̲e̲m̲a̲i̲n̲d̲e̲r̲,̲ ̲r̲e̲a̲l̲P̲o̲w̲e̲r̲S̲l̲o̲p̲e̲,̲ ̲i̲d̲_̲e̲q̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Analysis/RealPowerBoxError.lean:95:66: warning: This simp argument is unused:
+  id_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [realPowerRemainder, ̲realPowerSlope, ̲Pi.sub_apply,i̵d̵_̵e̵q̵,̵ ̲mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Analysis/RealPowerBoxError.lean:90:82: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Analysis/RealPowerBoxError.lean:94:64: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=35.1338372 END_UTC=2026-10-24T18:25:58.8191714Z
+EXIT=0

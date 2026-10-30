@@ -1,0 +1,8 @@
+UTC=2026-10-24T17:17:00.6795965Z MODULE=LambdaCantor/Integer/PerturbedBranching.lean SHA256=801BB2D45E5CBE52DBCBC9C6CBB4CDCD7A1A50D4EBF68F3286A3483BF8FE17A6
+LambdaCantor/Integer/PerturbedBranching.lean:60:54: warning: Variable name `positive` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=42.4328608 END_UTC=2026-10-24T17:17:43.1285946Z
+EXIT=0

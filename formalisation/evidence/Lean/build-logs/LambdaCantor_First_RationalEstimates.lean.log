@@ -1,0 +1,9 @@
+UTC=2026-10-21T10:11:36.3135254Z MODULE=LambdaCantor/First/RationalEstimates.lean SHA256=D0FEB39E003C52888E71FBC0DF335C6CA68FF4A94A5CE2A99C3C5862FA45DAD0
+LambdaCantor/First/RationalEstimates.lean:71:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/First/RationalEstimates.lean:71:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ELAPSED_SECONDS=35.0670022 END_UTC=2026-10-21T10:12:11.3824880Z
+EXIT=0

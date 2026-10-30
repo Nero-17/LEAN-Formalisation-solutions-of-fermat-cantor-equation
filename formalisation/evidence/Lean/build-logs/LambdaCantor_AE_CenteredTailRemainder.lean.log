@@ -1,0 +1,9 @@
+UTC=2026-10-28T03:01:52.4457438Z MODULE=LambdaCantor/AE/CenteredTailRemainder.lean SHA256=3BD7DC40908B2506BF8F147157F42AA0C629BF8B651A3DFEB99095FB131B7AAA
+LambdaCantor/AE/CenteredTailRemainder.lean:39:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/AE/CenteredTailRemainder.lean:50:83: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=37.3697018 END_UTC=2026-10-28T03:02:29.8187441Z
+EXIT=0

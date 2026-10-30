@@ -1,0 +1,9 @@
+UTC=2026-10-25T06:21:35.2726467Z MODULE=LambdaCantor/First/RealNormalizationConvergence.lean SHA256=20CED6FF685C2291860C8F472DD1BC59D0C1509B4E41F8FE9F0F2304E640FA86
+LambdaCantor/First/RealNormalizationConvergence.lean:70:27: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/First/RealNormalizationConvergence.lean:70:63: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=50.8948362 END_UTC=2026-10-25T06:22:26.1700613Z
+EXIT=0

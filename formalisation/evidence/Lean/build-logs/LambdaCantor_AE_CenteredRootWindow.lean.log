@@ -1,0 +1,8 @@
+UTC=2026-10-27T19:17:27.9735726Z MODULE=LambdaCantor/AE/CenteredRootWindow.lean SHA256=89757F59894F46A7838732F53D2B4ABDCECF85CE94141A718C5742A79E0BA32F
+LambdaCantor/AE/CenteredRootWindow.lean:11:47: warning: Variable name `hslope` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=43.747904 END_UTC=2026-10-27T19:18:11.7240872Z
+EXIT=0

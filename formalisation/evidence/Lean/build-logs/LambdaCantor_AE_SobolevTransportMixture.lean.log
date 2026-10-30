@@ -1,0 +1,7 @@
+UTC=2026-10-28T07:06:22.4222306Z MODULE=LambdaCantor/AE/SobolevTransportMixture.lean SHA256=E61FAA33CFF693DAC7E85E66BEFC95C78D81FAF1C7FFBBD5D777AFDD4DA86994
+LambdaCantor/AE/SobolevTransportMixture.lean:49:4: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+LambdaCantor/AE/SobolevTransportMixture.lean:51:4: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+LambdaCantor/AE/SobolevTransportMixture.lean:54:4: warning: `MeasureTheory.integrable_finset_sum` has been deprecated: Use `MeasureTheory.integrable_finsetSum` instead
+LambdaCantor/AE/SobolevTransportMixture.lean:80:11: warning: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+ELAPSED_SECONDS=85.5604186 END_UTC=2026-10-28T07:07:47.9881080Z
+EXIT=0

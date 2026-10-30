@@ -1,0 +1,9 @@
+UTC=2026-10-27T14:14:13.1448163Z MODULE=LambdaCantor/Last/EndpointTransferLog.lean SHA256=A0887F50A7EF7CFB698E8CD80632ACD568F5C12A78F15D245AFF6908403A9015
+LambdaCantor/Last/EndpointTransferLog.lean:212:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/EndpointTransferLog.lean:212:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=134.3369915 END_UTC=2026-10-27T14:16:27.4847974Z
+EXIT=0

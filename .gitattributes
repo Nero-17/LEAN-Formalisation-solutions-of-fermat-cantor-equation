@@ -10,3 +10,6 @@
 
 /experiments/** -text
 /figures/** -text
+
+# Preserve the exact accepted proof/evidence hashes across operating systems.
+/formalisation/** -text

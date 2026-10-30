@@ -1,0 +1,8 @@
+UTC=2026-10-26T08:54:35.3868291Z MODULE=LambdaCantor/Integer/ExceptionalIntervals.lean SHA256=A67CC0F5AE77627CF1F6D3010EC5FF6C0538706664194AB61409EE2EE22ABE3F
+LambdaCantor/Integer/ExceptionalIntervals.lean:70:66: warning: Variable name `below` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=32.6001892 END_UTC=2026-10-26T08:55:08.0111718Z
+EXIT=0

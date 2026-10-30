@@ -1,0 +1,9 @@
+UTC=2026-10-27T22:37:31.2639054Z MODULE=LambdaCantor/AE/FreezingPowerComparison.lean SHA256=4F97FD5DB78BE9A54B0BD30A867CECD6F3964450F11D274BDFDB7454EBAC603D
+LambdaCantor/AE/FreezingPowerComparison.lean:52:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/FreezingPowerComparison.lean:52:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=18.4886935 END_UTC=2026-10-27T22:37:49.7541712Z
+EXIT=0

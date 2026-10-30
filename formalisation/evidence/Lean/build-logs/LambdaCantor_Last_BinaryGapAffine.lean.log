@@ -1,0 +1,6 @@
+UTC=2026-10-27T07:33:24.7787447Z MODULE=LambdaCantor/Last/BinaryGapAffine.lean SHA256=CEDE2246305E7EBFF96F029DFC3BE6C2E1DDFAAE7E3CD61ADDFC946CCFD24376
+LambdaCantor/Last/BinaryGapAffine.lean:46:8: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=23.2160844 END_UTC=2026-10-27T07:33:47.9972732Z
+EXIT=0

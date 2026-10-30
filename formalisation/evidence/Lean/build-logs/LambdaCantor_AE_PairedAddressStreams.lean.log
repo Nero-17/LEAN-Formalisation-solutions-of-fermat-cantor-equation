@@ -1,0 +1,10 @@
+UTC=2026-10-27T03:12:05.7103586Z MODULE=LambdaCantor/AE/PairedAddressStreams.lean SHA256=D3EE0B5C054147D6CC3082CABA00BAA187EC0776A4D384DA9D19ACEF0E08E642
+LambdaCantor/AE/PairedAddressStreams.lean:19:26: warning: This simp argument is unused:
+  PMF.toMeasure_apply_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [fairDigitMeasure, P̵M̵F̵.̵t̵o̵M̵e̵a̵s̵u̵r̵e̵_̵a̵p̵p̵l̵y̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵ ̵PMF.uniformOfFintype_apply, Fintype.card_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=49.7408461 END_UTC=2026-10-27T03:12:55.4542903Z
+EXIT=0

@@ -1,0 +1,46 @@
+UTC=2026-10-24T18:35:30.7492639Z MODULE=LambdaCantor/Last/AnalyticIsolatedAffineCore.lean SHA256=B31DD0DE8EDD770362B3C6D94F7E0A99653AEA0F47D0B21F02C70F748DE2E650
+LambdaCantor/Last/AnalyticIsolatedAffineCore.lean:38:38: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [AffineChildClosed, affineChildOffset, Set.mem_Icc, if_true,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵Bool.false_eq_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲if_false, m̵u̵l̵_̵zero,̵ ̵z̵e̵r̵o̵_add, add_zero, mul_one] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticIsolatedAffineCore.lean:38:58: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [AffineChildClosed, affineChildOffset, Set.mem_Icc, if_true,
+  ̵  ̵ ̵ ̵ ̵ ̵ ̵ ̵Bool.false_eq_true,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲if_false, mul_zero, zero_add, a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̵mul_one] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticIsolatedAffineCore.lean:56:36: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [AffineChildClosed, affineChildOffset, Set.mem_Icc, if_true,
+  ̵  ̵ ̵ ̵ ̵ ̵Bool.false_eq_true,
+  ̲  ̲ ̲ ̲ ̲ ̲if_false, m̵u̵l̵_̵zero,̵ ̵z̵e̵r̵o̵_add, add_zero, mul_one] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticIsolatedAffineCore.lean:56:56: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [AffineChildClosed, affineChildOffset, Set.mem_Icc, if_true,
+  ̵  ̵ ̵ ̵ ̵ ̵Bool.false_eq_true,
+  ̲  ̲ ̲ ̲ ̲ ̲if_false, mul_zero, zero_add, a̵d̵d̵_̵z̵e̵r̵o̵,̵ ̵mul_one] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Last/AnalyticIsolatedAffineCore.lean:114:10: warning: This simp argument is unused:
+  digit_eq
+
+Hint: Omit it from the simp argument list.
+  simp [d̵i̵g̵i̵t̵_̵e̵q̵,̵ ̵positiveLinearContinuous, positiveLinear, wordMap, digitPoint, affineChildOffset]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=259.8481784 END_UTC=2026-10-24T18:39:50.5991930Z
+EXIT=0

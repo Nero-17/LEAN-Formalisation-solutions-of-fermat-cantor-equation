@@ -1,0 +1,9 @@
+UTC=2026-10-26T08:53:29.0233891Z MODULE=LambdaCantor/RationalPowers/ExceptionalEnclosureSoundness.lean SHA256=E9CD36230389ACC6DF50CFDCCF892CAC7855BCC77780A549A6DE4C3A0CA127CA
+LambdaCantor/RationalPowers/ExceptionalEnclosureSoundness.lean:17:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RationalPowers/ExceptionalEnclosureSoundness.lean:17:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=38.5299488 END_UTC=2026-10-26T08:54:07.6294358Z
+EXIT=0

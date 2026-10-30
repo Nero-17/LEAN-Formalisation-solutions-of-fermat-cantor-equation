@@ -1,0 +1,5 @@
+UTC=2026-10-24T18:28:27.4252382Z MODULE=LambdaCantor/Circle/ZeroIntervalsTrustAudit.lean SHA256=301F9775FA7D6079FAA9FD96D2CC8DD9D783485DBC6391C1782626794B61DF6B
+'LambdaCantor.Circle.circle_zero_intervals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LambdaCantor.Circle.onset_lt_lastTransition' depends on axioms: [propext, Classical.choice, Quot.sound]
+ELAPSED_SECONDS=28.7978656 END_UTC=2026-10-24T18:28:56.2486539Z
+EXIT=0

@@ -1,0 +1,4 @@
+UTC=2026-10-24T18:54:04.5275990Z MODULE=LambdaCantor/First/RootsGoodSets.lean SHA256=9FA12294C554B1BCA97DC18489D2F9EDF3A99B1785C0A348940D088177003B63
+LambdaCantor/First/RootsGoodSets.lean:34:17: warning: `LowerSemicontinuous.comp_continuous` has been deprecated: Use `LowerSemicontinuous.comp` instead
+ELAPSED_SECONDS=26.7341684 END_UTC=2026-10-24T18:54:31.2630071Z
+EXIT=0

@@ -1,0 +1,8 @@
+UTC=2026-10-21T09:09:04.5594204Z MODULE=LambdaCantor/AE/BandMonotonicity.lean SHA256=BDB1EE35FF7AE804C02A2B18A8CB1DF346EFF4C09F3C4E41E2FC85266210822C
+LambdaCantor/AE/BandMonotonicity.lean:35:47: warning: Variable name `hband` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=69.1797733 END_UTC=2026-10-21T09:10:13.7441598Z
+EXIT=0

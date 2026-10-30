@@ -1,0 +1,5 @@
+import LambdaCantor.Last.AnalyticIsolatedActualC1
+
+#print axioms LambdaCantor.Last.open_phase_isolated_strict_address_eventually_periodic
+#print axioms LambdaCantor.Last.open_phase_isolated_strict_address_in_parameterField
+#print axioms LambdaCantor.Last.open_phase_isolated_c1_point_in_parameterField

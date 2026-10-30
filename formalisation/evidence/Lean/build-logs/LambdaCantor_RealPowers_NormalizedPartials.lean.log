@@ -1,0 +1,41 @@
+UTC=2026-10-24T18:42:48.0415431Z MODULE=LambdaCantor/RealPowers/NormalizedPartials.lean SHA256=54B85CFD9AB68A2C895E141396C504EDE728E0F4AFF00765269AD0B9B3D610A9
+LambdaCantor/RealPowers/NormalizedPartials.lean:19:45: warning: This simp argument is unused:
+  normalizedCylinderSource
+
+Hint: Omit it from the simp argument list.
+  simp only [̵n̵o̵r̵m̵a̵l̵i̵z̵e̵d̵C̵y̵l̵i̵n̵d̵e̵r̵S̵o̵u̵r̵c̵e̵,̵ ̵i̵d̵_̵e̵q̵,̵[̲i̲d̲_̲e̲q̲,̲ mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:19:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:19:87: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:33:45: warning: This simp argument is unused:
+  normalizedCylinderSource
+
+Hint: Omit it from the simp argument list.
+  simp only [̵n̵o̵r̵m̵a̵l̵i̵z̵e̵d̵C̵y̵l̵i̵n̵d̵e̵r̵S̵o̵u̵r̵c̵e̵,̵ ̵i̵d̵_̵e̵q̵,̵[̲i̲d̲_̲e̲q̲,̲ mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:35:7: warning: 'funext coordinate' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:35:26: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:38:11: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:35:26: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:38:11: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/RealPowers/NormalizedPartials.lean:33:30: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=27.5919545 END_UTC=2026-10-24T18:43:15.6554189Z
+EXIT=0

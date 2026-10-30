@@ -1,0 +1,17 @@
+UTC=2026-10-24T16:11:24.0228194Z MODULE=LambdaCantor/First/ProjectionMeasure.lean SHA256=4F8D05EF1BC274694D05D1E11E1C08E40E684A999E4CF1BB895B7D80A811723F
+LambdaCantor/First/ProjectionMeasure.lean:24:14: warning: This simp argument is unused:
+  Set.disjoint_left
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵S̵e̵t̵.̵d̵i̵s̵j̵o̵i̵n̵t̵_̵l̵e̵f̵t̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/First/ProjectionMeasure.lean:83:8: warning: This simp argument is unused:
+  PMF.toMeasure_apply_singleton
+
+Hint: Omit it from the simp argument list.
+  simp [̵P̵M̵F̵.̵t̵o̵M̵e̵a̵s̵u̵r̵e̵_̵a̵p̵p̵l̵y̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵ ̵P̵M̵F̵.̵u̵n̵i̵f̵o̵r̵m̵O̵f̵F̵i̵n̵t̵y̵p̵e̵_̵a̵p̵p̵l̵y̵,̵[̲P̲M̲F̲.̲u̲n̲i̲f̲o̲r̲m̲O̲f̲F̲i̲n̲t̲y̲p̲e̲_̲a̲p̲p̲l̲y̲,̲ Fintype.card_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=32.736863 END_UTC=2026-10-24T16:11:56.7622789Z
+EXIT=0

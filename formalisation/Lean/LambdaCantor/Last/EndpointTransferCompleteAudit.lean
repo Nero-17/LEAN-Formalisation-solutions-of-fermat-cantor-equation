@@ -1,0 +1,8 @@
+import LambdaCantor.Last.TwoBandSeparable
+import LambdaCantor.Last.EndpointTransferAccepted
+
+#print axioms LambdaCantor.Last.two_band_separable_c1_criterion
+#print axioms LambdaCantor.Last.two_band_positive_derivative_criterion_reciprocal
+#print axioms LambdaCantor.Last.power_endpoint_source_reciprocal_positive_dimension
+#print axioms LambdaCantor.Last.logarithmic_endpoint_source_reciprocal_positive_dimension
+#print axioms LambdaCantor.Last.endpoint_source_positive_dimension

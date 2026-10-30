@@ -1,0 +1,6 @@
+UTC=2026-10-27T14:39:51.2995020Z MODULE=LambdaCantor/Last/AnalyticCoarseScaledGaps.lean SHA256=874AA735DA20BE5D9D4FA90076A363DCB5E3B58E1BE52196333CFCF57A0A16B1
+LambdaCantor/Last/AnalyticCoarseScaledGaps.lean:73:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=24.6431054 END_UTC=2026-10-27T14:40:15.9442537Z
+EXIT=0

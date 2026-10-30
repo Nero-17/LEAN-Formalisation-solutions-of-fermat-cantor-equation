@@ -1,0 +1,21 @@
+UTC=2026-10-27T04:37:31.4116907Z MODULE=LambdaCantor/Last/AnalyticCoarseLargeSecant.lean SHA256=7852EA12A36416FC635B53DB94C6045BB106111488F0A292C5812B10DD9FD702
+LambdaCantor/Last/AnalyticCoarseLargeSecant.lean:26:45: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLargeSecant.lean:26:61: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLargeSecant.lean:37:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLargeSecant.lean:37:57: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticCoarseLargeSecant.lean:116:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticCoarseLargeSecant.lean:116:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=34.6470974 END_UTC=2026-10-27T04:38:06.0615325Z
+EXIT=0

@@ -1,0 +1,12 @@
+UTC=2026-10-21T09:36:33.3794535Z MODULE=LambdaCantor/AE/DifferenceSeries.lean SHA256=5EB824F4BC53B53824DC7511E13682278693FDBC58063461CEBA4826174CEC9C
+LambdaCantor/AE/DifferenceSeries.lean:65:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+LambdaCantor/AE/DifferenceSeries.lean:68:56: warning: 'simp only [normalizedDifference, zero_add]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/DifferenceSeries.lean:68:56: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=26.1347709 END_UTC=2026-10-21T09:36:59.5161915Z
+EXIT=0

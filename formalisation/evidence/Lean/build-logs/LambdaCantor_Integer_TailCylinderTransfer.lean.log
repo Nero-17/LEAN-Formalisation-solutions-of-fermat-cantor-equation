@@ -1,0 +1,35 @@
+UTC=2026-10-27T17:07:13.9127647Z MODULE=LambdaCantor/Integer/TailCylinderTransfer.lean SHA256=4CAD3663314ECDA94F6E38540C7A574749FAB80B0FC62C2A67373E414F1D2500
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+LambdaCantor/Integer/TailCylinderTransfer.lean:44:69: warning: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [̵N̵a̵t̵.̵c̵a̵s̵t̵_̵a̵d̵d̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵m̵u̵l̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵p̵o̵w̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵,̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵n̵e̵,̵a̵d̵d̵_̵a̵s̵s̵o̵c̵]̵[̲N̲a̲t̲.̲c̲a̲s̲t̲_̲a̲d̲d̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲m̲u̲l̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲p̲o̲w̲,̲ ̲N̲a̲t̲.̲c̲a̲s̲t̲_̲o̲f̲N̲a̲t̲,̲ ̲a̲d̲d̲_̲a̲s̲s̲o̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/TailCylinderTransfer.lean:44:82: warning: This simp argument is unused:
+  add_assoc
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.cast_add, ̲Nat.cast_mul, ̲Nat.cast_pow, ̲Nat.cast_ofNat, ̲Nat.cast_one,̵a̵d̵d̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LambdaCantor/Integer/TailCylinderTransfer.lean:41:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Integer/TailCylinderTransfer.lean:47:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=32.6533125 END_UTC=2026-10-27T17:07:46.5803668Z
+EXIT=0

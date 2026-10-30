@@ -1,0 +1,6 @@
+UTC=2026-10-24T17:31:52.3973339Z MODULE=LambdaCantor/Last/EndpointDepthSequences.lean SHA256=232CEAD211E512355782CCCC4B662A49836C6692A3A76E6DA1B0237835319A22
+LambdaCantor/Last/EndpointDepthSequences.lean:41:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=27.5834928 END_UTC=2026-10-24T17:32:19.9948575Z
+EXIT=0

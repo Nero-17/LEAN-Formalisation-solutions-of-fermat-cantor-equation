@@ -1,0 +1,8 @@
+UTC=2026-10-27T15:49:54.2409743Z MODULE=LambdaCantor/RationalPowers/RealNearAxisGeometry.lean SHA256=59DA4CC74081052761F451C4DA2431F6A56B3EAB141851E74E3ED870CF0945D1
+LambdaCantor/RationalPowers/RealNearAxisGeometry.lean:123:44: warning: Variable name `vertical_positive` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ELAPSED_SECONDS=29.473138 END_UTC=2026-10-27T15:50:23.7365424Z
+EXIT=0

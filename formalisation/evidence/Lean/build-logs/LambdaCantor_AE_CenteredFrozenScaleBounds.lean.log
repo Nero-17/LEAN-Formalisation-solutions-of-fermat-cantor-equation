@@ -1,0 +1,63 @@
+UTC=2026-10-28T05:42:26.9799013Z MODULE=LambdaCantor/AE/CenteredFrozenScaleBounds.lean SHA256=96333D9ABD9614BD126F4A0A57EA7FAD171FFC6407A4B25C56D962E274E91C3D
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:63:21: warning: 'simp only [zeroPrefixDigits]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:63:51: warning: 'field_simp [derivativeBound_positive.ne', slope_positive.ne'] <;> ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:63:192: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:65:21: warning: 'simp only [zeroPrefixDigits]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:65:51: warning: 'field_simp [derivativeBound_positive.ne', slope_positive.ne'] <;> ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:65:192: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:67:21: warning: 'simp only [zeroPrefixDigits]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:67:51: warning: 'field_simp [derivativeBound_positive.ne', slope_positive.ne'] <;> ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:67:192: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:69:21: warning: 'simp only [zeroPrefixDigits]' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:69:51: warning: 'field_simp [derivativeBound_positive.ne', slope_positive.ne'] <;> ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:69:192: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:63:51: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:63:192: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:65:51: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:65:192: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:67:51: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:67:192: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:69:51: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/AE/CenteredFrozenScaleBounds.lean:69:192: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ELAPSED_SECONDS=127.14723 END_UTC=2026-10-28T05:44:34.1321197Z
+EXIT=0

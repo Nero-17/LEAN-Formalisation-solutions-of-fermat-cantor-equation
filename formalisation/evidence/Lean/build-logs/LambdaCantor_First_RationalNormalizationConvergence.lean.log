@@ -1,0 +1,11 @@
+UTC=2026-10-25T05:36:31.1208326Z MODULE=LambdaCantor/First/RationalNormalizationConvergence.lean SHA256=7BCA0D7B442FEBF244E51EFBC95170C205005CB3B41884C22CC2FEA79E06861B
+LambdaCantor/First/RationalNormalizationConvergence.lean:39:54: warning: This simp argument is unused:
+  abs_of_nonneg hpos.le
+
+Hint: Omit it from the simp argument list.
+  simp only [dist_zero_left, Real.norm_eq_abs, abs_mul, abs_pow,
+      abs_of_nonneg (pow_nonneg hpos.le (depth index)),̵ ̵a̵b̵s̵_̵o̵f̵_̵n̵o̵n̵n̵e̵g̵ ̵h̵p̵o̵s̵.̵l̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ELAPSED_SECONDS=28.8478939 END_UTC=2026-10-25T05:36:59.9706807Z
+EXIT=0

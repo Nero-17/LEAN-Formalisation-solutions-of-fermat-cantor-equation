@@ -1,0 +1,21 @@
+UTC=2026-10-27T07:08:02.1256932Z MODULE=LambdaCantor/Last/AnalyticExceptionsHalf.lean SHA256=E1220EEDABB02EAA076C7AB20EA02A9FA952C16D4D291E26A7F0DB6EB1D92232
+LambdaCantor/Last/AnalyticExceptionsHalf.lean:23:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsHalf.lean:23:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsHalf.lean:48:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+LambdaCantor/Last/AnalyticExceptionsHalf.lean:48:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+LambdaCantor/Last/AnalyticExceptionsHalf.lean:114:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+LambdaCantor/Last/AnalyticExceptionsHalf.lean:117:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=69.889988 END_UTC=2026-10-27T07:09:12.0188421Z
+EXIT=0

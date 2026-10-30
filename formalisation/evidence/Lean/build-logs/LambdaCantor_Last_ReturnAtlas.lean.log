@@ -1,0 +1,6 @@
+UTC=2026-10-21T09:59:55.8283305Z MODULE=LambdaCantor/Last/ReturnAtlas.lean SHA256=116E2229DA89787E859EDC6E5673DA764FF5DEAECBF4CCC5724871023328626A
+LambdaCantor/Last/ReturnAtlas.lean:28:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ELAPSED_SECONDS=27.3520764 END_UTC=2026-10-21T10:00:23.1830403Z
+EXIT=0
